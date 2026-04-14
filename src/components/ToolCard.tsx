@@ -10,9 +10,10 @@ interface ToolCardProps {
   benefit: string;
   category: string;
   featured?: boolean;
+  href?: string;
 }
 
-export function ToolCard({ name, description, bestFor, benefit, category, featured }: ToolCardProps) {
+export function ToolCard({ name, description, bestFor, benefit, category, featured, href }: ToolCardProps) {
   return (
     <Card className={`group relative overflow-hidden transition-all duration-200 hover:shadow-md hover:border-brand/20 ${featured ? "border-brand/20" : ""}`}>
       {featured && (
@@ -38,9 +39,17 @@ export function ToolCard({ name, description, bestFor, benefit, category, featur
         </div>
         <div className="mt-5 flex items-center justify-between">
           <Badge variant="secondary" className="text-xs">{category}</Badge>
-          <Button variant="ghost" size="sm" className="gap-1 text-xs text-brand hover:text-brand">
-            Learn More <ArrowUpRight className="h-3 w-3" />
-          </Button>
+          {href ? (
+            <a href={href} target="_blank" rel="noopener noreferrer nofollow">
+              <Button variant="ghost" size="sm" className="gap-1 text-xs text-brand hover:text-brand">
+                Visit Website <ArrowUpRight className="h-3 w-3" />
+              </Button>
+            </a>
+          ) : (
+            <Button variant="ghost" size="sm" className="gap-1 text-xs text-brand hover:text-brand">
+              Learn More <ArrowUpRight className="h-3 w-3" />
+            </Button>
+          )}
         </div>
       </CardContent>
     </Card>

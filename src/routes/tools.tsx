@@ -5,13 +5,13 @@ import { Footer } from "@/components/Footer";
 import { Newsletter } from "@/components/Newsletter";
 import { ToolCard } from "@/components/ToolCard";
 import { Button } from "@/components/ui/button";
-import { Shield, CheckCircle2, Eye, FileSearch } from "lucide-react";
+import { Shield, Eye, FileSearch } from "lucide-react";
 
 export const Route = createFileRoute("/tools")({
   head: () => ({
     meta: [
       { title: "Recommended Tools — EcomStack" },
-      { name: "description", content: "Curated directory of the best AI, tracking, automation, and growth tools for ecommerce brands and dropshippers." },
+      { name: "description", content: "Curated directory of the best AI, tracking, automation, shipping, and growth tools for ecommerce brands and dropshippers." },
       { property: "og:title", content: "Recommended Tools — EcomStack" },
       { property: "og:description", content: "Browse our curated directory of ecommerce growth tools." },
     ],
@@ -20,19 +20,81 @@ export const Route = createFileRoute("/tools")({
 });
 
 const allTools = [
-  { name: "WeTracked", description: "Accurate server-side tracking for Facebook, Google, and TikTok ads with first-party data collection.", bestFor: "Ecommerce brands running paid ads", benefit: "Recover lost conversions and improve ROAS by up to 20%", category: "Tracking & Attribution", featured: true },
-  { name: "Holo AI", description: "AI-powered ad creative generation for ecommerce brands. Create winning video and image ads at scale.", bestFor: "Media buyers and creative teams", benefit: "Produce 10x more ad creatives in a fraction of the time", category: "AI Content & Ad Creation", featured: true },
-  { name: "ManyChat", description: "Automated messaging for Instagram, Facebook Messenger, and WhatsApp. Capture leads and drive sales through conversations.", bestFor: "Shopify stores with social media presence", benefit: "Convert DM conversations into paying customers automatically", category: "Chat Automation", featured: true },
-  { name: "Evebee", description: "Smart product recommendations and store optimization tools designed specifically for Shopify stores.", bestFor: "Shopify store owners", benefit: "Increase average order value and conversion rates", category: "Product Research & Optimization", featured: true },
-  { name: "Triple Whale", description: "All-in-one analytics dashboard for ecommerce. Track attribution, LTV, and cohort performance in real time.", bestFor: "DTC brands spending $10K+/mo on ads", benefit: "See true ROAS and make better ad spend decisions", category: "Analytics & Reporting", featured: false },
-  { name: "Klaviyo", description: "Email and SMS marketing platform built for ecommerce. Automate flows, segment audiences, and drive retention.", bestFor: "Ecommerce brands focused on retention", benefit: "Generate 20-30% of revenue from email automation", category: "CRM & Customer Follow-Up", featured: false },
-  { name: "Hyros", description: "AI-powered ad tracking and attribution platform with call tracking and long-term customer journey analysis.", bestFor: "High-ticket and subscription brands", benefit: "Accurate attribution for complex sales funnels", category: "Tracking & Attribution", featured: false },
-  { name: "AdCreative.ai", description: "Generate conversion-focused ad creatives using AI. Get data-backed suggestions for images and copy.", bestFor: "Solo founders and small teams", benefit: "Skip the design bottleneck with AI-generated creatives", category: "AI Content & Ad Creation", featured: false },
-  { name: "Gorgias", description: "Helpdesk and customer support platform designed for ecommerce. Centralize support across all channels.", bestFor: "Growing Shopify stores", benefit: "Reduce response time and increase customer satisfaction", category: "CRM & Customer Follow-Up", featured: false },
-  { name: "Minea", description: "All-in-one product research tool for dropshippers. Spy on competitor ads and discover winning products.", bestFor: "Dropshippers doing product research", benefit: "Find proven products before competitors do", category: "Product Research & Optimization", featured: false },
+  {
+    name: "WeTracked",
+    description: "Server-side tracking platform that connects your ad accounts to accurate first-party conversion data. Supports Facebook CAPI, Google Ads, and TikTok Events API with minimal setup on Shopify and WooCommerce.",
+    bestFor: "Ecommerce brands running paid ads on Meta, Google, or TikTok",
+    benefit: "Recover lost conversions and improve ROAS with accurate server-side attribution",
+    category: "Tracking & Attribution",
+    featured: true,
+    href: "https://www.wetracked.io/?ref=ddf2eabf-bf17-4363-aaef-585e9c4e763a",
+  },
+  {
+    name: "Holo AI",
+    description: "AI-powered ad creative platform designed for ecommerce. Generate scroll-stopping video ads, product images, and ad copy variants in minutes — without a design team or expensive agencies.",
+    bestFor: "Media buyers and creative teams scaling ad production",
+    benefit: "Produce 10x more ad creatives with AI, reducing production costs and turnaround time",
+    category: "AI Content & Ad Creation",
+    featured: true,
+    href: "https://tryholo.ai/?utm_medium=affiliate&utm_source=4988344&utm_campaign=41932&im_ref=VR4UEcxOMxyZW1iwCnQUZz87Uku1QdzxZTtOR00&utm_ad_id=3273895&irgwc=1&afsrc=1",
+  },
+  {
+    name: "WeShop AI",
+    description: "AI product photography and model generation tool. Create professional lifestyle images and model shots from simple product photos — ideal for stores that need high-quality visuals without studio shoots.",
+    bestFor: "Dropshippers and DTC brands needing professional product imagery",
+    benefit: "Generate studio-quality product and model photos without hiring photographers",
+    category: "AI Content & Ad Creation",
+    featured: true,
+    href: "https://www.weshop.ai/?fpr=ecomstack",
+  },
+  {
+    name: "ManyChat",
+    description: "Automated messaging platform for Instagram, Facebook Messenger, and WhatsApp. Capture leads through DMs, automate responses, build conversation flows, and drive sales directly through chat.",
+    bestFor: "Shopify stores with active social media audiences",
+    benefit: "Convert DM conversations into paying customers with automated chat funnels",
+    category: "Chat Automation & CRM",
+    featured: true,
+    href: "https://manychat.com/?irclickid=VnSTflW-KxycRDrzAA0SXwH3Ukpy-iUnJQllWI0&irgwc=1&utm_source=Affiliate&utm_content=LETHUY&utm_medium=Impact&utm_campaign=Online%20Tracking%20Link",
+  },
+  {
+    name: "GoHighLevel",
+    description: "All-in-one CRM and marketing automation platform. Manage leads, automate follow-ups, build funnels, and handle customer communication from a single dashboard — replacing multiple tools.",
+    bestFor: "Ecommerce brands and agencies managing multiple client accounts",
+    benefit: "Consolidate your CRM, email, SMS, and funnel tools into one platform",
+    category: "Chat Automation & CRM",
+    featured: false,
+    href: "https://www.gohighlevel.com/?fp_ref=ecomstack",
+  },
+  {
+    name: "Evebee",
+    description: "Product research and store analytics tool built specifically for Etsy and Shopify sellers. Discover trending products, analyze competitor performance, and identify profitable niches with data-driven insights.",
+    bestFor: "Dropshippers and store owners doing product research",
+    benefit: "Find proven products and profitable niches before competitors using real marketplace data",
+    category: "Product Research & Optimization",
+    featured: false,
+    href: "https://www.everbee.io/?via=EcomStack",
+  },
+  {
+    name: "Easyship",
+    description: "Global shipping platform that connects your store to 250+ courier services. Compare rates, generate labels, automate shipping rules, and provide real-time tracking to customers across 220+ countries.",
+    bestFor: "Ecommerce stores shipping domestically or internationally",
+    benefit: "Reduce shipping costs and delivery times with automated rate comparison and label generation",
+    category: "Shipping & Fulfillment",
+    featured: false,
+    href: "https://www.easyship.com/?utm_campaign=4988344&utm_term=10435&utm_content=666308&utm_medium=affiliate&irclickid=1Sd0JU24pxyZWXzxnEWLWz28Uku1lr3BZTtIxE0&irgwc=1&afsrc=1&utm_source=LETHUY",
+  },
+  {
+    name: "Systeme",
+    description: "All-in-one marketing platform for building sales funnels, email campaigns, online courses, and membership sites. A cost-effective alternative to ClickFunnels and Kajabi for ecommerce operators building systems.",
+    bestFor: "Solo founders and small teams building marketing funnels",
+    benefit: "Build funnels, email sequences, and landing pages without paying for multiple subscriptions",
+    category: "Funnels & Marketing Systems",
+    featured: false,
+    href: "https://systeme.io/?sa=sa0246910810ba30b29294f24dd70d00c490781e19",
+  },
 ];
 
-const categories = ["All", "Tracking & Attribution", "AI Content & Ad Creation", "Chat Automation", "Product Research & Optimization", "CRM & Customer Follow-Up", "Analytics & Reporting"];
+const categories = ["All", "Tracking & Attribution", "AI Content & Ad Creation", "Chat Automation & CRM", "Product Research & Optimization", "Shipping & Fulfillment", "Funnels & Marketing Systems"];
 
 function ToolsPage() {
   const [activeCategory, setActiveCategory] = useState("All");
