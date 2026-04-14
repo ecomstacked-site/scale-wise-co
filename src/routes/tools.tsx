@@ -1,11 +1,20 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Newsletter } from "@/components/Newsletter";
 import { ToolCard } from "@/components/ToolCard";
 import { Button } from "@/components/ui/button";
-import { Shield, Eye, FileSearch } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
+import { Shield, Eye, FileSearch, ArrowUpRight } from "lucide-react";
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table";
 
 export const Route = createFileRoute("/tools")({
   head: () => ({
@@ -22,79 +31,102 @@ export const Route = createFileRoute("/tools")({
 const allTools = [
   {
     name: "WeTracked",
-    description: "Server-side tracking platform that connects your ad accounts to accurate first-party conversion data. Supports Facebook CAPI, Google Ads, and TikTok Events API with minimal setup on Shopify and WooCommerce.",
+    description: "Server-side tracking platform that connects your ad accounts to accurate first-party conversion data. Supports Facebook CAPI, Google Ads, and TikTok Events API.",
     bestFor: "Ecommerce brands running paid ads on Meta, Google, or TikTok",
-    benefit: "Recover lost conversions and improve ROAS with accurate server-side attribution",
+    benefit: "Recover lost conversions and improve ROAS with server-side attribution",
     category: "Tracking & Attribution",
     featured: true,
+    extraBadge: "Best for Tracking",
+    socialProof: "Trusted by performance marketers and media buyers",
+    microHook: "Fix inaccurate tracking and recover lost ROAS",
     href: "https://www.wetracked.io/?ref=ddf2eabf-bf17-4363-aaef-585e9c4e763a",
   },
   {
     name: "Holo AI",
-    description: "AI-powered ad creative platform designed for ecommerce. Generate scroll-stopping video ads, product images, and ad copy variants in minutes — without a design team or expensive agencies.",
+    description: "AI-powered ad creative platform for ecommerce. Generate scroll-stopping video ads, product images, and ad copy variants in minutes.",
     bestFor: "Media buyers and creative teams scaling ad production",
-    benefit: "Produce 10x more ad creatives with AI, reducing production costs and turnaround time",
+    benefit: "Produce 10x more ad creatives, reducing production costs",
     category: "AI Content & Ad Creation",
     featured: true,
+    extraBadge: "Best for Creatives",
+    socialProof: "Popular among DTC brands and media buyers",
+    microHook: "Scale ad creatives without a design team",
     href: "https://tryholo.ai/?utm_medium=affiliate&utm_source=4988344&utm_campaign=41932&im_ref=VR4UEcxOMxyZW1iwCnQUZz87Uku1QdzxZTtOR00&utm_ad_id=3273895&irgwc=1&afsrc=1",
   },
   {
     name: "WeShop AI",
-    description: "AI product photography and model generation tool. Create professional lifestyle images and model shots from simple product photos — ideal for stores that need high-quality visuals without studio shoots.",
-    bestFor: "Dropshippers and DTC brands needing professional product imagery",
-    benefit: "Generate studio-quality product and model photos without hiring photographers",
+    description: "AI product photography and model generation tool. Create professional lifestyle images from simple product photos — no studio needed.",
+    bestFor: "Dropshippers and DTC brands needing professional imagery",
+    benefit: "Generate studio-quality product photos without photographers",
     category: "AI Content & Ad Creation",
     featured: true,
+    socialProof: "Used by many ecommerce brands for product imagery",
+    microHook: "Professional product photos in minutes, not days",
     href: "https://www.weshop.ai/?fpr=ecomstack",
   },
   {
     name: "ManyChat",
-    description: "Automated messaging platform for Instagram, Facebook Messenger, and WhatsApp. Capture leads through DMs, automate responses, build conversation flows, and drive sales directly through chat.",
+    description: "Automated messaging for Instagram, Facebook Messenger, and WhatsApp. Capture leads through DMs, automate responses, and drive sales through chat.",
     bestFor: "Shopify stores with active social media audiences",
-    benefit: "Convert DM conversations into paying customers with automated chat funnels",
+    benefit: "Convert DM conversations into paying customers automatically",
     category: "Chat Automation & CRM",
     featured: true,
+    extraBadge: "Most Popular",
+    socialProof: "Popular among Shopify store owners",
+    microHook: "Turn DM conversations into automated sales",
     href: "https://manychat.com/?irclickid=VnSTflW-KxycRDrzAA0SXwH3Ukpy-iUnJQllWI0&irgwc=1&utm_source=Affiliate&utm_content=LETHUY&utm_medium=Impact&utm_campaign=Online%20Tracking%20Link",
   },
   {
     name: "GoHighLevel",
-    description: "All-in-one CRM and marketing automation platform. Manage leads, automate follow-ups, build funnels, and handle customer communication from a single dashboard — replacing multiple tools.",
-    bestFor: "Ecommerce brands and agencies managing multiple client accounts",
-    benefit: "Consolidate your CRM, email, SMS, and funnel tools into one platform",
+    description: "All-in-one CRM and marketing automation platform. Manage leads, automate follow-ups, build funnels, and handle customer communication from one dashboard.",
+    bestFor: "Ecommerce brands and agencies managing multiple accounts",
+    benefit: "Consolidate CRM, email, SMS, and funnels into one platform",
     category: "Chat Automation & CRM",
-    featured: false,
+    socialProof: "Trusted by agencies and ecommerce operators",
+    microHook: "Replace multiple tools with one platform",
     href: "https://www.gohighlevel.com/?fp_ref=ecomstack",
   },
   {
     name: "Evebee",
-    description: "Product research and store analytics tool built specifically for Etsy and Shopify sellers. Discover trending products, analyze competitor performance, and identify profitable niches with data-driven insights.",
+    description: "Product research and store analytics tool for Etsy and Shopify sellers. Discover trending products, analyze competitors, and identify profitable niches.",
     bestFor: "Dropshippers and store owners doing product research",
-    benefit: "Find proven products and profitable niches before competitors using real marketplace data",
+    benefit: "Find proven products before competitors using real data",
     category: "Product Research & Optimization",
-    featured: false,
+    socialProof: "Used by many ecommerce brands for product research",
+    microHook: "Discover winning products with real marketplace data",
     href: "https://www.everbee.io/?via=EcomStack",
   },
   {
     name: "Easyship",
-    description: "Global shipping platform that connects your store to 250+ courier services. Compare rates, generate labels, automate shipping rules, and provide real-time tracking to customers across 220+ countries.",
+    description: "Global shipping platform connecting your store to 250+ courier services. Compare rates, generate labels, and automate shipping across 220+ countries.",
     bestFor: "Ecommerce stores shipping domestically or internationally",
-    benefit: "Reduce shipping costs and delivery times with automated rate comparison and label generation",
+    benefit: "Reduce shipping costs with automated rate comparison",
     category: "Shipping & Fulfillment",
-    featured: false,
+    socialProof: "Trusted by ecommerce brands shipping worldwide",
+    microHook: "Ship faster and cheaper with automated logistics",
     href: "https://www.easyship.com/?utm_campaign=4988344&utm_term=10435&utm_content=666308&utm_medium=affiliate&irclickid=1Sd0JU24pxyZWXzxnEWLWz28Uku1lr3BZTtIxE0&irgwc=1&afsrc=1&utm_source=LETHUY",
   },
   {
     name: "Systeme",
-    description: "All-in-one marketing platform for building sales funnels, email campaigns, online courses, and membership sites. A cost-effective alternative to ClickFunnels and Kajabi for ecommerce operators building systems.",
+    description: "All-in-one marketing platform for sales funnels, email campaigns, online courses, and membership sites. A cost-effective alternative to ClickFunnels.",
     bestFor: "Solo founders and small teams building marketing funnels",
-    benefit: "Build funnels, email sequences, and landing pages without paying for multiple subscriptions",
+    benefit: "Build funnels, email sequences, and pages without multiple subscriptions",
     category: "Funnels & Marketing Systems",
-    featured: false,
+    socialProof: "Popular among solo founders and small teams",
+    microHook: "Build your entire funnel stack for less",
     href: "https://systeme.io/?sa=sa0246910810ba30b29294f24dd70d00c490781e19",
   },
 ];
 
 const categories = ["All", "Tracking & Attribution", "AI Content & Ad Creation", "Chat Automation & CRM", "Product Research & Optimization", "Shipping & Fulfillment", "Funnels & Marketing Systems"];
+
+const comparisonTools = [
+  { name: "WeTracked", bestFor: "Ad tracking & attribution", useCase: "Recover lost conversions from iOS changes", href: "https://www.wetracked.io/?ref=ddf2eabf-bf17-4363-aaef-585e9c4e763a" },
+  { name: "Holo AI", bestFor: "AI ad creatives", useCase: "Scale video and image ad production", href: "https://tryholo.ai/?utm_medium=affiliate&utm_source=4988344&utm_campaign=41932&im_ref=VR4UEcxOMxyZW1iwCnQUZz87Uku1QdzxZTtOR00&utm_ad_id=3273895&irgwc=1&afsrc=1" },
+  { name: "ManyChat", bestFor: "Chat automation", useCase: "Automate DM-based sales funnels", href: "https://manychat.com/?irclickid=VnSTflW-KxycRDrzAA0SXwH3Ukpy-iUnJQllWI0&irgwc=1&utm_source=Affiliate&utm_content=LETHUY&utm_medium=Impact&utm_campaign=Online%20Tracking%20Link" },
+  { name: "Easyship", bestFor: "Shipping & fulfillment", useCase: "Compare rates and automate labels globally", href: "https://www.easyship.com/?utm_campaign=4988344&utm_term=10435&utm_content=666308&utm_medium=affiliate&irclickid=1Sd0JU24pxyZWXzxnEWLWz28Uku1lr3BZTtIxE0&irgwc=1&afsrc=1&utm_source=LETHUY" },
+  { name: "Systeme", bestFor: "Funnels & email", useCase: "Build funnels and email sequences affordably", href: "https://systeme.io/?sa=sa0246910810ba30b29294f24dd70d00c490781e19" },
+];
 
 function ToolsPage() {
   const [activeCategory, setActiveCategory] = useState("All");
@@ -104,6 +136,7 @@ function ToolsPage() {
     <div className="min-h-screen">
       <Header />
 
+      {/* Hero */}
       <section className="bg-card py-20 sm:py-24">
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
           <p className="text-xs font-semibold uppercase tracking-widest text-brand">Curated Directory</p>
@@ -114,7 +147,23 @@ function ToolsPage() {
         </div>
       </section>
 
-      <section className="py-14 sm:py-20">
+      {/* Intro guidance */}
+      <section className="py-12 sm:py-16">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6">
+          <h2 className="font-display text-xl font-bold text-foreground">How to Build Your Stack</h2>
+          <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+            Every ecommerce operation has different needs, but the most effective stacks follow a logical order. Start with accurate data, then layer on creative production and automation to scale efficiently.
+          </p>
+          <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
+            <li className="flex items-start gap-2"><span className="mt-0.5 font-bold text-brand">1.</span> <span><strong className="text-foreground">Tracking & attribution</strong> — fix your data foundation before spending on ads</span></li>
+            <li className="flex items-start gap-2"><span className="mt-0.5 font-bold text-brand">2.</span> <span><strong className="text-foreground">AI creatives & content</strong> — produce ads and product visuals at scale</span></li>
+            <li className="flex items-start gap-2"><span className="mt-0.5 font-bold text-brand">3.</span> <span><strong className="text-foreground">Automation & systems</strong> — automate chat, shipping, funnels, and CRM</span></li>
+          </ul>
+        </div>
+      </section>
+
+      {/* Tools grid */}
+      <section className="pb-16 sm:pb-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <div className="flex flex-wrap gap-2">
             {categories.map((cat) => (
@@ -142,6 +191,43 @@ function ToolsPage() {
         </div>
       </section>
 
+      {/* Comparison table */}
+      <section className="bg-card py-14 sm:py-18">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6">
+          <h2 className="font-display text-xl font-bold text-foreground text-center">Quick Comparison</h2>
+          <p className="mt-2 text-sm text-muted-foreground text-center">A side-by-side look at the core tools in our recommended stack.</p>
+          <div className="mt-8 rounded-xl border bg-background overflow-hidden">
+            <Table>
+              <TableHeader>
+                <TableRow>
+                  <TableHead className="font-display font-bold">Tool</TableHead>
+                  <TableHead className="font-display font-bold">Best For</TableHead>
+                  <TableHead className="font-display font-bold hidden sm:table-cell">Use Case</TableHead>
+                  <TableHead className="font-display font-bold text-right">Action</TableHead>
+                </TableRow>
+              </TableHeader>
+              <TableBody>
+                {comparisonTools.map((t) => (
+                  <TableRow key={t.name}>
+                    <TableCell className="font-medium text-foreground">{t.name}</TableCell>
+                    <TableCell className="text-muted-foreground text-sm">{t.bestFor}</TableCell>
+                    <TableCell className="text-muted-foreground text-sm hidden sm:table-cell">{t.useCase}</TableCell>
+                    <TableCell className="text-right">
+                      <a href={t.href} target="_blank" rel="noopener noreferrer nofollow">
+                        <Button variant="ghost" size="sm" className="gap-1 text-xs text-brand hover:text-brand">
+                          Explore <ArrowUpRight className="h-3 w-3" />
+                        </Button>
+                      </a>
+                    </TableCell>
+                  </TableRow>
+                ))}
+              </TableBody>
+            </Table>
+          </div>
+        </div>
+      </section>
+
+      {/* How we evaluate */}
       <section className="bg-surface py-16 sm:py-20">
         <div className="mx-auto max-w-4xl px-4 sm:px-6">
           <div className="text-center">
