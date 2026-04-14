@@ -3,8 +3,8 @@ import { Link } from "@tanstack/react-router";
 export function Footer() {
   return (
     <footer className="border-t border-border bg-card">
-      <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
+        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div className="sm:col-span-2 lg:col-span-1">
             <Link to="/" className="flex items-center gap-2">
               <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary">
@@ -12,14 +12,17 @@ export function Footer() {
               </div>
               <span className="font-display text-lg font-bold text-foreground">EcomStack</span>
             </Link>
-            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-              Helping ecommerce founders discover the best AI and growth tools to scale their businesses.
+            <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+              An independent publication helping ecommerce founders discover the best AI and growth tools to scale their businesses.
+            </p>
+            <p className="mt-3 text-xs text-muted-foreground/70">
+              Affiliate Disclosure: Some links on this site are affiliate links. We may earn a commission if you make a purchase — at no extra cost to you. This does not influence our editorial recommendations.
             </p>
           </div>
 
           <div>
             <h4 className="font-display text-sm font-semibold text-foreground">Navigate</h4>
-            <ul className="mt-3 space-y-2">
+            <ul className="mt-4 space-y-2.5">
               {[
                 { to: "/" as const, label: "Home" },
                 { to: "/tools" as const, label: "Tools" },
@@ -38,7 +41,7 @@ export function Footer() {
 
           <div>
             <h4 className="font-display text-sm font-semibold text-foreground">Categories</h4>
-            <ul className="mt-3 space-y-2">
+            <ul className="mt-4 space-y-2.5">
               {["Tracking & Attribution", "AI Content & Ads", "Chat Automation", "Product Research", "CRM & Follow-Up", "Analytics"].map((cat) => (
                 <li key={cat}>
                   <Link to="/tools" className="text-sm text-muted-foreground transition-colors hover:text-foreground">
@@ -51,7 +54,7 @@ export function Footer() {
 
           <div>
             <h4 className="font-display text-sm font-semibold text-foreground">Legal</h4>
-            <ul className="mt-3 space-y-2">
+            <ul className="mt-4 space-y-2.5">
               {[
                 { to: "/privacy" as const, label: "Privacy Policy" },
                 { to: "/terms" as const, label: "Terms of Service" },
@@ -64,13 +67,24 @@ export function Footer() {
                 </li>
               ))}
             </ul>
+            <div className="mt-6 rounded-lg bg-surface p-3">
+              <p className="text-xs font-medium text-foreground">Editorial Independence</p>
+              <p className="mt-1 text-xs leading-relaxed text-muted-foreground">
+                All recommendations are based on independent research. We never accept paid placements.
+              </p>
+            </div>
           </div>
         </div>
 
-        <div className="mt-10 border-t border-border pt-6">
-          <p className="text-center text-xs text-muted-foreground">
-            © {new Date().getFullYear()} EcomStack. All rights reserved. Independent tool recommendations for ecommerce growth.
+        <div className="mt-12 border-t border-border pt-6 sm:flex sm:items-center sm:justify-between">
+          <p className="text-xs text-muted-foreground">
+            © {new Date().getFullYear()} EcomStack. All rights reserved.
           </p>
+          <div className="mt-3 flex gap-4 sm:mt-0">
+            <Link to="/privacy" className="text-xs text-muted-foreground hover:text-foreground">Privacy</Link>
+            <Link to="/terms" className="text-xs text-muted-foreground hover:text-foreground">Terms</Link>
+            <Link to="/disclaimer" className="text-xs text-muted-foreground hover:text-foreground">Disclaimer</Link>
+          </div>
         </div>
       </div>
     </footer>

@@ -46,25 +46,26 @@ function BlogPage() {
     <div className="min-h-screen">
       <Header />
 
-      <section className="bg-card py-16 sm:py-20">
+      <section className="bg-card py-20 sm:py-24">
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
-          <h1 className="font-display text-3xl font-extrabold text-foreground sm:text-4xl">Blog</h1>
-          <p className="mt-3 text-base leading-relaxed text-muted-foreground">
+          <p className="text-xs font-semibold uppercase tracking-widest text-brand">Editorial Content</p>
+          <h1 className="mt-3 font-display text-3xl font-extrabold text-foreground sm:text-4xl">Blog</h1>
+          <p className="mx-auto mt-4 max-w-lg text-base leading-relaxed text-muted-foreground">
             Practical guides, tool reviews, and growth strategies for ecommerce founders and operators.
           </p>
         </div>
       </section>
 
       {featured && (
-        <section className="py-8 sm:py-12">
+        <section className="py-10 sm:py-14">
           <div className="mx-auto max-w-6xl px-4 sm:px-6">
-            <h2 className="mb-4 font-display text-sm font-bold text-muted-foreground uppercase tracking-wider">Featured Article</h2>
+            <p className="mb-4 text-xs font-semibold uppercase tracking-widest text-brand">Featured Article</p>
             <ArticleCard {...featured} featured />
           </div>
         </section>
       )}
 
-      <section className="py-8 sm:py-12">
+      <section className="py-10 sm:py-14">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
             <div className="flex flex-wrap gap-2">
@@ -91,7 +92,7 @@ function BlogPage() {
             </div>
           </div>
 
-          <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {filtered.map((article) => (
               <ArticleCard key={article.slug} {...article} />
             ))}
