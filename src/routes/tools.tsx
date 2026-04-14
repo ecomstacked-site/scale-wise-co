@@ -1,10 +1,11 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Newsletter } from "@/components/Newsletter";
 import { ToolCard } from "@/components/ToolCard";
 import { Button } from "@/components/ui/button";
+import { Shield, CheckCircle2, Eye, FileSearch } from "lucide-react";
 
 export const Route = createFileRoute("/tools")({
   head: () => ({
@@ -41,16 +42,17 @@ function ToolsPage() {
     <div className="min-h-screen">
       <Header />
 
-      <section className="bg-card py-16 sm:py-20">
+      <section className="bg-card py-20 sm:py-24">
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
-          <h1 className="font-display text-3xl font-extrabold text-foreground sm:text-4xl">Recommended Tools</h1>
-          <p className="mt-3 text-base leading-relaxed text-muted-foreground">
-            A curated directory of the best software for ecommerce growth. Each tool is evaluated for real-world use cases, ease of setup, and value for ecommerce operators.
+          <p className="text-xs font-semibold uppercase tracking-widest text-brand">Curated Directory</p>
+          <h1 className="mt-3 font-display text-3xl font-extrabold text-foreground sm:text-4xl">Recommended Tools</h1>
+          <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-muted-foreground">
+            A curated directory of the best software for ecommerce growth. Each tool is independently evaluated for real-world use cases, ease of setup, and value for operators.
           </p>
         </div>
       </section>
 
-      <section className="py-12 sm:py-16">
+      <section className="py-14 sm:py-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <div className="flex flex-wrap gap-2">
             {categories.map((cat) => (
@@ -66,7 +68,7 @@ function ToolsPage() {
             ))}
           </div>
 
-          <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {filtered.map((tool) => (
               <ToolCard key={tool.name} {...tool} />
             ))}
@@ -78,12 +80,30 @@ function ToolsPage() {
         </div>
       </section>
 
-      <section className="bg-surface py-12 sm:py-16">
-        <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
-          <h2 className="font-display text-xl font-bold text-foreground">How We Evaluate Tools</h2>
-          <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-            Every tool listed on EcomStack is evaluated based on real-world ecommerce use cases, ease of integration, pricing transparency, and the actual results operators report. We prioritize tools that solve genuine problems over those with the biggest marketing budgets.
-          </p>
+      <section className="bg-surface py-16 sm:py-20">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6">
+          <div className="text-center">
+            <p className="text-xs font-semibold uppercase tracking-widest text-brand">Our Standards</p>
+            <h2 className="mt-2 font-display text-xl font-bold text-foreground sm:text-2xl">How We Evaluate Tools</h2>
+            <p className="mx-auto mt-3 max-w-lg text-sm leading-relaxed text-muted-foreground">
+              Every tool listed on EcomStack is evaluated based on real-world ecommerce use cases, ease of integration, pricing transparency, and the actual results operators report.
+            </p>
+          </div>
+          <div className="mt-10 grid gap-6 sm:grid-cols-3">
+            {[
+              { icon: FileSearch, title: "Research-Driven", desc: "We test tools in real workflows and compare alternatives before recommending." },
+              { icon: Shield, title: "No Paid Placements", desc: "Rankings are never influenced by vendor payments or commission rates." },
+              { icon: Eye, title: "Transparent Disclosure", desc: "Affiliate links are always clearly labeled. Our process is open." },
+            ].map((item) => (
+              <div key={item.title} className="text-center">
+                <div className="mx-auto flex h-11 w-11 items-center justify-center rounded-xl bg-card border border-border">
+                  <item.icon className="h-5 w-5 text-brand" />
+                </div>
+                <h3 className="mt-3 font-display text-sm font-bold text-foreground">{item.title}</h3>
+                <p className="mt-1.5 text-xs leading-relaxed text-muted-foreground">{item.desc}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
