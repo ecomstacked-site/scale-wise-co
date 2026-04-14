@@ -11,22 +11,31 @@ interface ToolCardProps {
   category: string;
   featured?: boolean;
   href?: string;
+  socialProof?: string;
+  microHook?: string;
+  extraBadge?: string;
 }
 
-export function ToolCard({ name, description, bestFor, benefit, category, featured, href }: ToolCardProps) {
+export function ToolCard({ name, description, bestFor, benefit, category, featured, href, socialProof, microHook, extraBadge }: ToolCardProps) {
   return (
     <Card className={`group relative overflow-hidden transition-all duration-200 hover:shadow-md hover:border-brand/20 ${featured ? "border-brand/20" : ""}`}>
-      {featured && (
-        <div className="absolute right-3 top-3">
-          <Badge variant="default" className="bg-brand text-brand-foreground text-xs">Editor's Pick</Badge>
-        </div>
-      )}
-      <CardContent className="p-6">
+      <CardContent className="flex h-full flex-col p-6">
+        {/* 1. Icon */}
         <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-surface">
           <span className="font-display text-sm font-bold text-surface-foreground">{name.charAt(0)}</span>
         </div>
-        <h3 className="mt-4 font-display text-lg font-bold text-card-foreground">{name}</h3>
+
+        {/* 2. Name + badges */}
+        <div className="mt-4 flex items-center gap-2 flex-wrap">
+          <h3 className="font-display text-lg font-bold text-card-foreground">{name}</h3>
+          {featured && <Badge variant="default" className="bg-brand text-brand-foreground text-[10px] leading-tight">Editor's Pick</Badge>}
+          {extraBadge && <Badge variant="outline" className="text-[10px] leading-tight">{extraBadge}</Badge>}
+        </div>
+
+        {/* 3. Description */}
         <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{description}</p>
+
+        {/* 4. Benefits (max 2) */}
         <div className="mt-4 space-y-2">
           <div className="flex items-start gap-2">
             <CheckCircle2 className="mt-0.5 h-3.5 w-3.5 shrink-0 text-brand" />
@@ -37,16 +46,30 @@ export function ToolCard({ name, description, bestFor, benefit, category, featur
             <span className="text-xs text-card-foreground">{benefit}</span>
           </div>
         </div>
-        <div className="mt-5 flex items-center justify-between">
+
+        {/* 5. Social proof */}
+        {socialProof && (
+          <p className="mt-3 text-[11px] italic text-muted-foreground">{socialProof}</p>
+        )}
+
+        {/* 6. Category tag */}
+        <div className="mt-auto pt-5">
           <Badge variant="secondary" className="text-xs">{category}</Badge>
+        </div>
+
+        {/* 7. Micro hook + 8. CTA */}
+        <div className="mt-3">
+          {microHook && (
+            <p className="mb-2 text-[11px] font-medium text-foreground/70">{microHook}</p>
+          )}
           {href ? (
-            <a href={href} target="_blank" rel="noopener noreferrer nofollow">
-              <Button variant="ghost" size="sm" className="gap-1 text-xs text-brand hover:text-brand">
+            <a href={href} target="_blank" rel="noopener noreferrer nofollow" className="block">
+              <Button variant="brand-outline" size="sm" className="w-full gap-1 text-xs">
                 Visit Website <ArrowUpRight className="h-3 w-3" />
               </Button>
             </a>
           ) : (
-            <Button variant="ghost" size="sm" className="gap-1 text-xs text-brand hover:text-brand">
+            <Button variant="brand-outline" size="sm" className="w-full gap-1 text-xs">
               Learn More <ArrowUpRight className="h-3 w-3" />
             </Button>
           )}
