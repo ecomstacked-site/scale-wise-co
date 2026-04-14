@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Newsletter } from "@/components/Newsletter";
-import { Shield, Eye, Target, Users, BookOpen, TrendingUp, CheckCircle2, FileSearch, Layers, ArrowRight } from "lucide-react";
+import { Shield, Eye, Target, Users, BookOpen, TrendingUp, CheckCircle2, FileSearch, ArrowRight, Package, Layers, MessageSquare } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export const Route = createFileRoute("/about")({
@@ -27,7 +27,7 @@ function AboutPage() {
           <p className="text-xs font-semibold uppercase tracking-widest text-brand">About Us</p>
           <h1 className="mt-3 font-display text-3xl font-extrabold text-foreground sm:text-4xl lg:text-5xl">We Help Ecommerce Brands Find Better Tools</h1>
           <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-muted-foreground">
-            EcomStack is an independent editorial publication. We research, test, and organize the best software for ecommerce operators — so you can make informed decisions without the noise.
+            EcomStack is an independent editorial publication dedicated to helping ecommerce founders, dropshippers, and online business operators discover, evaluate, and implement the right software tools for growth.
           </p>
         </div>
       </section>
@@ -43,10 +43,13 @@ function AboutPage() {
             </div>
             <div className="lg:col-span-3">
               <p className="text-sm leading-relaxed text-muted-foreground">
-                The ecommerce tool landscape is overwhelming. New software launches daily, and it's hard to know what's worth your time and budget. EcomStack exists to solve that problem. We take a research-driven, editorial approach to identifying the tools that genuinely help ecommerce businesses grow — and we present our findings in a clear, practical, and honest way.
+                The ecommerce software landscape is overwhelming. Hundreds of tools launch every year, each claiming to be the solution to your growth problems. For busy operators running stores, managing ads, and handling fulfillment, there simply isn't time to test everything.
               </p>
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-                We are not a marketplace or a lead generation platform. We are a publication. Our content is written for operators, by people who understand the ecommerce space.
+                EcomStack exists to solve that problem. We take a research-driven, editorial approach to identifying the tools that genuinely help ecommerce businesses grow. We test tools in real workflows, compare alternatives side by side, and publish our findings in clear, practical content designed for operators — not software reviewers.
+              </p>
+              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                We are not a marketplace or a lead generation platform. We are a publication. Our goal is to be the most trustworthy resource for ecommerce software recommendations on the internet.
               </p>
             </div>
           </div>
@@ -57,17 +60,17 @@ function AboutPage() {
               <p className="text-xs font-semibold uppercase tracking-widest text-brand">Coverage Areas</p>
               <h2 className="mt-2 font-display text-xl font-bold text-foreground sm:text-2xl">What We Cover</h2>
               <p className="mx-auto mt-3 max-w-lg text-sm leading-relaxed text-muted-foreground">
-                We focus on the software categories that matter most to ecommerce growth and operations.
+                We focus on the software categories that have the biggest impact on ecommerce growth and daily operations.
               </p>
             </div>
             <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {[
-                { icon: Target, label: "Ad Tracking & Attribution", desc: "Server-side tracking, pixel management, and conversion recovery tools" },
-                { icon: Eye, label: "AI Content & Ad Creation", desc: "Tools that use AI to generate creatives, copy, and marketing content" },
-                { icon: Users, label: "Chat Automation & Lead Capture", desc: "Messaging platforms for automated engagement and sales" },
-                { icon: TrendingUp, label: "Analytics & Growth", desc: "Data dashboards, reporting, and performance optimization tools" },
-                { icon: BookOpen, label: "Product Research", desc: "Winning product discovery and store optimization tools" },
-                { icon: Shield, label: "CRM & Retention", desc: "Customer follow-up, email flows, and lifetime value tools" },
+                { icon: Target, label: "Tracking & Attribution", desc: "Server-side tracking, conversion recovery, and ad attribution tools that give you accurate data" },
+                { icon: Eye, label: "AI Content & Ad Creation", desc: "AI-powered platforms for generating ad creatives, product photos, and marketing copy at scale" },
+                { icon: MessageSquare, label: "Chat Automation & CRM", desc: "Automated messaging, lead capture, and customer relationship tools for DM-driven sales" },
+                { icon: TrendingUp, label: "Product Research & Optimization", desc: "Tools for finding winning products, analyzing competitors, and optimizing store performance" },
+                { icon: Package, label: "Shipping & Fulfillment", desc: "Platforms that streamline shipping, reduce costs, and improve delivery speed across global markets" },
+                { icon: Layers, label: "Funnels & Marketing Systems", desc: "All-in-one platforms for building sales funnels, email campaigns, and marketing automation" },
               ].map((item) => (
                 <div key={item.label} className="rounded-xl border border-border bg-card p-5">
                   <div className="flex items-center gap-3">
@@ -90,16 +93,16 @@ function AboutPage() {
             </div>
             <div className="lg:col-span-3">
               <p className="text-sm leading-relaxed text-muted-foreground">
-                EcomStack is built for people who run online businesses and want practical, trustworthy guidance on what software to use.
+                EcomStack is built for people who run online businesses and want practical, trustworthy guidance on what software to use. Whether you're just starting your first store or scaling an established brand, our content is designed to help you make better tool decisions.
               </p>
               <ul className="mt-5 space-y-3">
                 {[
-                  "Dropshippers building and scaling stores",
-                  "Shopify store owners optimizing their operations",
-                  "Ecommerce founders looking for better systems",
-                  "Media buyers improving ad tracking and ROAS",
-                  "Performance marketers testing new tools",
-                  "Small online business owners automating workflows"
+                  "Dropshippers building and scaling their first or next store",
+                  "Shopify store owners looking to optimize operations and increase profitability",
+                  "Ecommerce founders evaluating new tools for tracking, automation, and growth",
+                  "Media buyers improving ad attribution, creative production, and ROAS",
+                  "Performance marketers testing new platforms for content and analytics",
+                  "Small online business owners automating workflows to save time and resources"
                 ].map((item) => (
                   <li key={item} className="flex items-center gap-3 text-sm text-foreground">
                     <CheckCircle2 className="h-4 w-4 shrink-0 text-brand" />
@@ -116,17 +119,17 @@ function AboutPage() {
               <p className="text-xs font-semibold uppercase tracking-widest text-brand">Our Process</p>
               <h2 className="mt-2 font-display text-xl font-bold text-foreground sm:text-2xl">How We Evaluate Tools</h2>
               <p className="mx-auto mt-3 max-w-lg text-sm leading-relaxed text-muted-foreground">
-                We take a structured, editorial approach to evaluating software. Every tool we feature goes through a review process.
+                We take a structured, editorial approach to evaluating software. Every tool we feature goes through a multi-step review process before it appears on EcomStack.
               </p>
             </div>
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
               {[
-                { title: "Real-World Use Cases", desc: "We evaluate tools in the context of actual ecommerce workflows, not theoretical scenarios." },
-                { title: "Ease of Setup & Use", desc: "We consider how quickly a team can implement and start getting value from the tool." },
-                { title: "Value for Money", desc: "We look at pricing relative to the results the tool can deliver for ecommerce operators." },
-                { title: "Integration & Compatibility", desc: "We check how well the tool works with popular platforms like Shopify, Meta, and Google." },
-                { title: "Support & Documentation", desc: "We assess the quality of customer support and available learning resources." },
-                { title: "Competitive Landscape", desc: "We compare alternatives and identify where each tool offers a genuine advantage." },
+                { title: "Real-World Use Cases", desc: "We evaluate tools in the context of actual ecommerce workflows — not demos or sandbox environments. Does it solve a real problem for a real operator?" },
+                { title: "Ease of Setup & Use", desc: "We consider how quickly a team can implement the tool and start getting value. Complex onboarding is a real cost, and we factor it into our assessment." },
+                { title: "Value for Money", desc: "We look at pricing relative to the results the tool can deliver. A $200/month tool that saves 10 hours of work per week is a better investment than a $29 tool that sits unused." },
+                { title: "Integration & Compatibility", desc: "We check how well the tool integrates with popular platforms like Shopify, Meta Ads, Google Ads, and TikTok. Poor integration is a dealbreaker." },
+                { title: "Support & Documentation", desc: "We assess the quality of customer support, onboarding resources, and documentation. Good tools with bad support create more problems than they solve." },
+                { title: "Competitive Landscape", desc: "We compare alternatives and identify where each tool offers a genuine advantage. We don't recommend a tool if a better option exists at a similar price point." },
               ].map((item) => (
                 <div key={item.title} className="rounded-xl border border-border bg-card p-5">
                   <h3 className="font-display text-sm font-bold text-foreground">{item.title}</h3>
@@ -142,14 +145,14 @@ function AboutPage() {
               <p className="text-xs font-semibold uppercase tracking-widest text-brand">Editorial Values</p>
               <h2 className="mt-2 font-display text-xl font-bold text-foreground sm:text-2xl">Independent, Transparent, Reader-First</h2>
               <p className="mx-auto mt-3 max-w-lg text-sm leading-relaxed text-muted-foreground">
-                EcomStack is an independent publication. We are committed to providing honest, useful guidance that serves our readers above all else.
+                EcomStack is an independent publication. We are committed to providing honest, useful guidance that serves our readers above all else. Our editorial process is designed to eliminate bias and prioritize practical value.
               </p>
             </div>
             <div className="mt-8 grid gap-6 sm:grid-cols-3">
               {[
-                { icon: Shield, title: "No Pay-to-Play", desc: "We don't accept paid placements or rank tools based on commission rates." },
-                { icon: Eye, title: "Full Disclosure", desc: "When we use affiliate links, we label them clearly. Our process is always transparent." },
-                { icon: FileSearch, title: "Research-Driven", desc: "Every recommendation is backed by structured evaluation, not vendor relationships." },
+                { icon: Shield, title: "No Pay-to-Play", desc: "We don't accept paid placements or rank tools based on commission rates. Our recommendations are based on research, not revenue." },
+                { icon: Eye, title: "Full Disclosure", desc: "When we use affiliate links, we label them clearly. We believe transparency builds trust, and we never hide our partnerships." },
+                { icon: FileSearch, title: "Research-Driven", desc: "Every recommendation is backed by structured evaluation and real-world testing — not vendor relationships or promotional deals." },
               ].map((item) => (
                 <div key={item.title} className="text-center">
                   <div className="mx-auto flex h-11 w-11 items-center justify-center rounded-xl bg-surface">
