@@ -26,10 +26,10 @@ export const Route = createFileRoute("/")({
 });
 
 const featuredTools = [
-  { name: "WeTracked", description: "Accurate server-side tracking for Facebook, Google, and TikTok ads with first-party data.", bestFor: "Ad tracking & attribution", benefit: "Recover lost conversions and improve ROAS", category: "Tracking", featured: true },
-  { name: "Holo AI", description: "AI-powered ad creative generation for ecommerce brands. Create winning ads at scale.", bestFor: "Ad creative & content", benefit: "Produce more creatives in less time", category: "AI Content", featured: true },
-  { name: "ManyChat", description: "Automated messaging for Instagram, Facebook, and WhatsApp to capture leads and drive sales.", bestFor: "Chat automation & DMs", benefit: "Convert conversations into customers", category: "Automation", featured: false },
-  { name: "Evebee", description: "Smart product recommendations and store optimization tools for Shopify.", bestFor: "Store optimization", benefit: "Increase AOV and conversion rates", category: "Optimization", featured: false },
+  { name: "WeTracked", description: "Accurate server-side tracking for Facebook, Google, and TikTok ads with first-party data.", bestFor: "Ad tracking & attribution", benefit: "Recover lost conversions and improve ROAS", category: "Tracking", featured: true, href: "https://www.wetracked.io/?ref=ddf2eabf-bf17-4363-aaef-585e9c4e763a" },
+  { name: "Holo AI", description: "AI-powered ad creative generation for ecommerce brands. Create winning ads at scale.", bestFor: "Ad creative & content", benefit: "Produce more creatives in less time", category: "AI Content", featured: true, href: "https://tryholo.ai/?utm_medium=affiliate&utm_source=4988344&utm_campaign=41932&im_ref=VR4UEcxOMxyZW1iwCnQUZz87Uku1QdzxZTtOR00&utm_ad_id=3273895&irgwc=1&afsrc=1" },
+  { name: "ManyChat", description: "Automated messaging for Instagram, Facebook, and WhatsApp to capture leads and drive sales.", bestFor: "Chat automation & DMs", benefit: "Convert conversations into customers", category: "Automation", featured: false, href: "https://manychat.com/?irclickid=VnSTflW-KxycRDrzAA0SXwH3Ukpy-iUnJQllWI0&irgwc=1&utm_source=Affiliate&utm_content=LETHUY&utm_medium=Impact&utm_campaign=Online%20Tracking%20Link" },
+  { name: "Evebee", description: "Smart product recommendations and store optimization tools for Shopify.", bestFor: "Store optimization", benefit: "Increase AOV and conversion rates", category: "Optimization", featured: false, href: "https://www.everbee.io/?via=EcomStack" },
 ];
 
 const categories = [
