@@ -37,7 +37,7 @@ function BlogPostPage() {
   const article = articlesMeta.find((a) => a.slug === slug);
   const content = getArticleContent(slug);
 
-  const title = article?.title ?? slug.replace(/-/g, " ").replace(/\b\w/g, (l) => l.toUpperCase());
+  const title = article?.title ?? slug.replace(/-/g, " ").replace(/\b\w/g, (l: string) => l.toUpperCase());
   const readTime = article?.readTime ?? "8 min read";
   const date = article?.date ?? "April 2026";
   const category = article?.category ?? "Guide";
