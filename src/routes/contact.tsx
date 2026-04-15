@@ -9,10 +9,10 @@ import { Mail, MessageSquare, Handshake } from "lucide-react";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — EcomStack" },
-      { name: "description", content: "Get in touch with EcomStack for business inquiries, partnerships, feedback, or editorial questions." },
-      { property: "og:title", content: "Contact — EcomStack" },
-      { property: "og:description", content: "Reach out for partnerships, inquiries, and feedback." },
+      { title: "Contact — EcomStacked" },
+      { name: "description", content: "Get in touch with EcomStacked for partnerships, tool submissions, or support." },
+      { property: "og:title", content: "Contact — EcomStacked" },
+      { property: "og:description", content: "Reach out for partnerships, tool submissions, or support." },
     ],
   }),
   component: ContactPage,
@@ -27,7 +27,7 @@ function ContactPage() {
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
           <h1 className="font-display text-3xl font-extrabold text-foreground sm:text-4xl">Contact Us</h1>
           <p className="mt-3 text-base leading-relaxed text-muted-foreground">
-            We'd love to hear from you. Whether it's a business inquiry, partnership opportunity, or general feedback — reach out below.
+            For partnerships, tool submissions, or support, feel free to reach out.
           </p>
         </div>
       </section>
@@ -69,8 +69,8 @@ function ContactPage() {
 
             <div className="space-y-4 lg:col-span-2">
               {[
-                { icon: Mail, title: "Email", desc: "For general inquiries and questions", detail: "hello@ecomstack.com" },
-                { icon: Handshake, title: "Partnerships", desc: "For tool submissions and sponsorships", detail: "partners@ecomstack.com" },
+                { icon: Mail, title: "Email", desc: "For general inquiries and questions", detail: "hello@ecomstacked.io" },
+                { icon: Handshake, title: "Partnerships", desc: "Tool submissions and sponsorship inquiries", detail: "hello@ecomstacked.io" },
                 { icon: MessageSquare, title: "Feedback", desc: "Help us improve our content", detail: "We read every message" },
               ].map((item) => (
                 <Card key={item.title}>

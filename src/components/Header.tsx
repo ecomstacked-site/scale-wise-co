@@ -21,7 +21,7 @@ export function Header() {
           <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary">
             <span className="font-display text-sm font-bold text-primary-foreground">E</span>
           </div>
-          <span className="font-display text-lg font-bold text-foreground">EcomStack</span>
+          <span className="font-display text-lg font-bold text-foreground">EcomStacked</span>
         </Link>
 
         <nav className="hidden items-center gap-1 md:flex">
