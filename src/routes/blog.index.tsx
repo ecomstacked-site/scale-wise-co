@@ -12,9 +12,9 @@ import { articlesMeta } from "@/lib/articles";
 export const Route = createFileRoute("/blog/")({
   head: () => ({
     meta: [
-      { title: "Blog — EcomStack" },
+      { title: "Blog — EcomStacked" },
       { name: "description", content: "Guides, strategies, and tool breakdowns for ecommerce founders, dropshippers, and media buyers." },
-      { property: "og:title", content: "Blog — EcomStack" },
+      { property: "og:title", content: "Blog — EcomStacked" },
       { property: "og:description", content: "Practical guides and tool reviews for ecommerce growth." },
     ],
   }),

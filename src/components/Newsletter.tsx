@@ -30,7 +30,7 @@ export function Newsletter() {
           <span>·</span>
           <span>Unsubscribe anytime</span>
           <span>·</span>
-          <span>2,000+ subscribers</span>
+          <span>2,000+ readers</span>
         </div>
       </div>
     </section>

@@ -10,13 +10,13 @@ export function Footer() {
               <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary">
                 <span className="font-display text-sm font-bold text-primary-foreground">E</span>
               </div>
-              <span className="font-display text-lg font-bold text-foreground">EcomStack</span>
+              <span className="font-display text-lg font-bold text-foreground">EcomStacked</span>
             </Link>
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-              An independent publication helping ecommerce founders discover the best AI and growth tools to scale their businesses.
+              A resource for ecommerce founders, marketers, and Shopify store owners looking to scale with better tools.
             </p>
             <p className="mt-3 text-xs text-muted-foreground/70">
-              Affiliate Disclosure: Some links on this site are affiliate links. We may earn a commission if you make a purchase — at no extra cost to you. This does not influence our editorial recommendations.
+              This website may earn commissions from affiliate links. We only recommend tools we believe provide real value.
             </p>
           </div>
 
@@ -78,7 +78,7 @@ export function Footer() {
 
         <div className="mt-12 border-t border-border pt-6 sm:flex sm:items-center sm:justify-between">
           <p className="text-xs text-muted-foreground">
-            © {new Date().getFullYear()} EcomStack. All rights reserved.
+            © {new Date().getFullYear()} EcomStacked. All rights reserved.
           </p>
           <div className="mt-3 flex gap-4 sm:mt-0">
             <Link to="/privacy" className="text-xs text-muted-foreground hover:text-foreground">Privacy</Link>

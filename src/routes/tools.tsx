@@ -5,7 +5,6 @@ import { Footer } from "@/components/Footer";
 import { Newsletter } from "@/components/Newsletter";
 import { ToolCard } from "@/components/ToolCard";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
 import { Shield, Eye, FileSearch, ArrowUpRight } from "lucide-react";
 import {
   Table,
@@ -19,9 +18,9 @@ import {
 export const Route = createFileRoute("/tools")({
   head: () => ({
     meta: [
-      { title: "Recommended Tools — EcomStack" },
+      { title: "Recommended Tools — EcomStacked" },
       { name: "description", content: "Curated directory of the best AI, tracking, automation, shipping, and growth tools for ecommerce brands and dropshippers." },
-      { property: "og:title", content: "Recommended Tools — EcomStack" },
+      { property: "og:title", content: "Recommended Tools — EcomStacked" },
       { property: "og:description", content: "Browse our curated directory of ecommerce growth tools." },
     ],
   }),
@@ -32,21 +31,21 @@ const allTools = [
   {
     name: "WeTracked",
     description: "Server-side tracking platform that connects your ad accounts to accurate first-party conversion data. Supports Facebook CAPI, Google Ads, and TikTok Events API.",
-    bestFor: "Ecommerce brands running paid ads on Meta, Google, or TikTok",
+    bestFor: "Stores running paid ads on Meta, Google, or TikTok",
     benefit: "Recover lost conversions and improve ROAS with server-side attribution",
     category: "Tracking & Attribution",
     featured: true,
     extraBadge: "Best for Tracking",
-    socialProof: "Trusted by performance marketers and media buyers",
+    socialProof: "Used by performance marketers and media buyers",
     microHook: "Fix inaccurate tracking and recover lost ROAS",
     image: "/src/assets/tools/wetracked.jpg",
     href: "https://www.wetracked.io/?ref=ddf2eabf-bf17-4363-aaef-585e9c4e763a",
   },
   {
     name: "Holo AI",
-    description: "AI-powered ad creative platform for ecommerce. Generate scroll-stopping video ads, product images, and ad copy variants in minutes.",
-    bestFor: "Media buyers and creative teams scaling ad production",
-    benefit: "Produce 10x more ad creatives, reducing production costs",
+    description: "Ad creative platform for ecommerce. Generate video ads, product images, and ad copy variants in minutes — without a design team.",
+    bestFor: "Media buyers and teams scaling ad production",
+    benefit: "Produce more ad creatives at lower cost",
     category: "AI Content & Ad Creation",
     featured: true,
     extraBadge: "Best for Creatives",
@@ -57,12 +56,12 @@ const allTools = [
   },
   {
     name: "WeShop AI",
-    description: "AI product photography and model generation tool. Create professional lifestyle images from simple product photos — no studio needed.",
+    description: "Product photography and model generation tool. Create professional lifestyle images from simple product photos — no studio or photographer needed.",
     bestFor: "Dropshippers and DTC brands needing professional imagery",
-    benefit: "Generate studio-quality product photos without photographers",
+    benefit: "Generate studio-quality product photos in minutes",
     category: "AI Content & Ad Creation",
     featured: true,
-    socialProof: "Used by many ecommerce brands for product imagery",
+    socialProof: "Used by ecommerce brands for product imagery",
     microHook: "Professional product photos in minutes, not days",
     image: "/src/assets/tools/weshop-ai.jpg",
     href: "https://www.weshop.ai/?fpr=ecomstack",
@@ -75,7 +74,7 @@ const allTools = [
     category: "Chat Automation & CRM",
     featured: true,
     extraBadge: "Most Popular",
-    socialProof: "Popular among Shopify store owners",
+    socialProof: "Widely used by Shopify store owners",
     microHook: "Turn DM conversations into automated sales",
     image: "/src/assets/tools/manychat.jpg",
     href: "https://manychat.com/?irclickid=VnSTflW-KxycRDrzAA0SXwH3Ukpy-iUnJQllWI0&irgwc=1&utm_source=Affiliate&utm_content=LETHUY&utm_medium=Impact&utm_campaign=Online%20Tracking%20Link",
@@ -86,7 +85,7 @@ const allTools = [
     bestFor: "Ecommerce brands and agencies managing multiple accounts",
     benefit: "Consolidate CRM, email, SMS, and funnels into one platform",
     category: "Chat Automation & CRM",
-    socialProof: "Trusted by agencies and ecommerce operators",
+    socialProof: "Used by agencies and ecommerce operators",
     microHook: "Replace multiple tools with one platform",
     image: "/src/assets/tools/gohighlevel.jpg",
     href: "https://www.gohighlevel.com/?fp_ref=ecomstack",
@@ -97,7 +96,7 @@ const allTools = [
     bestFor: "Dropshippers and store owners doing product research",
     benefit: "Find proven products before competitors using real data",
     category: "Product Research & Optimization",
-    socialProof: "Used by many ecommerce brands for product research",
+    socialProof: "Used by ecommerce brands for product research",
     microHook: "Discover winning products with real marketplace data",
     image: "/src/assets/tools/evebee.jpg",
     href: "https://www.everbee.io/?via=EcomStack",
@@ -108,7 +107,7 @@ const allTools = [
     bestFor: "Ecommerce stores shipping domestically or internationally",
     benefit: "Reduce shipping costs with automated rate comparison",
     category: "Shipping & Fulfillment",
-    socialProof: "Trusted by ecommerce brands shipping worldwide",
+    socialProof: "Used by ecommerce brands shipping worldwide",
     microHook: "Ship faster and cheaper with automated logistics",
     image: "/src/assets/tools/easyship.jpg",
     href: "https://www.easyship.com/?utm_campaign=4988344&utm_term=10435&utm_content=666308&utm_medium=affiliate&irclickid=1Sd0JU24pxyZWXzxnEWLWz28Uku1lr3BZTtIxE0&irgwc=1&afsrc=1&utm_source=LETHUY",
@@ -130,7 +129,7 @@ const categories = ["All", "Tracking & Attribution", "AI Content & Ad Creation",
 
 const comparisonTools = [
   { name: "WeTracked", bestFor: "Ad tracking & attribution", useCase: "Recover lost conversions from iOS changes", href: "https://www.wetracked.io/?ref=ddf2eabf-bf17-4363-aaef-585e9c4e763a" },
-  { name: "Holo AI", bestFor: "AI ad creatives", useCase: "Scale video and image ad production", href: "https://tryholo.ai/?utm_medium=affiliate&utm_source=4988344&utm_campaign=41932&im_ref=VR4UEcxOMxyZW1iwCnQUZz87Uku1QdzxZTtOR00&utm_ad_id=3273895&irgwc=1&afsrc=1" },
+  { name: "Holo AI", bestFor: "Ad creatives", useCase: "Scale video and image ad production", href: "https://tryholo.ai/?utm_medium=affiliate&utm_source=4988344&utm_campaign=41932&im_ref=VR4UEcxOMxyZW1iwCnQUZz87Uku1QdzxZTtOR00&utm_ad_id=3273895&irgwc=1&afsrc=1" },
   { name: "ManyChat", bestFor: "Chat automation", useCase: "Automate DM-based sales funnels", href: "https://manychat.com/?irclickid=VnSTflW-KxycRDrzAA0SXwH3Ukpy-iUnJQllWI0&irgwc=1&utm_source=Affiliate&utm_content=LETHUY&utm_medium=Impact&utm_campaign=Online%20Tracking%20Link" },
   { name: "Easyship", bestFor: "Shipping & fulfillment", useCase: "Compare rates and automate labels globally", href: "https://www.easyship.com/?utm_campaign=4988344&utm_term=10435&utm_content=666308&utm_medium=affiliate&irclickid=1Sd0JU24pxyZWXzxnEWLWz28Uku1lr3BZTtIxE0&irgwc=1&afsrc=1&utm_source=LETHUY" },
   { name: "Systeme", bestFor: "Funnels & email", useCase: "Build funnels and email sequences affordably", href: "https://systeme.io/?sa=sa0246910810ba30b29294f24dd70d00c490781e19" },
@@ -150,7 +149,7 @@ function ToolsPage() {
           <p className="text-xs font-semibold uppercase tracking-widest text-brand">Curated Directory</p>
           <h1 className="mt-3 font-display text-3xl font-extrabold text-foreground sm:text-4xl">Recommended Tools</h1>
           <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-muted-foreground">
-            A curated directory of the best software for ecommerce growth. Each tool is independently evaluated for real-world use cases, ease of setup, and value for operators.
+            A curated directory of software for ecommerce growth. Each tool is independently evaluated for real-world use cases, ease of setup, and value for operators.
           </p>
         </div>
       </section>
@@ -164,7 +163,7 @@ function ToolsPage() {
           </p>
           <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
             <li className="flex items-start gap-2"><span className="mt-0.5 font-bold text-brand">1.</span> <span><strong className="text-foreground">Tracking & attribution</strong> — fix your data foundation before spending on ads</span></li>
-            <li className="flex items-start gap-2"><span className="mt-0.5 font-bold text-brand">2.</span> <span><strong className="text-foreground">AI creatives & content</strong> — produce ads and product visuals at scale</span></li>
+            <li className="flex items-start gap-2"><span className="mt-0.5 font-bold text-brand">2.</span> <span><strong className="text-foreground">Creatives & content</strong> — produce ads and product visuals at scale</span></li>
             <li className="flex items-start gap-2"><span className="mt-0.5 font-bold text-brand">3.</span> <span><strong className="text-foreground">Automation & systems</strong> — automate chat, shipping, funnels, and CRM</span></li>
           </ul>
         </div>
@@ -242,7 +241,7 @@ function ToolsPage() {
             <p className="text-xs font-semibold uppercase tracking-widest text-brand">Our Standards</p>
             <h2 className="mt-2 font-display text-xl font-bold text-foreground sm:text-2xl">How We Evaluate Tools</h2>
             <p className="mx-auto mt-3 max-w-lg text-sm leading-relaxed text-muted-foreground">
-              Every tool listed on EcomStack is evaluated based on real-world ecommerce use cases, ease of integration, pricing transparency, and the actual results operators report.
+              Every tool listed on EcomStacked is evaluated based on real-world ecommerce use cases, ease of integration, pricing transparency, and the results operators report.
             </p>
           </div>
           <div className="mt-10 grid gap-6 sm:grid-cols-3">

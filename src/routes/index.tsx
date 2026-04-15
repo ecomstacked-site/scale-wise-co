@@ -16,9 +16,9 @@ import {
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "EcomStack — Discover the Best AI & Growth Tools for Ecommerce" },
+      { title: "EcomStacked — Discover the Best AI & Growth Tools for Ecommerce" },
       { name: "description", content: "We research, test, and organize tools that help dropshippers and ecommerce brands improve tracking, automate workflows, create better ads, and scale profitably." },
-      { property: "og:title", content: "EcomStack — Best AI & Growth Tools for Ecommerce" },
+      { property: "og:title", content: "EcomStacked — Best AI & Growth Tools for Ecommerce" },
       { property: "og:description", content: "Discover curated tools for tracking, automation, AI ads, and ecommerce growth." },
     ],
   }),
@@ -27,14 +27,14 @@ export const Route = createFileRoute("/")({
 
 const featuredTools = [
   { name: "WeTracked", description: "Accurate server-side tracking for Facebook, Google, and TikTok ads with first-party data.", bestFor: "Ad tracking & attribution", benefit: "Recover lost conversions and improve ROAS", category: "Tracking", featured: true, image: "/src/assets/tools/wetracked.jpg", href: "https://www.wetracked.io/?ref=ddf2eabf-bf17-4363-aaef-585e9c4e763a" },
-  { name: "Holo AI", description: "AI-powered ad creative generation for ecommerce brands. Create winning ads at scale.", bestFor: "Ad creative & content", benefit: "Produce more creatives in less time", category: "AI Content", featured: true, image: "/src/assets/tools/holo-ai.jpg", href: "https://tryholo.ai/?utm_medium=affiliate&utm_source=4988344&utm_campaign=41932&im_ref=VR4UEcxOMxyZW1iwCnQUZz87Uku1QdzxZTtOR00&utm_ad_id=3273895&irgwc=1&afsrc=1" },
+  { name: "Holo AI", description: "Ad creative platform for ecommerce brands. Generate winning ads at scale without a design team.", bestFor: "Ad creative & content", benefit: "Produce more creatives in less time", category: "AI Content", featured: true, image: "/src/assets/tools/holo-ai.jpg", href: "https://tryholo.ai/?utm_medium=affiliate&utm_source=4988344&utm_campaign=41932&im_ref=VR4UEcxOMxyZW1iwCnQUZz87Uku1QdzxZTtOR00&utm_ad_id=3273895&irgwc=1&afsrc=1" },
   { name: "ManyChat", description: "Automated messaging for Instagram, Facebook, and WhatsApp to capture leads and drive sales.", bestFor: "Chat automation & DMs", benefit: "Convert conversations into customers", category: "Automation", featured: false, image: "/src/assets/tools/manychat.jpg", href: "https://manychat.com/?irclickid=VnSTflW-KxycRDrzAA0SXwH3Ukpy-iUnJQllWI0&irgwc=1&utm_source=Affiliate&utm_content=LETHUY&utm_medium=Impact&utm_campaign=Online%20Tracking%20Link" },
-  { name: "Evebee", description: "Smart product recommendations and store optimization tools for Shopify.", bestFor: "Store optimization", benefit: "Increase AOV and conversion rates", category: "Optimization", featured: false, image: "/src/assets/tools/evebee.jpg", href: "https://www.everbee.io/?via=EcomStack" },
+  { name: "Evebee", description: "Product research and store analytics for Shopify and Etsy sellers.", bestFor: "Store optimization", benefit: "Find proven products using real data", category: "Optimization", featured: false, image: "/src/assets/tools/evebee.jpg", href: "https://www.everbee.io/?via=EcomStack" },
 ];
 
 const categories = [
   { icon: Target, label: "Tracking & Attribution", desc: "Server-side tracking, pixel management, and ROAS optimization" },
-  { icon: Bot, label: "AI Content & Ad Creation", desc: "AI-powered tools for creatives, copy, and content generation" },
+  { icon: Bot, label: "AI Content & Ad Creation", desc: "Tools for creatives, copy, and content generation" },
   { icon: Zap, label: "Chat Automation", desc: "Automated messaging, lead capture, and customer engagement" },
   { icon: Search, label: "Product Research", desc: "Find winning products and optimize your store" },
   { icon: Users, label: "CRM & Follow-Up", desc: "Customer retention, email flows, and lifetime value growth" },
@@ -42,7 +42,7 @@ const categories = [
 ];
 
 const articles = [
-  { title: "Best AI Tools for Dropshipping in 2026", excerpt: "A curated list of AI-powered tools that help dropshippers automate content, create ads, and optimize their stores.", category: "AI Tools", date: "April 10, 2026", readTime: "8 min read", slug: "best-ai-tools-dropshipping", image: "/src/assets/blog/ai-tools-dropshipping.jpg" },
+  { title: "Best AI Tools for Dropshipping in 2026", excerpt: "A curated list of tools that help dropshippers automate content, create ads, and optimize their stores.", category: "AI Tools", date: "April 10, 2026", readTime: "8 min read", slug: "best-ai-tools-dropshipping", image: "/src/assets/blog/ai-tools-dropshipping.jpg" },
   { title: "How to Improve Ecommerce Tracking Accuracy", excerpt: "Server-side tracking, CAPI setup, and first-party data strategies to recover lost conversions.", category: "Tracking", date: "April 8, 2026", readTime: "6 min read", slug: "improve-ecommerce-tracking", image: "/src/assets/blog/tracking-accuracy.jpg" },
   { title: "Best Chat Automation Tools for Shopify Stores", excerpt: "Compare the top chat automation platforms for Shopify and learn how to turn DMs into revenue.", category: "Automation", date: "April 5, 2026", readTime: "7 min read", slug: "chat-automation-shopify", image: "/src/assets/blog/chat-automation.jpg" },
 ];
@@ -57,7 +57,7 @@ function HomePage() {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,var(--color-surface)_0%,transparent_70%)]" />
         <div className="relative mx-auto max-w-4xl px-4 text-center sm:px-6">
           <Badge variant="secondary" className="mb-6 px-4 py-1.5 text-xs font-medium tracking-wide">
-            Independent Ecommerce Software Publication
+            Independent Ecommerce Tools Resource
           </Badge>
           <h1 className="font-display text-4xl font-extrabold leading-[1.1] tracking-tight text-foreground sm:text-5xl lg:text-6xl">
             Discover the Best AI &amp; Growth Tools for Ecommerce
@@ -148,14 +148,14 @@ function HomePage() {
               <p className="text-xs font-semibold uppercase tracking-widest text-brand">Our Process</p>
               <h2 className="mt-2 font-display text-2xl font-bold text-foreground sm:text-3xl">How We Research Tools</h2>
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-                Every tool on EcomStack goes through a structured editorial process. We don't accept paid placements or rank tools based on commission rates. Our process is designed to surface tools that genuinely help ecommerce operators.
+                Every tool on EcomStacked goes through a structured editorial process. We don't accept paid placements or rank tools based on commission rates.
               </p>
               <div className="mt-8 space-y-5">
                 {[
                   { step: "01", title: "Identify Real Needs", desc: "We start with the problems ecommerce operators actually face — not vendor pitches." },
                   { step: "02", title: "Hands-On Evaluation", desc: "We test each tool in real ecommerce workflows, evaluating setup, usability, and results." },
-                  { step: "03", title: "Compare Alternatives", desc: "We look at the competitive landscape to understand where each tool fits and who it serves best." },
-                  { step: "04", title: "Publish Honest Assessments", desc: "We write editorial-style recommendations with clear strengths, limitations, and use cases." },
+                  { step: "03", title: "Compare Alternatives", desc: "We look at the competitive landscape to understand where each tool fits." },
+                  { step: "04", title: "Publish Honest Assessments", desc: "We write recommendations with clear strengths, limitations, and use cases." },
                 ].map((item) => (
                   <div key={item.step} className="flex gap-4">
                     <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-surface font-display text-xs font-bold text-brand">
@@ -173,7 +173,7 @@ function HomePage() {
               {[
                 { icon: Shield, title: "Editorial Independence", desc: "Our recommendations are based on research and testing — not advertising spend. We clearly disclose affiliate relationships." },
                 { icon: Eye, title: "Transparency First", desc: "We explain our methodology, show our evaluation criteria, and always note when a link is an affiliate partnership." },
-                { icon: TrendingUp, title: "Operator-Focused", desc: "We evaluate tools from the perspective of someone running a store, not a software reviewer. Practical value is what matters." },
+                { icon: TrendingUp, title: "Operator-Focused", desc: "We evaluate tools from the perspective of someone running a store. Practical value is what matters." },
                 { icon: CheckCircle2, title: "Continuous Updates", desc: "Tools change, pricing shifts, and new alternatives emerge. We revisit and update our recommendations regularly." },
               ].map((item) => (
                 <div key={item.title} className="rounded-xl border border-border bg-card p-5">
@@ -197,7 +197,7 @@ function HomePage() {
           <p className="text-xs font-semibold uppercase tracking-widest text-brand">Our Audience</p>
           <h2 className="mt-2 font-display text-2xl font-bold text-foreground sm:text-3xl">Who This Site Helps</h2>
           <p className="mx-auto mt-3 max-w-xl text-sm leading-relaxed text-muted-foreground">
-            EcomStack is built for people who run online businesses and want practical, trustworthy guidance on what software to use.
+            EcomStacked is built for people who run online businesses and want practical, trustworthy guidance on what software to use.
           </p>
           <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {[
@@ -221,9 +221,9 @@ function HomePage() {
       <section className="py-20 sm:py-24">
         <div className="mx-auto max-w-4xl px-4 text-center sm:px-6">
           <p className="text-xs font-semibold uppercase tracking-widest text-brand">Trust &amp; Credibility</p>
-          <h2 className="mt-2 font-display text-2xl font-bold text-foreground sm:text-3xl">Why Readers Trust EcomStack</h2>
+          <h2 className="mt-2 font-display text-2xl font-bold text-foreground sm:text-3xl">Why Readers Trust EcomStacked</h2>
           <p className="mx-auto mt-3 max-w-xl text-sm leading-relaxed text-muted-foreground">
-            We're an independent publication focused on helping ecommerce operators make better tool decisions — not a sales funnel disguised as content.
+            We're an independent resource focused on helping ecommerce operators make better tool decisions — not a sales funnel disguised as content.
           </p>
           <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
             {[
@@ -274,9 +274,9 @@ function HomePage() {
           <div className="mt-10 grid gap-4 sm:grid-cols-2">
             {[
               { category: "Tracking", tool: "WeTracked", reason: "Accurate server-side ad tracking" },
-              { category: "AI Ads", tool: "Holo AI", reason: "AI-generated ad creatives at scale" },
+              { category: "AI Ads", tool: "Holo AI", reason: "Ad creatives at scale" },
               { category: "Automation", tool: "ManyChat", reason: "Chat-based lead capture & sales" },
-              { category: "Optimization", tool: "Evebee", reason: "Smart product recs for Shopify" },
+              { category: "Optimization", tool: "Evebee", reason: "Product research for Shopify" },
             ].map((item) => (
               <Card key={item.tool} className="text-left">
                 <CardContent className="flex items-center gap-4 p-5">
