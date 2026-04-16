@@ -3,14 +3,14 @@ import { ArrowUpRight } from "lucide-react";
 
 // Affiliate links
 const LINKS = {
-  wetracked: "https://www.wetracked.io/?ref=ddf2eabf-bf17-4363-aaef-585e9c4e763a",
-  holo: "https://tryholo.ai/?utm_medium=affiliate&utm_source=4988344&utm_campaign=41932&im_ref=VR4UEcxOMxyZW1iwCnQUZz87Uku1QdzxZTtOR00&utm_ad_id=3273895&irgwc=1&afsrc=1",
-  manychat: "https://manychat.com/?irclickid=VnSTflW-KxycRDrzAA0SXwH3Ukpy-iUnJQllWI0&irgwc=1&utm_source=Affiliate&utm_content=LETHUY&utm_medium=Impact&utm_campaign=Online%20Tracking%20Link",
-  evebee: "https://www.everbee.io/?via=EcomStack",
-  easyship: "https://www.easyship.com/?utm_campaign=4988344&utm_term=10435&utm_content=666308&utm_medium=affiliate&irclickid=1Sd0JU24pxyZWXzxnEWLWz28Uku1lr3BZTtIxE0&irgwc=1&afsrc=1&utm_source=LETHUY",
-  systeme: "https://systeme.io/?sa=sa0246910810ba30b29294f24dd70d00c490781e19",
-  gohighlevel: "https://www.gohighlevel.com/?fp_ref=ecomstack",
-  weshop: "https://www.weshop.ai/?fpr=ecomstack",
+  wetracked: "/go/wetracked",
+  holo: "/go/holo-ai",
+  manychat: "/go/manychat",
+  evebee: "/go/everbee",
+  easyship: "/go/easyship",
+  systeme: "/go/systeme",
+  gohighlevel: "/go/gohighlevel",
+  weshop: "/go/weshop-ai",
 };
 
 function ToolCTA({ href, label = "Visit Website" }: { href: string; label?: string }) {
