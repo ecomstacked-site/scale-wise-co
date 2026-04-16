@@ -695,6 +695,186 @@ function Article5() {
   );
 }
 
+function ArticleHoloVsPictory() {
+  return (
+    <div className="space-y-8">
+      <section>
+        <p className="text-sm leading-relaxed text-muted-foreground">
+          There are way too many AI video tools right now. Every week there's a new one claiming to be the best,
+          and honestly, most of them blur together after a while. I've wasted more time testing tools than actually
+          making videos — and I know I'm not the only one.
+        </p>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          So I decided to test two of the most talked-about options side by side: <strong className="text-foreground">Holo AI</strong> and{" "}
+          <strong className="text-foreground">Pictory</strong>. Not a surface-level overview — I actually used both
+          for real ecommerce ad projects to see which one delivers.
+        </p>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          Here's what I found.
+        </p>
+      </section>
+
+      <section>
+        <h2 id="quick-comparison" className="font-display text-xl font-bold text-foreground">Quick Comparison</h2>
+        <div className="mt-4 overflow-x-auto">
+          <table className="w-full text-sm border border-border rounded-lg">
+            <thead>
+              <tr className="bg-surface">
+                <th className="px-4 py-3 text-left font-semibold text-foreground border-b border-border">Tool</th>
+                <th className="px-4 py-3 text-left font-semibold text-foreground border-b border-border">Best For</th>
+                <th className="px-4 py-3 text-left font-semibold text-foreground border-b border-border">Ease of Use</th>
+                <th className="px-4 py-3 text-left font-semibold text-foreground border-b border-border">Speed</th>
+                <th className="px-4 py-3 text-left font-semibold text-foreground border-b border-border">Verdict</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className="border-b border-border">
+                <td className="px-4 py-3 font-medium text-foreground">Holo AI</td>
+                <td className="px-4 py-3 text-muted-foreground">Quick ad videos</td>
+                <td className="px-4 py-3 text-muted-foreground">Very easy</td>
+                <td className="px-4 py-3 text-muted-foreground">Fast</td>
+                <td className="px-4 py-3 text-muted-foreground">Best for speed</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-3 font-medium text-foreground">Pictory</td>
+                <td className="px-4 py-3 text-muted-foreground">Polished content</td>
+                <td className="px-4 py-3 text-muted-foreground">Moderate</td>
+                <td className="px-4 py-3 text-muted-foreground">Slower</td>
+                <td className="px-4 py-3 text-muted-foreground">Best for control</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <h2 id="holo-ai-overview" className="font-display text-xl font-bold text-foreground">Holo AI Overview</h2>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          Holo AI is built around one idea: get a usable video ad as fast as possible. You give it a product link or
+          a description, and it generates a short-form video you can use for paid ads or social content. No timeline
+          editing, no complex settings.
+        </p>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          It's aimed at ecommerce sellers, dropshippers, and anyone running paid traffic who needs creatives
+          quickly without hiring an editor.
+        </p>
+        <ToolCTA href={LINKS.holo} label="If you want to check it yourself — see Holo AI here" />
+      </section>
+
+      <section>
+        <h2 id="pictory-overview" className="font-display text-xl font-bold text-foreground">Pictory Overview</h2>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          Pictory takes a different approach. It lets you turn blog posts, scripts, or long-form content into videos
+          with more editing control. You can adjust scenes, swap visuals, tweak text overlays, and customize
+          the output more granularly.
+        </p>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          It's a better fit for content marketers, course creators, or anyone who wants more polish and
+          doesn't mind spending extra time in the editor.
+        </p>
+        <ToolCTA href="https://pictory.ai?ref=ecomstacked" label="You can check Pictory here" />
+      </section>
+
+      <section>
+        <h2 id="side-by-side-comparison" className="font-display text-xl font-bold text-foreground">Side-by-Side Comparison</h2>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          Here's where it gets interesting. When I tested both tools on the same product — a simple skincare item — the
+          difference in workflow was immediately obvious.
+        </p>
+
+        <h3 className="mt-6 font-display text-base font-bold text-foreground">Ease of Use</h3>
+        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+          Holo AI wins here. You paste a link, hit generate, and you have something in minutes. Pictory requires
+          you to set up a script first, choose visuals, and arrange scenes. It's not hard, but it's more steps.
+        </p>
+
+        <h3 className="mt-6 font-display text-base font-bold text-foreground">Speed</h3>
+        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+          Holo AI generated a usable video in under 3 minutes. Pictory took closer to 15–20 minutes once I factored
+          in editing. This part surprised me — I didn't expect the gap to be that wide.
+        </p>
+
+        <h3 className="mt-6 font-display text-base font-bold text-foreground">Output Quality</h3>
+        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+          Pictory's output looked more polished. The transitions were smoother, and I had more control over text
+          placement and scene flow. Holo AI's output was decent — definitely usable for ads — but less refined
+          if you're aiming for brand-level content.
+        </p>
+
+        <h3 className="mt-6 font-display text-base font-bold text-foreground">Best Use Case</h3>
+        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+          Holo AI is better when you need volume — multiple ad variations, quick tests, fast creative cycles.
+          Pictory is better when you need one really polished video and you have time to edit it.
+        </p>
+      </section>
+
+      <section>
+        <h2 id="my-real-experience" className="font-display text-xl font-bold text-foreground">My Real Experience</h2>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          I used Holo AI first. Within a few minutes I had three ad variations ready. One of them was genuinely
+          good enough to run as-is. The other two needed small prompt adjustments — the first outputs felt a
+          bit generic until I gave it more specific angles.
+        </p>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          Then I switched to Pictory. The setup took longer, but I had more creative freedom. I could swap
+          out stock footage, adjust timing, and change the voiceover style. The final result was noticeably
+          more polished — but it took me about 4x longer to get there.
+        </p>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          I didn't expect this difference to be so clear. If you're testing ad creatives and need speed,
+          Holo AI just makes more sense. If you're building a brand video or a tutorial, Pictory gives
+          you the control you need.
+        </p>
+
+        <ToolCTA href={LINKS.holo} label="This is what I used for quick ads — check Holo AI here" />
+      </section>
+
+      <section>
+        <h2 id="which-one-should-you-choose" className="font-display text-xl font-bold text-foreground">Which One Should You Choose?</h2>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          It depends on what you need. Here's a simple breakdown:
+        </p>
+
+        <div className="mt-4 rounded-xl border border-brand/20 bg-brand/5 p-5">
+          <h4 className="font-display text-sm font-bold text-foreground">Choose Holo AI if you want:</h4>
+          <ul className="mt-3 space-y-1.5 text-sm text-muted-foreground">
+            <li className="flex items-start gap-2"><span className="mt-0.5 text-brand">✓</span> Fast video creation with minimal effort</li>
+            <li className="flex items-start gap-2"><span className="mt-0.5 text-brand">✓</span> Multiple ad variations quickly</li>
+            <li className="flex items-start gap-2"><span className="mt-0.5 text-brand">✓</span> Something usable without editing skills</li>
+          </ul>
+        </div>
+
+        <div className="mt-4 rounded-xl border border-border bg-surface p-5">
+          <h4 className="font-display text-sm font-bold text-foreground">Choose Pictory if you want:</h4>
+          <ul className="mt-3 space-y-1.5 text-sm text-muted-foreground">
+            <li className="flex items-start gap-2"><span className="mt-0.5 text-muted-foreground">✓</span> More control over scenes and visuals</li>
+            <li className="flex items-start gap-2"><span className="mt-0.5 text-muted-foreground">✓</span> Polished, brand-level content</li>
+            <li className="flex items-start gap-2"><span className="mt-0.5 text-muted-foreground">✓</span> Longer-form or tutorial-style videos</li>
+          </ul>
+        </div>
+
+        <p className="mt-6 text-sm leading-relaxed text-muted-foreground">
+          Neither tool is perfect for everything. But if I had to pick one for ecommerce ads, I'd go
+          with Holo AI for the speed alone. For content marketing or YouTube, Pictory is the stronger choice.
+        </p>
+
+        <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+          <a href={LINKS.holo} target="_blank" rel="noopener noreferrer nofollow">
+            <Button variant="brand" size="sm" className="gap-1.5">
+              Check Holo AI here <ArrowUpRight className="h-3.5 w-3.5" />
+            </Button>
+          </a>
+          <a href="https://pictory.ai?ref=ecomstacked" target="_blank" rel="noopener noreferrer nofollow">
+            <Button variant="secondary" size="sm" className="gap-1.5">
+              Explore Pictory here <ArrowUpRight className="h-3.5 w-3.5" />
+            </Button>
+          </a>
+        </div>
+      </section>
+    </div>
+  );
+}
+
 function ArticleHoloReview() {
   return (
     <div className="space-y-8">
