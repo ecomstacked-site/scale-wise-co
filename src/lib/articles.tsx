@@ -720,31 +720,44 @@ function ArticleHoloVsPictory() {
           <table className="w-full text-sm border border-border rounded-lg">
             <thead>
               <tr className="bg-surface">
-                <th className="px-4 py-3 text-left font-semibold text-foreground border-b border-border">Tool</th>
-                <th className="px-4 py-3 text-left font-semibold text-foreground border-b border-border">Best For</th>
-                <th className="px-4 py-3 text-left font-semibold text-foreground border-b border-border">Ease of Use</th>
-                <th className="px-4 py-3 text-left font-semibold text-foreground border-b border-border">Speed</th>
-                <th className="px-4 py-3 text-left font-semibold text-foreground border-b border-border">Verdict</th>
+                <th className="px-4 py-3 text-left font-semibold text-foreground border-b border-border">Feature</th>
+                <th className="px-4 py-3 text-left font-semibold text-foreground border-b border-border">Holo AI</th>
+                <th className="px-4 py-3 text-left font-semibold text-foreground border-b border-border">Pictory</th>
               </tr>
             </thead>
             <tbody>
               <tr className="border-b border-border">
-                <td className="px-4 py-3 font-medium text-foreground">Holo AI</td>
-                <td className="px-4 py-3 text-muted-foreground">Quick ad videos</td>
-                <td className="px-4 py-3 text-muted-foreground">Very easy</td>
-                <td className="px-4 py-3 text-muted-foreground">Fast</td>
-                <td className="px-4 py-3 text-muted-foreground">Best for speed</td>
+                <td className="px-4 py-3 font-medium text-foreground">Best For</td>
+                <td className="px-4 py-3 text-muted-foreground">Quick ads & short content</td>
+                <td className="px-4 py-3 text-muted-foreground">Long-form videos</td>
+              </tr>
+              <tr className="border-b border-border">
+                <td className="px-4 py-3 font-medium text-foreground">Speed</td>
+                <td className="px-4 py-3 text-muted-foreground">Very fast</td>
+                <td className="px-4 py-3 text-muted-foreground">Medium</td>
+              </tr>
+              <tr className="border-b border-border">
+                <td className="px-4 py-3 font-medium text-foreground">Ease of Use</td>
+                <td className="px-4 py-3 text-muted-foreground">Beginner-friendly</td>
+                <td className="px-4 py-3 text-muted-foreground">Slight learning curve</td>
+              </tr>
+              <tr className="border-b border-border">
+                <td className="px-4 py-3 font-medium text-foreground">Output Quality</td>
+                <td className="px-4 py-3 text-muted-foreground">Good enough</td>
+                <td className="px-4 py-3 text-muted-foreground">More polished</td>
               </tr>
               <tr>
-                <td className="px-4 py-3 font-medium text-foreground">Pictory</td>
-                <td className="px-4 py-3 text-muted-foreground">Polished content</td>
-                <td className="px-4 py-3 text-muted-foreground">Moderate</td>
-                <td className="px-4 py-3 text-muted-foreground">Slower</td>
+                <td className="px-4 py-3 font-medium text-foreground">Verdict</td>
+                <td className="px-4 py-3 text-muted-foreground">Best for speed & simplicity</td>
                 <td className="px-4 py-3 text-muted-foreground">Best for control</td>
               </tr>
             </tbody>
           </table>
         </div>
+
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          If you just want to create videos quickly without overthinking, Holo AI feels easier to start with.
+        </p>
       </section>
 
       <section>
@@ -772,7 +785,7 @@ function ArticleHoloVsPictory() {
           It's a better fit for content marketers, course creators, or anyone who wants more polish and
           doesn't mind spending extra time in the editor.
         </p>
-        <ToolCTA href="https://pictory.ai?ref=ecomstacked" label="You can check Pictory here" />
+        <ToolCTA href="https://pictory.ai?ref=ecomstacked" label="Check Pictory's features here" />
       </section>
 
       <section>
@@ -792,6 +805,10 @@ function ArticleHoloVsPictory() {
         <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
           Holo AI generated a usable video in under 3 minutes. Pictory took closer to 15–20 minutes once I factored
           in editing. This part surprised me — I didn't expect the gap to be that wide.
+        </p>
+
+        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+          I didn't expect this difference to be so clear.
         </p>
 
         <h3 className="mt-6 font-display text-base font-bold text-foreground">Output Quality</h3>
@@ -820,10 +837,13 @@ function ArticleHoloVsPictory() {
           out stock footage, adjust timing, and change the voiceover style. The final result was noticeably
           more polished — but it took me about 4x longer to get there.
         </p>
+
         <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-          I didn't expect this difference to be so clear. If you're testing ad creatives and need speed,
-          Holo AI just makes more sense. If you're building a brand video or a tutorial, Pictory gives
-          you the control you need.
+          It's not perfect, but it's definitely usable.
+        </p>
+
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          If you're testing multiple tools, I'd recommend starting with the simpler one first.
         </p>
 
         <ToolCTA href={LINKS.holo} label="This is what I used for quick ads — check Holo AI here" />
@@ -866,7 +886,7 @@ function ArticleHoloVsPictory() {
           </a>
           <a href="https://pictory.ai?ref=ecomstacked" target="_blank" rel="noopener noreferrer nofollow">
             <Button variant="secondary" size="sm" className="gap-1.5">
-              Explore Pictory here <ArrowUpRight className="h-3.5 w-3.5" />
+              You can explore Pictory here <ArrowUpRight className="h-3.5 w-3.5" />
             </Button>
           </a>
         </div>
