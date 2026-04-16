@@ -700,7 +700,7 @@ function ArticleHoloReview() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           Here's exactly what happened.
         </p>
-        <ToolCTA href={LINKS.holo} label="Try Holo AI here" />
+        <ToolCTA href={LINKS.holo} label="Check out Holo AI here" />
       </section>
 
       <section>
@@ -731,10 +731,13 @@ function ArticleHoloReview() {
           Not all 15 were winners. Maybe 10 were solid enough to test. But that's still 10 creatives ready to go in a single afternoon. I didn't expect that.
         </p>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          One thing worth noting — the first video I generated felt a bit generic. The script was fine, but it didn't quite match my brand's tone. I had to tweak the prompt and try again. The second attempt was much closer to what I needed.
+        </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           <strong className="text-foreground">Day 5–7: Running the ads.</strong> I pushed the best creatives into two Meta ad sets. Early results were encouraging — the CTR on the AI-generated videos was comparable to my previous best-performing creatives made by a human editor. One of them actually outperformed.
         </p>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          This part surprised me the most. I expected the AI creatives to be "good enough for testing" but not competitive with polished human work. On at least a few of them, the line was blurry.
+          This part surprised me the most. I expected the AI creatives to be "good enough for testing" but not competitive with polished human work. On at least a few of them, the line was blurry. It's not perfect — but it's definitely usable.
         </p>
 
         <ProTip>
@@ -795,7 +798,23 @@ function ArticleHoloReview() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           <strong className="text-foreground">Quick idea testing.</strong> Before you invest $500 in a polished creative, use Holo AI to test whether the concept, hook, or angle resonates with your audience. If the AI version gets traction, then invest in a premium version.
         </p>
-        <ToolCTA href={LINKS.holo} label="See how Holo AI works" />
+        <ToolCTA href={LINKS.holo} label="This is what I used — see here" />
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Who Should Use Holo AI?</h2>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          After using it for a week, here's who I think would get the most value:
+        </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          <strong className="text-foreground">Good fit:</strong> Ecommerce store owners running Meta or TikTok ads, content creators who need volume over perfection, and anyone who needs to test ideas quickly without hiring an editor.
+        </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          <strong className="text-foreground">Not ideal:</strong> Advanced video editors who want full manual control over every frame, or brands producing hero-level brand films where every detail matters.
+        </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          It's a tool for speed and volume — not for replacing creative directors on high-end productions.
+        </p>
       </section>
 
       <section>
@@ -817,9 +836,9 @@ function ArticleHoloReview() {
           After 7 days, 30+ creatives generated, and real ad spend behind them — I'm keeping Holo AI in my stack. It's not a magic bullet. But it's the closest thing I've found to eliminating the creative bottleneck that slows down every ecommerce brand I've worked with.
         </p>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          The best part? You don't need to take my word for it. Try it yourself and see if the output matches what your ads need.
+          The best part? You can test it yourself and see if the output matches what your ads need. If you want to check it out, this is the link I used.
         </p>
-        <ToolCTA href={LINKS.holo} label="Start using Holo AI" />
+        <ToolCTA href={LINKS.holo} label="You can check it here" />
       </section>
     </div>
   );
