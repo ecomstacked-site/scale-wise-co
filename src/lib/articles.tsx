@@ -48,6 +48,16 @@ export interface ArticleMeta {
 
 export const articlesMeta: ArticleMeta[] = [
   {
+    title: "Best AI Video Tools for 2026 (Tested & Compared)",
+    excerpt: "I tested several AI video tools to find out which ones are actually worth using. Here's my honest breakdown with pros, cons, and real insights.",
+    category: "AI Tools",
+    date: "April 16, 2026",
+    readTime: "7 min read",
+    slug: "best-ai-video-tools",
+    featured: false,
+    toc: ["Quick Summary", "Holo AI", "Pictory", "Runway", "Synthesia", "InVideo", "Which AI Video Tool Should You Choose"],
+  },
+  {
     title: "Holo AI vs Pictory: Which One Is Better for AI Video Creation?",
     excerpt: "I tested both Holo AI and Pictory side by side to find out which AI video tool actually delivers. Here's my honest comparison after using both.",
     category: "AI Tools",
@@ -122,6 +132,8 @@ export const articlesMeta: ArticleMeta[] = [
 
 export function getArticleContent(slug: string): React.ReactNode | null {
   switch (slug) {
+    case "best-ai-video-tools":
+      return <ArticleBestAIVideoTools />;
     case "holo-ai-vs-pictory":
       return <ArticleHoloVsPictory />;
     case "holo-ai-review":
