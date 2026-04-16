@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { useState } from "react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -19,6 +20,31 @@ export const Route = createFileRoute("/contact")({
 });
 
 function ContactPage() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+  const [errors, setErrors] = useState<Record<string, string>>({});
+
+  function handleSubmit(e: React.FormEvent) {
+    e.preventDefault();
+    const newErrors: Record<string, string> = {};
+    if (!name.trim()) newErrors.name = "Name is required";
+    if (!email.trim()) newErrors.email = "Email is required";
+    if (!subject.trim()) newErrors.subject = "Subject is required";
+    if (!message.trim()) newErrors.message = "Message is required";
+
+    if (Object.keys(newErrors).length > 0) {
+      setErrors(newErrors);
+      return;
+    }
+    setErrors({});
+
+    const body = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
+    const mailtoUrl = `mailto:hello@ecomstacked.io?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailtoUrl;
+  }
+
   return (
     <div className="min-h-screen">
       <Header />
@@ -39,29 +65,39 @@ function ContactPage() {
               <Card>
                 <CardContent className="p-6">
                   <h2 className="font-display text-lg font-bold text-foreground">Send a Message</h2>
-                  <form className="mt-5 space-y-4" onSubmit={(e) => e.preventDefault()}>
+                  <form className="mt-5 space-y-4" onSubmit={handleSubmit}>
                     <div className="grid gap-4 sm:grid-cols-2">
                       <div>
                         <label className="mb-1.5 block text-xs font-medium text-foreground">Name</label>
-                        <Input placeholder="Your name" />
+                        <Input placeholder="Your name" value={name} onChange={(e) => { setName(e.target.value); setErrors((p) => ({ ...p, name: "" })); }} />
+                        {errors.name && <p className="mt-1 text-xs text-destructive">{errors.name}</p>}
                       </div>
                       <div>
                         <label className="mb-1.5 block text-xs font-medium text-foreground">Email</label>
-                        <Input type="email" placeholder="you@example.com" />
+                        <Input type="email" placeholder="you@example.com" value={email} onChange={(e) => { setEmail(e.target.value); setErrors((p) => ({ ...p, email: "" })); }} />
+                        {errors.email && <p className="mt-1 text-xs text-destructive">{errors.email}</p>}
                       </div>
                     </div>
                     <div>
                       <label className="mb-1.5 block text-xs font-medium text-foreground">Subject</label>
-                      <Input placeholder="What's this about?" />
+                      <Input placeholder="What's this about?" value={subject} onChange={(e) => { setSubject(e.target.value); setErrors((p) => ({ ...p, subject: "" })); }} />
+                      {errors.subject && <p className="mt-1 text-xs text-destructive">{errors.subject}</p>}
                     </div>
                     <div>
                       <label className="mb-1.5 block text-xs font-medium text-foreground">Message</label>
                       <textarea
                         className="flex min-h-[120px] w-full rounded-lg border border-input bg-transparent px-3 py-2 text-sm shadow-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
                         placeholder="Tell us more..."
+                        value={message}
+                        onChange={(e) => { setMessage(e.target.value); setErrors((p) => ({ ...p, message: "" })); }}
                       />
+                      {errors.message && <p className="mt-1 text-xs text-destructive">{errors.message}</p>}
                     </div>
                     <Button variant="brand" type="submit" className="w-full sm:w-auto">Send Message</Button>
+                    <p className="text-xs text-muted-foreground">
+                      Or email us directly at{" "}
+                      <a href="mailto:hello@ecomstacked.io" className="font-medium text-brand hover:underline">hello@ecomstacked.io</a>
+                    </p>
                   </form>
                 </CardContent>
               </Card>
@@ -70,7 +106,7 @@ function ContactPage() {
             <div className="space-y-4 lg:col-span-2">
               {[
                 { icon: Mail, title: "Email", desc: "For general inquiries and questions", detail: "hello@ecomstacked.io" },
-                { icon: Handshake, title: "Partnerships", desc: "Tool submissions and sponsorship inquiries", detail: "hello@ecomstacked.io" },
+                { icon: Handshake, title: "Partnerships", desc: "Tool submissions and sponsorship inquiries", detail: "partnerships@ecomstacked.io" },
                 { icon: MessageSquare, title: "Feedback", desc: "Help us improve our content", detail: "We read every message" },
               ].map((item) => (
                 <Card key={item.title}>
