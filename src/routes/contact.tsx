@@ -106,7 +106,7 @@ function ContactPage() {
             <div className="space-y-4 lg:col-span-2">
               {[
                 { icon: Mail, title: "Email", desc: "For general inquiries and questions", detail: "hello@ecomstacked.io" },
-                { icon: Handshake, title: "Partnerships", desc: "Tool submissions and sponsorship inquiries", detail: "partnerships@ecomstacked.io" },
+                { icon: Handshake, title: "Partnerships", desc: "Tool submissions and sponsorship inquiries", detail: "hello@ecomstacked.io" },
                 { icon: MessageSquare, title: "Feedback", desc: "Help us improve our content", detail: "We read every message" },
               ].map((item) => (
                 <Card key={item.title}>
