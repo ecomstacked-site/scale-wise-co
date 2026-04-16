@@ -18,6 +18,7 @@ import { Route as BlogRouteImport } from './routes/blog'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as BlogIndexRouteImport } from './routes/blog.index'
+import { Route as GoToolRouteImport } from './routes/go.$tool'
 import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
 
 const ToolsRoute = ToolsRouteImport.update({
@@ -65,6 +66,11 @@ const BlogIndexRoute = BlogIndexRouteImport.update({
   path: '/',
   getParentRoute: () => BlogRoute,
 } as any)
+const GoToolRoute = GoToolRouteImport.update({
+  id: '/go/$tool',
+  path: '/go/$tool',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const BlogSlugRoute = BlogSlugRouteImport.update({
   id: '/$slug',
   path: '/$slug',
@@ -81,6 +87,7 @@ export interface FileRoutesByFullPath {
   '/terms': typeof TermsRoute
   '/tools': typeof ToolsRoute
   '/blog/$slug': typeof BlogSlugRoute
+  '/go/$tool': typeof GoToolRoute
   '/blog/': typeof BlogIndexRoute
 }
 export interface FileRoutesByTo {
@@ -92,6 +99,7 @@ export interface FileRoutesByTo {
   '/terms': typeof TermsRoute
   '/tools': typeof ToolsRoute
   '/blog/$slug': typeof BlogSlugRoute
+  '/go/$tool': typeof GoToolRoute
   '/blog': typeof BlogIndexRoute
 }
 export interface FileRoutesById {
@@ -105,6 +113,7 @@ export interface FileRoutesById {
   '/terms': typeof TermsRoute
   '/tools': typeof ToolsRoute
   '/blog/$slug': typeof BlogSlugRoute
+  '/go/$tool': typeof GoToolRoute
   '/blog/': typeof BlogIndexRoute
 }
 export interface FileRouteTypes {
@@ -119,6 +128,7 @@ export interface FileRouteTypes {
     | '/terms'
     | '/tools'
     | '/blog/$slug'
+    | '/go/$tool'
     | '/blog/'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -130,6 +140,7 @@ export interface FileRouteTypes {
     | '/terms'
     | '/tools'
     | '/blog/$slug'
+    | '/go/$tool'
     | '/blog'
   id:
     | '__root__'
@@ -142,6 +153,7 @@ export interface FileRouteTypes {
     | '/terms'
     | '/tools'
     | '/blog/$slug'
+    | '/go/$tool'
     | '/blog/'
   fileRoutesById: FileRoutesById
 }
@@ -154,6 +166,7 @@ export interface RootRouteChildren {
   PrivacyRoute: typeof PrivacyRoute
   TermsRoute: typeof TermsRoute
   ToolsRoute: typeof ToolsRoute
+  GoToolRoute: typeof GoToolRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -221,6 +234,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlogIndexRouteImport
       parentRoute: typeof BlogRoute
     }
+    '/go/$tool': {
+      id: '/go/$tool'
+      path: '/go/$tool'
+      fullPath: '/go/$tool'
+      preLoaderRoute: typeof GoToolRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/blog/$slug': {
       id: '/blog/$slug'
       path: '/$slug'
@@ -252,6 +272,7 @@ const rootRouteChildren: RootRouteChildren = {
   PrivacyRoute: PrivacyRoute,
   TermsRoute: TermsRoute,
   ToolsRoute: ToolsRoute,
+  GoToolRoute: GoToolRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

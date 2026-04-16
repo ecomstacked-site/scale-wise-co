@@ -39,7 +39,7 @@ const allTools = [
     socialProof: "Used by performance marketers and media buyers",
     microHook: "Fix inaccurate tracking and recover lost ROAS",
     image: "/src/assets/tools/wetracked.jpg",
-    href: "https://www.wetracked.io/?ref=ddf2eabf-bf17-4363-aaef-585e9c4e763a",
+    href: "/go/wetracked",
   },
   {
     name: "Holo AI",
@@ -52,7 +52,7 @@ const allTools = [
     socialProof: "Popular among DTC brands and media buyers",
     microHook: "Scale ad creatives without a design team",
     image: "/src/assets/tools/holo-ai.jpg",
-    href: "https://tryholo.ai/?utm_medium=affiliate&utm_source=4988344&utm_campaign=41932&im_ref=VR4UEcxOMxyZW1iwCnQUZz87Uku1QdzxZTtOR00&utm_ad_id=3273895&irgwc=1&afsrc=1",
+    href: "/go/holo-ai",
   },
   {
     name: "WeShop AI",
@@ -64,7 +64,7 @@ const allTools = [
     socialProof: "Used by ecommerce brands for product imagery",
     microHook: "Professional product photos in minutes, not days",
     image: "/src/assets/tools/weshop-ai.jpg",
-    href: "https://www.weshop.ai/?fpr=ecomstack",
+    href: "/go/weshop-ai",
   },
   {
     name: "ManyChat",
@@ -77,7 +77,7 @@ const allTools = [
     socialProof: "Widely used by Shopify store owners",
     microHook: "Turn DM conversations into automated sales",
     image: "/src/assets/tools/manychat.jpg",
-    href: "https://manychat.com/?irclickid=VnSTflW-KxycRDrzAA0SXwH3Ukpy-iUnJQllWI0&irgwc=1&utm_source=Affiliate&utm_content=LETHUY&utm_medium=Impact&utm_campaign=Online%20Tracking%20Link",
+    href: "/go/manychat",
   },
   {
     name: "GoHighLevel",
@@ -88,7 +88,7 @@ const allTools = [
     socialProof: "Used by agencies and ecommerce operators",
     microHook: "Replace multiple tools with one platform",
     image: "/src/assets/tools/gohighlevel.jpg",
-    href: "https://www.gohighlevel.com/?fp_ref=ecomstack",
+    href: "/go/gohighlevel",
   },
   {
     name: "Evebee",
@@ -99,7 +99,7 @@ const allTools = [
     socialProof: "Used by ecommerce brands for product research",
     microHook: "Discover winning products with real marketplace data",
     image: "/src/assets/tools/evebee.jpg",
-    href: "https://www.everbee.io/?via=EcomStack",
+    href: "/go/everbee",
   },
   {
     name: "Easyship",
@@ -110,7 +110,7 @@ const allTools = [
     socialProof: "Used by ecommerce brands shipping worldwide",
     microHook: "Ship faster and cheaper with automated logistics",
     image: "/src/assets/tools/easyship.jpg",
-    href: "https://www.easyship.com/?utm_campaign=4988344&utm_term=10435&utm_content=666308&utm_medium=affiliate&irclickid=1Sd0JU24pxyZWXzxnEWLWz28Uku1lr3BZTtIxE0&irgwc=1&afsrc=1&utm_source=LETHUY",
+    href: "/go/easyship",
   },
   {
     name: "Systeme",
@@ -121,7 +121,7 @@ const allTools = [
     socialProof: "Popular among solo founders and small teams",
     microHook: "Build your entire funnel stack for less",
     image: "/src/assets/tools/systeme.jpg",
-    href: "https://systeme.io/?sa=sa0246910810ba30b29294f24dd70d00c490781e19",
+    href: "/go/systeme",
   },
 ];
 
