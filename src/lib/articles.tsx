@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowUpRight } from "lucide-react";
+import { Link } from "@tanstack/react-router";
 
 // Affiliate links
 const LINKS = {
@@ -784,6 +785,9 @@ function ArticleHoloVsPictory() {
           quickly without hiring an editor.
         </p>
         <ToolCTA href={LINKS.holo} label="If you want to check it yourself — see Holo AI here" />
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          Want a deeper look? Read my <Link to="/blog/$slug" params={{ slug: "holo-ai-review" }} className="text-brand hover:underline">full Holo AI review</Link> after testing it for 7 days.
+        </p>
       </section>
 
       <section>
@@ -925,6 +929,9 @@ function ArticleHoloReview() {
           Here's exactly what happened.
         </p>
         <ToolCTA href={LINKS.holo} label="Check out Holo AI here" />
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          Not sure if Holo AI is right for you? <Link to="/blog/$slug" params={{ slug: "holo-ai-vs-pictory" }} className="text-brand hover:underline">See how it compares to Pictory</Link> or check my <Link to="/blog/$slug" params={{ slug: "best-ai-video-tools" }} className="text-brand hover:underline">full list of AI video tools</Link> for more options.
+        </p>
       </section>
 
       <section>
@@ -1119,6 +1126,9 @@ function ArticleBestAIVideoTools() {
         </ul>
         <p className="mt-3 text-sm italic text-muted-foreground">"This one felt faster than anything else I tested."</p>
         <ToolCTA href={LINKS.holo} label="If you want to try it, check Holo AI here" />
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          Want a detailed breakdown? Read my <Link to="/blog/$slug" params={{ slug: "holo-ai-review" }} className="text-brand hover:underline">full Holo AI review</Link> or see the <Link to="/blog/$slug" params={{ slug: "holo-ai-vs-pictory" }} className="text-brand hover:underline">direct comparison with Pictory</Link>.
+        </p>
       </section>
 
       <section>
