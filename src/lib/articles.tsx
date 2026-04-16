@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowUpRight } from "lucide-react";
+import { Link } from "@tanstack/react-router";
 
 // Affiliate links
 const LINKS = {
