@@ -4,6 +4,7 @@ import { Link } from "@tanstack/react-router";
 
 // Affiliate links
 const LINKS = {
+  trendtrack: "/go/trendtrack",
   wetracked: "/go/wetracked",
   holo: "/go/holo-ai",
   manychat: "/go/manychat",
@@ -48,6 +49,26 @@ export interface ArticleMeta {
 }
 
 export const articlesMeta: ArticleMeta[] = [
+  {
+    title: "Best Shopify Product Research Tools in 2026 (Tested & Ranked)",
+    excerpt: "The 5 best Shopify product research tools for finding winning products in 2026. Honest comparison with pros, cons, and our top pick.",
+    category: "Product Research",
+    date: "April 17, 2026",
+    readTime: "8 min read",
+    slug: "best-shopify-product-research-tools",
+    featured: true,
+    toc: ["Why Product Research Matters", "Trendtrack", "Minea", "Dropship.io", "Sell The Trend", "PPSpy", "How to Choose", "Best for Beginners", "Best for Scaling"],
+  },
+  {
+    title: "Trendtrack vs Minea: Which One Finds Better Winning Products?",
+    excerpt: "Honest comparison of Trendtrack and Minea for Shopify product research and ad spying. Features, pricing, and which one wins for dropshippers.",
+    category: "Product Research",
+    date: "April 17, 2026",
+    readTime: "7 min read",
+    slug: "trendtrack-vs-minea",
+    featured: false,
+    toc: ["Quick Verdict", "Key Differences", "Comparison Table", "Best for Beginners", "Best for Scaling", "Final Recommendation"],
+  },
   {
     title: "Best AI Video Tools for 2026 (Tested & Compared)",
     excerpt: "I tested several AI video tools to find out which ones are actually worth using. Here's my honest breakdown with pros, cons, and real insights.",
@@ -133,6 +154,10 @@ export const articlesMeta: ArticleMeta[] = [
 
 export function getArticleContent(slug: string): React.ReactNode | null {
   switch (slug) {
+    case "best-shopify-product-research-tools":
+      return <ArticleBestShopifyResearch />;
+    case "trendtrack-vs-minea":
+      return <ArticleTrendtrackVsMinea />;
     case "best-ai-video-tools":
       return <ArticleBestAIVideoTools />;
     case "holo-ai-vs-pictory":
@@ -1234,6 +1259,181 @@ function ArticleBestAIVideoTools() {
           My recommendation? If you're not sure where to start, go with the simplest option first and see if it fits your workflow. You can always upgrade later.
         </p>
         <ToolCTA href={LINKS.holo} label="Start with Holo AI here" />
+      </section>
+    </div>
+  );
+}
+
+function ArticleBestShopifyResearch() {
+  return (
+    <div className="space-y-8">
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Why Product Research Is Critical in 2026</h2>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          Product research is the single highest-leverage decision in ecommerce. The right product makes mediocre ads profitable. The wrong one makes great ads lose money. In 2026, with rising ad costs and saturated audiences, picking products based on real data — not gut feel — is non-negotiable.
+        </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          The good news: there are now powerful tools that show you exactly which products are selling, which stores are scaling them, and which ads are driving the sales. Here are the 5 best Shopify product research tools we tested this year.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">1. Trendtrack — Our #1 Pick</h2>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          <strong className="text-foreground">Short description:</strong> A complete Shopify spy and product research platform that tracks millions of stores, surfaces trending products in real time, and shows you the exact ads competitors are running.
+        </p>
+        <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
+          <li>• <strong className="text-foreground">Best for:</strong> Dropshippers and media buyers who want winning products before they saturate.</li>
+          <li>• <strong className="text-foreground">Pros:</strong> Massive Shopify database, live ad library, accurate revenue estimates, fast UX.</li>
+        </ul>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          Trendtrack stands out because it combines store-level data with creative intelligence. You don't just see what's selling — you see how it's being sold. For active dropshippers, it pays for itself with one winning product. Read our full <Link to="/tools/trendtrack-review" className="text-brand hover:underline">Trendtrack review</Link> for the deep dive.
+        </p>
+        <ToolCTA href={LINKS.trendtrack} label="Find Winning Products Now" />
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">2. Minea</h2>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          <strong className="text-foreground">Short description:</strong> Multi-platform ad spy covering Meta, TikTok, and Pinterest with strong creative search.
+        </p>
+        <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
+          <li>• <strong className="text-foreground">Best for:</strong> Media buyers who want broad ad inspiration across networks.</li>
+          <li>• <strong className="text-foreground">Pros:</strong> Wide ad coverage, useful filters, decent influencer data.</li>
+        </ul>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          Minea is solid if your focus is creative spying. It has less depth on Shopify store revenue and product-level tracking than Trendtrack — see our full <Link to="/blog/$slug" params={{ slug: "trendtrack-vs-minea" }} className="text-brand hover:underline">Trendtrack vs Minea breakdown</Link>.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">3. Dropship.io</h2>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          <strong className="text-foreground">Short description:</strong> Store and product tracker focused on Shopify with a clean interface.
+        </p>
+        <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
+          <li>• <strong className="text-foreground">Best for:</strong> Beginners learning what to look for in a winning store.</li>
+          <li>• <strong className="text-foreground">Pros:</strong> Simple UI, store sales tracking, product database.</li>
+        </ul>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          Lighter on real-time ad creative data, but a good starter tool. Most operators outgrow it once they need ad-level intelligence.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">4. Sell The Trend</h2>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          <strong className="text-foreground">Short description:</strong> All-in-one product research and store builder with AI suggestions.
+        </p>
+        <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
+          <li>• <strong className="text-foreground">Best for:</strong> Beginners who also want help building their store.</li>
+          <li>• <strong className="text-foreground">Pros:</strong> Bundled features, AI product picks, supplier integration.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">5. PPSpy</h2>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          <strong className="text-foreground">Short description:</strong> Lightweight Shopify spy with browser-based tracking.
+        </p>
+        <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
+          <li>• <strong className="text-foreground">Best for:</strong> Casual research on a low budget.</li>
+          <li>• <strong className="text-foreground">Pros:</strong> Affordable, easy to use, decent store snapshots.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">How to Choose the Right Tool</h2>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          Pick based on what stage you're in. If you're researching products and need ad-level intelligence, prioritize a tool with both store data and an ad library. If you only need creative inspiration, a pure ad spy works. If you're new, start simple and upgrade as your testing budget grows.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Best Tool for Beginners</h2>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          For beginners, <strong className="text-foreground">Trendtrack</strong> is still the best pick because it shortens the learning curve dramatically — you see real winning examples, not theory. Dropship.io is a reasonable lower-cost starter if budget is the constraint.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Best Tool for Scaling</h2>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          For scaling operators running multiple stores or testing dozens of products per month, <strong className="text-foreground">Trendtrack</strong> wins again. The depth of store data plus the live ad library means you spend less time guessing and more time launching tested angles.
+        </p>
+        <ToolCTA href={LINKS.trendtrack} label="Start Scaling Today" />
+      </section>
+    </div>
+  );
+}
+
+function ArticleTrendtrackVsMinea() {
+  return (
+    <div className="space-y-8">
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Quick Verdict</h2>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          Both tools are popular for product research and ad spying, but they solve slightly different problems. <strong className="text-foreground">Trendtrack</strong> wins for Shopify-focused dropshippers who want store-level data plus ad intelligence. <strong className="text-foreground">Minea</strong> is better if you only care about ad creative inspiration across multiple networks.
+        </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          For most ecommerce operators, our recommendation is Trendtrack — see our full <Link to="/tools/trendtrack-review" className="text-brand hover:underline">Trendtrack review</Link> for why.
+        </p>
+        <ToolCTA href={LINKS.trendtrack} label="Find Winning Products Now" />
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Key Differences</h2>
+        <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
+          <li>• <strong className="text-foreground">Focus:</strong> Trendtrack is Shopify-first. Minea is ad-network-first.</li>
+          <li>• <strong className="text-foreground">Store data:</strong> Trendtrack tracks store revenue, top products, and launches. Minea is lighter here.</li>
+          <li>• <strong className="text-foreground">Ad library:</strong> Both have one. Minea covers more networks; Trendtrack ties ads back to store-level performance.</li>
+          <li>• <strong className="text-foreground">Speed:</strong> Trendtrack tends to surface trending products earlier in the curve.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Comparison Table</h2>
+        <div className="mt-4 overflow-hidden rounded-xl border border-border">
+          <table className="w-full text-left text-sm">
+            <thead className="bg-surface text-xs uppercase text-muted-foreground">
+              <tr>
+                <th className="p-3">Feature</th>
+                <th className="p-3">Trendtrack</th>
+                <th className="p-3">Minea</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-border">
+              <tr><td className="p-3 font-medium text-foreground">Shopify store tracking</td><td className="p-3 text-muted-foreground">Excellent</td><td className="p-3 text-muted-foreground">Limited</td></tr>
+              <tr><td className="p-3 font-medium text-foreground">Ad library</td><td className="p-3 text-muted-foreground">Strong (Meta, TikTok)</td><td className="p-3 text-muted-foreground">Strong (Meta, TikTok, Pinterest)</td></tr>
+              <tr><td className="p-3 font-medium text-foreground">Revenue estimates</td><td className="p-3 text-muted-foreground">Yes</td><td className="p-3 text-muted-foreground">Partial</td></tr>
+              <tr><td className="p-3 font-medium text-foreground">Ease of use</td><td className="p-3 text-muted-foreground">Modern, fast</td><td className="p-3 text-muted-foreground">Solid</td></tr>
+              <tr><td className="p-3 font-medium text-foreground">Pricing</td><td className="p-3 text-muted-foreground">Mid-tier, scales with features</td><td className="p-3 text-muted-foreground">Mid-tier</td></tr>
+              <tr><td className="p-3 font-medium text-foreground">Best for</td><td className="p-3 text-muted-foreground">Dropshippers, scaling operators</td><td className="p-3 text-muted-foreground">Media buyers, creative research</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Which Is Better for Beginners?</h2>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          <strong className="text-foreground">Trendtrack.</strong> Beginners benefit most from seeing real winning stores and the exact products driving sales. It removes guesswork and shortens the path to a first profitable product test.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Which Is Better for Scaling?</h2>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          <strong className="text-foreground">Trendtrack.</strong> When you're scaling, you need to validate angles fast and pull live ad references quickly. Trendtrack's combination of store revenue data plus creative intelligence makes it the more efficient tool for high-volume testing.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Final Recommendation</h2>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          For most ecommerce founders and dropshippers, <strong className="text-foreground">Trendtrack is the better choice</strong>. It gives you a clearer picture of what's actually working at the store level and connects that to the ads driving the sales. Minea is a fine secondary tool if you want extra creative coverage across more ad networks.
+        </p>
+        <ToolCTA href={LINKS.trendtrack} label="Start Scaling Today" />
       </section>
     </div>
   );

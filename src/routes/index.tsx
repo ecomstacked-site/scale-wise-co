@@ -26,10 +26,10 @@ export const Route = createFileRoute("/")({
 });
 
 const featuredTools = [
+  { name: "Trendtrack", description: "Spy on Shopify stores, track winning products in real time, and pull the ads driving the sales.", bestFor: "Product research & store spying", benefit: "Find winning products before they saturate", category: "Product Research", featured: true, image: "/src/assets/tools/wetracked.jpg", href: "/go/trendtrack" },
   { name: "WeTracked", description: "Accurate server-side tracking for Facebook, Google, and TikTok ads with first-party data.", bestFor: "Ad tracking & attribution", benefit: "Recover lost conversions and improve ROAS", category: "Tracking", featured: true, image: "/src/assets/tools/wetracked.jpg", href: "/go/wetracked" },
   { name: "Holo AI", description: "Ad creative platform for ecommerce brands. Generate winning ads at scale without a design team.", bestFor: "Ad creative & content", benefit: "Produce more creatives in less time", category: "AI Content", featured: true, image: "/src/assets/tools/holo-ai.jpg", href: "/go/holo-ai" },
   { name: "ManyChat", description: "Automated messaging for Instagram, Facebook, and WhatsApp to capture leads and drive sales.", bestFor: "Chat automation & DMs", benefit: "Convert conversations into customers", category: "Automation", featured: false, image: "/src/assets/tools/manychat.jpg", href: "/go/manychat" },
-  { name: "Evebee", description: "Product research and store analytics for Shopify and Etsy sellers.", bestFor: "Store optimization", benefit: "Find proven products using real data", category: "Optimization", featured: false, image: "/src/assets/tools/evebee.jpg", href: "/go/everbee" },
 ];
 
 const categories = [
@@ -60,24 +60,67 @@ function HomePage() {
             Independent Ecommerce Tools Resource
           </Badge>
           <h1 className="font-display text-4xl font-extrabold leading-[1.1] tracking-tight text-foreground sm:text-5xl lg:text-6xl">
-            Discover the Best AI &amp; Growth Tools for Ecommerce
+            Stop Guessing. Use Tools That Actually Make Money.
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg sm:leading-relaxed">
-            We research, test, and organize tools that help dropshippers and ecommerce brands improve tracking, automate workflows, create better ads, and scale profitably.
+            Discover AI &amp; ecommerce tools used to find winning products, scale ads, and grow profitable Shopify stores.
           </p>
           <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Link to="/tools">
               <Button variant="brand" size="lg" className="gap-2 px-6">
-                Explore Tools <ArrowRight className="h-4 w-4" />
+                Find Winning Tools <ArrowRight className="h-4 w-4" />
               </Button>
             </Link>
-            <Link to="/blog">
-              <Button variant="outline" size="lg" className="px-6">Read Latest Guides</Button>
-            </Link>
+            <a href="/go/trendtrack" target="_blank" rel="noopener noreferrer nofollow">
+              <Button variant="outline" size="lg" className="px-6">See What's Working Now</Button>
+            </a>
           </div>
           <p className="mt-6 text-xs text-muted-foreground">
             Trusted by 2,000+ ecommerce founders &amp; operators
           </p>
+        </div>
+      </section>
+
+      {/* Make Money Stack */}
+      <section className="border-b border-border bg-surface py-16 sm:py-20">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6">
+          <div className="text-center">
+            <p className="text-xs font-semibold uppercase tracking-widest text-brand">The Funnel</p>
+            <h2 className="mt-2 font-display text-2xl font-bold text-foreground sm:text-3xl">The Make Money Stack</h2>
+            <p className="mx-auto mt-3 max-w-xl text-sm leading-relaxed text-muted-foreground">
+              The 4-step stack ecommerce operators use to find products, create ads, track results, and convert customers.
+            </p>
+          </div>
+          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {[
+              { step: "01", title: "Find Products", tool: "Trendtrack", desc: "Spy on winning Shopify stores and uncover trending products.", href: "/tools/trendtrack-review", cta: "Find Winning Products" },
+              { step: "02", title: "Create Ads", tool: "Holo AI", desc: "Generate scroll-stopping video and image ads in minutes.", href: "/go/holo-ai", cta: "Start Scaling Now" },
+              { step: "03", title: "Track Performance", tool: "WeTracked", desc: "Server-side tracking that recovers lost ad conversions.", href: "/go/wetracked", cta: "Start Scaling Now" },
+              { step: "04", title: "Convert Customers", tool: "ManyChat", desc: "Automate DMs to turn conversations into paying customers.", href: "/go/manychat", cta: "Start Scaling Now" },
+            ].map((s) => (
+              <Card key={s.step} className="flex flex-col">
+                <CardContent className="flex flex-1 flex-col p-5">
+                  <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-brand/10 font-display text-xs font-bold text-brand">{s.step}</div>
+                  <p className="mt-3 text-xs font-semibold uppercase tracking-wider text-muted-foreground">{s.title}</p>
+                  <h3 className="mt-1 font-display text-lg font-bold text-foreground">{s.tool}</h3>
+                  <p className="mt-2 flex-1 text-xs leading-relaxed text-muted-foreground">{s.desc}</p>
+                  {s.href.startsWith("/tools") ? (
+                    <Link to={s.href as "/tools/trendtrack-review"} className="mt-4">
+                      <Button variant="brand-outline" size="sm" className="w-full gap-1 text-xs">
+                        {s.cta} <ArrowRight className="h-3 w-3" />
+                      </Button>
+                    </Link>
+                  ) : (
+                    <a href={s.href} target="_blank" rel="noopener noreferrer nofollow" className="mt-4 block">
+                      <Button variant="brand-outline" size="sm" className="w-full gap-1 text-xs">
+                        {s.cta} <ArrowRight className="h-3 w-3" />
+                      </Button>
+                    </a>
+                  )}
+                </CardContent>
+              </Card>
+            ))}
+          </div>
         </div>
       </section>
 
