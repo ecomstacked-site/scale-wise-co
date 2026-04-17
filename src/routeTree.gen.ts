@@ -18,6 +18,7 @@ import { Route as BlogRouteImport } from './routes/blog'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as BlogIndexRouteImport } from './routes/blog.index'
+import { Route as ToolsTrendtrackReviewRouteImport } from './routes/tools.trendtrack-review'
 import { Route as GoToolRouteImport } from './routes/go.$tool'
 import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
 
@@ -66,6 +67,11 @@ const BlogIndexRoute = BlogIndexRouteImport.update({
   path: '/',
   getParentRoute: () => BlogRoute,
 } as any)
+const ToolsTrendtrackReviewRoute = ToolsTrendtrackReviewRouteImport.update({
+  id: '/trendtrack-review',
+  path: '/trendtrack-review',
+  getParentRoute: () => ToolsRoute,
+} as any)
 const GoToolRoute = GoToolRouteImport.update({
   id: '/go/$tool',
   path: '/go/$tool',
@@ -85,9 +91,10 @@ export interface FileRoutesByFullPath {
   '/disclaimer': typeof DisclaimerRoute
   '/privacy': typeof PrivacyRoute
   '/terms': typeof TermsRoute
-  '/tools': typeof ToolsRoute
+  '/tools': typeof ToolsRouteWithChildren
   '/blog/$slug': typeof BlogSlugRoute
   '/go/$tool': typeof GoToolRoute
+  '/tools/trendtrack-review': typeof ToolsTrendtrackReviewRoute
   '/blog/': typeof BlogIndexRoute
 }
 export interface FileRoutesByTo {
@@ -97,9 +104,10 @@ export interface FileRoutesByTo {
   '/disclaimer': typeof DisclaimerRoute
   '/privacy': typeof PrivacyRoute
   '/terms': typeof TermsRoute
-  '/tools': typeof ToolsRoute
+  '/tools': typeof ToolsRouteWithChildren
   '/blog/$slug': typeof BlogSlugRoute
   '/go/$tool': typeof GoToolRoute
+  '/tools/trendtrack-review': typeof ToolsTrendtrackReviewRoute
   '/blog': typeof BlogIndexRoute
 }
 export interface FileRoutesById {
@@ -111,9 +119,10 @@ export interface FileRoutesById {
   '/disclaimer': typeof DisclaimerRoute
   '/privacy': typeof PrivacyRoute
   '/terms': typeof TermsRoute
-  '/tools': typeof ToolsRoute
+  '/tools': typeof ToolsRouteWithChildren
   '/blog/$slug': typeof BlogSlugRoute
   '/go/$tool': typeof GoToolRoute
+  '/tools/trendtrack-review': typeof ToolsTrendtrackReviewRoute
   '/blog/': typeof BlogIndexRoute
 }
 export interface FileRouteTypes {
@@ -129,6 +138,7 @@ export interface FileRouteTypes {
     | '/tools'
     | '/blog/$slug'
     | '/go/$tool'
+    | '/tools/trendtrack-review'
     | '/blog/'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -141,6 +151,7 @@ export interface FileRouteTypes {
     | '/tools'
     | '/blog/$slug'
     | '/go/$tool'
+    | '/tools/trendtrack-review'
     | '/blog'
   id:
     | '__root__'
@@ -154,6 +165,7 @@ export interface FileRouteTypes {
     | '/tools'
     | '/blog/$slug'
     | '/go/$tool'
+    | '/tools/trendtrack-review'
     | '/blog/'
   fileRoutesById: FileRoutesById
 }
@@ -165,7 +177,7 @@ export interface RootRouteChildren {
   DisclaimerRoute: typeof DisclaimerRoute
   PrivacyRoute: typeof PrivacyRoute
   TermsRoute: typeof TermsRoute
-  ToolsRoute: typeof ToolsRoute
+  ToolsRoute: typeof ToolsRouteWithChildren
   GoToolRoute: typeof GoToolRoute
 }
 
@@ -234,6 +246,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlogIndexRouteImport
       parentRoute: typeof BlogRoute
     }
+    '/tools/trendtrack-review': {
+      id: '/tools/trendtrack-review'
+      path: '/trendtrack-review'
+      fullPath: '/tools/trendtrack-review'
+      preLoaderRoute: typeof ToolsTrendtrackReviewRouteImport
+      parentRoute: typeof ToolsRoute
+    }
     '/go/$tool': {
       id: '/go/$tool'
       path: '/go/$tool'
@@ -263,6 +282,16 @@ const BlogRouteChildren: BlogRouteChildren = {
 
 const BlogRouteWithChildren = BlogRoute._addFileChildren(BlogRouteChildren)
 
+interface ToolsRouteChildren {
+  ToolsTrendtrackReviewRoute: typeof ToolsTrendtrackReviewRoute
+}
+
+const ToolsRouteChildren: ToolsRouteChildren = {
+  ToolsTrendtrackReviewRoute: ToolsTrendtrackReviewRoute,
+}
+
+const ToolsRouteWithChildren = ToolsRoute._addFileChildren(ToolsRouteChildren)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
@@ -271,7 +300,7 @@ const rootRouteChildren: RootRouteChildren = {
   DisclaimerRoute: DisclaimerRoute,
   PrivacyRoute: PrivacyRoute,
   TermsRoute: TermsRoute,
-  ToolsRoute: ToolsRoute,
+  ToolsRoute: ToolsRouteWithChildren,
   GoToolRoute: GoToolRoute,
 }
 export const routeTree = rootRouteImport
