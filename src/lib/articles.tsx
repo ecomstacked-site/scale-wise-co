@@ -1608,7 +1608,7 @@ function ArticleWinningProductsWeek() {
         </p>
         <ToolCTA href={LINKS.trendtrack} label="Find Winning Products Now" />
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          Want the full breakdown? Read the <Link to="/tools/trendtrack-review" className="text-brand underline">Trendtrack review</Link> or our <Link to="/blog/how-to-find-winning-products" className="text-brand underline">step-by-step guide to finding winners</Link>.
+          Want the full breakdown? Read the <Link to="/tools/trendtrack-review" className="text-brand underline">Trendtrack review</Link> or our <Link to="/blog/$slug" params={{ slug: "how-to-find-winning-products" }} className="text-brand underline">step-by-step guide to finding winners</Link>.
         </p>
       </section>
     </div>
