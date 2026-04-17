@@ -4,6 +4,7 @@ import { Link } from "@tanstack/react-router";
 
 // Affiliate links
 const LINKS = {
+  trendtrack: "/go/trendtrack",
   wetracked: "/go/wetracked",
   holo: "/go/holo-ai",
   manychat: "/go/manychat",
@@ -48,6 +49,26 @@ export interface ArticleMeta {
 }
 
 export const articlesMeta: ArticleMeta[] = [
+  {
+    title: "Best Shopify Product Research Tools in 2026 (Tested & Ranked)",
+    excerpt: "The 5 best Shopify product research tools for finding winning products in 2026. Honest comparison with pros, cons, and our top pick.",
+    category: "Product Research",
+    date: "April 17, 2026",
+    readTime: "8 min read",
+    slug: "best-shopify-product-research-tools",
+    featured: true,
+    toc: ["Why Product Research Matters", "Trendtrack", "Minea", "Dropship.io", "Sell The Trend", "PPSpy", "How to Choose", "Best for Beginners", "Best for Scaling"],
+  },
+  {
+    title: "Trendtrack vs Minea: Which One Finds Better Winning Products?",
+    excerpt: "Honest comparison of Trendtrack and Minea for Shopify product research and ad spying. Features, pricing, and which one wins for dropshippers.",
+    category: "Product Research",
+    date: "April 17, 2026",
+    readTime: "7 min read",
+    slug: "trendtrack-vs-minea",
+    featured: false,
+    toc: ["Quick Verdict", "Key Differences", "Comparison Table", "Best for Beginners", "Best for Scaling", "Final Recommendation"],
+  },
   {
     title: "Best AI Video Tools for 2026 (Tested & Compared)",
     excerpt: "I tested several AI video tools to find out which ones are actually worth using. Here's my honest breakdown with pros, cons, and real insights.",
@@ -133,6 +154,10 @@ export const articlesMeta: ArticleMeta[] = [
 
 export function getArticleContent(slug: string): React.ReactNode | null {
   switch (slug) {
+    case "best-shopify-product-research-tools":
+      return <ArticleBestShopifyResearch />;
+    case "trendtrack-vs-minea":
+      return <ArticleTrendtrackVsMinea />;
     case "best-ai-video-tools":
       return <ArticleBestAIVideoTools />;
     case "holo-ai-vs-pictory":
