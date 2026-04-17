@@ -15,7 +15,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 
-export const Route = createFileRoute("/tools")({
+export const Route = createFileRoute("/tools/")({
   head: () => ({
     meta: [
       { title: "Recommended Tools — EcomStacked" },
