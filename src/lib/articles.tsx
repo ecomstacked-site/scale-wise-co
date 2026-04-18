@@ -2,7 +2,8 @@ import { Button } from "@/components/ui/button";
 import { ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
-// Affiliate links
+// All affiliate destinations route through internal /go/[brand]
+// transition pages so we never link directly to an affiliate URL.
 const LINKS = {
   trendtrack: "/go/trendtrack",
   wetracked: "/go/wetracked",
@@ -13,12 +14,13 @@ const LINKS = {
   systeme: "/go/systeme",
   gohighlevel: "/go/gohighlevel",
   weshop: "/go/weshop-ai",
+  pictory: "/go/pictory",
 };
 
-function ToolCTA({ href, label = "Visit Website" }: { href: string; label?: string }) {
+function ToolCTA({ href, label = "Visit Official Website" }: { href: string; label?: string }) {
   return (
     <div className="my-6">
-      <a href={href} target="_blank" rel="noopener noreferrer nofollow">
+      <a href={href} rel="noopener noreferrer nofollow">
         <Button variant="brand" size="sm" className="gap-1.5">
           {label} <ArrowUpRight className="h-3.5 w-3.5" />
         </Button>
@@ -870,7 +872,7 @@ function ArticleHoloVsPictory() {
           It's a better fit for content marketers, course creators, or anyone who wants more polish and
           doesn't mind spending extra time in the editor.
         </p>
-        <ToolCTA href="https://pictory.ai?ref=ecomstacked" label="Check Pictory's features here" />
+        <ToolCTA href={LINKS.pictory} label="Explore Pictory's features" />
       </section>
 
       <section>
@@ -964,14 +966,14 @@ function ArticleHoloVsPictory() {
         </p>
 
         <div className="mt-6 flex flex-col gap-3 sm:flex-row">
-          <a href={LINKS.holo} target="_blank" rel="noopener noreferrer nofollow">
+          <a href={LINKS.holo} rel="noopener noreferrer nofollow">
             <Button variant="brand" size="sm" className="gap-1.5">
-              Check Holo AI here <ArrowUpRight className="h-3.5 w-3.5" />
+              Visit Holo AI <ArrowUpRight className="h-3.5 w-3.5" />
             </Button>
           </a>
-          <a href="https://pictory.ai?ref=ecomstacked" target="_blank" rel="noopener noreferrer nofollow">
+          <a href={LINKS.pictory} rel="noopener noreferrer nofollow">
             <Button variant="secondary" size="sm" className="gap-1.5">
-              You can explore Pictory here <ArrowUpRight className="h-3.5 w-3.5" />
+              Explore Pictory <ArrowUpRight className="h-3.5 w-3.5" />
             </Button>
           </a>
         </div>
@@ -1217,7 +1219,7 @@ function ArticleBestAIVideoTools() {
           <li>• Works well for longer content formats</li>
         </ul>
         <p className="mt-3 text-sm italic text-muted-foreground">"It takes a bit more time, but the output feels more polished for longer videos."</p>
-        <ToolCTA href="https://pictory.ai?ref=ecomstacked" label="You can check Pictory here" />
+        <ToolCTA href={LINKS.pictory} label="Explore Pictory" />
       </section>
 
       <section>

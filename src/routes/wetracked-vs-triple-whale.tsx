@@ -52,9 +52,9 @@ export default function WeTrackedVsTripleWhalePage() {
             Two of the most-talked-about ad tracking tools for ecommerce — but only one is the right fit for most advertisers today. Here's the honest breakdown.
           </p>
           <div className="mt-6 flex justify-center">
-            <a href={AFFILIATE_LINK} target="_blank" rel="noopener noreferrer nofollow">
+            <a href={AFFILIATE_LINK} rel="noopener noreferrer nofollow">
               <Button variant="brand" size="lg" className="gap-2">
-                Try WeTracked Free <ArrowUpRight className="h-4 w-4" />
+                View WeTracked Pricing <ArrowUpRight className="h-4 w-4" />
               </Button>
             </a>
           </div>
