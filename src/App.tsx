@@ -12,6 +12,7 @@ import ToolsPage from "./routes/tools.index";
 import ProductResearchPage from "./routes/tools.product-research";
 import TrendtrackReview from "./routes/tools.trendtrack-review";
 import WeTrackedReview from "./routes/tools.wetracked-review";
+import { Navigate } from "react-router-dom";
 
 const affiliateLinks: Record<string, string> = {
   trendtrack: "https://trendtrack.io?fpr=stacked45",
@@ -84,6 +85,8 @@ export default function App() {
       <Route path="/tools/product-research" element={<ProductResearchPage />} />
       <Route path="/tools/trendtrack-review" element={<TrendtrackReview />} />
       <Route path="/tools/wetracked-review" element={<WeTrackedReview />} />
+      <Route path="/best-ad-tracking-tools" element={<Navigate to="/blog/best-ad-tracking-tools-2026" replace />} />
+      <Route path="/blog/wetracked-review" element={<Navigate to="/tools/wetracked-review" replace />} />
       <Route path="/go/:tool" element={<GoRedirect />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
