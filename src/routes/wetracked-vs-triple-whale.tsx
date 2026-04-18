@@ -16,10 +16,10 @@ import {
 
 const AFFILIATE_LINK = "/go/wetracked";
 
-function CTAButton({ label = "Start using WeTracked now" }: { label?: string }) {
+function CTAButton({ label = "Visit the Official WeTracked Site" }: { label?: string }) {
   return (
     <div className="my-6">
-      <a href={AFFILIATE_LINK} target="_blank" rel="noopener noreferrer nofollow">
+      <a href={AFFILIATE_LINK} rel="noopener noreferrer nofollow">
         <Button variant="brand" size="lg" className="gap-2">
           {label} <ArrowUpRight className="h-4 w-4" />
         </Button>
