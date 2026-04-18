@@ -78,14 +78,14 @@ export function ToolCard({ name, description, bestFor, benefit, category, featur
               <p className="mb-2 text-[11px] font-medium text-foreground/70">{microHook}</p>
             )}
             {href ? (
-              <a href={href} target="_blank" rel="noopener noreferrer nofollow" className="block">
+              <a href={href} rel="noopener noreferrer nofollow" className="block">
                 <Button variant="brand" size="sm" className="w-full gap-1 text-xs">
-                  Start Scaling Now <ArrowUpRight className="h-3 w-3" />
+                  Learn More <ArrowUpRight className="h-3 w-3" />
                 </Button>
               </a>
             ) : (
               <Button variant="brand" size="sm" className="w-full gap-1 text-xs">
-                See What's Working <ArrowUpRight className="h-3 w-3" />
+                Learn More <ArrowUpRight className="h-3 w-3" />
               </Button>
             )}
           </div>

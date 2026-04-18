@@ -66,8 +66,8 @@ export default function HomePage() {
                 Find Winning Tools <ArrowRight className="h-4 w-4" />
               </Button>
             </Link>
-            <a href="/go/trendtrack" target="_blank" rel="noopener noreferrer nofollow">
-              <Button variant="outline" size="lg" className="px-6">See What's Working Now</Button>
+            <a href="/go/trendtrack" rel="noopener noreferrer nofollow">
+              <Button variant="outline" size="lg" className="px-6">View Trendtrack Pricing</Button>
             </a>
           </div>
           <p className="mt-6 text-xs text-muted-foreground">
@@ -88,10 +88,10 @@ export default function HomePage() {
           </div>
           <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {[
-              { step: "01", title: "Find Products", tool: "Trendtrack", desc: "Spy on winning Shopify stores and uncover trending products.", href: "/tools/trendtrack-review", cta: "Find Winning Products" },
-              { step: "02", title: "Create Ads", tool: "Holo AI", desc: "Generate scroll-stopping video and image ads in minutes.", href: "/go/holo-ai", cta: "Start Scaling Now" },
-              { step: "03", title: "Track Performance", tool: "WeTracked", desc: "Server-side tracking that recovers lost ad conversions.", href: "/go/wetracked", cta: "Start Scaling Now" },
-              { step: "04", title: "Convert Customers", tool: "ManyChat", desc: "Automate DMs to turn conversations into paying customers.", href: "/go/manychat", cta: "Start Scaling Now" },
+              { step: "01", title: "Find Products", tool: "Trendtrack", desc: "Spy on winning Shopify stores and uncover trending products.", href: "/tools/trendtrack-review", cta: "Read Review" },
+              { step: "02", title: "Create Ads", tool: "Holo AI", desc: "Generate scroll-stopping video and image ads in minutes.", href: "/go/holo-ai", cta: "Learn More" },
+              { step: "03", title: "Track Performance", tool: "WeTracked", desc: "Server-side tracking that recovers lost ad conversions.", href: "/go/wetracked", cta: "View Pricing" },
+              { step: "04", title: "Convert Customers", tool: "ManyChat", desc: "Automate DMs to turn conversations into paying customers.", href: "/go/manychat", cta: "Learn More" },
             ].map((s) => (
               <Card key={s.step} className="flex flex-col">
                 <CardContent className="flex flex-1 flex-col p-5">
@@ -106,7 +106,7 @@ export default function HomePage() {
                       </Button>
                     </Link>
                   ) : (
-                    <a href={s.href} target="_blank" rel="noopener noreferrer nofollow" className="mt-4 block">
+                    <a href={s.href} rel="noopener noreferrer nofollow" className="mt-4 block">
                       <Button variant="brand-outline" size="sm" className="w-full gap-1 text-xs">
                         {s.cta} <ArrowRight className="h-3 w-3" />
                       </Button>
