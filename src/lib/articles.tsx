@@ -50,6 +50,17 @@ export interface ArticleMeta {
 
 export const articlesMeta: ArticleMeta[] = [
   {
+    title: "Best Ad Tracking Tools in 2026 (Ranked & Compared)",
+    excerpt: "The 5 best ad tracking tools for ecommerce in 2026, ranked and compared. Accuracy, pricing, ease of use — and our top pick for recovering lost conversions.",
+    category: "Tracking",
+    date: "April 18, 2026",
+    readTime: "9 min read",
+    slug: "best-ad-tracking-tools-2026",
+    featured: true,
+    image: "/assets/blog/best-ad-tracking-tools.jpg",
+    toc: ["Why Ad Tracking Is Broken in 2026", "WeTracked", "Triple Whale", "Hyros", "Northbeam", "Polar Analytics", "Comparison Table", "Why WeTracked Stands Out", "Final Verdict"],
+  },
+  {
     title: "How to Find Winning Products on Shopify in 2026 (Step-by-Step)",
     excerpt: "The exact step-by-step method to find winning Shopify products before they saturate. Real workflow used by 7-figure dropshippers.",
     category: "Product Research",
@@ -181,6 +192,8 @@ export const articlesMeta: ArticleMeta[] = [
 
 export function getArticleContent(slug: string): React.ReactNode | null {
   switch (slug) {
+    case "best-ad-tracking-tools-2026":
+      return <ArticleBestAdTrackingTools />;
     case "how-to-find-winning-products":
       return <ArticleHowToFindWinning />;
     case "winning-products-this-week":
