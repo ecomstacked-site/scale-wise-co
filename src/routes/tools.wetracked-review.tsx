@@ -20,18 +20,18 @@ import {
   Flame,
 } from "lucide-react";
 
-const AFF = "https://www.wetracked.io/?ref=ddf2eabf-bf17-4363-aaef-585e9c4e763a";
+const AFF = "/go/wetracked";
 
 function CTABlock({
-  primary = "Fix Your Tracking Now",
-  subtitle = "5-minute setup. Cancel anytime. Stop bleeding ad spend.",
+  primary = "View WeTracked Pricing",
+  subtitle = "5-minute setup. Cancel anytime.",
 }: {
   primary?: string;
   subtitle?: string;
 }) {
   return (
     <div className="my-8 rounded-2xl border border-brand/40 bg-brand/5 p-6 text-center">
-      <a href={AFF} target="_blank" rel="noopener noreferrer nofollow">
+      <a href={AFF} rel="noopener noreferrer nofollow">
         <Button variant="brand" size="lg" className="gap-2">
           {primary} <ArrowUpRight className="h-4 w-4" />
         </Button>
@@ -124,7 +124,7 @@ export default function WeTrackedReview() {
             </p>
           </div>
 
-          <CTABlock primary="Stop the Bleeding — Try WeTracked" subtitle="Most users see accurate data in their first 24 hours." />
+          <CTABlock primary="Visit the Official WeTracked Site" subtitle="Most users see accurate data within their first 24 hours." />
         </div>
       </section>
 
