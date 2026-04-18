@@ -2,7 +2,7 @@
   "redirects": [
     {
       "source": "/go/wetracked",
-      "destination": "https://wetracked.io/?ref=XXX",
+      "destination": "https://www.wetracked.io/?ref=ddf2eabf-bf17-4363-aaef-585e9c4e763a",
       "permanent": false
     }
   ],
