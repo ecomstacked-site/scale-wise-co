@@ -199,7 +199,7 @@ export default function TrendtrackReview() {
             </div>
           </section>
 
-          <CTABlock primary="Start Scaling Today" />
+          <CTABlock primary="Visit the Official Trendtrack Site" />
 
           {/* Real use case */}
           <section>
@@ -297,7 +297,7 @@ export default function TrendtrackReview() {
             <p className="mt-4 text-base leading-relaxed text-foreground">
               For active dropshippers, the cost is typically recovered <strong>within the first winning product</strong>. One $30/day winner pays for the tool many times over. Check the live pricing page for current rates and any active promos.
             </p>
-            <CTABlock primary="See Live Pricing" secondary="Start Scaling Today" />
+            <CTABlock primary="See Live Pricing" secondary="Compare Plans" />
           </section>
 
           {/* Alternatives */}
@@ -368,16 +368,16 @@ export default function TrendtrackReview() {
               <h3 className="font-display text-xl font-bold text-foreground">Ready to find your next winner?</h3>
               <p className="mt-2 text-sm text-muted-foreground">Stop guessing. Start using the same data top dropshippers rely on.</p>
               <div className="mt-5 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
-                <a href={AFF} target="_blank" rel="noopener noreferrer nofollow">
+                <a href={AFF} rel="noopener noreferrer nofollow">
                   <Button variant="brand" size="lg" className="gap-2">
-                    Find Winning Products Now <ArrowUpRight className="h-4 w-4" />
+                    View Trendtrack Pricing <ArrowUpRight className="h-4 w-4" />
                   </Button>
                 </a>
-                <a href={AFF} target="_blank" rel="noopener noreferrer nofollow">
-                  <Button variant="outline" size="lg">Start Scaling Today</Button>
+                <a href={AFF} rel="noopener noreferrer nofollow">
+                  <Button variant="outline" size="lg">Visit Official Site</Button>
                 </a>
               </div>
-              <p className="mt-3 text-xs text-muted-foreground">No more guessing. See what's already working.</p>
+              <p className="mt-3 text-xs text-muted-foreground">See what's already working on Shopify right now.</p>
             </div>
           </section>
 
