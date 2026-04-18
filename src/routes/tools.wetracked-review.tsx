@@ -8,35 +8,42 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import {
   ArrowUpRight,
-  AlertTriangle,
-  TrendingDown,
-  TrendingUp,
   CheckCircle2,
   XCircle,
-  Zap,
-  Clock,
-  DollarSign,
   ShieldCheck,
-  Flame,
+  Zap,
+  TrendingUp,
+  DollarSign,
+  Users,
+  LineChart,
 } from "lucide-react";
 
 const AFF = "/go/wetracked";
 
-function CTABlock({
-  primary = "View WeTracked Pricing",
-  subtitle = "5-minute setup. Cancel anytime.",
-}: {
-  primary?: string;
-  subtitle?: string;
-}) {
+function PrimaryCTA() {
   return (
-    <div className="my-8 rounded-2xl border border-brand/40 bg-brand/5 p-6 text-center">
-      <a href={AFF} rel="noopener noreferrer nofollow">
-        <Button variant="brand" size="lg" className="gap-2">
-          {primary} <ArrowUpRight className="h-4 w-4" />
-        </Button>
-      </a>
-      <p className="mt-3 text-xs text-muted-foreground">{subtitle}</p>
+    <div className="my-10 rounded-2xl border border-brand/40 bg-brand/5 p-6 text-center sm:p-8">
+      <h3 className="font-display text-xl font-bold text-foreground sm:text-2xl">
+        Ready to see WeTracked in action?
+      </h3>
+      <p className="mx-auto mt-2 max-w-xl text-sm text-muted-foreground">
+        Visit the official website to review current features, integrations, and pricing for your store.
+      </p>
+      <div className="mt-5 flex flex-col items-center justify-center gap-3 sm:flex-row">
+        <a href={AFF} target="_blank" rel="noopener noreferrer sponsored">
+          <Button variant="brand" size="lg" className="gap-2">
+            Visit Official Website <ArrowUpRight className="h-4 w-4" />
+          </Button>
+        </a>
+        <a href={AFF} target="_blank" rel="noopener noreferrer sponsored">
+          <Button variant="brand-outline" size="lg">
+            View Pricing
+          </Button>
+        </a>
+      </div>
+      <p className="mt-3 text-xs text-muted-foreground">
+        Affiliate link · We may earn a commission at no extra cost to you.
+      </p>
     </div>
   );
 }
@@ -45,109 +52,103 @@ export default function WeTrackedReview() {
   return (
     <div className="min-h-screen">
       <SEO
-        title="WeTracked Review 2026: The Ad Tracking Tool That Recovers Lost Ad Spend"
-        description="Honest WeTracked review for 2026. Why your ad tracking is broken, how WeTracked fixes it, real ROAS results, pricing, and whether it's worth it for ecommerce stores."
-        keywords="wetracked review, wetracked pricing, is wetracked worth it, ad tracking tool, fix tracking, ecommerce ad attribution, server side tracking"
-        ogTitle="WeTracked Review 2026 — Stop Losing Money to Broken Ad Tracking"
-        ogDescription="Your pixel is missing 30%+ of conversions. WeTracked recovers them. Honest review, pricing, and real results."
+        title="WeTracked Review 2026: Features, Pricing & Honest Verdict"
+        description="An informational WeTracked review for ecommerce advertisers. How it handles server-side tracking, who it's for, pros and cons, and how it compares in 2026."
+        keywords="wetracked review, wetracked pricing, wetracked features, server side tracking, ecommerce attribution"
+        ogTitle="WeTracked Review 2026 — Features, Pricing & Honest Verdict"
+        ogDescription="A practical WeTracked review covering features, pricing, and who it's actually built for."
         ogType="article"
         ogImage="/assets/blog/best-ad-tracking-tools.jpg"
       />
       <Header />
 
-      {/* HERO — Hook with pain */}
-      <section className="bg-card py-16 sm:py-20">
+      {/* INTRO */}
+      <article className="py-12 sm:py-16">
         <div className="mx-auto max-w-3xl px-4 sm:px-6">
-          <Badge variant="secondary" className="mb-4 gap-1">
-            <Flame className="h-3 w-3 text-brand" /> WeTracked Review · Updated 2026
-          </Badge>
-          <h1 className="font-display text-3xl font-extrabold leading-[1.1] text-foreground sm:text-5xl">
-            You're Burning Money on Ads Right Now — And Your Tracking Is Hiding It From You.
+          <Badge variant="secondary" className="mb-4">WeTracked Review · Updated 2026</Badge>
+          <h1 className="font-display text-3xl font-extrabold leading-[1.15] text-foreground sm:text-5xl">
+            WeTracked Review 2026: Features, Pricing, and Whether It's Right for Your Store
           </h1>
           <p className="mt-5 text-base leading-relaxed text-muted-foreground sm:text-lg">
-            Every day your Meta, TikTok, and Google pixels miss <strong className="text-foreground">20–40% of your conversions</strong>. Your ad platform optimizes on garbage data. You scale losing campaigns. You kill winning ones. And you have no idea — because the numbers <em>look</em> fine in Ads Manager.
+            If you run paid ads for an ecommerce brand, you've probably noticed the gap between what your Shopify store reports and what Meta or TikTok claims to have driven. Browser-based pixels miss conversions due to iOS privacy changes, ad blockers, Safari ITP, and cookie restrictions — which means your ad platforms often optimize on incomplete data.
           </p>
-          <p className="mt-4 text-base leading-relaxed text-foreground">
-            <strong>This is the single most expensive problem in ecommerce in 2026.</strong> And it's fixable in under 5 minutes.
+          <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+            WeTracked is one of several tools built to address this gap. In this review, we look at what it actually does, who it's a good fit for, where it falls short, and how it compares to the alternatives — so you can decide whether it belongs in your stack.
           </p>
 
-          <CTABlock />
-
-          <p className="text-center text-xs text-muted-foreground">
-            Trusted by Shopify and DTC brands recovering 6-figures in lost ad spend per year.
-          </p>
-        </div>
-      </section>
-
-      {/* PAIN AMPLIFICATION */}
-      <section className="py-14 sm:py-20">
-        <div className="mx-auto max-w-3xl px-4 sm:px-6">
-          <Badge variant="secondary" className="mb-3">The Problem</Badge>
-          <h2 className="font-display text-2xl font-extrabold text-foreground sm:text-4xl">
-            Your Ad Tracking Is Lying to You. Here's the Proof.
+          {/* WHAT IT IS */}
+          <h2 className="mt-12 font-display text-2xl font-extrabold text-foreground sm:text-3xl">
+            What Is WeTracked?
           </h2>
           <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-            iOS 14+, ad blockers, Safari ITP, third-party cookie deprecation, and aggressive browser privacy settings have <strong className="text-foreground">gutted</strong> the Meta and TikTok pixels. Your tracking software hasn't kept up.
+            WeTracked is a server-side tracking and attribution platform aimed at ecommerce advertisers. Instead of relying solely on browser pixels, it captures conversion events at the server level and forwards them to ad platforms through their official server-side APIs — Meta Conversions API (CAPI), TikTok Events API, and Google Enhanced Conversions.
+          </p>
+          <p className="mt-3 text-base leading-relaxed text-muted-foreground">
+            The goal is simple: give Meta, TikTok, and Google a more complete picture of what's actually converting on your store, so their algorithms can optimize toward real customers instead of whoever the pixel happened to see.
           </p>
 
-          <div className="mt-8 grid gap-4 sm:grid-cols-3">
+          {/* WHO IT'S FOR */}
+          <h2 className="mt-12 font-display text-2xl font-extrabold text-foreground sm:text-3xl">
+            Who Is WeTracked For?
+          </h2>
+          <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+            WeTracked is built specifically for online stores running paid social and search advertising. It's a strong fit if you match one or more of these profiles:
+          </p>
+          <div className="mt-6 grid gap-4 sm:grid-cols-2">
             {[
-              {
-                icon: TrendingDown,
-                title: "30%+ Conversions Missing",
-                body: "Your pixel literally can't see them. Those sales happened — but Meta thinks the ad failed.",
-              },
-              {
-                icon: AlertTriangle,
-                title: "Ads Optimize on Wrong Data",
-                body: "Meta's algorithm scales the wrong audiences and kills your real winners. You're paying it to lose money for you.",
-              },
-              {
-                icon: DollarSign,
-                title: "You Scale Losing Ads",
-                body: "Reports say a campaign is profitable when it's bleeding cash — and vice versa. Every decision is wrong.",
-              },
+              { icon: Users, title: "Shopify & DTC brands", body: "Stores running consistent paid traffic from Meta, TikTok, or Google who want cleaner attribution." },
+              { icon: LineChart, title: "Scaling advertisers", body: "Teams spending $1,000+ per month on ads where each percentage point of attribution accuracy translates into real budget decisions." },
+              { icon: TrendingUp, title: "Agencies & media buyers", body: "Operators managing multiple client accounts who need a repeatable tracking setup across stores." },
+              { icon: ShieldCheck, title: "iOS-impacted accounts", body: "Brands with a high share of Safari/iOS traffic where the native pixel under-reports conversions most." },
             ].map((item) => (
-              <Card key={item.title} className="border-destructive/20 bg-destructive/5">
+              <Card key={item.title}>
                 <CardContent className="p-5">
-                  <item.icon className="h-6 w-6 text-destructive" />
+                  <item.icon className="h-6 w-6 text-brand" />
                   <h3 className="mt-3 font-display text-base font-bold text-foreground">{item.title}</h3>
                   <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{item.body}</p>
                 </CardContent>
               </Card>
             ))}
           </div>
+          <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+            If you're spending under a few hundred dollars a month on ads, or running lead-gen funnels rather than ecommerce, a dedicated tracking tool is probably overkill — the native pixel and basic UTM tracking will cover you.
+          </p>
 
-          <div className="mt-8 rounded-xl border border-border bg-surface p-5">
-            <p className="text-sm leading-relaxed text-foreground">
-              <strong>Quick math:</strong> If you spend $10,000/mo on ads and your tracking misses 30% of conversions, you're making decisions on data that's blind to <strong className="text-brand">$3,000+ in attributed revenue every single month</strong>. Multiply that across the year. That's a car. That's a hire. That's the difference between scaling and stalling.
-            </p>
-          </div>
-
-          <CTABlock primary="Visit the Official WeTracked Site" subtitle="Most users see accurate data within their first 24 hours." />
-        </div>
-      </section>
-
-      {/* SOLUTION */}
-      <section className="bg-card py-14 sm:py-20">
-        <div className="mx-auto max-w-3xl px-4 sm:px-6">
-          <Badge variant="secondary" className="mb-3">The Fix</Badge>
-          <h2 className="font-display text-2xl font-extrabold text-foreground sm:text-4xl">
-            WeTracked: The Ad Tracking Tool That Recovers What Your Pixel Can't See
+          {/* WHY ACCURACY MATTERS */}
+          <h2 className="mt-12 font-display text-2xl font-extrabold text-foreground sm:text-3xl">
+            Why Tracking Accuracy Actually Matters
           </h2>
           <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-            WeTracked is a <strong className="text-foreground">server-side tracking and attribution platform</strong> built for one thing: getting accurate conversion data back to Meta, TikTok, and Google so they can actually optimize your campaigns.
+            Modern ad platforms are only as smart as the data you send them. When the pixel under-reports, three things happen:
           </p>
-          <p className="mt-3 text-base leading-relaxed text-muted-foreground">
-            It captures every conversion at the server level — bypassing iOS restrictions, ad blockers, and browser tracking prevention — then sends clean, deduplicated data to your ad platforms via Conversions API, TikTok Events API, and Google Enhanced Conversions.
+          <ul className="mt-4 space-y-3 text-base text-muted-foreground">
+            <li className="flex items-start gap-3">
+              <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
+              <span>Reported ROAS looks lower than reality, so profitable campaigns get paused too early.</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
+              <span>Lookalike and advantage+ audiences are built from incomplete conversion data.</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
+              <span>Optimization phases take longer because the algorithm sees fewer conversion signals per dollar spent.</span>
+            </li>
+          </ul>
+          <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+            Server-side tracking won't magically fix bad creative or a weak offer, but it gives the ad platforms a fairer chance to optimize the campaigns you're already running.
           </p>
 
-          <div className="mt-8 grid gap-4 sm:grid-cols-2">
+          {/* KEY FEATURES */}
+          <h2 className="mt-12 font-display text-2xl font-extrabold text-foreground sm:text-3xl">
+            Key Features
+          </h2>
+          <div className="mt-6 grid gap-4 sm:grid-cols-2">
             {[
-              { icon: ShieldCheck, title: "Server-Side Tracking", body: "Captures conversions browsers and pixels miss. iOS, ad blockers, ITP — all bypassed." },
-              { icon: Zap, title: "5-Minute Setup", body: "Connect Shopify, connect ad accounts. Done. No developer. No tag manager." },
-              { icon: TrendingUp, title: "Native CAPI Integration", body: "Pushes clean events to Meta, TikTok, and Google so the algorithm finally optimizes correctly." },
-              { icon: DollarSign, title: "Flat, Predictable Pricing", body: "No revenue tax. No per-event fees. The more you scale, the more you save vs competitors." },
+              { icon: ShieldCheck, title: "Server-side event capture", body: "Records purchases, add-to-carts, and checkout events at the server level so they're not lost to browser restrictions or ad blockers." },
+              { icon: Zap, title: "Quick setup for Shopify", body: "Connect your store and ad accounts through guided steps — no developer or custom tag manager work required for standard setups." },
+              { icon: TrendingUp, title: "Native CAPI & Events API", body: "Pushes deduplicated conversion events to Meta, TikTok, and Google so each platform can optimize on the same source of truth." },
+              { icon: DollarSign, title: "Predictable pricing", body: "Flat-tier plans rather than a percentage of ad spend or revenue — easier to forecast as you scale." },
             ].map((item) => (
               <Card key={item.title}>
                 <CardContent className="p-5">
@@ -159,38 +160,25 @@ export default function WeTrackedReview() {
             ))}
           </div>
 
-          <CTABlock primary="Get Accurate Tracking in 5 Minutes" />
-        </div>
-      </section>
-
-      {/* RESULTS */}
-      <section className="py-14 sm:py-20">
-        <div className="mx-auto max-w-3xl px-4 sm:px-6">
-          <Badge variant="secondary" className="mb-3">The Results</Badge>
-          <h2 className="font-display text-2xl font-extrabold text-foreground sm:text-4xl">
-            What Happens When Your Tracking Actually Works
+          {/* USE CASE */}
+          <h2 className="mt-12 font-display text-2xl font-extrabold text-foreground sm:text-3xl">
+            A Practical Use Case
           </h2>
           <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-            Within days of switching to WeTracked, brands consistently report:
+            Imagine a Shopify apparel brand spending around $10,000/month on Meta ads. In Ads Manager, the account shows a 1.6 ROAS — borderline unprofitable. But Shopify shows considerably more revenue than Meta is taking credit for, and the team isn't sure which campaigns deserve the extra attribution.
+          </p>
+          <p className="mt-3 text-base leading-relaxed text-muted-foreground">
+            After connecting WeTracked and letting events flow through CAPI for a couple of weeks, Meta starts attributing more conversions to the campaigns that were genuinely driving them. Reported ROAS on the strongest ad sets climbs, the buyer can confidently scale them, and the truly underperforming campaigns become easier to identify and cut.
+          </p>
+          <p className="mt-3 text-base leading-relaxed text-muted-foreground">
+            This is the typical pattern: WeTracked doesn't invent revenue, but it helps the right revenue get attributed to the right campaigns.
           </p>
 
-          <div className="mt-8 grid gap-4 sm:grid-cols-3">
-            {[
-              { stat: "+25–40%", label: "Reported ROAS", body: "Same ad spend, accurate attribution. Your numbers finally match Shopify." },
-              { stat: "95%+", label: "Tracking Accuracy", body: "Conversions matched back to ads vs. ~65–70% on the native pixel alone." },
-              { stat: "Smarter", label: "Scaling Decisions", body: "Kill the real losers. Scale the real winners. Stop guessing." },
-            ].map((item) => (
-              <Card key={item.label} className="border-brand/30 bg-brand/5">
-                <CardContent className="p-5 text-center">
-                  <p className="font-display text-3xl font-extrabold text-brand">{item.stat}</p>
-                  <p className="mt-1 text-xs font-semibold uppercase tracking-wider text-foreground">{item.label}</p>
-                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{item.body}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-
-          <div className="mt-10 grid gap-4 sm:grid-cols-2">
+          {/* PROS & CONS */}
+          <h2 className="mt-12 font-display text-2xl font-extrabold text-foreground sm:text-3xl">
+            Pros and Cons
+          </h2>
+          <div className="mt-6 grid gap-4 sm:grid-cols-2">
             <Card>
               <CardContent className="p-5">
                 <h3 className="flex items-center gap-2 font-display text-base font-bold text-foreground">
@@ -198,12 +186,11 @@ export default function WeTrackedReview() {
                 </h3>
                 <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
                   {[
-                    "Highest tracking accuracy we've tested",
-                    "5-minute setup — no developer needed",
-                    "Recovers 20–40% of lost conversions instantly",
-                    "Cheaper than Triple Whale, Hyros, Northbeam",
-                    "Flat pricing — no revenue tax",
-                    "Built specifically for ecommerce / DTC",
+                    "Strong improvement in reported attribution vs. native pixel alone",
+                    "Quick setup — most stores can be live the same day",
+                    "Predictable flat pricing instead of revenue-based fees",
+                    "Built specifically for ecommerce (not generic analytics)",
+                    "Pushes data to Meta, TikTok, and Google in one workflow",
                   ].map((p) => (
                     <li key={p} className="flex items-start gap-2">
                       <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
@@ -220,9 +207,10 @@ export default function WeTrackedReview() {
                 </h3>
                 <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
                   {[
-                    "Newer brand — less name recognition than legacy tools",
-                    "Best-fit is ecommerce (not lead-gen funnels)",
-                    "If you only spend $200/mo on ads, you don't need it yet",
+                    "Newer brand with less name recognition than legacy tools",
+                    "Best-fit is ecommerce — not ideal for lead-gen funnels",
+                    "Overkill for stores spending only a few hundred dollars per month on ads",
+                    "Some advanced reporting features are still maturing",
                   ].map((c) => (
                     <li key={c} className="flex items-start gap-2">
                       <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-muted-foreground" />
@@ -234,69 +222,59 @@ export default function WeTrackedReview() {
             </Card>
           </div>
 
-          <CTABlock primary="Recover Your Lost ROAS" />
-        </div>
-      </section>
-
-      {/* URGENCY */}
-      <section className="bg-card py-14 sm:py-20">
-        <div className="mx-auto max-w-3xl px-4 sm:px-6">
-          <Badge variant="secondary" className="mb-3 gap-1">
-            <Clock className="h-3 w-3 text-brand" /> Every Day You Wait
-          </Badge>
-          <h2 className="font-display text-2xl font-extrabold text-foreground sm:text-4xl">
-            Every Day Without Accurate Tracking Costs You Money
+          {/* COMPARISON */}
+          <h2 className="mt-12 font-display text-2xl font-extrabold text-foreground sm:text-3xl">
+            How It Compares
           </h2>
           <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-            This isn't a "nice to have." This is the foundation of every profitable paid ad account in 2026. While you read this, your ad platforms are making the wrong decisions for you. Killing winners. Scaling losers. Wasting your budget on lookalikes built from broken data.
+            The most common alternatives are Triple Whale, Hyros, and Northbeam. Each has its own positioning:
           </p>
-          <div className="mt-6 rounded-xl border border-brand/30 bg-brand/5 p-5">
-            <p className="text-base font-semibold leading-relaxed text-foreground">
-              The brands winning in 2026 aren't the ones with better creatives. They're the ones with <span className="text-brand">better data</span>.
-            </p>
-          </div>
+          <ul className="mt-4 space-y-3 text-base text-muted-foreground">
+            <li className="flex items-start gap-3">
+              <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
+              <span><strong className="text-foreground">Triple Whale</strong> is a broader analytics suite with dashboards, creative reporting, and attribution — typically higher priced and more complex to set up.</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
+              <span><strong className="text-foreground">Hyros</strong> leans into AI-powered attribution and is popular with info-product and high-ticket advertisers, often at a higher monthly cost.</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
+              <span><strong className="text-foreground">Northbeam</strong> targets larger DTC brands with multi-touch attribution modeling and enterprise-style pricing.</span>
+            </li>
+          </ul>
           <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-            WeTracked takes 5 minutes to set up. The fix is one click away.
-          </p>
-
-          <CTABlock primary="View WeTracked Pricing" subtitle="See plans and features on the official site." />
-        </div>
-      </section>
-
-      {/* FINAL VERDICT */}
-      <section className="py-14 sm:py-20">
-        <div className="mx-auto max-w-3xl px-4 sm:px-6">
-          <Badge variant="secondary" className="mb-3">Final Verdict</Badge>
-          <h2 className="font-display text-2xl font-extrabold text-foreground sm:text-4xl">
-            Is WeTracked Worth It? Yes — And Here's the Honest Answer.
-          </h2>
-          <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-            If you spend more than $1,000/mo on paid ads and your store runs on Shopify, WooCommerce, or any standard ecommerce stack — <strong className="text-foreground">WeTracked will pay for itself in your first week</strong>. Not in 6 months. Not "eventually." The first week.
+            WeTracked sits in a more focused lane: server-side tracking and CAPI delivery for ecommerce stores, at a price point that's accessible to growing brands. If you want a focused tracking layer rather than a full analytics platform, that simplicity is a feature, not a limitation.
           </p>
           <p className="mt-3 text-base leading-relaxed text-muted-foreground">
-            It's the easiest, cheapest, and most accurate fix for the single biggest problem in ecommerce advertising right now. Skip it and you're voluntarily flying blind while competitors see clearly.
-          </p>
-
-          <div className="mt-6 rounded-xl border border-border bg-surface p-5">
-            <p className="text-sm leading-relaxed text-foreground">
-              <strong>Bottom line:</strong> If your ads matter to your business, your tracking has to work. WeTracked is the fastest way to make that happen.
-            </p>
-          </div>
-
-          <CTABlock primary="Visit the Official WeTracked Site" subtitle="Setup takes about 5 minutes." />
-
-          <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-            Comparing options? See our head-to-head{" "}
+            For a direct head-to-head, see our{" "}
             <Link to="/wetracked-vs-triple-whale" className="text-brand underline-offset-4 hover:underline">
               WeTracked vs Triple Whale comparison
             </Link>.
           </p>
 
-          <p className="mt-6 text-xs leading-relaxed text-muted-foreground">
-            <strong>Disclosure:</strong> This page contains affiliate links. If you purchase through them, we may earn a commission at no extra cost to you. We only recommend tools we'd use ourselves.
+          {/* FINAL VERDICT */}
+          <h2 className="mt-12 font-display text-2xl font-extrabold text-foreground sm:text-3xl">
+            Final Verdict
+          </h2>
+          <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+            WeTracked is a solid, focused choice for ecommerce stores that want better attribution without committing to a heavy analytics suite. If you're spending meaningful budget on Meta, TikTok, or Google ads and your tracking currently relies only on the native pixel, adding a server-side layer is one of the higher-leverage changes you can make in 2026.
+          </p>
+          <p className="mt-3 text-base leading-relaxed text-muted-foreground">
+            It won't be the right pick for everyone — very small stores, lead-gen businesses, or teams that need a full BI suite will be better served elsewhere. But for the core use case it's designed for, it does the job well at a fair price.
+          </p>
+          <p className="mt-3 text-base leading-relaxed text-muted-foreground">
+            The best way to evaluate it is to look at the current plans and feature list on the official site and see if it fits your store.
+          </p>
+
+          <PrimaryCTA />
+
+          {/* DISCLOSURE */}
+          <p className="mt-8 text-xs leading-relaxed text-muted-foreground">
+            <strong>Disclosure:</strong> This page may contain affiliate links. If you sign up through them, we may earn a commission at no extra cost to you. We only recommend tools we'd consider using ourselves, and our editorial opinions are our own.
           </p>
         </div>
-      </section>
+      </article>
 
       <Newsletter />
       <Footer />
