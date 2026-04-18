@@ -1,20 +1,14 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { SEO } from "@/lib/seo";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 
-export const Route = createFileRoute("/disclaimer")({
-  head: () => ({
-    meta: [
-      { title: "Disclaimer — EcomStacked" },
-      { name: "description", content: "Important disclaimers about EcomStacked content, affiliate relationships, and editorial independence." },
-    ],
-  }),
-  component: DisclaimerPage,
-});
-
-function DisclaimerPage() {
+export default function DisclaimerPage() {
   return (
     <div className="min-h-screen">
+      <SEO
+        title="Disclaimer — EcomStacked"
+        description="Important disclaimers about EcomStacked content, affiliate relationships, and editorial independence."
+      />
       <Header />
       <section className="py-16 sm:py-20">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 space-y-8">

@@ -1,25 +1,20 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
+import { SEO } from "@/lib/seo";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Newsletter } from "@/components/Newsletter";
 import { Shield, Eye, Target, CheckCircle2, FileSearch, ArrowRight, Package, Layers, MessageSquare, TrendingUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-export const Route = createFileRoute("/about")({
-  head: () => ({
-    meta: [
-      { title: "About — EcomStacked" },
-      { name: "description", content: "EcomStacked is a resource for ecommerce founders, marketers, and Shopify store owners looking to scale with better tools." },
-      { property: "og:title", content: "About — EcomStacked" },
-      { property: "og:description", content: "Independent tool recommendations and growth resources for ecommerce operators." },
-    ],
-  }),
-  component: AboutPage,
-});
-
-function AboutPage() {
+export default function AboutPage() {
   return (
     <div className="min-h-screen">
+      <SEO
+        title="About — EcomStacked"
+        description="EcomStacked is a resource for ecommerce founders, marketers, and Shopify store owners looking to scale with better tools."
+        ogTitle="About — EcomStacked"
+        ogDescription="Independent tool recommendations and growth resources for ecommerce operators."
+      />
       <Header />
 
       <section className="bg-card py-20 sm:py-24">
@@ -35,7 +30,6 @@ function AboutPage() {
       <section className="py-20 sm:py-24">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 space-y-20">
 
-          {/* What We Do */}
           <div className="grid gap-8 lg:grid-cols-5">
             <div className="lg:col-span-2">
               <p className="text-xs font-semibold uppercase tracking-widest text-brand">What We Do</p>
@@ -54,7 +48,6 @@ function AboutPage() {
             </div>
           </div>
 
-          {/* What We Cover */}
           <div>
             <div className="text-center">
               <p className="text-xs font-semibold uppercase tracking-widest text-brand">Coverage Areas</p>
@@ -85,7 +78,6 @@ function AboutPage() {
             </div>
           </div>
 
-          {/* Who This Site Is For */}
           <div className="grid gap-8 lg:grid-cols-5">
             <div className="lg:col-span-2">
               <p className="text-xs font-semibold uppercase tracking-widest text-brand">Our Audience</p>
@@ -112,7 +104,6 @@ function AboutPage() {
             </div>
           </div>
 
-          {/* How We Evaluate Tools */}
           <div>
             <div className="text-center">
               <p className="text-xs font-semibold uppercase tracking-widest text-brand">Our Process</p>
@@ -138,7 +129,6 @@ function AboutPage() {
             </div>
           </div>
 
-          {/* Editorial Values */}
           <div className="rounded-2xl border border-border bg-card p-8 sm:p-10">
             <div className="text-center">
               <p className="text-xs font-semibold uppercase tracking-widest text-brand">Editorial Values</p>
@@ -164,7 +154,6 @@ function AboutPage() {
             </div>
           </div>
 
-          {/* CTA */}
           <div className="text-center">
             <h2 className="font-display text-lg font-bold text-foreground">Ready to find the right tools?</h2>
             <p className="mt-2 text-sm text-muted-foreground">Browse our curated directory of ecommerce software.</p>

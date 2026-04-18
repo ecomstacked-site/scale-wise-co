@@ -1,20 +1,14 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { SEO } from "@/lib/seo";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 
-export const Route = createFileRoute("/terms")({
-  head: () => ({
-    meta: [
-      { title: "Terms of Service — EcomStacked" },
-      { name: "description", content: "Terms and conditions for using EcomStacked website and services." },
-    ],
-  }),
-  component: TermsPage,
-});
-
-function TermsPage() {
+export default function TermsPage() {
   return (
     <div className="min-h-screen">
+      <SEO
+        title="Terms of Service — EcomStacked"
+        description="Terms and conditions for using EcomStacked website and services."
+      />
       <Header />
       <section className="py-16 sm:py-20">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 space-y-8">

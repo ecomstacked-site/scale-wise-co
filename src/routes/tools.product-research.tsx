@@ -143,7 +143,7 @@ function ProductResearchPage() {
                       </Button>
                     </a>
                     {t.review && (
-                      <Link to={t.review as "/tools/trendtrack-review"}>
+                      <Link to={t.review}>
                         <Button variant="outline" size="sm">Read Full Review</Button>
                       </Link>
                     )}

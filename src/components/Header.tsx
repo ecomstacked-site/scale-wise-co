@@ -1,4 +1,4 @@
-import { Link } from "@tanstack/react-router";
+import { Link, NavLink } from "react-router-dom";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -7,12 +7,16 @@ export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const navLinks = [
-    { to: "/" as const, label: "Home" },
-    { to: "/tools" as const, label: "Tools" },
-    { to: "/blog" as const, label: "Blog" },
-    { to: "/about" as const, label: "About" },
-    { to: "/contact" as const, label: "Contact" },
+    { to: "/", label: "Home", end: true },
+    { to: "/tools", label: "Tools", end: false },
+    { to: "/blog", label: "Blog", end: false },
+    { to: "/about", label: "About", end: false },
+    { to: "/contact", label: "Contact", end: false },
   ];
+
+  const baseClass = "rounded-lg px-3 py-2 text-sm font-medium transition-colors";
+  const inactive = "text-muted-foreground hover:bg-accent hover:text-foreground";
+  const active = "text-foreground bg-accent";
 
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-card/80 backdrop-blur-lg">
@@ -26,15 +30,14 @@ export function Header() {
 
         <nav className="hidden items-center gap-1 md:flex">
           {navLinks.map((link) => (
-            <Link
+            <NavLink
               key={link.to}
               to={link.to}
-              className="rounded-lg px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-accent hover:text-foreground"
-              activeProps={{ className: "rounded-lg px-3 py-2 text-sm font-medium text-foreground bg-accent transition-colors" }}
-              activeOptions={{ exact: link.to === "/" }}
+              end={link.end}
+              className={({ isActive }) => `${baseClass} ${isActive ? active : inactive}`}
             >
               {link.label}
-            </Link>
+            </NavLink>
           ))}
         </nav>
 
@@ -57,16 +60,15 @@ export function Header() {
         <div className="border-t border-border bg-card px-4 pb-4 pt-2 md:hidden">
           <nav className="flex flex-col gap-1">
             {navLinks.map((link) => (
-              <Link
+              <NavLink
                 key={link.to}
                 to={link.to}
-                className="rounded-lg px-3 py-2.5 text-sm font-medium text-muted-foreground transition-colors hover:bg-accent hover:text-foreground"
-                activeProps={{ className: "rounded-lg px-3 py-2.5 text-sm font-medium text-foreground bg-accent" }}
-                activeOptions={{ exact: link.to === "/" }}
+                end={link.end}
+                className={({ isActive }) => `${baseClass.replace("py-2", "py-2.5")} ${isActive ? active : inactive}`}
                 onClick={() => setMobileOpen(false)}
               >
                 {link.label}
-              </Link>
+              </NavLink>
             ))}
           </nav>
           <div className="mt-3">

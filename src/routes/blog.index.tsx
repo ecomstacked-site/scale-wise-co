@@ -1,5 +1,5 @@
-import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
+import { SEO } from "@/lib/seo";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Newsletter } from "@/components/Newsletter";
@@ -9,21 +9,9 @@ import { Input } from "@/components/ui/input";
 import { Search } from "lucide-react";
 import { articlesMeta } from "@/lib/articles";
 
-export const Route = createFileRoute("/blog/")({
-  head: () => ({
-    meta: [
-      { title: "Blog — EcomStacked" },
-      { name: "description", content: "Guides, strategies, and tool breakdowns for ecommerce founders, dropshippers, and media buyers." },
-      { property: "og:title", content: "Blog — EcomStacked" },
-      { property: "og:description", content: "Practical guides and tool reviews for ecommerce growth." },
-    ],
-  }),
-  component: BlogPage,
-});
-
 const blogCategories = ["All", "AI Tools", "Tracking", "Automation", "Productivity"];
 
-function BlogPage() {
+export default function BlogPage() {
   const [activeCategory, setActiveCategory] = useState("All");
   const [searchQuery, setSearchQuery] = useState("");
 
@@ -36,6 +24,12 @@ function BlogPage() {
 
   return (
     <div className="min-h-screen">
+      <SEO
+        title="Blog — EcomStacked"
+        description="Guides, strategies, and tool breakdowns for ecommerce founders, dropshippers, and media buyers."
+        ogTitle="Blog — EcomStacked"
+        ogDescription="Practical guides and tool reviews for ecommerce growth."
+      />
       <Header />
 
       <section className="bg-card py-20 sm:py-24">
