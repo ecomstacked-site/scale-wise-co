@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { SEO } from "@/lib/seo";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
@@ -283,6 +284,13 @@ export default function WeTrackedReview() {
           </div>
 
           <CTABlock primary="Try WeTracked — Fix Your Tracking" subtitle="Setup in 5 minutes. See accurate data tonight." />
+
+          <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+            Comparing options? See our head-to-head{" "}
+            <Link to="/wetracked-vs-triple-whale" className="text-brand underline-offset-4 hover:underline">
+              WeTracked vs Triple Whale comparison
+            </Link>.
+          </p>
 
           <p className="mt-6 text-xs leading-relaxed text-muted-foreground">
             <strong>Disclosure:</strong> This page contains affiliate links. If you purchase through them, we may earn a commission at no extra cost to you. We only recommend tools we'd use ourselves.
