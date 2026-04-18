@@ -127,7 +127,7 @@ export const articlesMeta: ArticleMeta[] = [
     readTime: "10 min read",
     slug: "best-ai-tools-dropshipping",
     featured: true,
-    image: "/src/assets/blog/ai-tools-dropshipping.jpg",
+    image: "/assets/blog/ai-tools-dropshipping.jpg",
     toc: ["The AI Advantage in Dropshipping", "Holo AI: Ad Creatives at Scale", "WeShop AI: Product Photography Without a Studio", "Evebee: Data-Driven Product Research", "ManyChat: Automated Customer Conversations", "Building Your AI-Powered Stack", "Conclusion"],
   },
   {
@@ -137,7 +137,7 @@ export const articlesMeta: ArticleMeta[] = [
     date: "April 8, 2026",
     readTime: "9 min read",
     slug: "improve-ecommerce-tracking",
-    image: "/src/assets/blog/tracking-accuracy.jpg",
+    image: "/assets/blog/tracking-accuracy.jpg",
     toc: ["Why Your Tracking Data Is Wrong", "The Real Cost of Inaccurate Tracking", "Server-Side Tracking Explained", "WeTracked: Fixing the Attribution Gap", "Implementation Best Practices", "Measuring the Impact", "Conclusion"],
   },
   {
@@ -147,7 +147,7 @@ export const articlesMeta: ArticleMeta[] = [
     date: "April 5, 2026",
     readTime: "9 min read",
     slug: "chat-automation-shopify",
-    image: "/src/assets/blog/chat-automation.jpg",
+    image: "/assets/blog/chat-automation.jpg",
     toc: ["The Problem with Unmanaged DMs", "Why Chat Automation Matters for Ecommerce", "ManyChat: The DM Sales Engine", "GoHighLevel: CRM-Powered Automation", "Choosing the Right Tool for Your Store", "Implementation Tips", "Conclusion"],
   },
   {
@@ -157,7 +157,7 @@ export const articlesMeta: ArticleMeta[] = [
     date: "April 2, 2026",
     readTime: "10 min read",
     slug: "scale-ads-attribution",
-    image: "/src/assets/blog/ads-scaling.jpg",
+    image: "/assets/blog/ads-scaling.jpg",
     toc: ["The Scaling Problem", "Why Most Brands Hit a Wall", "Attribution Models That Actually Work", "WeTracked: The Foundation for Better Scaling", "Holo AI: Scaling Creative Production", "A Framework for Data-Driven Scaling", "Conclusion"],
   },
   {
@@ -167,7 +167,7 @@ export const articlesMeta: ArticleMeta[] = [
     date: "March 30, 2026",
     readTime: "10 min read",
     slug: "ecommerce-productivity-tools",
-    image: "/src/assets/blog/tools-faster-smarter.jpg",
+    image: "/assets/blog/tools-faster-smarter.jpg",
     toc: ["The Hidden Cost of Manual Work", "Systeme: Replacing Your Marketing Tool Stack", "Easyship: Streamlining Fulfillment", "Holo AI: Faster Creative Production", "Evebee: Smarter Product Decisions", "Building an Efficient Operations Stack", "Conclusion"],
   },
 ];
