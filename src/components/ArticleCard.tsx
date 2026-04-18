@@ -1,4 +1,4 @@
-import { Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Clock } from "lucide-react";
@@ -16,7 +16,7 @@ interface ArticleCardProps {
 
 export function ArticleCard({ title, excerpt, category, date, readTime, slug, featured, image }: ArticleCardProps) {
   return (
-    <Link to="/blog/$slug" params={{ slug }}>
+    <Link to={`/blog/${slug}`}>
       <Card className={`group h-full overflow-hidden transition-all duration-200 hover:shadow-md hover:border-brand/20 ${featured ? "sm:col-span-2" : ""}`}>
         <div className={`bg-surface overflow-hidden ${featured ? "aspect-[21/9]" : "aspect-[16/9]"}`}>
           {image ? (
@@ -30,7 +30,7 @@ export function ArticleCard({ title, excerpt, category, date, readTime, slug, fe
             />
           ) : (
             <div className="flex h-full items-center justify-center">
-              <span className="font-display text-lg font-bold text-surface-foreground/20">EcomStack</span>
+              <span className="font-display text-lg font-bold text-surface-foreground/20">EcomStacked</span>
             </div>
           )}
         </div>
