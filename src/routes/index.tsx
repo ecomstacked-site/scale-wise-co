@@ -26,10 +26,10 @@ export const Route = createFileRoute("/")({
 });
 
 const featuredTools = [
-  { name: "Trendtrack", description: "Spy on Shopify stores, track winning products in real time, and pull the ads driving the sales.", bestFor: "Product research & store spying", benefit: "Find winning products before they saturate", category: "Product Research", featured: true, image: "/src/assets/tools/wetracked.jpg", href: "/go/trendtrack" },
-  { name: "WeTracked", description: "Accurate server-side tracking for Facebook, Google, and TikTok ads with first-party data.", bestFor: "Ad tracking & attribution", benefit: "Recover lost conversions and improve ROAS", category: "Tracking", featured: true, image: "/src/assets/tools/wetracked.jpg", href: "/go/wetracked" },
-  { name: "Holo AI", description: "Ad creative platform for ecommerce brands. Generate winning ads at scale without a design team.", bestFor: "Ad creative & content", benefit: "Produce more creatives in less time", category: "AI Content", featured: true, image: "/src/assets/tools/holo-ai.jpg", href: "/go/holo-ai" },
-  { name: "ManyChat", description: "Automated messaging for Instagram, Facebook, and WhatsApp to capture leads and drive sales.", bestFor: "Chat automation & DMs", benefit: "Convert conversations into customers", category: "Automation", featured: false, image: "/src/assets/tools/manychat.jpg", href: "/go/manychat" },
+  { name: "Trendtrack", description: "Spy on Shopify stores, track winning products in real time, and pull the ads driving the sales.", bestFor: "Product research & store spying", benefit: "Find winning products before they saturate", category: "Product Research", featured: true, image: "/assets/tools/wetracked.jpg", href: "/go/trendtrack" },
+  { name: "WeTracked", description: "Accurate server-side tracking for Facebook, Google, and TikTok ads with first-party data.", bestFor: "Ad tracking & attribution", benefit: "Recover lost conversions and improve ROAS", category: "Tracking", featured: true, image: "/assets/tools/wetracked.jpg", href: "/go/wetracked" },
+  { name: "Holo AI", description: "Ad creative platform for ecommerce brands. Generate winning ads at scale without a design team.", bestFor: "Ad creative & content", benefit: "Produce more creatives in less time", category: "AI Content", featured: true, image: "/assets/tools/holo-ai.jpg", href: "/go/holo-ai" },
+  { name: "ManyChat", description: "Automated messaging for Instagram, Facebook, and WhatsApp to capture leads and drive sales.", bestFor: "Chat automation & DMs", benefit: "Convert conversations into customers", category: "Automation", featured: false, image: "/assets/tools/manychat.jpg", href: "/go/manychat" },
 ];
 
 const categories = [
@@ -42,9 +42,9 @@ const categories = [
 ];
 
 const articles = [
-  { title: "Best AI Tools for Dropshipping in 2026", excerpt: "A curated list of tools that help dropshippers automate content, create ads, and optimize their stores.", category: "AI Tools", date: "April 10, 2026", readTime: "8 min read", slug: "best-ai-tools-dropshipping", image: "/src/assets/blog/ai-tools-dropshipping.jpg" },
-  { title: "How to Improve Ecommerce Tracking Accuracy", excerpt: "Server-side tracking, CAPI setup, and first-party data strategies to recover lost conversions.", category: "Tracking", date: "April 8, 2026", readTime: "6 min read", slug: "improve-ecommerce-tracking", image: "/src/assets/blog/tracking-accuracy.jpg" },
-  { title: "Best Chat Automation Tools for Shopify Stores", excerpt: "Compare the top chat automation platforms for Shopify and learn how to turn DMs into revenue.", category: "Automation", date: "April 5, 2026", readTime: "7 min read", slug: "chat-automation-shopify", image: "/src/assets/blog/chat-automation.jpg" },
+  { title: "Best AI Tools for Dropshipping in 2026", excerpt: "A curated list of tools that help dropshippers automate content, create ads, and optimize their stores.", category: "AI Tools", date: "April 10, 2026", readTime: "8 min read", slug: "best-ai-tools-dropshipping", image: "/assets/blog/ai-tools-dropshipping.jpg" },
+  { title: "How to Improve Ecommerce Tracking Accuracy", excerpt: "Server-side tracking, CAPI setup, and first-party data strategies to recover lost conversions.", category: "Tracking", date: "April 8, 2026", readTime: "6 min read", slug: "improve-ecommerce-tracking", image: "/assets/blog/tracking-accuracy.jpg" },
+  { title: "Best Chat Automation Tools for Shopify Stores", excerpt: "Compare the top chat automation platforms for Shopify and learn how to turn DMs into revenue.", category: "Automation", date: "April 5, 2026", readTime: "7 min read", slug: "chat-automation-shopify", image: "/assets/blog/chat-automation.jpg" },
 ];
 
 function HomePage() {
