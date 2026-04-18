@@ -1335,7 +1335,7 @@ function ArticleBestShopifyResearch() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           Trendtrack stands out because it combines store-level data with creative intelligence. You don't just see what's selling — you see how it's being sold. For active dropshippers, it pays for itself with one winning product. Read our full <Link to="/tools/trendtrack-review" className="text-brand hover:underline">Trendtrack review</Link> for the deep dive.
         </p>
-        <ToolCTA href={LINKS.trendtrack} label="Find Winning Products Now" />
+        <ToolCTA href={LINKS.trendtrack} label="View Trendtrack Pricing" />
       </section>
 
       <section>
@@ -1407,7 +1407,7 @@ function ArticleBestShopifyResearch() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           For scaling operators running multiple stores or testing dozens of products per month, <strong className="text-foreground">Trendtrack</strong> wins again. The depth of store data plus the live ad library means you spend less time guessing and more time launching tested angles.
         </p>
-        <ToolCTA href={LINKS.trendtrack} label="Start Scaling Today" />
+        <ToolCTA href={LINKS.trendtrack} label="Visit Official Site" />
       </section>
     </div>
   );
@@ -1424,7 +1424,7 @@ function ArticleTrendtrackVsMinea() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           For most ecommerce operators, our recommendation is Trendtrack — see our full <Link to="/tools/trendtrack-review" className="text-brand hover:underline">Trendtrack review</Link> for why.
         </p>
-        <ToolCTA href={LINKS.trendtrack} label="Find Winning Products Now" />
+        <ToolCTA href={LINKS.trendtrack} label="View Trendtrack Pricing" />
       </section>
 
       <section>
@@ -1479,7 +1479,7 @@ function ArticleTrendtrackVsMinea() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           For most ecommerce founders and dropshippers, <strong className="text-foreground">Trendtrack is the better choice</strong>. It gives you a clearer picture of what's actually working at the store level and connects that to the ads driving the sales. Minea is a fine secondary tool if you want extra creative coverage across more ad networks.
         </p>
-        <ToolCTA href={LINKS.trendtrack} label="Start Scaling Today" />
+        <ToolCTA href={LINKS.trendtrack} label="Visit Official Site" />
       </section>
     </div>
   );
@@ -1510,7 +1510,7 @@ function ArticleHowToFindWinning() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           This is where the right tool changes everything. Open <Link to="/tools/trendtrack-review" className="text-brand underline">Trendtrack</Link>, filter by your niche, and sort stores by revenue growth in the last 30 days. You're looking for stores climbing fast — not the established giants. Early winners are where the money is.
         </p>
-        <ToolCTA href={LINKS.trendtrack} label="Find Winning Products Now" />
+        <ToolCTA href={LINKS.trendtrack} label="View Trendtrack Pricing" />
       </section>
 
       <section>
@@ -1559,7 +1559,7 @@ function ArticleHowToFindWinning() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           You can run this entire process manually — but it'll take you 10x longer and you'll miss the early-curve winners. The whole point of a Shopify spy tool is that it surfaces the winning stores and ads <em>before</em> they go saturated. Trendtrack is the one we use because it's the most accurate at the store-revenue level.
         </p>
-        <ToolCTA href={LINKS.trendtrack} label="Start Scaling Today" />
+        <ToolCTA href={LINKS.trendtrack} label="Visit Official Site" />
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           Read the full <Link to="/tools/trendtrack-review" className="text-brand underline">Trendtrack review</Link> for the complete breakdown.
         </p>
@@ -1628,7 +1628,7 @@ function ArticleWinningProductsWeek() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           These 5 are a snapshot of what's trending right now — but real winners are always rotating. The operators making real money use Trendtrack to surface new products <em>weekly</em> before they hit "viral product" lists.
         </p>
-        <ToolCTA href={LINKS.trendtrack} label="Find Winning Products Now" />
+        <ToolCTA href={LINKS.trendtrack} label="View Trendtrack Pricing" />
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           Want the full breakdown? Read the <Link to="/tools/trendtrack-review" className="text-brand underline">Trendtrack review</Link> or our <Link to="/blog/how-to-find-winning-products" className="text-brand underline">step-by-step guide to finding winners</Link>.
         </p>
