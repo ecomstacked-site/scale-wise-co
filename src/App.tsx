@@ -12,6 +12,7 @@ import ToolsPage from "./routes/tools.index";
 import ProductResearchPage from "./routes/tools.product-research";
 import TrendtrackReview from "./routes/tools.trendtrack-review";
 import WeTrackedReview from "./routes/tools.wetracked-review";
+import { Navigate } from "react-router-dom";
 
 const affiliateLinks: Record<string, string> = {
   trendtrack: "https://trendtrack.io?fpr=stacked45",
