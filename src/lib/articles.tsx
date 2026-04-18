@@ -57,6 +57,7 @@ export const articlesMeta: ArticleMeta[] = [
     readTime: "9 min read",
     slug: "how-to-find-winning-products",
     featured: true,
+    image: "/assets/blog/winning-products.jpg",
     toc: ["What Makes a Product 'Winning'", "Step 1: Pick Your Niche", "Step 2: Spy on Stores", "Step 3: Validate Demand", "Step 4: Check the Ads", "Step 5: Test Fast", "Common Mistakes", "Final Word"],
   },
   {
@@ -67,6 +68,7 @@ export const articlesMeta: ArticleMeta[] = [
     readTime: "6 min read",
     slug: "winning-products-this-week",
     featured: true,
+    image: "/assets/blog/products-this-week.jpg",
     toc: ["How We Pick Them", "Product 1", "Product 2", "Product 3", "Product 4", "Product 5", "Find Your Own"],
   },
   {
@@ -77,6 +79,7 @@ export const articlesMeta: ArticleMeta[] = [
     readTime: "8 min read",
     slug: "best-shopify-product-research-tools",
     featured: true,
+    image: "/assets/blog/product-research-tools.jpg",
     toc: ["Why Product Research Matters", "Trendtrack", "Minea", "Dropship.io", "Sell The Trend", "PPSpy", "How to Choose", "Best for Beginners", "Best for Scaling"],
   },
   {
@@ -87,6 +90,7 @@ export const articlesMeta: ArticleMeta[] = [
     readTime: "7 min read",
     slug: "trendtrack-vs-minea",
     featured: false,
+    image: "/assets/blog/trendtrack-vs-minea.jpg",
     toc: ["Quick Verdict", "Key Differences", "Comparison Table", "Best for Beginners", "Best for Scaling", "Final Recommendation"],
   },
   {
@@ -97,6 +101,7 @@ export const articlesMeta: ArticleMeta[] = [
     readTime: "7 min read",
     slug: "best-ai-video-tools",
     featured: false,
+    image: "/assets/blog/ai-video-tools.jpg",
     toc: ["Quick Summary", "Holo AI", "Pictory", "Runway", "Synthesia", "InVideo", "Which AI Video Tool Should You Choose"],
   },
   {
@@ -107,6 +112,7 @@ export const articlesMeta: ArticleMeta[] = [
     readTime: "7 min read",
     slug: "holo-ai-vs-pictory",
     featured: false,
+    image: "/assets/blog/holo-vs-pictory.jpg",
     toc: ["Quick Comparison", "Holo AI Overview", "Pictory Overview", "Side-by-Side Comparison", "My Real Experience", "Which One Should You Choose"],
   },
   {
@@ -117,7 +123,8 @@ export const articlesMeta: ArticleMeta[] = [
     readTime: "8 min read",
     slug: "holo-ai-review",
     featured: false,
-    toc: ["The Problem With Video Ads", "What Is Holo AI", "My 7-Day Test", "Pros and Cons", "Best Use Cases", "Should You Try It", "Final Verdict"],
+    image: "/assets/blog/holo-ai-review.jpg",
+    toc: ["The Problem With Video Ads", "What Is Holo AI", "My 7-Day Test", "Pros and Cons", "Should You Try It", "Final Verdict"],
   },
   {
     title: "Best AI Tools for Dropshipping in 2026",

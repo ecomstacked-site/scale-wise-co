@@ -79,13 +79,13 @@ export function ToolCard({ name, description, bestFor, benefit, category, featur
             )}
             {href ? (
               <a href={href} target="_blank" rel="noopener noreferrer nofollow" className="block">
-                <Button variant="brand-outline" size="sm" className="w-full gap-1 text-xs">
-                  Visit Website <ArrowUpRight className="h-3 w-3" />
+                <Button variant="brand" size="sm" className="w-full gap-1 text-xs">
+                  Start Scaling Now <ArrowUpRight className="h-3 w-3" />
                 </Button>
               </a>
             ) : (
-              <Button variant="brand-outline" size="sm" className="w-full gap-1 text-xs">
-                Learn More <ArrowUpRight className="h-3 w-3" />
+              <Button variant="brand" size="sm" className="w-full gap-1 text-xs">
+                See What's Working <ArrowUpRight className="h-3 w-3" />
               </Button>
             )}
           </div>

@@ -26,7 +26,7 @@ export const Route = createFileRoute("/")({
 });
 
 const featuredTools = [
-  { name: "Trendtrack", description: "Spy on Shopify stores, track winning products in real time, and pull the ads driving the sales.", bestFor: "Product research & store spying", benefit: "Find winning products before they saturate", category: "Product Research", featured: true, image: "/assets/tools/wetracked.jpg", href: "/go/trendtrack" },
+  { name: "Trendtrack", description: "Spy on Shopify stores, track winning products in real time, and pull the ads driving the sales.", bestFor: "Product research & store spying", benefit: "Find winning products before they saturate", category: "Product Research", featured: true, image: "/assets/tools/trendtrack.jpg", href: "/go/trendtrack" },
   { name: "WeTracked", description: "Accurate server-side tracking for Facebook, Google, and TikTok ads with first-party data.", bestFor: "Ad tracking & attribution", benefit: "Recover lost conversions and improve ROAS", category: "Tracking", featured: true, image: "/assets/tools/wetracked.jpg", href: "/go/wetracked" },
   { name: "Holo AI", description: "Ad creative platform for ecommerce brands. Generate winning ads at scale without a design team.", bestFor: "Ad creative & content", benefit: "Produce more creatives in less time", category: "AI Content", featured: true, image: "/assets/tools/holo-ai.jpg", href: "/go/holo-ai" },
   { name: "ManyChat", description: "Automated messaging for Instagram, Facebook, and WhatsApp to capture leads and drive sales.", bestFor: "Chat automation & DMs", benefit: "Convert conversations into customers", category: "Automation", featured: false, image: "/assets/tools/manychat.jpg", href: "/go/manychat" },
