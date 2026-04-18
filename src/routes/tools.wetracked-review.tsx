@@ -259,7 +259,7 @@ export default function WeTrackedReview() {
             WeTracked takes 5 minutes to set up. The fix is one click away.
           </p>
 
-          <CTABlock primary="Fix Your Tracking Now — Start Free" subtitle="Stop losing money. Start scaling on real data." />
+          <CTABlock primary="View WeTracked Pricing" subtitle="See plans and features on the official site." />
         </div>
       </section>
 
@@ -283,7 +283,7 @@ export default function WeTrackedReview() {
             </p>
           </div>
 
-          <CTABlock primary="Try WeTracked — Fix Your Tracking" subtitle="Setup in 5 minutes. See accurate data tonight." />
+          <CTABlock primary="Visit the Official WeTracked Site" subtitle="Setup takes about 5 minutes." />
 
           <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
             Comparing options? See our head-to-head{" "}
