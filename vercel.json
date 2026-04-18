@@ -1,13 +1,5 @@
 {
-  "redirects": [
-    {
-      "source": "/go/wetracked",
-      "destination": "https://www.wetracked.io/?ref=ddf2eabf-bf17-4363-aaef-585e9c4e763a",
-      "permanent": false
-    }
-  ],
   "rewrites": [
-    { "source": "/best-ad-tracking-tools", "destination": "/index.html" },
     { "source": "/(.*)", "destination": "/index.html" }
   ]
 }

@@ -215,9 +215,9 @@ export default function ToolsPage() {
                     <TableCell className="text-muted-foreground text-sm">{t.bestFor}</TableCell>
                     <TableCell className="text-muted-foreground text-sm hidden sm:table-cell">{t.useCase}</TableCell>
                     <TableCell className="text-right">
-                      <a href={t.href} target="_blank" rel="noopener noreferrer nofollow">
+                      <a href={t.href} rel="noopener noreferrer nofollow">
                         <Button variant="ghost" size="sm" className="gap-1 text-xs text-brand hover:text-brand">
-                          Explore <ArrowUpRight className="h-3 w-3" />
+                          Learn More <ArrowUpRight className="h-3 w-3" />
                         </Button>
                       </a>
                     </TableCell>

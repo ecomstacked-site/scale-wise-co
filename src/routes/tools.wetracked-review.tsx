@@ -20,18 +20,18 @@ import {
   Flame,
 } from "lucide-react";
 
-const AFF = "https://www.wetracked.io/?ref=ddf2eabf-bf17-4363-aaef-585e9c4e763a";
+const AFF = "/go/wetracked";
 
 function CTABlock({
-  primary = "Fix Your Tracking Now",
-  subtitle = "5-minute setup. Cancel anytime. Stop bleeding ad spend.",
+  primary = "View WeTracked Pricing",
+  subtitle = "5-minute setup. Cancel anytime.",
 }: {
   primary?: string;
   subtitle?: string;
 }) {
   return (
     <div className="my-8 rounded-2xl border border-brand/40 bg-brand/5 p-6 text-center">
-      <a href={AFF} target="_blank" rel="noopener noreferrer nofollow">
+      <a href={AFF} rel="noopener noreferrer nofollow">
         <Button variant="brand" size="lg" className="gap-2">
           {primary} <ArrowUpRight className="h-4 w-4" />
         </Button>
@@ -124,7 +124,7 @@ export default function WeTrackedReview() {
             </p>
           </div>
 
-          <CTABlock primary="Stop the Bleeding — Try WeTracked" subtitle="Most users see accurate data in their first 24 hours." />
+          <CTABlock primary="Visit the Official WeTracked Site" subtitle="Most users see accurate data within their first 24 hours." />
         </div>
       </section>
 
@@ -259,7 +259,7 @@ export default function WeTrackedReview() {
             WeTracked takes 5 minutes to set up. The fix is one click away.
           </p>
 
-          <CTABlock primary="Fix Your Tracking Now — Start Free" subtitle="Stop losing money. Start scaling on real data." />
+          <CTABlock primary="View WeTracked Pricing" subtitle="See plans and features on the official site." />
         </div>
       </section>
 
@@ -283,7 +283,7 @@ export default function WeTrackedReview() {
             </p>
           </div>
 
-          <CTABlock primary="Try WeTracked — Fix Your Tracking" subtitle="Setup in 5 minutes. See accurate data tonight." />
+          <CTABlock primary="Visit the Official WeTracked Site" subtitle="Setup takes about 5 minutes." />
 
           <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
             Comparing options? See our head-to-head{" "}

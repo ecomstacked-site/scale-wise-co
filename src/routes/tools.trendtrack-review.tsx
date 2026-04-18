@@ -8,22 +8,22 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ArrowUpRight, CheckCircle2, XCircle, TrendingUp, Eye, Search, Zap, Clock, Users, DollarSign } from "lucide-react";
 
-const AFF = "https://trendtrack.io?fpr=stacked45";
+const AFF = "/go/trendtrack";
 
-function CTABlock({ primary = "Find Winning Products Now", secondary = "Spy Shopify Stores" }: { primary?: string; secondary?: string }) {
+function CTABlock({ primary = "View Trendtrack Pricing", secondary = "Explore Features" }: { primary?: string; secondary?: string }) {
   return (
     <div className="my-8 rounded-2xl border border-brand/30 bg-brand/5 p-6 text-center">
       <div className="flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
-        <a href={AFF} target="_blank" rel="noopener noreferrer nofollow">
+        <a href={AFF} rel="noopener noreferrer nofollow">
           <Button variant="brand" size="lg" className="gap-2">
             {primary} <ArrowUpRight className="h-4 w-4" />
           </Button>
         </a>
-        <a href={AFF} target="_blank" rel="noopener noreferrer nofollow">
+        <a href={AFF} rel="noopener noreferrer nofollow">
           <Button variant="outline" size="lg">{secondary}</Button>
         </a>
       </div>
-      <p className="mt-3 text-xs text-muted-foreground">No more guessing. See what's already working.</p>
+      <p className="mt-3 text-xs text-muted-foreground">See what's already working on Shopify right now.</p>
     </div>
   );
 }
@@ -52,16 +52,16 @@ export default function TrendtrackReview() {
             Discover products already making money and scale faster with real data.
           </p>
           <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
-            <a href={AFF} target="_blank" rel="noopener noreferrer nofollow">
+            <a href={AFF} rel="noopener noreferrer nofollow">
               <Button variant="brand" size="lg" className="gap-2">
-                Find Winning Products Now <ArrowUpRight className="h-4 w-4" />
+                View Trendtrack Pricing <ArrowUpRight className="h-4 w-4" />
               </Button>
             </a>
-            <a href={AFF} target="_blank" rel="noopener noreferrer nofollow">
-              <Button variant="outline" size="lg">Spy Shopify Stores</Button>
+            <a href={AFF} rel="noopener noreferrer nofollow">
+              <Button variant="outline" size="lg">Explore Features</Button>
             </a>
           </div>
-          <p className="mt-3 text-xs text-muted-foreground">No more guessing. See what's already working.</p>
+          <p className="mt-3 text-xs text-muted-foreground">See what's already working on Shopify right now.</p>
           <div className="mt-6 flex flex-wrap justify-center gap-4 text-xs text-muted-foreground">
             <span className="inline-flex items-center gap-1"><Users className="h-3.5 w-3.5 text-brand" /> Used by ecommerce marketers</span>
             <span className="inline-flex items-center gap-1"><Clock className="h-3.5 w-3.5 text-brand" /> Real-time product tracking</span>
@@ -199,7 +199,7 @@ export default function TrendtrackReview() {
             </div>
           </section>
 
-          <CTABlock primary="Start Scaling Today" />
+          <CTABlock primary="Visit the Official Trendtrack Site" />
 
           {/* Real use case */}
           <section>
@@ -297,7 +297,7 @@ export default function TrendtrackReview() {
             <p className="mt-4 text-base leading-relaxed text-foreground">
               For active dropshippers, the cost is typically recovered <strong>within the first winning product</strong>. One $30/day winner pays for the tool many times over. Check the live pricing page for current rates and any active promos.
             </p>
-            <CTABlock primary="See Live Pricing" secondary="Start Scaling Today" />
+            <CTABlock primary="See Live Pricing" secondary="Compare Plans" />
           </section>
 
           {/* Alternatives */}
@@ -368,16 +368,16 @@ export default function TrendtrackReview() {
               <h3 className="font-display text-xl font-bold text-foreground">Ready to find your next winner?</h3>
               <p className="mt-2 text-sm text-muted-foreground">Stop guessing. Start using the same data top dropshippers rely on.</p>
               <div className="mt-5 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
-                <a href={AFF} target="_blank" rel="noopener noreferrer nofollow">
+                <a href={AFF} rel="noopener noreferrer nofollow">
                   <Button variant="brand" size="lg" className="gap-2">
-                    Find Winning Products Now <ArrowUpRight className="h-4 w-4" />
+                    View Trendtrack Pricing <ArrowUpRight className="h-4 w-4" />
                   </Button>
                 </a>
-                <a href={AFF} target="_blank" rel="noopener noreferrer nofollow">
-                  <Button variant="outline" size="lg">Start Scaling Today</Button>
+                <a href={AFF} rel="noopener noreferrer nofollow">
+                  <Button variant="outline" size="lg">Visit Official Site</Button>
                 </a>
               </div>
-              <p className="mt-3 text-xs text-muted-foreground">No more guessing. See what's already working.</p>
+              <p className="mt-3 text-xs text-muted-foreground">See what's already working on Shopify right now.</p>
             </div>
           </section>
 

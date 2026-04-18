@@ -2,7 +2,8 @@ import { Button } from "@/components/ui/button";
 import { ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
-// Affiliate links
+// All affiliate destinations route through internal /go/[brand]
+// transition pages so we never link directly to an affiliate URL.
 const LINKS = {
   trendtrack: "/go/trendtrack",
   wetracked: "/go/wetracked",
@@ -13,12 +14,13 @@ const LINKS = {
   systeme: "/go/systeme",
   gohighlevel: "/go/gohighlevel",
   weshop: "/go/weshop-ai",
+  pictory: "/go/pictory",
 };
 
-function ToolCTA({ href, label = "Visit Website" }: { href: string; label?: string }) {
+function ToolCTA({ href, label = "Visit Official Website" }: { href: string; label?: string }) {
   return (
     <div className="my-6">
-      <a href={href} target="_blank" rel="noopener noreferrer nofollow">
+      <a href={href} rel="noopener noreferrer nofollow">
         <Button variant="brand" size="sm" className="gap-1.5">
           {label} <ArrowUpRight className="h-3.5 w-3.5" />
         </Button>
@@ -870,7 +872,7 @@ function ArticleHoloVsPictory() {
           It's a better fit for content marketers, course creators, or anyone who wants more polish and
           doesn't mind spending extra time in the editor.
         </p>
-        <ToolCTA href="https://pictory.ai?ref=ecomstacked" label="Check Pictory's features here" />
+        <ToolCTA href={LINKS.pictory} label="Explore Pictory's features" />
       </section>
 
       <section>
@@ -964,14 +966,14 @@ function ArticleHoloVsPictory() {
         </p>
 
         <div className="mt-6 flex flex-col gap-3 sm:flex-row">
-          <a href={LINKS.holo} target="_blank" rel="noopener noreferrer nofollow">
+          <a href={LINKS.holo} rel="noopener noreferrer nofollow">
             <Button variant="brand" size="sm" className="gap-1.5">
-              Check Holo AI here <ArrowUpRight className="h-3.5 w-3.5" />
+              Visit Holo AI <ArrowUpRight className="h-3.5 w-3.5" />
             </Button>
           </a>
-          <a href="https://pictory.ai?ref=ecomstacked" target="_blank" rel="noopener noreferrer nofollow">
+          <a href={LINKS.pictory} rel="noopener noreferrer nofollow">
             <Button variant="secondary" size="sm" className="gap-1.5">
-              You can explore Pictory here <ArrowUpRight className="h-3.5 w-3.5" />
+              Explore Pictory <ArrowUpRight className="h-3.5 w-3.5" />
             </Button>
           </a>
         </div>
@@ -1217,7 +1219,7 @@ function ArticleBestAIVideoTools() {
           <li>• Works well for longer content formats</li>
         </ul>
         <p className="mt-3 text-sm italic text-muted-foreground">"It takes a bit more time, but the output feels more polished for longer videos."</p>
-        <ToolCTA href="https://pictory.ai?ref=ecomstacked" label="You can check Pictory here" />
+        <ToolCTA href={LINKS.pictory} label="Explore Pictory" />
       </section>
 
       <section>
@@ -1333,7 +1335,7 @@ function ArticleBestShopifyResearch() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           Trendtrack stands out because it combines store-level data with creative intelligence. You don't just see what's selling — you see how it's being sold. For active dropshippers, it pays for itself with one winning product. Read our full <Link to="/tools/trendtrack-review" className="text-brand hover:underline">Trendtrack review</Link> for the deep dive.
         </p>
-        <ToolCTA href={LINKS.trendtrack} label="Find Winning Products Now" />
+        <ToolCTA href={LINKS.trendtrack} label="View Trendtrack Pricing" />
       </section>
 
       <section>
@@ -1405,7 +1407,7 @@ function ArticleBestShopifyResearch() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           For scaling operators running multiple stores or testing dozens of products per month, <strong className="text-foreground">Trendtrack</strong> wins again. The depth of store data plus the live ad library means you spend less time guessing and more time launching tested angles.
         </p>
-        <ToolCTA href={LINKS.trendtrack} label="Start Scaling Today" />
+        <ToolCTA href={LINKS.trendtrack} label="Visit Official Site" />
       </section>
     </div>
   );
@@ -1422,7 +1424,7 @@ function ArticleTrendtrackVsMinea() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           For most ecommerce operators, our recommendation is Trendtrack — see our full <Link to="/tools/trendtrack-review" className="text-brand hover:underline">Trendtrack review</Link> for why.
         </p>
-        <ToolCTA href={LINKS.trendtrack} label="Find Winning Products Now" />
+        <ToolCTA href={LINKS.trendtrack} label="View Trendtrack Pricing" />
       </section>
 
       <section>
@@ -1477,7 +1479,7 @@ function ArticleTrendtrackVsMinea() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           For most ecommerce founders and dropshippers, <strong className="text-foreground">Trendtrack is the better choice</strong>. It gives you a clearer picture of what's actually working at the store level and connects that to the ads driving the sales. Minea is a fine secondary tool if you want extra creative coverage across more ad networks.
         </p>
-        <ToolCTA href={LINKS.trendtrack} label="Start Scaling Today" />
+        <ToolCTA href={LINKS.trendtrack} label="Visit Official Site" />
       </section>
     </div>
   );
@@ -1508,7 +1510,7 @@ function ArticleHowToFindWinning() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           This is where the right tool changes everything. Open <Link to="/tools/trendtrack-review" className="text-brand underline">Trendtrack</Link>, filter by your niche, and sort stores by revenue growth in the last 30 days. You're looking for stores climbing fast — not the established giants. Early winners are where the money is.
         </p>
-        <ToolCTA href={LINKS.trendtrack} label="Find Winning Products Now" />
+        <ToolCTA href={LINKS.trendtrack} label="View Trendtrack Pricing" />
       </section>
 
       <section>
@@ -1557,7 +1559,7 @@ function ArticleHowToFindWinning() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           You can run this entire process manually — but it'll take you 10x longer and you'll miss the early-curve winners. The whole point of a Shopify spy tool is that it surfaces the winning stores and ads <em>before</em> they go saturated. Trendtrack is the one we use because it's the most accurate at the store-revenue level.
         </p>
-        <ToolCTA href={LINKS.trendtrack} label="Start Scaling Today" />
+        <ToolCTA href={LINKS.trendtrack} label="Visit Official Site" />
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           Read the full <Link to="/tools/trendtrack-review" className="text-brand underline">Trendtrack review</Link> for the complete breakdown.
         </p>
@@ -1626,7 +1628,7 @@ function ArticleWinningProductsWeek() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           These 5 are a snapshot of what's trending right now — but real winners are always rotating. The operators making real money use Trendtrack to surface new products <em>weekly</em> before they hit "viral product" lists.
         </p>
-        <ToolCTA href={LINKS.trendtrack} label="Find Winning Products Now" />
+        <ToolCTA href={LINKS.trendtrack} label="View Trendtrack Pricing" />
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           Want the full breakdown? Read the <Link to="/tools/trendtrack-review" className="text-brand underline">Trendtrack review</Link> or our <Link to="/blog/how-to-find-winning-products" className="text-brand underline">step-by-step guide to finding winners</Link>.
         </p>

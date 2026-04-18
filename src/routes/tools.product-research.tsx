@@ -8,7 +8,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ArrowUpRight, ArrowRight, CheckCircle2, Crown, TrendingUp, Eye, Search, Zap } from "lucide-react";
 
-const AFF = "https://trendtrack.io?fpr=stacked45";
+const AFF = "/go/trendtrack";
 
 const tools = [
   {
@@ -20,7 +20,7 @@ const tools = [
     pros: ["Real-time Shopify store database", "Live competitor ad library", "Revenue & sales velocity estimates", "New product launch alerts"],
     href: AFF,
     review: "/tools/trendtrack-review",
-    cta: "Find Winning Products Now",
+    cta: "View Trendtrack Pricing",
   },
   {
     rank: 2,
@@ -29,7 +29,7 @@ const tools = [
     why: "Strong ad spy library across multiple ad platforms. Better for creative inspiration than store-level revenue tracking.",
     pros: ["Multi-platform ad library", "Influencer post tracking", "Decent filtering options"],
     href: AFF,
-    cta: "Start Scaling Now",
+    cta: "Learn More",
   },
   {
     rank: 3,
@@ -38,7 +38,7 @@ const tools = [
     why: "Easy entry-level tool for browsing trending products. Less depth than Trendtrack but a solid starting point for new dropshippers.",
     pros: ["Beginner-friendly UI", "Curated product database", "Basic competitor insights"],
     href: AFF,
-    cta: "Start Scaling Now",
+    cta: "Learn More",
   },
   {
     rank: 4,
@@ -47,7 +47,7 @@ const tools = [
     why: "Combines product research with AliExpress integration. Useful if you want everything in one place, but data depth lags behind dedicated spy tools.",
     pros: ["AI product suggestions", "Built-in AliExpress importer", "Profit calculator"],
     href: AFF,
-    cta: "Start Scaling Now",
+    cta: "Learn More",
   },
 ];
 
@@ -74,16 +74,16 @@ export default function ProductResearchPage() {
             The best product research and Shopify spy tools of 2026 — ranked by how fast they help you find profitable products.
           </p>
           <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
-            <a href={AFF} target="_blank" rel="noopener noreferrer nofollow">
+            <a href={AFF} rel="noopener noreferrer nofollow">
               <Button variant="brand" size="lg" className="gap-2">
-                Find Winning Products Now <ArrowUpRight className="h-4 w-4" />
+                View Trendtrack Pricing <ArrowUpRight className="h-4 w-4" />
               </Button>
             </a>
             <Link to="/tools/trendtrack-review">
               <Button variant="outline" size="lg">Read Trendtrack Review</Button>
             </Link>
           </div>
-          <p className="mt-3 text-xs text-muted-foreground">No more guessing. See what's already working.</p>
+          <p className="mt-3 text-xs text-muted-foreground">See what's working on Shopify right now.</p>
         </div>
       </section>
 
@@ -132,7 +132,7 @@ export default function ProductResearchPage() {
                     ))}
                   </ul>
                   <div className="mt-5 flex flex-wrap gap-2">
-                    <a href={t.href} target="_blank" rel="noopener noreferrer nofollow">
+                    <a href={t.href} rel="noopener noreferrer nofollow">
                       <Button variant="brand" size="sm" className="gap-1.5">
                         {t.cta} <ArrowUpRight className="h-3.5 w-3.5" />
                       </Button>
@@ -181,9 +181,9 @@ export default function ProductResearchPage() {
             Trendtrack pays for itself the moment you find one winning product. Skip the months of guessing.
           </p>
           <div className="mt-6 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
-            <a href={AFF} target="_blank" rel="noopener noreferrer nofollow">
+            <a href={AFF} rel="noopener noreferrer nofollow">
               <Button variant="brand" size="lg" className="gap-2">
-                Find Winning Products Now <ArrowUpRight className="h-4 w-4" />
+                View Trendtrack Pricing <ArrowUpRight className="h-4 w-4" />
               </Button>
             </a>
             <Link to="/tools/trendtrack-review">
