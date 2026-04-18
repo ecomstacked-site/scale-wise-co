@@ -1,4 +1,5 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
+import { SEO } from "@/lib/seo";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Newsletter } from "@/components/Newsletter";
@@ -8,19 +9,6 @@ import { Badge } from "@/components/ui/badge";
 import { ArrowUpRight, ArrowRight, CheckCircle2, Crown, TrendingUp, Eye, Search, Zap } from "lucide-react";
 
 const AFF = "https://trendtrack.io?fpr=stacked45";
-
-export const Route = createFileRoute("/tools/product-research")({
-  head: () => ({
-    meta: [
-      { title: "Best Shopify Product Research Tools 2026 — Find Winning Products" },
-      { name: "description", content: "Compare the best Shopify product research tools of 2026. Spy on stores, track winning products, and pick the right tool for dropshipping or scaling ecommerce." },
-      { name: "keywords", content: "shopify product research, product research tools, spy shopify stores, dropshipping tools, trendtrack, minea, dropship.io" },
-      { property: "og:title", content: "Best Shopify Product Research Tools 2026" },
-      { property: "og:description", content: "Find winning Shopify products before they saturate with the best research tools of 2026." },
-    ],
-  }),
-  component: ProductResearchPage,
-});
 
 const tools = [
   {
@@ -63,9 +51,16 @@ const tools = [
   },
 ];
 
-function ProductResearchPage() {
+export default function ProductResearchPage() {
   return (
     <div className="min-h-screen">
+      <SEO
+        title="Best Shopify Product Research Tools 2026 — Find Winning Products"
+        description="Compare the best Shopify product research tools of 2026. Spy on stores, track winning products, and pick the right tool for dropshipping or scaling ecommerce."
+        keywords="shopify product research, product research tools, spy shopify stores, dropshipping tools, trendtrack, minea, dropship.io"
+        ogTitle="Best Shopify Product Research Tools 2026"
+        ogDescription="Find winning Shopify products before they saturate with the best research tools of 2026."
+      />
       <Header />
 
       {/* Hero */}

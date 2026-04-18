@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { SEO } from "@/lib/seo";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Newsletter } from "@/components/Newsletter";
@@ -8,20 +8,6 @@ import { Badge } from "@/components/ui/badge";
 import { ArrowUpRight, CheckCircle2, XCircle, TrendingUp, Eye, Search, Zap, Clock, Users, DollarSign } from "lucide-react";
 
 const AFF = "https://trendtrack.io?fpr=stacked45";
-
-export const Route = createFileRoute("/tools/trendtrack-review")({
-  head: () => ({
-    meta: [
-      { title: "Trendtrack Review 2026: Pricing, Features & Why Dropshippers Love It" },
-      { name: "description", content: "Honest Trendtrack review for 2026. Spy Shopify stores, find winning products before they saturate, see real pricing, pros, cons, and how to use it to scale dropshipping fast." },
-      { name: "keywords", content: "trendtrack review, trendtrack pricing, trendtrack dropshipping, shopify product research tool, spy shopify stores" },
-      { property: "og:title", content: "Trendtrack Review 2026 — Find Winning Shopify Products First" },
-      { property: "og:description", content: "Spy on Shopify stores, track competitors, and find winning products before they go saturated." },
-      { property: "og:type", content: "article" },
-    ],
-  }),
-  component: TrendtrackReview,
-});
 
 function CTABlock({ primary = "Find Winning Products Now", secondary = "Spy Shopify Stores" }: { primary?: string; secondary?: string }) {
   return (
@@ -41,9 +27,17 @@ function CTABlock({ primary = "Find Winning Products Now", secondary = "Spy Shop
   );
 }
 
-function TrendtrackReview() {
+export default function TrendtrackReview() {
   return (
     <div className="min-h-screen">
+      <SEO
+        title="Trendtrack Review 2026: Pricing, Features & Why Dropshippers Love It"
+        description="Honest Trendtrack review for 2026. Spy Shopify stores, find winning products before they saturate, see real pricing, pros, cons, and how to use it to scale dropshipping fast."
+        keywords="trendtrack review, trendtrack pricing, trendtrack dropshipping, shopify product research tool, spy shopify stores"
+        ogTitle="Trendtrack Review 2026 — Find Winning Shopify Products First"
+        ogDescription="Spy on Shopify stores, track competitors, and find winning products before they go saturated."
+        ogType="article"
+      />
       <Header />
 
       {/* Hero */}
