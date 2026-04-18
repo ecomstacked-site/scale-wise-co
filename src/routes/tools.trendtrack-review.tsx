@@ -352,7 +352,7 @@ function TrendtrackReview() {
             </div>
 
             <p className="mt-4 text-sm leading-relaxed text-foreground">
-              Read our full <Link to="/blog/$slug" params={{ slug: "trendtrack-vs-minea" }} className="font-semibold text-brand hover:underline">Trendtrack vs Minea comparison</Link> for the deep breakdown, or check the <Link to="/blog/$slug" params={{ slug: "best-shopify-product-research-tools" }} className="font-semibold text-brand hover:underline">best Shopify product research tools roundup</Link>.
+              Read our full <Link to="/blog/trendtrack-vs-minea" className="font-semibold text-brand hover:underline">Trendtrack vs Minea comparison</Link> for the deep breakdown, or check the <Link to="/blog/best-shopify-product-research-tools" className="font-semibold text-brand hover:underline">best Shopify product research tools roundup</Link>.
             </p>
           </section>
 

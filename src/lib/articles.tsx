@@ -842,7 +842,7 @@ function ArticleHoloVsPictory() {
         </p>
         <ToolCTA href={LINKS.holo} label="If you want to check it yourself — see Holo AI here" />
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          Want a deeper look? Read my <Link to="/blog/$slug" params={{ slug: "holo-ai-review" }} className="text-brand hover:underline">full Holo AI review</Link> after testing it for 7 days.
+          Want a deeper look? Read my <Link to="/blog/holo-ai-review" className="text-brand hover:underline">full Holo AI review</Link> after testing it for 7 days.
         </p>
       </section>
 
@@ -986,7 +986,7 @@ function ArticleHoloReview() {
         </p>
         <ToolCTA href={LINKS.holo} label="Check out Holo AI here" />
         <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-          Not sure if Holo AI is right for you? <Link to="/blog/$slug" params={{ slug: "holo-ai-vs-pictory" }} className="text-brand hover:underline">See how it compares to Pictory</Link> or check my <Link to="/blog/$slug" params={{ slug: "best-ai-video-tools" }} className="text-brand hover:underline">full list of AI video tools</Link> for more options.
+          Not sure if Holo AI is right for you? <Link to="/blog/holo-ai-vs-pictory" className="text-brand hover:underline">See how it compares to Pictory</Link> or check my <Link to="/blog/best-ai-video-tools" className="text-brand hover:underline">full list of AI video tools</Link> for more options.
         </p>
       </section>
 
@@ -1183,7 +1183,7 @@ function ArticleBestAIVideoTools() {
         <p className="mt-3 text-sm italic text-muted-foreground">"This one felt faster than anything else I tested."</p>
         <ToolCTA href={LINKS.holo} label="If you want to try it, check Holo AI here" />
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          Want a detailed breakdown? Read my <Link to="/blog/$slug" params={{ slug: "holo-ai-review" }} className="text-brand hover:underline">full Holo AI review</Link> or see the <Link to="/blog/$slug" params={{ slug: "holo-ai-vs-pictory" }} className="text-brand hover:underline">direct comparison with Pictory</Link>.
+          Want a detailed breakdown? Read my <Link to="/blog/holo-ai-review" className="text-brand hover:underline">full Holo AI review</Link> or see the <Link to="/blog/holo-ai-vs-pictory" className="text-brand hover:underline">direct comparison with Pictory</Link>.
         </p>
       </section>
 
@@ -1333,7 +1333,7 @@ function ArticleBestShopifyResearch() {
           <li>• <strong className="text-foreground">Pros:</strong> Wide ad coverage, useful filters, decent influencer data.</li>
         </ul>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          Minea is solid if your focus is creative spying. It has less depth on Shopify store revenue and product-level tracking than Trendtrack — see our full <Link to="/blog/$slug" params={{ slug: "trendtrack-vs-minea" }} className="text-brand hover:underline">Trendtrack vs Minea breakdown</Link>.
+          Minea is solid if your focus is creative spying. It has less depth on Shopify store revenue and product-level tracking than Trendtrack — see our full <Link to="/blog/trendtrack-vs-minea" className="text-brand hover:underline">Trendtrack vs Minea breakdown</Link>.
         </p>
       </section>
 
@@ -1615,7 +1615,7 @@ function ArticleWinningProductsWeek() {
         </p>
         <ToolCTA href={LINKS.trendtrack} label="Find Winning Products Now" />
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          Want the full breakdown? Read the <Link to="/tools/trendtrack-review" className="text-brand underline">Trendtrack review</Link> or our <Link to="/blog/$slug" params={{ slug: "how-to-find-winning-products" }} className="text-brand underline">step-by-step guide to finding winners</Link>.
+          Want the full breakdown? Read the <Link to="/tools/trendtrack-review" className="text-brand underline">Trendtrack review</Link> or our <Link to="/blog/how-to-find-winning-products" className="text-brand underline">step-by-step guide to finding winners</Link>.
         </p>
       </section>
     </div>
