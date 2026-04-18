@@ -1,20 +1,14 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { SEO } from "@/lib/seo";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 
-export const Route = createFileRoute("/privacy")({
-  head: () => ({
-    meta: [
-      { title: "Privacy Policy — EcomStacked" },
-      { name: "description", content: "EcomStacked privacy policy — how we collect, use, and protect your data." },
-    ],
-  }),
-  component: PrivacyPage,
-});
-
-function PrivacyPage() {
+export default function PrivacyPage() {
   return (
     <div className="min-h-screen">
+      <SEO
+        title="Privacy Policy — EcomStacked"
+        description="EcomStacked privacy policy — how we collect, use, and protect your data."
+      />
       <Header />
       <section className="py-16 sm:py-20">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 space-y-8">

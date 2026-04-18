@@ -1,4 +1,5 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
+import { SEO } from "@/lib/seo";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -10,20 +11,8 @@ import { ArticleCard } from "@/components/ArticleCard";
 import {
   BarChart3, Bot, Eye, Search, Shield, Target,
   ArrowRight, CheckCircle2, Zap, TrendingUp, Users,
-  BookOpen, FileSearch, Layers, Quote
+  BookOpen, FileSearch, Layers
 } from "lucide-react";
-
-export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "EcomStacked — Discover the Best AI & Growth Tools for Ecommerce" },
-      { name: "description", content: "We research, test, and organize tools that help dropshippers and ecommerce brands improve tracking, automate workflows, create better ads, and scale profitably." },
-      { property: "og:title", content: "EcomStacked — Best AI & Growth Tools for Ecommerce" },
-      { property: "og:description", content: "Discover curated tools for tracking, automation, AI ads, and ecommerce growth." },
-    ],
-  }),
-  component: HomePage,
-});
 
 const featuredTools = [
   { name: "Trendtrack", description: "Spy on Shopify stores, track winning products in real time, and pull the ads driving the sales.", bestFor: "Product research & store spying", benefit: "Find winning products before they saturate", category: "Product Research", featured: true, image: "/assets/tools/trendtrack.jpg", href: "/go/trendtrack" },
@@ -47,9 +36,15 @@ const articles = [
   { title: "Best Chat Automation Tools for Shopify Stores", excerpt: "Compare the top chat automation platforms for Shopify and learn how to turn DMs into revenue.", category: "Automation", date: "April 5, 2026", readTime: "7 min read", slug: "chat-automation-shopify", image: "/assets/blog/chat-automation.jpg" },
 ];
 
-function HomePage() {
+export default function HomePage() {
   return (
     <div className="min-h-screen">
+      <SEO
+        title="EcomStacked — Discover the Best AI & Growth Tools for Ecommerce"
+        description="We research, test, and organize tools that help dropshippers and ecommerce brands improve tracking, automate workflows, create better ads, and scale profitably."
+        ogTitle="EcomStacked — Best AI & Growth Tools for Ecommerce"
+        ogDescription="Discover curated tools for tracking, automation, AI ads, and ecommerce growth."
+      />
       <Header />
 
       {/* Hero */}
@@ -105,7 +100,7 @@ function HomePage() {
                   <h3 className="mt-1 font-display text-lg font-bold text-foreground">{s.tool}</h3>
                   <p className="mt-2 flex-1 text-xs leading-relaxed text-muted-foreground">{s.desc}</p>
                   {s.href.startsWith("/tools") ? (
-                    <Link to={s.href as "/tools/trendtrack-review"} className="mt-4">
+                    <Link to={s.href} className="mt-4">
                       <Button variant="brand-outline" size="sm" className="w-full gap-1 text-xs">
                         {s.cta} <ArrowRight className="h-3 w-3" />
                       </Button>

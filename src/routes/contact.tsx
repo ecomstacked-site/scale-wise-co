@@ -1,5 +1,5 @@
-import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
+import { SEO } from "@/lib/seo";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -7,19 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Card, CardContent } from "@/components/ui/card";
 import { Mail, MessageSquare, Handshake } from "lucide-react";
 
-export const Route = createFileRoute("/contact")({
-  head: () => ({
-    meta: [
-      { title: "Contact — EcomStacked" },
-      { name: "description", content: "Get in touch with EcomStacked for partnerships, tool submissions, or support." },
-      { property: "og:title", content: "Contact — EcomStacked" },
-      { property: "og:description", content: "Reach out for partnerships, tool submissions, or support." },
-    ],
-  }),
-  component: ContactPage,
-});
-
-function ContactPage() {
+export default function ContactPage() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
@@ -47,6 +35,12 @@ function ContactPage() {
 
   return (
     <div className="min-h-screen">
+      <SEO
+        title="Contact — EcomStacked"
+        description="Get in touch with EcomStacked for partnerships, tool submissions, or support."
+        ogTitle="Contact — EcomStacked"
+        ogDescription="Reach out for partnerships, tool submissions, or support."
+      />
       <Header />
 
       <section className="bg-card py-16 sm:py-20">
