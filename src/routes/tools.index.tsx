@@ -1,5 +1,5 @@
-import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
+import { SEO } from "@/lib/seo";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Newsletter } from "@/components/Newsletter";
@@ -15,17 +15,6 @@ import {
   TableRow,
 } from "@/components/ui/table";
 
-export const Route = createFileRoute("/tools/")({
-  head: () => ({
-    meta: [
-      { title: "Recommended Tools — EcomStacked" },
-      { name: "description", content: "Curated directory of the best AI, tracking, automation, shipping, and growth tools for ecommerce brands and dropshippers." },
-      { property: "og:title", content: "Recommended Tools — EcomStacked" },
-      { property: "og:description", content: "Browse our curated directory of ecommerce growth tools." },
-    ],
-  }),
-  component: ToolsPage,
-});
 
 const allTools = [
   {
@@ -135,12 +124,18 @@ const comparisonTools = [
   { name: "Systeme", bestFor: "Funnels & email", useCase: "Build funnels and email sequences affordably", href: "/go/systeme" },
 ];
 
-function ToolsPage() {
+export default function ToolsPage() {
   const [activeCategory, setActiveCategory] = useState("All");
   const filtered = activeCategory === "All" ? allTools : allTools.filter((t) => t.category === activeCategory);
 
   return (
     <div className="min-h-screen">
+      <SEO
+        title="Recommended Tools — EcomStacked"
+        description="Curated directory of the best AI, tracking, automation, shipping, and growth tools for ecommerce brands and dropshippers."
+        ogTitle="Recommended Tools — EcomStacked"
+        ogDescription="Browse our curated directory of ecommerce growth tools."
+      />
       <Header />
 
       {/* Hero */}
