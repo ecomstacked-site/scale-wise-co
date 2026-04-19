@@ -170,7 +170,14 @@ export default function HomePage() {
                   className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.04]"
                 />
                 <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-card to-transparent" />
-                <Badge className="absolute left-4 top-10 border-0 bg-card/85 text-foreground backdrop-blur">
+                {/* Brand pill — top-left */}
+                <div className="absolute left-4 top-4 z-10 flex items-center gap-2 rounded-full border border-border/60 bg-background/80 px-3 py-1.5 shadow-lg shadow-black/30 backdrop-blur-md ring-1 ring-brand/20">
+                  <span className="flex h-5 w-5 items-center justify-center rounded-md bg-gradient-to-br from-brand to-brand/60 text-[11px] font-black text-brand-foreground shadow-inner">
+                    W
+                  </span>
+                  <span className="font-display text-xs font-bold tracking-tight text-foreground">{heroTool.name}</span>
+                </div>
+                <Badge className="absolute right-4 top-4 border-0 bg-card/85 text-[10px] font-semibold text-foreground backdrop-blur">
                   {heroTool.badge}
                 </Badge>
               </div>
