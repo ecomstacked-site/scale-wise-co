@@ -196,7 +196,7 @@ export default function HomePage() {
       </section>
 
       {/* POPULAR GUIDES */}
-      <section className="relative border-t border-border/60 bg-surface py-20 sm:py-24">
+      <section className="relative border-t border-border/60 bg-surface py-16 sm:py-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <div className="flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-end">
             <div>
