@@ -44,11 +44,14 @@ export default function BlogPostPage() {
           <Badge variant="secondary" className="mb-3">{category}</Badge>
           <h1 className="font-display text-2xl font-extrabold leading-tight text-foreground sm:text-4xl">{title}</h1>
 
-          <div className="mt-4 flex items-center gap-4 text-xs text-muted-foreground">
-            <span className="flex items-center gap-1"><User className="h-3.5 w-3.5" /> EcomStacked Team</span>
+          <div className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-muted-foreground">
+            <span className="flex items-center gap-1"><User className="h-3.5 w-3.5" /> By Daniel Pereira, EcomStacked Editorial</span>
             <span className="flex items-center gap-1"><Clock className="h-3.5 w-3.5" /> {readTime}</span>
-            <span>{date}</span>
+            <span>Last updated: {date}</span>
           </div>
+          <p className="mt-3 text-xs italic text-muted-foreground">
+            We independently evaluate and review marketing tools based on real use cases and practical experience.
+          </p>
 
           {toc.length > 0 && (
             <Card className="mt-8">

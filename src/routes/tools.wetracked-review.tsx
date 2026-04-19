@@ -65,10 +65,13 @@ export default function WeTrackedReview() {
       {/* INTRO */}
       <article className="py-12 sm:py-16">
         <div className="mx-auto max-w-3xl px-4 sm:px-6">
-          <Badge variant="secondary" className="mb-4">WeTracked Review · Updated 2026</Badge>
+          <Badge variant="secondary" className="mb-4">WeTracked Review · Updated April 2026</Badge>
           <h1 className="font-display text-3xl font-extrabold leading-[1.15] text-foreground sm:text-5xl">
             WeTracked Review 2026: Features, Pricing, and Whether It's Right for Your Store
           </h1>
+          <p className="mt-4 text-xs text-muted-foreground">
+            By Daniel Pereira, EcomStacked Editorial · Last updated April 18, 2026 · We independently evaluate marketing tools based on real use cases.
+          </p>
           <p className="mt-5 text-base leading-relaxed text-muted-foreground sm:text-lg">
             If you run paid ads for an ecommerce brand, you've probably noticed the gap between what your Shopify store reports and what Meta or TikTok claims to have driven. Browser-based pixels miss conversions due to iOS privacy changes, ad blockers, Safari ITP, and cookie restrictions — which means your ad platforms often optimize on incomplete data.
           </p>

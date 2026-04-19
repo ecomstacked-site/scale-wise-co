@@ -8,14 +8,18 @@ export interface SEOProps {
   ogImage?: string;
   ogType?: string;
   keywords?: string;
+  noIndex?: boolean;
+  canonical?: string;
 }
 
-export function SEO({ title, description, ogTitle, ogDescription, ogImage, ogType, keywords }: SEOProps) {
+export function SEO({ title, description, ogTitle, ogDescription, ogImage, ogType, keywords, noIndex, canonical }: SEOProps) {
   return (
     <Helmet>
       <title>{title}</title>
       <meta name="description" content={description} />
       {keywords && <meta name="keywords" content={keywords} />}
+      {noIndex && <meta name="robots" content="noindex, nofollow" />}
+      {canonical && <link rel="canonical" href={canonical} />}
       <meta property="og:title" content={ogTitle ?? title} />
       <meta property="og:description" content={ogDescription ?? description} />
       {ogType && <meta property="og:type" content={ogType} />}
