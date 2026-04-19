@@ -225,6 +225,13 @@ export default function HomePage() {
                       className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.05]"
                     />
                     <div className="absolute inset-0 bg-gradient-to-r from-transparent to-card/40" />
+                    {/* Brand pill — top-left */}
+                    <div className="absolute left-2 top-2 z-10 flex items-center gap-1.5 rounded-full border border-border/60 bg-background/85 px-2 py-1 shadow-md shadow-black/30 backdrop-blur-md ring-1 ring-brand/20">
+                      <span className="flex h-4 w-4 items-center justify-center rounded-[5px] bg-gradient-to-br from-brand to-brand/60 text-[9px] font-black text-brand-foreground">
+                        {tool.name.charAt(0)}
+                      </span>
+                      <span className="font-display text-[10px] font-bold tracking-tight text-foreground">{tool.name}</span>
+                    </div>
                   </div>
                   <div className="flex flex-1 flex-col p-5">
                     <Badge className="self-start border-0 bg-brand/15 text-[10px] font-semibold text-brand">
