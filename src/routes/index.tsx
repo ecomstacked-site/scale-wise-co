@@ -141,9 +141,9 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* FEATURED TOOLS */}
+      {/* FEATURED TOOLS — Asymmetric 60/40 layout */}
       <section className="relative py-16 sm:py-20">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="text-center">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand">The Stack</p>
             <h2 className="mt-3 font-display text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
@@ -155,57 +155,92 @@ export default function HomePage() {
           </div>
 
           <div className="mt-12 grid gap-5 lg:grid-cols-12">
-            {featuredTools.map((tool, idx) => (
-              <article
-                key={tool.name}
-                className={`premium-card group relative flex flex-col overflow-hidden rounded-2xl ${
-                  tool.primary ? "lg:col-span-12 xl:col-span-12" : "lg:col-span-4"
-                }`}
-              >
-                <div className={`relative overflow-hidden ${tool.primary ? "aspect-[16/8]" : "aspect-[16/9]"}`}>
-                  <img
-                    src={tool.image}
-                    alt={`${tool.name} interface`}
-                    loading={idx === 0 ? "eager" : "lazy"}
-                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.04]"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-card via-card/10 to-transparent" />
-                  <Badge className="absolute left-4 top-4 border-0 bg-card/85 text-foreground backdrop-blur">
-                    {tool.badge}
-                  </Badge>
+            {/* DOMINANT CARD — Winning Hunter */}
+            <article className="premium-card group relative flex flex-col overflow-hidden rounded-2xl lg:col-span-7">
+              <div className="absolute left-0 right-0 top-0 z-10 flex justify-center">
+                <span className="-mt-px rounded-b-lg bg-brand px-4 py-1.5 text-[11px] font-bold uppercase tracking-wider text-brand-foreground shadow-lg shadow-brand/30">
+                  🔥 {heroTool.topTag}
+                </span>
+              </div>
+              <div className="relative aspect-[16/10] overflow-hidden">
+                <img
+                  src={heroTool.image}
+                  alt={`${heroTool.name} interface`}
+                  loading="eager"
+                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.04]"
+                />
+                <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-card to-transparent" />
+                <Badge className="absolute left-4 top-10 border-0 bg-card/85 text-foreground backdrop-blur">
+                  {heroTool.badge}
+                </Badge>
+              </div>
+              <div className="flex flex-1 flex-col p-7 sm:p-9">
+                <h3 className="font-display text-2xl font-bold leading-tight text-foreground sm:text-3xl lg:text-[34px]">
+                  {heroTool.hook}
+                </h3>
+                <p className="mt-3 text-base leading-relaxed text-muted-foreground sm:text-lg">
+                  {heroTool.support}
+                </p>
+                <ul className="mt-5 grid gap-2.5 sm:grid-cols-2">
+                  {heroTool.bullets.map((b) => (
+                    <li key={b} className="flex items-start gap-2 text-sm font-medium text-foreground/90">
+                      <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-brand" />
+                      {b}
+                    </li>
+                  ))}
+                </ul>
+                <div className="mt-7 flex flex-col items-start gap-3 sm:flex-row sm:items-center">
+                  <a href={heroTool.href} rel="noopener noreferrer nofollow">
+                    <Button variant="brand" size="lg" className="gap-2 px-7 text-base shadow-lg shadow-brand/30">
+                      {heroTool.cta} <ArrowUpRight className="h-4 w-4" />
+                    </Button>
+                  </a>
+                  <span className="flex items-center gap-1.5 text-xs font-medium text-muted-foreground">
+                    <Star className="h-3.5 w-3.5 fill-brand text-brand" /> {heroTool.microTrust}
+                  </span>
                 </div>
-                <div className={`flex flex-1 flex-col p-6 ${tool.primary ? "sm:p-8" : ""}`}>
-                  <h3 className={`font-display font-bold text-foreground ${tool.primary ? "text-2xl sm:text-3xl" : "text-xl"}`}>
-                    {tool.name}
-                  </h3>
-                  <p className={`mt-2 leading-relaxed text-muted-foreground ${tool.primary ? "text-base sm:text-lg" : "text-sm"}`}>
-                    {tool.hook}
-                  </p>
-                  <ul className={`mt-4 grid gap-2 ${tool.primary ? "sm:grid-cols-2" : ""}`}>
-                    {tool.bullets.map((b) => (
-                      <li key={b} className="flex items-start gap-2 text-sm text-foreground/90">
-                        <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-brand" />
-                        {b}
-                      </li>
-                    ))}
-                  </ul>
-                  <div className="mt-6">
-                    <a href={tool.href} rel="noopener noreferrer nofollow">
-                      <Button
-                        variant={tool.primary ? "brand" : "outline"}
-                        size={tool.primary ? "lg" : "sm"}
-                        className={`gap-1.5 ${tool.primary ? "px-6 shadow-md shadow-brand/25" : "border-border bg-card/60 hover:bg-card"}`}
-                      >
-                        {tool.cta} <ArrowUpRight className={tool.primary ? "h-4 w-4" : "h-3.5 w-3.5"} />
-                      </Button>
-                    </a>
+              </div>
+              <div className="pointer-events-none absolute -right-20 -top-20 h-64 w-64 rounded-full bg-brand/20 blur-3xl" />
+            </article>
+
+            {/* RIGHT STACK — 3 smaller cards */}
+            <div className="flex flex-col gap-5 lg:col-span-5">
+              {sideTools.map((tool) => (
+                <article
+                  key={tool.name}
+                  className="premium-card group relative flex flex-1 overflow-hidden rounded-2xl"
+                >
+                  <div className="relative w-2/5 shrink-0 overflow-hidden">
+                    <img
+                      src={tool.image}
+                      alt={`${tool.name} interface`}
+                      loading="lazy"
+                      className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.05]"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-r from-transparent to-card/40" />
                   </div>
-                </div>
-                {idx === 0 && (
-                  <div className="pointer-events-none absolute -right-16 -top-16 h-56 w-56 rounded-full bg-brand/20 blur-3xl" />
-                )}
-              </article>
-            ))}
+                  <div className="flex flex-1 flex-col p-5">
+                    <Badge className="self-start border-0 bg-brand/15 text-[10px] font-semibold text-brand">
+                      {tool.badge}
+                    </Badge>
+                    <h3 className="mt-2 font-display text-base font-bold leading-tight text-foreground">
+                      {tool.hook}
+                    </h3>
+                    <p className="mt-1.5 text-xs leading-relaxed text-muted-foreground">{tool.support}</p>
+                    <div className="mt-auto pt-3">
+                      <a href={tool.href} rel="noopener noreferrer nofollow">
+                        <Button variant="outline" size="sm" className="w-full gap-1.5 border-border bg-card/60 text-xs hover:bg-card hover:text-brand">
+                          {tool.cta} <ArrowUpRight className="h-3 w-3" />
+                        </Button>
+                      </a>
+                      <p className="mt-2 flex items-center gap-1 text-[10px] text-muted-foreground">
+                        <Star className="h-2.5 w-2.5 fill-brand text-brand" /> {tool.microTrust}
+                      </p>
+                    </div>
+                  </div>
+                </article>
+              ))}
+            </div>
           </div>
 
           <div className="mt-10 text-center">
