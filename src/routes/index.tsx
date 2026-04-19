@@ -14,43 +14,52 @@ import wetrackedImg from "/assets/tools/wetracked.jpg?url";
 import holoAiImg from "/assets/tools/holo-ai.jpg?url";
 import trendtrackImg from "/assets/tools/trendtrack.jpg?url";
 
-const featuredTools = [
-  {
-    name: "Winning Hunter",
-    badge: "🔥 #1 Product Research Tool",
-    hook: "Find winning products BEFORE your competitors",
-    bullets: ["Proven winning ads database", "Spy competitors in seconds"],
-    href: "/go/trendtrack",
-    image: winningHunterImg,
-    cta: "Find Winning Products",
-    primary: true,
-  },
+const heroTool = {
+  name: "Winning Hunter",
+  badge: "🔥 #1 Product Research Tool",
+  topTag: "Most Popular Tool This Month",
+  hook: "Find Winning Products BEFORE Your Competitors",
+  support: "Skip the guesswork and launch products backed by real data from millions of live ads and stores.",
+  bullets: ["Proven winning ads database", "Spy competitors in seconds"],
+  href: "/go/trendtrack",
+  image: winningHunterImg,
+  cta: "Find Winning Products",
+  microTrust: "Used daily by top dropshippers",
+};
+
+const sideTools = [
   {
     name: "WeTracked",
     badge: "🔥 Best for Tracking",
-    hook: "Fix broken tracking & recover lost revenue",
-    bullets: ["Accurate attribution", "Better ROAS visibility"],
+    hook: "Recover Lost Revenue From Broken Tracking",
+    support: "Fix attribution issues and unlock real ROAS.",
+    bullets: ["Accurate server-side tracking", "Better conversion visibility"],
     href: "/go/wetracked",
     image: wetrackedImg,
-    cta: "Fix Tracking",
+    cta: "Fix Tracking Now",
+    microTrust: "Fix tracking in under 10 minutes",
   },
   {
     name: "Holo AI",
     badge: "🔥 Best for Creatives",
-    hook: "Create high-converting ad creatives 10x faster",
-    bullets: ["AI ad generation", "Scale testing fast"],
+    hook: "Launch High-Converting Ads in Minutes",
+    support: "Create scroll-stopping ads without a team.",
+    bullets: ["AI ad generation", "Scale creatives fast"],
     href: "/go/holo-ai",
     image: holoAiImg,
     cta: "Create Ads Faster",
+    microTrust: "No design skills needed",
   },
   {
     name: "Trendtrack",
-    badge: "🔥 Best for Trend Discovery",
-    hook: "Spot trends before they go viral",
-    bullets: ["Trending products", "Competitor insights"],
+    badge: "🔥 Best for Trends",
+    hook: "Find Viral Products Before They Explode",
+    support: "Discover trends before the market saturates.",
+    bullets: ["Real-time trend tracking", "Competitor insights"],
     href: "/go/trendtrack",
     image: trendtrackImg,
-    cta: "Discover Trends",
+    cta: "Discover Trends Early",
+    microTrust: "Updated with real-time data",
   },
 ];
 
