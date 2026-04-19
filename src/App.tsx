@@ -14,6 +14,8 @@ import ProductResearchPage from "./routes/tools.product-research";
 import TrendtrackReview from "./routes/tools.trendtrack-review";
 import WeTrackedReview from "./routes/tools.wetracked-review";
 import WeTrackedVsTripleWhale from "./routes/wetracked-vs-triple-whale";
+import WinningHunterPage from "./routes/tools.winninghunter";
+import BestProductResearchToolsPage from "./routes/best-product-research-tools";
 import { Navigate } from "react-router-dom";
 
 // Brand-specific affiliate destinations.
@@ -61,6 +63,10 @@ const affiliateLinks: Record<string, { url: string; name: string }> = {
   pictory: {
     url: "https://pictory.ai?ref=ecomstacked",
     name: "Pictory",
+  },
+  winninghunter: {
+    url: "https://winninghunter.com/?ref=jame",
+    name: "WinningHunter",
   },
 };
 
@@ -168,6 +174,8 @@ export default function App() {
       <Route path="/tools/product-research" element={<ProductResearchPage />} />
       <Route path="/tools/trendtrack-review" element={<TrendtrackReview />} />
       <Route path="/tools/wetracked-review" element={<WeTrackedReview />} />
+      <Route path="/tools/winninghunter" element={<WinningHunterPage />} />
+      <Route path="/best-product-research-tools" element={<BestProductResearchToolsPage />} />
       <Route path="/wetracked-vs-triple-whale" element={<WeTrackedVsTripleWhale />} />
       <Route path="/best-ad-tracking-tools" element={<Navigate to="/blog/best-ad-tracking-tools-2026" replace />} />
       <Route path="/blog/wetracked-review" element={<Navigate to="/tools/wetracked-review" replace />} />
