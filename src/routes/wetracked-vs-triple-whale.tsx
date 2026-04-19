@@ -44,10 +44,13 @@ export default function WeTrackedVsTripleWhalePage() {
       {/* Hero */}
       <section className="bg-card py-16 sm:py-20">
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
-          <p className="text-xs font-semibold uppercase tracking-widest text-brand">Comparison · 2026</p>
+          <p className="text-xs font-semibold uppercase tracking-widest text-brand">Comparison · Updated April 2026</p>
           <h1 className="mt-3 font-display text-3xl font-extrabold text-foreground sm:text-5xl">
             WeTracked vs Triple Whale: Which One Is Better in 2026?
           </h1>
+          <p className="mx-auto mt-3 max-w-xl text-xs text-muted-foreground">
+            By Daniel Pereira, EcomStacked Editorial · Last updated April 18, 2026
+          </p>
           <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg">
             Two of the most-talked-about ad tracking tools for ecommerce — but only one is the right fit for most advertisers today. Here's the honest breakdown.
           </p>

@@ -44,10 +44,13 @@ export default function TrendtrackReview() {
       {/* Hero */}
       <section className="bg-card py-20 sm:py-24">
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
-          <Badge variant="secondary" className="mb-4">Trendtrack Review · Updated 2026</Badge>
+          <Badge variant="secondary" className="mb-4">Trendtrack Review · Updated April 2026</Badge>
           <h1 className="font-display text-3xl font-extrabold leading-tight text-foreground sm:text-5xl">
             Stop Guessing: Find Winning Shopify Products Before Everyone Else
           </h1>
+          <p className="mx-auto mt-4 max-w-2xl text-xs text-muted-foreground">
+            By Daniel Pereira, EcomStacked Editorial · Last updated April 17, 2026 · We independently evaluate ecommerce tools based on real workflows.
+          </p>
           <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-muted-foreground">
             Discover products already making money and scale faster with real data.
           </p>

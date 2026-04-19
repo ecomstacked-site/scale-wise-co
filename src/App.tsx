@@ -1,5 +1,6 @@
 import { Routes, Route, Link, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet-async";
 import HomePage from "./routes/index";
 import AboutPage from "./routes/about";
 import BlogPage from "./routes/blog.index";
@@ -103,6 +104,10 @@ function GoRedirect() {
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
+      <Helmet>
+        <title>Redirecting to {entry.name}…</title>
+        <meta name="robots" content="noindex, nofollow" />
+      </Helmet>
       <div className="max-w-md text-center">
         <div
           className="mx-auto h-10 w-10 animate-spin rounded-full border-2 border-muted border-t-primary"
