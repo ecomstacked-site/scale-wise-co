@@ -52,6 +52,29 @@ export interface ArticleMeta {
 
 export const articlesMeta: ArticleMeta[] = [
   {
+    title: "How to Find Winning Products for Dropshipping (2026 Guide)",
+    excerpt: "A step-by-step guide to finding winning dropshipping products without wasting money. Real workflow, validation framework, and the mistakes that drain ad budgets.",
+    category: "Product Research",
+    date: "April 19, 2026",
+    readTime: "11 min read",
+    slug: "how-to-find-winning-products-for-dropshipping",
+    featured: false,
+    image: "/assets/blog/winning-products.jpg",
+    toc: [
+      "Why Most Products Fail (Before You Even Test)",
+      "What a 'Winning Product' Actually Means in 2026",
+      "Step 1: Reverse-Engineer Stores Already Winning",
+      "Step 2: Build a Repeatable Filter (The 6-Point Check)",
+      "Step 3: Spy on the Ads, Not Just the Product",
+      "Step 4: Validate Demand With Real Data",
+      "Step 5: Engineer the Offer Before You Test",
+      "Step 6: Test Cheap, Kill Fast, Scale Slow",
+      "Common Mistakes That Burn Beginners",
+      "A Realistic Weekly Workflow",
+      "Final Word",
+    ],
+  },
+  {
     title: "Best Ad Tracking Tools in 2026 (Ranked & Compared)",
     excerpt: "The 5 best ad tracking tools for ecommerce in 2026, ranked and compared. Accuracy, pricing, ease of use — and our top pick for recovering lost conversions.",
     category: "Tracking",
@@ -194,6 +217,8 @@ export const articlesMeta: ArticleMeta[] = [
 
 export function getArticleContent(slug: string): React.ReactNode | null {
   switch (slug) {
+    case "how-to-find-winning-products-for-dropshipping":
+      return <ArticleWinningProductsDropshipping />;
     case "best-ad-tracking-tools-2026":
       return <ArticleBestAdTrackingTools />;
     case "how-to-find-winning-products":
