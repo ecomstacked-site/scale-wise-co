@@ -9,7 +9,7 @@ import { Input } from "@/components/ui/input";
 import { Search } from "lucide-react";
 import { articlesMeta } from "@/lib/articles";
 
-const blogCategories = ["All", "AI Tools", "Tracking", "Automation", "Productivity"];
+const blogCategories = ["All", "Product Research", "AI Tools", "Tracking", "Automation", "Productivity"];
 
 export default function BlogPage() {
   const [activeCategory, setActiveCategory] = useState("All");
