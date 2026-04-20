@@ -15,10 +15,10 @@ import {
 } from "lucide-react";
 
 const featuredTools = [
-  { name: "Trendtrack", description: "Spy on Shopify stores, track winning products in real time, and pull the ads driving the sales.", bestFor: "Product research & store spying", benefit: "Find winning products before they saturate", category: "Product Research", featured: true, image: "/assets/tools/trendtrack.jpg", href: "/go/trendtrack" },
-  { name: "WeTracked", description: "Accurate server-side tracking for Facebook, Google, and TikTok ads with first-party data.", bestFor: "Ad tracking & attribution", benefit: "Recover lost conversions and improve ROAS", category: "Tracking", featured: true, image: "/assets/tools/wetracked.jpg", href: "/go/wetracked" },
-  { name: "Holo AI", description: "Ad creative platform for ecommerce brands. Generate winning ads at scale without a design team.", bestFor: "Ad creative & content", benefit: "Produce more creatives in less time", category: "AI Content", featured: true, image: "/assets/tools/holo-ai.jpg", href: "/go/holo-ai" },
-  { name: "ManyChat", description: "Automated messaging for Instagram, Facebook, and WhatsApp to capture leads and drive sales.", bestFor: "Chat automation & DMs", benefit: "Convert conversations into customers", category: "Automation", featured: false, image: "/assets/tools/manychat.jpg", href: "/go/manychat" },
+  { name: "Trendtrack", description: "Spy on Shopify stores, track winning products in real time, and pull the ads driving the sales.", bestFor: "Product research & store spying", benefit: "Find winning products before they saturate", category: "Product Research", featured: true, image: "/assets/tools/trendtrack.jpg", href: "/tools/trendtrack-review" },
+  { name: "WeTracked", description: "Accurate server-side tracking for Facebook, Google, and TikTok ads with first-party data.", bestFor: "Ad tracking & attribution", benefit: "Recover lost conversions and improve ROAS", category: "Tracking", featured: true, image: "/assets/tools/wetracked.jpg", href: "/tools/wetracked-review" },
+  { name: "Holo AI", description: "Ad creative platform for ecommerce brands. Generate winning ads at scale without a design team.", bestFor: "Ad creative & content", benefit: "Produce more creatives in less time", category: "AI Content", featured: true, image: "/assets/tools/holo-ai.jpg", href: "/tools/holo-ai" },
+  { name: "ManyChat", description: "Automated messaging for Instagram, Facebook, and WhatsApp to capture leads and drive sales.", bestFor: "Chat automation & DMs", benefit: "Convert conversations into customers", category: "Automation", featured: false, image: "/assets/tools/manychat.jpg", href: "/tools/manychat" },
 ];
 
 const categories = [
@@ -66,9 +66,9 @@ export default function HomePage() {
                 Find Winning Tools <ArrowRight className="h-4 w-4" />
               </Button>
             </Link>
-            <a href="/go/trendtrack" rel="noopener noreferrer nofollow">
-              <Button variant="outline" size="lg" className="px-6">View Trendtrack Pricing</Button>
-            </a>
+            <Link to="/tools/trendtrack-review">
+              <Button variant="outline" size="lg" className="px-6">View Trendtrack Review</Button>
+            </Link>
           </div>
           <p className="mt-6 text-xs text-muted-foreground">
             Trusted by 2,000+ ecommerce founders &amp; operators
@@ -89,9 +89,9 @@ export default function HomePage() {
           <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {[
               { step: "01", title: "Find Products", tool: "Trendtrack", desc: "Spy on winning Shopify stores and uncover trending products.", href: "/tools/trendtrack-review", cta: "Read Review" },
-              { step: "02", title: "Create Ads", tool: "Holo AI", desc: "Generate scroll-stopping video and image ads in minutes.", href: "/go/holo-ai", cta: "Learn More" },
-              { step: "03", title: "Track Performance", tool: "WeTracked", desc: "Server-side tracking that recovers lost ad conversions.", href: "/go/wetracked", cta: "View Pricing" },
-              { step: "04", title: "Convert Customers", tool: "ManyChat", desc: "Automate DMs to turn conversations into paying customers.", href: "/go/manychat", cta: "Learn More" },
+              { step: "02", title: "Create Ads", tool: "Holo AI", desc: "Generate scroll-stopping video and image ads in minutes.", href: "/tools/holo-ai", cta: "Read Review" },
+              { step: "03", title: "Track Performance", tool: "WeTracked", desc: "Server-side tracking that recovers lost ad conversions.", href: "/tools/wetracked-review", cta: "Read Review" },
+              { step: "04", title: "Convert Customers", tool: "ManyChat", desc: "Automate DMs to turn conversations into paying customers.", href: "/tools/manychat", cta: "Read Review" },
             ].map((s) => (
               <Card key={s.step} className="flex flex-col">
                 <CardContent className="flex flex-1 flex-col p-5">
@@ -99,19 +99,11 @@ export default function HomePage() {
                   <p className="mt-3 text-xs font-semibold uppercase tracking-wider text-muted-foreground">{s.title}</p>
                   <h3 className="mt-1 font-display text-lg font-bold text-foreground">{s.tool}</h3>
                   <p className="mt-2 flex-1 text-xs leading-relaxed text-muted-foreground">{s.desc}</p>
-                  {s.href.startsWith("/tools") ? (
-                    <Link to={s.href} className="mt-4">
-                      <Button variant="brand-outline" size="sm" className="w-full gap-1 text-xs">
-                        {s.cta} <ArrowRight className="h-3 w-3" />
-                      </Button>
-                    </Link>
-                  ) : (
-                    <a href={s.href} rel="noopener noreferrer nofollow" className="mt-4 block">
-                      <Button variant="brand-outline" size="sm" className="w-full gap-1 text-xs">
-                        {s.cta} <ArrowRight className="h-3 w-3" />
-                      </Button>
-                    </a>
-                  )}
+                  <Link to={s.href} className="mt-4">
+                    <Button variant="brand-outline" size="sm" className="w-full gap-1 text-xs">
+                      {s.cta} <ArrowRight className="h-3 w-3" />
+                    </Button>
+                  </Link>
                 </CardContent>
               </Card>
             ))}
