@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -78,11 +79,19 @@ export function ToolCard({ name, description, bestFor, benefit, category, featur
               <p className="mb-2 text-[11px] font-medium text-foreground/70">{microHook}</p>
             )}
             {href ? (
-              <a href={href} rel="noopener noreferrer nofollow" className="block">
-                <Button variant="brand" size="sm" className="w-full gap-1 text-xs">
-                  Learn More <ArrowUpRight className="h-3 w-3" />
-                </Button>
-              </a>
+              href.startsWith("/") && !href.startsWith("/go/") ? (
+                <Link to={href} className="block">
+                  <Button variant="brand" size="sm" className="w-full gap-1 text-xs">
+                    Learn More <ArrowUpRight className="h-3 w-3" />
+                  </Button>
+                </Link>
+              ) : (
+                <a href={href} rel="noopener noreferrer nofollow" className="block">
+                  <Button variant="brand" size="sm" className="w-full gap-1 text-xs">
+                    Learn More <ArrowUpRight className="h-3 w-3" />
+                  </Button>
+                </a>
+              )
             ) : (
               <Button variant="brand" size="sm" className="w-full gap-1 text-xs">
                 Learn More <ArrowUpRight className="h-3 w-3" />
