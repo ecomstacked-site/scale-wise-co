@@ -15,6 +15,7 @@ const LINKS = {
   gohighlevel: "/go/gohighlevel",
   weshop: "/go/weshop-ai",
   pictory: "/go/pictory",
+  winninghunter: "/go/winninghunter",
 };
 
 function ToolCTA({ href, label = "Visit Official Website" }: { href: string; label?: string }) {
