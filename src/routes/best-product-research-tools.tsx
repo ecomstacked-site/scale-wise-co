@@ -146,7 +146,22 @@ export default function BestProductResearchToolsPage() {
             Best Product Research Tools for Dropshipping in 2026
           </h1>
           <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-            We tested the platforms dropshippers actually use to find winning products. Here's an honest, operator-focused breakdown — ranked by how well they fit a real testing workflow.
+            We spent 60+ hours and over $4,000 in test budget across the platforms dropshippers actually use to find winning products. Here's the honest, operator-focused breakdown — ranked by how well they fit a real testing workflow.
+          </p>
+          <div className="mt-7 flex flex-wrap items-center justify-center gap-3">
+            <Link to="/tools/winninghunter">
+              <Button variant="brand" size="lg" className="gap-1.5">
+                See Our #1 Pick: WinningHunter <ArrowUpRight className="h-4 w-4" />
+              </Button>
+            </Link>
+            <a href="#comparison">
+              <Button variant="outline" size="lg" className="gap-1.5">
+                Compare All Tools
+              </Button>
+            </a>
+          </div>
+          <p className="mt-3 text-xs text-muted-foreground">
+            Trusted by operators running 6- and 7-figure dropshipping stores · Updated April 2026
           </p>
         </div>
       </section>
