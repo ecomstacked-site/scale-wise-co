@@ -2331,7 +2331,7 @@ function ArticleBestProductResearchTools() {
 function AffiliateCTA({ label }: { label: string }) {
   return (
     <div className="my-6">
-      <a href="https://winninghunter.com/?ref=jame" rel="sponsored noopener noreferrer" target="_blank">
+      <a href="/go/winninghunter" rel="sponsored noopener noreferrer">
         <Button variant="brand" size="sm" className="gap-1.5">
           {label} <ArrowUpRight className="h-3.5 w-3.5" />
         </Button>
