@@ -99,6 +99,10 @@ function GoRedirect() {
   if (!entry) {
     return (
       <div className="flex min-h-screen items-center justify-center bg-background px-4">
+        <Helmet>
+          <title>Tool not found</title>
+          <meta name="robots" content="noindex, nofollow" />
+        </Helmet>
         <div className="max-w-md text-center">
           <h1 className="font-display text-2xl font-bold text-foreground">Tool not found</h1>
           <p className="mt-2 text-sm text-muted-foreground">
