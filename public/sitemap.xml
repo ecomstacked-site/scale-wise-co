@@ -1,37 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.ecomstacked.io/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://www.ecomstacked.io/tools</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.ecomstacked.io/tools/wetracked-review</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.ecomstacked.io/tools/trendtrack-review</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.ecomstacked.io/tools/product-research</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.ecomstacked.io/wetracked-vs-triple-whale</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.ecomstacked.io/blog</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.ecomstacked.io/best-product-research-tools</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.ecomstacked.io/tools/winninghunter</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.ecomstacked.io/tools/holo-ai</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.ecomstacked.io/tools/manychat</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.ecomstacked.io/tools/weshop-ai</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.ecomstacked.io/tools/gohighlevel</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.ecomstacked.io/tools/everbee</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.ecomstacked.io/tools/easyship</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.ecomstacked.io/tools/systeme</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.ecomstacked.io/blog/how-to-find-winning-products-for-dropshipping</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.ecomstacked.io/blog/winning-hunter-alternatives</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.ecomstacked.io/blog/best-ad-tracking-tools-2026</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.ecomstacked.io/blog/how-to-find-winning-products</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.ecomstacked.io/blog/winning-products-this-week</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.ecomstacked.io/blog/best-shopify-product-research-tools</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.ecomstacked.io/blog/trendtrack-vs-minea</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.ecomstacked.io/blog/best-product-research-tools</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.ecomstacked.io/blog/best-ai-video-tools</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.ecomstacked.io/blog/holo-ai-vs-pictory</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.ecomstacked.io/blog/holo-ai-review</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.ecomstacked.io/blog/best-ai-tools-dropshipping</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.ecomstacked.io/blog/improve-ecommerce-tracking</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.ecomstacked.io/blog/chat-automation-shopify</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.ecomstacked.io/blog/scale-ads-attribution</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.ecomstacked.io/blog/ecommerce-productivity-tools</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.ecomstacked.io/</loc><lastmod>2026-04-20</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://www.ecomstacked.io/tools</loc><lastmod>2026-04-20</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+
+  <!-- Money pages (highest crawl priority) -->
+  <url><loc>https://www.ecomstacked.io/tools/winninghunter</loc><lastmod>2026-04-20</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://www.ecomstacked.io/tools/wetracked-review</loc><lastmod>2026-04-20</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.ecomstacked.io/tools/trendtrack-review</loc><lastmod>2026-04-20</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.ecomstacked.io/tools/product-research</loc><lastmod>2026-04-20</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.ecomstacked.io/tools/holo-ai</loc><lastmod>2026-04-20</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.ecomstacked.io/tools/manychat</loc><lastmod>2026-04-20</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.ecomstacked.io/tools/weshop-ai</loc><lastmod>2026-04-20</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.ecomstacked.io/tools/gohighlevel</loc><lastmod>2026-04-20</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.ecomstacked.io/tools/everbee</loc><lastmod>2026-04-20</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.ecomstacked.io/tools/easyship</loc><lastmod>2026-04-20</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.ecomstacked.io/tools/systeme</loc><lastmod>2026-04-20</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+
+  <!-- Authority / comparison pages -->
+  <url><loc>https://www.ecomstacked.io/best-product-research-tools</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.ecomstacked.io/wetracked-vs-triple-whale</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+
+  <!-- Blog -->
+  <url><loc>https://www.ecomstacked.io/blog</loc><lastmod>2026-04-20</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.ecomstacked.io/blog/winning-hunter-alternatives</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.ecomstacked.io/blog/best-product-research-tools</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.ecomstacked.io/blog/best-ad-tracking-tools-2026</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.ecomstacked.io/blog/how-to-find-winning-products-for-dropshipping</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.ecomstacked.io/blog/how-to-find-winning-products</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.ecomstacked.io/blog/winning-products-this-week</loc><lastmod>2026-04-20</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.ecomstacked.io/blog/best-shopify-product-research-tools</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.ecomstacked.io/blog/trendtrack-vs-minea</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.ecomstacked.io/blog/best-ai-video-tools</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.ecomstacked.io/blog/holo-ai-vs-pictory</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.ecomstacked.io/blog/holo-ai-review</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.ecomstacked.io/blog/best-ai-tools-dropshipping</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.ecomstacked.io/blog/improve-ecommerce-tracking</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.ecomstacked.io/blog/chat-automation-shopify</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.ecomstacked.io/blog/scale-ads-attribution</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.ecomstacked.io/blog/ecommerce-productivity-tools</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Static -->
   <url><loc>https://www.ecomstacked.io/about</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
   <url><loc>https://www.ecomstacked.io/contact</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
   <url><loc>https://www.ecomstacked.io/privacy</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>

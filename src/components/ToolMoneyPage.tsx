@@ -61,6 +61,20 @@ export function ToolMoneyPage({
         ogDescription={seoDescription}
         ogType="article"
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://www.ecomstacked.io/" },
+              { "@type": "ListItem", position: 2, name: "Tools", item: "https://www.ecomstacked.io/tools" },
+              { "@type": "ListItem", position: 3, name: name },
+            ],
+          }),
+        }}
+      />
       <Header />
 
       <article className="py-12 sm:py-16">
@@ -153,6 +167,17 @@ export function ToolMoneyPage({
                   best product research tools guide
                 </Link>.
               </p>
+            </section>
+
+            <section>
+              <h2 className="font-display text-xl font-bold text-foreground">Related Guides &amp; Reviews</h2>
+              <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
+                <li>• <Link to="/tools/winninghunter" className="text-brand underline-offset-2 hover:underline">WinningHunter Review</Link> — our top-rated product research tool</li>
+                <li>• <Link to="/tools/trendtrack-review" className="text-brand underline-offset-2 hover:underline">Trendtrack Review</Link> — best Shopify store spy</li>
+                <li>• <Link to="/tools/wetracked-review" className="text-brand underline-offset-2 hover:underline">WeTracked Review</Link> — server-side ad attribution</li>
+                <li>• <Link to="/blog/winning-hunter-alternatives" className="text-brand underline-offset-2 hover:underline">WinningHunter Alternatives</Link> — 6 tools compared</li>
+                <li>• <Link to="/blog/best-ad-tracking-tools-2026" className="text-brand underline-offset-2 hover:underline">Best Ad Tracking Tools 2026</Link></li>
+              </ul>
             </section>
 
             <section className="rounded-xl border border-brand/20 bg-brand/5 p-6 text-center">
