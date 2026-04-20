@@ -267,6 +267,8 @@ export const articlesMeta: ArticleMeta[] = [
 
 export function getArticleContent(slug: string): React.ReactNode | null {
   switch (slug) {
+    case "winning-hunter-alternatives":
+      return <ArticleWinningHunterAlternatives />;
     case "best-product-research-tools":
       return <ArticleBestProductResearchTools />;
     case "how-to-find-winning-products-for-dropshipping":
