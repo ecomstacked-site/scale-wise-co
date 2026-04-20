@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { SEO } from "@/lib/seo";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
@@ -28,7 +29,7 @@ const allTools = [
     socialProof: "Used by performance marketers and media buyers",
     microHook: "Fix inaccurate tracking and recover lost ROAS",
     image: "/assets/tools/wetracked.jpg",
-    href: "/go/wetracked",
+    href: "/tools/wetracked-review",
   },
   {
     name: "Holo AI",
@@ -41,7 +42,7 @@ const allTools = [
     socialProof: "Popular among DTC brands and media buyers",
     microHook: "Scale ad creatives without a design team",
     image: "/assets/tools/holo-ai.jpg",
-    href: "/go/holo-ai",
+    href: "/tools/holo-ai",
   },
   {
     name: "WeShop AI",
@@ -53,7 +54,7 @@ const allTools = [
     socialProof: "Used by ecommerce brands for product imagery",
     microHook: "Professional product photos in minutes, not days",
     image: "/assets/tools/weshop-ai.jpg",
-    href: "/go/weshop-ai",
+    href: "/tools/weshop-ai",
   },
   {
     name: "ManyChat",
@@ -66,7 +67,7 @@ const allTools = [
     socialProof: "Widely used by Shopify store owners",
     microHook: "Turn DM conversations into automated sales",
     image: "/assets/tools/manychat.jpg",
-    href: "/go/manychat",
+    href: "/tools/manychat",
   },
   {
     name: "GoHighLevel",
@@ -77,7 +78,7 @@ const allTools = [
     socialProof: "Used by agencies and ecommerce operators",
     microHook: "Replace multiple tools with one platform",
     image: "/assets/tools/gohighlevel.jpg",
-    href: "/go/gohighlevel",
+    href: "/tools/gohighlevel",
   },
   {
     name: "Evebee",
@@ -88,7 +89,7 @@ const allTools = [
     socialProof: "Used by ecommerce brands for product research",
     microHook: "Discover winning products with real marketplace data",
     image: "/assets/tools/evebee.jpg",
-    href: "/go/everbee",
+    href: "/tools/everbee",
   },
   {
     name: "Easyship",
@@ -99,7 +100,7 @@ const allTools = [
     socialProof: "Used by ecommerce brands shipping worldwide",
     microHook: "Ship faster and cheaper with automated logistics",
     image: "/assets/tools/easyship.jpg",
-    href: "/go/easyship",
+    href: "/tools/easyship",
   },
   {
     name: "Systeme",
@@ -110,18 +111,18 @@ const allTools = [
     socialProof: "Popular among solo founders and small teams",
     microHook: "Build your entire funnel stack for less",
     image: "/assets/tools/systeme.jpg",
-    href: "/go/systeme",
+    href: "/tools/systeme",
   },
 ];
 
 const categories = ["All", "Tracking & Attribution", "AI Content & Ad Creation", "Chat Automation & CRM", "Product Research & Optimization", "Shipping & Fulfillment", "Funnels & Marketing Systems"];
 
 const comparisonTools = [
-  { name: "WeTracked", bestFor: "Ad tracking & attribution", useCase: "Recover lost conversions from iOS changes", href: "/go/wetracked" },
-  { name: "Holo AI", bestFor: "Ad creatives", useCase: "Scale video and image ad production", href: "/go/holo-ai" },
-  { name: "ManyChat", bestFor: "Chat automation", useCase: "Automate DM-based sales funnels", href: "/go/manychat" },
-  { name: "Easyship", bestFor: "Shipping & fulfillment", useCase: "Compare rates and automate labels globally", href: "/go/easyship" },
-  { name: "Systeme", bestFor: "Funnels & email", useCase: "Build funnels and email sequences affordably", href: "/go/systeme" },
+  { name: "WeTracked", bestFor: "Ad tracking & attribution", useCase: "Recover lost conversions from iOS changes", href: "/tools/wetracked-review" },
+  { name: "Holo AI", bestFor: "Ad creatives", useCase: "Scale video and image ad production", href: "/tools/holo-ai" },
+  { name: "ManyChat", bestFor: "Chat automation", useCase: "Automate DM-based sales funnels", href: "/tools/manychat" },
+  { name: "Easyship", bestFor: "Shipping & fulfillment", useCase: "Compare rates and automate labels globally", href: "/tools/easyship" },
+  { name: "Systeme", bestFor: "Funnels & email", useCase: "Build funnels and email sequences affordably", href: "/tools/systeme" },
 ];
 
 export default function ToolsPage() {
@@ -215,11 +216,11 @@ export default function ToolsPage() {
                     <TableCell className="text-muted-foreground text-sm">{t.bestFor}</TableCell>
                     <TableCell className="text-muted-foreground text-sm hidden sm:table-cell">{t.useCase}</TableCell>
                     <TableCell className="text-right">
-                      <a href={t.href} rel="noopener noreferrer nofollow">
+                      <Link to={t.href}>
                         <Button variant="ghost" size="sm" className="gap-1 text-xs text-brand hover:text-brand">
-                          Learn More <ArrowUpRight className="h-3 w-3" />
+                          Read Review <ArrowUpRight className="h-3 w-3" />
                         </Button>
-                      </a>
+                      </Link>
                     </TableCell>
                   </TableRow>
                 ))}
