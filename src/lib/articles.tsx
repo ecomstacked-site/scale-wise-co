@@ -3115,3 +3115,348 @@ function ArticlePPSpyVsMinea() {
     </div>
   );
 }
+
+function ArticleMineaAlternatives() {
+  return (
+    <div className="space-y-8">
+      <section>
+        <p className="text-sm leading-relaxed text-muted-foreground">
+          Minea is a popular ad spy tool — but it's not the right fit for everyone. If you've been using it for a while, you've probably noticed the same patterns: the price ladder gets steep fast, store-level sales data is missing, and the workflow forces you to bounce between 2–3 other tools just to validate a single product. That tab-switching isn't free. <strong className="text-foreground">Every weak product that slips through your research filter burns $50–$150 in ad spend</strong> before you have enough data to kill it. Five bad tests in a row? You've torched $500–$700 — easily more than a year of the right tool.
+        </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          This guide breaks down the best Minea alternatives for 2026 — what each one does better, where Minea still wins, and which tool is actually worth your money depending on how you operate.
+        </p>
+      </section>
+
+      <section className="rounded-xl border border-brand/20 bg-brand/5 p-5">
+        <h2 className="font-display text-lg font-bold text-foreground">Quick Answer (TL;DR)</h2>
+        <ul className="mt-3 space-y-2 text-sm leading-relaxed text-muted-foreground">
+          <li>🥇 <strong className="text-foreground">Best overall (replaces Minea + 2 other tools)</strong> → <Link to="/tools/winninghunter" className="text-brand font-semibold underline-offset-2 hover:underline">WinningHunter</Link></li>
+          <li>🥈 <strong className="text-foreground">Best for store spy / Shopify research</strong> → PPSpy</li>
+          <li>🥉 <strong className="text-foreground">Best budget option</strong> → Dropispy</li>
+          <li>• <strong className="text-foreground">Best for deep Meta ad library</strong> → AdSpy</li>
+          <li>• <strong className="text-foreground">Best for TikTok-only research</strong> → PiPiADS</li>
+        </ul>
+        <div className="mt-4 flex flex-wrap gap-2">
+          <a href="/go/winninghunter" rel="sponsored noopener noreferrer">
+            <Button variant="brand" size="sm" className="gap-1.5">Find Winning Products Now <ArrowUpRight className="h-3.5 w-3.5" /></Button>
+          </a>
+          <Link to="/best-product-research-tools">
+            <Button variant="brand-outline" size="sm">Compare All Tools</Button>
+          </Link>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Why Look for a Minea Alternative?</h2>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          Minea is a strong ad spy tool — nobody disputes that. But operators who scale start hitting the same walls:
+        </p>
+        <ul className="mt-3 space-y-2 text-sm leading-relaxed text-muted-foreground">
+          <li>• <strong className="text-foreground">No store-level sales data.</strong> You see the ad. You don't see whether the store behind it is actually converting.</li>
+          <li>• <strong className="text-foreground">Pricing scales fast.</strong> The full multi-platform plan can hit ~$399/mo.</li>
+          <li>• <strong className="text-foreground">Workflow gaps.</strong> You still need a store spy tool and a validation tool on top — easily $80–$250/mo combined.</li>
+          <li>• <strong className="text-foreground">Learning curve.</strong> Filter setup takes a real first week to dial in by niche.</li>
+        </ul>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          For a deeper background on the tool itself, read our guide on <Link to="/blog/what-is-minea-and-how-does-it-work" className="text-brand underline-offset-2 hover:underline">what Minea is and how it works</Link>, or jump into the head-to-head <Link to="/blog/ppspy-vs-minea" className="text-brand underline-offset-2 hover:underline">PPSpy vs Minea comparison</Link>.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Comparison Table</h2>
+        <div className="mt-4 overflow-x-auto rounded-lg border border-border">
+          <table className="w-full text-left text-sm">
+            <thead className="bg-surface text-xs uppercase text-muted-foreground">
+              <tr>
+                <th className="p-3 font-semibold">Tool</th>
+                <th className="p-3 font-semibold">Best For</th>
+                <th className="p-3 font-semibold">Pricing</th>
+                <th className="p-3 font-semibold">Ease of Use</th>
+                <th className="p-3 font-semibold">Key Strength</th>
+                <th className="p-3 font-semibold">Verdict</th>
+              </tr>
+            </thead>
+            <tbody className="text-muted-foreground">
+              <tr className="border-t border-border bg-brand/5">
+                <td className="p-3 font-medium text-foreground">WinningHunter</td>
+                <td className="p-3">All-in-one research</td>
+                <td className="p-3">From ~$49/mo</td>
+                <td className="p-3">Easy</td>
+                <td className="p-3">Ad spy + store + sales data</td>
+                <td className="p-3 font-semibold text-foreground">Best overall</td>
+              </tr>
+              <tr className="border-t border-border">
+                <td className="p-3 font-medium text-foreground">Minea</td>
+                <td className="p-3">Multi-platform ad spy</td>
+                <td className="p-3">$0–$399/mo</td>
+                <td className="p-3">Medium</td>
+                <td className="p-3">Meta + TikTok + influencer ads</td>
+                <td className="p-3">Solid ad spy</td>
+              </tr>
+              <tr className="border-t border-border">
+                <td className="p-3 font-medium text-foreground">PPSpy</td>
+                <td className="p-3">Shopify store spy</td>
+                <td className="p-3">~$24–$199/mo</td>
+                <td className="p-3">Easy</td>
+                <td className="p-3">Sales estimates by store</td>
+                <td className="p-3">Store spy specialist</td>
+              </tr>
+              <tr className="border-t border-border">
+                <td className="p-3 font-medium text-foreground">Dropispy</td>
+                <td className="p-3">Budget ad spy</td>
+                <td className="p-3">$0–$33/mo</td>
+                <td className="p-3">Easy</td>
+                <td className="p-3">Cheapest Meta library</td>
+                <td className="p-3">Best on a budget</td>
+              </tr>
+              <tr className="border-t border-border">
+                <td className="p-3 font-medium text-foreground">AdSpy</td>
+                <td className="p-3">Power users on Meta</td>
+                <td className="p-3">~$149/mo</td>
+                <td className="p-3">Hard</td>
+                <td className="p-3">Deepest Meta filters</td>
+                <td className="p-3">Pro Meta researcher</td>
+              </tr>
+              <tr className="border-t border-border">
+                <td className="p-3 font-medium text-foreground">PiPiADS</td>
+                <td className="p-3">TikTok ad research</td>
+                <td className="p-3">~$77–$263/mo</td>
+                <td className="p-3">Medium</td>
+                <td className="p-3">Largest TikTok ad index</td>
+                <td className="p-3">TikTok specialist</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">1. WinningHunter — Best Overall Minea Alternative</h2>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          WinningHunter is the only tool on this list that genuinely <strong className="text-foreground">replaces Minea instead of supplementing it</strong>. It combines ad spy, store tracking, and sales validation in one dashboard — so you stop paying for 2–3 overlapping subscriptions and stop missing winners that slip between the cracks of separate tools.
+        </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          <strong className="text-foreground">Why it's better than Minea:</strong> Minea shows you ads that <em>look</em> winning. WinningHunter shows you ads that are winning <em>and</em> the store data that proves it — sales velocity, restocks, and product-level tracking. That's the difference between testing a creative and testing a validated winner.
+        </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          <strong className="text-foreground">Real use case:</strong> spot an ad that's been live 30+ days → check the store's sales trajectory in the same tab → see whether the product is restocking → push to your test queue with confidence. No tab-switching. No blind spots. One click instead of three tools.
+        </p>
+        <ul className="mt-3 space-y-2 text-sm leading-relaxed text-muted-foreground">
+          <li>✅ Replaces Minea + a store spy + a validator (saves $80–$200/mo)</li>
+          <li>✅ Built specifically for dropshippers running paid traffic</li>
+          <li>✅ Strong filters for ad age, country, engagement</li>
+          <li>✅ Sales estimates and restock alerts built in</li>
+          <li>❌ Not free — but pays for itself by killing 1 bad test per month</li>
+        </ul>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          <strong className="text-foreground">Best for:</strong> any operator running paid ads who's tired of stitching together tools. Read the <Link to="/tools/winninghunter" className="text-brand underline-offset-2 hover:underline">full WinningHunter review</Link> for the deep dive.
+        </p>
+        <div className="mt-5 flex flex-wrap gap-2">
+          <a href="/go/winninghunter" rel="sponsored noopener noreferrer">
+            <Button variant="brand" size="sm" className="gap-1.5">Start Testing Smarter <ArrowUpRight className="h-3.5 w-3.5" /></Button>
+          </a>
+          <Link to="/tools/winninghunter">
+            <Button variant="brand-outline" size="sm">See Full Review</Button>
+          </Link>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">2. PPSpy — Best for Store Spy</h2>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          PPSpy is a Shopify-focused store research tool. Where Minea starts from an ad, PPSpy starts from a store — and tells you exactly which products are selling, how often they're restocked, and roughly how much revenue they're generating.
+        </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          <strong className="text-foreground">Why it's better than Minea:</strong> Minea has zero store-level data. PPSpy fills that gap entirely. If you've ever copied a Minea ad and lost money because the underlying store wasn't actually converting, PPSpy fixes that.
+        </p>
+        <ul className="mt-3 space-y-2 text-sm leading-relaxed text-muted-foreground">
+          <li>✅ Sales velocity and restock signals from real Shopify stores</li>
+          <li>✅ Affordable entry tier (~$24/mo)</li>
+          <li>✅ Easy to learn, productive in 15 minutes</li>
+          <li>❌ No real ad spy — you'll still need Minea or another tool for that</li>
+          <li>❌ Mostly Shopify-only; weaker outside that ecosystem</li>
+        </ul>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          <strong className="text-foreground">When to use it:</strong> if you already have an ad library you trust (Meta Ad Library, TikTok Creative Center) and just need store validation, PPSpy is enough. See the full <Link to="/blog/ppspy-vs-minea" className="text-brand underline-offset-2 hover:underline">PPSpy vs Minea breakdown</Link> for use-case matching.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">3. Dropispy — Best Budget Minea Alternative</h2>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          Dropispy is the cheapest serious ad spy tool on the market. It indexes Meta ads with basic filters (country, language, ad format) and offers a free tier that's actually usable for beginners.
+        </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          <strong className="text-foreground">Why it's better than Minea:</strong> price. If you're testing your first 5 products and don't want to commit $99/mo, Dropispy gets you 80% of the basic Meta ad spy value at a fraction of the cost.
+        </p>
+        <ul className="mt-3 space-y-2 text-sm leading-relaxed text-muted-foreground">
+          <li>✅ Free tier available</li>
+          <li>✅ Simple, clean UI</li>
+          <li>✅ Decent Meta ad coverage</li>
+          <li>❌ Weak on TikTok</li>
+          <li>❌ Filters are shallower than Minea or AdSpy</li>
+          <li>❌ No store-level data</li>
+        </ul>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          <strong className="text-foreground">When to use it:</strong> brand-new dropshippers in their first month who can't justify $49+/mo yet. Outgrow it the moment you scale.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">4. AdSpy — Best for Deep Meta Research</h2>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          AdSpy is the OG. It has the deepest Meta filter set on the market — search by ad copy text, advertiser ID, country combos, and engagement thresholds that Minea simply doesn't expose.
+        </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          <strong className="text-foreground">Why it's better than Minea:</strong> if your edge is creative angle research (specific hooks, copy patterns, headline tests), AdSpy's text-search is unmatched. Minea filters by metadata; AdSpy lets you search inside the ad itself.
+        </p>
+        <ul className="mt-3 space-y-2 text-sm leading-relaxed text-muted-foreground">
+          <li>✅ Best-in-class Meta filters and text search</li>
+          <li>✅ Massive historical ad index</li>
+          <li>❌ Expensive (~$149/mo flat)</li>
+          <li>❌ Steeper learning curve than Minea</li>
+          <li>❌ Weaker on TikTok and influencer data</li>
+        </ul>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          <strong className="text-foreground">When to use it:</strong> serious media buyers running 5+ creatives a week on Meta who need to reverse-engineer winning copy patterns at scale.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">5. PiPiADS — Best for TikTok</h2>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          PiPiADS is a TikTok-first ad spy platform. It indexes more TikTok ads than any other tool we've tested, with filters for region, run-time, conversion estimates, and product-level tracking.
+        </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          <strong className="text-foreground">Why it's better than Minea:</strong> Minea covers TikTok — but PiPiADS lives on TikTok. If 80%+ of your ad spend is on TikTok, the depth of coverage matters more than multi-platform breadth.
+        </p>
+        <ul className="mt-3 space-y-2 text-sm leading-relaxed text-muted-foreground">
+          <li>✅ Largest TikTok ad index on the market</li>
+          <li>✅ Strong filters for TikTok-specific signals</li>
+          <li>✅ Product-level tracking inside TikTok ads</li>
+          <li>❌ Weaker on Meta (you'll still need a separate tool)</li>
+          <li>❌ Premium plans get expensive</li>
+        </ul>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          <strong className="text-foreground">When to use it:</strong> TikTok-only stores or operators where TikTok is the primary ad channel.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Use-Case Comparison</h2>
+        <div className="mt-4 overflow-x-auto rounded-lg border border-border">
+          <table className="w-full text-left text-sm">
+            <thead className="bg-surface text-xs uppercase text-muted-foreground">
+              <tr>
+                <th className="p-3 font-semibold">Use Case</th>
+                <th className="p-3 font-semibold">Best Tool</th>
+                <th className="p-3 font-semibold">Why</th>
+              </tr>
+            </thead>
+            <tbody className="text-muted-foreground">
+              <tr className="border-t border-border">
+                <td className="p-3 font-medium text-foreground">Beginner, first product</td>
+                <td className="p-3">Dropispy or PPSpy</td>
+                <td className="p-3">Cheap entry, easy learning curve</td>
+              </tr>
+              <tr className="border-t border-border">
+                <td className="p-3 font-medium text-foreground">TikTok ads</td>
+                <td className="p-3">PiPiADS</td>
+                <td className="p-3">Largest TikTok-specific index</td>
+              </tr>
+              <tr className="border-t border-border">
+                <td className="p-3 font-medium text-foreground">Facebook / Meta ads</td>
+                <td className="p-3">AdSpy</td>
+                <td className="p-3">Deepest Meta filters and text search</td>
+              </tr>
+              <tr className="border-t border-border">
+                <td className="p-3 font-medium text-foreground">Product validation</td>
+                <td className="p-3">PPSpy or WinningHunter</td>
+                <td className="p-3">Real sales data beats ad engagement</td>
+              </tr>
+              <tr className="border-t border-border bg-brand/5">
+                <td className="p-3 font-medium text-foreground">Scaling store / 6–7 figures</td>
+                <td className="p-3 font-semibold text-foreground">WinningHunter</td>
+                <td className="p-3">All-in-one workflow, no tab switching</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Common Mistakes When Replacing Minea</h2>
+        <ul className="mt-3 space-y-2 text-sm leading-relaxed text-muted-foreground">
+          <li>• <strong className="text-foreground">Relying only on ad spy.</strong> A great ad on a flatlining store is a trap. You need store-level signal too.</li>
+          <li>• <strong className="text-foreground">Not validating products.</strong> Engagement ≠ sales. Verify with sales velocity before testing.</li>
+          <li>• <strong className="text-foreground">Stacking too many tools.</strong> Three subscriptions and three tabs cost more than one good all-in-one tool — both in money and in missed signals.</li>
+          <li>• <strong className="text-foreground">Picking the cheapest option early.</strong> Saving $30/mo on Dropispy doesn't matter if a single bad ad test costs $150.</li>
+        </ul>
+      </section>
+
+      <section className="rounded-xl border-2 border-brand/30 bg-gradient-to-br from-brand/10 to-brand/5 p-6">
+        <h2 className="font-display text-xl font-bold text-foreground">Final Verdict</h2>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          Minea is a good ad spy tool — but for most operators in 2026, it's only half a research stack. The real question isn't "Minea or alternative X?" — it's <strong className="text-foreground">"do I keep stacking single-purpose tools, or move to one workflow?"</strong>
+        </p>
+        <ul className="mt-3 space-y-2 text-sm leading-relaxed text-muted-foreground">
+          <li>• <strong className="text-foreground">Minea</strong> wins for multi-platform ad library coverage.</li>
+          <li>• <strong className="text-foreground">PPSpy, Dropispy, AdSpy, PiPiADS</strong> each win for one specific use case.</li>
+          <li>• <strong className="text-foreground">WinningHunter</strong> wins for the operator who wants to stop juggling tools and start testing validated winners.</li>
+        </ul>
+        <p className="mt-4 text-sm font-semibold text-foreground">⚡ Every week you delay consolidating is another week of $100+ wasted ad tests.</p>
+        <div className="mt-4 flex flex-wrap gap-2">
+          <a href="/go/winninghunter" rel="sponsored noopener noreferrer">
+            <Button variant="brand" size="sm" className="gap-1.5">Find Winning Products Now <ArrowUpRight className="h-3.5 w-3.5" /></Button>
+          </a>
+          <Link to="/tools/winninghunter">
+            <Button variant="brand-outline" size="sm">See Full Review</Button>
+          </Link>
+          <Link to="/best-product-research-tools">
+            <Button variant="brand-outline" size="sm">Compare All Tools</Button>
+          </Link>
+        </div>
+        <p className="mt-3 text-xs italic text-muted-foreground">
+          Affiliate disclosure: This page contains affiliate links. If you sign up through them, we may earn a commission at no extra cost to you. Our recommendations are based on hands-on testing and operator feedback.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">FAQ</h2>
+        <div className="mt-4 space-y-4">
+          <div>
+            <h3 className="font-display text-sm font-bold text-foreground">Is Minea worth it in 2026?</h3>
+            <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+              Yes — if your only need is multi-platform ad spy. No — if you also need store-level data, sales validation, or you're trying to consolidate from multiple tools. In that case an all-in-one alternative is more cost-effective.
+            </p>
+          </div>
+          <div>
+            <h3 className="font-display text-sm font-bold text-foreground">What is the best Minea alternative?</h3>
+            <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+              For most operators, <Link to="/tools/winninghunter" className="text-brand underline-offset-2 hover:underline">WinningHunter</Link> — because it replaces Minea <em>and</em> a store spy <em>and</em> a validator in one tool. For pure store research, PPSpy. For TikTok-only, PiPiADS.
+            </p>
+          </div>
+          <div>
+            <h3 className="font-display text-sm font-bold text-foreground">Do I need multiple research tools?</h3>
+            <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+              Only if you're using single-purpose tools. The whole point of an all-in-one platform is to eliminate the tab-switching and the blind spots between tools. One good tool beats three average ones.
+            </p>
+          </div>
+          <div>
+            <h3 className="font-display text-sm font-bold text-foreground">Is there a free Minea alternative?</h3>
+            <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+              Dropispy has a free tier, and the Meta Ad Library itself is free. Both are limited but workable for your first few product tests.
+            </p>
+          </div>
+          <div>
+            <h3 className="font-display text-sm font-bold text-foreground">How much should I spend on product research tools?</h3>
+            <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+              A good rule of thumb: research tools should cost less than one bad ad test (~$100–$150). If you're spending more on tools than that per month and still missing winners, consolidate. See our <Link to="/best-product-research-tools" className="text-brand underline-offset-2 hover:underline">best product research tools</Link> guide for a full breakdown.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
