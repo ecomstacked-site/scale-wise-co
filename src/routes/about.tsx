@@ -19,11 +19,18 @@ export default function AboutPage() {
 
       <section className="bg-card py-20 sm:py-24">
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
-          <p className="text-xs font-semibold uppercase tracking-widest text-brand">About Us</p>
-          <h1 className="mt-3 font-display text-3xl font-extrabold text-foreground sm:text-4xl lg:text-5xl">We Help Ecommerce Brands Find Better Tools</h1>
+          <p className="text-xs font-semibold uppercase tracking-widest text-brand">About EcomStacked</p>
+          <h1 className="mt-3 font-display text-3xl font-extrabold text-foreground sm:text-4xl lg:text-5xl">An Independent Publication for Ecommerce Operators</h1>
           <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-muted-foreground">
-            EcomStacked is a resource for ecommerce founders, marketers, and Shopify store owners looking to scale with better tools. We research, test, and organize software for tracking, AI ad creatives, automation, and growth — so you don't have to.
+            EcomStacked is an independent online publication that researches, tests, and reviews software for ecommerce founders, Shopify store owners, and direct-to-consumer brands. Our mission is simple: help operators make better, more informed software decisions through clear, structured editorial content.
           </p>
+          <div className="mt-6 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-muted-foreground">
+            <span>Founded 2024</span>
+            <span aria-hidden="true">•</span>
+            <span>Based in the European Union</span>
+            <span aria-hidden="true">•</span>
+            <span>Editorially independent</span>
+          </div>
         </div>
       </section>
 
@@ -32,19 +39,53 @@ export default function AboutPage() {
 
           <div className="grid gap-8 lg:grid-cols-5">
             <div className="lg:col-span-2">
-              <p className="text-xs font-semibold uppercase tracking-widest text-brand">What We Do</p>
-              <h2 className="mt-2 font-display text-xl font-bold text-foreground sm:text-2xl">Research, Test, Organize</h2>
+              <p className="text-xs font-semibold uppercase tracking-widest text-brand">Our Mission</p>
+              <h2 className="mt-2 font-display text-xl font-bold text-foreground sm:text-2xl">Why We Exist</h2>
             </div>
             <div className="lg:col-span-3">
               <p className="text-sm leading-relaxed text-muted-foreground">
-                The ecommerce software landscape is noisy. Hundreds of tools launch every year, each promising better results. For busy operators running stores, managing ads, and handling fulfillment, there isn't time to test everything.
+                The ecommerce software landscape is noisy. Hundreds of tools launch every year, each promising better results. For busy operators running stores, managing ads, and handling fulfillment, there isn't time to test everything — and a wrong choice can waste both budget and weeks of focus.
               </p>
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-                EcomStacked exists to solve that. We take a hands-on approach to identifying tools that genuinely help ecommerce businesses grow. We test tools in real workflows, compare alternatives, and publish practical recommendations designed for operators — not software reviewers.
+                EcomStacked was founded in 2024 to address that gap. We take a hands-on approach to evaluating tools that genuinely help ecommerce businesses grow. We test software in real workflows, compare alternatives side-by-side, and publish practical guides written for operators — not for software reviewers or affiliate marketers.
               </p>
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-                We are not a marketplace or a lead generation platform. We're a resource. Our goal is to be the most useful place for ecommerce software recommendations on the internet.
+                We are not a marketplace, lead-generation funnel, or directory. We are a publication. Our work is funded indirectly through occasional affiliate partnerships with tools we already recommend — never the other way around. Editorial recommendations come first; commercial relationships follow only if a tool meets our standards.
               </p>
+            </div>
+          </div>
+
+          <div className="rounded-2xl border border-border bg-card p-8 sm:p-10">
+            <div className="grid gap-8 lg:grid-cols-2">
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-widest text-brand">Business Information</p>
+                <h2 className="mt-2 font-display text-xl font-bold text-foreground sm:text-2xl">Who Operates EcomStacked</h2>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                  EcomStacked is operated as an independent editorial project. We publish guides, tool reviews, and tutorials covering ecommerce software, with a focus on tracking, AI tooling, fulfillment, and store growth.
+                </p>
+              </div>
+              <dl className="space-y-3 text-sm">
+                <div className="flex justify-between gap-4 border-b border-border pb-3">
+                  <dt className="text-muted-foreground">Publication</dt>
+                  <dd className="font-medium text-foreground">EcomStacked</dd>
+                </div>
+                <div className="flex justify-between gap-4 border-b border-border pb-3">
+                  <dt className="text-muted-foreground">Founded</dt>
+                  <dd className="font-medium text-foreground">2024</dd>
+                </div>
+                <div className="flex justify-between gap-4 border-b border-border pb-3">
+                  <dt className="text-muted-foreground">Region</dt>
+                  <dd className="font-medium text-foreground">European Union</dd>
+                </div>
+                <div className="flex justify-between gap-4 border-b border-border pb-3">
+                  <dt className="text-muted-foreground">Editorial contact</dt>
+                  <dd className="font-medium text-foreground">hello@ecomstacked.io</dd>
+                </div>
+                <div className="flex justify-between gap-4">
+                  <dt className="text-muted-foreground">Languages</dt>
+                  <dd className="font-medium text-foreground">English</dd>
+                </div>
+              </dl>
             </div>
           </div>
 
@@ -155,14 +196,17 @@ export default function AboutPage() {
           </div>
 
           <div className="text-center">
-            <h2 className="font-display text-lg font-bold text-foreground">Ready to find the right tools?</h2>
-            <p className="mt-2 text-sm text-muted-foreground">Browse our curated directory of ecommerce software.</p>
+            <h2 className="font-display text-lg font-bold text-foreground">Looking for a specific tool?</h2>
+            <p className="mt-2 text-sm text-muted-foreground">Browse our directory of reviewed ecommerce software, or read our latest editorial guides.</p>
             <div className="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row">
               <Link to="/tools">
-                <Button variant="brand" className="gap-2">Explore Tools <ArrowRight className="h-4 w-4" /></Button>
+                <Button variant="outline" className="gap-2">Browse Reviews <ArrowRight className="h-4 w-4" /></Button>
               </Link>
               <Link to="/blog">
                 <Button variant="outline">Read the Blog</Button>
+              </Link>
+              <Link to="/contact">
+                <Button variant="outline">Contact Us</Button>
               </Link>
             </div>
           </div>

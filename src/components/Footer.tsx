@@ -13,10 +13,16 @@ export function Footer() {
               <span className="font-display text-lg font-bold text-foreground">EcomStacked</span>
             </Link>
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-              A resource for ecommerce founders, marketers, and Shopify store owners looking to scale with better tools.
+              An independent online publication researching and reviewing software for ecommerce founders, Shopify store owners, and DTC brands.
+            </p>
+            <p className="mt-3 text-xs text-muted-foreground">
+              Editorial contact:{" "}
+              <a href="mailto:hello@ecomstacked.io" className="font-medium text-foreground hover:underline">
+                hello@ecomstacked.io
+              </a>
             </p>
             <p className="mt-3 text-xs text-muted-foreground/70">
-              This website may earn commissions from affiliate links. We only recommend tools we believe provide real value.
+              Some links on this site are affiliate links. If you sign up through them, we may earn a commission at no extra cost to you. This never influences our editorial recommendations.
             </p>
           </div>
 

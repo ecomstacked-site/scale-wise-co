@@ -43,7 +43,7 @@ export function Header() {
 
         <div className="hidden md:block">
           <Link to="/tools">
-            <Button variant="brand" size="sm">Explore Tools</Button>
+            <Button variant="brand" size="sm">Browse Reviews</Button>
           </Link>
         </div>
 
@@ -73,7 +73,7 @@ export function Header() {
           </nav>
           <div className="mt-3">
             <Link to="/tools" onClick={() => setMobileOpen(false)}>
-              <Button variant="brand" className="w-full">Explore Tools</Button>
+              <Button variant="brand" className="w-full">Browse Reviews</Button>
             </Link>
           </div>
         </div>
