@@ -53,6 +53,27 @@ export interface ArticleMeta {
 
 export const articlesMeta: ArticleMeta[] = [
   {
+    title: "What Is Minea and How Does It Work? (2026 Guide)",
+    excerpt: "A beginner-friendly breakdown of Minea, how it works, and how dropshippers use it to find winning products through ad spy and store research.",
+    category: "Product Research",
+    date: "April 21, 2026",
+    readTime: "10 min read",
+    slug: "what-is-minea-and-how-does-it-work",
+    image: "/assets/blog/product-research-tools.jpg",
+    toc: [
+      "What Is Minea?",
+      "How Minea Works (Under the Hood)",
+      "What Problems Minea Solves",
+      "Step-by-Step: How to Use Minea",
+      "Real Use Cases",
+      "Common Mistakes Beginners Make",
+      "Practical Tips to Get More From Minea",
+      "Minea vs Other Product Research Tools",
+      "Is Minea the Right Tool for You?",
+      "Final Verdict",
+    ],
+  },
+  {
     title: "WinningHunter Alternatives: 6 Tools Compared (2026)",
     excerpt: "Looking for a WinningHunter alternative? We compared the top 6 product research tools head-to-head — pricing, ad coverage, and who each one is actually for.",
     category: "Product Research",
