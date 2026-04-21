@@ -314,6 +314,8 @@ export const articlesMeta: ArticleMeta[] = [
 
 export function getArticleContent(slug: string): React.ReactNode | null {
   switch (slug) {
+    case "ppspy-vs-minea":
+      return <ArticlePPSpyVsMinea />;
     case "what-is-minea-and-how-does-it-work":
       return <ArticleWhatIsMinea />;
     case "winning-hunter-alternatives":
