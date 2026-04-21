@@ -53,6 +53,32 @@ export interface ArticleMeta {
 
 export const articlesMeta: ArticleMeta[] = [
   {
+    title: "PPSpy vs Minea: Which Tool Is Better for Product Research? (2026)",
+    excerpt: "A detailed comparison of PPSpy vs Minea, including features, pricing, accuracy, and which tool is better for different operator use cases in 2026.",
+    category: "Comparisons",
+    date: "April 21, 2026",
+    readTime: "13 min read",
+    slug: "ppspy-vs-minea",
+    image: "/assets/blog/product-research-tools.jpg",
+    toc: [
+      "Quick Answer (TL;DR)",
+      "PPSpy vs Minea at a Glance",
+      "What Is PPSpy?",
+      "What Is Minea?",
+      "Key Differences",
+      "Data Source Differences",
+      "Accuracy Differences",
+      "Ease of Use",
+      "Pricing Comparison",
+      "Use-Case Comparison",
+      "Pros & Cons",
+      "Real-World Operator Insights",
+      "Which Tool Should You Choose?",
+      "The All-in-One Alternative",
+      "Final Verdict",
+    ],
+  },
+  {
     title: "What Is Minea and How Does It Work? (2026 Guide)",
     excerpt: "A beginner-friendly breakdown of Minea, how it works, and how dropshippers use it to find winning products through ad spy and store research.",
     category: "Product Research",
