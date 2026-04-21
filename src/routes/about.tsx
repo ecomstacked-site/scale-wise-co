@@ -196,14 +196,17 @@ export default function AboutPage() {
           </div>
 
           <div className="text-center">
-            <h2 className="font-display text-lg font-bold text-foreground">Ready to find the right tools?</h2>
-            <p className="mt-2 text-sm text-muted-foreground">Browse our curated directory of ecommerce software.</p>
+            <h2 className="font-display text-lg font-bold text-foreground">Looking for a specific tool?</h2>
+            <p className="mt-2 text-sm text-muted-foreground">Browse our directory of reviewed ecommerce software, or read our latest editorial guides.</p>
             <div className="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row">
               <Link to="/tools">
-                <Button variant="brand" className="gap-2">Explore Tools <ArrowRight className="h-4 w-4" /></Button>
+                <Button variant="outline" className="gap-2">Browse Reviews <ArrowRight className="h-4 w-4" /></Button>
               </Link>
               <Link to="/blog">
                 <Button variant="outline">Read the Blog</Button>
+              </Link>
+              <Link to="/contact">
+                <Button variant="outline">Contact Us</Button>
               </Link>
             </div>
           </div>
