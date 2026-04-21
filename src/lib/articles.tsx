@@ -2826,6 +2826,21 @@ function ArticlePPSpyVsMinea() {
         </ul>
       </section>
 
+      <section className="rounded-xl border-2 border-brand/30 bg-gradient-to-br from-brand/10 to-brand/5 p-5">
+        <div className="flex items-center gap-2">
+          <span className="inline-flex h-6 items-center rounded-full bg-brand/20 px-2.5 text-xs font-bold uppercase tracking-wide text-brand">30-Second Decision</span>
+        </div>
+        <h2 className="mt-3 font-display text-lg font-bold text-foreground">Don't have time to read 2,500 words? Here's the verdict.</h2>
+        <ul className="mt-3 space-y-2 text-sm leading-relaxed text-muted-foreground">
+          <li>🥉 <strong className="text-foreground">PPSpy</strong> — solid store spy, but blind on ad creative. You'll still need a second tool.</li>
+          <li>🥈 <strong className="text-foreground">Minea</strong> — strong ad library, but no store-level sales data. You'll still need a second tool.</li>
+          <li>🥇 <strong className="text-foreground">WinningHunter</strong> — ad spy + store tracking + sales validation in one dashboard. Replaces both. <Link to="/tools/winninghunter" className="text-brand font-semibold underline-offset-2 hover:underline">See the full review →</Link></li>
+        </ul>
+        <p className="mt-3 text-xs leading-relaxed text-muted-foreground">
+          <strong className="text-foreground">Why this matters:</strong> stacking PPSpy + Minea costs $80–$250/mo combined. WinningHunter starts around $49/mo and removes the blind spots between tools — the same blind spots that cause $500+ in wasted ad tests every month.
+        </p>
+      </section>
+
       <section>
         <h2 className="font-display text-xl font-bold text-foreground">PPSpy vs Minea at a Glance</h2>
         <div className="mt-4 overflow-x-auto rounded-lg border border-border">
