@@ -77,8 +77,6 @@ const affiliateLinks: Record<string, { url: string; name: string }> = {
   },
 };
 
-const REDIRECT_DELAY_MS = 1500;
-
 function GoRedirect() {
   const { tool } = useParams<{ tool: string }>();
   const entry = tool ? affiliateLinks[tool] : undefined;
@@ -86,12 +84,11 @@ function GoRedirect() {
 
   useEffect(() => {
     if (!entry) return;
-    const timer = window.setTimeout(() => {
-      window.location.href = entry.url;
-    }, REDIRECT_DELAY_MS);
+    // Single-step redirect: send the visitor straight to the destination.
+    // No interstitial delay, no bridge page — Google Ads compliant.
+    window.location.replace(entry.url);
     const visibleTimer = window.setTimeout(() => setReady(true), 250);
     return () => {
-      window.clearTimeout(timer);
       window.clearTimeout(visibleTimer);
     };
   }, [entry]);

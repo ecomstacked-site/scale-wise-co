@@ -52,26 +52,26 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,var(--color-surface)_0%,transparent_70%)]" />
         <div className="relative mx-auto max-w-4xl px-4 text-center sm:px-6">
           <Badge variant="secondary" className="mb-6 px-4 py-1.5 text-xs font-medium tracking-wide">
-            Independent Ecommerce Tools Resource
+            Independent Ecommerce Software Reviews
           </Badge>
           <h1 className="font-display text-4xl font-extrabold leading-[1.1] tracking-tight text-foreground sm:text-5xl lg:text-6xl">
-            Stop Guessing. Use Tools That Actually Make Money.
+            Honest Reviews of Ecommerce &amp; AI Tools
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg sm:leading-relaxed">
-            Discover AI &amp; ecommerce tools used to find winning products, scale ads, and grow profitable Shopify stores.
+            We research and review the software ecommerce operators use every day — tracking, AI ad creation, automation, product research, and fulfillment. Read our guides to make informed decisions for your store.
           </p>
           <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Link to="/tools">
               <Button variant="brand" size="lg" className="gap-2 px-6">
-                Find Winning Tools <ArrowRight className="h-4 w-4" />
+                Browse Tool Reviews <ArrowRight className="h-4 w-4" />
               </Button>
             </Link>
-            <Link to="/tools/trendtrack-review">
-              <Button variant="outline" size="lg" className="px-6">View Trendtrack Review</Button>
+            <Link to="/blog">
+              <Button variant="outline" size="lg" className="px-6">Read Our Guides</Button>
             </Link>
           </div>
           <p className="mt-6 text-xs text-muted-foreground">
-            Trusted by 2,000+ ecommerce founders &amp; operators
+            Read by 2,000+ ecommerce founders &amp; operators
           </p>
         </div>
       </section>
