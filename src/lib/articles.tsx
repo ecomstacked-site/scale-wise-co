@@ -2826,6 +2826,21 @@ function ArticlePPSpyVsMinea() {
         </ul>
       </section>
 
+      <section className="rounded-xl border-2 border-brand/30 bg-gradient-to-br from-brand/10 to-brand/5 p-5">
+        <div className="flex items-center gap-2">
+          <span className="inline-flex h-6 items-center rounded-full bg-brand/20 px-2.5 text-xs font-bold uppercase tracking-wide text-brand">30-Second Decision</span>
+        </div>
+        <h2 className="mt-3 font-display text-lg font-bold text-foreground">Don't have time to read 2,500 words? Here's the verdict.</h2>
+        <ul className="mt-3 space-y-2 text-sm leading-relaxed text-muted-foreground">
+          <li>🥉 <strong className="text-foreground">PPSpy</strong> — solid store spy, but blind on ad creative. You'll still need a second tool.</li>
+          <li>🥈 <strong className="text-foreground">Minea</strong> — strong ad library, but no store-level sales data. You'll still need a second tool.</li>
+          <li>🥇 <strong className="text-foreground">WinningHunter</strong> — ad spy + store tracking + sales validation in one dashboard. Replaces both. <Link to="/tools/winninghunter" className="text-brand font-semibold underline-offset-2 hover:underline">See the full review →</Link></li>
+        </ul>
+        <p className="mt-3 text-xs leading-relaxed text-muted-foreground">
+          <strong className="text-foreground">Why this matters:</strong> stacking PPSpy + Minea costs $80–$250/mo combined. WinningHunter starts around $49/mo and removes the blind spots between tools — the same blind spots that cause $500+ in wasted ad tests every month.
+        </p>
+      </section>
+
       <section>
         <h2 className="font-display text-xl font-bold text-foreground">PPSpy vs Minea at a Glance</h2>
         <div className="mt-4 overflow-x-auto rounded-lg border border-border">
@@ -3051,13 +3066,24 @@ function ArticlePPSpyVsMinea() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           For most operators serious about scaling in 2026, the better question isn't "PPSpy or Minea?" — it's "should I keep stacking single-purpose tools, or move to one workflow?" Read the <Link to="/tools/winninghunter" className="text-brand underline-offset-2 hover:underline">WinningHunter review</Link> or compare the full lineup in the <Link to="/best-product-research-tools" className="text-brand underline-offset-2 hover:underline">best product research tools</Link> guide before you decide.
         </p>
-        <div className="mt-6 rounded-xl border border-brand/20 bg-brand/5 p-5">
-          <p className="text-sm font-semibold text-foreground">Before you spend another dollar on ad tests:</p>
-          <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-            👉 <Link to="/best-product-research-tools" className="text-brand font-semibold underline-offset-2 hover:underline">Compare the best product research tools for 2026</Link>
-          </p>
+        <div className="mt-6 rounded-xl border-2 border-brand/30 bg-gradient-to-br from-brand/10 to-brand/5 p-6">
+          <p className="text-base font-bold text-foreground">⚡ Stop burning ad budget on guesswork.</p>
           <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-            👉 <Link to="/tools/winninghunter" className="text-brand font-semibold underline-offset-2 hover:underline">Read the full WinningHunter review</Link>
+            Every week you delay picking the right research tool, you're either testing weak products (losing $100+ per test) or paying for two overlapping subscriptions you don't need. The operators winning in 2026 are the ones who consolidated months ago.
+          </p>
+          <div className="mt-4 space-y-2">
+            <p className="text-sm leading-relaxed text-foreground">
+              👉 <Link to="/tools/winninghunter" className="text-brand font-bold underline-offset-2 hover:underline">Read the full WinningHunter review</Link> — see why it's our #1 pick for 2026.
+            </p>
+            <p className="text-sm leading-relaxed text-foreground">
+              👉 <Link to="/best-product-research-tools" className="text-brand font-bold underline-offset-2 hover:underline">Compare the best product research tools</Link> side by side before you commit.
+            </p>
+            <p className="text-sm leading-relaxed text-foreground">
+              👉 <Link to="/blog/what-is-minea-and-how-does-it-work" className="text-brand font-semibold underline-offset-2 hover:underline">Still curious about Minea?</Link> Read our deep-dive first.
+            </p>
+          </div>
+          <p className="mt-4 text-xs italic text-muted-foreground">
+            One smart tool decision today = thousands saved in failed ad tests this quarter.
           </p>
         </div>
       </section>
