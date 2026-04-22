@@ -3516,3 +3516,160 @@ function ArticleMineaAlternatives() {
     </div>
   );
 }
+
+function ArticleShopifyResearchBeginners() {
+  return (
+    <div className="space-y-8">
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Why Product Research Is 80% of the Game</h2>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          If you're new to Shopify, here's the truth nobody tells beginners upfront: the product you choose matters more than your store design, your ad copy, or even your targeting. You can have a flawless funnel, gorgeous creatives, and perfectly tuned campaigns — and still burn through your budget if the product itself doesn't have demand.
+        </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          Veteran dropshippers will tell you product research is roughly 80% of why a store wins or loses. The other 20% — ads, branding, conversion rate optimization — only multiplies whatever signal the product already has. That's why this guide exists: to give beginners a repeatable, step-by-step process for finding products that actually have a fighting chance.
+        </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          By the end of this article, you'll know exactly how to spot demand, validate it with real ad data, and avoid the most common mistakes that drain new sellers' bank accounts.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">What Makes a Winning Shopify Product</h2>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          Before diving into the process, you need a mental checklist. A winning product usually has most of these traits:
+        </p>
+        <ul className="mt-3 list-disc space-y-2 pl-5 text-sm leading-relaxed text-muted-foreground">
+          <li><strong className="text-foreground">Solves a clear problem</strong> or delivers a strong "wow" effect in a 5-second video.</li>
+          <li><strong className="text-foreground">Hard to find</strong> in local stores — not something a customer can grab at Walmart tomorrow.</li>
+          <li><strong className="text-foreground">Healthy margins</strong> — at least 3x markup between cost and selling price.</li>
+          <li><strong className="text-foreground">Lightweight and easy to ship</strong> — fragile or oversized items kill profitability.</li>
+          <li><strong className="text-foreground">Visual appeal</strong> — looks good in short-form video on TikTok and Reels.</li>
+          <li><strong className="text-foreground">Broad audience</strong> — not so niche that you can't scale ad spend.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Step 1: Pick a Profitable Angle</h2>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          Don't start by browsing AliExpress randomly. Start with an <em>angle</em> — a problem, identity, or trend you want to sell into. Examples: "back pain for desk workers," "kitchen gadgets for new parents," or "winter pet accessories." Picking an angle narrows your research and makes ads way easier to write later.
+        </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          A good shortcut: think about the last 3 problems you or someone close to you complained about. Real friction is where products sell.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Step 2: Use Free Discovery Channels</h2>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          Before paying for tools, mine the free signals that the entire dropshipping world overlooks:
+        </p>
+        <ul className="mt-3 list-disc space-y-2 pl-5 text-sm leading-relaxed text-muted-foreground">
+          <li><strong className="text-foreground">TikTok search:</strong> type "TikTok made me buy it," "Amazon finds," or your niche keyword and sort by Most Liked.</li>
+          <li><strong className="text-foreground">Facebook Ad Library:</strong> filter by "Active" + your niche keywords. Look for ads running 30+ days — that's a strong profitability signal.</li>
+          <li><strong className="text-foreground">Amazon Movers &amp; Shakers:</strong> shows the fastest-rising products in every category, refreshed hourly.</li>
+          <li><strong className="text-foreground">Reddit subreddits:</strong> niche subs reveal what real buyers complain about and recommend.</li>
+        </ul>
+        <ProTip>Save every product idea into a single Notion or Google Sheet doc with the source link. Most beginners forget half the products they find within 48 hours.</ProTip>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Step 3: Validate with Ad Spy Tools</h2>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          Free discovery gives you ideas. Ad spy tools give you <em>proof</em>. This is where most beginners cut corners — and pay for it later. Before you spend a single dollar testing a product, you want to confirm that other stores are actively making money on it.
+        </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          The fastest way to do this is with an all-in-one platform that combines ad spy, store spy, and product analytics. We've reviewed the top options in our guide to the <Link to="/best-product-research-tools" className="text-brand underline">best product research tools</Link>, and the one we recommend for beginners is <Link to="/tools/winninghunter" className="text-brand underline">WinningHunter</Link>. It bundles Facebook + TikTok ad spy, store revenue estimates, and creative analytics into a single dashboard, which means beginners aren't juggling 4 different subscriptions.
+        </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          When you find a product idea, search for it inside the ad spy tool and check:
+        </p>
+        <ul className="mt-3 list-disc space-y-2 pl-5 text-sm leading-relaxed text-muted-foreground">
+          <li>How many ads are currently running for this product</li>
+          <li>How long the top ads have been live (longer = more profitable)</li>
+          <li>How many engagements (likes, comments, shares) the top ads have</li>
+          <li>Which countries the ads are targeting</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Step 4: Check Store Performance</h2>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          Once you've found ads that look profitable, click through and study the store. This is the part beginners skip — and it's the most valuable. Ask:
+        </p>
+        <ul className="mt-3 list-disc space-y-2 pl-5 text-sm leading-relaxed text-muted-foreground">
+          <li>Is the store branded around this product, or is it a general store?</li>
+          <li>What's the price point and what bundles/upsells are offered?</li>
+          <li>Is the product page conversion-optimized (reviews, GIFs, urgency)?</li>
+          <li>Estimated monthly traffic and revenue (visible inside store spy tools)</li>
+        </ul>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          If the store looks polished and is generating consistent revenue, that's your green light.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Step 5: Calculate Margins Before You Test</h2>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          Don't even think about launching ads until you've done the math. Use this simple formula:
+        </p>
+        <div className="my-4 rounded-lg bg-surface p-4 text-sm">
+          <p className="font-mono text-foreground">Selling Price − Product Cost − Shipping − Transaction Fees = Gross Margin</p>
+        </div>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          You want a gross margin of at least <strong className="text-foreground">$20–$30 per unit</strong> to give yourself room to absorb ad costs. If your margin is $8, even a small ad inefficiency wipes out your profit.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Real-World Example: A Winning Product Breakdown</h2>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          Let's run through a realistic example. Imagine you spot a posture corrector being advertised heavily on TikTok. You search it inside an ad spy tool and find 40+ active ads, top one running 90 days, 120K likes. The seller's store specializes in back pain products, has clean branding, and sells the corrector for $39.90 with an upsell to a 2-pack at $59.90.
+        </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          Cost on AliExpress: $6 + $3 shipping = $9. Margin per unit: $30+. Estimated monthly store revenue: $80K. This product checks every box — clear problem, broad audience, strong margin, proven demand.
+        </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          That's the kind of validated opportunity tools like ad spy platforms surface in minutes, instead of you guessing for weeks.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Beginner Mistakes to Avoid</h2>
+        <ul className="mt-3 list-disc space-y-2 pl-5 text-sm leading-relaxed text-muted-foreground">
+          <li><strong className="text-foreground">Picking saturated products:</strong> if a product has been selling hard for 12+ months, the audience is fatigued.</li>
+          <li><strong className="text-foreground">Falling for "trending product" lists:</strong> by the time a product is on a public list, it's already cooked.</li>
+          <li><strong className="text-foreground">Ignoring shipping times:</strong> 30-day shipping kills conversion rates. Use suppliers with US/EU warehouses when possible.</li>
+          <li><strong className="text-foreground">Testing 1 creative and giving up:</strong> winning products often need 5–10 creative angles to find the one that scales.</li>
+          <li><strong className="text-foreground">Skipping margin math:</strong> $10-margin products can't survive normal ad costs.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Pro Tips From Experienced Operators</h2>
+        <ProTip>Set up a weekly "research block" of 90 minutes. Consistency in research beats motivation every time. Operators who research weekly find 3–5 winners per year.</ProTip>
+        <ProTip>Don't fall in love with a product. Fall in love with the <em>data</em>. If the metrics say no, move on — there are thousands of opportunities out there.</ProTip>
+        <ProTip>Always study the top 3 competitors before launching. Their landing page structure, upsells, and ad hooks are free education.</ProTip>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Recommended Tool Stack for Beginners</h2>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          You don't need 10 tools to start. As a beginner, you only need three things: a way to spy on ads, a way to analyze stores, and a way to validate creative angles. The cleanest path is to consolidate those into a single platform instead of paying for 4 separate subscriptions.
+        </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          For a deeper comparison of every option, read our full breakdown of the <Link to="/best-product-research-tools" className="text-brand underline">best product research tools for ecommerce in 2026</Link>. If you want the short answer, <Link to="/tools/winninghunter" className="text-brand underline">WinningHunter</Link> is the most beginner-friendly all-in-one we've tested — it shortens the learning curve significantly.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Conclusion</h2>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          Product research isn't luck — it's a process. Pick an angle, mine free signals, validate with ad spy data, study the competition, and run the margin math <em>before</em> you spend a dollar on ads. Do that consistently, and you'll dramatically increase your odds of finding a Shopify winner.
+        </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          Most beginners fail not because they pick "bad" products, but because they skip validation. Don't be that beginner. Start with a system, stick to it, and let the data guide you.
+        </p>
+      </section>
+    </div>
+  );
+}
