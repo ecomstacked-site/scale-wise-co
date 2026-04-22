@@ -5183,17 +5183,16 @@ function ArticleBestTikTokAdSpyTools() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           WinningHunter is the strongest pick because it focuses on the outcome that matters: faster product decisions. It helps connect real ads, real engagement, product discovery, and competitor behavior so you can stop treating TikTok dropshipping products like lottery tickets.
         </p>
+        <figure>
+          <img src="/images/tools/winninghunter.png" alt="WinningHunter TikTok Ad Spy Tool Dashboard" loading="lazy" />
+          <figcaption>WinningHunter dashboard showing active TikTok ads and product validation signals.</figcaption>
+        </figure>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           The speed advantage is the point. Winning ads move fast. Manual research misses early trends because you only see what the algorithm decides to show you. By the time you find a product manually, it may already be saturated, copied, and pushed by sellers with better creative testing systems.
         </p>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           Other sellers are already using spy tools. If they can identify promising ads before you, validate buyer demand faster, and launch cleaner tests, you are starting every product cycle late. WinningHunter helps close that gap by showing real ads, engagement, creative repetition, and demand signals in a cleaner workflow.
         </p>
-        <ArticleFigure
-          src="/images/tools/winninghunter.png"
-          alt="WinningHunter TikTok Ad Spy Tool Dashboard"
-          caption="WinningHunter dashboard showing active TikTok ads, engagement signals, and product validation data."
-        />
         <h3 className="mt-5 font-display text-base font-bold text-foreground">Key benefits</h3>
         <ul className="mt-3 list-disc space-y-2 pl-5 text-sm leading-relaxed text-muted-foreground">
           <li><strong className="text-foreground">Faster validation:</strong> identify ads with momentum instead of building product lists from guesses.</li>
