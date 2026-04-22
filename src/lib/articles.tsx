@@ -398,6 +398,8 @@ export function getArticleContent(slug: string): React.ReactNode | null {
       return <Article4 />;
     case "ecommerce-productivity-tools":
       return <Article5 />;
+    case "shopify-product-research-for-beginners":
+      return <ArticleShopifyResearchBeginners />;
     default:
       return null;
   }
