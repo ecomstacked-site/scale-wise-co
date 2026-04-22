@@ -1,4 +1,7 @@
 import { Helmet } from "react-helmet-async";
+import type { ReactNode } from "react";
+
+const HelmetCompat = Helmet as unknown as ({ children }: { children: ReactNode }) => JSX.Element;
 
 export interface SEOProps {
   title: string;
@@ -14,7 +17,7 @@ export interface SEOProps {
 
 export function SEO({ title, description, ogTitle, ogDescription, ogImage, ogType, keywords, noIndex, canonical }: SEOProps) {
   return (
-    <Helmet>
+    <HelmetCompat>
       <title>{title}</title>
       <meta name="description" content={description} />
       {keywords && <meta name="keywords" content={keywords} />}
@@ -27,6 +30,6 @@ export function SEO({ title, description, ogTitle, ogDescription, ogImage, ogTyp
       {ogImage && <meta name="twitter:image" content={ogImage} />}
       <meta name="twitter:title" content={ogTitle ?? title} />
       <meta name="twitter:description" content={ogDescription ?? description} />
-    </Helmet>
+    </HelmetCompat>
   );
 }
