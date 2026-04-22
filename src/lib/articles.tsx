@@ -424,6 +424,8 @@ export function getArticleContent(slug: string): React.ReactNode | null {
       return <Article5 />;
     case "shopify-product-research-for-beginners":
       return <ArticleShopifyResearchBeginners />;
+    case "best-shopify-spy-tools":
+      return <ArticleBestShopifySpyTools />;
     default:
       return null;
   }
