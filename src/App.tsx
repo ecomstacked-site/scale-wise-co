@@ -1,6 +1,5 @@
 import { Routes, Route, Link, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { Helmet } from "react-helmet-async";
 import HomePage from "./routes/index";
 import AboutPage from "./routes/about";
 import BlogPage from "./routes/blog.index";
@@ -24,6 +23,7 @@ import EasyshipPage from "./routes/tools.easyship";
 import SystemePage from "./routes/tools.systeme";
 import BestProductResearchToolsPage from "./routes/best-product-research-tools";
 import { Navigate } from "react-router-dom";
+import { SEO } from "./lib/seo";
 
 // Brand-specific affiliate destinations.
 // Each /go/[brand] route resolves to the matching destination below
@@ -96,10 +96,7 @@ function GoRedirect() {
   if (!entry) {
     return (
       <div className="flex min-h-screen items-center justify-center bg-background px-4">
-        <Helmet>
-          <title>Tool not found</title>
-          <meta name="robots" content="noindex, nofollow" />
-        </Helmet>
+        <SEO title="Tool not found" description="Tool destination not found." noIndex />
         <div className="max-w-md text-center">
           <h1 className="font-display text-2xl font-bold text-foreground">Tool not found</h1>
           <p className="mt-2 text-sm text-muted-foreground">
@@ -118,10 +115,7 @@ function GoRedirect() {
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
-      <Helmet>
-        <title>Redirecting to {entry.name}…</title>
-        <meta name="robots" content="noindex, nofollow" />
-      </Helmet>
+      <SEO title={`Redirecting to ${entry.name}…`} description={`Redirecting to the official ${entry.name} website.`} noIndex />
       <div className="max-w-md text-center">
         <div
           className="mx-auto h-10 w-10 animate-spin rounded-full border-2 border-muted border-t-primary"
