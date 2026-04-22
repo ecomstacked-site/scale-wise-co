@@ -355,6 +355,7 @@ export const articlesMeta: ArticleMeta[] = [
       "Recommended Tool Stack for Beginners",
       "Conclusion",
     ],
+  },
   {
     title: "Best Shopify Spy Tools (2026)",
     excerpt: "Discover the best Shopify spy tools to find winning products fast.",
