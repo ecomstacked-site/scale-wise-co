@@ -23,6 +23,7 @@ import EasyshipPage from "./routes/tools.easyship";
 import SystemePage from "./routes/tools.systeme";
 import BestProductResearchToolsPage from "./routes/best-product-research-tools";
 import BestProductResearchToolsForShopifyPage from "./routes/best-product-research-tools-for-shopify";
+import BestTikTokAdSpyToolsPage from "./routes/best-tiktok-ad-spy-tools";
 import { Navigate } from "react-router-dom";
 import { SEO } from "./lib/seo";
 
@@ -187,6 +188,7 @@ export default function App() {
       <Route path="/tools/systeme" element={<SystemePage />} />
       <Route path="/best-product-research-tools" element={<BestProductResearchToolsPage />} />
       <Route path="/best-product-research-tools-for-shopify" element={<BestProductResearchToolsForShopifyPage />} />
+      <Route path="/best-tiktok-ad-spy-tools" element={<BestTikTokAdSpyToolsPage />} />
       <Route path="/wetracked-vs-triple-whale" element={<WeTrackedVsTripleWhale />} />
       <Route path="/best-ad-tracking-tools" element={<Navigate to="/blog/best-ad-tracking-tools-2026" replace />} />
       <Route path="/blog/wetracked-review" element={<Navigate to="/tools/wetracked-review" replace />} />
