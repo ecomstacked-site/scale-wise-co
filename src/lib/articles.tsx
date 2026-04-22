@@ -3557,6 +3557,11 @@ function ArticleShopifyResearchBeginners() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           By the end of this article, you'll know exactly how to spot demand, validate it with real ad data, and avoid the most common mistakes that drain new sellers' bank accounts.
         </p>
+        <div className="mt-4 rounded-lg border-l-4 border-brand bg-surface p-4">
+          <p className="text-sm leading-relaxed text-foreground">
+            <strong>Reality check:</strong> Most beginners lose their first <strong>$200–$500</strong> testing random products they "feel" will work. Skipping validation is the fastest way to burn your ad budget before you've even learned how the platform works.
+          </p>
+        </div>
       </section>
 
       <section>
