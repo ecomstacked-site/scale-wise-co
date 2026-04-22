@@ -5084,6 +5084,13 @@ function ArticleBestTikTokAdSpyTools() {
     </div>
   );
 
+  const ArticleFigure = ({ src, alt, caption, compact = false }: { src: string; alt: string; caption: string; compact?: boolean }) => (
+    <figure className={compact ? "my-5 max-w-xl" : "my-7"}>
+      <img src={src} alt={alt} loading="lazy" className="w-full rounded-xl border border-border bg-card shadow-sm" />
+      <figcaption className="mt-2 text-center text-xs leading-relaxed text-muted-foreground">{caption}</figcaption>
+    </figure>
+  );
+
   return (
     <div className="space-y-8">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
@@ -5106,6 +5113,12 @@ function ArticleBestTikTokAdSpyTools() {
       </section>
 
       <CtaBlock label="Start Finding Winning TikTok Ads Today" />
+
+      <ArticleFigure
+        src="/images/tiktok-ad-spy-hero.png"
+        alt="TikTok ad spy tools for finding winning products"
+        caption="Overview of TikTok ad spy tools used to find winning products before they scale."
+      />
 
       <section>
         <h2 className="font-display text-xl font-bold text-foreground">Why TikTok Ad Spy Tools Matter</h2>
@@ -5158,6 +5171,11 @@ function ArticleBestTikTokAdSpyTools() {
             Use WinningHunter when you want faster TikTok product validation and a clearer path from ad signal to test decision. Use PiPiADS when you need a deep TikTok ad database. Use Minea when you want cross-platform creative research. Use AdSpy for Meta depth, BigSpy for broad budget research, and Dropispy when you need a simpler entry-level option.
           </p>
         </div>
+        <ArticleFigure
+          src="/images/tool-selection-guide.png"
+          alt="How to choose the best TikTok ad spy tool"
+          caption="Different TikTok ad spy tools serve different research needs depending on your workflow."
+        />
       </section>
 
       <section className="rounded-xl border border-brand/30 bg-brand/5 p-6">
@@ -5171,7 +5189,11 @@ function ArticleBestTikTokAdSpyTools() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           Other sellers are already using spy tools. If they can identify promising ads before you, validate buyer demand faster, and launch cleaner tests, you are starting every product cycle late. WinningHunter helps close that gap by showing real ads, engagement, creative repetition, and demand signals in a cleaner workflow.
         </p>
-        <img src="/images/winninghunter.png" alt="WinningHunter TikTok Ad Spy Tool Dashboard" loading="lazy" />
+        <ArticleFigure
+          src="/images/tools/winninghunter.png"
+          alt="WinningHunter TikTok Ad Spy Tool Dashboard"
+          caption="WinningHunter dashboard showing active TikTok ads, engagement signals, and product validation data."
+        />
         <h3 className="mt-5 font-display text-base font-bold text-foreground">Key benefits</h3>
         <ul className="mt-3 list-disc space-y-2 pl-5 text-sm leading-relaxed text-muted-foreground">
           <li><strong className="text-foreground">Faster validation:</strong> identify ads with momentum instead of building product lists from guesses.</li>
