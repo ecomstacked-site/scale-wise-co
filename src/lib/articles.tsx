@@ -5248,6 +5248,7 @@ function ArticleBestTikTokAdSpyTools() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           AdSpy is known for Facebook and Instagram ad research. It is not the cleanest TikTok-first choice, but it can be valuable for understanding proven direct-response angles that may be adapted into short-form video campaigns.
         </p>
+        <img src="/images/adspy.png" alt="AdSpy Facebook Ad Spy Tool" loading="lazy" />
         <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-relaxed text-muted-foreground">
           <li><strong className="text-foreground">What it is:</strong> a large Facebook and Instagram ad database.</li>
           <li><strong className="text-foreground">Key benefit:</strong> deep Meta research for hooks, offers, and evergreen ad angles.</li>
@@ -5265,6 +5266,7 @@ function ArticleBestTikTokAdSpyTools() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           BigSpy offers broad ad intelligence across multiple networks. It can be useful for budget-conscious researchers who want a wide database, though the tradeoff is that broad coverage can create more noise.
         </p>
+        <img src="/images/bigspy.png" alt="BigSpy Ad Intelligence Platform" loading="lazy" />
         <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-relaxed text-muted-foreground">
           <li><strong className="text-foreground">What it is:</strong> a broad ad spy platform covering multiple ad networks.</li>
           <li><strong className="text-foreground">Key benefit:</strong> gives a wide market view and can help identify recurring product angles.</li>
@@ -5280,6 +5282,7 @@ function ArticleBestTikTokAdSpyTools() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           Dropispy is a practical ad spy tool for sellers who want a simpler, budget-friendly way to study ads and build research habits. It is more useful for learning the market than for advanced TikTok-first validation.
         </p>
+        <img src="/images/dropispy.png" alt="Dropispy Ad Spy Tool Interface" loading="lazy" />
         <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-relaxed text-muted-foreground">
           <li><strong className="text-foreground">What it is:</strong> an ad spy tool with a more accessible price position.</li>
           <li><strong className="text-foreground">Key benefit:</strong> helps beginners study real ad examples before launching random tests.</li>
