@@ -421,7 +421,7 @@ export const articlesMeta: ArticleMeta[] = [
     ],
   },
   {
-    title: "How to Spy TikTok Ads for Dropshipping (2026 Guide)",
+    title: "How to Spy TikTok Ads for Dropshipping (Step-by-Step Guide)",
     excerpt: "Learn how to spy TikTok ads for dropshipping using Creative Center, hashtag mining, competitor tracking, and ad spy workflows.",
     category: "Blog",
     date: "April 22, 2026",
