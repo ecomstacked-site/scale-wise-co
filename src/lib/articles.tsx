@@ -5084,6 +5084,13 @@ function ArticleBestTikTokAdSpyTools() {
     </div>
   );
 
+  const ArticleFigure = ({ src, alt, caption, compact = false }: { src: string; alt: string; caption: string; compact?: boolean }) => (
+    <figure className={compact ? "my-5 max-w-xl" : "my-7"}>
+      <img src={src} alt={alt} loading="lazy" className="w-full rounded-xl border border-border bg-card shadow-sm" />
+      <figcaption className="mt-2 text-center text-xs leading-relaxed text-muted-foreground">{caption}</figcaption>
+    </figure>
+  );
+
   return (
     <div className="space-y-8">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
@@ -5106,6 +5113,12 @@ function ArticleBestTikTokAdSpyTools() {
       </section>
 
       <CtaBlock label="Start Finding Winning TikTok Ads Today" />
+
+      <ArticleFigure
+        src="/images/tiktok-ad-spy-hero.png"
+        alt="TikTok ad spy tools for finding winning products"
+        caption="Overview of TikTok ad spy tools used to find winning products before they scale."
+      />
 
       <section>
         <h2 className="font-display text-xl font-bold text-foreground">Why TikTok Ad Spy Tools Matter</h2>
@@ -5158,6 +5171,11 @@ function ArticleBestTikTokAdSpyTools() {
             Use WinningHunter when you want faster TikTok product validation and a clearer path from ad signal to test decision. Use PiPiADS when you need a deep TikTok ad database. Use Minea when you want cross-platform creative research. Use AdSpy for Meta depth, BigSpy for broad budget research, and Dropispy when you need a simpler entry-level option.
           </p>
         </div>
+        <ArticleFigure
+          src="/images/tool-selection-guide.png"
+          alt="How to choose the best TikTok ad spy tool"
+          caption="Different TikTok ad spy tools serve different research needs depending on your workflow."
+        />
       </section>
 
       <section className="rounded-xl border border-brand/30 bg-brand/5 p-6">
@@ -5171,7 +5189,11 @@ function ArticleBestTikTokAdSpyTools() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           Other sellers are already using spy tools. If they can identify promising ads before you, validate buyer demand faster, and launch cleaner tests, you are starting every product cycle late. WinningHunter helps close that gap by showing real ads, engagement, creative repetition, and demand signals in a cleaner workflow.
         </p>
-        <img src="/images/winninghunter.png" alt="WinningHunter TikTok Ad Spy Tool Dashboard" loading="lazy" />
+        <ArticleFigure
+          src="/images/tools/winninghunter.png"
+          alt="WinningHunter TikTok Ad Spy Tool Dashboard"
+          caption="WinningHunter dashboard showing active TikTok ads, engagement signals, and product validation data."
+        />
         <h3 className="mt-5 font-display text-base font-bold text-foreground">Key benefits</h3>
         <ul className="mt-3 list-disc space-y-2 pl-5 text-sm leading-relaxed text-muted-foreground">
           <li><strong className="text-foreground">Faster validation:</strong> identify ads with momentum instead of building product lists from guesses.</li>
@@ -5216,7 +5238,11 @@ function ArticleBestTikTokAdSpyTools() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           PiPiADS is a TikTok-focused ad intelligence platform with deep creative research capabilities. It is useful when TikTok is your primary channel and you want to dig into large volumes of ads, advertisers, and creative patterns.
         </p>
-        <img src="/images/pipiads.png" alt="PiPiADS TikTok Ad Spy Tool Interface" loading="lazy" />
+        <ArticleFigure
+          src="/images/tools/pipiads.png"
+          alt="PiPiADS TikTok Ad Spy Tool Interface"
+          caption="PiPiADS interface for deep TikTok ad research and creative pattern analysis."
+        />
         <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-relaxed text-muted-foreground">
           <li><strong className="text-foreground">What it is:</strong> a TikTok ad spy platform for researching ads, products, creatives, and advertisers.</li>
           <li><strong className="text-foreground">Key benefit:</strong> strong depth for spotting repeated creative formulas and category trends.</li>
@@ -5232,7 +5258,11 @@ function ArticleBestTikTokAdSpyTools() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           Minea is built for broader creative research across TikTok, Meta, and other channels. It is helpful when you want to compare how similar products are positioned across multiple platforms instead of only studying TikTok.
         </p>
-        <img src="/images/minea.png" alt="Minea Ad Spy Dashboard" loading="lazy" />
+        <ArticleFigure
+          src="/images/tools/minea.png"
+          alt="Minea Ad Spy Dashboard"
+          caption="Minea dashboard for multi-platform ad research and product discovery."
+        />
         <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-relaxed text-muted-foreground">
           <li><strong className="text-foreground">What it is:</strong> a multi-platform ad spy and creative research tool.</li>
           <li><strong className="text-foreground">Key benefit:</strong> helps uncover cross-platform hooks, angles, and competitor messaging.</li>
@@ -5248,7 +5278,12 @@ function ArticleBestTikTokAdSpyTools() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           AdSpy is known for Facebook and Instagram ad research. It is not the cleanest TikTok-first choice, but it can be valuable for understanding proven direct-response angles that may be adapted into short-form video campaigns.
         </p>
-        <img src="/images/adspy.png" alt="AdSpy Facebook Ad Spy Tool" loading="lazy" />
+        <ArticleFigure
+          src="/images/tools/adspy.png"
+          alt="AdSpy ad intelligence tool"
+          caption="AdSpy supports deeper Meta ad research when you need proven direct-response angles."
+          compact
+        />
         <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-relaxed text-muted-foreground">
           <li><strong className="text-foreground">What it is:</strong> a large Facebook and Instagram ad database.</li>
           <li><strong className="text-foreground">Key benefit:</strong> deep Meta research for hooks, offers, and evergreen ad angles.</li>
@@ -5266,7 +5301,12 @@ function ArticleBestTikTokAdSpyTools() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           BigSpy offers broad ad intelligence across multiple networks. It can be useful for budget-conscious researchers who want a wide database, though the tradeoff is that broad coverage can create more noise.
         </p>
-        <img src="/images/bigspy.png" alt="BigSpy Ad Intelligence Platform" loading="lazy" />
+        <ArticleFigure
+          src="/images/tools/bigspy.png"
+          alt="BigSpy ad intelligence platform"
+          caption="BigSpy gives broad ad intelligence coverage for early-stage market scanning."
+          compact
+        />
         <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-relaxed text-muted-foreground">
           <li><strong className="text-foreground">What it is:</strong> a broad ad spy platform covering multiple ad networks.</li>
           <li><strong className="text-foreground">Key benefit:</strong> gives a wide market view and can help identify recurring product angles.</li>
@@ -5282,7 +5322,12 @@ function ArticleBestTikTokAdSpyTools() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           Dropispy is a practical ad spy tool for sellers who want a simpler, budget-friendly way to study ads and build research habits. It is more useful for learning the market than for advanced TikTok-first validation.
         </p>
-        <img src="/images/dropispy.png" alt="Dropispy Ad Spy Tool Interface" loading="lazy" />
+        <ArticleFigure
+          src="/images/tools/dropispy.png"
+          alt="Dropispy ad spy tool interface"
+          caption="Dropispy offers a lighter ad spy workflow for budget-conscious beginners."
+          compact
+        />
         <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-relaxed text-muted-foreground">
           <li><strong className="text-foreground">What it is:</strong> an ad spy tool with a more accessible price position.</li>
           <li><strong className="text-foreground">Key benefit:</strong> helps beginners study real ad examples before launching random tests.</li>
@@ -5347,11 +5392,21 @@ function ArticleBestTikTokAdSpyTools() {
           <li><strong className="text-foreground">High engagement plus buyer intent:</strong> comments like “link?”, “price?”, “where can I buy?”, and “ship to USA?” matter more than empty likes.</li>
           <li><strong className="text-foreground">Same product across accounts:</strong> multiple sellers pushing the same product can validate demand, but it can also warn you that saturation is coming fast.</li>
         </ul>
+        <ArticleFigure
+          src="/images/winning-ad-checklist.png"
+          alt="How to identify winning TikTok ads signals"
+          caption="Key signals that indicate a TikTok ad has real commercial potential."
+        />
         <div className="mt-5 rounded-xl border border-border bg-card p-5">
           <h3 className="font-display text-base font-bold text-foreground">Mini case study</h3>
           <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
             We identified 3 products using signals like 7+ day active ads, repeated creatives, and buyer-intent comments. The strongest candidates were not the flashiest videos. They were the ads where buyers asked “link?”, “price?”, “where can I buy?”, and “ship to USA?” while multiple accounts kept pushing similar demos.
           </p>
+          <ArticleFigure
+            src="/images/buyer-comments-proof.png"
+            alt="TikTok buyer intent comments proof"
+            caption="Buyer intent comments such as “link?”, “price?”, and “where can I buy?” indicate real demand."
+          />
         </div>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           The goal is not to copy the ad. The goal is to understand the product, angle, hook, objection, and buying trigger before you build your own test.
@@ -5401,6 +5456,11 @@ function ArticleBestTikTokAdSpyTools() {
           <li><strong className="text-foreground">Study the funnel:</strong> inspect product pages, bundles, reviews, guarantees, and upsells.</li>
           <li><strong className="text-foreground">Launch a different angle:</strong> use the research to build a better hook, not a lazy clone.</li>
         </ol>
+        <ArticleFigure
+          src="/images/product-research-workflow.png"
+          alt="TikTok product research workflow diagram"
+          caption="A simple workflow for validating products before launching tests."
+        />
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           The best workflow is manual research plus tools plus judgment. If all three agree, you have a real candidate. If only one signal looks good, you probably have a trap.
         </p>
@@ -5429,6 +5489,11 @@ function ArticleBestTikTokAdSpyTools() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           Winning products do not stay hidden. The sooner you see them, the higher your chance of profit. If you are guessing products, you are already late — and the sellers using better research workflows are not waiting for you to catch up.
         </p>
+        <ArticleFigure
+          src="/images/scaling-products.png"
+          alt="Scaling winning TikTok products"
+          caption="Winning products scale fast — the earlier you identify them, the better your results."
+        />
         <CtaBlock label="Stop Guessing Products" />
       </section>
     </div>
