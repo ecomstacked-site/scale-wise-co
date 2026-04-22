@@ -400,6 +400,29 @@ export const articlesMeta: ArticleMeta[] = [
       "FAQ",
     ],
   },
+  {
+    title: "How to Spy TikTok Ads for Dropshipping (2026 Guide)",
+    excerpt: "Learn how to spy TikTok ads for dropshipping using Creative Center, hashtag mining, competitor tracking, and ad spy workflows.",
+    category: "Blog",
+    date: "April 22, 2026",
+    readTime: "12 min read",
+    slug: "how-to-spy-tiktok-ads-for-dropshipping",
+    image: "/assets/blog/product-research-tools.jpg",
+    toc: [
+      "Why Spying TikTok Ads Is an Unfair Advantage",
+      "What Makes a Winning TikTok Ad",
+      "Step 1: Use TikTok Creative Center",
+      "Step 2: Use the Scroll Method",
+      "Step 3: Mine Hashtags for Winners",
+      "Step 4: Track Competitor Funnels",
+      "Step 5: Break Down Ad Libraries",
+      "Advanced Method: Reverse-Engineer Winning Products",
+      "Common Mistakes",
+      "Pro Tips",
+      "Recommended Tool Stack",
+      "Final Thoughts",
+    ],
+  },
 ];
 
 export function getArticleContent(slug: string): React.ReactNode | null {
@@ -448,6 +471,8 @@ export function getArticleContent(slug: string): React.ReactNode | null {
       return <ArticleBestShopifySpyTools />;
     case "ppspy-alternatives":
       return <ArticlePPSpyAlternatives />;
+    case "how-to-spy-tiktok-ads-for-dropshipping":
+      return <ArticleHowToSpyTikTokAds />;
     default:
       return null;
   }
