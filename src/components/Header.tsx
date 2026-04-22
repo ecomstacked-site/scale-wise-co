@@ -34,7 +34,7 @@ export function Header() {
               key={link.to}
               to={link.to}
               end={link.end}
-              className={({ isActive }) => `${baseClass} ${isActive ? active : inactive}`}
+              className={({ isActive }: { isActive: boolean }) => `${baseClass} ${isActive ? active : inactive}`}
             >
               {link.label}
             </NavLink>
@@ -64,7 +64,7 @@ export function Header() {
                 key={link.to}
                 to={link.to}
                 end={link.end}
-                className={({ isActive }) => `${baseClass.replace("py-2", "py-2.5")} ${isActive ? active : inactive}`}
+                className={({ isActive }: { isActive: boolean }) => `${baseClass.replace("py-2", "py-2.5")} ${isActive ? active : inactive}`}
                 onClick={() => setMobileOpen(false)}
               >
                 {link.label}
