@@ -1,7 +1,7 @@
 import { Helmet } from "react-helmet-async";
-import type { ReactNode } from "react";
+import type { ReactElement, ReactNode } from "react";
 
-const HelmetCompat = Helmet as unknown as ({ children }: { children: ReactNode }) => JSX.Element;
+const HelmetCompat = Helmet as unknown as ({ children }: { children: ReactNode }) => ReactElement;
 
 export interface SEOProps {
   title: string;
