@@ -333,6 +333,29 @@ export const articlesMeta: ArticleMeta[] = [
     image: "/assets/blog/tools-faster-smarter.jpg",
     toc: ["The Hidden Cost of Manual Work", "Systeme: Replacing Your Marketing Tool Stack", "Easyship: Streamlining Fulfillment", "Holo AI: Faster Creative Production", "Evebee: Smarter Product Decisions", "Building an Efficient Operations Stack", "Conclusion"],
   },
+  {
+    title: "Shopify Product Research for Beginners: A Step-by-Step Guide (2026)",
+    excerpt: "New to Shopify? Learn how to research winning products step-by-step — from spotting demand to validating with ad spy tools, without wasting money on duds.",
+    category: "Product Research",
+    date: "April 22, 2026",
+    readTime: "12 min read",
+    slug: "shopify-product-research-for-beginners",
+    image: "/assets/blog/product-research-tools.jpg",
+    toc: [
+      "Why Product Research Is 80% of the Game",
+      "What Makes a Winning Shopify Product",
+      "Step 1: Pick a Profitable Angle",
+      "Step 2: Use Free Discovery Channels",
+      "Step 3: Validate with Ad Spy Tools",
+      "Step 4: Check Store Performance",
+      "Step 5: Calculate Margins Before You Test",
+      "Real-World Example: A Winning Product Breakdown",
+      "Beginner Mistakes to Avoid",
+      "Pro Tips From Experienced Operators",
+      "Recommended Tool Stack for Beginners",
+      "Conclusion",
+    ],
+  },
 ];
 
 export function getArticleContent(slug: string): React.ReactNode | null {
