@@ -1190,7 +1190,7 @@ function ArticleHoloVsPictory() {
         </p>
         <ToolCTA href={LINKS.holo} label="Try Now" />
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          Want a deeper look? Read my <Link to="/blog/holo-ai-review" className="text-brand hover:underline">full Holo AI review</Link> after testing it for 7 days.
+          Want a deeper look? Read my <Link to="/holo-ai-review" className="text-brand hover:underline">full Holo AI review</Link> after testing it for 7 days.
         </p>
       </section>
 
@@ -1334,7 +1334,7 @@ function ArticleHoloReview() {
         </p>
         <ToolCTA href={LINKS.holo} label="Start Creating Videos" />
         <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-          Not sure if Holo AI is right for you? <Link to="/blog/holo-ai-vs-pictory" className="text-brand hover:underline">See how it compares to Pictory</Link> or check my <Link to="/blog/best-ai-video-tools" className="text-brand hover:underline">full list of AI video tools</Link> for more options.
+          Not sure if Holo AI is right for you? <Link to="/holo-ai-vs-pictory" className="text-brand hover:underline">See how it compares to Pictory</Link> or check my <Link to="/best-ai-video-tools" className="text-brand hover:underline">full list of AI video tools</Link> for more options.
         </p>
       </section>
 
@@ -1534,7 +1534,7 @@ function ArticleBestAIVideoTools() {
         <p className="mt-3 text-sm italic text-muted-foreground">"This one felt faster than anything else I tested."</p>
         <ToolCTA href={LINKS.holo} label="Try Now" />
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          Want a detailed breakdown? Read my <Link to="/blog/holo-ai-review" className="text-brand hover:underline">full Holo AI review</Link> or see the <Link to="/blog/holo-ai-vs-pictory" className="text-brand hover:underline">direct comparison with Pictory</Link>.
+          Want a detailed breakdown? Read my <Link to="/holo-ai-review" className="text-brand hover:underline">full Holo AI review</Link> or see the <Link to="/holo-ai-vs-pictory" className="text-brand hover:underline">direct comparison with Pictory</Link>.
         </p>
       </section>
 
