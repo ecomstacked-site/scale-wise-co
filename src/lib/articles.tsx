@@ -5448,7 +5448,7 @@ function ArticleBestTikTokAdSpyTools() {
           <li><strong className="text-foreground">Launch a different angle:</strong> use the research to build a better hook, not a lazy clone.</li>
         </ol>
         <ArticleFigure
-          src="/images/tiktok-tools/workflow.webp"
+          src="/images/product-research-workflow.png"
           alt="TikTok product research workflow diagram"
           caption="A simple workflow for validating products before launching tests."
         />
