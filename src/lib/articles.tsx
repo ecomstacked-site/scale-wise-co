@@ -5077,11 +5077,17 @@ function ArticleBestTikTokAdSpyTools() {
       <p className="text-sm font-semibold text-foreground">Stop building product tests from guesses.</p>
       <p className="mt-2 text-sm leading-relaxed text-muted-foreground">Use real TikTok ad signals to shortlist products with momentum before the window closes.</p>
       <div className="mt-4 flex justify-center">
-        <Button asChild variant="brand" className="gap-1.5">
-          <Link to="/tools/winninghunter">{label} <ArrowUpRight className="h-4 w-4" /></Link>
-        </Button>
+        <a href="#" className="inline-block rounded-xl bg-blue-600 px-6 py-3 text-white shadow-lg transition hover:bg-blue-700">
+          {label}
+        </a>
       </div>
     </div>
+  );
+
+  const ToolCta = ({ label = "Start Finding Winning Products" }: { label?: string }) => (
+    <a href="#" className="inline-block rounded-xl bg-blue-600 px-6 py-3 text-white shadow-lg transition hover:bg-blue-700">
+      {label}
+    </a>
   );
 
   const ArticleFigure = ({ src, alt, caption, compact = false }: { src: string; alt: string; caption: string; compact?: boolean }) => (
