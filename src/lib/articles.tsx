@@ -5090,9 +5090,21 @@ function ArticleBestTikTokAdSpyTools() {
     </a>
   );
 
-  const ArticleFigure = ({ src, alt, caption, compact = false }: { src: string; alt: string; caption: string; compact?: boolean }) => (
-    <figure className={compact ? "my-5 max-w-xl" : "my-7"}>
-      <img src={src} alt={alt} loading="lazy" className="my-6 block w-full rounded-xl shadow-lg" />
+  const ArticleFigure = ({
+    src,
+    alt,
+    caption,
+    size = "full",
+    loading = "lazy",
+  }: {
+    src: string;
+    alt: string;
+    caption: string;
+    size?: "full" | "dashboard" | "comments" | "workflow";
+    loading?: "eager" | "lazy";
+  }) => (
+    <figure className={`my-8 ${size === "dashboard" ? "mx-auto max-w-[1100px]" : size === "comments" ? "mx-auto max-w-[700px]" : size === "workflow" ? "mx-auto max-w-[850px]" : ""}`}>
+      <img src={src} alt={alt} loading={loading} className="my-6 block w-full rounded-2xl shadow-lg" />
       <figcaption className="mt-2 text-center text-xs leading-relaxed text-muted-foreground">{caption}</figcaption>
     </figure>
   );
@@ -5107,14 +5119,15 @@ function ArticleBestTikTokAdSpyTools() {
         <p className="text-sm leading-relaxed text-muted-foreground">
           If you are still guessing products, you are already behind. You are not losing because TikTok ads are impossible. You are losing because you discover products too late, test random angles, and let competitors find the winners first.
         </p>
-        <ArticleFigure
-          src="/images/tiktok-ad-spy-tools-overview.png"
-          alt="TikTok Ad Spy Tools Overview"
-          caption="TikTok ad spy tools help ecommerce operators find winning products before they scale."
-        />
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           Most sellers discover products too late. By the time a product looks obvious on your For You Page, the sharp operators have already tested hooks, found buyer objections, and started scaling. Winning ads get copied within days. Speed creates profit windows — and slow research kills them.
         </p>
+        <ArticleFigure
+          src="/images/01-hero-tiktok-ad-spy-tools.webp"
+          alt="TikTok ad spy tools hero banner"
+          caption="TikTok ad spy tools help ecommerce operators find winning products before they scale."
+          loading="eager"
+        />
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           We analyzed 6 leading TikTok ad spy tools based on usability, speed, filters, and validation workflow. This guide compares the best TikTok ad spy tools for Shopify sellers, dropshippers, and ecommerce operators who want to find TikTok winning products before the market gets crowded.
         </p>
@@ -5146,6 +5159,11 @@ function ArticleBestTikTokAdSpyTools() {
 
       <section>
         <h2 className="font-display text-xl font-bold text-foreground">Best TikTok Ad Spy Tools: Comparison Table</h2>
+        <ArticleFigure
+          src="/images/02-comparison-table.webp"
+          alt="Comparison table of the best TikTok ad spy tools"
+          caption="Compare TikTok ad spy tools by price, trial availability, TikTok focus, and ideal use case."
+        />
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">Use this table to match each ecommerce ad spy software option to the job it handles best.</p>
         <div className="mt-5 overflow-x-auto rounded-xl border border-border">
           <table className="w-full min-w-[760px] text-left text-sm">
@@ -5179,11 +5197,6 @@ function ArticleBestTikTokAdSpyTools() {
             Use WinningHunter when you want faster TikTok product validation and a clearer path from ad signal to test decision. Use PiPiADS when you need a deep TikTok ad database. Use Minea when you want cross-platform creative research. Use AdSpy for Meta depth, BigSpy for broad budget research, and Dropispy when you need a simpler entry-level option.
           </p>
         </div>
-        <ArticleFigure
-          src="/images/tool-selection-guide.png"
-          alt="How to choose the best TikTok ad spy tool"
-          caption="Different TikTok ad spy tools serve different research needs depending on your workflow."
-        />
       </section>
 
       <section className="rounded-xl border border-brand/30 bg-brand/5 p-6">
