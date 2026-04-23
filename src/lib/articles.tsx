@@ -5077,11 +5077,17 @@ function ArticleBestTikTokAdSpyTools() {
       <p className="text-sm font-semibold text-foreground">Stop building product tests from guesses.</p>
       <p className="mt-2 text-sm leading-relaxed text-muted-foreground">Use real TikTok ad signals to shortlist products with momentum before the window closes.</p>
       <div className="mt-4 flex justify-center">
-        <Button asChild variant="brand" className="gap-1.5">
-          <Link to="/tools/winninghunter">{label} <ArrowUpRight className="h-4 w-4" /></Link>
-        </Button>
+        <a href="#" className="inline-block rounded-xl bg-brand px-6 py-3 text-primary-foreground shadow-lg transition hover:bg-brand/90">
+          {label}
+        </a>
       </div>
     </div>
+  );
+
+  const ToolCta = ({ label = "Start Finding Winning Products" }: { label?: string }) => (
+    <a href="#" className="inline-block rounded-xl bg-brand px-6 py-3 text-primary-foreground shadow-lg transition hover:bg-brand/90">
+      {label}
+    </a>
   );
 
   const ArticleFigure = ({ src, alt, caption, compact = false }: { src: string; alt: string; caption: string; compact?: boolean }) => (
@@ -5115,6 +5121,9 @@ function ArticleBestTikTokAdSpyTools() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           For broader ecommerce research, see our guide to the <Link to="/best-product-research-tools-for-shopify" className="font-semibold text-brand underline">best product research tools</Link>. If you want the tactical process behind spying ads, read our <Link to="/blog/how-to-spy-tiktok-ads-for-dropshipping" className="font-semibold text-brand underline">TikTok product research guide</Link>.
         </p>
+        <div className="mt-5">
+          <ToolCta label="Start Finding Winning Products" />
+        </div>
       </section>
 
       <CtaBlock label="Start Finding Winning TikTok Ads Today" />
@@ -5228,6 +5237,9 @@ function ArticleBestTikTokAdSpyTools() {
         <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
           Who should use it: ecommerce operators, dropshippers, and media buyers who need faster research, better product selection, and a higher-quality testing list.
         </p>
+        <div className="mt-5">
+          <ToolCta />
+        </div>
       </section>
 
       <CtaBlock label="Try WinningHunter Now" />
@@ -5250,6 +5262,9 @@ function ArticleBestTikTokAdSpyTools() {
           <li><strong className="text-foreground">Cons:</strong> can feel heavy for beginners; depth does not automatically equal better decisions.</li>
           <li><strong className="text-foreground">Who should use it:</strong> sellers focused heavily on TikTok ad research and creative mining.</li>
         </ul>
+        <div className="mt-5">
+          <ToolCta />
+        </div>
       </section>
 
       <section>
@@ -5270,6 +5285,9 @@ function ArticleBestTikTokAdSpyTools() {
           <li><strong className="text-foreground">Cons:</strong> less focused if your only goal is fast TikTok product validation.</li>
           <li><strong className="text-foreground">Who should use it:</strong> sellers and creative teams that need a wide view of ads across platforms.</li>
         </ul>
+        <div className="mt-5">
+          <ToolCta />
+        </div>
       </section>
 
       <section>
@@ -5290,6 +5308,9 @@ function ArticleBestTikTokAdSpyTools() {
           <li><strong className="text-foreground">Cons:</strong> not ideal as a pure TikTok ad spy tool; less beginner-friendly.</li>
           <li><strong className="text-foreground">Who should use it:</strong> advanced advertisers who want Meta depth alongside TikTok research.</li>
         </ul>
+        <div className="mt-5">
+          <ToolCta />
+        </div>
       </section>
 
       <CtaBlock label="See What Competitors Are Scaling" />
@@ -5312,6 +5333,9 @@ function ArticleBestTikTokAdSpyTools() {
           <li><strong className="text-foreground">Cons:</strong> can be noisy; not as focused for fast TikTok product decisions.</li>
           <li><strong className="text-foreground">Who should use it:</strong> sellers who want broad ad research without premium specialization.</li>
         </ul>
+        <div className="mt-5">
+          <ToolCta />
+        </div>
       </section>
 
       <section>
@@ -5332,6 +5356,9 @@ function ArticleBestTikTokAdSpyTools() {
           <li><strong className="text-foreground">Cons:</strong> less powerful for deep TikTok analysis and fast product validation.</li>
           <li><strong className="text-foreground">Who should use it:</strong> budget-conscious beginners who need a starting point.</li>
         </ul>
+        <div className="mt-5">
+          <ToolCta />
+        </div>
       </section>
 
       <section>
@@ -5485,6 +5512,13 @@ function ArticleBestTikTokAdSpyTools() {
           alt="Scaling winning TikTok products"
           caption="Winning products scale fast — the earlier you identify them, the better your results."
         />
+        <div className="mt-5 rounded-xl border border-border bg-card p-5 text-center">
+          <h3 className="font-display text-lg font-bold text-foreground">Ready to stop guessing and start validating?</h3>
+          <p className="mt-2 text-sm leading-relaxed text-muted-foreground">Use real ad momentum, buyer intent, and competitor signals to build a smarter product shortlist before the market gets crowded.</p>
+          <div className="mt-4">
+            <ToolCta label="Start Finding Winning Products" />
+          </div>
+        </div>
         <CtaBlock label="Stop Guessing Products" />
       </section>
     </div>
