@@ -5234,6 +5234,9 @@ function ArticleBestTikTokAdSpyTools() {
         <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
           Who should use it: ecommerce operators, dropshippers, and media buyers who need faster research, better product selection, and a higher-quality testing list.
         </p>
+        <div className="mt-5">
+          <ToolCta />
+        </div>
       </section>
 
       <CtaBlock label="Try WinningHunter Now" />
@@ -5256,6 +5259,9 @@ function ArticleBestTikTokAdSpyTools() {
           <li><strong className="text-foreground">Cons:</strong> can feel heavy for beginners; depth does not automatically equal better decisions.</li>
           <li><strong className="text-foreground">Who should use it:</strong> sellers focused heavily on TikTok ad research and creative mining.</li>
         </ul>
+        <div className="mt-5">
+          <ToolCta />
+        </div>
       </section>
 
       <section>
@@ -5276,6 +5282,9 @@ function ArticleBestTikTokAdSpyTools() {
           <li><strong className="text-foreground">Cons:</strong> less focused if your only goal is fast TikTok product validation.</li>
           <li><strong className="text-foreground">Who should use it:</strong> sellers and creative teams that need a wide view of ads across platforms.</li>
         </ul>
+        <div className="mt-5">
+          <ToolCta />
+        </div>
       </section>
 
       <section>
