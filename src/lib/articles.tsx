@@ -5183,10 +5183,11 @@ function ArticleBestTikTokAdSpyTools() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           WinningHunter is the strongest pick because it focuses on the outcome that matters: faster product decisions. It helps connect real ads, real engagement, product discovery, and competitor behavior so you can stop treating TikTok dropshipping products like lottery tickets.
         </p>
-        <figure>
-          <img src="/images/tools/winninghunter.png" alt="WinningHunter TikTok Ad Spy Tool Dashboard" loading="lazy" />
-          <figcaption>WinningHunter dashboard showing active TikTok ads and product validation signals.</figcaption>
-        </figure>
+        <ArticleFigure
+          src="/images/tiktok-tools/winninghunter-dashboard.webp"
+          alt="WinningHunter TikTok Ad Spy Tool Dashboard"
+          caption="WinningHunter dashboard showing active TikTok ads and product validation signals."
+        />
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           The speed advantage is the point. Winning ads move fast. Manual research misses early trends because you only see what the algorithm decides to show you. By the time you find a product manually, it may already be saturated, copied, and pushed by sellers with better creative testing systems.
         </p>
@@ -5238,7 +5239,7 @@ function ArticleBestTikTokAdSpyTools() {
           PiPiADS is a TikTok-focused ad intelligence platform with deep creative research capabilities. It is useful when TikTok is your primary channel and you want to dig into large volumes of ads, advertisers, and creative patterns.
         </p>
         <ArticleFigure
-          src="/images/tools/pipiads.png"
+          src="/images/tiktok-tools/pipiads-dashboard.webp"
           alt="PiPiADS TikTok Ad Spy Tool Interface"
           caption="PiPiADS interface for deep TikTok ad research and creative pattern analysis."
         />
@@ -5258,7 +5259,7 @@ function ArticleBestTikTokAdSpyTools() {
           Minea is built for broader creative research across TikTok, Meta, and other channels. It is helpful when you want to compare how similar products are positioned across multiple platforms instead of only studying TikTok.
         </p>
         <ArticleFigure
-          src="/images/tools/minea.png"
+          src="/images/tiktok-tools/minea-dashboard.webp"
           alt="Minea Ad Spy Dashboard"
           caption="Minea dashboard for multi-platform ad research and product discovery."
         />
