@@ -5,23 +5,23 @@ import { Link } from "react-router-dom";
 // All affiliate destinations route through internal /go/[brand]
 // transition pages so we never link directly to an affiliate URL.
 const LINKS = {
-  trendtrack: "/go/trendtrack",
+  trendtrack: "https://trendtrack.io?fpr=stacked45",
   wetracked: "/go/wetracked",
-  holo: "/go/holo-ai",
+  holo: "https://tryholo.ai/?utm_medium=affiliate&utm_source=4988344&utm_campaign=41932&im_ref=VR4UEcxOMxyZW1iwCnQUZz87Uku1QdzxZTtOR00&utm_ad_id=3273895&irgwc=1&afsrc=1",
   manychat: "/go/manychat",
   evebee: "/go/everbee",
   easyship: "/go/easyship",
   systeme: "/go/systeme",
   gohighlevel: "/go/gohighlevel",
   weshop: "/go/weshop-ai",
-  pictory: "/go/pictory",
+  pictory: "https://pictory.ai?ref=ecomstacked",
   winninghunter: "/go/winninghunter",
 };
 
 function ToolCTA({ href, label = "Visit Official Website" }: { href: string; label?: string }) {
   return (
     <div className="my-6">
-      <a href={href} rel="noopener noreferrer nofollow">
+      <a href={href} rel="sponsored noopener noreferrer nofollow">
         <Button variant="brand" size="sm" className="gap-1.5">
           {label} <ArrowUpRight className="h-3.5 w-3.5" />
         </Button>
