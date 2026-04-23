@@ -5305,6 +5305,9 @@ function ArticleBestTikTokAdSpyTools() {
           <li><strong className="text-foreground">Cons:</strong> not ideal as a pure TikTok ad spy tool; less beginner-friendly.</li>
           <li><strong className="text-foreground">Who should use it:</strong> advanced advertisers who want Meta depth alongside TikTok research.</li>
         </ul>
+        <div className="mt-5">
+          <ToolCta />
+        </div>
       </section>
 
       <CtaBlock label="See What Competitors Are Scaling" />
@@ -5327,6 +5330,9 @@ function ArticleBestTikTokAdSpyTools() {
           <li><strong className="text-foreground">Cons:</strong> can be noisy; not as focused for fast TikTok product decisions.</li>
           <li><strong className="text-foreground">Who should use it:</strong> sellers who want broad ad research without premium specialization.</li>
         </ul>
+        <div className="mt-5">
+          <ToolCta />
+        </div>
       </section>
 
       <section>
@@ -5347,6 +5353,9 @@ function ArticleBestTikTokAdSpyTools() {
           <li><strong className="text-foreground">Cons:</strong> less powerful for deep TikTok analysis and fast product validation.</li>
           <li><strong className="text-foreground">Who should use it:</strong> budget-conscious beginners who need a starting point.</li>
         </ul>
+        <div className="mt-5">
+          <ToolCta />
+        </div>
       </section>
 
       <section>
