@@ -8,12 +8,13 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft, Clock, User } from "lucide-react";
 import { articlesMeta, getArticleContent } from "@/lib/articles";
 
-export default function BlogPostPage() {
+export default function BlogPostPage({ slugOverride }: { slugOverride?: string }) {
   const { slug = "" } = useParams<{ slug: string }>();
-  const article = articlesMeta.find((a) => a.slug === slug);
-  const content = getArticleContent(slug);
+  const activeSlug = slugOverride ?? slug;
+  const article = articlesMeta.find((a) => a.slug === activeSlug);
+  const content = getArticleContent(activeSlug);
 
-  const title = article?.title ?? slug.replace(/-/g, " ").replace(/\b\w/g, (l: string) => l.toUpperCase());
+  const title = article?.title ?? activeSlug.replace(/-/g, " ").replace(/\b\w/g, (l: string) => l.toUpperCase());
   const readTime = article?.readTime ?? "8 min read";
   const date = article?.date ?? "April 2026";
   const category = article?.category ?? "Guide";
