@@ -1127,6 +1127,7 @@ function ArticleHoloVsPictory() {
         <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
           Here's what I found.
         </p>
+        <ToolCTA href={LINKS.holo} label="Start Creating Videos" />
       </section>
 
       <section>
@@ -1173,6 +1174,7 @@ function ArticleHoloVsPictory() {
         <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
           If you just want to create videos quickly without overthinking, Holo AI feels easier to start with.
         </p>
+        <ToolCTA href={LINKS.holo} label="Try Now" />
       </section>
 
       <section>
@@ -1186,7 +1188,7 @@ function ArticleHoloVsPictory() {
           It's aimed at ecommerce sellers, dropshippers, and anyone running paid traffic who needs creatives
           quickly without hiring an editor.
         </p>
-        <ToolCTA href={LINKS.holo} label="If you want to check it yourself — see Holo AI here" />
+        <ToolCTA href={LINKS.holo} label="Try Now" />
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           Want a deeper look? Read my <Link to="/blog/holo-ai-review" className="text-brand hover:underline">full Holo AI review</Link> after testing it for 7 days.
         </p>
@@ -1203,7 +1205,7 @@ function ArticleHoloVsPictory() {
           It's a better fit for content marketers, course creators, or anyone who wants more polish and
           doesn't mind spending extra time in the editor.
         </p>
-        <ToolCTA href={LINKS.pictory} label="Explore Pictory's features" />
+        <ToolCTA href={LINKS.pictory} label="See Pricing" />
       </section>
 
       <section>
@@ -1264,7 +1266,7 @@ function ArticleHoloVsPictory() {
           If you're testing multiple tools, I'd recommend starting with the simpler one first.
         </p>
 
-        <ToolCTA href={LINKS.holo} label="This is what I used for quick ads — check Holo AI here" />
+        <ToolCTA href={LINKS.holo} label="Get Started" />
       </section>
 
       <section>
@@ -1299,12 +1301,12 @@ function ArticleHoloVsPictory() {
         <div className="mt-6 flex flex-col gap-3 sm:flex-row">
           <a href={LINKS.holo} rel="noopener noreferrer nofollow">
             <Button variant="brand" size="sm" className="gap-1.5">
-              Visit Holo AI <ArrowUpRight className="h-3.5 w-3.5" />
+              Get Started <ArrowUpRight className="h-3.5 w-3.5" />
             </Button>
           </a>
           <a href={LINKS.pictory} rel="noopener noreferrer nofollow">
             <Button variant="secondary" size="sm" className="gap-1.5">
-              Explore Pictory <ArrowUpRight className="h-3.5 w-3.5" />
+              See Pricing <ArrowUpRight className="h-3.5 w-3.5" />
             </Button>
           </a>
         </div>
