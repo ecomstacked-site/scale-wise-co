@@ -5392,18 +5392,13 @@ function ArticleBestTikTokAdSpyTools() {
           <li><strong className="text-foreground">High engagement plus buyer intent:</strong> comments like “link?”, “price?”, “where can I buy?”, and “ship to USA?” matter more than empty likes.</li>
           <li><strong className="text-foreground">Same product across accounts:</strong> multiple sellers pushing the same product can validate demand, but it can also warn you that saturation is coming fast.</li>
         </ul>
-        <ArticleFigure
-          src="/images/winning-ad-checklist.png"
-          alt="How to identify winning TikTok ads signals"
-          caption="Key signals that indicate a TikTok ad has real commercial potential."
-        />
         <div className="mt-5 rounded-xl border border-border bg-card p-5">
           <h3 className="font-display text-base font-bold text-foreground">Mini case study</h3>
           <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
             We identified 3 products using signals like 7+ day active ads, repeated creatives, and buyer-intent comments. The strongest candidates were not the flashiest videos. They were the ads where buyers asked “link?”, “price?”, “where can I buy?”, and “ship to USA?” while multiple accounts kept pushing similar demos.
           </p>
           <ArticleFigure
-            src="/images/buyer-comments-proof.png"
+            src="/images/tiktok-tools/comments-proof.webp"
             alt="TikTok buyer intent comments proof"
             caption="Buyer intent comments such as “link?”, “price?”, and “where can I buy?” indicate real demand."
           />
@@ -5457,7 +5452,7 @@ function ArticleBestTikTokAdSpyTools() {
           <li><strong className="text-foreground">Launch a different angle:</strong> use the research to build a better hook, not a lazy clone.</li>
         </ol>
         <ArticleFigure
-          src="/images/product-research-workflow.png"
+          src="/images/tiktok-tools/workflow.webp"
           alt="TikTok product research workflow diagram"
           caption="A simple workflow for validating products before launching tests."
         />
@@ -5490,7 +5485,7 @@ function ArticleBestTikTokAdSpyTools() {
           Winning products do not stay hidden. The sooner you see them, the higher your chance of profit. If you are guessing products, you are already late — and the sellers using better research workflows are not waiting for you to catch up.
         </p>
         <ArticleFigure
-          src="/images/scaling-products.png"
+          src="/images/tiktok-tools/final-cta.webp"
           alt="Scaling winning TikTok products"
           caption="Winning products scale fast — the earlier you identify them, the better your results."
         />
