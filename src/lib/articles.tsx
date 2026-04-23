@@ -1494,6 +1494,7 @@ function ArticleBestAIVideoTools() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           I tested several AI video tools to see which ones are actually worth using. Here's what I found after spending real time with each one.
         </p>
+        <ToolCTA href={LINKS.holo} label="Start Creating Videos" />
       </section>
 
       <section>
@@ -1508,6 +1509,7 @@ function ArticleBestAIVideoTools() {
           <li><strong className="text-foreground">Best for AI avatars:</strong> Synthesia — ideal for training videos and presentations</li>
           <li><strong className="text-foreground">Best all-around tool:</strong> InVideo — good balance of features and ease of use</li>
         </ul>
+        <ToolCTA href={LINKS.holo} label="Try Now" />
       </section>
 
       <section>
@@ -1530,7 +1532,7 @@ function ArticleBestAIVideoTools() {
           <li>• Great for testing multiple ad variations quickly</li>
         </ul>
         <p className="mt-3 text-sm italic text-muted-foreground">"This one felt faster than anything else I tested."</p>
-        <ToolCTA href={LINKS.holo} label="If you want to try it, check Holo AI here" />
+        <ToolCTA href={LINKS.holo} label="Try Now" />
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           Want a detailed breakdown? Read my <Link to="/blog/holo-ai-review" className="text-brand hover:underline">full Holo AI review</Link> or see the <Link to="/blog/holo-ai-vs-pictory" className="text-brand hover:underline">direct comparison with Pictory</Link>.
         </p>
@@ -1553,7 +1555,7 @@ function ArticleBestAIVideoTools() {
           <li>• Works well for longer content formats</li>
         </ul>
         <p className="mt-3 text-sm italic text-muted-foreground">"It takes a bit more time, but the output feels more polished for longer videos."</p>
-        <ToolCTA href={LINKS.pictory} label="Explore Pictory" />
+        <ToolCTA href={LINKS.pictory} label="See Pricing" />
       </section>
 
       <section>
@@ -1597,7 +1599,7 @@ function ArticleBestAIVideoTools() {
       <p className="text-sm leading-relaxed text-muted-foreground">
         If you're still deciding and want to start with something simple, you can check Holo AI here — it's the quickest way to see if AI video works for your workflow.
       </p>
-      <ToolCTA href={LINKS.holo} label="You can check Holo AI here" />
+      <ToolCTA href={LINKS.holo} label="Get Started" />
 
       <section>
         <h2 className="font-display text-xl font-bold text-foreground">5. InVideo</h2>
@@ -1638,7 +1640,7 @@ function ArticleBestAIVideoTools() {
         <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
           My recommendation? If you're not sure where to start, go with the simplest option first and see if it fits your workflow. You can always upgrade later.
         </p>
-        <ToolCTA href={LINKS.holo} label="Start with Holo AI here" />
+        <ToolCTA href={LINKS.holo} label="Get Started" />
       </section>
     </div>
   );
