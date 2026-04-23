@@ -5086,7 +5086,7 @@ function ArticleBestTikTokAdSpyTools() {
 
   const ArticleFigure = ({ src, alt, caption, compact = false }: { src: string; alt: string; caption: string; compact?: boolean }) => (
     <figure className={compact ? "my-5 max-w-xl" : "my-7"}>
-      <img src={src} alt={alt} loading="lazy" className="w-full rounded-xl border border-border bg-card shadow-sm" />
+      <img src={src} alt={alt} loading="lazy" className="block w-full rounded-xl border border-border bg-card shadow-md" />
       <figcaption className="mt-2 text-center text-xs leading-relaxed text-muted-foreground">{caption}</figcaption>
     </figure>
   );
@@ -5096,6 +5096,12 @@ function ArticleBestTikTokAdSpyTools() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }} />
+
+      <ArticleFigure
+        src="/images/tiktok-tools/hero-tiktok-tools.webp"
+        alt="TikTok ad spy tools overview for ecommerce product research"
+        caption="TikTok ad spy tools help ecommerce operators find winning products before they scale." 
+      />
 
       <section>
         <p className="text-sm leading-relaxed text-muted-foreground">
@@ -5113,12 +5119,6 @@ function ArticleBestTikTokAdSpyTools() {
       </section>
 
       <CtaBlock label="Start Finding Winning TikTok Ads Today" />
-
-      <ArticleFigure
-        src="/images/tiktok-ad-spy-hero.png"
-        alt="TikTok ad spy tools for finding winning products"
-        caption="Overview of TikTok ad spy tools used to find winning products before they scale."
-      />
 
       <section>
         <h2 className="font-display text-xl font-bold text-foreground">Why TikTok Ad Spy Tools Matter</h2>
