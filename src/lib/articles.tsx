@@ -1339,7 +1339,7 @@ function ArticleHoloReview() {
           This Holo AI review is written for ecommerce founders, media buyers, and operators who need more AI video ads without turning every new product test into a slow creative project. The question is not whether AI can make a nice-looking asset. The real question is whether an ad creative tool can help you create enough variations to test hooks, offers, formats, and product angles before your budget gets wasted on one or two guesses.
         </p>
         <ToolCTA href={LINKS.holo} label="Create Your First Ad in Minutes" />
-        <ArticleImage src="/public/images/holo-dashboard.jpg" alt="Holo AI dashboard generating ecommerce video ads" priority />
+        <ArticleImage src="/images/holo-dashboard.jpg" alt="Holo AI dashboard generating ecommerce video ads" priority />
       </section>
 
       <section>
