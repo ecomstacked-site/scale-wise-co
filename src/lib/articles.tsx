@@ -5278,10 +5278,9 @@ function ArticleBestTikTokAdSpyTools() {
           AdSpy is known for Facebook and Instagram ad research. It is not the cleanest TikTok-first choice, but it can be valuable for understanding proven direct-response angles that may be adapted into short-form video campaigns.
         </p>
         <ArticleFigure
-          src="/images/tools/adspy.png"
-          alt="AdSpy ad intelligence tool"
+          src="/images/adspy-interface.png"
+          alt="AdSpy interface for Facebook and Instagram ads"
           caption="AdSpy supports deeper Meta ad research when you need proven direct-response angles."
-          compact
         />
         <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-relaxed text-muted-foreground">
           <li><strong className="text-foreground">What it is:</strong> a large Facebook and Instagram ad database.</li>
@@ -5301,10 +5300,9 @@ function ArticleBestTikTokAdSpyTools() {
           BigSpy offers broad ad intelligence across multiple networks. It can be useful for budget-conscious researchers who want a wide database, though the tradeoff is that broad coverage can create more noise.
         </p>
         <ArticleFigure
-          src="/images/tools/bigspy.png"
-          alt="BigSpy ad intelligence platform"
+          src="/images/bigspy-platform.png"
+          alt="BigSpy platform showing trending ads"
           caption="BigSpy gives broad ad intelligence coverage for early-stage market scanning."
-          compact
         />
         <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-relaxed text-muted-foreground">
           <li><strong className="text-foreground">What it is:</strong> a broad ad spy platform covering multiple ad networks.</li>
@@ -5322,10 +5320,9 @@ function ArticleBestTikTokAdSpyTools() {
           Dropispy is a practical ad spy tool for sellers who want a simpler, budget-friendly way to study ads and build research habits. It is more useful for learning the market than for advanced TikTok-first validation.
         </p>
         <ArticleFigure
-          src="/images/tools/dropispy.png"
-          alt="Dropispy ad spy tool interface"
+          src="/images/dropispy-interface.png"
+          alt="Dropispy ad research tool interface"
           caption="Dropispy offers a lighter ad spy workflow for budget-conscious beginners."
-          compact
         />
         <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-relaxed text-muted-foreground">
           <li><strong className="text-foreground">What it is:</strong> an ad spy tool with a more accessible price position.</li>
@@ -5397,7 +5394,7 @@ function ArticleBestTikTokAdSpyTools() {
             We identified 3 products using signals like 7+ day active ads, repeated creatives, and buyer-intent comments. The strongest candidates were not the flashiest videos. They were the ads where buyers asked “link?”, “price?”, “where can I buy?”, and “ship to USA?” while multiple accounts kept pushing similar demos.
           </p>
           <ArticleFigure
-            src="/images/tiktok-tools/comments-proof.webp"
+            src="/images/buyer-intent-comments.png"
             alt="TikTok buyer intent comments proof"
             caption="Buyer intent comments such as “link?”, “price?”, and “where can I buy?” indicate real demand."
           />
