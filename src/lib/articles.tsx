@@ -39,6 +39,19 @@ function ProTip({ children }: { children: React.ReactNode }) {
   );
 }
 
+function ArticleImage({ src, alt, priority = false }: { src: string; alt: string; priority?: boolean }) {
+  return (
+    <figure className="my-8 overflow-hidden rounded-2xl border border-border bg-card shadow-lg shadow-brand/5">
+      <img
+        src={src}
+        alt={alt}
+        loading={priority ? "eager" : "lazy"}
+        className="h-auto w-full object-contain"
+      />
+    </figure>
+  );
+}
+
 export interface ArticleMeta {
   title: string;
   excerpt: string;
@@ -363,15 +376,15 @@ export const articlesMeta: ArticleMeta[] = [
     toc: ["Quick Comparison", "Holo AI Overview", "Pictory Overview", "Side-by-Side Comparison", "My Real Experience", "Which One Should You Choose"],
   },
   {
-    title: "Holo AI Review 2026: I Tested It for 7 Days (Real Results)",
-    excerpt: "I spent a full week testing Holo AI for ecommerce ad creatives. Here's what actually happened — the good, the bad, and whether it's worth your time.",
+    title: "Most Ecommerce Ads Fail Because You Don’t Test Enough Creatives",
+    excerpt: "Holo AI review for ecommerce brands: how it helps generate AI video ads, image creatives, copy variations, and faster ad testing workflows.",
     category: "AI Tools",
     date: "April 16, 2026",
     readTime: "8 min read",
     slug: "holo-ai-review",
     featured: false,
-    image: "/assets/blog/holo-ai-review.jpg",
-    toc: ["The Problem With Video Ads", "What Is Holo AI", "My 7-Day Test", "Pros and Cons", "Should You Try It", "Final Verdict"],
+    image: "/images/holo-dashboard.jpg",
+    toc: [],
   },
   {
     title: "Best AI Tools for Dropshipping in 2026",
@@ -1319,162 +1332,174 @@ function ArticleHoloReview() {
   return (
     <div className="space-y-8">
       <section>
-        <h2 className="font-display text-xl font-bold text-foreground">The Problem With Video Ads</h2>
+        <p className="text-lg leading-relaxed text-foreground sm:text-xl">
+          I tested Holo AI to see if it can generate ad creatives fast enough to fix this.
+        </p>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          This Holo AI review is written for ecommerce founders, media buyers, and operators who need more AI video ads without turning every new product test into a slow creative project. The question is not whether AI can make a nice-looking asset. The real question is whether an ad creative tool can help you create enough variations to test hooks, offers, formats, and product angles before your budget gets wasted on one or two guesses.
+        </p>
+        <ToolCTA href={LINKS.holo} label="Create Your First Ad in Minutes" />
+        <ArticleImage src="/images/holo-dashboard.jpg" alt="Holo AI review dashboard for ecommerce AI video ads and ad creative tools" priority />
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Intro: The Creative Bottleneck Most Ecommerce Brands Ignore</h2>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          Let me be honest. Making video ads for ecommerce products is one of the most painful parts of running a store. You either spend hours learning editing software, or you pay a freelancer $200–$500 per video and wait days for revisions.
+          Most ecommerce ads do not fail because the product is automatically bad. They fail because the brand never tests enough creative angles to find the version buyers actually respond to. One video talks about convenience. Another leads with price. Another shows the product in a real use case. Another opens with a problem the buyer already feels. Until you test those angles, you are guessing.
         </p>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          I've tried both. The DIY route eats your entire day. The freelancer route eats your budget. And most of the "AI video tools" I've tested over the past year? Honestly disappointing. Generic outputs, weird transitions, robotic voiceovers.
+          The problem is that creative production is slow. A simple product video can take days when you depend on freelancers, and every revision adds more waiting. If you hire a good editor, the output may be better, but the cost can make volume testing unrealistic for smaller stores. If you do it yourself, you lose hours inside editing software instead of working on offers, landing pages, and customer acquisition.
         </p>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          So when I kept seeing Holo AI mentioned in ecommerce groups, I was skeptical. But I decided to give it a real test — not just a 10-minute trial, but a full 7-day run using it for actual ad creatives across two stores.
+          That is the gap Holo AI is trying to fill. Instead of treating every ad like a custom production, it turns product inputs into creative variations you can test faster. For a US buyer running Meta or TikTok campaigns, that speed matters because the winning creative is often discovered after testing several imperfect ideas, not after polishing one asset for a week.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">My Experience: Generating Multiple Creatives From One Product</h2>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          I generated multiple creatives from one product to see whether Holo AI could realistically support a weekly testing workflow. The goal was simple: start with one ecommerce product, create several ad variations, and judge whether the outputs were good enough to put into a real testing queue.
         </p>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          Here's exactly what happened.
+          The first thing I noticed was speed. Instead of building a script, collecting assets, placing text overlays, and exporting different formats manually, Holo AI moved the process into a shorter loop. I could test a direct-response hook, a benefit-led angle, and a simple product-demo style without rebuilding the entire ad from scratch each time.
+        </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          Not every variation was perfect. Some needed a better prompt. Some needed a stronger opening line. But that is normal for ad testing. What mattered was that the tool produced enough usable creative options to move from theory to testing. For a brand that needs volume, that is the difference between having one ad to judge and having several angles to compare.
+        </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          The best use of Holo AI is not replacing strategy. You still need to know the customer, the offer, and the reason someone should care. The advantage is that once you have those inputs, Holo AI helps turn them into ad creative variations faster than a traditional production workflow.
+        </p>
+        <ArticleImage src="/images/holo-variations.jpg" alt="Holo AI creative variations generated from one ecommerce product for ad testing" />
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">What Is Holo AI?</h2>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          Holo AI is an AI-powered ad creative platform built to help ecommerce brands generate video ads, product images, copy angles, and creative variations. In simple terms, it helps you turn product information into testable ad assets without starting from a blank canvas every time.
+        </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          The core benefit is speed. If your ad account needs fresh creative every week, you can use Holo AI to produce more ideas in less time. That makes it different from general design tools. It is not just a place to make something look nice; it is positioned as an ad creative tool for performance testing.
+        </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          For ecommerce teams, the practical value is clear. You can create assets for TikTok, Meta, product pages, email promotions, and organic social posts from the same product information. That does not mean every output should be published untouched, but it does mean you can get from idea to draft much faster.
+        </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          If you are comparing ad creative tools, Holo AI makes the most sense when you care about short-form product creatives, direct-response angles, and fast testing volume. For long educational videos or corporate content, a different tool may fit better. For ecommerce ad testing, Holo AI is much closer to the actual workflow buyers need.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Key Features</h2>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          The strongest parts of Holo AI are the features that reduce production friction. Instead of giving you a generic editor and expecting you to do all the thinking, the tool is designed around producing ad-ready creative options from product inputs.
+        </p>
+        <ul className="mt-4 space-y-2">
+          {[
+            "AI video ads for ecommerce products, including short-form creatives for Meta and TikTok testing.",
+            "Product image generation for turning basic product assets into more polished creative concepts.",
+            "Ad copy variations that help test different hooks, benefits, and calls to action.",
+            "Creative angle testing so you can compare multiple ways to position the same product.",
+            "A faster workflow for operators who need usable output without advanced editing skills.",
+          ].map((item) => (
+            <li key={item} className="flex items-start gap-2 text-sm text-foreground">
+              <div className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
+              {item}
+            </li>
+          ))}
+        </ul>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          The important point is that these features support a testing system. A single polished video can still fail. A batch of different AI video ads gives you more data, and data is what helps you decide which hook, format, and product angle deserves more budget.
         </p>
         <ToolCTA href={LINKS.holo} label="Start Creating Videos" />
+        <ArticleImage src="/images/holo-output.jpg" alt="Holo AI output examples for ecommerce AI video ads and image creatives" />
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">How Holo AI Works</h2>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          The Holo AI workflow is straightforward: input, generate, export, and test. That simplicity is part of the appeal. You are not trying to become a video editor. You are trying to create enough quality variations to learn what buyers respond to.
+        </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          <strong className="text-foreground">Input:</strong> Start with your product details, images, benefits, and the angle you want to test. Better inputs usually create better outputs, so do not treat this step as optional. The clearer your product promise, the more useful the creative results become.
+        </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          <strong className="text-foreground">Generate:</strong> Holo AI turns those inputs into creative options. This is where you can test different hooks, visual directions, and ad formats without rebuilding everything manually.
+        </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          <strong className="text-foreground">Export:</strong> Once you have usable variations, export the assets and prepare them for your ad platform or content workflow. The goal is to move quickly from creative idea to campaign-ready asset.
+        </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          <strong className="text-foreground">Test:</strong> Put the creatives into your Meta or TikTok testing structure and let performance data guide the next round. The biggest mistake is judging every ad by personal taste instead of click-through rate, hold rate, conversion rate, and cost per acquisition.
+        </p>
+        <ArticleImage src="/images/holo-workflow.jpg" alt="Holo AI workflow showing input generate export and test process for ad creative tools" />
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Pros &amp; Cons</h2>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          Holo AI is useful, but it is not magic. The honest way to look at it is as a speed and volume tool for ecommerce creative testing. If you expect perfect brand films with no input from you, you will be disappointed. If you need more testable ad variations, the value is much clearer.
+        </p>
+        <div className="mt-4 grid gap-4 sm:grid-cols-2">
+          <div className="rounded-2xl border border-border bg-card p-5 shadow-sm">
+            <h3 className="font-display text-base font-bold text-foreground">Pros</h3>
+            <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
+              <li>• Much faster than briefing and waiting on freelancers</li>
+              <li>• Strong fit for ecommerce ad testing workflows</li>
+              <li>• Helps create more hooks, angles, and formats from one product</li>
+              <li>• Useful for brands that need consistent creative output</li>
+            </ul>
+          </div>
+          <div className="rounded-2xl border border-border bg-card p-5 shadow-sm">
+            <h3 className="font-display text-base font-bold text-foreground">Cons</h3>
+            <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
+              <li>• Outputs still depend heavily on your product inputs and prompts</li>
+              <li>• Not every creative variation will be ready to launch</li>
+              <li>• Not a full replacement for senior creative strategy</li>
+              <li>• Best results require testing and iteration, not one-click publishing</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Best Use Cases for Holo AI</h2>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          The best use case is ecommerce ads. If you are running paid traffic and need more creative volume, Holo AI can help you produce variations fast enough to test more angles in a single week. That matters because ad performance often changes quickly. Yesterday's winner can fatigue, and a new product may need several hooks before one catches.
+        </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          It also fits TikTok and Meta creative production. These platforms reward fast learning, strong hooks, and consistent iteration. Holo AI helps you create the raw material for that process: short videos, product visuals, and copy ideas that can be turned into campaigns.
+        </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          Another strong use case is fast testing before committing to expensive production. If a simple AI-generated version of an angle gets engagement, you can invest more confidently in a higher-production version. If it fails, you saved time and money by learning early.
+        </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          Holo AI is less ideal for brands that need cinematic launch films, complex storytelling, or strict frame-by-frame creative control. For that, you still want an experienced creative team. But for ad testing, offer testing, and short-form product creative, it solves a real bottleneck.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Final Verdict: Is Holo AI Worth It?</h2>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          If you're serious about scaling ads, you need volume. That does not mean flooding your account with random creatives. It means building a steady testing system where new hooks, formats, and product angles are created quickly enough to keep learning. Holo AI is valuable because it helps reduce the creative production delay that stops many ecommerce brands from testing properly.
+        </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          My recommendation is simple: use Holo AI if your current bottleneck is creative output. If you already know your product has demand but you cannot produce enough ad creatives to test, this tool can help. If your offer is unclear, your product page is weak, or you do not understand your buyer, fix those first. Holo AI can accelerate execution, but it cannot replace basic marketing fundamentals.
+        </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          For ecommerce operators, the best reason to try it is not hype. It is speed. More testable creative ideas means more chances to find the message that makes buyers stop, click, and consider the product. In a paid ads environment where creative fatigue is constant, that advantage is worth taking seriously.
+        </p>
         <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-          Not sure if Holo AI is right for you? <Link to="/holo-ai-vs-pictory" className="text-brand hover:underline">See how it compares to Pictory</Link> or check my <Link to="/best-ai-video-tools" className="text-brand hover:underline">full list of AI video tools</Link> for more options.
+          Still comparing options? Read the <Link to="/holo-ai-vs-pictory" className="text-brand hover:underline">Holo AI vs Pictory comparison</Link> or browse the <Link to="/best-ai-video-tools" className="text-brand hover:underline">best AI video tools</Link> guide for more context.
         </p>
       </section>
 
-      <section>
-        <h2 className="font-display text-xl font-bold text-foreground">What Is Holo AI</h2>
+      <section className="rounded-2xl border border-brand/20 bg-brand/5 p-5 sm:p-6">
+        <ArticleImage src="/images/holo-results.jpg" alt="Holo AI results for ecommerce ad creative variations and AI video ads" />
+        <h2 className="font-display text-xl font-bold text-foreground">Start Creating Ad Variations Now</h2>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          Holo AI is an AI-powered creative platform designed for ecommerce. You give it your product details — images, descriptions, selling points — and it generates video ads, image creatives, and ad copy variations.
+          If you already have a product to promote and need more creative angles to test, Holo AI is worth trying. Start with one product, generate several variations, and let real campaign data show you which message deserves more budget.
         </p>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          The pitch is simple: skip the editing, skip the freelancer, get ad-ready creatives in minutes instead of days. It's built specifically for Meta, TikTok, and Google ad formats.
-        </p>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          That's the promise. But does it actually deliver? That's what I wanted to find out.
-        </p>
-      </section>
-
-      <section>
-        <h2 className="font-display text-xl font-bold text-foreground">My 7-Day Test</h2>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          <strong className="text-foreground">Day 1–2: Getting started.</strong> I uploaded product photos from two different stores — one selling fitness accessories, one selling home gadgets. The interface was straightforward. No tutorials needed. I selected "video ad" and let it run.
-        </p>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          The first output surprised me. It wasn't perfect, but it was genuinely usable. Clean transitions, decent pacing, and the text overlays actually made sense. I've seen worse from freelancers who charged $300.
-        </p>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          <strong className="text-foreground">Day 3–4: Testing volume.</strong> This is where it gets interesting. I generated 15 ad variations in about two hours. Different hooks, different formats, different angles. If I had to do this manually or outsource it, we're talking a week of work minimum.
-        </p>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          Not all 15 were winners. Maybe 10 were solid enough to test. But that's still 10 creatives ready to go in a single afternoon. I didn't expect that.
-        </p>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          One thing worth noting — the first video I generated felt a bit generic. The script was fine, but it didn't quite match my brand's tone. I had to tweak the prompt and try again. The second attempt was much closer to what I needed.
-        </p>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          <strong className="text-foreground">Day 5–7: Running the ads.</strong> I pushed the best creatives into two Meta ad sets. Early results were encouraging — the CTR on the AI-generated videos was comparable to my previous best-performing creatives made by a human editor. One of them actually outperformed.
-        </p>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          This part surprised me the most. I expected the AI creatives to be "good enough for testing" but not competitive with polished human work. On at least a few of them, the line was blurry. It's not perfect — but it's definitely usable.
-        </p>
-
-        <ProTip>
-          Don't judge AI-generated creatives by how they look to you. Judge them by how they perform in ads. Some of the creatives I thought were mediocre actually got the best click-through rates.
-        </ProTip>
-        <ToolCTA href={LINKS.holo} label="Try Now" />
-      </section>
-
-      <section>
-        <h2 className="font-display text-xl font-bold text-foreground">Pros and Cons</h2>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          After a full week of use, here's my honest breakdown:
-        </p>
-        <div className="mt-4">
-          <h3 className="font-display text-base font-bold text-foreground">What I liked</h3>
-          <ul className="mt-3 space-y-2">
-            {[
-              "Dead simple to use — no editing skills required, no learning curve",
-              "Fast output — from product photos to finished video in minutes, not days",
-              "Usable quality — most outputs were ready to test without manual editing",
-              "Volume — you can generate dozens of variations quickly, which is critical for ad testing",
-            ].map((item) => (
-              <li key={item} className="flex items-start gap-2 text-sm text-foreground">
-                <div className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
-                {item}
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div className="mt-6">
-          <h3 className="font-display text-base font-bold text-foreground">What could be better</h3>
-          <ul className="mt-3 space-y-2">
-            {[
-              "Not every output is a winner — expect maybe 60–70% usable rate",
-              "Limited fine-tuning — you can't control every detail like timing or specific transitions",
-              "Heavily depends on your input — better product photos and clearer prompts get better results",
-              "Won't replace a top-tier editor for hero brand videos — but that's not really what it's for",
-            ].map((item) => (
-              <li key={item} className="flex items-start gap-2 text-sm text-foreground">
-                <div className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
-                {item}
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
-
-      <section>
-        <h2 className="font-display text-xl font-bold text-foreground">Best Use Cases</h2>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          Based on my week of testing, here's where Holo AI makes the most sense:
-        </p>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          <strong className="text-foreground">Ecommerce ads.</strong> This is the sweet spot. If you're running Meta or TikTok ads and need a constant stream of fresh creatives to test, this saves you serious time and money. Instead of waiting on a freelancer for 3 videos, you can generate 20 variations and let the data decide.
-        </p>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          <strong className="text-foreground">Content creation.</strong> Need quick product videos for social media, email campaigns, or landing pages? Holo AI handles this well. The output quality is more than enough for organic content where you need volume over perfection.
-        </p>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          <strong className="text-foreground">Quick idea testing.</strong> Before you invest $500 in a polished creative, use Holo AI to test whether the concept, hook, or angle resonates with your audience. If the AI version gets traction, then invest in a premium version.
-        </p>
-        <ToolCTA href={LINKS.holo} label="Get Started" />
-      </section>
-
-      <section>
-        <h2 className="font-display text-xl font-bold text-foreground">Who Should Use Holo AI?</h2>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          After using it for a week, here's who I think would get the most value:
-        </p>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          <strong className="text-foreground">Good fit:</strong> Ecommerce store owners running Meta or TikTok ads, content creators who need volume over perfection, and anyone who needs to test ideas quickly without hiring an editor.
-        </p>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          <strong className="text-foreground">Not ideal:</strong> Advanced video editors who want full manual control over every frame, or brands producing hero-level brand films where every detail matters.
-        </p>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          It's a tool for speed and volume — not for replacing creative directors on high-end productions.
-        </p>
-      </section>
-
-      <section>
-        <h2 className="font-display text-xl font-bold text-foreground">Should You Try It</h2>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          Here's my take: if you're an ecommerce operator who needs ad creatives regularly — and you don't have a $2,000/month creative agency on retainer — Holo AI is worth testing.
-        </p>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          It won't make every video look like a Super Bowl commercial. That's not the point. The point is getting usable, testable creatives out the door fast so you can find winners through data instead of gut feeling.
-        </p>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          If you just want fast, usable videos without editing skills, this is worth trying. The time savings alone paid for itself during my test week.
-        </p>
-      </section>
-
-      <section>
-        <h2 className="font-display text-xl font-bold text-foreground">Final Verdict</h2>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          After 7 days, 30+ creatives generated, and real ad spend behind them — I'm keeping Holo AI in my stack. It's not a magic bullet. But it's the closest thing I've found to eliminating the creative bottleneck that slows down every ecommerce brand I've worked with.
-        </p>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          The best part? You can test it yourself and see if the output matches what your ads need. If you want to check it out, this is the link I used.
-        </p>
-        <ToolCTA href={LINKS.holo} label="Get Started" />
+        <ToolCTA href={LINKS.holo} label="Start Creating Ad Variations Now" />
       </section>
     </div>
   );
