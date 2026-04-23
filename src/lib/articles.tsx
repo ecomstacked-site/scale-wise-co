@@ -39,6 +39,19 @@ function ProTip({ children }: { children: React.ReactNode }) {
   );
 }
 
+function ArticleImage({ src, alt, priority = false }: { src: string; alt: string; priority?: boolean }) {
+  return (
+    <figure className="my-8 overflow-hidden rounded-2xl border border-border bg-card shadow-lg shadow-brand/5">
+      <img
+        src={src}
+        alt={alt}
+        loading={priority ? "eager" : "lazy"}
+        className="h-auto w-full object-contain"
+      />
+    </figure>
+  );
+}
+
 export interface ArticleMeta {
   title: string;
   excerpt: string;
