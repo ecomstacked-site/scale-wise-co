@@ -5436,16 +5436,17 @@ function ArticleBestTikTokAdSpyTools() {
           <li><strong className="text-foreground">High engagement plus buyer intent:</strong> comments like “link?”, “price?”, “where can I buy?”, and “ship to USA?” matter more than empty likes.</li>
           <li><strong className="text-foreground">Same product across accounts:</strong> multiple sellers pushing the same product can validate demand, but it can also warn you that saturation is coming fast.</li>
         </ul>
+        <ArticleFigure
+          src="/images/07-buyer-comments-proof.webp"
+          alt="TikTok buyer intent comments proof"
+          caption="Buyer intent comments such as “link?”, “price?”, and “where can I buy?” indicate real demand."
+          size="comments"
+        />
         <div className="mt-5 rounded-xl border border-border bg-card p-5">
           <h3 className="font-display text-base font-bold text-foreground">Mini case study</h3>
           <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
             We identified 3 products using signals like 7+ day active ads, repeated creatives, and buyer-intent comments. The strongest candidates were not the flashiest videos. They were the ads where buyers asked “link?”, “price?”, “where can I buy?”, and “ship to USA?” while multiple accounts kept pushing similar demos.
           </p>
-          <ArticleFigure
-            src="/images/buyer-intent-comments.png"
-            alt="TikTok buyer intent comments proof"
-            caption="Buyer intent comments such as “link?”, “price?”, and “where can I buy?” indicate real demand."
-          />
         </div>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           The goal is not to copy the ad. The goal is to understand the product, angle, hook, objection, and buying trigger before you build your own test.
@@ -5496,9 +5497,10 @@ function ArticleBestTikTokAdSpyTools() {
           <li><strong className="text-foreground">Launch a different angle:</strong> use the research to build a better hook, not a lazy clone.</li>
         </ol>
         <ArticleFigure
-          src="/images/product-research-workflow.png"
+          src="/images/08-research-workflow.webp"
           alt="TikTok product research workflow diagram"
           caption="A simple workflow for validating products before launching tests."
+          size="workflow"
         />
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           The best workflow is manual research plus tools plus judgment. If all three agree, you have a real candidate. If only one signal looks good, you probably have a trap.
@@ -5517,6 +5519,12 @@ function ArticleBestTikTokAdSpyTools() {
         </div>
       </section>
 
+      <ArticleFigure
+        src="/images/09-final-cta-winning-products.webp"
+        alt="Stop guessing and start finding winning products"
+        caption="Use real ad data to find winning products before they get saturated."
+      />
+
       <section className="rounded-xl border border-brand/30 bg-brand/5 p-6">
         <h2 className="font-display text-xl font-bold text-foreground">Final Verdict: The Best TikTok Ad Spy Tool</h2>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
@@ -5528,11 +5536,6 @@ function ArticleBestTikTokAdSpyTools() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           Winning products do not stay hidden. The sooner you see them, the higher your chance of profit. If you are guessing products, you are already late — and the sellers using better research workflows are not waiting for you to catch up.
         </p>
-        <ArticleFigure
-          src="/images/tiktok-tools/final-cta.webp"
-          alt="Scaling winning TikTok products"
-          caption="Winning products scale fast — the earlier you identify them, the better your results."
-        />
         <div className="mt-5 rounded-xl border border-border bg-card p-5 text-center">
           <h3 className="font-display text-lg font-bold text-foreground">Ready to stop guessing and start validating?</h3>
           <p className="mt-2 text-sm leading-relaxed text-muted-foreground">Use real ad momentum, buyer intent, and competitor signals to build a smarter product shortlist before the market gets crowded.</p>
