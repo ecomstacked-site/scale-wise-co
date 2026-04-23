@@ -5121,6 +5121,9 @@ function ArticleBestTikTokAdSpyTools() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           For broader ecommerce research, see our guide to the <Link to="/best-product-research-tools-for-shopify" className="font-semibold text-brand underline">best product research tools</Link>. If you want the tactical process behind spying ads, read our <Link to="/blog/how-to-spy-tiktok-ads-for-dropshipping" className="font-semibold text-brand underline">TikTok product research guide</Link>.
         </p>
+        <div className="mt-5">
+          <ToolCta label="Start Finding Winning Products" />
+        </div>
       </section>
 
       <CtaBlock label="Start Finding Winning TikTok Ads Today" />
@@ -5509,6 +5512,13 @@ function ArticleBestTikTokAdSpyTools() {
           alt="Scaling winning TikTok products"
           caption="Winning products scale fast — the earlier you identify them, the better your results."
         />
+        <div className="mt-5 rounded-xl border border-border bg-card p-5 text-center">
+          <h3 className="font-display text-lg font-bold text-foreground">Ready to stop guessing and start validating?</h3>
+          <p className="mt-2 text-sm leading-relaxed text-muted-foreground">Use real ad momentum, buyer intent, and competitor signals to build a smarter product shortlist before the market gets crowded.</p>
+          <div className="mt-4">
+            <ToolCta label="Start Finding Winning Products" />
+          </div>
+        </div>
         <CtaBlock label="Stop Guessing Products" />
       </section>
     </div>
