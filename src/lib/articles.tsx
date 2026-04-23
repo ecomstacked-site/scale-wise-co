@@ -1332,7 +1332,7 @@ function ArticleHoloReview() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           Here's exactly what happened.
         </p>
-        <ToolCTA href={LINKS.holo} label="Check out Holo AI here" />
+        <ToolCTA href={LINKS.holo} label="Start Creating Videos" />
         <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
           Not sure if Holo AI is right for you? <Link to="/blog/holo-ai-vs-pictory" className="text-brand hover:underline">See how it compares to Pictory</Link> or check my <Link to="/blog/best-ai-video-tools" className="text-brand hover:underline">full list of AI video tools</Link> for more options.
         </p>
@@ -1378,6 +1378,7 @@ function ArticleHoloReview() {
         <ProTip>
           Don't judge AI-generated creatives by how they look to you. Judge them by how they perform in ads. Some of the creatives I thought were mediocre actually got the best click-through rates.
         </ProTip>
+        <ToolCTA href={LINKS.holo} label="Try Now" />
       </section>
 
       <section>
@@ -1433,7 +1434,7 @@ function ArticleHoloReview() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           <strong className="text-foreground">Quick idea testing.</strong> Before you invest $500 in a polished creative, use Holo AI to test whether the concept, hook, or angle resonates with your audience. If the AI version gets traction, then invest in a premium version.
         </p>
-        <ToolCTA href={LINKS.holo} label="This is what I used — see here" />
+        <ToolCTA href={LINKS.holo} label="Get Started" />
       </section>
 
       <section>
@@ -1473,7 +1474,7 @@ function ArticleHoloReview() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           The best part? You can test it yourself and see if the output matches what your ads need. If you want to check it out, this is the link I used.
         </p>
-        <ToolCTA href={LINKS.holo} label="You can check it here" />
+        <ToolCTA href={LINKS.holo} label="Get Started" />
       </section>
     </div>
   );
