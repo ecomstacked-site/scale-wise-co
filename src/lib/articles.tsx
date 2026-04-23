@@ -1339,7 +1339,7 @@ function ArticleHoloReview() {
           This Holo AI review is written for ecommerce founders, media buyers, and operators who need more AI video ads without turning every new product test into a slow creative project. The question is not whether AI can make a nice-looking asset. The real question is whether an ad creative tool can help you create enough variations to test hooks, offers, formats, and product angles before your budget gets wasted on one or two guesses.
         </p>
         <ToolCTA href={LINKS.holo} label="Create Your First Ad in Minutes" />
-        <ArticleImage src="/images/holo-dashboard.jpg" alt="Holo AI review dashboard for ecommerce AI video ads and ad creative tools" priority />
+        <ArticleImage src="/public/images/holo-dashboard.jpg" alt="Holo AI dashboard generating ecommerce video ads" priority />
       </section>
 
       <section>
@@ -1367,9 +1367,13 @@ function ArticleHoloReview() {
           Not every variation was perfect. Some needed a better prompt. Some needed a stronger opening line. But that is normal for ad testing. What mattered was that the tool produced enough usable creative options to move from theory to testing. For a brand that needs volume, that is the difference between having one ad to judge and having several angles to compare.
         </p>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          The turning point was when I realized I could generate more ad variations in one afternoon than I normally would in a full week.
+        </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           The best use of Holo AI is not replacing strategy. You still need to know the customer, the offer, and the reason someone should care. The advantage is that once you have those inputs, Holo AI helps turn them into ad creative variations faster than a traditional production workflow.
         </p>
-        <ArticleImage src="/images/holo-variations.jpg" alt="Holo AI creative variations generated from one ecommerce product for ad testing" />
+        <ArticleImage src="/public/images/holo-variations.jpg" alt="multiple ad variations generated for testing" />
+        <ToolCTA href={LINKS.holo} label="Generate 10+ Ad Creatives in One Session" />
       </section>
 
       <section>
@@ -1411,7 +1415,7 @@ function ArticleHoloReview() {
           The important point is that these features support a testing system. A single polished video can still fail. A batch of different AI video ads gives you more data, and data is what helps you decide which hook, format, and product angle deserves more budget.
         </p>
         <ToolCTA href={LINKS.holo} label="Start Creating Videos" />
-        <ArticleImage src="/images/holo-output.jpg" alt="Holo AI output examples for ecommerce AI video ads and image creatives" />
+        <ArticleImage src="/public/images/holo-output.jpg" alt="AI generated ecommerce ad creatives examples" />
       </section>
 
       <section>
@@ -1431,7 +1435,7 @@ function ArticleHoloReview() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           <strong className="text-foreground">Test:</strong> Put the creatives into your Meta or TikTok testing structure and let performance data guide the next round. The biggest mistake is judging every ad by personal taste instead of click-through rate, hold rate, conversion rate, and cost per acquisition.
         </p>
-        <ArticleImage src="/images/holo-workflow.jpg" alt="Holo AI workflow showing input generate export and test process for ad creative tools" />
+        <ArticleImage src="/public/images/holo-workflow.jpg" alt="AI ad creation workflow" />
       </section>
 
       <section>
@@ -1488,13 +1492,16 @@ function ArticleHoloReview() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           For ecommerce operators, the best reason to try it is not hype. It is speed. More testable creative ideas means more chances to find the message that makes buyers stop, click, and consider the product. In a paid ads environment where creative fatigue is constant, that advantage is worth taking seriously.
         </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          If you're still relying on one or two creatives, you're guessing. This tool gives you the volume to actually test.
+        </p>
         <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
           Still comparing options? Read the <Link to="/holo-ai-vs-pictory" className="text-brand hover:underline">Holo AI vs Pictory comparison</Link> or browse the <Link to="/best-ai-video-tools" className="text-brand hover:underline">best AI video tools</Link> guide for more context.
         </p>
       </section>
 
       <section className="rounded-2xl border border-brand/20 bg-brand/5 p-5 sm:p-6">
-        <ArticleImage src="/images/holo-results.jpg" alt="Holo AI results for ecommerce ad creative variations and AI video ads" />
+        <ArticleImage src="/public/images/holo-results.jpg" alt="ad performance results dashboard" />
         <h2 className="font-display text-xl font-bold text-foreground">Start Creating Ad Variations Now</h2>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           If you already have a product to promote and need more creative angles to test, Holo AI is worth trying. Start with one product, generate several variations, and let real campaign data show you which message deserves more budget.
