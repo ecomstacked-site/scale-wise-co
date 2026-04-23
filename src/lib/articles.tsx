@@ -5077,7 +5077,7 @@ function ArticleBestTikTokAdSpyTools() {
       <p className="text-sm font-semibold text-foreground">Stop building product tests from guesses.</p>
       <p className="mt-2 text-sm leading-relaxed text-muted-foreground">Use real TikTok ad signals to shortlist products with momentum before the window closes.</p>
       <div className="mt-4 flex justify-center">
-        <a href="#" className="inline-block rounded-xl bg-blue-600 px-6 py-3 text-white shadow-lg transition hover:bg-blue-700">
+        <a href="#" className="inline-block rounded-xl bg-brand px-6 py-3 text-primary-foreground shadow-lg transition hover:bg-brand/90">
           {label}
         </a>
       </div>
@@ -5085,7 +5085,7 @@ function ArticleBestTikTokAdSpyTools() {
   );
 
   const ToolCta = ({ label = "Start Finding Winning Products" }: { label?: string }) => (
-    <a href="#" className="inline-block rounded-xl bg-blue-600 px-6 py-3 text-white shadow-lg transition hover:bg-blue-700">
+    <a href="#" className="inline-block rounded-xl bg-brand px-6 py-3 text-primary-foreground shadow-lg transition hover:bg-brand/90">
       {label}
     </a>
   );
