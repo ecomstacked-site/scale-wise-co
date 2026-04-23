@@ -5,23 +5,23 @@ import { Link } from "react-router-dom";
 // All affiliate destinations route through internal /go/[brand]
 // transition pages so we never link directly to an affiliate URL.
 const LINKS = {
-  trendtrack: "/go/trendtrack",
+  trendtrack: "https://trendtrack.io?fpr=stacked45",
   wetracked: "/go/wetracked",
-  holo: "/go/holo-ai",
+  holo: "https://tryholo.ai/?utm_medium=affiliate&utm_source=4988344&utm_campaign=41932&im_ref=VR4UEcxOMxyZW1iwCnQUZz87Uku1QdzxZTtOR00&utm_ad_id=3273895&irgwc=1&afsrc=1",
   manychat: "/go/manychat",
   evebee: "/go/everbee",
   easyship: "/go/easyship",
   systeme: "/go/systeme",
   gohighlevel: "/go/gohighlevel",
   weshop: "/go/weshop-ai",
-  pictory: "/go/pictory",
+  pictory: "https://pictory.ai?ref=ecomstacked",
   winninghunter: "/go/winninghunter",
 };
 
 function ToolCTA({ href, label = "Visit Official Website" }: { href: string; label?: string }) {
   return (
     <div className="my-6">
-      <a href={href} rel="noopener noreferrer nofollow">
+      <a href={href} rel="sponsored noopener noreferrer nofollow">
         <Button variant="brand" size="sm" className="gap-1.5">
           {label} <ArrowUpRight className="h-3.5 w-3.5" />
         </Button>
@@ -583,7 +583,7 @@ function Article1() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           For dropshippers testing multiple products simultaneously, this is transformative. Instead of spending $500-$1,000 per creative batch from a freelancer, you can generate dozens of variations in minutes. More creatives means more tests, which means finding winners faster.
         </p>
-        <ToolCTA href={LINKS.holo} label="Explore Holo AI" />
+        <ToolCTA href={LINKS.holo} label="Start Creating Videos" />
       </section>
 
       <section>
@@ -963,7 +963,7 @@ function Article4() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           Combined with accurate tracking from WeTracked, you get a powerful feedback loop: test more creatives, accurately measure which ones perform, double down on winners, and continuously generate fresh variations. This loop is what separates brands that scale smoothly from those that hit a wall.
         </p>
-        <ToolCTA href={LINKS.holo} label="Explore Holo AI" />
+        <ToolCTA href={LINKS.holo} label="Start Creating Videos" />
       </section>
 
       <section>
@@ -1059,7 +1059,7 @@ function Article5() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           The productivity impact is substantial: instead of waiting for creative assets to be produced, you can generate and test new variations in real-time. This allows you to respond to performance data faster, iterate more quickly, and maintain a continuous pipeline of fresh creatives without dedicating team time to production.
         </p>
-        <ToolCTA href={LINKS.holo} label="Try Holo AI" />
+        <ToolCTA href={LINKS.holo} label="Try Now" />
       </section>
 
       <section>
@@ -1127,6 +1127,7 @@ function ArticleHoloVsPictory() {
         <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
           Here's what I found.
         </p>
+        <ToolCTA href={LINKS.holo} label="Start Creating Videos" />
       </section>
 
       <section>
@@ -1173,6 +1174,7 @@ function ArticleHoloVsPictory() {
         <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
           If you just want to create videos quickly without overthinking, Holo AI feels easier to start with.
         </p>
+        <ToolCTA href={LINKS.holo} label="Try Now" />
       </section>
 
       <section>
@@ -1186,9 +1188,9 @@ function ArticleHoloVsPictory() {
           It's aimed at ecommerce sellers, dropshippers, and anyone running paid traffic who needs creatives
           quickly without hiring an editor.
         </p>
-        <ToolCTA href={LINKS.holo} label="If you want to check it yourself — see Holo AI here" />
+        <ToolCTA href={LINKS.holo} label="Try Now" />
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          Want a deeper look? Read my <Link to="/blog/holo-ai-review" className="text-brand hover:underline">full Holo AI review</Link> after testing it for 7 days.
+          Want a deeper look? Read my <Link to="/holo-ai-review" className="text-brand hover:underline">full Holo AI review</Link> after testing it for 7 days.
         </p>
       </section>
 
@@ -1203,7 +1205,7 @@ function ArticleHoloVsPictory() {
           It's a better fit for content marketers, course creators, or anyone who wants more polish and
           doesn't mind spending extra time in the editor.
         </p>
-        <ToolCTA href={LINKS.pictory} label="Explore Pictory's features" />
+        <ToolCTA href={LINKS.pictory} label="See Pricing" />
       </section>
 
       <section>
@@ -1264,7 +1266,7 @@ function ArticleHoloVsPictory() {
           If you're testing multiple tools, I'd recommend starting with the simpler one first.
         </p>
 
-        <ToolCTA href={LINKS.holo} label="This is what I used for quick ads — check Holo AI here" />
+        <ToolCTA href={LINKS.holo} label="Get Started" />
       </section>
 
       <section>
@@ -1297,14 +1299,14 @@ function ArticleHoloVsPictory() {
         </p>
 
         <div className="mt-6 flex flex-col gap-3 sm:flex-row">
-          <a href={LINKS.holo} rel="noopener noreferrer nofollow">
+          <a href={LINKS.holo} rel="sponsored noopener noreferrer nofollow">
             <Button variant="brand" size="sm" className="gap-1.5">
-              Visit Holo AI <ArrowUpRight className="h-3.5 w-3.5" />
+              Get Started <ArrowUpRight className="h-3.5 w-3.5" />
             </Button>
           </a>
-          <a href={LINKS.pictory} rel="noopener noreferrer nofollow">
+          <a href={LINKS.pictory} rel="sponsored noopener noreferrer nofollow">
             <Button variant="secondary" size="sm" className="gap-1.5">
-              Explore Pictory <ArrowUpRight className="h-3.5 w-3.5" />
+              See Pricing <ArrowUpRight className="h-3.5 w-3.5" />
             </Button>
           </a>
         </div>
@@ -1330,9 +1332,9 @@ function ArticleHoloReview() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           Here's exactly what happened.
         </p>
-        <ToolCTA href={LINKS.holo} label="Check out Holo AI here" />
+        <ToolCTA href={LINKS.holo} label="Start Creating Videos" />
         <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-          Not sure if Holo AI is right for you? <Link to="/blog/holo-ai-vs-pictory" className="text-brand hover:underline">See how it compares to Pictory</Link> or check my <Link to="/blog/best-ai-video-tools" className="text-brand hover:underline">full list of AI video tools</Link> for more options.
+          Not sure if Holo AI is right for you? <Link to="/holo-ai-vs-pictory" className="text-brand hover:underline">See how it compares to Pictory</Link> or check my <Link to="/best-ai-video-tools" className="text-brand hover:underline">full list of AI video tools</Link> for more options.
         </p>
       </section>
 
@@ -1376,6 +1378,7 @@ function ArticleHoloReview() {
         <ProTip>
           Don't judge AI-generated creatives by how they look to you. Judge them by how they perform in ads. Some of the creatives I thought were mediocre actually got the best click-through rates.
         </ProTip>
+        <ToolCTA href={LINKS.holo} label="Try Now" />
       </section>
 
       <section>
@@ -1431,7 +1434,7 @@ function ArticleHoloReview() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           <strong className="text-foreground">Quick idea testing.</strong> Before you invest $500 in a polished creative, use Holo AI to test whether the concept, hook, or angle resonates with your audience. If the AI version gets traction, then invest in a premium version.
         </p>
-        <ToolCTA href={LINKS.holo} label="This is what I used — see here" />
+        <ToolCTA href={LINKS.holo} label="Get Started" />
       </section>
 
       <section>
@@ -1471,7 +1474,7 @@ function ArticleHoloReview() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           The best part? You can test it yourself and see if the output matches what your ads need. If you want to check it out, this is the link I used.
         </p>
-        <ToolCTA href={LINKS.holo} label="You can check it here" />
+        <ToolCTA href={LINKS.holo} label="Get Started" />
       </section>
     </div>
   );
@@ -1491,6 +1494,7 @@ function ArticleBestAIVideoTools() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           I tested several AI video tools to see which ones are actually worth using. Here's what I found after spending real time with each one.
         </p>
+        <ToolCTA href={LINKS.holo} label="Start Creating Videos" />
       </section>
 
       <section>
@@ -1505,6 +1509,7 @@ function ArticleBestAIVideoTools() {
           <li><strong className="text-foreground">Best for AI avatars:</strong> Synthesia — ideal for training videos and presentations</li>
           <li><strong className="text-foreground">Best all-around tool:</strong> InVideo — good balance of features and ease of use</li>
         </ul>
+        <ToolCTA href={LINKS.holo} label="Try Now" />
       </section>
 
       <section>
@@ -1527,9 +1532,9 @@ function ArticleBestAIVideoTools() {
           <li>• Great for testing multiple ad variations quickly</li>
         </ul>
         <p className="mt-3 text-sm italic text-muted-foreground">"This one felt faster than anything else I tested."</p>
-        <ToolCTA href={LINKS.holo} label="If you want to try it, check Holo AI here" />
+        <ToolCTA href={LINKS.holo} label="Try Now" />
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          Want a detailed breakdown? Read my <Link to="/blog/holo-ai-review" className="text-brand hover:underline">full Holo AI review</Link> or see the <Link to="/blog/holo-ai-vs-pictory" className="text-brand hover:underline">direct comparison with Pictory</Link>.
+          Want a detailed breakdown? Read my <Link to="/holo-ai-review" className="text-brand hover:underline">full Holo AI review</Link> or see the <Link to="/holo-ai-vs-pictory" className="text-brand hover:underline">direct comparison with Pictory</Link>.
         </p>
       </section>
 
@@ -1550,7 +1555,7 @@ function ArticleBestAIVideoTools() {
           <li>• Works well for longer content formats</li>
         </ul>
         <p className="mt-3 text-sm italic text-muted-foreground">"It takes a bit more time, but the output feels more polished for longer videos."</p>
-        <ToolCTA href={LINKS.pictory} label="Explore Pictory" />
+        <ToolCTA href={LINKS.pictory} label="See Pricing" />
       </section>
 
       <section>
@@ -1594,7 +1599,7 @@ function ArticleBestAIVideoTools() {
       <p className="text-sm leading-relaxed text-muted-foreground">
         If you're still deciding and want to start with something simple, you can check Holo AI here — it's the quickest way to see if AI video works for your workflow.
       </p>
-      <ToolCTA href={LINKS.holo} label="You can check Holo AI here" />
+      <ToolCTA href={LINKS.holo} label="Get Started" />
 
       <section>
         <h2 className="font-display text-xl font-bold text-foreground">5. InVideo</h2>
@@ -1635,7 +1640,7 @@ function ArticleBestAIVideoTools() {
         <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
           My recommendation? If you're not sure where to start, go with the simplest option first and see if it fits your workflow. You can always upgrade later.
         </p>
-        <ToolCTA href={LINKS.holo} label="Start with Holo AI here" />
+        <ToolCTA href={LINKS.holo} label="Get Started" />
       </section>
     </div>
   );

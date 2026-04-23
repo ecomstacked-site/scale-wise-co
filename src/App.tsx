@@ -1,5 +1,4 @@
 import { Routes, Route, Link, useParams } from "react-router-dom";
-import { useEffect, useState } from "react";
 import HomePage from "./routes/index";
 import AboutPage from "./routes/about";
 import BlogPage from "./routes/blog.index";
@@ -24,6 +23,9 @@ import SystemePage from "./routes/tools.systeme";
 import BestProductResearchToolsPage from "./routes/best-product-research-tools";
 import BestProductResearchToolsForShopifyPage from "./routes/best-product-research-tools-for-shopify";
 import BestTikTokAdSpyToolsPage from "./routes/best-tiktok-ad-spy-tools";
+import BestAIVideoToolsRoute from "./routes/best-ai-video-tools";
+import HoloAiReviewRoute from "./routes/holo-ai-review";
+import HoloAiVsPictoryRoute from "./routes/holo-ai-vs-pictory";
 import { Navigate } from "react-router-dom";
 import { SEO } from "./lib/seo";
 
@@ -82,18 +84,6 @@ const affiliateLinks: Record<string, { url: string; name: string }> = {
 function GoRedirect() {
   const { tool } = useParams<{ tool: string }>();
   const entry = tool ? affiliateLinks[tool] : undefined;
-  const [ready, setReady] = useState(false);
-
-  useEffect(() => {
-    if (!entry) return;
-    // Single-step redirect: send the visitor straight to the destination.
-    // No interstitial delay, no bridge page — Google Ads compliant.
-    window.location.replace(entry.url);
-    const visibleTimer = window.setTimeout(() => setReady(true), 250);
-    return () => {
-      window.clearTimeout(visibleTimer);
-    };
-  }, [entry]);
 
   if (!entry) {
     return (
@@ -119,28 +109,19 @@ function GoRedirect() {
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
       <SEO title={`Redirecting to ${entry.name}…`} description={`Redirecting to the official ${entry.name} website.`} noIndex />
       <div className="max-w-md text-center">
-        <div
-          className="mx-auto h-10 w-10 animate-spin rounded-full border-2 border-muted border-t-primary"
-          aria-hidden="true"
-        />
         <h1 className="mt-6 font-display text-xl font-semibold text-foreground">
-          Redirecting to {entry.name}…
+          Continue to {entry.name}
         </h1>
         <p className="mt-2 text-sm text-muted-foreground">
-          Taking you to the official {entry.name} website.
+          This button opens the official {entry.name} website. We may earn a commission at no extra cost to you.
         </p>
-        <p className="mt-6 text-xs text-muted-foreground/80">
-          This page may contain affiliate links. We may earn a commission at no extra cost to you.
-        </p>
-        {ready && (
-          <a
-            href={entry.url}
-            rel="noopener noreferrer nofollow"
-            className="mt-6 inline-flex items-center justify-center rounded-md border border-border bg-card px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-accent"
-          >
-            Click here if you are not redirected
-          </a>
-        )}
+        <a
+          href={entry.url}
+          rel="sponsored noopener noreferrer nofollow"
+          className="mt-6 inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+        >
+          Visit {entry.name}
+        </a>
       </div>
     </div>
   );
@@ -168,12 +149,15 @@ export default function App() {
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/about" element={<AboutPage />} />
+      <Route path="/about-us" element={<AboutPage />} />
       <Route path="/blog" element={<BlogPage />} />
       <Route path="/blog/:slug" element={<BlogPostPage />} />
       <Route path="/contact" element={<ContactPage />} />
       <Route path="/disclaimer" element={<DisclaimerPage />} />
       <Route path="/privacy" element={<PrivacyPage />} />
+      <Route path="/privacy-policy" element={<PrivacyPage />} />
       <Route path="/terms" element={<TermsPage />} />
+      <Route path="/terms-of-service" element={<TermsPage />} />
       <Route path="/tools" element={<ToolsPage />} />
       <Route path="/tools/product-research" element={<ProductResearchPage />} />
       <Route path="/tools/trendtrack-review" element={<TrendtrackReview />} />
@@ -189,6 +173,9 @@ export default function App() {
       <Route path="/best-product-research-tools" element={<BestProductResearchToolsPage />} />
       <Route path="/best-product-research-tools-for-shopify" element={<BestProductResearchToolsForShopifyPage />} />
       <Route path="/best-tiktok-ad-spy-tools" element={<BestTikTokAdSpyToolsPage />} />
+      <Route path="/best-ai-video-tools" element={<BestAIVideoToolsRoute />} />
+      <Route path="/holo-ai-review" element={<HoloAiReviewRoute />} />
+      <Route path="/holo-ai-vs-pictory" element={<HoloAiVsPictoryRoute />} />
       <Route path="/wetracked-vs-triple-whale" element={<WeTrackedVsTripleWhale />} />
       <Route path="/best-ad-tracking-tools" element={<Navigate to="/blog/best-ad-tracking-tools-2026" replace />} />
       <Route path="/blog/wetracked-review" element={<Navigate to="/tools/wetracked-review" replace />} />
