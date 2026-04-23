@@ -33,7 +33,7 @@ export function Footer() {
                 { to: "/" as const, label: "Home" },
                 { to: "/tools" as const, label: "Tools" },
                 { to: "/blog" as const, label: "Blog" },
-                { to: "/about" as const, label: "About" },
+                { to: "/about-us" as const, label: "About" },
                 { to: "/contact" as const, label: "Contact" },
               ].map((link) => (
                 <li key={link.to}>
@@ -62,8 +62,8 @@ export function Footer() {
             <h4 className="font-display text-sm font-semibold text-foreground">Legal</h4>
             <ul className="mt-4 space-y-2.5">
               {[
-                { to: "/privacy" as const, label: "Privacy Policy" },
-                { to: "/terms" as const, label: "Terms of Service" },
+                { to: "/privacy-policy" as const, label: "Privacy Policy" },
+                { to: "/terms-of-service" as const, label: "Terms of Service" },
                 { to: "/disclaimer" as const, label: "Disclaimer" },
               ].map((link) => (
                 <li key={link.to}>
@@ -87,8 +87,8 @@ export function Footer() {
             © {new Date().getFullYear()} EcomStacked. All rights reserved.
           </p>
           <div className="mt-3 flex gap-4 sm:mt-0">
-            <Link to="/privacy" className="text-xs text-muted-foreground hover:text-foreground">Privacy</Link>
-            <Link to="/terms" className="text-xs text-muted-foreground hover:text-foreground">Terms</Link>
+            <Link to="/privacy-policy" className="text-xs text-muted-foreground hover:text-foreground">Privacy</Link>
+            <Link to="/terms-of-service" className="text-xs text-muted-foreground hover:text-foreground">Terms</Link>
             <Link to="/disclaimer" className="text-xs text-muted-foreground hover:text-foreground">Disclaimer</Link>
           </div>
         </div>

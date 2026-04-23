@@ -171,12 +171,15 @@ export default function App() {
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/about" element={<AboutPage />} />
+      <Route path="/about-us" element={<AboutPage />} />
       <Route path="/blog" element={<BlogPage />} />
       <Route path="/blog/:slug" element={<BlogPostPage />} />
       <Route path="/contact" element={<ContactPage />} />
       <Route path="/disclaimer" element={<DisclaimerPage />} />
       <Route path="/privacy" element={<PrivacyPage />} />
+      <Route path="/privacy-policy" element={<PrivacyPage />} />
       <Route path="/terms" element={<TermsPage />} />
+      <Route path="/terms-of-service" element={<TermsPage />} />
       <Route path="/tools" element={<ToolsPage />} />
       <Route path="/tools/product-research" element={<ProductResearchPage />} />
       <Route path="/tools/trendtrack-review" element={<TrendtrackReview />} />
