@@ -583,7 +583,7 @@ function Article1() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           For dropshippers testing multiple products simultaneously, this is transformative. Instead of spending $500-$1,000 per creative batch from a freelancer, you can generate dozens of variations in minutes. More creatives means more tests, which means finding winners faster.
         </p>
-        <ToolCTA href={LINKS.holo} label="Explore Holo AI" />
+        <ToolCTA href={LINKS.holo} label="Start Creating Videos" />
       </section>
 
       <section>
@@ -963,7 +963,7 @@ function Article4() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           Combined with accurate tracking from WeTracked, you get a powerful feedback loop: test more creatives, accurately measure which ones perform, double down on winners, and continuously generate fresh variations. This loop is what separates brands that scale smoothly from those that hit a wall.
         </p>
-        <ToolCTA href={LINKS.holo} label="Explore Holo AI" />
+        <ToolCTA href={LINKS.holo} label="Start Creating Videos" />
       </section>
 
       <section>
@@ -1059,7 +1059,7 @@ function Article5() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           The productivity impact is substantial: instead of waiting for creative assets to be produced, you can generate and test new variations in real-time. This allows you to respond to performance data faster, iterate more quickly, and maintain a continuous pipeline of fresh creatives without dedicating team time to production.
         </p>
-        <ToolCTA href={LINKS.holo} label="Try Holo AI" />
+        <ToolCTA href={LINKS.holo} label="Try Now" />
       </section>
 
       <section>
@@ -1299,12 +1299,12 @@ function ArticleHoloVsPictory() {
         </p>
 
         <div className="mt-6 flex flex-col gap-3 sm:flex-row">
-          <a href={LINKS.holo} rel="noopener noreferrer nofollow">
+          <a href={LINKS.holo} rel="sponsored noopener noreferrer nofollow">
             <Button variant="brand" size="sm" className="gap-1.5">
               Get Started <ArrowUpRight className="h-3.5 w-3.5" />
             </Button>
           </a>
-          <a href={LINKS.pictory} rel="noopener noreferrer nofollow">
+          <a href={LINKS.pictory} rel="sponsored noopener noreferrer nofollow">
             <Button variant="secondary" size="sm" className="gap-1.5">
               See Pricing <ArrowUpRight className="h-3.5 w-3.5" />
             </Button>
