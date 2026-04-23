@@ -5086,7 +5086,7 @@ function ArticleBestTikTokAdSpyTools() {
 
   const ArticleFigure = ({ src, alt, caption, compact = false }: { src: string; alt: string; caption: string; compact?: boolean }) => (
     <figure className={compact ? "my-5 max-w-xl" : "my-7"}>
-      <img src={src} alt={alt} loading="lazy" className="block w-full rounded-xl border border-border bg-card shadow-md" />
+      <img src={src} alt={alt} loading="lazy" className="my-6 block w-full rounded-xl shadow-lg" />
       <figcaption className="mt-2 text-center text-xs leading-relaxed text-muted-foreground">{caption}</figcaption>
     </figure>
   );
@@ -5097,16 +5097,15 @@ function ArticleBestTikTokAdSpyTools() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }} />
 
-      <ArticleFigure
-        src="/images/tiktok-tools/hero-tiktok-tools.webp"
-        alt="TikTok ad spy tools overview for ecommerce product research"
-        caption="TikTok ad spy tools help ecommerce operators find winning products before they scale." 
-      />
-
       <section>
         <p className="text-sm leading-relaxed text-muted-foreground">
           If you are still guessing products, you are already behind. You are not losing because TikTok ads are impossible. You are losing because you discover products too late, test random angles, and let competitors find the winners first.
         </p>
+        <ArticleFigure
+          src="/images/tiktok-ad-spy-tools-overview.png"
+          alt="TikTok Ad Spy Tools Overview"
+          caption="TikTok ad spy tools help ecommerce operators find winning products before they scale."
+        />
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           Most sellers discover products too late. By the time a product looks obvious on your For You Page, the sharp operators have already tested hooks, found buyer objections, and started scaling. Winning ads get copied within days. Speed creates profit windows — and slow research kills them.
         </p>
@@ -5184,8 +5183,8 @@ function ArticleBestTikTokAdSpyTools() {
           WinningHunter is the strongest pick because it focuses on the outcome that matters: faster product decisions. It helps connect real ads, real engagement, product discovery, and competitor behavior so you can stop treating TikTok dropshipping products like lottery tickets.
         </p>
         <ArticleFigure
-          src="/images/tiktok-tools/winninghunter-dashboard.webp"
-          alt="WinningHunter TikTok Ad Spy Tool Dashboard"
+          src="/images/winninghunter-dashboard.png"
+          alt="WinningHunter dashboard showing TikTok ads and product validation"
           caption="WinningHunter dashboard showing active TikTok ads and product validation signals."
         />
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
@@ -5239,8 +5238,8 @@ function ArticleBestTikTokAdSpyTools() {
           PiPiADS is a TikTok-focused ad intelligence platform with deep creative research capabilities. It is useful when TikTok is your primary channel and you want to dig into large volumes of ads, advertisers, and creative patterns.
         </p>
         <ArticleFigure
-          src="/images/tiktok-tools/pipiads-dashboard.webp"
-          alt="PiPiADS TikTok Ad Spy Tool Interface"
+          src="/images/pipiads-interface.png"
+          alt="PiPiADS TikTok ad research interface"
           caption="PiPiADS interface for deep TikTok ad research and creative pattern analysis."
         />
         <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-relaxed text-muted-foreground">
@@ -5259,8 +5258,8 @@ function ArticleBestTikTokAdSpyTools() {
           Minea is built for broader creative research across TikTok, Meta, and other channels. It is helpful when you want to compare how similar products are positioned across multiple platforms instead of only studying TikTok.
         </p>
         <ArticleFigure
-          src="/images/tiktok-tools/minea-dashboard.webp"
-          alt="Minea Ad Spy Dashboard"
+          src="/images/minea-dashboard.png"
+          alt="Minea dashboard showing ad analytics"
           caption="Minea dashboard for multi-platform ad research and product discovery."
         />
         <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-relaxed text-muted-foreground">
