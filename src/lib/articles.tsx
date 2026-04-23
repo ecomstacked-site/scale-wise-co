@@ -5086,7 +5086,7 @@ function ArticleBestTikTokAdSpyTools() {
 
   const ArticleFigure = ({ src, alt, caption, compact = false }: { src: string; alt: string; caption: string; compact?: boolean }) => (
     <figure className={compact ? "my-5 max-w-xl" : "my-7"}>
-      <img src={src} alt={alt} loading="lazy" className="w-full rounded-xl border border-border bg-card shadow-sm" />
+      <img src={src} alt={alt} loading="lazy" className="block w-full rounded-xl border border-border bg-card shadow-md" />
       <figcaption className="mt-2 text-center text-xs leading-relaxed text-muted-foreground">{caption}</figcaption>
     </figure>
   );
@@ -5096,6 +5096,12 @@ function ArticleBestTikTokAdSpyTools() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }} />
+
+      <ArticleFigure
+        src="/images/tiktok-tools/hero-tiktok-tools.webp"
+        alt="TikTok ad spy tools overview for ecommerce product research"
+        caption="TikTok ad spy tools help ecommerce operators find winning products before they scale." 
+      />
 
       <section>
         <p className="text-sm leading-relaxed text-muted-foreground">
@@ -5113,12 +5119,6 @@ function ArticleBestTikTokAdSpyTools() {
       </section>
 
       <CtaBlock label="Start Finding Winning TikTok Ads Today" />
-
-      <ArticleFigure
-        src="/images/tiktok-ad-spy-hero.png"
-        alt="TikTok ad spy tools for finding winning products"
-        caption="Overview of TikTok ad spy tools used to find winning products before they scale."
-      />
 
       <section>
         <h2 className="font-display text-xl font-bold text-foreground">Why TikTok Ad Spy Tools Matter</h2>
@@ -5183,10 +5183,11 @@ function ArticleBestTikTokAdSpyTools() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           WinningHunter is the strongest pick because it focuses on the outcome that matters: faster product decisions. It helps connect real ads, real engagement, product discovery, and competitor behavior so you can stop treating TikTok dropshipping products like lottery tickets.
         </p>
-        <figure>
-          <img src="/images/tools/winninghunter.png" alt="WinningHunter TikTok Ad Spy Tool Dashboard" loading="lazy" />
-          <figcaption>WinningHunter dashboard showing active TikTok ads and product validation signals.</figcaption>
-        </figure>
+        <ArticleFigure
+          src="/images/tiktok-tools/winninghunter-dashboard.webp"
+          alt="WinningHunter TikTok Ad Spy Tool Dashboard"
+          caption="WinningHunter dashboard showing active TikTok ads and product validation signals."
+        />
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           The speed advantage is the point. Winning ads move fast. Manual research misses early trends because you only see what the algorithm decides to show you. By the time you find a product manually, it may already be saturated, copied, and pushed by sellers with better creative testing systems.
         </p>
@@ -5238,7 +5239,7 @@ function ArticleBestTikTokAdSpyTools() {
           PiPiADS is a TikTok-focused ad intelligence platform with deep creative research capabilities. It is useful when TikTok is your primary channel and you want to dig into large volumes of ads, advertisers, and creative patterns.
         </p>
         <ArticleFigure
-          src="/images/tools/pipiads.png"
+          src="/images/tiktok-tools/pipiads-dashboard.webp"
           alt="PiPiADS TikTok Ad Spy Tool Interface"
           caption="PiPiADS interface for deep TikTok ad research and creative pattern analysis."
         />
@@ -5258,7 +5259,7 @@ function ArticleBestTikTokAdSpyTools() {
           Minea is built for broader creative research across TikTok, Meta, and other channels. It is helpful when you want to compare how similar products are positioned across multiple platforms instead of only studying TikTok.
         </p>
         <ArticleFigure
-          src="/images/tools/minea.png"
+          src="/images/tiktok-tools/minea-dashboard.webp"
           alt="Minea Ad Spy Dashboard"
           caption="Minea dashboard for multi-platform ad research and product discovery."
         />
@@ -5391,18 +5392,13 @@ function ArticleBestTikTokAdSpyTools() {
           <li><strong className="text-foreground">High engagement plus buyer intent:</strong> comments like “link?”, “price?”, “where can I buy?”, and “ship to USA?” matter more than empty likes.</li>
           <li><strong className="text-foreground">Same product across accounts:</strong> multiple sellers pushing the same product can validate demand, but it can also warn you that saturation is coming fast.</li>
         </ul>
-        <ArticleFigure
-          src="/images/winning-ad-checklist.png"
-          alt="How to identify winning TikTok ads signals"
-          caption="Key signals that indicate a TikTok ad has real commercial potential."
-        />
         <div className="mt-5 rounded-xl border border-border bg-card p-5">
           <h3 className="font-display text-base font-bold text-foreground">Mini case study</h3>
           <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
             We identified 3 products using signals like 7+ day active ads, repeated creatives, and buyer-intent comments. The strongest candidates were not the flashiest videos. They were the ads where buyers asked “link?”, “price?”, “where can I buy?”, and “ship to USA?” while multiple accounts kept pushing similar demos.
           </p>
           <ArticleFigure
-            src="/images/buyer-comments-proof.png"
+            src="/images/tiktok-tools/comments-proof.webp"
             alt="TikTok buyer intent comments proof"
             caption="Buyer intent comments such as “link?”, “price?”, and “where can I buy?” indicate real demand."
           />
@@ -5456,7 +5452,7 @@ function ArticleBestTikTokAdSpyTools() {
           <li><strong className="text-foreground">Launch a different angle:</strong> use the research to build a better hook, not a lazy clone.</li>
         </ol>
         <ArticleFigure
-          src="/images/product-research-workflow.png"
+          src="/images/tiktok-tools/workflow.webp"
           alt="TikTok product research workflow diagram"
           caption="A simple workflow for validating products before launching tests."
         />
@@ -5489,7 +5485,7 @@ function ArticleBestTikTokAdSpyTools() {
           Winning products do not stay hidden. The sooner you see them, the higher your chance of profit. If you are guessing products, you are already late — and the sellers using better research workflows are not waiting for you to catch up.
         </p>
         <ArticleFigure
-          src="/images/scaling-products.png"
+          src="/images/tiktok-tools/final-cta.webp"
           alt="Scaling winning TikTok products"
           caption="Winning products scale fast — the earlier you identify them, the better your results."
         />
