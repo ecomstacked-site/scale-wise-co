@@ -4,7 +4,7 @@ export default function HoloAiPage() {
   return (
     <ToolMoneyPage
       name="Holo AI"
-      goPath="/go/holo-ai"
+        goPath="https://tryholo.ai/?utm_medium=affiliate&utm_source=4988344&utm_campaign=41932&im_ref=VR4UEcxOMxyZW1iwCnQUZz87Uku1QdzxZTtOR00&utm_ad_id=3273895&irgwc=1&afsrc=1"
       category="AI Content & Ad Creation"
       seoTitle="Holo AI Review (2026): Generate Winning Ad Creatives at Scale"
       seoDescription="Honest Holo AI review for ecommerce. Pricing, features, pros and cons, and whether it's worth it for scaling ad creative production in 2026."
