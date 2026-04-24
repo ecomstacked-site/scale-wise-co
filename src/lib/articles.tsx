@@ -66,6 +66,26 @@ export interface ArticleMeta {
 
 export const articlesMeta: ArticleMeta[] = [
   {
+    title: "AI Video Ads for Ecommerce: The 2026 Playbook for Founders & Media Buyers",
+    excerpt: "How AI video ads are reshaping ecommerce paid acquisition — what they are, why they work, the workflow to create them, and the mistakes to avoid.",
+    category: "AI Tools",
+    date: "April 24, 2026",
+    readTime: "11 min read",
+    slug: "ai-video-ads-for-ecommerce",
+    image: "/images/hero-holo-ai-dashboard.webp",
+    toc: [
+      "Why Ecommerce Ads Fail Today",
+      "What Are AI Video Ads",
+      "Benefits of AI Video Ads for Ecommerce",
+      "Step-by-Step: How to Create AI Video Ads",
+      "Best Tools for AI Video Ads",
+      "Common Mistakes to Avoid",
+      "Pro Tips (Advanced)",
+      "When to Use AI Video Ads",
+      "Final Thoughts",
+    ],
+  },
+  {
     title: "Best TikTok Ad Spy Tools (2026 Guide)",
     excerpt: "Compare the best TikTok ad spy tools for finding winning ads, validated products, and competitor signals faster in 2026.",
     category: "Guides",
