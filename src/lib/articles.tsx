@@ -5877,7 +5877,11 @@ function ArticleAIVideoAdsForEcommerce() {
         <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
           Upload to Meta or TikTok in a structured testing campaign — one ad set per angle, multiple creatives per ad set. Let data decide the winners within 48–72 hours.
         </p>
-        <ArticleImage src="/images/holo-ai-workflow.webp" alt="AI ad creation workflow input generate export test" />
+        <ArticleImage
+          src="/images/06-testing-flow.png"
+          alt="Structured ad testing workflow from product to scaling winners"
+          caption="Structured testing workflows help identify winning creatives within 48–72 hours."
+        />
       </section>
 
       <section>
