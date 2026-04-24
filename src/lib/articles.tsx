@@ -1261,7 +1261,7 @@ function ArticleHoloVsPictory() {
         <p className="mt-4 text-sm leading-relaxed text-foreground">
           If speed matters, start with Holo AI.
         </p>
-        <ToolCTA href={LINKS.holo} label="View full Holo AI review" />
+        <ToolCTA href={LINKS.holo} label="Check current Holo AI pricing" />
       </section>
 
       {/* PRICING */}
