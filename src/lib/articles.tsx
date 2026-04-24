@@ -5800,6 +5800,11 @@ function ArticleAIVideoAdsForEcommerce() {
         <SnippetBox q="What causes ecommerce ads to fail?">
           Most ecommerce ads fail from creative fatigue, not bad targeting. When you can't ship fresh hooks fast enough, CTR drops, CPMs rise, and ROAS collapses within days.
         </SnippetBox>
+        <ArticleImage
+          src="/images/02-ads-fail-dashboard.png"
+          alt="Failing ecommerce campaign dashboard with declining ROAS"
+          caption="Most ecommerce campaigns decline not from targeting — but from creative fatigue."
+        />
       </section>
 
       <section>
