@@ -1653,7 +1653,7 @@ function ArticleHoloReview() {
 
       {/* 12. Final Verdict */}
       <section>
-        <ArticleImage src="/images/holo-ai-results-dashboard.webp" alt="Ecommerce ad performance dashboard showing creative testing results" />
+        <ArticleImage src="/images/holo-ai-results-dashboard.webp" alt="Ecommerce ad performance dashboard showing creative testing results" caption="High-performing creatives almost always come from testing volume, not from chasing one perfect ad." />
         <h2 className="font-display text-xl font-bold text-foreground">Final Verdict: Is Holo AI Worth It?</h2>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           For ecommerce brands where creative production is the bottleneck, Holo AI is genuinely worth it. It compresses the slowest part of the ad testing loop — getting from idea to launchable creative — into a workflow you can actually run every week.
