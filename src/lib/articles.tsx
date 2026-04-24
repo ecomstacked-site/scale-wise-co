@@ -1181,6 +1181,7 @@ function Article5() {
 function ArticleHoloVsPictory() {
   return (
     <div className="space-y-8">
+      {/* INTRO */}
       <section>
         <p className="text-sm leading-relaxed text-muted-foreground">
           There are way too many AI video tools right now. Every week there's a new one claiming to be the best,
@@ -1188,16 +1189,26 @@ function ArticleHoloVsPictory() {
           making videos — and I know I'm not the only one.
         </p>
         <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-          So I decided to test two of the most talked-about options side by side: <strong className="text-foreground">Holo AI</strong> and{" "}
-          <strong className="text-foreground">Pictory</strong>. Not a surface-level overview — I actually used both
-          for real ecommerce ad projects to see which one delivers.
+          So I tested two of the most talked-about options side by side: <strong className="text-foreground">Holo AI</strong> and{" "}
+          <strong className="text-foreground">Pictory</strong> — using both on real ecommerce ad projects.
         </p>
-        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-          Here's what I found.
+        <p className="mt-4 text-sm leading-relaxed text-foreground">
+          This isn't a surface-level comparison — it's based on how these tools perform in real ad workflows.
         </p>
-        <ToolCTA href={LINKS.holo} label="Start Creating Videos" />
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground italic">
+          While you're comparing tools, someone else is already testing 10 new creatives.
+        </p>
+        <ToolCTA href={LINKS.holo} label="Start generating ad creatives" />
       </section>
 
+      <ArticleImage
+        src="/images/hero-holo-ai-dashboard.webp"
+        alt="Holo AI vs Pictory dashboard comparison"
+        priority
+        caption="The workflow you commit to decides how many creatives you'll actually ship this month."
+      />
+
+      {/* QUICK COMPARISON */}
       <section>
         <h2 id="quick-comparison" className="font-display text-xl font-bold text-foreground">Quick Comparison</h2>
         <div className="mt-4 overflow-x-auto">
@@ -1227,157 +1238,322 @@ function ArticleHoloVsPictory() {
               </tr>
               <tr className="border-b border-border">
                 <td className="px-4 py-3 font-medium text-foreground">Output Quality</td>
-                <td className="px-4 py-3 text-muted-foreground">Good enough</td>
+                <td className="px-4 py-3 text-muted-foreground">Good enough for paid ads</td>
                 <td className="px-4 py-3 text-muted-foreground">More polished</td>
+              </tr>
+              <tr className="border-b border-border">
+                <td className="px-4 py-3 font-medium text-foreground">Best Use Case</td>
+                <td className="px-4 py-3 text-muted-foreground">Ecommerce ad testing at volume</td>
+                <td className="px-4 py-3 text-muted-foreground">YouTube & long-form repurposing</td>
               </tr>
               <tr>
                 <td className="px-4 py-3 font-medium text-foreground">Verdict</td>
                 <td className="px-4 py-3 text-muted-foreground">Best for speed & simplicity</td>
-                <td className="px-4 py-3 text-muted-foreground">Best for control</td>
+                <td className="px-4 py-3 text-muted-foreground">Best for editorial control</td>
               </tr>
             </tbody>
           </table>
         </div>
 
-        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-          If you just want to create videos quickly without overthinking, Holo AI feels easier to start with.
+        <p className="mt-4 text-sm leading-relaxed text-foreground">
+          If speed matters, start with Holo AI.
         </p>
-        <ToolCTA href={LINKS.holo} label="Try Now" />
+        <ToolCTA href={LINKS.holo} label="Start generating ad creatives" />
       </section>
 
+      {/* PRICING */}
       <section>
-        <h2 id="holo-ai-overview" className="font-display text-xl font-bold text-foreground">Holo AI Overview</h2>
-        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-          Holo AI is built around one idea: get a usable video ad as fast as possible. You give it a product link or
-          a description, and it generates a short-form video you can use for paid ads or social content. No timeline
-          editing, no complex settings.
-        </p>
-        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-          It's aimed at ecommerce sellers, dropshippers, and anyone running paid traffic who needs creatives
-          quickly without hiring an editor.
-        </p>
-        <ToolCTA href={LINKS.holo} label="Try Now" />
+        <h2 id="pricing-comparison" className="font-display text-xl font-bold text-foreground">Pricing Comparison</h2>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          Want a deeper look? Read my <Link to="/holo-ai-review" className="text-brand hover:underline">full Holo AI review</Link> after testing it for 7 days.
+          Pricing changes often, but here's the picture as of testing:
         </p>
+        <div className="mt-4 overflow-x-auto">
+          <table className="w-full text-sm border border-border rounded-lg">
+            <thead>
+              <tr className="bg-surface">
+                <th className="px-4 py-3 text-left font-semibold text-foreground border-b border-border"> </th>
+                <th className="px-4 py-3 text-left font-semibold text-foreground border-b border-border">Holo AI</th>
+                <th className="px-4 py-3 text-left font-semibold text-foreground border-b border-border">Pictory</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className="border-b border-border">
+                <td className="px-4 py-3 font-medium text-foreground">Free Trial</td>
+                <td className="px-4 py-3 text-muted-foreground">Yes — limited generations</td>
+                <td className="px-4 py-3 text-muted-foreground">Yes — 3 free videos</td>
+              </tr>
+              <tr className="border-b border-border">
+                <td className="px-4 py-3 font-medium text-foreground">Starting Price</td>
+                <td className="px-4 py-3 text-muted-foreground">~$29/mo</td>
+                <td className="px-4 py-3 text-muted-foreground">$25/mo</td>
+              </tr>
+              <tr className="border-b border-border">
+                <td className="px-4 py-3 font-medium text-foreground">Watermark</td>
+                <td className="px-4 py-3 text-muted-foreground">No (paid plans)</td>
+                <td className="px-4 py-3 text-muted-foreground">Yes on free, removed on paid</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-3 font-medium text-foreground">Commercial Use</td>
+                <td className="px-4 py-3 text-muted-foreground">Yes</td>
+                <td className="px-4 py-3 text-muted-foreground">Yes</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </section>
 
+      <p className="text-sm leading-relaxed text-muted-foreground">
+        Here's how each tool performs in a real workflow:
+      </p>
+
+      {/* HOLO AI */}
       <section>
-        <h2 id="pictory-overview" className="font-display text-xl font-bold text-foreground">Pictory Overview</h2>
+        <h2 id="holo-ai" className="font-display text-xl font-bold text-foreground">Holo AI</h2>
         <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-          Pictory takes a different approach. It lets you turn blog posts, scripts, or long-form content into videos
-          with more editing control. You can adjust scenes, swap visuals, tweak text overlays, and customize
-          the output more granularly.
+          Holo AI is built around one idea: get a usable video ad as fast as possible. Paste a product link or
+          description and it spits out short-form video creatives ready for paid testing.
         </p>
         <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-          It's a better fit for content marketers, course creators, or anyone who wants more polish and
-          doesn't mind spending extra time in the editor.
+          The real edge isn't a single video — it's how many <strong className="text-foreground">variations</strong> you can produce
+          in one session. Different hooks, angles, formats, all from the same product input.
         </p>
-        <ToolCTA href={LINKS.pictory} label="See Pricing" />
+        <p className="mt-4 text-sm leading-relaxed text-foreground">
+          Most brands don't fail from bad tools — they fail from not testing enough variations.
+        </p>
+
+        <ArticleImage
+          src="/images/holo-ai-multiple-creatives.webp"
+          alt="Holo AI generating multiple ad creative variations"
+          caption="More variations from one input means more shots on goal — and more chances to find the winner."
+        />
+
+        <div className="mt-4 flex flex-col gap-3 sm:flex-row">
+          <Link to="/blog/holo-ai-review">
+            <Button variant="secondary" size="sm" className="gap-1.5">
+              Read full Holo AI review <ArrowUpRight className="h-3.5 w-3.5" />
+            </Button>
+          </Link>
+          <Link to="/tools/holo-ai">
+            <Button variant="brand" size="sm" className="gap-1.5">
+              Start generating creatives <ArrowUpRight className="h-3.5 w-3.5" />
+            </Button>
+          </Link>
+        </div>
       </section>
 
+      {/* PICTORY */}
       <section>
-        <h2 id="side-by-side-comparison" className="font-display text-xl font-bold text-foreground">Side-by-Side Comparison</h2>
+        <h2 id="pictory" className="font-display text-xl font-bold text-foreground">Pictory</h2>
         <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-          Here's where it gets interesting. When I tested both tools on the same product — a simple skincare item — the
-          difference in workflow was immediately obvious.
+          Pictory takes a different angle. It turns blog posts, scripts, and long-form content into edited videos
+          with more manual control — scenes, overlays, voiceovers, the works.
         </p>
-
-        <h3 className="mt-6 font-display text-base font-bold text-foreground">Ease of Use</h3>
-        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-          Holo AI wins here. You paste a link, hit generate, and you have something in minutes. Pictory requires
-          you to set up a script first, choose visuals, and arrange scenes. It's not hard, but it's more steps.
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          The output is more polished, but the workflow is slower. It's a content tool first, not an ad
+          testing engine.
         </p>
-
-        <h3 className="mt-6 font-display text-base font-bold text-foreground">Speed</h3>
-        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-          Holo AI generated a usable video in under 3 minutes. Pictory took closer to 15–20 minutes once I factored
-          in editing. This part surprised me — I didn't expect the gap to be that wide.
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          Better for YouTube videos, course modules, and blog-to-video repurposing. Not built for grinding
+          out 10 ad variations before lunch.
         </p>
-
-        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-          I didn't expect this difference to be so clear.
-        </p>
-
-        <h3 className="mt-6 font-display text-base font-bold text-foreground">Output Quality</h3>
-        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-          Pictory's output looked more polished. The transitions were smoother, and I had more control over text
-          placement and scene flow. Holo AI's output was decent — definitely usable for ads — but less refined
-          if you're aiming for brand-level content.
-        </p>
-
-        <h3 className="mt-6 font-display text-base font-bold text-foreground">Best Use Case</h3>
-        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-          Holo AI is better when you need volume — multiple ad variations, quick tests, fast creative cycles.
-          Pictory is better when you need one really polished video and you have time to edit it.
-        </p>
+        <ToolCTA href={LINKS.pictory} label="See Pictory pricing" />
       </section>
 
+      {/* SIDE-BY-SIDE SCORING */}
+      <section>
+        <h2 id="side-by-side-scoring" className="font-display text-xl font-bold text-foreground">Side-by-Side Scoring</h2>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          Same product, same brief, both tools. Here's how they scored across the categories that matter:
+        </p>
+        <div className="mt-4 overflow-x-auto">
+          <table className="w-full text-sm border border-border rounded-lg">
+            <thead>
+              <tr className="bg-surface">
+                <th className="px-4 py-3 text-left font-semibold text-foreground border-b border-border">Category</th>
+                <th className="px-4 py-3 text-left font-semibold text-foreground border-b border-border">Holo AI</th>
+                <th className="px-4 py-3 text-left font-semibold text-foreground border-b border-border">Pictory</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className="border-b border-border">
+                <td className="px-4 py-3 font-medium text-foreground">Speed</td>
+                <td className="px-4 py-3 text-muted-foreground">9.5 / 10</td>
+                <td className="px-4 py-3 text-muted-foreground">6 / 10</td>
+              </tr>
+              <tr className="border-b border-border">
+                <td className="px-4 py-3 font-medium text-foreground">Ease of use</td>
+                <td className="px-4 py-3 text-muted-foreground">9 / 10</td>
+                <td className="px-4 py-3 text-muted-foreground">7 / 10</td>
+              </tr>
+              <tr className="border-b border-border">
+                <td className="px-4 py-3 font-medium text-foreground">Output quality</td>
+                <td className="px-4 py-3 text-muted-foreground">8 / 10</td>
+                <td className="px-4 py-3 text-muted-foreground">8.5 / 10</td>
+              </tr>
+              <tr className="border-b border-border">
+                <td className="px-4 py-3 font-medium text-foreground">Ads performance</td>
+                <td className="px-4 py-3 text-muted-foreground">9 / 10</td>
+                <td className="px-4 py-3 text-muted-foreground">6 / 10</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-3 font-medium text-foreground">Long-form content</td>
+                <td className="px-4 py-3 text-muted-foreground">5 / 10</td>
+                <td className="px-4 py-3 text-muted-foreground">9 / 10</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground italic">
+          Speed is the advantage in 2026. More tests = more winners.
+        </p>
+
+        <ArticleImage
+          src="/images/04-speed-comparison.png"
+          alt="Speed comparison between Holo AI and Pictory workflows"
+          caption="The gap isn't subtle — one tool is built to ship ads, the other is built to edit videos."
+        />
+      </section>
+
+      {/* PERSONA VERDICT */}
+      <section>
+        <h2 id="who-should-use-which" className="font-display text-xl font-bold text-foreground">Who Should Use Which?</h2>
+        <div className="mt-4 overflow-x-auto">
+          <table className="w-full text-sm border border-border rounded-lg">
+            <thead>
+              <tr className="bg-surface">
+                <th className="px-4 py-3 text-left font-semibold text-foreground border-b border-border">If you are a…</th>
+                <th className="px-4 py-3 text-left font-semibold text-foreground border-b border-border">Pick</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className="border-b border-border">
+                <td className="px-4 py-3 font-medium text-foreground">Dropshipper</td>
+                <td className="px-4 py-3 text-brand font-semibold">Holo AI</td>
+              </tr>
+              <tr className="border-b border-border">
+                <td className="px-4 py-3 font-medium text-foreground">Media buyer</td>
+                <td className="px-4 py-3 text-brand font-semibold">Holo AI</td>
+              </tr>
+              <tr className="border-b border-border">
+                <td className="px-4 py-3 font-medium text-foreground">YouTube creator</td>
+                <td className="px-4 py-3 text-muted-foreground">Pictory</td>
+              </tr>
+              <tr className="border-b border-border">
+                <td className="px-4 py-3 font-medium text-foreground">Beginner</td>
+                <td className="px-4 py-3 text-brand font-semibold">Holo AI</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-3 font-medium text-foreground">Content marketer</td>
+                <td className="px-4 py-3 text-muted-foreground">Pictory</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      {/* USE CASES */}
+      <section>
+        <h2 id="best-use-cases" className="font-display text-xl font-bold text-foreground">Best Use Cases</h2>
+        <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
+          <li><strong className="text-foreground">Best for TikTok ads:</strong> Holo AI</li>
+          <li><strong className="text-foreground">Best for YouTube:</strong> Pictory</li>
+          <li><strong className="text-foreground">Best for UGC-style ads:</strong> Holo AI</li>
+          <li><strong className="text-foreground">Best for blog-to-video:</strong> Pictory</li>
+          <li><strong className="text-foreground">Best for high-volume creative testing:</strong> Holo AI</li>
+        </ul>
+      </section>
+
+      {/* REAL EXPERIENCE */}
       <section>
         <h2 id="my-real-experience" className="font-display text-xl font-bold text-foreground">My Real Experience</h2>
         <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-          I used Holo AI first. Within a few minutes I had three ad variations ready. One of them was genuinely
-          good enough to run as-is. The other two needed small prompt adjustments — the first outputs felt a
-          bit generic until I gave it more specific angles.
+          I used Holo AI first. Within minutes I had three ad variations ready. One was good enough to run as-is —
+          the other two needed minor prompt tweaks.
         </p>
         <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-          Then I switched to Pictory. The setup took longer, but I had more creative freedom. I could swap
-          out stock footage, adjust timing, and change the voiceover style. The final result was noticeably
-          more polished — but it took me about 4x longer to get there.
+          Then I switched to Pictory. The setup took longer, but the final result was visibly more polished. The
+          tradeoff: about 4x the time per video.
+        </p>
+        <p className="mt-4 text-sm leading-relaxed text-foreground">
+          The workflow difference becomes obvious after just one test.
+        </p>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground italic">
+          This is where most brands get stuck — choosing polish over volume, then wondering why they can't find a winning ad.
         </p>
 
-        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-          It's not perfect, but it's definitely usable.
-        </p>
-
-        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-          If you're testing multiple tools, I'd recommend starting with the simpler one first.
-        </p>
-
-        <ToolCTA href={LINKS.holo} label="Get Started" />
+        <ArticleImage
+          src="/images/holo-ai-results-dashboard.webp"
+          alt="Holo AI ad results dashboard"
+          caption="Winners only show up when you've tested enough variations to surface them."
+        />
       </section>
 
+      {/* FAQ */}
       <section>
-        <h2 id="which-one-should-you-choose" className="font-display text-xl font-bold text-foreground">Which One Should You Choose?</h2>
+        <h2 id="faq" className="font-display text-xl font-bold text-foreground">FAQ</h2>
+        <div className="mt-4 space-y-5">
+          <div>
+            <h3 className="font-display text-sm font-bold text-foreground">Is Holo AI better than Pictory?</h3>
+            <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+              For ecommerce ads — yes. For long-form video content, Pictory wins. They're solving different problems.
+            </p>
+          </div>
+          <div>
+            <h3 className="font-display text-sm font-bold text-foreground">Which tool is cheaper?</h3>
+            <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+              Pictory's entry plan is slightly cheaper, but cost-per-creative on Holo AI is usually lower because of the speed advantage.
+            </p>
+          </div>
+          <div>
+            <h3 className="font-display text-sm font-bold text-foreground">Can Holo AI create TikTok ads?</h3>
+            <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+              Yes. Vertical, short-form, hook-driven creatives are exactly what it's built for.
+            </p>
+          </div>
+          <div>
+            <h3 className="font-display text-sm font-bold text-foreground">Is Pictory good for YouTube?</h3>
+            <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+              Yes — Pictory is genuinely strong for blog-to-video, tutorials, and longer narrated content.
+            </p>
+          </div>
+          <div>
+            <h3 className="font-display text-sm font-bold text-foreground">Which is easier for beginners?</h3>
+            <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+              Holo AI. There's no timeline editor — you describe what you want and it generates.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* FINAL DECISION */}
+      <section id="final-decision">
+        <h2 className="font-display text-xl font-bold text-foreground">Final Decision</h2>
         <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-          It depends on what you need. Here's a simple breakdown:
+          Both tools are good at what they do. But they're not solving the same problem.
         </p>
-
-        <div className="mt-4 rounded-xl border border-brand/20 bg-brand/5 p-5">
-          <h4 className="font-display text-sm font-bold text-foreground">Choose Holo AI if you want:</h4>
-          <ul className="mt-3 space-y-1.5 text-sm text-muted-foreground">
-            <li className="flex items-start gap-2"><span className="mt-0.5 text-brand">✓</span> Fast video creation with minimal effort</li>
-            <li className="flex items-start gap-2"><span className="mt-0.5 text-brand">✓</span> Multiple ad variations quickly</li>
-            <li className="flex items-start gap-2"><span className="mt-0.5 text-brand">✓</span> Something usable without editing skills</li>
-          </ul>
-        </div>
-
-        <div className="mt-4 rounded-xl border border-border bg-surface p-5">
-          <h4 className="font-display text-sm font-bold text-foreground">Choose Pictory if you want:</h4>
-          <ul className="mt-3 space-y-1.5 text-sm text-muted-foreground">
-            <li className="flex items-start gap-2"><span className="mt-0.5 text-muted-foreground">✓</span> More control over scenes and visuals</li>
-            <li className="flex items-start gap-2"><span className="mt-0.5 text-muted-foreground">✓</span> Polished, brand-level content</li>
-            <li className="flex items-start gap-2"><span className="mt-0.5 text-muted-foreground">✓</span> Longer-form or tutorial-style videos</li>
-          </ul>
-        </div>
-
-        <p className="mt-6 text-sm leading-relaxed text-muted-foreground">
-          Neither tool is perfect for everything. But if I had to pick one for ecommerce ads, I'd go
-          with Holo AI for the speed alone. For content marketing or YouTube, Pictory is the stronger choice.
+        <p className="mt-4 text-sm leading-relaxed text-foreground">
+          If you're running ads, the decision is simple — speed wins.
+        </p>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          If your creatives are slowing down your testing, this is the bottleneck you need to fix.
         </p>
 
         <div className="mt-6 flex flex-col gap-3 sm:flex-row">
-          <a href={LINKS.holo} rel="sponsored noopener noreferrer nofollow">
+          <Link to="/tools/holo-ai">
             <Button variant="brand" size="sm" className="gap-1.5">
-              Get Started <ArrowUpRight className="h-3.5 w-3.5" />
+              Start generating ad creatives with Holo AI <ArrowUpRight className="h-3.5 w-3.5" />
             </Button>
-          </a>
-          <a href={LINKS.pictory} rel="sponsored noopener noreferrer nofollow">
+          </Link>
+          <Link to="/blog/holo-ai-review">
             <Button variant="secondary" size="sm" className="gap-1.5">
-              See Pricing <ArrowUpRight className="h-3.5 w-3.5" />
+              Read full Holo AI review <ArrowUpRight className="h-3.5 w-3.5" />
             </Button>
-          </a>
+          </Link>
         </div>
+
+        <p className="mt-6 text-xs text-muted-foreground">
+          Still researching? See our roundup of the <Link to="/blog/best-ai-video-tools" className="text-brand hover:underline">best AI video tools for 2026</Link>.
+        </p>
       </section>
     </div>
   );
