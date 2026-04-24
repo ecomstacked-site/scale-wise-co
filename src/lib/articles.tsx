@@ -39,15 +39,20 @@ function ProTip({ children }: { children: React.ReactNode }) {
   );
 }
 
-function ArticleImage({ src, alt, priority = false }: { src: string; alt: string; priority?: boolean }) {
+function ArticleImage({ src, alt, priority = false, caption }: { src: string; alt: string; priority?: boolean; caption?: string }) {
   return (
     <figure className="my-8 overflow-hidden rounded-2xl border border-border bg-card shadow-lg shadow-brand/5">
       <img
         src={src}
         alt={alt}
         loading={priority ? "eager" : "lazy"}
-        className="h-auto w-full object-contain"
+        className="mx-auto h-auto w-full object-contain"
       />
+      {caption && (
+        <figcaption className="border-t border-border bg-surface px-4 py-3 text-center text-xs italic leading-relaxed text-muted-foreground">
+          {caption}
+        </figcaption>
+      )}
     </figure>
   );
 }
@@ -5770,7 +5775,12 @@ function ArticleAIVideoAdsForEcommerce() {
         <p className="mt-4 text-base leading-relaxed text-muted-foreground">
           This is exactly why tools like Holo AI are gaining traction with ecommerce operators. We covered the full breakdown in our <Link to="/blog/holo-ai-review" className="text-brand underline">Holo AI review</Link> — but first, let's break down the playbook.
         </p>
-        <ArticleImage src="/images/holo-ai-results-dashboard.webp" alt="Declining ROAS dashboard for ecommerce paid ads" priority />
+        <ArticleImage
+          src="/images/01-hero-roas-drop.png"
+          alt="Ecommerce ad performance dashboard showing ROAS decline"
+          priority
+          caption="ROAS drops quickly when brands fail to keep up with creative testing demand."
+        />
       </section>
 
       <section>
@@ -5790,6 +5800,11 @@ function ArticleAIVideoAdsForEcommerce() {
         <SnippetBox q="What causes ecommerce ads to fail?">
           Most ecommerce ads fail from creative fatigue, not bad targeting. When you can't ship fresh hooks fast enough, CTR drops, CPMs rise, and ROAS collapses within days.
         </SnippetBox>
+        <ArticleImage
+          src="/images/02-ads-fail-dashboard.png"
+          alt="Failing ecommerce campaign dashboard with declining ROAS"
+          caption="Most ecommerce campaigns decline not from targeting — but from creative fatigue."
+        />
       </section>
 
       <section>
@@ -5800,7 +5815,11 @@ function ArticleAIVideoAdsForEcommerce() {
         <SnippetBox q="What are AI video ads?">
           AI video ads are platform-ready short-form videos generated automatically from a product URL or images. They replace 2–3 weeks of UGC production with a 10-minute workflow.
         </SnippetBox>
-        <ArticleImage src="/images/holo-ai-multiple-creatives.webp" alt="AI generating ecommerce ad creatives" />
+        <ArticleImage
+          src="/images/03-ai-ad-workflow.png"
+          alt="AI ad creation workflow generating multiple ecommerce creatives"
+          caption="AI compresses weeks of production into a fast, repeatable ad creation workflow."
+        />
       </section>
 
       <section>
@@ -5815,6 +5834,11 @@ function ArticleAIVideoAdsForEcommerce() {
         <p className="mt-4 text-sm font-semibold leading-relaxed text-foreground">
           Winning brands out-test their competitors. Volume beats perfection.
         </p>
+        <ArticleImage
+          src="/images/04-speed-comparison.png"
+          alt="Manual UGC workflow versus fast AI creative testing workflow"
+          caption="Manual UGC production takes weeks, while AI enables same-day creative testing at scale."
+        />
       </section>
 
       <section>
@@ -5828,7 +5852,11 @@ function ArticleAIVideoAdsForEcommerce() {
         <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
           This is exactly why ecommerce brands are shifting to AI creative workflows. If you want a deeper breakdown of which platforms are leading, see our guide to the <Link to="/best-ai-video-tools" className="text-brand underline">best AI video tools</Link>.
         </p>
-        <ArticleImage src="/images/holo-ai-features-interface.webp" alt="TikTok vs Meta AI ad creative variations preview" />
+        <ArticleImage
+          src="/images/05-growth-roas-dashboard.png"
+          alt="Ecommerce performance dashboard showing rising ROAS"
+          caption="Increasing creative volume directly improves testing outcomes and overall ROAS performance."
+        />
       </section>
 
       <section>
@@ -5849,7 +5877,11 @@ function ArticleAIVideoAdsForEcommerce() {
         <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
           Upload to Meta or TikTok in a structured testing campaign — one ad set per angle, multiple creatives per ad set. Let data decide the winners within 48–72 hours.
         </p>
-        <ArticleImage src="/images/holo-ai-workflow.webp" alt="AI ad creation workflow input generate export test" />
+        <ArticleImage
+          src="/images/06-testing-flow.png"
+          alt="Structured ad testing workflow from product to scaling winners"
+          caption="Structured testing workflows help identify winning creatives within 48–72 hours."
+        />
       </section>
 
       <section>
@@ -5866,6 +5898,11 @@ function ArticleAIVideoAdsForEcommerce() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           The unlock wasn't a magic ad. It was running 12 tests instead of 3. AI didn't write a better hook than the human team — it let the team test enough hooks to find one.
         </p>
+        <ArticleImage
+          src="/images/07-meta-campaign-results.png"
+          alt="Meta Ads Manager dashboard showing winning ad creatives"
+          caption="Top-performing creatives emerge faster when multiple variations are tested simultaneously."
+        />
       </section>
 
       <section>
@@ -5923,6 +5960,11 @@ function ArticleAIVideoAdsForEcommerce() {
             </tbody>
           </table>
         </div>
+        <ArticleImage
+          src="/images/08-ai-tools-comparison.png"
+          alt="AI video ad tools comparison highlighting Holo AI for ecommerce"
+          caption="Ecommerce-focused tools outperform general AI platforms when speed and scale matter most."
+        />
 
         <h3 className="mt-8 font-display text-lg font-bold text-foreground">Why Holo AI Stands Out for Ecommerce</h3>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
@@ -5940,7 +5982,11 @@ function ArticleAIVideoAdsForEcommerce() {
         <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
           While most brands are still struggling to ship 3 ads a week, others are testing 20+ variations daily. That gap is the whole game in 2026.
         </p>
-        <ArticleImage src="/images/hero-holo-ai-dashboard.webp" alt="Holo AI dashboard generating ecommerce ad creatives" />
+        <ArticleImage
+          src="/images/10-media-buyer-dashboard.png"
+          alt="Media buyer dashboard with multiple winning ad creative variations"
+          caption="Holo AI generates multiple ad variations from a single product, enabling faster testing at scale."
+        />
         <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
           For a full walkthrough of features, real outputs, and pricing, read our <Link to="/blog/holo-ai-review" className="text-brand underline">Holo AI review</Link>. If you're weighing it against the alternatives, see our <Link to="/holo-ai-vs-pictory" className="text-brand underline">Holo AI vs Pictory comparison</Link>.
         </p>
@@ -5957,6 +6003,11 @@ function ArticleAIVideoAdsForEcommerce() {
         <blockquote className="mt-5 border-l-4 border-brand pl-4 text-base italic text-foreground">
           "The hook matters more than the editing."
         </blockquote>
+        <ArticleImage
+          src="/images/09-bad-vs-good-ads.png"
+          alt="Comparison of low CTR ads versus winning high ROAS ads"
+          caption="The hook drives performance more than editing quality in most ecommerce ad creatives."
+        />
       </section>
 
       <section>
