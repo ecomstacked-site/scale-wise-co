@@ -5852,7 +5852,11 @@ function ArticleAIVideoAdsForEcommerce() {
         <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
           This is exactly why ecommerce brands are shifting to AI creative workflows. If you want a deeper breakdown of which platforms are leading, see our guide to the <Link to="/best-ai-video-tools" className="text-brand underline">best AI video tools</Link>.
         </p>
-        <ArticleImage src="/images/holo-ai-features-interface.webp" alt="TikTok vs Meta AI ad creative variations preview" />
+        <ArticleImage
+          src="/images/05-growth-roas-dashboard.png"
+          alt="Ecommerce performance dashboard showing rising ROAS"
+          caption="Increasing creative volume directly improves testing outcomes and overall ROAS performance."
+        />
       </section>
 
       <section>
