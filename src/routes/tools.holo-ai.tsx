@@ -150,19 +150,6 @@ export default function HoloAiPage() {
               </p>
             </section>
 
-            {/* CTA 1 */}
-            <section className="rounded-xl border border-brand/20 bg-brand/5 p-6 text-center">
-              <p className="font-display text-lg font-bold text-foreground">
-                Generate your next ad in minutes
-              </p>
-              <p className="mt-2 text-sm text-muted-foreground">
-                Stop waiting on editors. Start testing creatives now.
-              </p>
-              <div className="mt-4 flex justify-center">
-                <CtaButton>Start generating ad creatives</CtaButton>
-              </div>
-            </section>
-
             {/* WHO IT'S FOR */}
             <section>
               <h2 className="font-display text-xl font-bold text-foreground">Who Holo AI Is Built For</h2>
@@ -171,9 +158,20 @@ export default function HoloAiPage() {
                 <li>• <strong className="text-foreground">Ecommerce founders</strong> running multi-SKU stores who can't afford a full creative team.</li>
                 <li>• <strong className="text-foreground">Media buyers</strong> managing Meta and TikTok ad spend who need fresh angles every few days.</li>
               </ul>
-              <p className="mt-3 text-sm italic text-muted-foreground">
-                If you're producing ads one by one, this is where most brands get stuck.
+            </section>
+
+            {/* WHO IT'S NOT FOR */}
+            <section>
+              <h2 className="font-display text-xl font-bold text-foreground">Who This Tool Is NOT For</h2>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                Holo AI isn't the right fit for every brand. Skip it (or wait) if any of these apply:
               </p>
+              <ul className="mt-3 space-y-2 text-sm leading-relaxed text-muted-foreground">
+                <li>• You need cinematic, high-production brand films with custom shots.</li>
+                <li>• You're not actively running paid ads and have no plan to test creatives.</li>
+                <li>• Your offer, pricing, or product page is the actual reason ads aren't converting — fix that first.</li>
+                <li>• You expect a one-click button with zero strategic input.</li>
+              </ul>
             </section>
 
             {/* KEY FEATURES */}
