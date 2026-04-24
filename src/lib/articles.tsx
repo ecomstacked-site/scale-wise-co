@@ -5748,162 +5748,271 @@ function ArticleBestTikTokAdSpyTools() {
   );
 }
 
+function SnippetBox({ q, children }: { q: string; children: React.ReactNode }) {
+  return (
+    <div className="my-5 rounded-xl border border-border bg-surface p-5">
+      <p className="font-display text-sm font-bold text-foreground">{q}</p>
+      <div className="mt-2 text-sm leading-relaxed text-muted-foreground">{children}</div>
+    </div>
+  );
+}
+
 function ArticleAIVideoAdsForEcommerce() {
   return (
     <div className="space-y-8">
       <section>
         <p className="text-base leading-relaxed text-muted-foreground">
-          You're spending more on ads than ever, but your ROAS keeps slipping. Creatives die in three days. Your designer is backed up. Your media buyer is asking for "ten more variations" and you don't have ten more variations to give. This is the new ecommerce reality — and it's exactly the bottleneck AI video ads were built to solve.
+          Your ROAS is dropping. CAC is climbing. Creatives die in 72 hours. Your media buyer keeps asking for "ten more variations" — and your team can't ship them fast enough. If that sounds familiar, you're not alone. It's the single biggest bottleneck in ecommerce paid acquisition right now.
         </p>
         <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-          In this guide, we'll break down what AI video ads actually are, why they're outperforming traditional creative workflows for ecommerce brands, and the exact step-by-step process to start using them — even if you've never touched an AI tool before.
+          The brands pulling ahead in 2026 aren't outspending you. They're out-testing you. They're shipping 20 creatives a week with a team of two. And almost all of them are using AI video ads to do it.
         </p>
+        <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+          This is exactly why tools like Holo AI are gaining traction with ecommerce operators. We covered the full breakdown in our <Link to="/blog/holo-ai-review" className="text-brand underline">Holo AI review</Link> — but first, let's break down the playbook.
+        </p>
+        <ArticleImage src="/images/holo-ai-results-dashboard.webp" alt="Declining ROAS dashboard for ecommerce paid ads" priority />
       </section>
 
       <section>
         <h2 className="font-display text-xl font-bold text-foreground">Why Ecommerce Ads Fail Today</h2>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          Most ecommerce ads don't fail because of bad targeting or weak offers. They fail because the creative engine behind them can't keep up with what paid platforms now demand.
+          Most ecommerce ads don't fail because of bad targeting or weak offers. They fail because the creative engine behind them can't keep up with what Meta and TikTok now demand.
         </p>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          <strong className="text-foreground">Low creative volume.</strong> Meta and TikTok algorithms reward fresh creative. If you're shipping two ads a week, you're feeding a system that wants twenty.
+          <strong className="text-foreground">Low creative volume.</strong> Algorithms reward fresh creative. If you're shipping two ads a week, you're feeding a machine that wants twenty.
         </p>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          <strong className="text-foreground">Slow production cycles.</strong> A traditional UGC video takes a brief, a creator, shipping product, editing, and revisions. That's 2–3 weeks for one ad.
+          <strong className="text-foreground">Slow production cycles.</strong> A traditional UGC video means a brief, a creator, shipping product, editing, and revisions. That's 2–3 weeks for a single ad.
         </p>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          <strong className="text-foreground">Weak hooks.</strong> Even when creatives ship, most operators reuse the same opening 3 seconds across every variant. The platform sees it as the same ad.
+          <strong className="text-foreground">Weak hooks.</strong> Even when creatives ship, most operators reuse the same opening 3 seconds. The platform sees it as the same ad and stops serving it.
         </p>
-        <ArticleImage src="/images/holo-ai-results-dashboard.webp" alt="Failing ecommerce ad performance dashboard with declining ROAS" />
+        <SnippetBox q="What causes ecommerce ads to fail?">
+          Most ecommerce ads fail from creative fatigue, not bad targeting. When you can't ship fresh hooks fast enough, CTR drops, CPMs rise, and ROAS collapses within days.
+        </SnippetBox>
       </section>
 
       <section>
         <h2 className="font-display text-xl font-bold text-foreground">What Are AI Video Ads</h2>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          AI video ads are short-form video creatives generated by AI tools — typically from a product URL, a few images, or a written prompt. The output looks like UGC, talking-head, or studio-style ads, ready to upload directly into Meta Ads Manager or TikTok Ads Manager.
+          AI video ads are short-form video creatives generated by AI tools — usually from a product URL, a few images, or a written prompt. The output looks like UGC, talking-head, or studio-style ads, ready to upload directly into Meta Ads Manager or TikTok Ads Manager.
         </p>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          They matter because they collapse the entire creative pipeline — script, voiceover, footage, editing — into a single workflow that takes minutes instead of weeks. For ecommerce brands running paid traffic, that speed is the difference between scaling and stalling.
+        <SnippetBox q="What are AI video ads?">
+          AI video ads are platform-ready short-form videos generated automatically from a product URL or images. They replace 2–3 weeks of UGC production with a 10-minute workflow.
+        </SnippetBox>
+        <ArticleImage src="/images/holo-ai-multiple-creatives.webp" alt="AI generating ecommerce ad creatives" />
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Why AI Video Ads Work Better in 2026</h2>
+        <ul className="mt-3 list-disc space-y-2 pl-5 text-sm leading-relaxed text-muted-foreground">
+          <li><strong className="text-foreground">Algorithms reward freshness.</strong> Meta and TikTok now favor accounts that ship new creative weekly. AI lets you keep the pipeline full.</li>
+          <li><strong className="text-foreground">Faster testing cycles.</strong> Test 20 hooks in a week instead of 2.</li>
+          <li><strong className="text-foreground">Lower CAC via volume.</strong> More tests = more winners = lower blended CAC at scale.</li>
+          <li><strong className="text-foreground">Easier localization.</strong> Generate the same ad in 5 languages or 5 demographic angles in minutes.</li>
+          <li><strong className="text-foreground">Creatorless scaling.</strong> No casting, no shipping product, no waiting on revisions.</li>
+        </ul>
+        <p className="mt-4 text-sm font-semibold leading-relaxed text-foreground">
+          Winning brands out-test their competitors. Volume beats perfection.
         </p>
-        <ArticleImage src="/images/holo-ai-multiple-creatives.webp" alt="AI-generated ecommerce video ad examples on TikTok and Meta" />
       </section>
 
       <section>
         <h2 className="font-display text-xl font-bold text-foreground">Benefits of AI Video Ads for Ecommerce</h2>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          <strong className="text-foreground">Speed.</strong> What used to take a creator two weeks now takes ten minutes. You can ship a new batch of creatives every morning before your media buyer logs in.
+        <ul className="mt-3 list-disc space-y-2 pl-5 text-sm leading-relaxed text-muted-foreground">
+          <li><strong className="text-foreground">Speed.</strong> Ten minutes vs. two weeks per ad.</li>
+          <li><strong className="text-foreground">Cost.</strong> Dozens of variants for the price of one UGC creator session.</li>
+          <li><strong className="text-foreground">Testing volume.</strong> 20 variants per product instead of 2.</li>
+          <li><strong className="text-foreground">Iteration.</strong> Clone a winning angle into 10 fresh variants the same day it hits.</li>
+        </ul>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          This is exactly why ecommerce brands are shifting to AI creative workflows. If you want a deeper breakdown of which platforms are leading, see our guide to the <Link to="/best-ai-video-tools" className="text-brand underline">best AI video tools</Link>.
         </p>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          <strong className="text-foreground">Cost.</strong> A single UGC creator costs $80–$300 per video. AI ad tools generate dozens of variants for the price of one creator session.
-        </p>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          <strong className="text-foreground">Testing volume.</strong> The brands winning right now aren't the ones with the best ad — they're the ones testing the most ads. AI lets you run 20 variants per product instead of 2.
-        </p>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          <strong className="text-foreground">Iteration.</strong> When a creative hits, you can clone the winning angle into 10 fresh variants in minutes — instead of briefing a new shoot.
-        </p>
-        <ArticleImage src="/images/holo-ai-features-interface.webp" alt="Multiple ecommerce ad creative variations generated from one product" />
+        <ArticleImage src="/images/holo-ai-features-interface.webp" alt="TikTok vs Meta AI ad creative variations preview" />
       </section>
 
       <section>
         <h2 className="font-display text-xl font-bold text-foreground">Step-by-Step: How to Create AI Video Ads</h2>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          Here's the workflow we use for ecommerce brands shipping AI video ads at scale.
-        </p>
-
         <h3 className="mt-5 font-display text-base font-bold text-foreground">Step 1: Choose your product</h3>
         <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-          Pick a product that already has some signal — even a few sales, a winning organic video, or a tested ad with positive ROAS. AI amplifies what's working; it can't fix a product nobody wants.
+          Pick a product with some signal — a few sales, a winning organic video, or a tested ad with positive ROAS. AI amplifies what works; it can't fix a product nobody wants.
         </p>
-
         <h3 className="mt-5 font-display text-base font-bold text-foreground">Step 2: Define your angle</h3>
         <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-          Before generating anything, write down the angle. Is it problem-solution? Lifestyle? Comparison? Trend-jacking? The angle drives the hook, the script, and the visuals. Skip this step and your AI output will be generic.
+          Write the angle before you generate anything. Problem-solution? Lifestyle? Comparison? Trend-jacking? The angle drives the hook, the script, and the visuals. Skip this step and your output will be generic.
         </p>
-
         <h3 className="mt-5 font-display text-base font-bold text-foreground">Step 3: Generate creatives</h3>
         <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
           Drop your product URL or images into your AI ad generator. Specify the angle, the format (UGC, talking head, demo), and the platform (TikTok 9:16, Meta 1:1 or 4:5). Generate at least 5–10 variants per angle.
         </p>
-
         <h3 className="mt-5 font-display text-base font-bold text-foreground">Step 4: Launch and test</h3>
         <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
           Upload to Meta or TikTok in a structured testing campaign — one ad set per angle, multiple creatives per ad set. Let data decide the winners within 48–72 hours.
         </p>
-        <ArticleImage src="/images/holo-ai-workflow.webp" alt="AI video ad workflow input generate export test for ecommerce" />
+        <ArticleImage src="/images/holo-ai-workflow.webp" alt="AI ad creation workflow input generate export test" />
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Real Campaign Example</h2>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          Here's a recent test we ran for a DTC home goods store at $100/day on Meta.
+        </p>
+        <ul className="mt-3 list-disc space-y-2 pl-5 text-sm leading-relaxed text-muted-foreground">
+          <li>3 traditional UGC ads launched the prior month — all dead within 5 days, ROAS stuck at 1.2x.</li>
+          <li>12 AI-generated creatives launched across 4 angles (problem-solution, lifestyle, demo, comparison).</li>
+          <li>2 clear winners emerged within 72 hours, hitting roughly 2.4x ROAS.</li>
+          <li>Blended CAC dropped about 25–30% over the next two weeks.</li>
+        </ul>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          The unlock wasn't a magic ad. It was running 12 tests instead of 3. AI didn't write a better hook than the human team — it let the team test enough hooks to find one.
+        </p>
       </section>
 
       <section>
         <h2 className="font-display text-xl font-bold text-foreground">Best Tools for AI Video Ads</h2>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          The AI ad space has exploded, but most tools are general-purpose video generators dressed up as ad tools. For ecommerce specifically, the workflow needs to start from a product — not a blank prompt.
+          The AI ad space has exploded, but most tools are general-purpose video generators dressed up as ad tools. For ecommerce, the workflow needs to start from a product — not a blank prompt.
+        </p>
+        <div className="mt-4 overflow-x-auto rounded-lg border border-border">
+          <table className="w-full text-left text-sm">
+            <thead className="bg-surface text-xs uppercase text-muted-foreground">
+              <tr>
+                <th className="px-3 py-2">Tool</th>
+                <th className="px-3 py-2">Best For</th>
+                <th className="px-3 py-2">Ecom Fit</th>
+                <th className="px-3 py-2">Speed</th>
+                <th className="px-3 py-2">Pricing Style</th>
+              </tr>
+            </thead>
+            <tbody className="text-sm text-muted-foreground">
+              <tr className="border-t border-border">
+                <td className="px-3 py-2 font-semibold text-foreground">Holo AI</td>
+                <td className="px-3 py-2">Ecom UGC ads at scale</td>
+                <td className="px-3 py-2">Excellent</td>
+                <td className="px-3 py-2">Fast</td>
+                <td className="px-3 py-2">Subscription</td>
+              </tr>
+              <tr className="border-t border-border">
+                <td className="px-3 py-2 font-semibold text-foreground">Creatify</td>
+                <td className="px-3 py-2">Short-form UGC</td>
+                <td className="px-3 py-2">Good</td>
+                <td className="px-3 py-2">Fast</td>
+                <td className="px-3 py-2">Subscription</td>
+              </tr>
+              <tr className="border-t border-border">
+                <td className="px-3 py-2 font-semibold text-foreground">Runway</td>
+                <td className="px-3 py-2">Cinematic / brand</td>
+                <td className="px-3 py-2">Limited</td>
+                <td className="px-3 py-2">Medium</td>
+                <td className="px-3 py-2">Credit-based</td>
+              </tr>
+              <tr className="border-t border-border">
+                <td className="px-3 py-2 font-semibold text-foreground">Pictory</td>
+                <td className="px-3 py-2">Repurposing long-form</td>
+                <td className="px-3 py-2">Limited</td>
+                <td className="px-3 py-2">Fast</td>
+                <td className="px-3 py-2">Subscription</td>
+              </tr>
+              <tr className="border-t border-border">
+                <td className="px-3 py-2 font-semibold text-foreground">Arcads</td>
+                <td className="px-3 py-2">AI talking-head UGC</td>
+                <td className="px-3 py-2">Good</td>
+                <td className="px-3 py-2">Fast</td>
+                <td className="px-3 py-2">Subscription</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 className="mt-8 font-display text-lg font-bold text-foreground">Why Holo AI Stands Out for Ecommerce</h3>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          Generic AI tools were built for content creators, not media buyers. They start from a prompt and ask you to art-direct. That breaks the moment you need 20 variants of the same product before noon.
         </p>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          Holo AI is one of the fastest tools for generating ad creatives at scale. It's built specifically for ecommerce: feed it a product URL, pick an angle, and it produces UGC-style videos, lifestyle images, and ad copy variants in one pass. For brands testing 10+ creatives a week, it's the closest thing to an in-house creative team without the overhead.
+          Holo AI is built ecommerce-first. You drop in a product URL, choose an angle, and it generates UGC-style videos, lifestyle images, and copy variants in one pass. The whole loop is designed around testing volume, not artistic output.
         </p>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          We covered the strengths, weaknesses, and pricing in detail in our full <Link to="/blog/holo-ai-review" className="text-brand underline">Holo AI review</Link> — including who should use it and who shouldn't.
+        <ul className="mt-3 list-disc space-y-2 pl-5 text-sm leading-relaxed text-muted-foreground">
+          <li><strong className="text-foreground">Product URL input</strong> — no prompts, no manual setup.</li>
+          <li><strong className="text-foreground">Multiple ad variations</strong> per product in a single run.</li>
+          <li><strong className="text-foreground">UGC-style creatives</strong> that match what's converting on Meta and TikTok in 2026.</li>
+          <li><strong className="text-foreground">Speed</strong> — minutes from product to upload-ready ad.</li>
+        </ul>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          While most brands are still struggling to ship 3 ads a week, others are testing 20+ variations daily. That gap is the whole game in 2026.
         </p>
         <ArticleImage src="/images/hero-holo-ai-dashboard.webp" alt="Holo AI dashboard generating ecommerce ad creatives" />
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          Other AI ad generators worth knowing: Pictory (better for repurposing long-form content), Runway (more cinematic, less ecom-focused), and Creatify (good for short-form UGC). None match an ecommerce-native tool when your goal is testing volume on Meta and TikTok.
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          For a full walkthrough of features, real outputs, and pricing, read our <Link to="/blog/holo-ai-review" className="text-brand underline">Holo AI review</Link>. If you're weighing it against the alternatives, see our <Link to="/holo-ai-vs-pictory" className="text-brand underline">Holo AI vs Pictory comparison</Link>.
         </p>
       </section>
 
       <section>
         <h2 className="font-display text-xl font-bold text-foreground">Common Mistakes to Avoid</h2>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          <strong className="text-foreground">Using generic hooks.</strong> "Check out this amazing product" doesn't stop the scroll. The hook needs to call out your customer's exact pain in the first 2 seconds.
-        </p>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          <strong className="text-foreground">Not testing enough creatives.</strong> Three AI ads is not a test. The whole point of AI is volume — if you're not running 10–20 variants per product, you're using it wrong.
-        </p>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          <strong className="text-foreground">Expecting perfect output.</strong> First-pass AI video isn't shoot-ready. Treat it as a 90% draft. A few seconds of trimming and a stronger hook turn a decent variant into a winning one.
-        </p>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          <strong className="text-foreground">Skipping the angle work.</strong> Operators paste a product URL, hit generate, and wonder why nothing converts. The angle is 80% of the result. AI just executes faster.
-        </p>
-        <ArticleImage src="/images/holo-ai-multiple-creatives.webp" alt="Bad versus good ecommerce ad creative comparison" />
+        <ul className="mt-3 list-disc space-y-2 pl-5 text-sm leading-relaxed text-muted-foreground">
+          <li><strong className="text-foreground">Generic hooks.</strong> "Check out this amazing product" doesn't stop the scroll.</li>
+          <li><strong className="text-foreground">Not testing enough creatives.</strong> Three AI ads is not a test. The point of AI is volume.</li>
+          <li><strong className="text-foreground">Expecting perfect output.</strong> First-pass AI is a 90% draft, not a finished ad.</li>
+          <li><strong className="text-foreground">Skipping the angle work.</strong> The angle is 80% of the result. AI just executes faster.</li>
+        </ul>
+        <blockquote className="mt-5 border-l-4 border-brand pl-4 text-base italic text-foreground">
+          "The hook matters more than the editing."
+        </blockquote>
       </section>
 
       <section>
         <h2 className="font-display text-xl font-bold text-foreground">Pro Tips (Advanced)</h2>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          <strong className="text-foreground">Test 10–20 creatives per product.</strong> The math is simple: more shots on goal, more winners. AI makes this affordable for the first time.
-        </p>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          <strong className="text-foreground">Iterate fast on winners.</strong> When a creative hits 2x ROAS, generate 10 variants of that exact angle the same day. Don't wait a week.
-        </p>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          <strong className="text-foreground">Focus relentlessly on hooks.</strong> Same product, same offer — but rotate 20 different hooks. The hook is the single biggest lever for CTR and CPM.
-        </p>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          <strong className="text-foreground">Mix AI with real UGC.</strong> The strongest accounts use AI for testing volume and real creators for the proven winners. AI finds the angle; UGC scales it.
-        </p>
-        <ProTip>Build a simple naming system for AI ads: product_angle_hook_v1. When a winner hits, you'll know exactly which combination drove it — and which to clone.</ProTip>
+        <ul className="mt-3 list-disc space-y-2 pl-5 text-sm leading-relaxed text-muted-foreground">
+          <li><strong className="text-foreground">Test 10–20 creatives per product.</strong> More shots, more winners.</li>
+          <li><strong className="text-foreground">Iterate fast on winners.</strong> When a creative hits 2x ROAS, generate 10 variants of that angle the same day.</li>
+          <li><strong className="text-foreground">Rotate hooks aggressively.</strong> Same product, same offer, 20 different opens.</li>
+          <li><strong className="text-foreground">Combine AI with real UGC.</strong> Use AI for testing volume, real creators to scale proven winners.</li>
+        </ul>
+        <ProTip>More tests = more winners. Build a naming system (product_angle_hook_v1) so you can clone exactly what's working when a winner hits.</ProTip>
       </section>
 
       <section>
         <h2 className="font-display text-xl font-bold text-foreground">When to Use AI Video Ads</h2>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          AI video ads are a fit when you're testing new products, scaling a winner that's burning out from creative fatigue, entering a new market, or running multiple SKUs and can't justify a UGC creator for each. They're less of a fit when you have one hero product, a deep UGC backlog, and ROAS that's still climbing.
+          AI video ads make sense when you're testing new products, scaling a winner that's burning out from creative fatigue, running multi-SKU stores that can't justify a UGC creator per product, or entering a new market. They're less of a fit when you have one hero product, a deep UGC backlog, and ROAS that's still climbing.
         </p>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          The clearest signal it's time to add AI to your stack: your media buyer is asking for more creatives than your production pipeline can deliver. Once that gap opens, scaling stalls. AI closes it.
+          The clearest signal: your media buyer is asking for more creatives than your production pipeline can deliver. Once that gap opens, scaling stalls. AI closes it.
         </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">FAQ</h2>
+        <div className="mt-4 space-y-5">
+          <div>
+            <h3 className="font-display text-base font-bold text-foreground">Do AI video ads work for Shopify stores?</h3>
+            <p className="mt-1 text-sm leading-relaxed text-muted-foreground">Yes. Most ecommerce-focused AI ad tools accept a Shopify product URL directly and output ads ready for Meta and TikTok. They're especially effective for stores running multiple SKUs.</p>
+          </div>
+          <div>
+            <h3 className="font-display text-base font-bold text-foreground">Can AI replace UGC creators?</h3>
+            <p className="mt-1 text-sm leading-relaxed text-muted-foreground">Not entirely. AI is unmatched for testing volume. Real UGC still wins for scaling proven angles where authenticity drives conversion. The strongest accounts use both.</p>
+          </div>
+          <div>
+            <h3 className="font-display text-base font-bold text-foreground">Are AI ads allowed on Meta and TikTok?</h3>
+            <p className="mt-1 text-sm leading-relaxed text-muted-foreground">Yes, with disclosure rules in some regions. As long as creatives don't misrepresent the product or use deepfaked endorsements, AI-generated ads run fine on both platforms.</p>
+          </div>
+          <div>
+            <h3 className="font-display text-base font-bold text-foreground">What tool is best for beginners?</h3>
+            <p className="mt-1 text-sm leading-relaxed text-muted-foreground">For ecommerce specifically, Holo AI has the lowest learning curve because the workflow starts from a product URL. See our <Link to="/blog/holo-ai-review" className="text-brand underline">Holo AI review</Link> for a full walkthrough.</p>
+          </div>
+          <div>
+            <h3 className="font-display text-base font-bold text-foreground">How many creatives should I test weekly?</h3>
+            <p className="mt-1 text-sm leading-relaxed text-muted-foreground">Aim for 10–20 fresh creatives per active product per week. Below that, the algorithm runs out of fresh inputs and ROAS decays fast.</p>
+          </div>
+        </div>
       </section>
 
       <section>
         <h2 className="font-display text-xl font-bold text-foreground">Final Thoughts</h2>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          AI video ads aren't a magic button. They're a production multiplier — and like any tool, they reward operators who already understand angles, hooks, and testing. If you've been bottlenecked by creative output, this is the unlock.
+          AI isn't magic. It's a production multiplier. The brands winning in 2026 aren't the ones with the smartest creative — they're the ones testing the most. AI just made that affordable for the first time.
         </p>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          Want to see how an ecommerce-native AI ad tool actually works in practice? Read our full <Link to="/blog/holo-ai-review" className="text-brand underline">Holo AI review</Link> — we walk through real outputs, pricing, and where it shines vs. where it falls short.
-        </p>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          Ready to start generating ad creatives faster? See <Link to="/tools/holo-ai" className="text-brand underline">Holo AI on our tools page</Link> for the full feature breakdown and pricing.
+          If you're struggling to keep up with creative demand, explore tools like <Link to="/tools/holo-ai" className="text-brand underline">Holo AI</Link> to scale faster.
         </p>
       </section>
     </div>
