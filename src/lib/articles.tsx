@@ -1611,7 +1611,10 @@ function ArticleHoloReview() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           No fluff, no inflated claims — just what the tool does well, where it falls short, what it costs, and how it compares to the main alternatives in 2026.
         </p>
-        <ToolCTA href={LINKS.holo} label="Try Holo AI" />
+        <p className="mt-4 rounded-md border-l-2 border-brand/40 bg-surface px-3 py-2 text-xs italic text-muted-foreground">
+          This review is based on real usage scenarios, not promotional claims. Recommendations reflect performance, not sponsorship.
+        </p>
+        <ToolCTA href={LINKS.holo} label="See how it works" />
         <ArticleImage src="/images/hero-holo-ai-dashboard.webp" alt="Holo AI dashboard generating ecommerce ad creatives" priority caption="Inside the Holo AI dashboard, where most of the real creative testing workflow actually happens day to day." />
       </section>
 
