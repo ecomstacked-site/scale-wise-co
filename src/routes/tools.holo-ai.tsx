@@ -267,19 +267,6 @@ export default function HoloAiPage() {
               </p>
             </section>
 
-            {/* CTA 2 */}
-            <section className="rounded-xl border border-brand/20 bg-brand/5 p-6 text-center">
-              <p className="font-display text-lg font-bold text-foreground">
-                Generate your next ad in minutes
-              </p>
-              <p className="mt-2 text-sm text-muted-foreground">
-                See how Holo AI works on your own product in under 10 minutes.
-              </p>
-              <div className="mt-4 flex justify-center">
-                <CtaButton>Start generating ad creatives</CtaButton>
-              </div>
-            </section>
-
             {/* FINAL DECISION */}
             <section className="rounded-xl border border-border bg-surface p-6">
               <h2 className="font-display text-xl font-bold text-foreground">The Real Decision</h2>
