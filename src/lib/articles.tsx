@@ -1823,6 +1823,23 @@ function ArticleHoloReview() {
         </ul>
       </section>
 
+      {/* 10b. Limitations to Consider */}
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Limitations to Consider</h2>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          No tool is perfect, and being honest about the trade-offs matters more than overselling. Here are the real limitations to weigh before subscribing:
+        </p>
+        <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
+          <li>• <strong className="text-foreground">Output variance.</strong> Some generations land immediately; others need re-prompting or light editing before launch.</li>
+          <li>• <strong className="text-foreground">Brand-safe styling.</strong> Premium or luxury aesthetics still benefit from human creative direction.</li>
+          <li>• <strong className="text-foreground">Subscription stacking.</strong> If you're already paying for a UGC roster, plan the overlap carefully so costs don't double up.</li>
+          <li>• <strong className="text-foreground">Strategy is still on you.</strong> The tool produces variations — it doesn't decide which angles or audiences to test.</li>
+        </ul>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          These aren't dealbreakers for most ecommerce brands, but they're worth knowing up front so you set realistic expectations.
+        </p>
+      </section>
+
       {/* 11. Who Should Avoid It */}
       <section>
         <h2 className="font-display text-xl font-bold text-foreground">Who Should Avoid It</h2>
