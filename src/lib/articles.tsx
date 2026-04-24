@@ -1695,7 +1695,6 @@ function ArticleHoloReview() {
           The point is not any single feature — it is the system. Together, these features support a real creative testing workflow instead of producing one polished asset and hoping it works.
         </p>
         <ArticleImage src="/images/holo-ai-features-interface.webp" alt="Holo AI interface showing AI generated ecommerce ad creatives" caption="The tool focuses on reducing friction between a product idea and the next batch of testable creatives." />
-        <ToolCTA href={LINKS.holo} label="Start Creating Videos" />
       </section>
 
       {/* 6. How It Works */}
