@@ -39,15 +39,20 @@ function ProTip({ children }: { children: React.ReactNode }) {
   );
 }
 
-function ArticleImage({ src, alt, priority = false }: { src: string; alt: string; priority?: boolean }) {
+function ArticleImage({ src, alt, priority = false, caption }: { src: string; alt: string; priority?: boolean; caption?: string }) {
   return (
     <figure className="my-8 overflow-hidden rounded-2xl border border-border bg-card shadow-lg shadow-brand/5">
       <img
         src={src}
         alt={alt}
         loading={priority ? "eager" : "lazy"}
-        className="h-auto w-full object-contain"
+        className="mx-auto h-auto w-full object-contain"
       />
+      {caption && (
+        <figcaption className="border-t border-border bg-surface px-4 py-3 text-center text-xs italic leading-relaxed text-muted-foreground">
+          {caption}
+        </figcaption>
+      )}
     </figure>
   );
 }
