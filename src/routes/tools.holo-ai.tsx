@@ -11,15 +11,6 @@ import { ArrowUpRight, CheckCircle2, XCircle, Clock, User, Zap, Target, Trending
 const GO_PATH =
   "https://tryholo.ai/?utm_medium=affiliate&utm_source=4988344&utm_campaign=41932&im_ref=VR4UEcxOMxyZW1iwCnQUZz87Uku1QdzxZTtOR00&utm_ad_id=3273895&irgwc=1&afsrc=1";
 
-function CtaButton({ children = "Start generating ad creatives" }: { children?: React.ReactNode }) {
-  return (
-    <a href={GO_PATH} rel="sponsored noopener noreferrer">
-      <Button variant="brand" size="lg" className="gap-1.5">
-        {children} <ArrowUpRight className="h-4 w-4" />
-      </Button>
-    </a>
-  );
-}
 
 function ImageBlock({ src, alt, caption }: { src: string; alt: string; caption: string }) {
   return (
@@ -71,13 +62,22 @@ export default function HoloAiPage() {
             <span>Last updated: April 2026</span>
           </div>
 
-          {/* Top CTA */}
+          {/* Top CTA — soft */}
           <div className="mt-6 flex flex-wrap items-center gap-3">
-            <CtaButton>Start generating ad creatives</CtaButton>
+            <a href={GO_PATH} rel="sponsored noopener noreferrer">
+              <Button variant="brand-outline" size="lg" className="gap-1.5">
+                See how it works <ArrowUpRight className="h-4 w-4" />
+              </Button>
+            </a>
             <Link to="/blog/holo-ai-review" className="text-xs text-muted-foreground underline-offset-2 hover:underline">
               Read the full review
             </Link>
           </div>
+
+          {/* Trust line */}
+          <p className="mt-5 rounded-md border-l-2 border-brand/40 bg-surface px-3 py-2 text-xs italic text-muted-foreground">
+            This page is based on real testing workflows — not promotional claims. We evaluate tools on actual usage, not sponsorship.
+          </p>
 
           <div className="mt-8 space-y-10">
             {/* INTRO — pain-first */}
@@ -141,19 +141,6 @@ export default function HoloAiPage() {
               </p>
             </section>
 
-            {/* CTA 1 */}
-            <section className="rounded-xl border border-brand/20 bg-brand/5 p-6 text-center">
-              <p className="font-display text-lg font-bold text-foreground">
-                Generate your next ad in minutes
-              </p>
-              <p className="mt-2 text-sm text-muted-foreground">
-                Stop waiting on editors. Start testing creatives now.
-              </p>
-              <div className="mt-4 flex justify-center">
-                <CtaButton>Start generating ad creatives</CtaButton>
-              </div>
-            </section>
-
             {/* WHO IT'S FOR */}
             <section>
               <h2 className="font-display text-xl font-bold text-foreground">Who Holo AI Is Built For</h2>
@@ -162,9 +149,20 @@ export default function HoloAiPage() {
                 <li>• <strong className="text-foreground">Ecommerce founders</strong> running multi-SKU stores who can't afford a full creative team.</li>
                 <li>• <strong className="text-foreground">Media buyers</strong> managing Meta and TikTok ad spend who need fresh angles every few days.</li>
               </ul>
-              <p className="mt-3 text-sm italic text-muted-foreground">
-                If you're producing ads one by one, this is where most brands get stuck.
+            </section>
+
+            {/* WHO IT'S NOT FOR */}
+            <section>
+              <h2 className="font-display text-xl font-bold text-foreground">Who This Tool Is NOT For</h2>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                Holo AI isn't the right fit for every brand. Skip it (or wait) if any of these apply:
               </p>
+              <ul className="mt-3 space-y-2 text-sm leading-relaxed text-muted-foreground">
+                <li>• You need cinematic, high-production brand films with custom shots.</li>
+                <li>• You're not actively running paid ads and have no plan to test creatives.</li>
+                <li>• Your offer, pricing, or product page is the actual reason ads aren't converting — fix that first.</li>
+                <li>• You expect a one-click button with zero strategic input.</li>
+              </ul>
             </section>
 
             {/* KEY FEATURES */}
@@ -260,19 +258,6 @@ export default function HoloAiPage() {
               </p>
             </section>
 
-            {/* CTA 2 */}
-            <section className="rounded-xl border border-brand/20 bg-brand/5 p-6 text-center">
-              <p className="font-display text-lg font-bold text-foreground">
-                Generate your next ad in minutes
-              </p>
-              <p className="mt-2 text-sm text-muted-foreground">
-                See how Holo AI works on your own product in under 10 minutes.
-              </p>
-              <div className="mt-4 flex justify-center">
-                <CtaButton>Start generating ad creatives</CtaButton>
-              </div>
-            </section>
-
             {/* FINAL DECISION */}
             <section className="rounded-xl border border-border bg-surface p-6">
               <h2 className="font-display text-xl font-bold text-foreground">The Real Decision</h2>
@@ -290,16 +275,20 @@ export default function HoloAiPage() {
               </p>
             </section>
 
-            {/* FINAL CTA */}
+            {/* FINAL CTA — soft */}
             <section className="rounded-xl border border-brand/20 bg-brand/5 p-6 text-center">
               <h3 className="font-display text-lg font-bold text-foreground">
-                Start generating ad creatives today
+                See if Holo AI fits your workflow
               </h3>
               <p className="mt-2 text-sm text-muted-foreground">
-                Visit the official site for current pricing and plans.
+                Visit the official site to check current pricing and plans.
               </p>
               <div className="mt-4 flex justify-center">
-                <CtaButton>Start generating ad creatives</CtaButton>
+                <a href={GO_PATH} rel="sponsored noopener noreferrer">
+                  <Button variant="brand" size="lg" className="gap-1.5">
+                    Check current pricing <ArrowUpRight className="h-4 w-4" />
+                  </Button>
+                </a>
               </div>
               <p className="mt-4 text-xs text-muted-foreground">
                 Still deciding? Read our{" "}
@@ -312,7 +301,7 @@ export default function HoloAiPage() {
                 </Link>.
               </p>
               <p className="mt-4 text-xs italic text-muted-foreground">
-                This page contains affiliate links. We may earn a commission at no extra cost to you.
+                Disclosure: This page contains affiliate links. We may earn a commission at no extra cost to you — pricing is the same for you either way.
               </p>
             </section>
           </div>

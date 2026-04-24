@@ -1195,10 +1195,13 @@ function ArticleHoloVsPictory() {
         <p className="mt-4 text-sm leading-relaxed text-foreground">
           This isn't a surface-level comparison — it's based on how these tools perform in real ad workflows.
         </p>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          Upfront: <strong className="text-foreground">both tools serve different use cases depending on your workflow.</strong> Pictory is stronger for long-form repurposing; Holo AI is built around short-form ecommerce ad testing. Neither is universally "better" — the right pick depends on what you actually ship each week.
+        </p>
         <p className="mt-4 text-sm leading-relaxed text-muted-foreground italic">
           While you're comparing tools, someone else is already testing 10 new creatives.
         </p>
-        <ToolCTA href={LINKS.holo} label="Start generating ad creatives" />
+        <ToolCTA href={LINKS.holo} label="See how Holo AI works" />
       </section>
 
       <ArticleImage
@@ -1258,7 +1261,7 @@ function ArticleHoloVsPictory() {
         <p className="mt-4 text-sm leading-relaxed text-foreground">
           If speed matters, start with Holo AI.
         </p>
-        <ToolCTA href={LINKS.holo} label="Start generating ad creatives" />
+        <ToolCTA href={LINKS.holo} label="Check current Holo AI pricing" />
       </section>
 
       {/* PRICING */}
@@ -1611,7 +1614,10 @@ function ArticleHoloReview() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           No fluff, no inflated claims — just what the tool does well, where it falls short, what it costs, and how it compares to the main alternatives in 2026.
         </p>
-        <ToolCTA href={LINKS.holo} label="Try Holo AI" />
+        <p className="mt-4 rounded-md border-l-2 border-brand/40 bg-surface px-3 py-2 text-xs italic text-muted-foreground">
+          This review is based on real usage scenarios, not promotional claims. Recommendations reflect performance, not sponsorship.
+        </p>
+        <ToolCTA href={LINKS.holo} label="See how it works" />
         <ArticleImage src="/images/hero-holo-ai-dashboard.webp" alt="Holo AI dashboard generating ecommerce ad creatives" priority caption="Inside the Holo AI dashboard, where most of the real creative testing workflow actually happens day to day." />
       </section>
 
@@ -1651,7 +1657,7 @@ function ArticleHoloReview() {
           The turning point was realizing I had generated more ad variations in one afternoon than I would normally ship in a full week with a freelancer. That is a fundamentally different testing posture.
         </p>
         <ArticleImage src="/images/holo-ai-multiple-creatives.webp" alt="Multiple AI video ad variations generated from one ecommerce product" caption="Generating multiple ad variations in one session completely changes how fast you can validate new angles." />
-        <ToolCTA href={LINKS.holo} label="Generate 10+ Ad Creatives in One Session" />
+        <ToolCTA href={LINKS.holo} label="See how it works" />
       </section>
 
       {/* 4. What Is Holo AI */}
@@ -1692,7 +1698,6 @@ function ArticleHoloReview() {
           The point is not any single feature — it is the system. Together, these features support a real creative testing workflow instead of producing one polished asset and hoping it works.
         </p>
         <ArticleImage src="/images/holo-ai-features-interface.webp" alt="Holo AI interface showing AI generated ecommerce ad creatives" caption="The tool focuses on reducing friction between a product idea and the next batch of testable creatives." />
-        <ToolCTA href={LINKS.holo} label="Start Creating Videos" />
       </section>
 
       {/* 6. How It Works */}
@@ -1821,6 +1826,23 @@ function ArticleHoloReview() {
         </ul>
       </section>
 
+      {/* 10b. Limitations to Consider */}
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Limitations to Consider</h2>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          No tool is perfect, and being honest about the trade-offs matters more than overselling. Here are the real limitations to weigh before subscribing:
+        </p>
+        <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
+          <li>• <strong className="text-foreground">Output variance.</strong> Some generations land immediately; others need re-prompting or light editing before launch.</li>
+          <li>• <strong className="text-foreground">Brand-safe styling.</strong> Premium or luxury aesthetics still benefit from human creative direction.</li>
+          <li>• <strong className="text-foreground">Subscription stacking.</strong> If you're already paying for a UGC roster, plan the overlap carefully so costs don't double up.</li>
+          <li>• <strong className="text-foreground">Strategy is still on you.</strong> The tool produces variations — it doesn't decide which angles or audiences to test.</li>
+        </ul>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          These aren't dealbreakers for most ecommerce brands, but they're worth knowing up front so you set realistic expectations.
+        </p>
+      </section>
+
       {/* 11. Who Should Avoid It */}
       <section>
         <h2 className="font-display text-xl font-bold text-foreground">Who Should Avoid It</h2>
@@ -1872,7 +1894,7 @@ function ArticleHoloReview() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           Pick one product, open Holo AI, and generate 10 ad variations in a single session. Push them into your Meta or TikTok account and let the data tell you what wins. That is how serious ecommerce brands are testing in 2026.
         </p>
-        <ToolCTA href={LINKS.holo} label="Start Creating Ad Variations Now" />
+        <ToolCTA href={LINKS.holo} label="Check current pricing" />
         <p className="mt-2 text-xs italic text-muted-foreground">
           Disclosure: This page contains affiliate links. We may earn a commission at no extra cost to you.
         </p>
