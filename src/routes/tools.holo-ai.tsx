@@ -284,16 +284,20 @@ export default function HoloAiPage() {
               </p>
             </section>
 
-            {/* FINAL CTA */}
+            {/* FINAL CTA — soft */}
             <section className="rounded-xl border border-brand/20 bg-brand/5 p-6 text-center">
               <h3 className="font-display text-lg font-bold text-foreground">
-                Start generating ad creatives today
+                See if Holo AI fits your workflow
               </h3>
               <p className="mt-2 text-sm text-muted-foreground">
-                Visit the official site for current pricing and plans.
+                Visit the official site to check current pricing and plans.
               </p>
               <div className="mt-4 flex justify-center">
-                <CtaButton>Start generating ad creatives</CtaButton>
+                <a href={GO_PATH} rel="sponsored noopener noreferrer">
+                  <Button variant="brand" size="lg" className="gap-1.5">
+                    Check current pricing <ArrowUpRight className="h-4 w-4" />
+                  </Button>
+                </a>
               </div>
               <p className="mt-4 text-xs text-muted-foreground">
                 Still deciding? Read our{" "}
@@ -306,7 +310,7 @@ export default function HoloAiPage() {
                 </Link>.
               </p>
               <p className="mt-4 text-xs italic text-muted-foreground">
-                This page contains affiliate links. We may earn a commission at no extra cost to you.
+                Disclosure: This page contains affiliate links. We may earn a commission at no extra cost to you — pricing is the same for you either way.
               </p>
             </section>
           </div>
