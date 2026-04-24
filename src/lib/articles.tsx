@@ -1891,7 +1891,7 @@ function ArticleHoloReview() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           Pick one product, open Holo AI, and generate 10 ad variations in a single session. Push them into your Meta or TikTok account and let the data tell you what wins. That is how serious ecommerce brands are testing in 2026.
         </p>
-        <ToolCTA href={LINKS.holo} label="Start Creating Ad Variations Now" />
+        <ToolCTA href={LINKS.holo} label="Check current pricing" />
         <p className="mt-2 text-xs italic text-muted-foreground">
           Disclosure: This page contains affiliate links. We may earn a commission at no extra cost to you.
         </p>
