@@ -1526,7 +1526,7 @@ function ArticleHoloReview() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           <strong className="text-foreground">4. Test.</strong> Push the creatives into your ad account and let real numbers — CTR, hold rate, CPA — decide which direction to scale. Personal taste is the worst ad-buying signal in ecommerce.
         </p>
-        <ArticleImage src="/images/holo-ai-workflow.webp" alt="Holo AI ad creation workflow input generate export test" />
+        <ArticleImage src="/images/holo-ai-workflow.webp" alt="Holo AI ad creation workflow input generate export test" caption="This simple input-to-test loop is what makes high-volume creative testing actually sustainable week after week." />
       </section>
 
       {/* 7. Pros & Cons */}
