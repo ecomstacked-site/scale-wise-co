@@ -5775,7 +5775,12 @@ function ArticleAIVideoAdsForEcommerce() {
         <p className="mt-4 text-base leading-relaxed text-muted-foreground">
           This is exactly why tools like Holo AI are gaining traction with ecommerce operators. We covered the full breakdown in our <Link to="/blog/holo-ai-review" className="text-brand underline">Holo AI review</Link> — but first, let's break down the playbook.
         </p>
-        <ArticleImage src="/images/holo-ai-results-dashboard.webp" alt="Declining ROAS dashboard for ecommerce paid ads" priority />
+        <ArticleImage
+          src="/images/01-hero-roas-drop.png"
+          alt="Ecommerce ad performance dashboard showing ROAS decline"
+          priority
+          caption="ROAS drops quickly when brands fail to keep up with creative testing demand."
+        />
       </section>
 
       <section>
