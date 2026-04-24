@@ -1195,10 +1195,13 @@ function ArticleHoloVsPictory() {
         <p className="mt-4 text-sm leading-relaxed text-foreground">
           This isn't a surface-level comparison — it's based on how these tools perform in real ad workflows.
         </p>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          Upfront: <strong className="text-foreground">both tools serve different use cases depending on your workflow.</strong> Pictory is stronger for long-form repurposing; Holo AI is built around short-form ecommerce ad testing. Neither is universally "better" — the right pick depends on what you actually ship each week.
+        </p>
         <p className="mt-4 text-sm leading-relaxed text-muted-foreground italic">
           While you're comparing tools, someone else is already testing 10 new creatives.
         </p>
-        <ToolCTA href={LINKS.holo} label="Start generating ad creatives" />
+        <ToolCTA href={LINKS.holo} label="See how Holo AI works" />
       </section>
 
       <ArticleImage
