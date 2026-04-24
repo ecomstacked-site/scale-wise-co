@@ -5898,6 +5898,11 @@ function ArticleAIVideoAdsForEcommerce() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           The unlock wasn't a magic ad. It was running 12 tests instead of 3. AI didn't write a better hook than the human team — it let the team test enough hooks to find one.
         </p>
+        <ArticleImage
+          src="/images/07-meta-campaign-results.png"
+          alt="Meta Ads Manager dashboard showing winning ad creatives"
+          caption="Top-performing creatives emerge faster when multiple variations are tested simultaneously."
+        />
       </section>
 
       <section>
