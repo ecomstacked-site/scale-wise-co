@@ -5815,7 +5815,11 @@ function ArticleAIVideoAdsForEcommerce() {
         <SnippetBox q="What are AI video ads?">
           AI video ads are platform-ready short-form videos generated automatically from a product URL or images. They replace 2–3 weeks of UGC production with a 10-minute workflow.
         </SnippetBox>
-        <ArticleImage src="/images/holo-ai-multiple-creatives.webp" alt="AI generating ecommerce ad creatives" />
+        <ArticleImage
+          src="/images/03-ai-ad-workflow.png"
+          alt="AI ad creation workflow generating multiple ecommerce creatives"
+          caption="AI compresses weeks of production into a fast, repeatable ad creation workflow."
+        />
       </section>
 
       <section>
