@@ -71,13 +71,22 @@ export default function HoloAiPage() {
             <span>Last updated: April 2026</span>
           </div>
 
-          {/* Top CTA */}
+          {/* Top CTA — soft */}
           <div className="mt-6 flex flex-wrap items-center gap-3">
-            <CtaButton>Start generating ad creatives</CtaButton>
+            <a href={GO_PATH} rel="sponsored noopener noreferrer">
+              <Button variant="brand-outline" size="lg" className="gap-1.5">
+                See how it works <ArrowUpRight className="h-4 w-4" />
+              </Button>
+            </a>
             <Link to="/blog/holo-ai-review" className="text-xs text-muted-foreground underline-offset-2 hover:underline">
               Read the full review
             </Link>
           </div>
+
+          {/* Trust line */}
+          <p className="mt-5 rounded-md border-l-2 border-brand/40 bg-surface px-3 py-2 text-xs italic text-muted-foreground">
+            This page is based on real testing workflows — not promotional claims. We evaluate tools on actual usage, not sponsorship.
+          </p>
 
           <div className="mt-8 space-y-10">
             {/* INTRO — pain-first */}
