@@ -5960,6 +5960,11 @@ function ArticleAIVideoAdsForEcommerce() {
             </tbody>
           </table>
         </div>
+        <ArticleImage
+          src="/images/08-ai-tools-comparison.png"
+          alt="AI video ad tools comparison highlighting Holo AI for ecommerce"
+          caption="Ecommerce-focused tools outperform general AI platforms when speed and scale matter most."
+        />
 
         <h3 className="mt-8 font-display text-lg font-bold text-foreground">Why Holo AI Stands Out for Ecommerce</h3>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
