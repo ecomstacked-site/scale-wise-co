@@ -11,7 +11,7 @@ import { ArrowUpRight, CheckCircle2, XCircle, Clock, User, Zap, Target, Trending
 const GO_PATH =
   "https://tryholo.ai/?utm_medium=affiliate&utm_source=4988344&utm_campaign=41932&im_ref=VR4UEcxOMxyZW1iwCnQUZz87Uku1QdzxZTtOR00&utm_ad_id=3273895&irgwc=1&afsrc=1";
 
-function CtaButton({ children = "Try Holo AI Free" }: { children?: React.ReactNode }) {
+function CtaButton({ children = "Start generating ad creatives" }: { children?: React.ReactNode }) {
   return (
     <a href={GO_PATH} rel="sponsored noopener noreferrer">
       <Button variant="brand" size="lg" className="gap-1.5">
@@ -73,7 +73,7 @@ export default function HoloAiPage() {
 
           {/* Top CTA */}
           <div className="mt-6 flex flex-wrap items-center gap-3">
-            <CtaButton>Visit Holo AI</CtaButton>
+            <CtaButton>Start generating ad creatives</CtaButton>
             <Link to="/blog/holo-ai-review" className="text-xs text-muted-foreground underline-offset-2 hover:underline">
               Read the full review
             </Link>
@@ -93,6 +93,9 @@ export default function HoloAiPage() {
               </p>
               <p className="text-sm leading-relaxed text-muted-foreground">
                 Holo AI was built to solve exactly that — turn one product into a stack of testable ad creatives in a single session.
+              </p>
+              <p className="text-sm font-semibold leading-relaxed text-foreground">
+                This isn't about replacing creative strategy — it's about removing the production bottleneck.
               </p>
             </section>
 
@@ -133,18 +136,21 @@ export default function HoloAiPage() {
               <p className="mt-4 rounded-lg border border-border bg-background p-4 text-sm italic text-foreground">
                 Instead of testing 3 ads next week, you can test 12+ this afternoon.
               </p>
+              <p className="mt-4 text-sm font-semibold leading-relaxed text-foreground">
+                Most brands never find a winning ad — not because it doesn't exist, but because they never test enough to see it.
+              </p>
             </section>
 
             {/* CTA 1 */}
             <section className="rounded-xl border border-brand/20 bg-brand/5 p-6 text-center">
               <p className="font-display text-lg font-bold text-foreground">
-                Generate 10+ ad creatives in minutes
+                Generate your next ad in minutes
               </p>
               <p className="mt-2 text-sm text-muted-foreground">
-                Stop waiting on editors. Start testing more creatives today.
+                Stop waiting on editors. Start testing creatives now.
               </p>
               <div className="mt-4 flex justify-center">
-                <CtaButton>Start Testing With Holo AI</CtaButton>
+                <CtaButton>Start generating ad creatives</CtaButton>
               </div>
             </section>
 
@@ -201,6 +207,9 @@ export default function HoloAiPage() {
               <p className="mt-4 text-sm font-semibold leading-relaxed text-foreground">
                 Brands that test faster always outperform brands that test less. Speed is the advantage in 2026.
               </p>
+              <p className="mt-3 text-sm italic leading-relaxed text-muted-foreground">
+                The goal isn't better ads. It's more shots on goal.
+              </p>
             </section>
 
             {/* PROS & CONS */}
@@ -254,13 +263,13 @@ export default function HoloAiPage() {
             {/* CTA 2 */}
             <section className="rounded-xl border border-brand/20 bg-brand/5 p-6 text-center">
               <p className="font-display text-lg font-bold text-foreground">
-                Build your next winning ad faster
+                Generate your next ad in minutes
               </p>
               <p className="mt-2 text-sm text-muted-foreground">
                 See how Holo AI works on your own product in under 10 minutes.
               </p>
               <div className="mt-4 flex justify-center">
-                <CtaButton>Try Holo AI Now</CtaButton>
+                <CtaButton>Start generating ad creatives</CtaButton>
               </div>
             </section>
 
@@ -276,18 +285,21 @@ export default function HoloAiPage() {
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
                 While you're testing 2 ads this week, someone else is testing 20+. That's the gap that decides who scales and who stalls.
               </p>
+              <p className="mt-3 text-sm font-semibold leading-relaxed text-foreground">
+                The longer you wait to increase creative volume, the more data you lose.
+              </p>
             </section>
 
             {/* FINAL CTA */}
             <section className="rounded-xl border border-brand/20 bg-brand/5 p-6 text-center">
               <h3 className="font-display text-lg font-bold text-foreground">
-                Start testing creatives at scale with Holo AI
+                Start generating ad creatives today
               </h3>
               <p className="mt-2 text-sm text-muted-foreground">
                 Visit the official site for current pricing and plans.
               </p>
               <div className="mt-4 flex justify-center">
-                <CtaButton>Visit Holo AI</CtaButton>
+                <CtaButton>Start generating ad creatives</CtaButton>
               </div>
               <p className="mt-4 text-xs text-muted-foreground">
                 Still deciding? Read our{" "}
