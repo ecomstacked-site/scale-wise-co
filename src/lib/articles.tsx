@@ -1425,7 +1425,7 @@ function ArticleHoloReview() {
           No fluff, no inflated claims — just what the tool does well, where it falls short, what it costs, and how it compares to the main alternatives in 2026.
         </p>
         <ToolCTA href={LINKS.holo} label="Try Holo AI" />
-        <ArticleImage src="/images/hero-holo-ai-dashboard.webp" alt="Holo AI dashboard generating ecommerce ad creatives" priority />
+        <ArticleImage src="/images/hero-holo-ai-dashboard.webp" alt="Holo AI dashboard generating ecommerce ad creatives" priority caption="Inside the Holo AI dashboard, where most of the real creative testing workflow actually happens day to day." />
       </section>
 
       {/* 2. Why Most Ecommerce Ads Fail */}
