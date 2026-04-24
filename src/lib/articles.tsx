@@ -1654,7 +1654,7 @@ function ArticleHoloReview() {
           The turning point was realizing I had generated more ad variations in one afternoon than I would normally ship in a full week with a freelancer. That is a fundamentally different testing posture.
         </p>
         <ArticleImage src="/images/holo-ai-multiple-creatives.webp" alt="Multiple AI video ad variations generated from one ecommerce product" caption="Generating multiple ad variations in one session completely changes how fast you can validate new angles." />
-        <ToolCTA href={LINKS.holo} label="Generate 10+ Ad Creatives in One Session" />
+        <ToolCTA href={LINKS.holo} label="See how it works" />
       </section>
 
       {/* 4. What Is Holo AI */}
