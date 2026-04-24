@@ -5834,6 +5834,11 @@ function ArticleAIVideoAdsForEcommerce() {
         <p className="mt-4 text-sm font-semibold leading-relaxed text-foreground">
           Winning brands out-test their competitors. Volume beats perfection.
         </p>
+        <ArticleImage
+          src="/images/04-speed-comparison.png"
+          alt="Manual UGC workflow versus fast AI creative testing workflow"
+          caption="Manual UGC production takes weeks, while AI enables same-day creative testing at scale."
+        />
       </section>
 
       <section>
