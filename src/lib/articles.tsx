@@ -5982,7 +5982,11 @@ function ArticleAIVideoAdsForEcommerce() {
         <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
           While most brands are still struggling to ship 3 ads a week, others are testing 20+ variations daily. That gap is the whole game in 2026.
         </p>
-        <ArticleImage src="/images/hero-holo-ai-dashboard.webp" alt="Holo AI dashboard generating ecommerce ad creatives" />
+        <ArticleImage
+          src="/images/10-media-buyer-dashboard.png"
+          alt="Media buyer dashboard with multiple winning ad creative variations"
+          caption="Holo AI generates multiple ad variations from a single product, enabling faster testing at scale."
+        />
         <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
           For a full walkthrough of features, real outputs, and pricing, read our <Link to="/blog/holo-ai-review" className="text-brand underline">Holo AI review</Link>. If you're weighing it against the alternatives, see our <Link to="/holo-ai-vs-pictory" className="text-brand underline">Holo AI vs Pictory comparison</Link>.
         </p>
