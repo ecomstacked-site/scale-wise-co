@@ -11,15 +11,6 @@ import { ArrowUpRight, CheckCircle2, XCircle, Clock, User, Zap, Target, Trending
 const GO_PATH =
   "https://tryholo.ai/?utm_medium=affiliate&utm_source=4988344&utm_campaign=41932&im_ref=VR4UEcxOMxyZW1iwCnQUZz87Uku1QdzxZTtOR00&utm_ad_id=3273895&irgwc=1&afsrc=1";
 
-function CtaButton({ children = "Start generating ad creatives" }: { children?: React.ReactNode }) {
-  return (
-    <a href={GO_PATH} rel="sponsored noopener noreferrer">
-      <Button variant="brand" size="lg" className="gap-1.5">
-        {children} <ArrowUpRight className="h-4 w-4" />
-      </Button>
-    </a>
-  );
-}
 
 function ImageBlock({ src, alt, caption }: { src: string; alt: string; caption: string }) {
   return (
