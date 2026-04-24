@@ -546,6 +546,8 @@ export const articlesMeta: ArticleMeta[] = [
 
 export function getArticleContent(slug: string): React.ReactNode | null {
   switch (slug) {
+    case "ai-video-ads-for-ecommerce":
+      return <ArticleAIVideoAdsForEcommerce />;
     case "best-tiktok-ad-spy-tools":
       return <ArticleBestTikTokAdSpyTools />;
     case "minea-alternatives":
