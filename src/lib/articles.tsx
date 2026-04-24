@@ -6003,6 +6003,11 @@ function ArticleAIVideoAdsForEcommerce() {
         <blockquote className="mt-5 border-l-4 border-brand pl-4 text-base italic text-foreground">
           "The hook matters more than the editing."
         </blockquote>
+        <ArticleImage
+          src="/images/09-bad-vs-good-ads.png"
+          alt="Comparison of low CTR ads versus winning high ROAS ads"
+          caption="The hook drives performance more than editing quality in most ecommerce ad creatives."
+        />
       </section>
 
       <section>
