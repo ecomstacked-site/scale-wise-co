@@ -1395,7 +1395,7 @@ function ArticleHoloReview() {
           No fluff, no inflated claims — just what the tool does well, where it falls short, what it costs, and how it compares to the main alternatives in 2026.
         </p>
         <ToolCTA href={LINKS.holo} label="Try Holo AI" />
-        <ArticleImage src="/images/holo-dashboard.jpg" alt="Holo AI dashboard generating ecommerce ad creatives" priority />
+        <ArticleImage src="/images/hero-holo-ai-dashboard.webp" alt="Holo AI dashboard generating ecommerce ad creatives" priority />
       </section>
 
       {/* 2. Why Most Ecommerce Ads Fail */}
@@ -1433,7 +1433,7 @@ function ArticleHoloReview() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           The turning point was realizing I had generated more ad variations in one afternoon than I would normally ship in a full week with a freelancer. That is a fundamentally different testing posture.
         </p>
-        <ArticleImage src="/images/holo-variations.jpg" alt="Multiple AI video ad variations generated from one ecommerce product" />
+        <ArticleImage src="/images/holo-ai-multiple-creatives.webp" alt="Multiple AI video ad variations generated from one ecommerce product" />
         <ToolCTA href={LINKS.holo} label="Generate 10+ Ad Creatives in One Session" />
       </section>
 
@@ -1474,7 +1474,7 @@ function ArticleHoloReview() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           The point is not any single feature — it is the system. Together, these features support a real creative testing workflow instead of producing one polished asset and hoping it works.
         </p>
-        <ArticleImage src="/images/holo-output.jpg" alt="Holo AI interface showing AI generated ecommerce ad creatives" />
+        <ArticleImage src="/images/holo-ai-features-interface.webp" alt="Holo AI interface showing AI generated ecommerce ad creatives" />
         <ToolCTA href={LINKS.holo} label="Start Creating Videos" />
       </section>
 
@@ -1496,7 +1496,7 @@ function ArticleHoloReview() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           <strong className="text-foreground">4. Test.</strong> Push the creatives into your ad account and let real numbers — CTR, hold rate, CPA — decide which direction to scale. Personal taste is the worst ad-buying signal in ecommerce.
         </p>
-        <ArticleImage src="/images/holo-workflow.jpg" alt="Holo AI ad creation workflow: input, generate, export, and test" />
+        <ArticleImage src="/images/holo-ai-workflow.webp" alt="Holo AI ad creation workflow input generate export test" />
       </section>
 
       {/* 7. Pros & Cons */}
@@ -1623,7 +1623,7 @@ function ArticleHoloReview() {
 
       {/* 12. Final Verdict */}
       <section>
-        <ArticleImage src="/images/holo-results.jpg" alt="Ecommerce ad performance dashboard showing creative testing results" />
+        <ArticleImage src="/images/holo-ai-results-dashboard.webp" alt="Ecommerce ad performance dashboard showing creative testing results" />
         <h2 className="font-display text-xl font-bold text-foreground">Final Verdict: Is Holo AI Worth It?</h2>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           For ecommerce brands where creative production is the bottleneck, Holo AI is genuinely worth it. It compresses the slowest part of the ad testing loop — getting from idea to launchable creative — into a workflow you can actually run every week.
