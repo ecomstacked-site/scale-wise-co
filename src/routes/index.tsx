@@ -77,18 +77,17 @@ export default function HomePage() {
       <section className="border-b border-border bg-surface py-16 sm:py-20">
         <div className="mx-auto max-w-5xl px-4 sm:px-6">
           <div className="text-center">
-            <p className="text-xs font-semibold uppercase tracking-widest text-brand">The Funnel</p>
-            <h2 className="mt-2 font-display text-2xl font-bold text-foreground sm:text-3xl">The Make Money Stack</h2>
+            <p className="text-xs font-semibold uppercase tracking-widest text-brand">The Workflow</p>
+            <h2 className="mt-2 font-display text-2xl font-bold text-foreground sm:text-3xl">A Practical Ecommerce Stack</h2>
             <p className="mx-auto mt-3 max-w-xl text-sm leading-relaxed text-muted-foreground">
-              The 4-step stack ecommerce operators use to find products, create ads, track results, and convert customers.
+              Three categories that cover the core operational needs of most ecommerce brands: research, creative, and tracking.
             </p>
           </div>
-          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-10 grid gap-4 sm:grid-cols-3">
             {[
-              { step: "01", title: "Find Products", tool: "Trendtrack", desc: "Spy on winning Shopify stores and uncover trending products.", href: "/tools/trendtrack-review", cta: "Read Review" },
-              { step: "02", title: "Create Ads", tool: "Holo AI", desc: "Generate scroll-stopping video and image ads in minutes.", href: "/tools/holo-ai", cta: "Read Review" },
-              { step: "03", title: "Track Performance", tool: "WeTracked", desc: "Server-side tracking that recovers lost ad conversions.", href: "/tools/wetracked-review", cta: "Read Review" },
-              { step: "04", title: "Convert Customers", tool: "ManyChat", desc: "Automate DMs to turn conversations into paying customers.", href: "/tools/manychat", cta: "Read Review" },
+              { step: "01", title: "Research products", tool: "WinningHunter", desc: "Spy on Shopify ads and validate products with real marketplace data.", href: "/tools/winninghunter", cta: "Read review" },
+              { step: "02", title: "Produce creatives", tool: "Holo AI", desc: "Generate UGC-style video and image ads from a product URL in minutes.", href: "/tools/holo-ai", cta: "Read review" },
+              { step: "03", title: "Track performance", tool: "WeTracked", desc: "Server-side tracking that captures conversions the browser pixel misses.", href: "/tools/wetracked-review", cta: "Read review" },
             ].map((s) => (
               <Card key={s.step} className="flex flex-col">
                 <CardContent className="flex flex-1 flex-col p-5">
@@ -105,6 +104,9 @@ export default function HomePage() {
               </Card>
             ))}
           </div>
+          <p className="mx-auto mt-6 max-w-xl text-center text-xs italic text-muted-foreground">
+            We test these tools in real ecommerce and paid traffic workflows. Recommendations are based on performance, not sponsorship.
+          </p>
         </div>
       </section>
 
