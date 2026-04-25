@@ -2,20 +2,20 @@ import { Button } from "@/components/ui/button";
 import { ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
-// All affiliate destinations route through internal /go/[brand]
-// transition pages so we never link directly to an affiliate URL.
+// Direct affiliate URLs (no /go/ redirect bridges) — only allowed monetization tools.
+// Removed brands point to internal review pages instead of affiliate links.
 const LINKS = {
-  trendtrack: "https://trendtrack.io?fpr=stacked45",
-  wetracked: "/go/wetracked",
+  trendtrack: "/tools",
+  wetracked: "https://www.wetracked.io/?ref=ddf2eabf-bf17-4363-aaef-585e9c4e763a",
   holo: "https://tryholo.ai/?utm_medium=affiliate&utm_source=4988344&utm_campaign=41932&im_ref=VR4UEcxOMxyZW1iwCnQUZz87Uku1QdzxZTtOR00&utm_ad_id=3273895&irgwc=1&afsrc=1",
-  manychat: "/go/manychat",
-  evebee: "/go/everbee",
-  easyship: "/go/easyship",
-  systeme: "/go/systeme",
-  gohighlevel: "/go/gohighlevel",
-  weshop: "/go/weshop-ai",
-  pictory: "https://pictory.ai?ref=ecomstacked",
-  winninghunter: "/go/winninghunter",
+  manychat: "/tools",
+  evebee: "/tools",
+  easyship: "/tools",
+  systeme: "/tools",
+  gohighlevel: "/tools",
+  weshop: "/tools",
+  pictory: "/blog/holo-ai-vs-pictory",
+  winninghunter: "https://winninghunter.com/?ref=jame",
 };
 
 function ToolCTA({ href, label = "Visit Official Website" }: { href: string; label?: string }) {
