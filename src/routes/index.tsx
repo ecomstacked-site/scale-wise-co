@@ -15,25 +15,22 @@ import {
 } from "lucide-react";
 
 const featuredTools = [
-  { name: "Trendtrack", description: "Spy on Shopify stores, track winning products in real time, and pull the ads driving the sales.", bestFor: "Product research & store spying", benefit: "Find winning products before they saturate", category: "Product Research", featured: true, image: "/assets/tools/trendtrack.jpg", href: "/tools/trendtrack-review" },
-  { name: "WeTracked", description: "Accurate server-side tracking for Facebook, Google, and TikTok ads with first-party data.", bestFor: "Ad tracking & attribution", benefit: "Recover lost conversions and improve ROAS", category: "Tracking", featured: true, image: "/assets/tools/wetracked.jpg", href: "/tools/wetracked-review" },
-  { name: "Holo AI", description: "Ad creative platform for ecommerce brands. Generate winning ads at scale without a design team.", bestFor: "Ad creative & content", benefit: "Produce more creatives in less time", category: "AI Content", featured: true, image: "/assets/tools/holo-ai.jpg", href: "/tools/holo-ai" },
-  { name: "ManyChat", description: "Automated messaging for Instagram, Facebook, and WhatsApp to capture leads and drive sales.", bestFor: "Chat automation & DMs", benefit: "Convert conversations into customers", category: "Automation", featured: false, image: "/assets/tools/manychat.jpg", href: "/tools/manychat" },
+  { name: "WeTracked", description: "Server-side tracking for Facebook, Google, and TikTok ads. Captures conversions the browser pixel misses.", bestFor: "Ad tracking & attribution", benefit: "Recover lost conversions and improve reported ROAS", category: "Tracking", featured: true, image: "/assets/tools/wetracked.jpg", href: "/tools/wetracked-review" },
+  { name: "Holo AI", description: "Ad creative platform for ecommerce. Generate UGC-style videos, product images, and ad copy variations from a product URL.", bestFor: "Ad creative & content", benefit: "Produce more testable ad creatives in less time", category: "AI Content", featured: true, image: "/assets/tools/holo-ai.jpg", href: "/tools/holo-ai" },
+  { name: "WinningHunter", description: "Product and ad research for dropshippers. Combines store spy, ad spy, and product validation into a single workflow.", bestFor: "Product research & store spying", benefit: "Find products with real data instead of guessing", category: "Product Research", featured: true, image: "/assets/tools/trendtrack.jpg", href: "/tools/winninghunter" },
 ];
 
 const categories = [
   { icon: Target, label: "Tracking & Attribution", desc: "Server-side tracking, pixel management, and ROAS optimization" },
   { icon: Bot, label: "AI Content & Ad Creation", desc: "Tools for creatives, copy, and content generation" },
-  { icon: Zap, label: "Chat Automation", desc: "Automated messaging, lead capture, and customer engagement" },
   { icon: Search, label: "Product Research", desc: "Find winning products and optimize your store" },
-  { icon: Users, label: "CRM & Follow-Up", desc: "Customer retention, email flows, and lifetime value growth" },
   { icon: BarChart3, label: "Analytics & Reporting", desc: "Data dashboards, cohort analysis, and performance metrics" },
 ];
 
 const articles = [
-  { title: "Best AI Tools for Dropshipping in 2026", excerpt: "A curated list of tools that help dropshippers automate content, create ads, and optimize their stores.", category: "AI Tools", date: "April 10, 2026", readTime: "8 min read", slug: "best-ai-tools-dropshipping", image: "/assets/blog/ai-tools-dropshipping.jpg" },
+  { title: "Best AI Video Tools for 2026 (Tested for Ecommerce & Ads)", excerpt: "How we tested the top AI video tools for ecommerce ad workflows in 2026.", category: "AI Tools", date: "April 10, 2026", readTime: "8 min read", slug: "best-ai-video-tools", image: "/assets/blog/ai-tools-dropshipping.jpg" },
   { title: "How to Improve Ecommerce Tracking Accuracy", excerpt: "Server-side tracking, CAPI setup, and first-party data strategies to recover lost conversions.", category: "Tracking", date: "April 8, 2026", readTime: "6 min read", slug: "improve-ecommerce-tracking", image: "/assets/blog/tracking-accuracy.jpg" },
-  { title: "Best Chat Automation Tools for Shopify Stores", excerpt: "Compare the top chat automation platforms for Shopify and learn how to turn DMs into revenue.", category: "Automation", date: "April 5, 2026", readTime: "7 min read", slug: "chat-automation-shopify", image: "/assets/blog/chat-automation.jpg" },
+  { title: "Holo AI Review: Real Workflow Test", excerpt: "An honest review of Holo AI based on real ad creative testing workflows.", category: "Reviews", date: "April 5, 2026", readTime: "7 min read", slug: "holo-ai-review", image: "/assets/blog/chat-automation.jpg" },
 ];
 
 export default function HomePage() {
