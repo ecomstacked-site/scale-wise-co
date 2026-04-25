@@ -9,7 +9,7 @@ import { Newsletter } from "@/components/Newsletter";
 import { ArticleCard } from "@/components/ArticleCard";
 import wetrackedImg from "@/assets/wetracked-preview.png";
 import holoAiImg from "@/assets/holo-ai-preview.png";
-import winningHunterImg from "@/assets/winninghunter-preview.png";
+import winningHunterImg from "@/assets/winninghunter-preview.avif";
 import {
   BarChart3, Bot, Eye, Search, Shield, Target,
   ArrowRight, CheckCircle2, TrendingUp,
@@ -20,31 +20,28 @@ const featuredTools = [
   {
     name: "WeTracked",
     image: wetrackedImg,
-    logoText: "W",
-    logoBg: "bg-sky-500",
     tag: "Tracking",
     description: "Server-side tracking for Facebook, Google, TikTok ads.",
     bullets: ["Accurate attribution tracking", "Recover lost conversions"],
+    caption: "WeTracked dashboard showing server-side conversion recovery in real ad campaigns.",
     href: "/tools/wetracked-review",
   },
   {
     name: "Holo AI",
     image: holoAiImg,
-    logoText: "H",
-    logoBg: "bg-fuchsia-500",
     tag: "AI Content",
     description: "AI ad creative platform for ecommerce.",
     bullets: ["Generate ads, images, videos", "Create more content faster"],
+    caption: "Holo AI workspace where ad creatives are generated from a single product URL.",
     href: "/tools/holo-ai",
   },
   {
     name: "WinningHunter",
     image: winningHunterImg,
-    logoText: "W",
-    logoBg: "bg-slate-900",
     tag: "Product Research",
     description: "Product and ad research tool for ecommerce.",
     bullets: ["Discover winning products", "Analyze ad performance"],
+    caption: "WinningHunter research interface used to spy on top-performing Facebook & TikTok ads.",
     href: "/tools/winninghunter",
   },
 ];
@@ -168,21 +165,18 @@ export default function HomePage() {
                 key={tool.name}
                 className="group flex flex-col overflow-hidden border-border/70 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-xl"
               >
-                {/* Image with logo overlay */}
-                <div className="relative aspect-[4/3] w-full overflow-hidden rounded-t-xl bg-surface">
+                {/* Real product screenshot — branding intact */}
+                <div className="relative aspect-[4/3] w-full overflow-hidden rounded-t-xl border-b border-border bg-white">
                   <img
                     src={tool.image}
-                    alt={`${tool.name} dashboard preview`}
+                    alt={`${tool.name} dashboard preview — original product interface`}
                     className="h-full w-full object-cover object-top"
                     loading="lazy"
                   />
-                  <div
-                    className={`absolute left-3 top-3 flex h-8 w-8 items-center justify-center rounded-md ${tool.logoBg} font-display text-sm font-bold text-white shadow-md ring-1 ring-black/10`}
-                    aria-hidden="true"
-                  >
-                    {tool.logoText}
-                  </div>
                 </div>
+                <p className="border-b border-border bg-surface px-4 py-2 text-[11px] italic leading-snug text-muted-foreground">
+                  {tool.caption}
+                </p>
 
                 <CardContent className="flex flex-1 flex-col p-6">
                   <div className="flex items-center justify-between gap-2">
