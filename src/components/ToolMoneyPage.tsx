@@ -11,7 +11,7 @@ import { ArrowUpRight, CheckCircle2, XCircle, Clock, User } from "lucide-react";
 export interface ToolMoneyPageProps {
   /** Tool brand, e.g. "Holo AI" */
   name: string;
-  /** Affiliate redirect path, e.g. "/go/holo-ai" */
+  /** Direct external URL (no internal /go/ redirects) */
   goPath: string;
   /** Short tagline / category label */
   category: string;
