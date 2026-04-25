@@ -299,33 +299,34 @@ export default function HomePage() {
         <div className="mx-auto max-w-4xl px-4 text-center sm:px-6">
           <p className="text-xs font-semibold uppercase tracking-widest text-brand">Starter Stack</p>
           <h2 className="mt-2 font-display text-2xl font-bold text-foreground sm:text-3xl">The Recommended Ecommerce Stack</h2>
-          <p className="mx-auto mt-3 max-w-xl text-sm leading-relaxed text-muted-foreground">A curated set of tools we recommend for dropshippers and ecommerce brands looking to grow with better systems.</p>
-          <div className="mt-10 grid gap-4 sm:grid-cols-2">
+          <p className="mx-auto mt-3 max-w-xl text-sm leading-relaxed text-muted-foreground">A focused set of tools we've tested in real ecommerce and paid traffic workflows.</p>
+          <div className="mt-10 grid gap-4 sm:grid-cols-3">
             {[
-              { category: "Tracking", tool: "WeTracked", reason: "Accurate server-side ad tracking" },
-              { category: "AI Ads", tool: "Holo AI", reason: "Ad creatives at scale" },
-              { category: "Automation", tool: "ManyChat", reason: "Chat-based lead capture & sales" },
-              { category: "Optimization", tool: "Evebee", reason: "Product research for Shopify" },
+              { category: "Tracking", tool: "WeTracked", reason: "Server-side ad tracking", href: "/tools/wetracked-review" },
+              { category: "AI Ads", tool: "Holo AI", reason: "Ad creatives at scale", href: "/tools/holo-ai" },
+              { category: "Research", tool: "WinningHunter", reason: "Product & ad research", href: "/tools/winninghunter" },
             ].map((item) => (
-              <Card key={item.tool} className="text-left">
-                <CardContent className="flex items-center gap-4 p-5">
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-surface">
-                    <span className="font-display text-sm font-bold text-surface-foreground">{item.tool.charAt(0)}</span>
-                  </div>
-                  <div>
-                    <div className="flex items-center gap-2">
-                      <h3 className="font-display text-sm font-bold text-card-foreground">{item.tool}</h3>
-                      <Badge variant="secondary" className="text-xs">{item.category}</Badge>
+              <Link to={item.href} key={item.tool}>
+                <Card className="text-left transition-all hover:border-brand/30 hover:shadow-sm">
+                  <CardContent className="flex items-center gap-4 p-5">
+                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-surface">
+                      <span className="font-display text-sm font-bold text-surface-foreground">{item.tool.charAt(0)}</span>
                     </div>
-                    <p className="mt-0.5 text-xs text-muted-foreground">{item.reason}</p>
-                  </div>
-                </CardContent>
-              </Card>
+                    <div>
+                      <div className="flex items-center gap-2">
+                        <h3 className="font-display text-sm font-bold text-card-foreground">{item.tool}</h3>
+                        <Badge variant="secondary" className="text-xs">{item.category}</Badge>
+                      </div>
+                      <p className="mt-0.5 text-xs text-muted-foreground">{item.reason}</p>
+                    </div>
+                  </CardContent>
+                </Card>
+              </Link>
             ))}
           </div>
           <Link to="/tools" className="mt-8 inline-block">
-            <Button variant="brand" className="gap-2">
-              See Full Tool Directory <ArrowRight className="h-4 w-4" />
+            <Button variant="outline" className="gap-2">
+              See all reviews <ArrowRight className="h-4 w-4" />
             </Button>
           </Link>
         </div>
