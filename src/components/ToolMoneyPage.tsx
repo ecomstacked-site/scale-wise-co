@@ -184,20 +184,20 @@ export function ToolMoneyPage({
               </ul>
             </section>
 
-            <section className="rounded-xl border border-brand/20 bg-brand/5 p-6 text-center">
-              <h3 className="font-display text-lg font-bold text-foreground">Try {name}</h3>
+            <section className="rounded-xl border border-border bg-surface p-6 text-center">
+              <h3 className="font-display text-lg font-bold text-foreground">See if {name} fits your workflow</h3>
               <p className="mt-2 text-sm text-muted-foreground">
-                Visit the official website to view current pricing and plans.
+                Visit the official website to check current pricing and plans.
               </p>
               <div className="mt-4 flex justify-center">
-                <a href={goPath} rel="sponsored noopener noreferrer">
+                <a href={goPath} target="_blank" rel="sponsored noopener noreferrer nofollow">
                   <Button variant="brand" className="gap-1.5">
-                    Visit Official Website <ArrowUpRight className="h-4 w-4" />
+                    View pricing <ArrowUpRight className="h-4 w-4" />
                   </Button>
                 </a>
               </div>
               <p className="mt-4 text-xs italic text-muted-foreground">
-                This page contains affiliate links. We may earn a commission at no extra cost to you.
+                Affiliate link — we may earn a commission at no extra cost to you. Pricing is the same either way.
               </p>
             </section>
           </div>
