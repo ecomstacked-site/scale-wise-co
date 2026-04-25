@@ -10,7 +10,7 @@ import { ToolCard } from "@/components/ToolCard";
 import { ArticleCard } from "@/components/ArticleCard";
 import {
   BarChart3, Bot, Eye, Search, Shield, Target,
-  ArrowRight, CheckCircle2, Zap, TrendingUp, Users,
+  ArrowRight, CheckCircle2, TrendingUp,
   BookOpen, FileSearch, Layers
 } from "lucide-react";
 
