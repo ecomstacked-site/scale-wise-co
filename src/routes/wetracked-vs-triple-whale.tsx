@@ -14,7 +14,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 
-const AFFILIATE_LINK = "/go/wetracked";
+const AFFILIATE_LINK = "https://www.wetracked.io/?ref=ddf2eabf-bf17-4363-aaef-585e9c4e763a";
 
 function CTAButton({ label = "Visit the Official WeTracked Site" }: { label?: string }) {
   return (
