@@ -18,31 +18,26 @@ import {
   LineChart,
 } from "lucide-react";
 
-const AFF = "/go/wetracked";
+const AFF = "https://www.wetracked.io/?ref=ddf2eabf-bf17-4363-aaef-585e9c4e763a";
 
 function PrimaryCTA() {
   return (
-    <div className="my-10 rounded-2xl border border-brand/40 bg-brand/5 p-6 text-center sm:p-8">
+    <div className="my-10 rounded-2xl border border-brand/30 bg-surface p-6 text-center sm:p-8">
       <h3 className="font-display text-xl font-bold text-foreground sm:text-2xl">
-        Ready to see WeTracked in action?
+        See if WeTracked fits your store
       </h3>
       <p className="mx-auto mt-2 max-w-xl text-sm text-muted-foreground">
-        Visit the official website to review current features, integrations, and pricing for your store.
+        Visit the official website to review current features, integrations, and pricing.
       </p>
-      <div className="mt-5 flex flex-col items-center justify-center gap-3 sm:flex-row">
-        <a href={AFF} target="_blank" rel="noopener noreferrer sponsored">
+      <div className="mt-5 flex justify-center">
+        <a href={AFF} target="_blank" rel="noopener noreferrer sponsored nofollow">
           <Button variant="brand" size="lg" className="gap-2">
-            Visit Official Website <ArrowUpRight className="h-4 w-4" />
-          </Button>
-        </a>
-        <a href={AFF} target="_blank" rel="noopener noreferrer sponsored">
-          <Button variant="brand-outline" size="lg">
-            View Pricing
+            View pricing <ArrowUpRight className="h-4 w-4" />
           </Button>
         </a>
       </div>
-      <p className="mt-3 text-xs text-muted-foreground">
-        Affiliate link · We may earn a commission at no extra cost to you.
+      <p className="mt-3 text-xs italic text-muted-foreground">
+        Affiliate link — we may earn a commission at no extra cost to you. Pricing is the same either way.
       </p>
     </div>
   );
