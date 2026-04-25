@@ -98,18 +98,21 @@ export default function WinningHunterPage() {
               </p>
             </section>
 
-            <section className="rounded-xl border border-brand/20 bg-brand/5 p-6 text-center">
-              <h3 className="font-display text-lg font-bold text-foreground">Try WinningHunter</h3>
-              <p className="mt-2 text-sm text-muted-foreground">Visit the official website to view current pricing and plans.</p>
+            <section className="rounded-xl border border-border bg-surface p-6 text-center">
+              <h3 className="font-display text-lg font-bold text-foreground">See if WinningHunter fits your workflow</h3>
+              <p className="mt-2 text-sm text-muted-foreground">Visit the official website to review current pricing and plans.</p>
+              <p className="mt-3 text-xs italic text-muted-foreground">
+                This review is based on real testing workflows — not promotional claims.
+              </p>
               <div className="mt-4 flex justify-center">
-                <a href="/go/winninghunter" rel="noopener noreferrer nofollow">
+                <a href="https://winninghunter.com/?ref=jame" rel="noopener noreferrer sponsored nofollow" target="_blank">
                   <Button variant="brand" className="gap-1.5">
-                    Visit Official Website <ArrowUpRight className="h-4 w-4" />
+                    View pricing <ArrowUpRight className="h-4 w-4" />
                   </Button>
                 </a>
               </div>
               <p className="mt-4 text-xs italic text-muted-foreground">
-                This page may contain affiliate links. We may earn a commission at no extra cost to you.
+                Affiliate link — we may earn a commission at no extra cost to you.
               </p>
             </section>
           </div>

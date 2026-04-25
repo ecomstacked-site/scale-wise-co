@@ -1,4 +1,4 @@
-import { Routes, Route, Link, useParams } from "react-router-dom";
+import { Routes, Route, Link, Navigate } from "react-router-dom";
 import HomePage from "./routes/index";
 import AboutPage from "./routes/about";
 import BlogPage from "./routes/blog.index";
@@ -9,123 +9,16 @@ import PrivacyPage from "./routes/privacy";
 import TermsPage from "./routes/terms";
 import ToolsPage from "./routes/tools.index";
 import ProductResearchPage from "./routes/tools.product-research";
-import TrendtrackReview from "./routes/tools.trendtrack-review";
 import WeTrackedReview from "./routes/tools.wetracked-review";
 import WeTrackedVsTripleWhale from "./routes/wetracked-vs-triple-whale";
 import WinningHunterPage from "./routes/tools.winninghunter";
 import HoloAiPage from "./routes/tools.holo-ai";
-import ManyChatPage from "./routes/tools.manychat";
-import WeShopAiPage from "./routes/tools.weshop-ai";
-import GoHighLevelPage from "./routes/tools.gohighlevel";
-import EverbeePage from "./routes/tools.everbee";
-import EasyshipPage from "./routes/tools.easyship";
-import SystemePage from "./routes/tools.systeme";
 import BestProductResearchToolsPage from "./routes/best-product-research-tools";
 import BestProductResearchToolsForShopifyPage from "./routes/best-product-research-tools-for-shopify";
 import BestTikTokAdSpyToolsPage from "./routes/best-tiktok-ad-spy-tools";
 import BestAIVideoToolsRoute from "./routes/best-ai-video-tools";
 import HoloAiReviewRoute from "./routes/holo-ai-review";
 import HoloAiVsPictoryRoute from "./routes/holo-ai-vs-pictory";
-import { Navigate } from "react-router-dom";
-import { SEO } from "./lib/seo";
-
-// Brand-specific affiliate destinations.
-// Each /go/[brand] route resolves to the matching destination below
-// after a short, visible transition page. This preserves Google Ads
-// compliance (no bridge page / no system circumvention) while still
-// giving us a single internal hop where we can fire analytics.
-const affiliateLinks: Record<string, { url: string; name: string }> = {
-  trendtrack: {
-    url: "https://trendtrack.io?fpr=stacked45",
-    name: "Trendtrack",
-  },
-  wetracked: {
-    url: "https://www.wetracked.io/?ref=ddf2eabf-bf17-4363-aaef-585e9c4e763a",
-    name: "WeTracked",
-  },
-  "holo-ai": {
-    url: "https://tryholo.ai/?utm_medium=affiliate&utm_source=4988344&utm_campaign=41932&im_ref=VR4UEcxOMxyZW1iwCnQUZz87Uku1QdzxZTtOR00&utm_ad_id=3273895&irgwc=1&afsrc=1",
-    name: "Holo AI",
-  },
-  manychat: {
-    url: "https://manychat.com/?irclickid=VnSTflW-KxycRDrzAA0SXwH3Ukpy-iUnJQllWI0&irgwc=1&utm_source=Affiliate&utm_content=LETHUY&utm_medium=Impact&utm_campaign=Online%20Tracking%20Link",
-    name: "ManyChat",
-  },
-  everbee: {
-    url: "https://www.everbee.io/?via=EcomStack",
-    name: "Everbee",
-  },
-  easyship: {
-    url: "https://www.easyship.com/?utm_campaign=4988344&utm_term=10435&utm_content=666308&utm_medium=affiliate&irclickid=1Sd0JU24pxyZWXzxnEWLWz28Uku1lr3BZTtIxE0&irgwc=1&afsrc=1&utm_source=LETHUY",
-    name: "Easyship",
-  },
-  systeme: {
-    url: "https://systeme.io/?sa=sa0246910810ba30b29294f24dd70d00c490781e19",
-    name: "Systeme.io",
-  },
-  gohighlevel: {
-    url: "https://www.gohighlevel.com/?fp_ref=ecomstack",
-    name: "GoHighLevel",
-  },
-  "weshop-ai": {
-    url: "https://www.weshop.ai/?fpr=ecomstack",
-    name: "WeShop AI",
-  },
-  pictory: {
-    url: "https://pictory.ai?ref=ecomstacked",
-    name: "Pictory",
-  },
-  winninghunter: {
-    url: "https://winninghunter.com/?ref=jame",
-    name: "WinningHunter",
-  },
-};
-
-function GoRedirect() {
-  const { tool } = useParams<{ tool: string }>();
-  const entry = tool ? affiliateLinks[tool] : undefined;
-
-  if (!entry) {
-    return (
-      <div className="flex min-h-screen items-center justify-center bg-background px-4">
-        <SEO title="Tool not found" description="Tool destination not found." noIndex />
-        <div className="max-w-md text-center">
-          <h1 className="font-display text-2xl font-bold text-foreground">Tool not found</h1>
-          <p className="mt-2 text-sm text-muted-foreground">
-            We couldn't find that destination.
-          </p>
-          <Link
-            to="/tools"
-            className="mt-6 inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
-          >
-            Browse all tools
-          </Link>
-        </div>
-      </div>
-    );
-  }
-
-  return (
-    <div className="flex min-h-screen items-center justify-center bg-background px-4">
-      <SEO title={`Redirecting to ${entry.name}…`} description={`Redirecting to the official ${entry.name} website.`} noIndex />
-      <div className="max-w-md text-center">
-        <h1 className="mt-6 font-display text-xl font-semibold text-foreground">
-          Continue to {entry.name}
-        </h1>
-        <p className="mt-2 text-sm text-muted-foreground">
-          This button opens the official {entry.name} website. We may earn a commission at no extra cost to you.
-        </p>
-        <a
-          href={entry.url}
-          rel="sponsored noopener noreferrer nofollow"
-          className="mt-6 inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
-        >
-          Visit {entry.name}
-        </a>
-      </div>
-    </div>
-  );
-}
 
 function NotFound() {
   return (
@@ -160,16 +53,17 @@ export default function App() {
       <Route path="/terms-of-service" element={<TermsPage />} />
       <Route path="/tools" element={<ToolsPage />} />
       <Route path="/tools/product-research" element={<ProductResearchPage />} />
-      <Route path="/tools/trendtrack-review" element={<TrendtrackReview />} />
       <Route path="/tools/wetracked-review" element={<WeTrackedReview />} />
       <Route path="/tools/winninghunter" element={<WinningHunterPage />} />
       <Route path="/tools/holo-ai" element={<HoloAiPage />} />
-      <Route path="/tools/manychat" element={<ManyChatPage />} />
-      <Route path="/tools/weshop-ai" element={<WeShopAiPage />} />
-      <Route path="/tools/gohighlevel" element={<GoHighLevelPage />} />
-      <Route path="/tools/everbee" element={<EverbeePage />} />
-      <Route path="/tools/easyship" element={<EasyshipPage />} />
-      <Route path="/tools/systeme" element={<SystemePage />} />
+      {/* Removed monetization for these tools — redirect old URLs to the directory */}
+      <Route path="/tools/trendtrack-review" element={<Navigate to="/tools" replace />} />
+      <Route path="/tools/manychat" element={<Navigate to="/tools" replace />} />
+      <Route path="/tools/weshop-ai" element={<Navigate to="/tools" replace />} />
+      <Route path="/tools/gohighlevel" element={<Navigate to="/tools" replace />} />
+      <Route path="/tools/everbee" element={<Navigate to="/tools" replace />} />
+      <Route path="/tools/easyship" element={<Navigate to="/tools" replace />} />
+      <Route path="/tools/systeme" element={<Navigate to="/tools" replace />} />
       <Route path="/best-product-research-tools" element={<BestProductResearchToolsPage />} />
       <Route path="/best-product-research-tools-for-shopify" element={<BestProductResearchToolsForShopifyPage />} />
       <Route path="/best-tiktok-ad-spy-tools" element={<BestTikTokAdSpyToolsPage />} />
@@ -179,7 +73,7 @@ export default function App() {
       <Route path="/wetracked-vs-triple-whale" element={<WeTrackedVsTripleWhale />} />
       <Route path="/best-ad-tracking-tools" element={<Navigate to="/blog/best-ad-tracking-tools-2026" replace />} />
       <Route path="/blog/wetracked-review" element={<Navigate to="/tools/wetracked-review" replace />} />
-      <Route path="/go/:tool" element={<GoRedirect />} />
+      {/* Removed /go/ redirect routes — all affiliate links now use direct external URLs */}
       <Route path="*" element={<NotFound />} />
     </Routes>
   );

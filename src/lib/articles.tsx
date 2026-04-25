@@ -2,20 +2,20 @@ import { Button } from "@/components/ui/button";
 import { ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
-// All affiliate destinations route through internal /go/[brand]
-// transition pages so we never link directly to an affiliate URL.
+// Direct affiliate URLs (no /go/ redirect bridges) — only allowed monetization tools.
+// Removed brands point to internal review pages instead of affiliate links.
 const LINKS = {
-  trendtrack: "https://trendtrack.io?fpr=stacked45",
-  wetracked: "/go/wetracked",
+  trendtrack: "/tools",
+  wetracked: "https://www.wetracked.io/?ref=ddf2eabf-bf17-4363-aaef-585e9c4e763a",
   holo: "https://tryholo.ai/?utm_medium=affiliate&utm_source=4988344&utm_campaign=41932&im_ref=VR4UEcxOMxyZW1iwCnQUZz87Uku1QdzxZTtOR00&utm_ad_id=3273895&irgwc=1&afsrc=1",
-  manychat: "/go/manychat",
-  evebee: "/go/everbee",
-  easyship: "/go/easyship",
-  systeme: "/go/systeme",
-  gohighlevel: "/go/gohighlevel",
-  weshop: "/go/weshop-ai",
-  pictory: "https://pictory.ai?ref=ecomstacked",
-  winninghunter: "/go/winninghunter",
+  manychat: "/tools",
+  evebee: "/tools",
+  easyship: "/tools",
+  systeme: "/tools",
+  gohighlevel: "/tools",
+  weshop: "/tools",
+  pictory: "/blog/holo-ai-vs-pictory",
+  winninghunter: "https://winninghunter.com/?ref=jame",
 };
 
 function ToolCTA({ href, label = "Visit Official Website" }: { href: string; label?: string }) {
@@ -3947,7 +3947,7 @@ function ArticleMineaAlternatives() {
           And here's the part most operators miss: <strong className="text-foreground">the cost isn't the subscription — it's the bad tests the wrong tool lets through.</strong> One avoided dud pays for a year of the right platform. This guide breaks down the best Minea alternatives for 2026 — what each one does better, where Minea still wins, and which tool is actually worth your money.
         </p>
         <div className="mt-5 flex flex-wrap gap-2">
-          <a href="/go/winninghunter" rel="sponsored noopener noreferrer">
+          <a href="https://winninghunter.com/?ref=jame" rel="sponsored noopener noreferrer">
             <Button variant="brand" size="sm" className="gap-1.5">Skip the Research — See Our #1 Pick <ArrowUpRight className="h-3.5 w-3.5" /></Button>
           </a>
           <Link to="/tools/winninghunter">
@@ -3966,7 +3966,7 @@ function ArticleMineaAlternatives() {
           <li>• <strong className="text-foreground">Best for TikTok-only research</strong> → PiPiADS</li>
         </ul>
         <div className="mt-4 flex flex-wrap gap-2">
-          <a href="/go/winninghunter" rel="sponsored noopener noreferrer">
+          <a href="https://winninghunter.com/?ref=jame" rel="sponsored noopener noreferrer">
             <Button variant="brand" size="sm" className="gap-1.5">Find Winning Products Now <ArrowUpRight className="h-3.5 w-3.5" /></Button>
           </a>
           <Link to="/best-product-research-tools">
@@ -3989,7 +3989,7 @@ function ArticleMineaAlternatives() {
           <strong className="text-foreground">The math:</strong> killing just <em>one</em> bad ad test per month saves you more than the entire subscription. Everything after that is profit.
         </p>
         <div className="mt-4 flex flex-wrap gap-2">
-          <a href="/go/winninghunter" rel="sponsored noopener noreferrer">
+          <a href="https://winninghunter.com/?ref=jame" rel="sponsored noopener noreferrer">
             <Button variant="brand" size="sm" className="gap-1.5">Stop Wasting Ad Spend <ArrowUpRight className="h-3.5 w-3.5" /></Button>
           </a>
           <Link to="/best-product-research-tools">
@@ -4104,7 +4104,7 @@ function ArticleMineaAlternatives() {
           <strong className="text-foreground">Best for:</strong> any operator running paid ads who's tired of stitching together tools. Read the <Link to="/tools/winninghunter" className="text-brand underline-offset-2 hover:underline">full WinningHunter review</Link> for the deep dive.
         </p>
         <div className="mt-5 flex flex-wrap gap-2">
-          <a href="/go/winninghunter" rel="sponsored noopener noreferrer">
+          <a href="https://winninghunter.com/?ref=jame" rel="sponsored noopener noreferrer">
             <Button variant="brand" size="sm" className="gap-1.5">Start Testing Smarter <ArrowUpRight className="h-3.5 w-3.5" /></Button>
           </a>
           <Link to="/tools/winninghunter">
@@ -4258,7 +4258,7 @@ function ArticleMineaAlternatives() {
         </ul>
         <p className="mt-4 text-sm font-semibold text-foreground">⚡ Every week you delay consolidating is another week of $100+ wasted ad tests.</p>
         <div className="mt-4 flex flex-wrap gap-2">
-          <a href="/go/winninghunter" rel="sponsored noopener noreferrer">
+          <a href="https://winninghunter.com/?ref=jame" rel="sponsored noopener noreferrer">
             <Button variant="brand" size="sm" className="gap-1.5">Find Winning Products Now <ArrowUpRight className="h-3.5 w-3.5" /></Button>
           </a>
           <Link to="/tools/winninghunter">

@@ -10,30 +10,27 @@ import { ToolCard } from "@/components/ToolCard";
 import { ArticleCard } from "@/components/ArticleCard";
 import {
   BarChart3, Bot, Eye, Search, Shield, Target,
-  ArrowRight, CheckCircle2, Zap, TrendingUp, Users,
+  ArrowRight, CheckCircle2, TrendingUp,
   BookOpen, FileSearch, Layers
 } from "lucide-react";
 
 const featuredTools = [
-  { name: "Trendtrack", description: "Spy on Shopify stores, track winning products in real time, and pull the ads driving the sales.", bestFor: "Product research & store spying", benefit: "Find winning products before they saturate", category: "Product Research", featured: true, image: "/assets/tools/trendtrack.jpg", href: "/tools/trendtrack-review" },
-  { name: "WeTracked", description: "Accurate server-side tracking for Facebook, Google, and TikTok ads with first-party data.", bestFor: "Ad tracking & attribution", benefit: "Recover lost conversions and improve ROAS", category: "Tracking", featured: true, image: "/assets/tools/wetracked.jpg", href: "/tools/wetracked-review" },
-  { name: "Holo AI", description: "Ad creative platform for ecommerce brands. Generate winning ads at scale without a design team.", bestFor: "Ad creative & content", benefit: "Produce more creatives in less time", category: "AI Content", featured: true, image: "/assets/tools/holo-ai.jpg", href: "/tools/holo-ai" },
-  { name: "ManyChat", description: "Automated messaging for Instagram, Facebook, and WhatsApp to capture leads and drive sales.", bestFor: "Chat automation & DMs", benefit: "Convert conversations into customers", category: "Automation", featured: false, image: "/assets/tools/manychat.jpg", href: "/tools/manychat" },
+  { name: "WeTracked", description: "Server-side tracking for Facebook, Google, and TikTok ads. Captures conversions the browser pixel misses.", bestFor: "Ad tracking & attribution", benefit: "Recover lost conversions and improve reported ROAS", category: "Tracking", featured: true, image: "/assets/tools/wetracked.jpg", href: "/tools/wetracked-review" },
+  { name: "Holo AI", description: "Ad creative platform for ecommerce. Generate UGC-style videos, product images, and ad copy variations from a product URL.", bestFor: "Ad creative & content", benefit: "Produce more testable ad creatives in less time", category: "AI Content", featured: true, image: "/assets/tools/holo-ai.jpg", href: "/tools/holo-ai" },
+  { name: "WinningHunter", description: "Product and ad research for dropshippers. Combines store spy, ad spy, and product validation into a single workflow.", bestFor: "Product research & store spying", benefit: "Find products with real data instead of guessing", category: "Product Research", featured: true, image: "/assets/tools/trendtrack.jpg", href: "/tools/winninghunter" },
 ];
 
 const categories = [
   { icon: Target, label: "Tracking & Attribution", desc: "Server-side tracking, pixel management, and ROAS optimization" },
   { icon: Bot, label: "AI Content & Ad Creation", desc: "Tools for creatives, copy, and content generation" },
-  { icon: Zap, label: "Chat Automation", desc: "Automated messaging, lead capture, and customer engagement" },
   { icon: Search, label: "Product Research", desc: "Find winning products and optimize your store" },
-  { icon: Users, label: "CRM & Follow-Up", desc: "Customer retention, email flows, and lifetime value growth" },
   { icon: BarChart3, label: "Analytics & Reporting", desc: "Data dashboards, cohort analysis, and performance metrics" },
 ];
 
 const articles = [
-  { title: "Best AI Tools for Dropshipping in 2026", excerpt: "A curated list of tools that help dropshippers automate content, create ads, and optimize their stores.", category: "AI Tools", date: "April 10, 2026", readTime: "8 min read", slug: "best-ai-tools-dropshipping", image: "/assets/blog/ai-tools-dropshipping.jpg" },
+  { title: "Best AI Video Tools for 2026 (Tested for Ecommerce & Ads)", excerpt: "How we tested the top AI video tools for ecommerce ad workflows in 2026.", category: "AI Tools", date: "April 10, 2026", readTime: "8 min read", slug: "best-ai-video-tools", image: "/assets/blog/ai-tools-dropshipping.jpg" },
   { title: "How to Improve Ecommerce Tracking Accuracy", excerpt: "Server-side tracking, CAPI setup, and first-party data strategies to recover lost conversions.", category: "Tracking", date: "April 8, 2026", readTime: "6 min read", slug: "improve-ecommerce-tracking", image: "/assets/blog/tracking-accuracy.jpg" },
-  { title: "Best Chat Automation Tools for Shopify Stores", excerpt: "Compare the top chat automation platforms for Shopify and learn how to turn DMs into revenue.", category: "Automation", date: "April 5, 2026", readTime: "7 min read", slug: "chat-automation-shopify", image: "/assets/blog/chat-automation.jpg" },
+  { title: "Holo AI Review: Real Workflow Test", excerpt: "An honest review of Holo AI based on real ad creative testing workflows.", category: "Reviews", date: "April 5, 2026", readTime: "7 min read", slug: "holo-ai-review", image: "/assets/blog/chat-automation.jpg" },
 ];
 
 export default function HomePage() {
@@ -80,18 +77,17 @@ export default function HomePage() {
       <section className="border-b border-border bg-surface py-16 sm:py-20">
         <div className="mx-auto max-w-5xl px-4 sm:px-6">
           <div className="text-center">
-            <p className="text-xs font-semibold uppercase tracking-widest text-brand">The Funnel</p>
-            <h2 className="mt-2 font-display text-2xl font-bold text-foreground sm:text-3xl">The Make Money Stack</h2>
+            <p className="text-xs font-semibold uppercase tracking-widest text-brand">The Workflow</p>
+            <h2 className="mt-2 font-display text-2xl font-bold text-foreground sm:text-3xl">A Practical Ecommerce Stack</h2>
             <p className="mx-auto mt-3 max-w-xl text-sm leading-relaxed text-muted-foreground">
-              The 4-step stack ecommerce operators use to find products, create ads, track results, and convert customers.
+              Three categories that cover the core operational needs of most ecommerce brands: research, creative, and tracking.
             </p>
           </div>
-          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-10 grid gap-4 sm:grid-cols-3">
             {[
-              { step: "01", title: "Find Products", tool: "Trendtrack", desc: "Spy on winning Shopify stores and uncover trending products.", href: "/tools/trendtrack-review", cta: "Read Review" },
-              { step: "02", title: "Create Ads", tool: "Holo AI", desc: "Generate scroll-stopping video and image ads in minutes.", href: "/tools/holo-ai", cta: "Read Review" },
-              { step: "03", title: "Track Performance", tool: "WeTracked", desc: "Server-side tracking that recovers lost ad conversions.", href: "/tools/wetracked-review", cta: "Read Review" },
-              { step: "04", title: "Convert Customers", tool: "ManyChat", desc: "Automate DMs to turn conversations into paying customers.", href: "/tools/manychat", cta: "Read Review" },
+              { step: "01", title: "Research products", tool: "WinningHunter", desc: "Spy on Shopify ads and validate products with real marketplace data.", href: "/tools/winninghunter", cta: "Read review" },
+              { step: "02", title: "Produce creatives", tool: "Holo AI", desc: "Generate UGC-style video and image ads from a product URL in minutes.", href: "/tools/holo-ai", cta: "Read review" },
+              { step: "03", title: "Track performance", tool: "WeTracked", desc: "Server-side tracking that captures conversions the browser pixel misses.", href: "/tools/wetracked-review", cta: "Read review" },
             ].map((s) => (
               <Card key={s.step} className="flex flex-col">
                 <CardContent className="flex flex-1 flex-col p-5">
@@ -108,6 +104,9 @@ export default function HomePage() {
               </Card>
             ))}
           </div>
+          <p className="mx-auto mt-6 max-w-xl text-center text-xs italic text-muted-foreground">
+            We test these tools in real ecommerce and paid traffic workflows. Recommendations are based on performance, not sponsorship.
+          </p>
         </div>
       </section>
 
@@ -134,7 +133,7 @@ export default function HomePage() {
               View all tools →
             </Link>
           </div>
-          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {featuredTools.map((tool) => (
               <ToolCard key={tool.name} {...tool} />
             ))}
@@ -300,33 +299,34 @@ export default function HomePage() {
         <div className="mx-auto max-w-4xl px-4 text-center sm:px-6">
           <p className="text-xs font-semibold uppercase tracking-widest text-brand">Starter Stack</p>
           <h2 className="mt-2 font-display text-2xl font-bold text-foreground sm:text-3xl">The Recommended Ecommerce Stack</h2>
-          <p className="mx-auto mt-3 max-w-xl text-sm leading-relaxed text-muted-foreground">A curated set of tools we recommend for dropshippers and ecommerce brands looking to grow with better systems.</p>
-          <div className="mt-10 grid gap-4 sm:grid-cols-2">
+          <p className="mx-auto mt-3 max-w-xl text-sm leading-relaxed text-muted-foreground">A focused set of tools we've tested in real ecommerce and paid traffic workflows.</p>
+          <div className="mt-10 grid gap-4 sm:grid-cols-3">
             {[
-              { category: "Tracking", tool: "WeTracked", reason: "Accurate server-side ad tracking" },
-              { category: "AI Ads", tool: "Holo AI", reason: "Ad creatives at scale" },
-              { category: "Automation", tool: "ManyChat", reason: "Chat-based lead capture & sales" },
-              { category: "Optimization", tool: "Evebee", reason: "Product research for Shopify" },
+              { category: "Tracking", tool: "WeTracked", reason: "Server-side ad tracking", href: "/tools/wetracked-review" },
+              { category: "AI Ads", tool: "Holo AI", reason: "Ad creatives at scale", href: "/tools/holo-ai" },
+              { category: "Research", tool: "WinningHunter", reason: "Product & ad research", href: "/tools/winninghunter" },
             ].map((item) => (
-              <Card key={item.tool} className="text-left">
-                <CardContent className="flex items-center gap-4 p-5">
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-surface">
-                    <span className="font-display text-sm font-bold text-surface-foreground">{item.tool.charAt(0)}</span>
-                  </div>
-                  <div>
-                    <div className="flex items-center gap-2">
-                      <h3 className="font-display text-sm font-bold text-card-foreground">{item.tool}</h3>
-                      <Badge variant="secondary" className="text-xs">{item.category}</Badge>
+              <Link to={item.href} key={item.tool}>
+                <Card className="text-left transition-all hover:border-brand/30 hover:shadow-sm">
+                  <CardContent className="flex items-center gap-4 p-5">
+                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-surface">
+                      <span className="font-display text-sm font-bold text-surface-foreground">{item.tool.charAt(0)}</span>
                     </div>
-                    <p className="mt-0.5 text-xs text-muted-foreground">{item.reason}</p>
-                  </div>
-                </CardContent>
-              </Card>
+                    <div>
+                      <div className="flex items-center gap-2">
+                        <h3 className="font-display text-sm font-bold text-card-foreground">{item.tool}</h3>
+                        <Badge variant="secondary" className="text-xs">{item.category}</Badge>
+                      </div>
+                      <p className="mt-0.5 text-xs text-muted-foreground">{item.reason}</p>
+                    </div>
+                  </CardContent>
+                </Card>
+              </Link>
             ))}
           </div>
           <Link to="/tools" className="mt-8 inline-block">
-            <Button variant="brand" className="gap-2">
-              See Full Tool Directory <ArrowRight className="h-4 w-4" />
+            <Button variant="outline" className="gap-2">
+              See all reviews <ArrowRight className="h-4 w-4" />
             </Button>
           </Link>
         </div>

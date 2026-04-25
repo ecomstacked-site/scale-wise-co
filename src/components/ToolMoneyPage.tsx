@@ -11,7 +11,7 @@ import { ArrowUpRight, CheckCircle2, XCircle, Clock, User } from "lucide-react";
 export interface ToolMoneyPageProps {
   /** Tool brand, e.g. "Holo AI" */
   name: string;
-  /** Affiliate redirect path, e.g. "/go/holo-ai" */
+  /** Direct external URL (no internal /go/ redirects) */
   goPath: string;
   /** Short tagline / category label */
   category: string;
@@ -91,15 +91,19 @@ export function ToolMoneyPage({
 
           {/* Top CTA */}
           <div className="mt-6 flex flex-wrap items-center gap-3">
-            <a href={goPath} rel="sponsored noopener noreferrer">
-              <Button variant="brand" className="gap-1.5">
-                Visit {name} <ArrowUpRight className="h-4 w-4" />
+            <a href={goPath} target="_blank" rel="sponsored noopener noreferrer nofollow">
+              <Button variant="brand-outline" className="gap-1.5">
+                See how it works <ArrowUpRight className="h-4 w-4" />
               </Button>
             </a>
             <Link to="/tools" className="text-xs text-muted-foreground underline-offset-2 hover:underline">
               Browse all tools
             </Link>
           </div>
+
+          <p className="mt-5 rounded-md border-l-2 border-brand/40 bg-surface px-3 py-2 text-xs italic text-muted-foreground">
+            This review is based on real testing workflows — not promotional claims. We evaluate tools on actual usage, not sponsorship.
+          </p>
 
           <div className="prose-custom mt-8 space-y-8">
             <section>
@@ -180,20 +184,20 @@ export function ToolMoneyPage({
               </ul>
             </section>
 
-            <section className="rounded-xl border border-brand/20 bg-brand/5 p-6 text-center">
-              <h3 className="font-display text-lg font-bold text-foreground">Try {name}</h3>
+            <section className="rounded-xl border border-border bg-surface p-6 text-center">
+              <h3 className="font-display text-lg font-bold text-foreground">See if {name} fits your workflow</h3>
               <p className="mt-2 text-sm text-muted-foreground">
-                Visit the official website to view current pricing and plans.
+                Visit the official website to check current pricing and plans.
               </p>
               <div className="mt-4 flex justify-center">
-                <a href={goPath} rel="sponsored noopener noreferrer">
+                <a href={goPath} target="_blank" rel="sponsored noopener noreferrer nofollow">
                   <Button variant="brand" className="gap-1.5">
-                    Visit Official Website <ArrowUpRight className="h-4 w-4" />
+                    View pricing <ArrowUpRight className="h-4 w-4" />
                   </Button>
                 </a>
               </div>
               <p className="mt-4 text-xs italic text-muted-foreground">
-                This page contains affiliate links. We may earn a commission at no extra cost to you.
+                Affiliate link — we may earn a commission at no extra cost to you. Pricing is the same either way.
               </p>
             </section>
           </div>

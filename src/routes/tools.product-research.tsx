@@ -8,7 +8,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ArrowUpRight, ArrowRight, CheckCircle2, Crown, TrendingUp, Eye, Search, Zap } from "lucide-react";
 
-const AFF = "/go/trendtrack";
+const AFF = "/tools/winninghunter";
 
 const tools = [
   {
