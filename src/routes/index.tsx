@@ -9,7 +9,7 @@ import { Newsletter } from "@/components/Newsletter";
 import { ArticleCard } from "@/components/ArticleCard";
 import wetrackedImg from "@/assets/wetracked-preview.png";
 import holoAiImg from "@/assets/holo-ai-preview.png";
-import winningHunterImg from "@/assets/winninghunter-preview.avif";
+import winningHunterImg from "@/assets/winninghunter-preview.png";
 import {
   BarChart3, Bot, Eye, Search, Shield, Target,
   ArrowRight, CheckCircle2, TrendingUp,
