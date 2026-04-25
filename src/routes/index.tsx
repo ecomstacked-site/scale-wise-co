@@ -6,8 +6,10 @@ import { Badge } from "@/components/ui/badge";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Newsletter } from "@/components/Newsletter";
-import { ToolCard } from "@/components/ToolCard";
 import { ArticleCard } from "@/components/ArticleCard";
+import wetrackedImg from "@/assets/wetracked-preview.png";
+import holoAiImg from "@/assets/holo-ai-preview.png";
+import winningHunterImg from "@/assets/winninghunter-preview.png";
 import {
   BarChart3, Bot, Eye, Search, Shield, Target,
   ArrowRight, CheckCircle2, TrendingUp,
@@ -15,9 +17,36 @@ import {
 } from "lucide-react";
 
 const featuredTools = [
-  { name: "WeTracked", description: "Server-side tracking for Facebook, Google, and TikTok ads. Captures conversions the browser pixel misses.", bestFor: "Ad tracking & attribution", benefit: "Recover lost conversions and improve reported ROAS", category: "Tracking", featured: true, image: "/assets/tools/wetracked.jpg", href: "/tools/wetracked-review" },
-  { name: "Holo AI", description: "Ad creative platform for ecommerce. Generate UGC-style videos, product images, and ad copy variations from a product URL.", bestFor: "Ad creative & content", benefit: "Produce more testable ad creatives in less time", category: "AI Content", featured: true, image: "/assets/tools/holo-ai.jpg", href: "/tools/holo-ai" },
-  { name: "WinningHunter", description: "Product and ad research for dropshippers. Combines store spy, ad spy, and product validation into a single workflow.", bestFor: "Product research & store spying", benefit: "Find products with real data instead of guessing", category: "Product Research", featured: true, image: "/assets/tools/trendtrack.jpg", href: "/tools/winninghunter" },
+  {
+    name: "WeTracked",
+    image: wetrackedImg,
+    logoText: "W",
+    logoBg: "bg-sky-500",
+    tag: "Tracking",
+    description: "Server-side tracking for Facebook, Google, TikTok ads.",
+    bullets: ["Accurate attribution tracking", "Recover lost conversions"],
+    href: "/tools/wetracked-review",
+  },
+  {
+    name: "Holo AI",
+    image: holoAiImg,
+    logoText: "H",
+    logoBg: "bg-fuchsia-500",
+    tag: "AI Content",
+    description: "AI ad creative platform for ecommerce.",
+    bullets: ["Generate ads, images, videos", "Create more content faster"],
+    href: "/tools/holo-ai",
+  },
+  {
+    name: "WinningHunter",
+    image: winningHunterImg,
+    logoText: "W",
+    logoBg: "bg-slate-900",
+    tag: "Product Research",
+    description: "Product and ad research tool for ecommerce.",
+    bullets: ["Discover winning products", "Analyze ad performance"],
+    href: "/tools/winninghunter",
+  },
 ];
 
 const categories = [
@@ -133,9 +162,54 @@ export default function HomePage() {
               View all tools →
             </Link>
           </div>
-          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {featuredTools.map((tool) => (
-              <ToolCard key={tool.name} {...tool} />
+              <Card
+                key={tool.name}
+                className="group flex flex-col overflow-hidden border-border/70 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-xl"
+              >
+                {/* Image with logo overlay */}
+                <div className="relative aspect-[4/3] w-full overflow-hidden rounded-t-xl bg-surface">
+                  <img
+                    src={tool.image}
+                    alt={`${tool.name} dashboard preview`}
+                    className="h-full w-full object-cover object-top"
+                    loading="lazy"
+                  />
+                  <div
+                    className={`absolute left-3 top-3 flex h-8 w-8 items-center justify-center rounded-md ${tool.logoBg} font-display text-sm font-bold text-white shadow-md ring-1 ring-black/10`}
+                    aria-hidden="true"
+                  >
+                    {tool.logoText}
+                  </div>
+                </div>
+
+                <CardContent className="flex flex-1 flex-col p-6">
+                  <div className="flex items-center justify-between gap-2">
+                    <h3 className="font-display text-lg font-bold text-foreground">{tool.name}</h3>
+                    <Badge variant="secondary" className="shrink-0 text-[10px] uppercase tracking-wide">
+                      Editor's Pick
+                    </Badge>
+                  </div>
+                  <p className="mt-1 text-[11px] font-medium uppercase tracking-wider text-brand">{tool.tag}</p>
+                  <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{tool.description}</p>
+
+                  <ul className="mt-4 space-y-2">
+                    {tool.bullets.map((b) => (
+                      <li key={b} className="flex items-start gap-2 text-xs text-foreground">
+                        <CheckCircle2 className="mt-0.5 h-3.5 w-3.5 shrink-0 text-brand" />
+                        <span>{b}</span>
+                      </li>
+                    ))}
+                  </ul>
+
+                  <Link to={tool.href} className="mt-6 block">
+                    <Button variant="brand" size="default" className="w-full gap-2 rounded-lg">
+                      Learn More <ArrowRight className="h-4 w-4" />
+                    </Button>
+                  </Link>
+                </CardContent>
+              </Card>
             ))}
           </div>
         </div>
