@@ -91,15 +91,19 @@ export function ToolMoneyPage({
 
           {/* Top CTA */}
           <div className="mt-6 flex flex-wrap items-center gap-3">
-            <a href={goPath} rel="sponsored noopener noreferrer">
-              <Button variant="brand" className="gap-1.5">
-                Visit {name} <ArrowUpRight className="h-4 w-4" />
+            <a href={goPath} target="_blank" rel="sponsored noopener noreferrer nofollow">
+              <Button variant="brand-outline" className="gap-1.5">
+                See how it works <ArrowUpRight className="h-4 w-4" />
               </Button>
             </a>
             <Link to="/tools" className="text-xs text-muted-foreground underline-offset-2 hover:underline">
               Browse all tools
             </Link>
           </div>
+
+          <p className="mt-5 rounded-md border-l-2 border-brand/40 bg-surface px-3 py-2 text-xs italic text-muted-foreground">
+            This review is based on real testing workflows — not promotional claims. We evaluate tools on actual usage, not sponsorship.
+          </p>
 
           <div className="prose-custom mt-8 space-y-8">
             <section>
