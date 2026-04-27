@@ -246,9 +246,14 @@ export default function WeTrackedReview() {
           </p>
           <p className="mt-3 text-base leading-relaxed text-muted-foreground">
             For a direct head-to-head, see our{" "}
-            <Link to="/wetracked-vs-triple-whale" className="text-brand underline-offset-4 hover:underline">
+            <Link to="/blog/wetracked-vs-triple-whale" className="text-brand underline-offset-4 hover:underline">
               WeTracked vs Triple Whale comparison
-            </Link>.
+            </Link>
+            . For a longer informational walkthrough, read the{" "}
+            <Link to="/blog/wetracked-review" className="text-brand underline-offset-4 hover:underline">
+              WeTracked review on the blog
+            </Link>
+            .
           </p>
 
           {/* FINAL VERDICT */}

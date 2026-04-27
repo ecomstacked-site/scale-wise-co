@@ -71,8 +71,9 @@ export default function App() {
       <Route path="/holo-ai-review" element={<HoloAiReviewRoute />} />
       <Route path="/holo-ai-vs-pictory" element={<HoloAiVsPictoryRoute />} />
       <Route path="/wetracked-vs-triple-whale" element={<WeTrackedVsTripleWhale />} />
+      <Route path="/blog/wetracked-vs-triple-whale" element={<WeTrackedVsTripleWhale />} />
       <Route path="/best-ad-tracking-tools" element={<Navigate to="/blog/best-ad-tracking-tools-2026" replace />} />
-      <Route path="/blog/wetracked-review" element={<Navigate to="/tools/wetracked-review" replace />} />
+      {/* /blog/wetracked-review now serves real informational content via BlogPostPage */}
       {/* Removed /go/ redirect routes — all affiliate links now use direct external URLs */}
       <Route path="*" element={<NotFound />} />
     </Routes>
