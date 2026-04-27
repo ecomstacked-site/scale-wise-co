@@ -3069,7 +3069,7 @@ function ArticleBestAdTrackingTools() {
         <ToolCTA href={LINKS.wetracked} label="Start Tracking with WeTracked" />
 
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          Want a deeper look before you commit? <Link to="/tools/wetracked-review" className="text-brand underline">See full WeTracked review</Link> with screenshots, real test data, and setup walkthrough. Or read the head-to-head <Link to="/wetracked-vs-triple-whale" className="text-brand underline">WeTracked vs Triple Whale comparison</Link>.
+          Want a deeper look before you commit? Read our informational <Link to="/blog/wetracked-review" className="text-brand underline">WeTracked review</Link>, the conversion-focused <Link to="/tools/wetracked-review" className="text-brand underline">WeTracked tool page</Link>, or the head-to-head <Link to="/blog/wetracked-vs-triple-whale" className="text-brand underline">WeTracked vs Triple Whale comparison</Link>.
         </p>
       </section>
 
