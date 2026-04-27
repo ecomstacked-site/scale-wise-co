@@ -668,22 +668,86 @@ export function getArticleContent(slug: string): React.ReactNode | null {
   }
 }
 
+const WT_AFF = "https://www.wetracked.io/?ref=ddf2eabf-bf17-4363-aaef-585e9c4e763a";
+
+function WTFigure({ src, alt, caption }: { src: string; alt: string; caption: string }) {
+  return (
+    <figure className="my-6">
+      <img
+        src={src}
+        alt={alt}
+        loading="lazy"
+        className="w-full rounded-lg border border-border bg-card"
+      />
+      <figcaption className="mt-2 text-xs italic text-muted-foreground">{caption}</figcaption>
+    </figure>
+  );
+}
+
+function WTSoftCTA({ label }: { label: string }) {
+  return (
+    <div className="my-6 rounded-lg border border-brand/30 bg-surface p-4 text-center">
+      <a
+        href={WT_AFF}
+        target="_blank"
+        rel="noopener noreferrer sponsored nofollow"
+        className="inline-flex items-center gap-2 rounded-md bg-brand px-5 py-2.5 text-sm font-semibold text-brand-foreground hover:opacity-90"
+      >
+        {label} →
+      </a>
+      <p className="mt-2 text-[11px] italic text-muted-foreground">
+        Affiliate link — pricing is the same whether you use it or not.
+      </p>
+    </div>
+  );
+}
+
 function ArticleWeTrackedReview() {
   return (
     <div className="space-y-8">
       <section>
         <p className="text-sm leading-relaxed text-muted-foreground">
-          WeTracked is one of a handful of tracking platforms purpose-built to help ecommerce brands recover the conversion data lost to iOS privacy updates, ad blockers, and browser tracking prevention. This is an informational review — not a sales page — written for operators who want to understand what the tool actually does before deciding whether it fits their stack.
+          WeTracked is one of a handful of tracking platforms purpose-built to help ecommerce brands recover the conversion data lost to iOS privacy updates, ad blockers, and browser tracking prevention. This is an informational review based on real ecommerce tracking workflows, not promotional claims.
+        </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          Written for operators who want to understand what the tool actually does — before deciding whether it fits their stack.
+        </p>
+
+        <WTFigure
+          src="/images/wetracked-dashboard-overview.png"
+          alt="WeTracked dashboard showing accurate tracking overview with ROAS, revenue and channel performance"
+          caption="This dashboard shows how conversion tracking aligns closely with actual store revenue."
+        />
+
+        <p className="mt-4 border-l-4 border-brand bg-surface px-4 py-3 text-base font-semibold italic text-foreground">
+          “If your tracking is wrong, your scaling decisions are wrong.”
         </p>
       </section>
 
       <section>
         <h2 className="font-display text-xl font-bold text-foreground">What Is WeTracked?</h2>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          WeTracked is a server-side tracking and attribution layer for ecommerce stores. Instead of relying only on browser-based pixels (which now miss a meaningful share of conversions), it captures events on the server and sends them to ad platforms through the Conversions API (CAPI), the TikTok Events API, and Google's Enhanced Conversions.
+          WeTracked is a server-side tracking and attribution layer for ecommerce stores. Instead of relying only on browser pixels — which now miss a meaningful share of conversions — it captures events on the server and forwards them through the Meta Conversions API (CAPI), TikTok Events API, and Google Enhanced Conversions.
         </p>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          The goal is straightforward: send Meta, TikTok, and Google a more complete picture of what's actually happening on your store, so their algorithms can optimize toward real buyers rather than the subset of buyers their pixel still happens to see.
+          The goal is straightforward: give Meta, TikTok, and Google a more complete picture of what's happening on your store, so their algorithms can optimize toward real buyers — not just the subset their pixel still happens to see.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Why Most Brands Misread Their ROAS</h2>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          Most ecommerce dashboards aren't showing reality — they're showing whatever the browser pixel managed to capture. With iOS privacy updates, Safari ITP, and ad blockers, a meaningful share of conversion events never reach the ad platform.
+        </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          The result is one of two expensive mistakes:
+        </p>
+        <ul className="mt-3 space-y-2 text-sm leading-relaxed text-muted-foreground">
+          <li>• <strong className="text-foreground">Under-reporting</strong> makes winning campaigns look unprofitable, so they get paused before they can scale.</li>
+          <li>• <strong className="text-foreground">Over-reporting</strong> (from broken attribution windows or duplicate events) makes losing campaigns look profitable, so brands keep pouring budget into them.</li>
+        </ul>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          Either way, the decisions made on top of that data are wrong by default. Server-side tracking exists to close that gap.
         </p>
       </section>
 
@@ -691,22 +755,40 @@ function ArticleWeTrackedReview() {
         <h2 className="font-display text-xl font-bold text-foreground">Who It's For</h2>
         <ul className="mt-3 space-y-2 text-sm leading-relaxed text-muted-foreground">
           <li>• <strong className="text-foreground">DTC and Shopify brands</strong> spending consistently on Meta, TikTok, or Google Ads.</li>
-          <li>• <strong className="text-foreground">Dropshippers and operators</strong> who want clearer ROAS signals without standing up a full analytics team.</li>
+          <li>• <strong className="text-foreground">Dropshippers and operators</strong> who want clearer ROAS signals without building a full analytics team.</li>
           <li>• <strong className="text-foreground">Agencies and media buyers</strong> managing multiple client accounts that need consistent server-side data.</li>
         </ul>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          It's not a great fit for lead-gen businesses, B2B SaaS funnels with long sales cycles, or stores doing very low ad spend where the native pixel is already "good enough."
-        </p>
+
+        <h3 className="mt-6 font-display text-base font-bold text-foreground">When WeTracked Is NOT the Right Fit</h3>
+        <ul className="mt-3 space-y-2 text-sm leading-relaxed text-muted-foreground">
+          <li>
+            • <strong className="text-foreground">Lead-gen and B2B funnels.</strong> WeTracked is built around purchase events and ecommerce checkout flows. Long sales cycles, CRM-based attribution, and offline conversions need a different toolset (HubSpot, Hyros for info-products, etc.).
+          </li>
+          <li>
+            • <strong className="text-foreground">Stores spending under ~$500/month on ads.</strong> At that scale, the native pixel is usually "good enough," and the monthly cost of any tracking tool eats too much margin.
+          </li>
+          <li>
+            • <strong className="text-foreground">Teams that need a full BI suite.</strong> If you want creative analytics, cohort dashboards, and SQL-level data exploration, a broader platform like Triple Whale will be a better fit than a focused tracking layer.
+          </li>
+        </ul>
       </section>
 
       <section>
         <h2 className="font-display text-xl font-bold text-foreground">How It Works (Server-Side + CAPI)</h2>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          WeTracked captures key ecommerce events — page views, add-to-cart, initiate checkout, purchase — directly from your store and from server-side webhooks. It deduplicates them against the browser pixel so you don't double-count, then forwards clean events to each ad platform's server-to-server API.
+          WeTracked captures the key ecommerce events — page view, add-to-cart, initiate checkout, purchase — directly from your store and from server-side webhooks. It deduplicates them against the browser pixel so you don't double-count, then forwards clean events to each ad platform's server-to-server API.
         </p>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          In practice, this means your Meta or TikTok account starts seeing more matched conversions, with richer customer data attached. That tends to improve both attribution accuracy and the algorithm's ability to find similar buyers.
+          In practice, your Meta or TikTok account starts seeing more matched conversions with richer customer data attached. That tends to improve both attribution accuracy and the algorithm's ability to find similar buyers.
         </p>
+
+        <WTFigure
+          src="/images/server-side-tracking-flow.png"
+          alt="Server-side tracking flow from user to store to server forwarding events to Meta, TikTok and Google"
+          caption="Server-side tracking helps recover lost data from browser restrictions and ad blockers."
+        />
+
+        <WTSoftCTA label="See how it works" />
       </section>
 
       <section>
@@ -717,22 +799,35 @@ function ArticleWeTrackedReview() {
         <ul className="mt-3 space-y-2 text-sm leading-relaxed text-muted-foreground">
           <li>1. Connect your Shopify store via the official integration.</li>
           <li>2. Authenticate your Meta, TikTok, and/or Google ad accounts.</li>
-          <li>3. Map your existing pixel/event IDs so deduplication works correctly.</li>
+          <li>3. Map existing pixel and event IDs so deduplication works correctly.</li>
           <li>4. Verify events are flowing in each platform's diagnostics tab.</li>
         </ul>
+
+        <WTFigure
+          src="/images/wetracked-setup-dashboard.png"
+          alt="WeTracked simple setup process showing connect store, connect ad accounts and event tracking setup"
+          caption="Most stores can complete setup quickly without needing a developer."
+        />
+
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          Most stores can complete this in under an hour without a developer. More complex stacks (custom checkouts, headless storefronts) may need extra configuration.
+          More complex stacks — custom checkouts or headless storefronts — may need extra configuration, but the standard Shopify path is genuinely fast.
         </p>
       </section>
 
       <section>
         <h2 className="font-display text-xl font-bold text-foreground">Pricing Overview</h2>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          WeTracked uses a flat monthly pricing model rather than charging a percentage of tracked revenue. Plans typically scale based on event volume and number of connected ad accounts. For exact, up-to-date pricing always check the official site, as plans evolve.
+          WeTracked uses flat monthly pricing instead of charging a percentage of tracked revenue. Plans scale based on order volume and number of connected stores. For exact current pricing, always check the official site — plans evolve.
         </p>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          The general positioning is "more affordable than enterprise attribution platforms (Hyros, Northbeam) and more focused than full BI suites (Triple Whale)."
+          The general positioning: more affordable than enterprise attribution platforms like Hyros and Northbeam, and more focused than full BI suites like Triple Whale.
         </p>
+
+        <WTFigure
+          src="/images/wetracked-pricing-visual.png"
+          alt="WeTracked pricing tiers including Starter, Business, Scale-up and Enterprise plans"
+          caption="Pricing stays predictable compared to more complex enterprise analytics tools."
+        />
       </section>
 
       <section>
@@ -774,15 +869,30 @@ function ArticleWeTrackedReview() {
           If you're weighing WeTracked against the alternatives, two reads will help. The head-to-head <Link to="/blog/wetracked-vs-triple-whale" className="text-brand underline">WeTracked vs Triple Whale</Link> comparison covers the most common decision people are making in 2026, and the broader <Link to="/blog/best-ad-tracking-tools-2026" className="text-brand underline">best ad tracking tools guide</Link> ranks the full category including Hyros, Northbeam, and Polar Analytics.
         </p>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          For a more conversion-focused breakdown of features, plans, and current pricing, see the <Link to="/tools/wetracked-review" className="text-brand underline">WeTracked tool page</Link>.
+          For a more conversion-focused breakdown of features and plans, see the <Link to="/tools/wetracked-review" className="text-brand underline">WeTracked tool page</Link>.
         </p>
       </section>
 
       <section>
+        <WTFigure
+          src="/images/wetracked-roas-dashboard.png"
+          alt="WeTracked analytics overview with ROAS trends, campaign performance and conversion tracking funnel"
+          caption="Cleaner tracking data leads to more confident scaling decisions across ad platforms."
+        />
+
+        <p className="my-4 border-l-4 border-brand bg-surface px-4 py-3 text-base font-semibold italic text-foreground">
+          “Most ecommerce brands don't lose because of bad ads — they lose because of bad data.”
+        </p>
+
         <h2 className="font-display text-xl font-bold text-foreground">Final Thoughts</h2>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          WeTracked isn't trying to be everything. It's a focused server-side tracking layer that does one job — feeding cleaner data back to Meta, TikTok, and Google — and does it well for the typical Shopify or DTC brand. If your current setup relies on the native pixel alone and you're spending real money on ads, it's worth evaluating against your specific stack and budget before making a decision.
+          WeTracked isn't trying to be everything. It's a focused server-side tracking layer that does one job — feeding cleaner data back to Meta, TikTok, and Google — and does it well for the typical Shopify or DTC brand.
         </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          If your current setup relies on the native pixel alone and you're spending real money on ads, it's worth evaluating against your specific stack and budget before making a decision.
+        </p>
+
+        <WTSoftCTA label="View pricing" />
       </section>
     </div>
   );
