@@ -936,96 +936,216 @@ function ArticleWeTrackedReview() {
 function ArticleBestAIToolsForEcommerce() {
   return (
     <div className="space-y-8">
+      {/* INTRO */}
       <section>
         <p className="text-sm leading-relaxed text-muted-foreground">
-          The number of AI and SaaS tools marketed to ecommerce brands has exploded — and most of them are noise. This guide groups the categories that actually move the needle in 2026 and explains what each one is for, so you can build a stack that fits your stage instead of stacking subscriptions you'll never use.
+          Walk into any ecommerce founder's dashboard in 2026 and you'll find the same pattern: ten SaaS subscriptions, three of them barely used, and a vague feeling that "we probably need another tool." The market has flooded with AI products, and most teams are paying for overlap rather than results.
         </p>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          We've kept this informational. Where a tool is mentioned, it's because it's representative of its category, not because it's the only option.
+          <strong className="text-foreground">Most ecommerce teams don't need more tools — they need the right stack.</strong> This guide breaks down the categories that actually move revenue, with neutral picks in each, so you can build a lean stack instead of stacking subscriptions you'll never fully use.
         </p>
       </section>
 
+      {/* EEAT BLOCK */}
+      <section className="rounded-lg border border-border bg-surface/50 p-5">
+        <h2 className="font-display text-base font-bold text-foreground">About the Author & Editorial Policy</h2>
+        <p className="mt-2 text-xs leading-relaxed text-muted-foreground">
+          <strong className="text-foreground">Daniel Pereira</strong> is an ecommerce growth researcher who has tested AI and SaaS tools across Shopify brands spending $5k–$500k/month on paid acquisition.
+        </p>
+        <p className="mt-2 text-xs leading-relaxed text-muted-foreground">
+          <strong className="text-foreground">Editorial policy:</strong> We independently review tools based on real-world testing, usability, and pricing transparency. Some links on this page are affiliate links — they don't change the price you pay and don't influence our category picks.
+        </p>
+        <p className="mt-2 text-xs leading-relaxed text-muted-foreground">
+          <strong className="text-foreground">Last updated:</strong> April 2026.
+        </p>
+      </section>
+
+      {/* HOW TO USE */}
       <section>
         <h2 className="font-display text-xl font-bold text-foreground">How to Use This Guide</h2>
+        <ul className="mt-3 space-y-2 text-sm leading-relaxed text-muted-foreground">
+          <li className="flex gap-2"><span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" /> Read by category, not top-to-bottom.</li>
+          <li className="flex gap-2"><span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" /> Pick the one or two biggest bottlenecks in your business and fix those first.</li>
+          <li className="flex gap-2"><span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" /> Avoid stacking too many tools at once — most stores need 5–7 platforms total, not 15.</li>
+        </ul>
+        <figure className="my-6">
+          <img src="/images/ecommerce-ai-stack-overview.jpg" alt="Modern ecommerce tech stack overview by category" loading="lazy" className="w-full rounded-lg border border-border" />
+          <figcaption className="mt-2 text-xs italic text-muted-foreground">The five core layers of a modern ecommerce stack: traffic, tracking, creative, retention, and analytics.</figcaption>
+        </figure>
+      </section>
+
+      {/* AD TRACKING */}
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">1. Ad Tracking Tools</h2>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          Read by category. Identify the one or two areas where you currently lose the most money or time, and only adopt tools in those areas first. Adding too many platforms at once is a faster way to break your operations than to grow them.
+          Browser-based pixels lose conversions to iOS privacy restrictions, ad blockers, Safari ITP, and cookie limits. The result: Meta and TikTok report lower ROAS than reality, and their algorithms optimize on incomplete data.
+        </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          Server-side tracking solves this by sending events directly from your store to each ad platform's official API (Meta CAPI, TikTok Events API, Google Enhanced Conversions).
+        </p>
+        <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
+          <li className="flex gap-2"><span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" /> <span><strong className="text-foreground">WeTracked</strong> — strong value for ecommerce, flat pricing, focused on server-side tracking.</span></li>
+          <li className="flex gap-2"><span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" /> <span><strong className="text-foreground">Triple Whale</strong> — broader BI dashboard with attribution, popular at the $100k+/mo range.</span></li>
+          <li className="flex gap-2"><span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" /> <span><strong className="text-foreground">Hyros</strong> — deep attribution, common with info-product and high-ticket advertisers.</span></li>
+        </ul>
+        <figure className="my-6">
+          <img src="/images/ad-tracking-dashboard-comparison.jpg" alt="Ecommerce ad tracking dashboard with ROAS, spend and attribution" loading="lazy" className="w-full rounded-lg border border-border" />
+          <figcaption className="mt-2 text-xs italic text-muted-foreground">A typical ecommerce tracking dashboard — blended ROAS, spend, and attribution by channel.</figcaption>
+        </figure>
+        <p className="text-sm text-muted-foreground">
+          → <Link to="/blog/best-ad-tracking-tools-2026" className="text-brand underline-offset-4 hover:underline">See our full comparison of tracking tools</Link>.
         </p>
       </section>
 
+      {/* PRODUCT RESEARCH */}
       <section>
-        <h2 className="font-display text-xl font-bold text-foreground">Ad Tracking Tools</h2>
+        <h2 className="font-display text-xl font-bold text-foreground">2. Product Research Tools</h2>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          With iOS privacy changes and ad blockers, the native Meta, TikTok, and Google pixels routinely under-report conversions. Server-side tracking platforms close that gap by sending clean events through each platform's Conversions API.
+          Product research platforms surface winning products, ad creatives, and competitor stores. They're most valuable for dropshippers and DTC operators who validate offers before scaling spend.
         </p>
+        <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
+          <li className="flex gap-2"><span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" /> <span><strong className="text-foreground">Minea</strong> — multi-platform ad library across Meta, TikTok, and Pinterest.</span></li>
+          <li className="flex gap-2"><span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" /> <span><strong className="text-foreground">PPSpy</strong> — Shopify store and product-level sales data.</span></li>
+          <li className="flex gap-2"><span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" /> <span><strong className="text-foreground">Trendtrack</strong> — TikTok-first product and creative discovery.</span></li>
+        </ul>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          For most Shopify and DTC brands, <strong className="text-foreground">WeTracked</strong> is a representative example — focused server-side tracking with flat pricing. Larger brands sometimes prefer full BI platforms like Triple Whale, while agencies with long sales cycles often run Hyros. We compare these in detail in our <Link to="/blog/best-ad-tracking-tools-2026" className="text-brand underline">best ad tracking tools guide</Link> and in <Link to="/blog/wetracked-vs-triple-whale" className="text-brand underline">WeTracked vs Triple Whale</Link>.
+          <strong className="text-foreground">Use case:</strong> Dropshipping product validation and DTC niche research — confirming that demand exists before committing creative or ad budget.
         </p>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          <strong className="text-foreground">Use case:</strong> Any brand spending $1k+/month on paid ads where decisions depend on accurate ROAS.
+        <figure className="my-6">
+          <img src="/images/product-research-tools-dashboard.jpg" alt="Product research dashboard with trending products and ad creatives" loading="lazy" className="w-full rounded-lg border border-border" />
+          <figcaption className="mt-2 text-xs italic text-muted-foreground">Most product research tools combine a trending product feed with an ad creative library.</figcaption>
+        </figure>
+        <p className="text-sm text-muted-foreground">
+          → <Link to="/blog/product-research-tools" className="text-brand underline-offset-4 hover:underline">Compare product research tools</Link>.
         </p>
       </section>
 
+      {/* AI VIDEO */}
       <section>
-        <h2 className="font-display text-xl font-bold text-foreground">Product Research Tools</h2>
+        <h2 className="font-display text-xl font-bold text-foreground">3. AI Video Ad Tools</h2>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          Product research platforms surface trending products, winning ads, and competitor stores. Tools like Minea, PPSpy, and Trendtrack each lean toward different signals (ad libraries, store data, TikTok creatives).
+          AI video tools have replaced a chunk of what used to require a freelance editor — letting brands script, voice, and produce ad variants in hours instead of weeks. The realistic value isn't replacing your best creative talent, it's testing more variations cheaply.
         </p>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          <strong className="text-foreground">Use case:</strong> Dropshippers and DTC operators looking for repeatable product discovery workflows.
+        <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
+          <li className="flex gap-2"><span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" /> <span><strong className="text-foreground">Holo AI</strong> — UGC-style AI avatars and product ads at scale.</span></li>
+          <li className="flex gap-2"><span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" /> <span><strong className="text-foreground">Pictory</strong> — script-to-video for narrated explainers.</span></li>
+          <li className="flex gap-2"><span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" /> <span><strong className="text-foreground">Runway</strong> — generative video for stylized B-roll and motion.</span></li>
+        </ul>
+        <figure className="my-6">
+          <img src="/images/ai-video-ad-tools-ui.jpg" alt="AI video editor interface with timeline and script editor" loading="lazy" className="w-full rounded-lg border border-border" />
+          <figcaption className="mt-2 text-xs italic text-muted-foreground">Modern AI video tools combine script editing, voice generation, and timeline editing in one UI.</figcaption>
+        </figure>
+        <p className="text-sm text-muted-foreground">
+          → <Link to="/blog/ai-video-ads-for-ecommerce" className="text-brand underline-offset-4 hover:underline">Learn how AI video ads work in practice</Link>. For a closer look at one option, see our <Link to="/blog/holo-ai-review" className="text-brand underline-offset-4 hover:underline">Holo AI review</Link>.
         </p>
       </section>
 
+      {/* EMAIL SMS */}
       <section>
-        <h2 className="font-display text-xl font-bold text-foreground">AI Video Ad Tools</h2>
+        <h2 className="font-display text-xl font-bold text-foreground">4. Email & SMS Automation</h2>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          AI video tools have replaced a chunk of what used to require a freelance editor — letting brands script, voice, and produce ad variants in hours instead of weeks. Holo AI, Pictory, and Runway are common picks depending on whether you want UGC-style ads, narrated explainers, or generative footage.
+          Owned channels are still some of the highest-ROI sources of revenue in ecommerce. The point isn't sending more messages — it's segmentation, lifecycle flows, and tying campaigns back to LTV.
         </p>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          <strong className="text-foreground">Use case:</strong> Any brand testing more than a few creatives per week.
-        </p>
-      </section>
-
-      <section>
-        <h2 className="font-display text-xl font-bold text-foreground">Email & SMS Automation</h2>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          Email and SMS remain some of the highest-ROI channels in ecommerce. Klaviyo dominates Shopify for email, while Postscript and Attentive are common SMS picks in the US market. Newer AI features focus on segmentation, send-time optimization, and copy generation.
-        </p>
+        <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
+          <li className="flex gap-2"><span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" /> <span><strong className="text-foreground">Klaviyo</strong> — the default for Shopify email and lifecycle flows.</span></li>
+          <li className="flex gap-2"><span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" /> <span><strong className="text-foreground">Postscript</strong> — SMS-first, popular with US DTC brands.</span></li>
+          <li className="flex gap-2"><span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" /> <span><strong className="text-foreground">Attentive</strong> — enterprise SMS with strong segmentation.</span></li>
+        </ul>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           <strong className="text-foreground">Use case:</strong> Any store with returning customers — improving retention is almost always cheaper than buying new traffic.
         </p>
       </section>
 
+      {/* SUPPORT */}
       <section>
-        <h2 className="font-display text-xl font-bold text-foreground">Customer Support AI</h2>
+        <h2 className="font-display text-xl font-bold text-foreground">5. Customer Support AI</h2>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          AI-assisted helpdesks (Gorgias, Zendesk, Tidio) increasingly auto-resolve order-status questions, returns, and shipping queries. The realistic goal isn't full automation — it's deflecting the repetitive 60–70% of tickets so your team can focus on edge cases.
+          AI-assisted helpdesks reduce the volume of repetitive tickets — order status, returns, shipping windows — so your team can focus on edge cases. The realistic goal isn't full automation; it's deflection of the predictable 50–70%.
         </p>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          <strong className="text-foreground">Use case:</strong> Stores past ~$50k/month where ticket volume is starting to bottleneck operations.
-        </p>
+        <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
+          <li className="flex gap-2"><span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" /> <span><strong className="text-foreground">Gorgias</strong> — Shopify-native helpdesk with strong macros and AI assist.</span></li>
+          <li className="flex gap-2"><span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" /> <span><strong className="text-foreground">Zendesk</strong> — enterprise-grade for larger brands and multi-channel teams.</span></li>
+          <li className="flex gap-2"><span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" /> <span><strong className="text-foreground">Tidio</strong> — lightweight live chat + AI for smaller stores.</span></li>
+        </ul>
+        <figure className="my-6">
+          <img src="/images/customer-support-ai-dashboard.jpg" alt="Customer support helpdesk with AI suggested replies" loading="lazy" className="w-full rounded-lg border border-border" />
+          <figcaption className="mt-2 text-xs italic text-muted-foreground">AI-assisted helpdesks suggest replies and auto-route tickets, but humans still handle edge cases.</figcaption>
+        </figure>
       </section>
 
+      {/* LANDING PAGES */}
       <section>
-        <h2 className="font-display text-xl font-bold text-foreground">Landing Page Builders</h2>
+        <h2 className="font-display text-xl font-bold text-foreground">6. Landing Page Builders</h2>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          Dedicated landing pages still convert paid traffic better than most generic product pages. Tools like Replo, Shogun, and PageFly help brands ship advertorial-style pages, quizzes, and product story pages without engineering work.
+          Dedicated landing pages still convert cold paid traffic better than most generic product pages. Builders let non-technical teams ship advertorials, quizzes, and product story pages without waiting on engineering.
         </p>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          <strong className="text-foreground">Use case:</strong> Brands running cold paid traffic to specific products or offers.
-        </p>
+        <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
+          <li className="flex gap-2"><span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" /> <span><strong className="text-foreground">Replo</strong> — modern, designer-friendly Shopify page builder.</span></li>
+          <li className="flex gap-2"><span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" /> <span><strong className="text-foreground">Shogun</strong> — established option with broad template library.</span></li>
+          <li className="flex gap-2"><span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" /> <span><strong className="text-foreground">PageFly</strong> — affordable entry-level builder for Shopify.</span></li>
+        </ul>
+        <figure className="my-6">
+          <img src="/images/landing-page-builder-ui.jpg" alt="Drag and drop landing page builder for Shopify" loading="lazy" className="w-full rounded-lg border border-border" />
+          <figcaption className="mt-2 text-xs italic text-muted-foreground">Drag-and-drop builders let teams ship advertorial pages and quizzes without engineering work.</figcaption>
+        </figure>
       </section>
 
+      {/* HOW TO BUILD */}
       <section>
         <h2 className="font-display text-xl font-bold text-foreground">How to Build Your Stack</h2>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          A simple framework: start with the categories most directly tied to revenue (tracking and creative), add retention next (email/SMS), and only layer in support and BI tools once volume justifies them. The fewer overlapping tools you run, the easier your team's life — and your reporting — will be.
+          A simple framework most operators can follow:
         </p>
+        <ol className="mt-3 space-y-2 text-sm text-muted-foreground">
+          <li><strong className="text-foreground">1. Start with tracking + creative.</strong> Without accurate data and tested creative, every other tool is optimizing on noise.</li>
+          <li><strong className="text-foreground">2. Add retention next.</strong> Email and SMS lift LTV without paying CPMs.</li>
+          <li><strong className="text-foreground">3. Add BI + support later.</strong> These matter once volume justifies them — not before.</li>
+        </ol>
+        <figure className="my-6">
+          <img src="/images/ecommerce-stack-flow.jpg" alt="Ecommerce stack flow: ads, tracking, creative, retention, revenue" loading="lazy" className="w-full rounded-lg border border-border" />
+          <figcaption className="mt-2 text-xs italic text-muted-foreground">A lean ecommerce stack moves linearly from ads through tracking and creative into retention and revenue.</figcaption>
+        </figure>
       </section>
 
+      {/* FAQ */}
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">FAQ</h2>
+        <div className="mt-4 space-y-4">
+          <div>
+            <h3 className="font-display text-base font-semibold text-foreground">What are the best AI tools for ecommerce?</h3>
+            <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+              There's no single "best" — it depends on your bottleneck. For most growing brands the highest-impact categories are server-side tracking (e.g. <Link to="/blog/wetracked-review" className="text-brand underline">WeTracked</Link>), AI video ads (e.g. <Link to="/blog/holo-ai-review" className="text-brand underline">Holo AI</Link>), and email/SMS retention.
+            </p>
+          </div>
+          <div>
+            <h3 className="font-display text-base font-semibold text-foreground">How many tools should I use?</h3>
+            <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+              Most stores under $1M/year run well on 5–7 core platforms. Adding more typically increases overhead faster than it adds revenue.
+            </p>
+          </div>
+          <div>
+            <h3 className="font-display text-base font-semibold text-foreground">Are AI tools worth it for small stores?</h3>
+            <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+              Selectively. Tracking and basic email automation pay back quickly even at small scale. Heavier BI and AI support tools usually aren't worth it under ~$30k/month in revenue.
+            </p>
+          </div>
+          <div>
+            <h3 className="font-display text-base font-semibold text-foreground">Which tools impact revenue most?</h3>
+            <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+              In our experience: accurate tracking (so spend gets allocated to what's actually working), creative testing volume, and lifecycle email/SMS. Almost everything else is optimization on top of those three.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* FINAL */}
       <section>
         <h2 className="font-display text-xl font-bold text-foreground">Final Thoughts</h2>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          The right ecommerce stack in 2026 is smaller than most operators think. Pick the categories that match your stage, evaluate two or three representative tools each, and revisit the stack quarterly as your store grows.
+          The right ecommerce stack in 2026 is smaller than most operators think. Pick the categories that match your stage, evaluate two or three representative tools each, and revisit the stack quarterly as your store grows. Lean stacks ship faster, report cleaner, and scale further than bloated ones.
+        </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          If you're building your stack from scratch, start with <Link to="/blog/best-ad-tracking-tools-2026" className="text-brand underline-offset-4 hover:underline">tracking</Link> and <Link to="/blog/ai-video-ads-for-ecommerce" className="text-brand underline-offset-4 hover:underline">creative tools</Link> first — those are the two layers that touch every dollar of ad spend.
         </p>
       </section>
     </div>
