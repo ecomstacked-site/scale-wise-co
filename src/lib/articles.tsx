@@ -6988,3 +6988,150 @@ function ArticleAIVideoAdsForEcommerce() {
   );
 }
 
+
+function ArticleServerSideTrackingGuide() {
+  return (
+    <div className="space-y-8">
+      <section>
+        <p className="text-base leading-relaxed text-muted-foreground">
+          If you run paid ads for an ecommerce store, there's a good chance the numbers in your Ads Manager don't match what's actually happening in your Shopify dashboard. iOS privacy updates, ad blockers, third-party cookie restrictions, and Safari's Intelligent Tracking Prevention have all chipped away at how much data the browser pixel can capture.
+        </p>
+        <p className="mt-3 text-base leading-relaxed text-muted-foreground">
+          The result? <strong className="text-foreground">Most ad platforms are missing a significant portion of your conversion data</strong> — sometimes 20–40% of it. That missing data isn't just a reporting problem. It changes which campaigns the algorithm decides to scale, which audiences it builds, and ultimately how much you pay per customer.
+        </p>
+        <p className="mt-3 text-base leading-relaxed text-muted-foreground">
+          Server-side tracking is the cleanest way to fix that gap. This guide explains what it is, how it works, and when ecommerce brands should care about it — without the technical overload.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-2xl font-extrabold text-foreground">What Is Server-Side Tracking?</h2>
+        <p className="mt-3 text-base leading-relaxed text-muted-foreground">
+          Traditional tracking — sometimes called "browser-side" or "client-side" — happens entirely inside the visitor's web browser. A small JavaScript snippet (the pixel) loads on your store, watches what the user does, and sends that information directly to Meta, TikTok, or Google.
+        </p>
+        <p className="mt-3 text-base leading-relaxed text-muted-foreground">
+          Server-side tracking moves that conversation. Instead of the browser talking to the ad platform, your store's <em>server</em> sends the event data through an official server-to-server API (Meta's Conversions API, TikTok Events API, or Google Enhanced Conversions).
+        </p>
+        <p className="mt-3 text-base leading-relaxed text-muted-foreground">
+          A simple analogy: browser tracking is like asking a customer to mail a letter for you on the way out of the store. Some will, some won't, some will lose it. Server-side tracking is like keeping a copy of the receipt at the register and mailing it yourself — far fewer things go missing.
+        </p>
+      </section>
+
+      <ArticleImage
+        src="/images/server-side-vs-browser-tracking.jpg"
+        alt="Comparison diagram showing browser-side tracking data loss versus full data capture with server-side tracking"
+        caption="Browser tracking loses data to ad blockers, iOS restrictions, and deleted cookies. Server-side tracking captures events first-party at the source."
+      />
+
+      <section>
+        <h2 className="font-display text-2xl font-extrabold text-foreground">How Server-Side Tracking Works</h2>
+        <p className="mt-3 text-base leading-relaxed text-muted-foreground">
+          The flow is simpler than it sounds. Here's what happens, step by step:
+        </p>
+        <ol className="mt-4 space-y-3 text-base leading-relaxed text-muted-foreground">
+          <li><strong className="text-foreground">1. A visitor lands on your store</strong> and browses, adds to cart, or completes a checkout — the same as always.</li>
+          <li><strong className="text-foreground">2. The event is sent to your server (or a tracking platform's server)</strong> instead of going only to the ad platform from the browser.</li>
+          <li><strong className="text-foreground">3. Your server forwards the event to each ad platform</strong> through their official API — Meta CAPI, TikTok Events API, Google Enhanced Conversions — with the relevant identifiers attached.</li>
+          <li><strong className="text-foreground">4. The ad platform attributes the conversion</strong> to the right campaign and feeds that signal back into its optimization model.</li>
+        </ol>
+        <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+          Most stores still keep the browser pixel running too — events are deduplicated using a shared event ID so you don't double-count. The server-side layer simply fills in what the browser missed.
+        </p>
+      </section>
+
+      <ArticleImage
+        src="/images/server-side-tracking-flow.jpg"
+        alt="Diagram showing the server-side tracking pipeline from browser to server to database to analytics dashboard"
+        caption="Server-side tracking creates a complete data pipeline: browser → server → database → analytics, bypassing the typical points of loss."
+      />
+
+      <section>
+        <h2 className="font-display text-2xl font-extrabold text-foreground">Benefits of Server-Side Tracking</h2>
+        <ul className="mt-4 space-y-3 text-base leading-relaxed text-muted-foreground">
+          <li className="flex items-start gap-3"><span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" /><span><strong className="text-foreground">More accurate data.</strong> Events captured server-side aren't blocked by ad blockers, browser privacy modes, or ITP.</span></li>
+          <li className="flex items-start gap-3"><span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" /><span><strong className="text-foreground">Better ROAS visibility.</strong> When more conversions are matched back to ads, your reported ROAS becomes a fairer reflection of reality.</span></li>
+          <li className="flex items-start gap-3"><span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" /><span><strong className="text-foreground">Less data loss.</strong> Even if a visitor uses Safari or has an ad blocker, the conversion still gets reported.</span></li>
+          <li className="flex items-start gap-3"><span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" /><span><strong className="text-foreground">Improved ad optimization.</strong> Algorithms learn faster when they see complete signals, which can shorten the learning phase and improve targeting quality.</span></li>
+          <li className="flex items-start gap-3"><span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" /><span><strong className="text-foreground">Stronger first-party data foundation.</strong> As the industry shifts away from third-party cookies, server-side data becomes increasingly important.</span></li>
+        </ul>
+        <p className="mt-4 text-sm italic text-muted-foreground">
+          Server-side tracking won't fix bad creative or a weak offer. It gives the ad platforms a clearer picture of what's already working.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-2xl font-extrabold text-foreground">When Should You Use It?</h2>
+        <p className="mt-3 text-base leading-relaxed text-muted-foreground">
+          Server-side tracking isn't strictly necessary for every store. It becomes meaningful when:
+        </p>
+        <ul className="mt-4 space-y-3 text-base leading-relaxed text-muted-foreground">
+          <li className="flex items-start gap-3"><span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" /><span>You're <strong className="text-foreground">scaling ad spend</strong> and small attribution differences start affecting real budget decisions.</span></li>
+          <li className="flex items-start gap-3"><span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" /><span>You're spending <strong className="text-foreground">$1,000+ per month</strong> on Meta, TikTok, or Google ads consistently.</span></li>
+          <li className="flex items-start gap-3"><span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" /><span>You need <strong className="text-foreground">accurate ROAS</strong> to decide which campaigns to scale or kill.</span></li>
+          <li className="flex items-start gap-3"><span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" /><span>A meaningful share of your traffic comes from <strong className="text-foreground">iOS or Safari users</strong>, where browser tracking is most restricted.</span></li>
+        </ul>
+        <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+          If you're spending only a few hundred dollars per month or just starting out, the native pixel and clean UTM tracking are usually enough. Add server-side once your spend justifies the time and tooling.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-2xl font-extrabold text-foreground">Common Mistakes to Avoid</h2>
+        <ul className="mt-4 space-y-3 text-base leading-relaxed text-muted-foreground">
+          <li className="flex items-start gap-3"><span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" /><span><strong className="text-foreground">Assuming the pixel alone is enough.</strong> The native pixel is still useful, but it's not a complete view of your conversions in 2026.</span></li>
+          <li className="flex items-start gap-3"><span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" /><span><strong className="text-foreground">Misconfiguring event deduplication.</strong> Without a shared event ID between browser and server events, you can end up with double-counted conversions.</span></li>
+          <li className="flex items-start gap-3"><span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" /><span><strong className="text-foreground">Overcomplicating the stack.</strong> You don't need a full data warehouse and three tracking tools to start. Pick one that fits your scale.</span></li>
+          <li className="flex items-start gap-3"><span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" /><span><strong className="text-foreground">Skipping match quality.</strong> Server-side data is only as good as the customer info attached (hashed email, phone, IP). Higher match quality means better attribution.</span></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="font-display text-2xl font-extrabold text-foreground">Tools That Support Server-Side Tracking</h2>
+        <p className="mt-3 text-base leading-relaxed text-muted-foreground">
+          Several platforms can handle server-side tracking for ecommerce stores. They differ in price, complexity, and how much extra analytics they bundle in:
+        </p>
+        <ul className="mt-4 space-y-3 text-base leading-relaxed text-muted-foreground">
+          <li className="flex items-start gap-3"><span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" /><span><strong className="text-foreground">WeTracked</strong> — focused server-side tracking and CAPI delivery for Shopify and DTC brands, with predictable flat pricing.</span></li>
+          <li className="flex items-start gap-3"><span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" /><span><strong className="text-foreground">Triple Whale</strong> — broader analytics suite that includes server-side tracking alongside dashboards and creative reporting.</span></li>
+          <li className="flex items-start gap-3"><span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" /><span><strong className="text-foreground">Hyros</strong> — AI-driven attribution often used by info-product and high-ticket advertisers.</span></li>
+          <li className="flex items-start gap-3"><span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" /><span><strong className="text-foreground">Northbeam</strong> — multi-touch attribution for larger DTC brands at enterprise pricing.</span></li>
+        </ul>
+        <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+          For a deeper comparison, see our <Link to="/blog/best-ad-tracking-tools-2026" className="text-brand underline-offset-4 hover:underline">best ad tracking tools for 2026</Link> guide, the <Link to="/blog/wetracked-review" className="text-brand underline-offset-4 hover:underline">WeTracked review</Link>, or the head-to-head <Link to="/blog/wetracked-vs-triple-whale" className="text-brand underline-offset-4 hover:underline">WeTracked vs Triple Whale</Link> breakdown.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-2xl font-extrabold text-foreground">FAQ</h2>
+        <div className="mt-4 space-y-5">
+          <div>
+            <h3 className="font-display text-base font-bold text-foreground">Is server-side tracking worth it?</h3>
+            <p className="mt-2 text-base leading-relaxed text-muted-foreground">For stores spending meaningful budget on paid ads, yes. The recovered conversion data usually leads to better optimization and clearer ROAS. For very small stores, the native pixel is generally enough.</p>
+          </div>
+          <div>
+            <h3 className="font-display text-base font-bold text-foreground">Is it hard to set up?</h3>
+            <p className="mt-2 text-base leading-relaxed text-muted-foreground">It used to be. Today, most server-side tracking tools for Shopify install in under an hour with guided setup steps and pre-built integrations for Meta, TikTok, and Google.</p>
+          </div>
+          <div>
+            <h3 className="font-display text-base font-bold text-foreground">Does it replace the pixel?</h3>
+            <p className="mt-2 text-base leading-relaxed text-muted-foreground">No — it complements it. Most setups run both the browser pixel and the server-side feed, with deduplication so events aren't counted twice.</p>
+          </div>
+          <div>
+            <h3 className="font-display text-base font-bold text-foreground">Is it necessary for small stores?</h3>
+            <p className="mt-2 text-base leading-relaxed text-muted-foreground">Not really. Below roughly $1,000/month in ad spend, the lift from server-side tracking is usually smaller than the time it takes to set up and maintain. Focus on creative, offer, and product-market fit first.</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="font-display text-2xl font-extrabold text-foreground">Conclusion</h2>
+        <p className="mt-3 text-base leading-relaxed text-muted-foreground">
+          Server-side tracking helps ecommerce brands recover lost conversion data and make better ad decisions, especially as they scale. It isn't magic — it won't rescue a weak offer or fix bad creative — but it gives the ad platforms a clearer signal to optimize against, which is increasingly important as browser-based tracking continues to erode.
+        </p>
+        <p className="mt-3 text-base leading-relaxed text-muted-foreground">
+          If you're comparing tools that support server-side tracking, see our <Link to="/blog/best-ad-tracking-tools-2026" className="text-brand underline-offset-4 hover:underline">full comparison guide</Link> for a side-by-side look at the main options.
+        </p>
+      </section>
+    </div>
+  );
+}
