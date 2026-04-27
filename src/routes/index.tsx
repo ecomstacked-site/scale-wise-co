@@ -209,6 +209,63 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Latest Ecommerce Tool Comparisons */}
+      <section className="border-y border-border bg-surface py-16 sm:py-20">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+          <div className="text-center">
+            <p className="text-xs font-semibold uppercase tracking-widest text-brand">Editorial Comparisons</p>
+            <h2 className="mt-2 font-display text-2xl font-bold text-foreground sm:text-3xl">Latest Ecommerce Tool Comparisons</h2>
+            <p className="mx-auto mt-3 max-w-lg text-sm leading-relaxed text-muted-foreground">
+              Side-by-side breakdowns of the tools real operators are deciding between in 2026.
+            </p>
+          </div>
+          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <Card className="flex flex-col">
+              <CardContent className="flex flex-1 flex-col p-6">
+                <Badge variant="secondary" className="self-start text-xs">Tracking</Badge>
+                <h3 className="mt-3 font-display text-lg font-bold text-foreground">WeTracked vs Triple Whale</h3>
+                <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">
+                  Compare pricing, tracking accuracy, setup time, and which tool is better for Shopify brands in 2026.
+                </p>
+                <Link to="/blog/wetracked-vs-triple-whale" className="mt-5 block">
+                  <Button variant="brand" size="default" className="w-full gap-2 rounded-lg">
+                    Read the comparison <ArrowRight className="h-4 w-4" />
+                  </Button>
+                </Link>
+              </CardContent>
+            </Card>
+            <Card className="flex flex-col">
+              <CardContent className="flex flex-1 flex-col p-6">
+                <Badge variant="secondary" className="self-start text-xs">AI Tools</Badge>
+                <h3 className="mt-3 font-display text-lg font-bold text-foreground">Holo AI vs Pictory</h3>
+                <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">
+                  Two AI video tools, two very different workflows. See which one fits ecommerce ad testing in 2026.
+                </p>
+                <Link to="/blog/holo-ai-vs-pictory" className="mt-5 block">
+                  <Button variant="brand" size="default" className="w-full gap-2 rounded-lg">
+                    Read the comparison <ArrowRight className="h-4 w-4" />
+                  </Button>
+                </Link>
+              </CardContent>
+            </Card>
+            <Card className="flex flex-col">
+              <CardContent className="flex flex-1 flex-col p-6">
+                <Badge variant="secondary" className="self-start text-xs">Product Research</Badge>
+                <h3 className="mt-3 font-display text-lg font-bold text-foreground">Trendtrack vs Minea</h3>
+                <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">
+                  How the two best-known product research tools differ on data, ad spy coverage, and pricing.
+                </p>
+                <Link to="/blog/trendtrack-vs-minea" className="mt-5 block">
+                  <Button variant="brand" size="default" className="w-full gap-2 rounded-lg">
+                    Read the comparison <ArrowRight className="h-4 w-4" />
+                  </Button>
+                </Link>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* Categories */}
       <section className="bg-surface py-20 sm:py-24">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
