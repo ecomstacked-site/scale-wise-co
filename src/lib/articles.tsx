@@ -659,9 +659,232 @@ export function getArticleContent(slug: string): React.ReactNode | null {
       return <ArticleHowToSpyTikTokAds />;
     case "ad-vs-product-truth":
       return <ArticleAdVsProductTruth />;
+    case "wetracked-review":
+      return <ArticleWeTrackedReview />;
+    case "best-ai-tools-for-ecommerce":
+      return <ArticleBestAIToolsForEcommerce />;
     default:
       return null;
   }
+}
+
+function ArticleWeTrackedReview() {
+  return (
+    <div className="space-y-8">
+      <section>
+        <p className="text-sm leading-relaxed text-muted-foreground">
+          WeTracked is one of a handful of tracking platforms purpose-built to help ecommerce brands recover the conversion data lost to iOS privacy updates, ad blockers, and browser tracking prevention. This is an informational review — not a sales page — written for operators who want to understand what the tool actually does before deciding whether it fits their stack.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">What Is WeTracked?</h2>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          WeTracked is a server-side tracking and attribution layer for ecommerce stores. Instead of relying only on browser-based pixels (which now miss a meaningful share of conversions), it captures events on the server and sends them to ad platforms through the Conversions API (CAPI), the TikTok Events API, and Google's Enhanced Conversions.
+        </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          The goal is straightforward: send Meta, TikTok, and Google a more complete picture of what's actually happening on your store, so their algorithms can optimize toward real buyers rather than the subset of buyers their pixel still happens to see.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Who It's For</h2>
+        <ul className="mt-3 space-y-2 text-sm leading-relaxed text-muted-foreground">
+          <li>• <strong className="text-foreground">DTC and Shopify brands</strong> spending consistently on Meta, TikTok, or Google Ads.</li>
+          <li>• <strong className="text-foreground">Dropshippers and operators</strong> who want clearer ROAS signals without standing up a full analytics team.</li>
+          <li>• <strong className="text-foreground">Agencies and media buyers</strong> managing multiple client accounts that need consistent server-side data.</li>
+        </ul>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          It's not a great fit for lead-gen businesses, B2B SaaS funnels with long sales cycles, or stores doing very low ad spend where the native pixel is already "good enough."
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">How It Works (Server-Side + CAPI)</h2>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          WeTracked captures key ecommerce events — page views, add-to-cart, initiate checkout, purchase — directly from your store and from server-side webhooks. It deduplicates them against the browser pixel so you don't double-count, then forwards clean events to each ad platform's server-to-server API.
+        </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          In practice, this means your Meta or TikTok account starts seeing more matched conversions, with richer customer data attached. That tends to improve both attribution accuracy and the algorithm's ability to find similar buyers.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Setup Process</h2>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          Setup is one of WeTracked's strongest points. The standard flow:
+        </p>
+        <ul className="mt-3 space-y-2 text-sm leading-relaxed text-muted-foreground">
+          <li>1. Connect your Shopify store via the official integration.</li>
+          <li>2. Authenticate your Meta, TikTok, and/or Google ad accounts.</li>
+          <li>3. Map your existing pixel/event IDs so deduplication works correctly.</li>
+          <li>4. Verify events are flowing in each platform's diagnostics tab.</li>
+        </ul>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          Most stores can complete this in under an hour without a developer. More complex stacks (custom checkouts, headless storefronts) may need extra configuration.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Pricing Overview</h2>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          WeTracked uses a flat monthly pricing model rather than charging a percentage of tracked revenue. Plans typically scale based on event volume and number of connected ad accounts. For exact, up-to-date pricing always check the official site, as plans evolve.
+        </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          The general positioning is "more affordable than enterprise attribution platforms (Hyros, Northbeam) and more focused than full BI suites (Triple Whale)."
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Pros and Cons</h2>
+        <div className="mt-4 grid gap-4 sm:grid-cols-2">
+          <div className="rounded-lg border border-border bg-card p-4">
+            <h4 className="font-display text-xs font-bold uppercase tracking-wider text-foreground">Pros</h4>
+            <ul className="mt-2 space-y-1.5 text-sm text-muted-foreground">
+              <li>• Quick, low-friction setup for Shopify stores.</li>
+              <li>• Native server-side integrations with Meta, TikTok, Google.</li>
+              <li>• Flat pricing — predictable as you scale revenue.</li>
+              <li>• Focused product, not a sprawling BI suite.</li>
+            </ul>
+          </div>
+          <div className="rounded-lg border border-border bg-card p-4">
+            <h4 className="font-display text-xs font-bold uppercase tracking-wider text-foreground">Cons</h4>
+            <ul className="mt-2 space-y-1.5 text-sm text-muted-foreground">
+              <li>• Fewer integrations than enterprise platforms.</li>
+              <li>• Not designed for lead-gen or B2B funnels.</li>
+              <li>• Less brand recognition than legacy competitors.</li>
+              <li>• Custom or headless stacks may need extra setup.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Use Cases</h2>
+        <ul className="mt-3 space-y-2 text-sm leading-relaxed text-muted-foreground">
+          <li>• <strong className="text-foreground">DTC brands</strong> wanting Shopify-aligned ROAS numbers in Meta Ads Manager.</li>
+          <li>• <strong className="text-foreground">Agencies</strong> standardizing tracking across multiple client accounts.</li>
+          <li>• <strong className="text-foreground">Media buyers</strong> who suspect winning campaigns are being killed too early due to under-reporting.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">How It Compares</h2>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          If you're weighing WeTracked against the alternatives, two reads will help. The head-to-head <Link to="/blog/wetracked-vs-triple-whale" className="text-brand underline">WeTracked vs Triple Whale</Link> comparison covers the most common decision people are making in 2026, and the broader <Link to="/blog/best-ad-tracking-tools-2026" className="text-brand underline">best ad tracking tools guide</Link> ranks the full category including Hyros, Northbeam, and Polar Analytics.
+        </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          For a more conversion-focused breakdown of features, plans, and current pricing, see the <Link to="/tools/wetracked-review" className="text-brand underline">WeTracked tool page</Link>.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Final Thoughts</h2>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          WeTracked isn't trying to be everything. It's a focused server-side tracking layer that does one job — feeding cleaner data back to Meta, TikTok, and Google — and does it well for the typical Shopify or DTC brand. If your current setup relies on the native pixel alone and you're spending real money on ads, it's worth evaluating against your specific stack and budget before making a decision.
+        </p>
+      </section>
+    </div>
+  );
+}
+
+function ArticleBestAIToolsForEcommerce() {
+  return (
+    <div className="space-y-8">
+      <section>
+        <p className="text-sm leading-relaxed text-muted-foreground">
+          The number of AI and SaaS tools marketed to ecommerce brands has exploded — and most of them are noise. This guide groups the categories that actually move the needle in 2026 and explains what each one is for, so you can build a stack that fits your stage instead of stacking subscriptions you'll never use.
+        </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          We've kept this informational. Where a tool is mentioned, it's because it's representative of its category, not because it's the only option.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">How to Use This Guide</h2>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          Read by category. Identify the one or two areas where you currently lose the most money or time, and only adopt tools in those areas first. Adding too many platforms at once is a faster way to break your operations than to grow them.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Ad Tracking Tools</h2>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          With iOS privacy changes and ad blockers, the native Meta, TikTok, and Google pixels routinely under-report conversions. Server-side tracking platforms close that gap by sending clean events through each platform's Conversions API.
+        </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          For most Shopify and DTC brands, <strong className="text-foreground">WeTracked</strong> is a representative example — focused server-side tracking with flat pricing. Larger brands sometimes prefer full BI platforms like Triple Whale, while agencies with long sales cycles often run Hyros. We compare these in detail in our <Link to="/blog/best-ad-tracking-tools-2026" className="text-brand underline">best ad tracking tools guide</Link> and in <Link to="/blog/wetracked-vs-triple-whale" className="text-brand underline">WeTracked vs Triple Whale</Link>.
+        </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          <strong className="text-foreground">Use case:</strong> Any brand spending $1k+/month on paid ads where decisions depend on accurate ROAS.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Product Research Tools</h2>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          Product research platforms surface trending products, winning ads, and competitor stores. Tools like Minea, PPSpy, and Trendtrack each lean toward different signals (ad libraries, store data, TikTok creatives).
+        </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          <strong className="text-foreground">Use case:</strong> Dropshippers and DTC operators looking for repeatable product discovery workflows.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">AI Video Ad Tools</h2>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          AI video tools have replaced a chunk of what used to require a freelance editor — letting brands script, voice, and produce ad variants in hours instead of weeks. Holo AI, Pictory, and Runway are common picks depending on whether you want UGC-style ads, narrated explainers, or generative footage.
+        </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          <strong className="text-foreground">Use case:</strong> Any brand testing more than a few creatives per week.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Email & SMS Automation</h2>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          Email and SMS remain some of the highest-ROI channels in ecommerce. Klaviyo dominates Shopify for email, while Postscript and Attentive are common SMS picks in the US market. Newer AI features focus on segmentation, send-time optimization, and copy generation.
+        </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          <strong className="text-foreground">Use case:</strong> Any store with returning customers — improving retention is almost always cheaper than buying new traffic.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Customer Support AI</h2>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          AI-assisted helpdesks (Gorgias, Zendesk, Tidio) increasingly auto-resolve order-status questions, returns, and shipping queries. The realistic goal isn't full automation — it's deflecting the repetitive 60–70% of tickets so your team can focus on edge cases.
+        </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          <strong className="text-foreground">Use case:</strong> Stores past ~$50k/month where ticket volume is starting to bottleneck operations.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Landing Page Builders</h2>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          Dedicated landing pages still convert paid traffic better than most generic product pages. Tools like Replo, Shogun, and PageFly help brands ship advertorial-style pages, quizzes, and product story pages without engineering work.
+        </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          <strong className="text-foreground">Use case:</strong> Brands running cold paid traffic to specific products or offers.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">How to Build Your Stack</h2>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          A simple framework: start with the categories most directly tied to revenue (tracking and creative), add retention next (email/SMS), and only layer in support and BI tools once volume justifies them. The fewer overlapping tools you run, the easier your team's life — and your reporting — will be.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Final Thoughts</h2>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          The right ecommerce stack in 2026 is smaller than most operators think. Pick the categories that match your stage, evaluate two or three representative tools each, and revisit the stack quarterly as your store grows.
+        </p>
+      </section>
+    </div>
+  );
 }
 
 function Article1() {
