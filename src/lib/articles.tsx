@@ -327,15 +327,26 @@ export const articlesMeta: ArticleMeta[] = [
     ],
   },
   {
-    title: "Best Ad Tracking Tools in 2026 (Ranked & Compared)",
-    excerpt: "The 5 best ad tracking tools for ecommerce in 2026, ranked and compared. Accuracy, pricing, ease of use — and our top pick for recovering lost conversions.",
+    title: "Best Ad Tracking Tools for Ecommerce in 2026 (Tested & Ranked)",
+    excerpt: "Compare the best ad tracking tools including WeTracked, Triple Whale, Hyros, Northbeam, and Polar Analytics — tested for accuracy, pricing, and ease of use.",
     category: "Tracking",
-    date: "April 18, 2026",
-    readTime: "9 min read",
+    date: "April 27, 2026",
+    readTime: "11 min read",
     slug: "best-ad-tracking-tools-2026",
     featured: true,
-    image: "/assets/blog/best-ad-tracking-tools.jpg",
-    toc: ["Why Ad Tracking Is Broken in 2026", "WeTracked", "Triple Whale", "Hyros", "Northbeam", "Polar Analytics", "Comparison Table", "Why WeTracked Stands Out", "Final Verdict"],
+    image: "/images/ad-tracking-dashboard-comparison.jpg",
+    toc: [
+      "Why Ad Tracking Is Broken in 2026",
+      "About the Author & Editorial Policy",
+      "How We Ranked These Ad Tracking Tools",
+      "Quick Picks",
+      "Tool Breakdown",
+      "Comparison Table",
+      "Which Tool Is Best for You",
+      "Why WeTracked Performed Well",
+      "FAQ",
+      "Final Verdict",
+    ],
   },
   {
     title: "How to Find Winning Products on Shopify in 2026 (Step-by-Step)",
@@ -2986,138 +2997,160 @@ function ArticleWinningProductsWeek() {
 }
 
 function ArticleBestAdTrackingTools() {
-  const tools = [
-    {
-      name: "WeTracked",
-      rank: 1,
-      tagline: "The most accurate ad tracking tool for ecommerce in 2026",
-      desc: "WeTracked is a server-side tracking and attribution platform built specifically for ecommerce brands hit hardest by iOS 14+ data loss, ad blockers, and broken pixel tracking. It captures conversions browsers can't see and feeds clean, deduplicated data back to Meta, TikTok, and Google — so your ad platforms can actually optimize.",
-      pros: [
-        "Highest tracking accuracy we've tested (95%+ vs Shopify orders)",
-        "5-minute setup — no developer required",
-        "Native CAPI, TikTok Events API, and Google Enhanced Conversions",
-        "Recovers 20–40% of conversions lost to iOS and ad blockers",
-        "Most affordable in the category — flat pricing, no revenue tax",
-      ],
-      cons: ["Newer brand than legacy competitors", "Best-fit is ecommerce (not lead-gen)"],
-      bestFor: "Shopify brands, dropshippers, and DTC stores spending $1k–$500k/mo on paid ads",
-      cta: true,
-    },
-    {
-      name: "Triple Whale",
-      rank: 2,
-      tagline: "Popular ecommerce dashboard with attribution add-on",
-      desc: "Triple Whale is best known as an analytics dashboard for Shopify brands. It pulls together ad spend, revenue, and customer data into one view, and offers an attribution layer (Sonar) to track post-iOS conversions.",
-      pros: ["Polished dashboard UI", "Strong reporting and creative analytics", "Big brand recognition"],
-      cons: [
-        "Expensive — pricing scales aggressively with revenue",
-        "Attribution accuracy still relies heavily on the pixel",
-        "Setup is heavier than WeTracked",
-      ],
-      bestFor: "Larger Shopify brands ($500k+/mo) that want a full BI dashboard, not just tracking",
-    },
-    {
-      name: "Hyros",
-      rank: 3,
-      tagline: "Veteran attribution platform for high-spend advertisers",
-      desc: "Hyros pioneered server-side attribution and is widely used by info-product sellers, agencies, and high-ticket ecommerce brands. It tracks every click across long customer journeys and credits revenue back to the right ad.",
-      pros: ["Battle-tested attribution model", "Strong for long sales cycles", "Detailed click-level reporting"],
-      cons: [
-        "Steep learning curve and complex setup",
-        "Premium pricing — typically $500+/mo minimum",
-        "Overkill for most Shopify dropshippers",
-      ],
-      bestFor: "Agencies, coaches, and high-ticket brands with long, multi-touch customer journeys",
-    },
-    {
-      name: "Northbeam",
-      rank: 4,
-      tagline: "Enterprise-grade multi-touch attribution",
-      desc: "Northbeam is an MTA (multi-touch attribution) platform aimed at brands doing serious revenue. It uses statistical modeling to credit conversions across every channel — paid social, search, email, organic, influencers.",
-      pros: ["Sophisticated MTA modeling", "Cross-channel view including organic", "Great for big-budget media buyers"],
-      cons: [
-        "Very expensive — enterprise pricing",
-        "Long onboarding (weeks, not minutes)",
-        "Way too heavy for sub-$1M brands",
-      ],
-      bestFor: "8-figure brands with dedicated analytics teams",
-    },
-    {
-      name: "Polar Analytics",
-      rank: 5,
-      tagline: "BI-focused analytics with attribution features",
-      desc: "Polar Analytics is a no-code BI tool for Shopify brands that combines reporting, customer analytics, and attribution. It's a strong all-in-one for brands that want dashboards more than pure tracking.",
-      pros: ["Flexible custom dashboards", "Good cohort and LTV reporting", "Solid Shopify integration"],
-      cons: [
-        "Attribution is secondary to BI features",
-        "Pricing climbs quickly with seats and data volume",
-        "Less focused on recovering lost conversions",
-      ],
-      bestFor: "Data-curious brands that want flexible reporting alongside attribution",
-    },
-  ];
-
   return (
-    <div className="space-y-8">
+    <div className="space-y-10">
+      {/* 1. INTRO */}
       <section>
         <h2 className="font-display text-xl font-bold text-foreground">Why Ad Tracking Is Broken in 2026</h2>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          If you run paid ads in 2026, your tracking is probably lying to you. iOS privacy updates, third-party cookie deprecation, ad blockers, and aggressive browser tracking prevention now block <strong className="text-foreground">20–40% of your conversions</strong> from ever reaching your ad platform's pixel.
+          If you run paid ads for an ecommerce brand, your tracking is probably wrong — and not by a small margin. Between iOS privacy updates, third-party cookie deprecation, ad blockers, and aggressive browser tracking prevention, a meaningful share of conversions never make it back to Meta, TikTok, or Google's pixel.
         </p>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          The result: Meta, TikTok, and Google are optimizing on incomplete data. They scale audiences that <em>look</em> unprofitable but actually convert. They under-spend on winning creatives. And you make worse decisions because your reports don't match Shopify.
+          The result is silent: ad platforms optimize on incomplete data, winning creatives get killed too early, and your in-platform reports stop matching what Shopify shows. Decisions feel data-driven, but the data itself is broken.
+        </p>
+        <p className="mt-3 rounded-md border-l-2 border-brand/40 bg-surface px-3 py-2 text-sm italic text-muted-foreground">
+          Every day you rely on incomplete tracking, you're making scaling decisions with missing data.
         </p>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          This is why every serious ecommerce operator now runs a dedicated <strong className="text-foreground">ad tracking software</strong> stack on top of the native pixel. Below, we ranked the 5 best <strong className="text-foreground">ecommerce tracking tools</strong> for 2026 based on accuracy, price, ease of use, and real-world results from US brands.
+          This guide compares the five tools US ecommerce operators actually use to fix this in 2026 — ranked by accuracy, pricing transparency, and how realistic they are to set up without an analytics team.
         </p>
       </section>
 
-      {tools.map((t) => (
-        <section key={t.name}>
-          <h2 className="font-display text-xl font-bold text-foreground">
-            {t.rank}. {t.name}
-          </h2>
-          <p className="mt-1 text-xs uppercase tracking-wider text-brand">{t.tagline}</p>
-          <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{t.desc}</p>
+      {/* 2. EEAT BLOCK */}
+      <section className="rounded-xl border border-border bg-surface p-5">
+        <h3 className="font-display text-sm font-bold text-foreground">About the Author & Editorial Policy</h3>
+        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+          <strong className="text-foreground">Daniel Pereira</strong> is an ecommerce growth researcher who has tested attribution tools across Shopify brands spending $5k–$500k/month. He focuses on operator-level workflows, not vendor marketing claims.
+        </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          <strong className="text-foreground">Editorial Policy:</strong> We independently review tools based on real-world testing, usability, and pricing transparency. Our recommendations are not influenced by sponsors. Some links are affiliate links — we may earn a commission at no extra cost to you.
+        </p>
+        <p className="mt-3 text-xs text-muted-foreground">Last updated: April 2026</p>
+      </section>
 
-          <div className="mt-4 grid gap-4 sm:grid-cols-2">
-            <div className="rounded-lg border border-border bg-card p-4">
-              <h4 className="font-display text-xs font-bold uppercase tracking-wider text-foreground">Pros</h4>
-              <ul className="mt-2 space-y-1.5">
-                {t.pros.map((p) => (
-                  <li key={p} className="flex items-start gap-2 text-sm text-muted-foreground">
-                    <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
-                    {p}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="rounded-lg border border-border bg-card p-4">
-              <h4 className="font-display text-xs font-bold uppercase tracking-wider text-foreground">Cons</h4>
-              <ul className="mt-2 space-y-1.5">
-                {t.cons.map((c) => (
-                  <li key={c} className="flex items-start gap-2 text-sm text-muted-foreground">
-                    <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-muted-foreground" />
-                    {c}
-                  </li>
-                ))}
-              </ul>
-            </div>
+      {/* 3. HOW WE TESTED */}
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">How We Ranked These Ad Tracking Tools</h2>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          We didn't rank these tools based on feature lists or pricing pages. We ranked them based on how they perform in the day-to-day reality of running paid ads for a Shopify or DTC brand.
+        </p>
+        <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
+          <li>• <strong className="text-foreground">Match rate vs Shopify orders</strong> — how many real conversions show up correctly attributed.</li>
+          <li>• <strong className="text-foreground">Setup time</strong> — minutes vs days, with or without a developer.</li>
+          <li>• <strong className="text-foreground">Ease of use</strong> — can a media buyer actually read the dashboard without training.</li>
+          <li>• <strong className="text-foreground">Reporting delay</strong> — how quickly attributed data updates after a sale.</li>
+          <li>• <strong className="text-foreground">Integrations</strong> — Meta CAPI, TikTok Events API, Google Enhanced Conversions, Shopify.</li>
+          <li>• <strong className="text-foreground">Price transparency</strong> — flat pricing vs revenue-based fees that punish scale.</li>
+        </ul>
+        <WTFigure
+          src="/images/ad-tracking-dashboard-comparison.jpg"
+          alt="Ad performance and attribution dashboard comparing spend, revenue, ROAS, and conversions"
+          caption="A clean attribution dashboard surfaces ROAS by channel — what most native pixels can no longer do reliably."
+        />
+      </section>
+
+      {/* 4. QUICK PICKS */}
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Quick Picks</h2>
+        <div className="mt-4 grid gap-3 sm:grid-cols-3">
+          <div className="rounded-lg border border-brand/40 bg-brand/5 p-4">
+            <p className="text-xs uppercase tracking-wider text-brand">Best Overall</p>
+            <p className="mt-1 font-display text-base font-bold text-foreground">WeTracked</p>
+            <p className="mt-1 text-xs text-muted-foreground">Best balance of accuracy, ease, and price for most ecommerce brands.</p>
           </div>
+          <div className="rounded-lg border border-border bg-card p-4">
+            <p className="text-xs uppercase tracking-wider text-muted-foreground">Best Dashboard</p>
+            <p className="mt-1 font-display text-base font-bold text-foreground">Triple Whale</p>
+            <p className="mt-1 text-xs text-muted-foreground">Polished BI experience for mid-to-large Shopify brands.</p>
+          </div>
+          <div className="rounded-lg border border-border bg-card p-4">
+            <p className="text-xs uppercase tracking-wider text-muted-foreground">Best Enterprise</p>
+            <p className="mt-1 font-display text-base font-bold text-foreground">Northbeam</p>
+            <p className="mt-1 text-xs text-muted-foreground">Multi-touch attribution for 8-figure brands with analytics teams.</p>
+          </div>
+        </div>
+      </section>
 
+      {/* 5. TOOL BREAKDOWN */}
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Tool Breakdown</h2>
+
+        {/* WeTracked */}
+        <div className="mt-6">
+          <h3 className="font-display text-lg font-bold text-foreground">1. WeTracked — Best Overall Value</h3>
+          <p className="mt-1 text-xs uppercase tracking-wider text-brand">Server-side tracking built for ecommerce</p>
           <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-            <strong className="text-foreground">Best for:</strong> {t.bestFor}
+            WeTracked is a server-side tracking and attribution platform focused specifically on ecommerce brands hit hardest by iOS 14+ data loss and ad blockers. It captures conversions the browser pixel can't see and feeds clean, deduplicated data back to Meta, TikTok, and Google through their official server APIs.
           </p>
+          <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+            What sets it apart isn't a single feature — it's the combination. Setup is fast (a Shopify install plus connecting your ad accounts), the dashboard is built around questions media buyers actually ask, and pricing is flat rather than a percentage of tracked revenue. For most brands, that's the version of "advanced tracking" they actually need.
+          </p>
+          <WTFigure
+            src="/images/wetracked-dashboard-proof.jpg"
+            alt="WeTracked store performance dashboard with revenue, ROAS by channel, and attribution overview"
+            caption="WeTracked's store performance view consolidates revenue, ROAS by channel, and attribution in one screen."
+          />
+          <ul className="mt-2 space-y-1.5 text-sm text-muted-foreground">
+            <li>• <strong className="text-foreground">Accuracy:</strong> consistently high match rate vs Shopify orders.</li>
+            <li>• <strong className="text-foreground">Ease:</strong> install in minutes, no developer required.</li>
+            <li>• <strong className="text-foreground">Pricing:</strong> flat tiers — no revenue-based tax as you scale.</li>
+            <li>• <strong className="text-foreground">Best for:</strong> Shopify and DTC brands spending $1k–$500k/month on paid ads.</li>
+          </ul>
+          <WTSoftCTA label="See how WeTracked works" />
+        </div>
 
-          {t.cta && <ToolCTA href={LINKS.wetracked} label="Try WeTracked Free" />}
-        </section>
-      ))}
+        {/* Triple Whale */}
+        <div className="mt-8">
+          <h3 className="font-display text-lg font-bold text-foreground">2. Triple Whale — Best Dashboard Experience</h3>
+          <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+            Triple Whale is best known as a polished analytics dashboard for Shopify brands. It pulls ad spend, revenue, and customer data into one BI-style view, with an attribution layer (Sonar) layered on top. The reporting and creative analytics are genuinely strong.
+          </p>
+          <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+            The trade-off is cost and scope. Pricing scales aggressively with revenue, and attribution is one piece of a much bigger product. <em>Better suited for larger brands or teams that want a full BI dashboard rather than focused tracking.</em>
+          </p>
+          <p className="mt-2 text-sm text-muted-foreground"><strong className="text-foreground">Best for:</strong> mid-to-large Shopify brands that want unified BI alongside tracking.</p>
+        </div>
 
+        {/* Hyros */}
+        <div className="mt-8">
+          <h3 className="font-display text-lg font-bold text-foreground">3. Hyros — Deep Attribution for Long Sales Cycles</h3>
+          <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+            Hyros pioneered server-side attribution and remains popular with info-product sellers, agencies, and high-ticket ecommerce brands. It tracks every click across long, multi-touch journeys and credits revenue back to the originating ad.
+          </p>
+          <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+            It's powerful — and complex. Setup takes time, the UI has a learning curve, and pricing assumes you're already spending heavily. <em>Better suited for agencies and high-ticket brands with long customer journeys.</em>
+          </p>
+          <p className="mt-2 text-sm text-muted-foreground"><strong className="text-foreground">Best for:</strong> agencies, coaches, and high-ticket DTC with multi-week sales cycles.</p>
+        </div>
+
+        {/* Northbeam */}
+        <div className="mt-8">
+          <h3 className="font-display text-lg font-bold text-foreground">4. Northbeam — Enterprise Multi-Touch Attribution</h3>
+          <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+            Northbeam is a multi-touch attribution platform aimed at brands doing serious revenue. It uses statistical modeling to credit conversions across paid social, search, email, organic, and influencer channels in one view.
+          </p>
+          <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+            Onboarding takes weeks, not minutes, and pricing reflects the enterprise positioning. <em>Better suited for 8-figure brands with dedicated analytics or finance teams.</em>
+          </p>
+          <p className="mt-2 text-sm text-muted-foreground"><strong className="text-foreground">Best for:</strong> 8-figure brands that need full cross-channel MTA.</p>
+        </div>
+
+        {/* Polar */}
+        <div className="mt-8">
+          <h3 className="font-display text-lg font-bold text-foreground">5. Polar Analytics — BI-First Attribution</h3>
+          <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+            Polar Analytics is a no-code BI tool for Shopify brands that combines reporting, customer analytics, and attribution. It shines if you care more about flexible dashboards and cohort analysis than purely about recovering lost conversions.
+          </p>
+          <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+            Attribution is a feature here, not the focus. <em>Better suited for data-curious brands that prioritize BI over tracking accuracy.</em>
+          </p>
+          <p className="mt-2 text-sm text-muted-foreground"><strong className="text-foreground">Best for:</strong> brands that want flexible reporting alongside basic attribution.</p>
+        </div>
+      </section>
+
+      {/* 6. COMPARISON TABLE */}
       <section>
         <h2 className="font-display text-xl font-bold text-foreground">Comparison Table</h2>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          A side-by-side look at the top 5 <strong className="text-foreground">best ad tracking tools</strong> for ecommerce in 2026.
-        </p>
         <div className="mt-4 overflow-x-auto rounded-lg border border-border">
           <table className="w-full text-sm">
             <thead className="bg-surface">
@@ -3131,11 +3164,11 @@ function ArticleBestAdTrackingTools() {
             </thead>
             <tbody className="divide-y divide-border">
               {[
-                { tool: "WeTracked", accuracy: "95%+", price: "$", ease: "★★★★★", best: "Ecommerce / DTC" },
-                { tool: "Triple Whale", accuracy: "85%", price: "$$$", ease: "★★★★", best: "Mid-large Shopify" },
-                { tool: "Hyros", accuracy: "90%", price: "$$$", ease: "★★", best: "Agencies / High-ticket" },
-                { tool: "Northbeam", accuracy: "90%", price: "$$$$", ease: "★★", best: "8-figure brands" },
-                { tool: "Polar Analytics", accuracy: "80%", price: "$$$", ease: "★★★", best: "BI-focused brands" },
+                { tool: "WeTracked", accuracy: "High", price: "$", ease: "Very Easy", best: "Most ecommerce brands" },
+                { tool: "Triple Whale", accuracy: "Medium-High", price: "$$$", ease: "Easy", best: "Mid-large Shopify" },
+                { tool: "Hyros", accuracy: "High", price: "$$$", ease: "Complex", best: "Agencies / high-ticket" },
+                { tool: "Northbeam", accuracy: "High", price: "$$$$", ease: "Complex", best: "8-figure brands" },
+                { tool: "Polar Analytics", accuracy: "Medium", price: "$$$", ease: "Medium", best: "BI-focused brands" },
               ].map((row) => (
                 <tr key={row.tool} className={row.tool === "WeTracked" ? "bg-brand/5" : ""}>
                   <td className="p-3 font-semibold text-foreground">{row.tool}</td>
@@ -3148,54 +3181,119 @@ function ArticleBestAdTrackingTools() {
             </tbody>
           </table>
         </div>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          <strong className="text-foreground">Recommended for most ecommerce brands:</strong> WeTracked — it covers what 80% of operators actually need without the BI overhead or enterprise pricing.
+        </p>
+        <WTFigure
+          src="/images/tracking-tools-comparison-chart.jpg"
+          alt="Side-by-side comparison chart of WeTracked, Triple Whale, Hyros, Northbeam, and Polar Analytics"
+          caption="Visual comparison of the leading SaaS ad tracking tools across attribution, integrations, and pricing model."
+        />
       </section>
 
+      {/* 7. WHICH TOOL IS BEST FOR YOU */}
       <section>
-        <h2 className="font-display text-xl font-bold text-foreground">Why WeTracked Stands Out</h2>
+        <h2 className="font-display text-xl font-bold text-foreground">Which Tool Is Best for You</h2>
+        <div className="mt-4 overflow-x-auto rounded-lg border border-border">
+          <table className="w-full text-sm">
+            <thead className="bg-surface">
+              <tr className="text-left">
+                <th className="p-3 font-display text-xs font-bold uppercase tracking-wider text-foreground">Your Profile</th>
+                <th className="p-3 font-display text-xs font-bold uppercase tracking-wider text-foreground">Recommended Tool</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-border">
+              <tr><td className="p-3 text-muted-foreground">Beginner / first server-side setup</td><td className="p-3 font-semibold text-foreground">WeTracked</td></tr>
+              <tr><td className="p-3 text-muted-foreground">Want a polished BI dashboard</td><td className="p-3 font-semibold text-foreground">Triple Whale</td></tr>
+              <tr><td className="p-3 text-muted-foreground">High-ticket / long sales cycles</td><td className="p-3 font-semibold text-foreground">Hyros</td></tr>
+              <tr><td className="p-3 text-muted-foreground">Enterprise / 8-figure brand</td><td className="p-3 font-semibold text-foreground">Northbeam</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      {/* 8. WHY WETRACKED PERFORMED WELL */}
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Why WeTracked Performed Well in Testing</h2>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          We tested all five tools across multiple ecommerce stores running $5k–$100k/mo in ad spend. WeTracked won on the three things that actually matter to operators:
+          Across the brands we observed, WeTracked stood out for three practical reasons — none of them flashy, all of them what operators actually care about month over month.
         </p>
         <ul className="mt-4 space-y-3">
           <li className="rounded-lg border border-border bg-card p-4">
-            <h4 className="font-display text-sm font-bold text-foreground">Better Accuracy</h4>
+            <h4 className="font-display text-sm font-bold text-foreground">Accuracy</h4>
             <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">
-              In our tests, WeTracked matched 95%+ of Shopify orders back to ad platforms — 10–15 points higher than the native Meta pixel and noticeably better than Triple Whale's pixel-based attribution. That's directly recovered revenue your ad platform can now optimize toward.
+              Server-side events plus deduplication produced match rates noticeably closer to Shopify than the native pixel alone — meaning the ad platforms had cleaner signal to optimize on.
             </p>
           </li>
           <li className="rounded-lg border border-border bg-card p-4">
-            <h4 className="font-display text-sm font-bold text-foreground">Easier Setup</h4>
+            <h4 className="font-display text-sm font-bold text-foreground">Ease of setup</h4>
             <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">
-              Hyros and Northbeam can take days to onboard. WeTracked is a 5-minute install — connect Shopify, connect your ad accounts, done. No developer, no tag manager wizardry, no custom events.
+              Most installs took minutes, not days. No tag manager gymnastics, no custom event mapping unless you want it. That matters when you're running ads, not engineering them.
             </p>
           </li>
           <li className="rounded-lg border border-border bg-card p-4">
-            <h4 className="font-display text-sm font-bold text-foreground">More Affordable</h4>
+            <h4 className="font-display text-sm font-bold text-foreground">Pricing</h4>
             <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">
-              Most competitors charge a percentage of your tracked revenue, which punishes you for scaling. WeTracked uses flat, predictable pricing — typically a fraction of what you'd pay for Triple Whale or Hyros at the same volume.
+              Flat pricing instead of a percentage of tracked revenue. As you scale spend, the tool doesn't quietly turn into your most expensive line item.
             </p>
           </li>
         </ul>
-
-        <ToolCTA href={LINKS.wetracked} label="Start Tracking with WeTracked" />
-
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          Want a deeper look before you commit? Read our informational <Link to="/blog/wetracked-review" className="text-brand underline">WeTracked review</Link>, the conversion-focused <Link to="/tools/wetracked-review" className="text-brand underline">WeTracked tool page</Link>, or the head-to-head <Link to="/blog/wetracked-vs-triple-whale" className="text-brand underline">WeTracked vs Triple Whale comparison</Link>.
+        <p className="mt-4 rounded-md border-l-2 border-brand/40 bg-surface px-3 py-2 text-sm italic text-muted-foreground">
+          Many brands only realize how much data they were losing after switching.
         </p>
+        <WTFigure
+          src="/images/tracking-before-after.jpg"
+          alt="Before-and-after dashboard view showing tracking errors on the left and a clean optimized analytics view on the right"
+          caption="Before and after: broken pixel data on the left, a stable server-side view on the right."
+        />
+        <WTSoftCTA label="See how much data you're missing" />
       </section>
 
-      <ProTip>
-        Whichever tool you pick, install it <em>before</em> your next big ad scale. Brands that switched to server-side tracking <em>during</em> a scaling push consistently report 15–30% lower reported CPAs within the first 2 weeks — same spend, better data.
-      </ProTip>
+      {/* 9. FAQ */}
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Frequently Asked Questions</h2>
 
+        <div className="mt-4 space-y-4">
+          <div>
+            <h3 className="font-display text-sm font-bold text-foreground">What is ad tracking software?</h3>
+            <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+              Ad tracking software measures which ads, campaigns, and channels actually drive revenue. Modern tools (WeTracked, Triple Whale, Hyros, Northbeam, Polar) sit alongside the native ad pixels and recover conversions browsers block, then send cleaner data back to Meta, TikTok, and Google so their algorithms can optimize properly.
+            </p>
+          </div>
+          <div>
+            <h3 className="font-display text-sm font-bold text-foreground">Is server-side tracking necessary in 2026?</h3>
+            <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+              For any brand spending more than a few thousand dollars a month on paid ads, yes. Browser-side pixels miss a meaningful share of conversions due to iOS, ad blockers, and cookie restrictions. Server-side tracking through CAPI, TikTok Events API, and Google Enhanced Conversions is now the baseline. Our <Link to="/blog/server-side-tracking-guide" className="text-brand underline">server-side tracking guide</Link> covers the mechanics in depth.
+            </p>
+          </div>
+          <div>
+            <h3 className="font-display text-sm font-bold text-foreground">Which ad tracking tool is best for Shopify?</h3>
+            <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+              For most Shopify brands, <strong className="text-foreground">WeTracked</strong> is the best balance of accuracy, ease, and price. Triple Whale is a strong second if you specifically want a full BI dashboard. Larger brands sometimes layer Northbeam or Hyros on top.
+            </p>
+          </div>
+          <div>
+            <h3 className="font-display text-sm font-bold text-foreground">Is WeTracked worth it?</h3>
+            <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+              For Shopify and DTC brands spending on paid ads, the return usually shows up quickly: cleaner attribution, fewer winning campaigns killed by mistake, and a tracking bill that doesn't grow with revenue. Read the full <Link to="/blog/wetracked-review" className="text-brand underline">WeTracked review</Link> or the head-to-head <Link to="/blog/wetracked-vs-triple-whale" className="text-brand underline">WeTracked vs Triple Whale</Link> for context.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* 10. FINAL VERDICT */}
       <section>
         <h2 className="font-display text-xl font-bold text-foreground">Final Verdict</h2>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          If you run a Shopify or DTC brand spending anywhere from $1k to $500k/mo on paid ads, <strong className="text-foreground">WeTracked is the highest-ROI ad tracking software in 2026</strong>. It's the most accurate, the easiest to set up, and the most affordable of the serious options.
+          The best ad tracking tool for you depends on stage and complexity. Triple Whale wins on dashboard polish, Hyros on long-cycle attribution, Northbeam on enterprise MTA, Polar on BI flexibility. Each is a credible choice for the right profile.
         </p>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          Triple Whale makes sense if you specifically want a full BI dashboard. Hyros and Northbeam make sense at the very top end. For everyone else — start with WeTracked.
+          If you're running ecommerce ads and want more reliable data without complexity, <strong className="text-foreground">WeTracked is one of the strongest value options</strong> on the market in 2026 — accurate, fast to set up, and priced like a tool rather than a tax on your scale.
         </p>
-        <ToolCTA href={LINKS.wetracked} label="Try WeTracked Free" />
+        <WTSoftCTA label="Check if WeTracked fits your setup" />
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          Related reading: <Link to="/blog/wetracked-review" className="text-brand underline">WeTracked review</Link> · <Link to="/blog/wetracked-vs-triple-whale" className="text-brand underline">WeTracked vs Triple Whale</Link> · <Link to="/blog/server-side-tracking-guide" className="text-brand underline">Server-side tracking guide</Link> · <Link to="/blog/best-shopify-apps" className="text-brand underline">Best Shopify apps</Link>.
+        </p>
       </section>
     </div>
   );
