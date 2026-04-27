@@ -618,8 +618,8 @@ export const articlesMeta: ArticleMeta[] = [
     category: "AI Tools",
     date: "April 26, 2026",
     readTime: "12 min read",
-    slug: "best-ai-tools-for-ecommerce",
-    image: "/assets/blog/best-ad-tracking-tools.jpg",
+    slug: "best-ai-tools-for-ecommerce-2026",
+    image: "/images/ecommerce-ai-stack-overview.jpg",
     toc: [
       "How to Use This Guide",
       "Ad Tracking Tools",
@@ -629,6 +629,7 @@ export const articlesMeta: ArticleMeta[] = [
       "Customer Support AI",
       "Landing Page Builders",
       "How to Build Your Stack",
+      "FAQ",
       "Final Thoughts",
     ],
   },
@@ -692,6 +693,7 @@ export function getArticleContent(slug: string): React.ReactNode | null {
       return <ArticleAdVsProductTruth />;
     case "wetracked-review":
       return <ArticleWeTrackedReview />;
+    case "best-ai-tools-for-ecommerce-2026":
     case "best-ai-tools-for-ecommerce":
       return <ArticleBestAIToolsForEcommerce />;
     case "server-side-tracking-guide":
