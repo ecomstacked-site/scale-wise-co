@@ -1016,7 +1016,7 @@ function ArticleBestAIToolsForEcommerce() {
           <figcaption className="mt-2 text-xs italic text-muted-foreground">Most product research tools combine a trending product feed with an ad creative library.</figcaption>
         </figure>
         <p className="text-sm text-muted-foreground">
-          → <Link to="/blog/product-research-tools" className="text-brand underline-offset-4 hover:underline">Compare product research tools</Link>.
+          → <Link to="/blog/best-product-research-tools" className="text-brand underline-offset-4 hover:underline">Compare product research tools</Link>.
         </p>
       </section>
 
