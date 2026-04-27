@@ -938,9 +938,68 @@ function ArticleWeTrackedReview() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           If you're weighing WeTracked against the alternatives, two reads will help. The head-to-head <Link to="/blog/wetracked-vs-triple-whale" className="text-brand underline">WeTracked vs Triple Whale</Link> comparison covers the most common decision people are making in 2026, and the broader <Link to="/blog/best-ad-tracking-tools-2026" className="text-brand underline">best ad tracking tools guide</Link> ranks the full category including Hyros, Northbeam, and Polar Analytics.
         </p>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+
+        <div className="mt-5 overflow-x-auto rounded-lg border border-border">
+          <table className="w-full text-left text-sm">
+            <thead className="bg-surface text-xs uppercase tracking-wider text-muted-foreground">
+              <tr>
+                <th className="px-4 py-3">Tool</th>
+                <th className="px-4 py-3">Pricing model</th>
+                <th className="px-4 py-3">Best fit</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-border text-muted-foreground">
+              <tr className="bg-brand/5">
+                <td className="px-4 py-3 font-semibold text-foreground">WeTracked</td>
+                <td className="px-4 py-3">Flat monthly</td>
+                <td className="px-4 py-3">Shopify / DTC brands $1k–$200k ad spend</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-3 font-semibold text-foreground">Triple Whale</td>
+                <td className="px-4 py-3">Tiered + revenue-based</td>
+                <td className="px-4 py-3">Brands needing full BI suite</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-3 font-semibold text-foreground">Hyros</td>
+                <td className="px-4 py-3">Custom / enterprise</td>
+                <td className="px-4 py-3">Info-products, high-ticket funnels</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-3 font-semibold text-foreground">Northbeam</td>
+                <td className="px-4 py-3">Enterprise tier</td>
+                <td className="px-4 py-3">8-figure DTC with analytics teams</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
           For a more conversion-focused breakdown of features and plans, see the <Link to="/tools/wetracked-review" className="text-brand underline">WeTracked tool page</Link>.
         </p>
+
+        <WTSoftCTA label="See how it works" />
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">FAQ</h2>
+        <div className="mt-4 space-y-4">
+          <div>
+            <h3 className="text-sm font-bold text-foreground">Does WeTracked replace the Meta or TikTok pixel?</h3>
+            <p className="mt-1 text-sm text-muted-foreground">No — it works alongside the pixel and deduplicates events, so you don't double-count. Meta and TikTok still receive browser events plus the cleaner server-side feed.</p>
+          </div>
+          <div>
+            <h3 className="text-sm font-bold text-foreground">Do I need a developer to set it up?</h3>
+            <p className="mt-1 text-sm text-muted-foreground">For a standard Shopify store, no. The official integration handles most of the wiring. Headless or custom checkouts may need a few hours of dev work.</p>
+          </div>
+          <div>
+            <h3 className="text-sm font-bold text-foreground">Will it actually improve my ROAS?</h3>
+            <p className="mt-1 text-sm text-muted-foreground">It improves <em>data accuracy</em>, which usually leads to better optimization decisions on the ad platform side. The size of the impact depends on how much under-reporting you currently have.</p>
+          </div>
+          <div>
+            <h3 className="text-sm font-bold text-foreground">How is WeTracked different from Triple Whale?</h3>
+            <p className="mt-1 text-sm text-muted-foreground">Triple Whale is a broad BI suite; WeTracked is a focused tracking layer. If your bottleneck is data quality, not dashboards, the focused tool is usually enough — and cheaper. Full breakdown in our <Link to="/blog/wetracked-vs-triple-whale" className="text-brand underline">WeTracked vs Triple Whale</Link> comparison.</p>
+          </div>
+        </div>
       </section>
 
       <section>
@@ -959,7 +1018,7 @@ function ArticleWeTrackedReview() {
           WeTracked isn't trying to be everything. It's a focused server-side tracking layer that does one job — feeding cleaner data back to Meta, TikTok, and Google — and does it well for the typical Shopify or DTC brand.
         </p>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          If your current setup relies on the native pixel alone and you're spending real money on ads, it's worth evaluating against your specific stack and budget before making a decision.
+          If your current setup relies on the native pixel alone and you're spending real money on ads, the question isn't <em>whether</em> to fix attribution — it's which tool fits your stack and budget. For most growing Shopify brands, WeTracked is the most balanced option in the category right now.
         </p>
 
         <WTSoftCTA label="View pricing" />
