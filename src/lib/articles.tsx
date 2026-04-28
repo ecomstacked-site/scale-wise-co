@@ -3912,10 +3912,11 @@ function ArticleBestProductResearchTools() {
         <img
           src="/images/best-product-research-tools-hero.png"
           alt="Best product research tools for dropshipping in 2026 — operator dashboard"
-          className="w-full rounded-lg border border-border"
+          className="mx-auto w-full rounded-xl border border-border shadow-sm"
+          style={{ maxWidth: "1100px" }}
           loading="eager"
         />
-        <figcaption className="mt-2 text-xs text-muted-foreground">The right product research stack turns hours of scrolling into a 30-minute shortlist.</figcaption>
+        <figcaption className="mt-2 text-center text-xs italic text-muted-foreground">The right product research stack turns hours of scrolling into a 30-minute shortlist of products worth testing.</figcaption>
       </figure>
 
       <section>
@@ -3952,9 +3953,11 @@ function ArticleBestProductResearchTools() {
           <img
             src="/images/product-research-tools-comparison.png"
             alt="Side-by-side comparison of the best product research tools for dropshipping"
-            className="w-full rounded-lg border border-border"
+            className="mx-auto w-full rounded-xl border border-border shadow-sm"
+            style={{ maxWidth: "1100px" }}
             loading="lazy"
           />
+          <figcaption className="mt-2 text-center text-xs italic text-muted-foreground">A quick visual comparison of the tools we tested, so you can match the right one to your stage and budget.</figcaption>
         </figure>
         <div className="mt-4 grid gap-3 sm:grid-cols-2">
           <div className="rounded-lg border border-brand/30 bg-brand/5 p-4">
@@ -4065,17 +4068,19 @@ function ArticleBestProductResearchTools() {
       {/* TOOL 1 */}
       <section>
         <h2 className="font-display text-xl font-bold text-foreground">1. WinningHunter — Best Overall</h2>
-        <figure className="my-4">
-          <img
-            src="/images/winninghunter-dashboard-real.png"
-            alt="WinningHunter Magic AI Search dashboard showing trending product ads with adset counts, spend, revenue, and reach"
-            className="w-full rounded-lg border border-border"
-            loading="lazy"
-          />
-        </figure>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           <strong className="text-foreground">What it does:</strong> Combines Meta + TikTok ad spy, live Shopify store tracking, and product validation data (sales velocity, ROAS estimates, ad spend trends) into one dashboard.
         </p>
+        <figure className="my-6">
+          <img
+            src="/images/winninghunter-dashboard-real.png"
+            alt="WinningHunter product research dashboard showing ecommerce product discovery, ad signals, and store tracking features"
+            className="mx-auto h-auto w-full rounded-xl border border-border shadow-sm"
+            style={{ maxWidth: "1100px" }}
+            loading="lazy"
+          />
+          <figcaption className="mt-2 text-center text-xs italic text-muted-foreground">WinningHunter combines product research, ad spy data, and store tracking in one workflow, making it easier to validate products before spending money on ads.</figcaption>
+        </figure>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           <strong className="text-foreground">Why it matters:</strong> Most operators stack 2–3 tools to cover ad spy + store spy + creative analysis. WinningHunter replaces that stack. That's not just cheaper — it's faster, because the data is connected. You can spot a trending ad, click into the store, see the product's sales trajectory, and decide in 5 minutes whether it's worth testing.
         </p>
@@ -4123,9 +4128,11 @@ function ArticleBestProductResearchTools() {
           <img
             src="/images/trendtrack-store-spy.png"
             alt="Trendtrack BrandTracker dashboard showing active ads, top landing pages, and product spy"
-            className="w-full rounded-lg border border-border"
+            className="mx-auto w-full rounded-xl border border-border shadow-sm"
+            style={{ maxWidth: "1100px" }}
             loading="lazy"
           />
+          <figcaption className="mt-2 text-center text-xs italic text-muted-foreground">Trendtrack focuses on Shopify store-level data, useful for confirming whether a product is a real best-seller or just a one-off ad test.</figcaption>
         </figure>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           <strong className="text-foreground">What it does:</strong> Tracks live Shopify stores and surfaces what's actually selling — best-sellers, new product drops, ad media mix per brand.
@@ -4165,9 +4172,11 @@ function ArticleBestProductResearchTools() {
           <img
             src="/images/minea-ad-library.png"
             alt="Minea ad library browsing 100M+ ads from Meta, TikTok, and Pinterest"
-            className="w-full rounded-lg border border-border"
+            className="mx-auto w-full rounded-xl border border-border shadow-sm"
+            style={{ maxWidth: "1100px" }}
             loading="lazy"
           />
+          <figcaption className="mt-2 text-center text-xs italic text-muted-foreground">Minea's strength is creative inspiration — its multi-platform ad library helps operators study what hooks and formats are actually working.</figcaption>
         </figure>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           <strong className="text-foreground">What it does:</strong> 100M+ ad library across Meta, TikTok, and Pinterest with deep tagging — hooks, CTAs, formats, country, run-time.
@@ -4207,12 +4216,11 @@ function ArticleBestProductResearchTools() {
           <img
             src="/images/pipiads-dashboard.png"
             alt="PiPiADS Ad Library dashboard showing TikTok and Facebook dropshipping ads with impressions, run-time days, and like counts"
-            className="w-full rounded-xl border border-border"
+            className="mx-auto w-full rounded-xl border border-border shadow-sm"
+            style={{ maxWidth: "1100px" }}
             loading="lazy"
           />
-          <figcaption className="mt-2 text-center text-xs italic text-muted-foreground">
-            PiPiADS Ad Library — sorted by "Last seen" with impressions, run-time and engagement on every ad. The 2.1M-impression / 54-day creatives are the shortlist: ads still scaling after two weeks are almost always profitable, and that's where winning products hide.
-          </figcaption>
+          <figcaption className="mt-2 text-center text-xs italic text-muted-foreground">PiPiADS shows impressions and run-time per ad — creatives still scaling after two weeks are usually a strong signal of a real winning product.</figcaption>
         </figure>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           <strong className="text-foreground">What it does:</strong> The deepest TikTok ad spy on the market — 100M+ ads, 30M+ TikTok library, spend estimates, creative variants, audience signals.
@@ -4292,9 +4300,11 @@ function ArticleBestProductResearchTools() {
           <img
             src="/images/product-research-workflow.png"
             alt="Product research workflow showing discovery, validation, testing, and scaling phases"
-            className="w-full rounded-lg border border-border"
+            className="mx-auto w-full rounded-xl border border-border shadow-sm"
+            style={{ maxWidth: "1100px" }}
             loading="lazy"
           />
+          <figcaption className="mt-2 text-center text-xs italic text-muted-foreground">Our 4-phase workflow — discovery, validation, testing, scaling — is what turns tool data into actual buying decisions.</figcaption>
         </figure>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           Here's the exact 5-step filter we run inside any of these tools. It cuts our shortlist from "thousands" to "5–10 worth testing this week."
@@ -4318,9 +4328,11 @@ function ArticleBestProductResearchTools() {
           <img
             src="/images/winning-product-example.png"
             alt="Winning product example — portable espresso maker with real-time engagement stats"
-            className="w-full rounded-lg border border-border"
+            className="mx-auto w-full rounded-xl border border-border shadow-sm"
+            style={{ maxWidth: "1100px" }}
             loading="lazy"
           />
+          <figcaption className="mt-2 text-center text-xs italic text-muted-foreground">A real example: this portable espresso maker matched every signal in our checklist before we ever spent a dollar testing it.</figcaption>
         </figure>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           <strong className="text-foreground">The product:</strong> A portable espresso maker — small, visual, problem-solving, sold around $49.
@@ -4346,9 +4358,11 @@ function ArticleBestProductResearchTools() {
           <img
             src="/images/tool-selection-guide.png"
             alt="Tool selection guide flowchart for dropshipping product research"
-            className="w-full rounded-lg border border-border"
+            className="mx-auto w-full rounded-xl border border-border shadow-sm"
+            style={{ maxWidth: "1100px" }}
             loading="lazy"
           />
+          <figcaption className="mt-2 text-center text-xs italic text-muted-foreground">A simple decision flow to match the right tool to your current stage — beginner, scaling, TikTok-first, or agency.</figcaption>
         </figure>
         <ul className="mt-3 space-y-2 text-sm leading-relaxed text-muted-foreground">
           <li>• <strong className="text-foreground">Beginner, first store, learning:</strong> Sell The Trend or Dropship.io. Cheap, simple, gets you moving.</li>
@@ -4407,9 +4421,11 @@ function ArticleBestProductResearchTools() {
           <img
             src="/images/start-product-research.png"
             alt="Start product research — operator dashboard with niche trends and potential products"
-            className="w-full rounded-lg border border-border"
+            className="mx-auto w-full rounded-xl border border-border shadow-sm"
+            style={{ maxWidth: "1100px" }}
             loading="lazy"
           />
+          <figcaption className="mt-2 text-center text-xs italic text-muted-foreground">Whichever tool you pick, the real edge comes from a consistent weekly research routine paired with disciplined ad testing.</figcaption>
         </figure>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           For most dropshippers in 2026, the right product research tool isn't a luxury — it's the difference between testing 5 dead products in a row and finding a real winner in your first batch. <Link to="/tools/winninghunter" className="text-brand underline-offset-2 hover:underline">WinningHunter</Link> earns the top spot because it removes the need to stitch together three separate tools. If your strategy is narrower (TikTok-only with PiPiADS, store-spy-only with Trendtrack, beginner-only with Sell The Trend), the alternatives in this list each have a clear lane.
