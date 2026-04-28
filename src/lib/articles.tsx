@@ -4067,8 +4067,8 @@ function ArticleBestProductResearchTools() {
         <h2 className="font-display text-xl font-bold text-foreground">1. WinningHunter — Best Overall</h2>
         <figure className="my-4">
           <img
-            src="/images/winninghunter-dashboard.png"
-            alt="WinningHunter dashboard showing trending products with ROAS, sales velocity, and ad metrics"
+            src="/images/winninghunter-dashboard-real.png"
+            alt="WinningHunter Magic AI Search dashboard showing trending product ads with adset counts, spend, revenue, and reach"
             className="w-full rounded-lg border border-border"
             loading="lazy"
           />
