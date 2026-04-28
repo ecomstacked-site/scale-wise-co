@@ -4203,13 +4203,16 @@ function ArticleBestProductResearchTools() {
       {/* TOOL 4 */}
       <section>
         <h2 className="font-display text-xl font-bold text-foreground">4. PiPiADS — Best for TikTok-First Operators</h2>
-        <figure className="my-4">
+        <figure className="my-6">
           <img
             src="/images/pipiads-dashboard.png"
-            alt="PiPiADS dashboard showing 100M+ ads, TikTok library, and 30+ filters"
-            className="w-full rounded-lg border border-border"
+            alt="PiPiADS Ad Library dashboard showing TikTok and Facebook dropshipping ads with impressions, run-time days, and like counts"
+            className="w-full rounded-xl border border-border"
             loading="lazy"
           />
+          <figcaption className="mt-2 text-center text-xs italic text-muted-foreground">
+            PiPiADS Ad Library — sorted by "Last seen" with impressions, run-time and engagement on every ad. The 2.1M-impression / 54-day creatives are the shortlist: ads still scaling after two weeks are almost always profitable, and that's where winning products hide.
+          </figcaption>
         </figure>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           <strong className="text-foreground">What it does:</strong> The deepest TikTok ad spy on the market — 100M+ ads, 30M+ TikTok library, spend estimates, creative variants, audience signals.
