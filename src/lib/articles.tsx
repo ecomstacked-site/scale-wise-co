@@ -4464,24 +4464,52 @@ function AffiliateCTA({ label }: { label: string }) {
   );
 }
 
+function WHAltFigure({ src, alt, caption }: { src: string; alt: string; caption: string }) {
+  return (
+    <figure className="my-6">
+      <img
+        src={src}
+        alt={alt}
+        loading="lazy"
+        className="mx-auto h-auto w-full rounded-xl border border-border shadow-sm"
+        style={{ maxWidth: "1100px" }}
+      />
+      <figcaption className="mt-2 text-center text-xs italic text-muted-foreground">
+        {caption}
+      </figcaption>
+    </figure>
+  );
+}
+
 function ArticleWinningHunterAlternatives() {
   return (
     <div className="space-y-8">
       <div className="rounded-lg border border-border bg-surface p-4 text-xs leading-relaxed text-muted-foreground">
-        <strong className="text-foreground">Affiliate disclosure:</strong> Some links on this page are affiliate links. If you sign up through them, we may earn a commission at no extra cost to you. Our rankings are based on hands-on testing — not commission rates.
+        <strong className="text-foreground">Editorial note:</strong> This comparison is based on real testing workflows across Shopify and TikTok dropshipping operators — not promotional claims, not influenced by sponsors. Some links are affiliate links; pricing is the same whether you use them or not.
       </div>
 
+      {/* INTRO */}
       <section>
         <h2 className="font-display text-xl font-bold text-foreground">The Real Problem With Picking a Product Research Tool</h2>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          You're not actually shopping for a product research tool. You're shopping for a way to stop burning $50–$200 a day testing products that were already losers a month ago. WinningHunter has become the default recommendation in 2026 because it merges ad spy, store spy, and creative analysis in one place — but it isn't the right tool for everyone.
+          Most operators looking for a WinningHunter alternative aren't really comparing software. They're trying to stop the bleeding — $50 to $200 a day burned testing products that were already dead a month ago. Another tool won't fix that. Better validation will.
         </p>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          If you're paying for TikTok-only research, doing creative-led validation, or running on a tight budget, an alternative might serve you better. We tested the six most-mentioned alternatives against WinningHunter on the only thing that matters: how fast they get you to a product worth testing with real ad spend.
+          You don't need more tools. You need one that shows you what's already converting on Meta and TikTok before you spend a cent on a launch. That's the lens we used to compare the six most-mentioned WinningHunter alternatives in 2026: how fast each one gets you from "this might work" to "this is already working for someone else."
         </p>
-        <AffiliateCTA label="Try WinningHunter" />
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          Use this article as a decision shortcut. If you already know your lane (TikTok-only, store-spy-only, creative-only), one of the alternatives below probably wins. If you don't, the answer is almost always WinningHunter — and the rest of the page explains exactly why.
+        </p>
+        <AffiliateCTA label="Find winning products before wasting ad budget" />
+
+        <WHAltFigure
+          src="/images/wh-alt-product-research-dashboard.png"
+          alt="Product research dashboard showing trending products with estimated sales, niches, ad counts and engagement metrics"
+          caption="A typical product research dashboard — trending products, estimated sales, ad counts and store-level data in one view. The job of every tool below is to get you here in minutes, not hours."
+        />
       </section>
 
+      {/* COMPARISON TABLE */}
       <section>
         <h2 className="font-display text-xl font-bold text-foreground">Quick Comparison Table</h2>
         <div className="my-4 overflow-x-auto">
@@ -4490,188 +4518,312 @@ function ArticleWinningHunterAlternatives() {
               <tr className="border-b border-border">
                 <th className="py-2 pr-3 text-left font-semibold text-foreground">Tool</th>
                 <th className="py-2 pr-3 text-left font-semibold text-foreground">Best For</th>
+                <th className="py-2 pr-3 text-left font-semibold text-foreground">Weakness</th>
                 <th className="py-2 pr-3 text-left font-semibold text-foreground">Pricing</th>
-                <th className="py-2 pr-3 text-left font-semibold text-foreground">Ease of Use</th>
                 <th className="py-2 text-left font-semibold text-foreground">Verdict</th>
               </tr>
             </thead>
             <tbody className="text-muted-foreground">
-              <tr className="border-b border-border/60"><td className="py-2 pr-3 font-medium text-foreground">WinningHunter</td><td className="py-2 pr-3">All-in-one product + ad research</td><td className="py-2 pr-3">From $39/mo</td><td className="py-2 pr-3">Easy</td><td className="py-2">Best overall</td></tr>
-              <tr className="border-b border-border/60"><td className="py-2 pr-3 font-medium text-foreground">Minea</td><td className="py-2 pr-3">Creative library depth</td><td className="py-2 pr-3">From $49/mo</td><td className="py-2 pr-3">Medium</td><td className="py-2">Best for creatives</td></tr>
-              <tr className="border-b border-border/60"><td className="py-2 pr-3 font-medium text-foreground">PiPiADS</td><td className="py-2 pr-3">TikTok-first dropshipping</td><td className="py-2 pr-3">From $77/mo</td><td className="py-2 pr-3">Medium</td><td className="py-2">Best for TikTok</td></tr>
-              <tr className="border-b border-border/60"><td className="py-2 pr-3 font-medium text-foreground">Dropship.io</td><td className="py-2 pr-3">Shopify store reverse-engineering</td><td className="py-2 pr-3">From $29/mo</td><td className="py-2 pr-3">Easy</td><td className="py-2">Best for store spy</td></tr>
-              <tr className="border-b border-border/60"><td className="py-2 pr-3 font-medium text-foreground">Sell The Trend</td><td className="py-2 pr-3">Beginners + AI suggestions</td><td className="py-2 pr-3">From $39/mo</td><td className="py-2 pr-3">Very easy</td><td className="py-2">Best for beginners</td></tr>
-              <tr><td className="py-2 pr-3 font-medium text-foreground">Adspy</td><td className="py-2 pr-3">Long-tail Meta research</td><td className="py-2 pr-3">From $149/mo</td><td className="py-2 pr-3">Hard</td><td className="py-2">Best for advanced</td></tr>
+              <tr className="border-b border-border/60"><td className="py-2 pr-3 font-medium text-foreground">WinningHunter</td><td className="py-2 pr-3">All-in-one validation (ads + stores + creatives)</td><td className="py-2 pr-3">Not the cheapest single-purpose option</td><td className="py-2 pr-3">From $39/mo</td><td className="py-2">Best overall</td></tr>
+              <tr className="border-b border-border/60"><td className="py-2 pr-3 font-medium text-foreground">Minea</td><td className="py-2 pr-3">Deepest creative archive (Meta + Pinterest)</td><td className="py-2 pr-3">Thin store-level data</td><td className="py-2 pr-3">From $49/mo</td><td className="py-2">Best for creative-led research</td></tr>
+              <tr className="border-b border-border/60"><td className="py-2 pr-3 font-medium text-foreground">PiPiADS</td><td className="py-2 pr-3">TikTok-first dropshipping</td><td className="py-2 pr-3">Weak Meta + no Shopify data</td><td className="py-2 pr-3">From $77/mo</td><td className="py-2">Best for TikTok operators</td></tr>
+              <tr className="border-b border-border/60"><td className="py-2 pr-3 font-medium text-foreground">Dropship.io</td><td className="py-2 pr-3">Shopify store reverse-engineering</td><td className="py-2 pr-3">No ad spy at all</td><td className="py-2 pr-3">From $29/mo</td><td className="py-2">Best for store-led research</td></tr>
+              <tr className="border-b border-border/60"><td className="py-2 pr-3 font-medium text-foreground">Sell The Trend</td><td className="py-2 pr-3">Beginners with no workflow yet</td><td className="py-2 pr-3">Shallow data once you scale</td><td className="py-2 pr-3">From $39/mo</td><td className="py-2">Best for first-store builders</td></tr>
+              <tr><td className="py-2 pr-3 font-medium text-foreground">Adspy</td><td className="py-2 pr-3">Long-tail Meta historical research</td><td className="py-2 pr-3">No TikTok, no Shopify, steep UI</td><td className="py-2 pr-3">From $149/mo</td><td className="py-2">Best for advanced media buyers</td></tr>
             </tbody>
           </table>
         </div>
       </section>
 
+      {/* WINNINGHUNTER */}
       <section>
         <h2 className="font-display text-xl font-bold text-foreground">1. WinningHunter — Best Overall</h2>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          WinningHunter sits at the top of this list because it solves the exact pain that drives operators to buy three separate tools: you can search ads that are already converting on Meta and TikTok, see the stores running them, and pull the actual creative angle they're using — all from one dashboard. That means less time stitching data together and more time launching tests.
+          WinningHunter combines three jobs most operators currently pay for separately: ad spy across Meta and TikTok, Shopify store tracking, and creative breakdowns. The point isn't the feature list — it's the speed. You can validate a product in the same session you discover it.
         </p>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          The standout outcome: instead of guessing whether a product has demand, you can confirm a product is already profitable for someone else before spending a dollar. For testing-led operators, this collapses the validation cycle from a week to an afternoon.
+
+        <h3 className="mt-5 font-display text-base font-bold text-foreground">Real use case: how a media buyer uses it</h3>
+        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+          Instead of testing 10 random products from TikTok scrolling, a typical workflow looks like this:
         </p>
+        <ul className="mt-2 space-y-1 text-sm text-muted-foreground">
+          <li>• Filter ads by run-time &gt; 14 days and high engagement → these are creatives that survived the testing phase</li>
+          <li>• Open the store running them → check estimated revenue and how many products they're scaling</li>
+          <li>• Pull the creative angle (hook, offer, format) → use it as the brief for your own ads</li>
+          <li>• Validate demand in 10–15 minutes instead of a 5-day product test</li>
+        </ul>
+
         <h3 className="mt-5 font-display text-base font-bold text-foreground">Pros</h3>
         <ul className="mt-2 space-y-1 text-sm text-muted-foreground">
-          <li>• Combined Meta + TikTok ad library with engagement filters</li>
-          <li>• Shopify store revenue estimates pulled in real time</li>
-          <li>• Creative breakdown shows the hook, offer, and angle being used</li>
-          <li>• Pricing starts at $39/mo — competitive vs. stacking 3 tools</li>
+          <li>• One tool replaces 2–3 subscriptions (ad spy + store spy + creative)</li>
+          <li>• Filters by run-time, spend signals and engagement — not just keywords</li>
+          <li>• Real-time Shopify revenue estimates on every store</li>
+          <li>• Pricing starts at $39/mo, cheaper than stacking specialists</li>
         </ul>
+
         <h3 className="mt-5 font-display text-base font-bold text-foreground">Cons</h3>
         <ul className="mt-2 space-y-1 text-sm text-muted-foreground">
-          <li>• TikTok library, while strong, is slightly thinner than PiPiADS</li>
-          <li>• No native creative generation — you'll still need a creative tool</li>
+          <li>• TikTok library is strong but slightly thinner than PiPiADS</li>
+          <li>• No native creative generation — pair it with an AI video tool</li>
         </ul>
-        <AffiliateCTA label="Find Winning Products Now" />
+
+        <h3 className="mt-5 font-display text-base font-bold text-foreground">When to use it</h3>
+        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+          You're running paid ads on Meta and/or TikTok, you want one source of truth, and you'd rather spend research time launching than stitching dashboards together.
+        </p>
+
+        <h3 className="mt-3 font-display text-base font-bold text-foreground">When not to use it</h3>
+        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+          You only run TikTok and need the most granular TikTok filtering possible (use PiPiADS), or you only need cheap Shopify store data (use Dropship.io).
+        </p>
+
+        <AffiliateCTA label="See what's already working before you test" />
+
+        <WHAltFigure
+          src="/images/winninghunter-dashboard-real.png"
+          alt="WinningHunter Magic AI Search dashboard showing trending product ads with adset counts, spend, revenue and reach"
+          caption="WinningHunter surfaces ads that are already scaling — adset counts, spend, revenue and reach all in one view. This is what removes the guesswork from product picking."
+        />
+
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          For the full breakdown, see our <Link to="/tools/winninghunter" className="text-brand underline-offset-2 hover:underline">full WinningHunter review</Link>.
+          Read our <Link to="/tools/winninghunter" className="text-brand underline-offset-2 hover:underline">full WinningHunter review</Link> for pricing tiers and a deeper feature walkthrough.
         </p>
       </section>
 
+      {/* MINEA */}
       <section>
         <h2 className="font-display text-xl font-bold text-foreground">2. Minea — Best for Creative Library Depth</h2>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          Minea's edge is the sheer volume of historical ad creatives across Meta, TikTok, and Pinterest. If your bottleneck isn't finding products but finding creative angles that already worked for similar offers, Minea is the deepest archive you can buy.
+          Minea's edge is the sheer volume of historical creatives across Meta, TikTok and Pinterest. If your bottleneck isn't finding products but finding angles that already worked, Minea has the deepest archive of any tool on this list.
         </p>
+
+        <h3 className="mt-5 font-display text-base font-bold text-foreground">Real use case</h3>
+        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+          Operator already has a winning product but their creatives are dying. They search Minea for the same product category, sort by engagement, and pull 20+ proven hooks and ad formats to brief their editor for the next batch.
+        </p>
+
         <h3 className="mt-5 font-display text-base font-bold text-foreground">Pros</h3>
         <ul className="mt-2 space-y-1 text-sm text-muted-foreground">
-          <li>• Largest Meta creative archive in this list</li>
-          <li>• Strong influencer + Pinterest research add-ons</li>
+          <li>• Largest Meta + Pinterest creative archive in this list</li>
+          <li>• Strong influencer research add-ons</li>
         </ul>
+
         <h3 className="mt-5 font-display text-base font-bold text-foreground">Cons</h3>
         <ul className="mt-2 space-y-1 text-sm text-muted-foreground">
-          <li>• Weaker on store-level data than WinningHunter or Dropship.io</li>
-          <li>• UI takes longer to learn — not beginner-friendly</li>
+          <li>• Weak store-level data — you'll still need Dropship.io or WinningHunter for revenue estimates</li>
+          <li>• UI takes a week to learn properly</li>
         </ul>
+
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          <strong className="text-foreground">When to use:</strong> creative refresh on a proven product. <strong className="text-foreground">When not to use:</strong> early-stage product discovery — it's slower than WinningHunter for that.
+        </p>
+
+        <WHAltFigure
+          src="/images/wh-alt-minea-creative-library.png"
+          alt="Minea-style ad creative library showing dozens of dropshipping ads with engagement, ROAS, CTR and spend"
+          caption="A creative library this dense is gold for refreshing ads on a product you already know works — but overkill if you're still hunting for the product itself."
+        />
       </section>
 
+      {/* PIPIADS */}
       <section>
         <h2 className="font-display text-xl font-bold text-foreground">3. PiPiADS — Best for TikTok-First Operators</h2>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          If 80%+ of your spend is on TikTok, PiPiADS gives you the deepest TikTok-specific filtering — by region, engagement, ad duration, and even ecommerce platform. It's purpose-built for finding TikTok winners early, before they become saturated.
+          If 80%+ of your spend is on TikTok, PiPiADS gives you the deepest TikTok-specific filtering: region, engagement rate, ad duration, ecommerce platform. It catches trending products earlier than most competitors.
         </p>
+
+        <h3 className="mt-5 font-display text-base font-bold text-foreground">Real use case</h3>
+        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+          TikTok dropshipper filters US-only ads with 5–15s duration, sorted by impressions in the last 7 days. Anything still scaling after 14 days goes on the test list — those are the ads that survived the first wave of competitors.
+        </p>
+
         <h3 className="mt-5 font-display text-base font-bold text-foreground">Pros</h3>
         <ul className="mt-2 space-y-1 text-sm text-muted-foreground">
-          <li>• Most granular TikTok ad filtering available</li>
+          <li>• Most granular TikTok ad filtering on the market</li>
           <li>• Spots trending products earlier than most competitors</li>
         </ul>
+
         <h3 className="mt-5 font-display text-base font-bold text-foreground">Cons</h3>
         <ul className="mt-2 space-y-1 text-sm text-muted-foreground">
-          <li>• Meta coverage is limited — not a full replacement for WinningHunter</li>
-          <li>• Higher entry price than most alternatives</li>
+          <li>• Meta coverage is limited — not a full WinningHunter replacement</li>
+          <li>• Higher entry price ($77/mo) than most alternatives</li>
         </ul>
+
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          <strong className="text-foreground">When to use:</strong> pure TikTok operators. <strong className="text-foreground">When not to use:</strong> you also run Meta — you'll end up paying for two tools.
+        </p>
+
+        <WHAltFigure
+          src="/images/wh-alt-pipiads-tiktok.png"
+          alt="TikTok ad spy dashboard showing dropshipping creatives with views, shares, comments and conversion rate"
+          caption="TikTok-specific filtering at the creative level — views, shares, conversion rate and engagement. Powerful, but you're paying for one platform only."
+        />
       </section>
 
+      {/* DROPSHIP.IO */}
       <section>
         <h2 className="font-display text-xl font-bold text-foreground">4. Dropship.io — Best for Shopify Reverse-Engineering</h2>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          Dropship.io specializes in Shopify store intelligence: revenue estimates, top-selling products per store, and sales trend graphs. It's the right tool when your workflow starts with "find a winning store, then pull their winning product."
+          Dropship.io specializes in Shopify intelligence: revenue estimates, top-selling products per store, and sales trend graphs. The right tool when your workflow starts with "find a winning store, then pull their winning product."
         </p>
+
+        <h3 className="mt-5 font-display text-base font-bold text-foreground">Real use case</h3>
+        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+          Operator finds a competitor doing $200k+/month, opens the store in Dropship.io, sees that 60% of revenue comes from one product. That product becomes the next test — backed by competitor revenue data, not a TikTok hunch.
+        </p>
+
         <h3 className="mt-5 font-display text-base font-bold text-foreground">Pros</h3>
         <ul className="mt-2 space-y-1 text-sm text-muted-foreground">
-          <li>• Cheapest entry point on this list ($29/mo)</li>
+          <li>• Cheapest entry point in this comparison ($29/mo)</li>
           <li>• Excellent for store-led research workflows</li>
         </ul>
+
         <h3 className="mt-5 font-display text-base font-bold text-foreground">Cons</h3>
         <ul className="mt-2 space-y-1 text-sm text-muted-foreground">
           <li>• No ad spy — you'll need a second tool for creative research</li>
           <li>• Revenue estimates can swing on low-traffic stores</li>
         </ul>
+
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          <strong className="text-foreground">When to use:</strong> store-spy as your primary discovery method. <strong className="text-foreground">When not to use:</strong> you also need to see the ads driving those sales.
+        </p>
+
+        <WHAltFigure
+          src="/images/wh-alt-dropshipio-store-analytics.png"
+          alt="Shopify store analytics dashboard showing daily sales, top selling products, conversion rate and revenue trends"
+          caption="Store-level analytics — daily sales, top products, conversion rate. Useful for reverse-engineering competitors, but only half the picture without ad data."
+        />
       </section>
 
+      {/* SELL THE TREND */}
       <section>
         <h2 className="font-display text-xl font-bold text-foreground">5. Sell The Trend — Best for Beginners</h2>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          Sell The Trend is the most hand-holding option on the list. Its NEXUS engine surfaces trending products with built-in profit calculators, supplier links, and one-click Shopify push. If you've never run ads before and want guardrails, this is the easiest on-ramp.
+          Sell The Trend is built for operators who don't have a workflow yet. It bundles AI product suggestions, supplier integration and a guided UI — so you can go from zero to a first test without learning ad-spy filters.
         </p>
+
         <h3 className="mt-5 font-display text-base font-bold text-foreground">Pros</h3>
         <ul className="mt-2 space-y-1 text-sm text-muted-foreground">
-          <li>• Simplest UI in the category</li>
-          <li>• Includes supplier sourcing + store push</li>
+          <li>• Easiest UI on this list</li>
+          <li>• Built-in supplier integration and product import</li>
         </ul>
+
         <h3 className="mt-5 font-display text-base font-bold text-foreground">Cons</h3>
         <ul className="mt-2 space-y-1 text-sm text-muted-foreground">
-          <li>• Suggested products are often already saturated</li>
-          <li>• Less useful once you're past the beginner stage</li>
+          <li>• AI suggestions are generic — you'll outgrow it within months</li>
+          <li>• Ad data is shallow vs WinningHunter or PiPiADS</li>
         </ul>
+
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          <strong className="text-foreground">When to use:</strong> first store, no paid-ads experience. <strong className="text-foreground">When not to use:</strong> you're already spending $1k+/month on ads — graduate to a real validation tool.
+        </p>
       </section>
 
+      {/* ADSPY */}
       <section>
         <h2 className="font-display text-xl font-bold text-foreground">6. Adspy — Best for Long-Tail Meta Research</h2>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          Adspy is the legacy heavyweight in Meta ad research. Its filters are deep, its archive is long, and advanced operators love it for niche research. The catch is the price and the learning curve.
+          Adspy is the legacy heavyweight in Meta ad research. Deep filters, long historical archive, loved by advanced media buyers for niche research. The catch: $149/mo entry price and a steep learning curve.
         </p>
+
         <h3 className="mt-5 font-display text-base font-bold text-foreground">Pros</h3>
         <ul className="mt-2 space-y-1 text-sm text-muted-foreground">
-          <li>• Massive Meta historical archive</li>
+          <li>• Massive Meta historical archive (years of data)</li>
           <li>• Best-in-class advanced filtering</li>
         </ul>
+
         <h3 className="mt-5 font-display text-base font-bold text-foreground">Cons</h3>
         <ul className="mt-2 space-y-1 text-sm text-muted-foreground">
-          <li>• $149/mo entry is hard to justify for solo operators</li>
-          <li>• No TikTok or Shopify store data</li>
+          <li>• $149/mo is hard to justify for solo operators</li>
+          <li>• No TikTok, no Shopify store data</li>
         </ul>
+
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          <strong className="text-foreground">When to use:</strong> agency or advanced media buyer doing niche Meta research. <strong className="text-foreground">When not to use:</strong> solo dropshipper testing TikTok products.
+        </p>
       </section>
 
+      {/* REAL SCENARIO */}
       <section>
-        <h2 className="font-display text-xl font-bold text-foreground">Who Should Use WinningHunter</h2>
+        <h2 className="font-display text-xl font-bold text-foreground">How Most People Waste Money on Product Research</h2>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          The pattern repeats every week in every dropshipping group:
+        </p>
         <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
-          <li>• Dropshippers running paid ads on both Meta and TikTok who want one source of truth</li>
-          <li>• Operators who burn budget testing unvalidated products and want proof of demand first</li>
-          <li>• Solo founders replacing 2–3 separate subscriptions with one</li>
-          <li>• Anyone who wants store revenue + ad creative + product trend in a single search</li>
+          <li>• <strong className="text-foreground">Guessing.</strong> Picking a product because it "looks viral" on TikTok — without checking if anyone is actually selling it profitably.</li>
+          <li>• <strong className="text-foreground">Copying saturated trends.</strong> Testing a product 3 weeks after its peak, when CPMs have tripled and CTRs have collapsed.</li>
+          <li>• <strong className="text-foreground">Testing blindly.</strong> Spending $50–$100/day on a product nobody else has scaled — hoping you're the first instead of confirming you're not the last.</li>
         </ul>
+
+        <WHAltFigure
+          src="/images/wh-alt-failed-ad-tests.png"
+          alt="Meta Ads dashboard showing failed dropshipping product tests with 0.22 ROAS, 0.85% conversion rate and declining revenue"
+          caption="What blind testing actually looks like: 0.22 ROAS, 0.85% conversion rate, $14k spent for $3k back. Almost always the result of skipping validation, not bad creatives."
+        />
+
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          The contrast: data-driven operators don't test products — they test products that are <em>already working for someone else</em>. The tools above exist to shortcut that validation step. Skip it and you're paying Meta for tuition.
+        </p>
+
+        <AffiliateCTA label="See proven winners before you launch" />
       </section>
 
+      {/* WHO SHOULD USE WHAT */}
       <section>
-        <h2 className="font-display text-xl font-bold text-foreground">Who Should Avoid WinningHunter</h2>
-        <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
-          <li>• TikTok-only operators who need the deepest possible TikTok filtering — pick PiPiADS instead</li>
-          <li>• Beginners who want a guided UI with supplier integration — pick Sell The Trend</li>
-          <li>• Brands doing creative-only research with no need for store data — Minea is more cost-efficient</li>
-          <li>• Agencies that need long-tail historical Meta data going back years — Adspy still wins there</li>
-        </ul>
+        <h2 className="font-display text-xl font-bold text-foreground">Who Should Use What</h2>
+
+        <h3 className="mt-4 font-display text-base font-bold text-foreground">TikTok operators</h3>
+        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+          If TikTok is your main channel and you also run Meta retargeting → WinningHunter. If TikTok is 100% of your spend → PiPiADS for the depth.
+        </p>
+
+        <h3 className="mt-4 font-display text-base font-bold text-foreground">Beginners</h3>
+        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+          No store yet, no ad experience → Sell The Trend to learn the workflow. The moment you spend $1k on ads, switch to WinningHunter — the data depth pays for itself.
+        </p>
+
+        <h3 className="mt-4 font-display text-base font-bold text-foreground">Advanced media buyers</h3>
+        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+          Running multiple stores or an agency → WinningHunter as the daily driver, plus Minea or Adspy for deep creative archives when scaling proven winners.
+        </p>
       </section>
 
+      {/* FAQ */}
       <section>
         <h2 className="font-display text-xl font-bold text-foreground">FAQ</h2>
         <div className="mt-4 space-y-4">
           <div>
             <h3 className="font-display text-sm font-bold text-foreground">Is WinningHunter worth it in 2026?</h3>
-            <p className="mt-1 text-sm leading-relaxed text-muted-foreground">For most paid-ads dropshippers, yes. The cost is lower than running Minea + Dropship.io separately, and the workflow is faster.</p>
+            <p className="mt-1 text-sm leading-relaxed text-muted-foreground">For most paid-ads dropshippers, yes. The cost is lower than running Minea + Dropship.io separately, and the validation workflow is faster.</p>
           </div>
           <div>
             <h3 className="font-display text-sm font-bold text-foreground">What's the cheapest WinningHunter alternative?</h3>
-            <p className="mt-1 text-sm leading-relaxed text-muted-foreground">Dropship.io starts at $29/mo, but it only covers Shopify store data — no ad spy. You'd need a second tool to match WinningHunter's coverage.</p>
+            <p className="mt-1 text-sm leading-relaxed text-muted-foreground">Dropship.io at $29/mo, but it only covers Shopify store data — no ad spy. Pair it with anything else and you'll spend more than WinningHunter alone.</p>
           </div>
           <div>
             <h3 className="font-display text-sm font-bold text-foreground">Can I use a free tool instead?</h3>
-            <p className="mt-1 text-sm leading-relaxed text-muted-foreground">Meta Ad Library is free, but you can't filter by engagement, store revenue, or product type the way paid tools allow. Free works if you have unlimited time; paid works if you have ad budget on the line.</p>
+            <p className="mt-1 text-sm leading-relaxed text-muted-foreground">Meta Ad Library is free, but you can't filter by engagement, store revenue, or run-time. Free works if you have unlimited time. Paid works if you have ad budget on the line.</p>
           </div>
           <div>
-            <h3 className="font-display text-sm font-bold text-foreground">Does WinningHunter offer a free trial?</h3>
+            <h3 className="font-display text-sm font-bold text-foreground">Does WinningHunter offer a trial?</h3>
             <p className="mt-1 text-sm leading-relaxed text-muted-foreground">It typically offers a low-cost trial period — check the pricing page for the current offer.</p>
           </div>
         </div>
       </section>
 
+      {/* FINAL VERDICT */}
       <section>
         <h2 className="font-display text-xl font-bold text-foreground">Final Verdict</h2>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          Every tool on this list can find you a winning product. The difference is how much time and ad spend you waste getting there. WinningHunter wins for most operators because it merges the three jobs (ad spy, store spy, creative analysis) into one — and the price reflects a single subscription, not three.
+          Every tool on this list can find you a winner. The difference is how much ad spend you burn getting there. WinningHunter wins for most operators because it merges the three jobs — ad spy, store spy, creative analysis — into a single subscription. The alternatives win when your strategy is narrow enough to justify a specialist.
         </p>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          If you've already picked a lane (TikTok-only, creative-only, store-only), the alternatives in this list each have a clear use case. Otherwise, start with WinningHunter and add specialized tools later only if a specific gap shows up in your workflow.
+          The honest summary: if you're not sure which lane you're in, start with WinningHunter and add specialists later only when a specific gap shows up. If you already know your lane, the section above tells you which one to pick.
         </p>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          Want the deeper breakdown? Read our <Link to="/tools/winninghunter" className="text-brand underline-offset-2 hover:underline">full WinningHunter review</Link> or <Link to="/best-product-research-tools" className="text-brand underline-offset-2 hover:underline">compare the best product research tools</Link>.
+          Want the deeper breakdown? Read our <Link to="/tools/winninghunter" className="text-brand underline-offset-2 hover:underline">full WinningHunter review</Link> or compare the field in our guide to the <Link to="/blog/best-product-research-tools" className="text-brand underline-offset-2 hover:underline">best product research tools for 2026</Link>.
         </p>
-        <AffiliateCTA label="Start Winning Today" />
+        <AffiliateCTA label="Start with one tool that validates before you spend" />
       </section>
     </div>
   );
