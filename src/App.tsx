@@ -12,6 +12,7 @@ import ProductResearchPage from "./routes/tools.product-research";
 import WeTrackedReview from "./routes/tools.wetracked-review";
 import WeTrackedVsTripleWhale from "./routes/wetracked-vs-triple-whale";
 import WinningHunterPage from "./routes/tools.winninghunter";
+import WinningHunterReviewPage from "./routes/tools.winninghunter-review";
 import HoloAiPage from "./routes/tools.holo-ai";
 import BestProductResearchToolsPage from "./routes/best-product-research-tools";
 import BestProductResearchToolsForShopifyPage from "./routes/best-product-research-tools-for-shopify";
@@ -55,6 +56,7 @@ export default function App() {
       <Route path="/tools/product-research" element={<ProductResearchPage />} />
       <Route path="/tools/wetracked-review" element={<WeTrackedReview />} />
       <Route path="/tools/winninghunter" element={<WinningHunterPage />} />
+      <Route path="/tools/winninghunter-review" element={<WinningHunterReviewPage />} />
       <Route path="/tools/holo-ai" element={<HoloAiPage />} />
       {/* Removed monetization for these tools — redirect old URLs to the directory */}
       <Route path="/tools/trendtrack-review" element={<Navigate to="/tools" replace />} />
