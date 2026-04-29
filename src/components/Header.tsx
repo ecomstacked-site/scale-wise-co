@@ -21,11 +21,13 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-card/80 backdrop-blur-lg">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
-        <Link to="/" className="flex items-center gap-2">
-          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary">
-            <span className="font-display text-sm font-bold text-primary-foreground">E</span>
-          </div>
-          <span className="font-display text-lg font-bold text-foreground">EcomStacked</span>
+        <Link to="/" className="flex items-center" aria-label="EcomStacked home">
+          <img
+            src="/logo-full.png"
+            alt="EcomStacked"
+            className="h-7 w-auto md:h-9"
+            decoding="async"
+          />
         </Link>
 
         <nav className="hidden items-center gap-1 md:flex">
