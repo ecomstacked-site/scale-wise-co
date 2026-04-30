@@ -212,7 +212,7 @@ export default function ReaddyAiReviewPage() {
               <ImageBlock
                 src="/images/ai-builder-workflow.jpg"
                 alt="Readdy AI workflow: idea, generate, customize, publish"
-                caption="Simple workflow from idea to live page."
+                caption="Four-step workflow I followed: prompt → generated layout → inline edits → publish to a custom domain."
               />
             </section>
 
