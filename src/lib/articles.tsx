@@ -681,6 +681,25 @@ export const articlesMeta: ArticleMeta[] = [
       "Final Thoughts",
     ],
   },
+  {
+    title: "Readdy vs Shopify (2026) — Which One Should You Use?",
+    excerpt: "An honest, side-by-side breakdown of Readdy and Shopify — speed, customization, pricing, and which one actually fits your stage.",
+    category: "Comparisons",
+    date: "April 30, 2026",
+    readTime: "8 min read",
+    slug: "readdy-vs-shopify",
+    image: "/images/readdy-vs-shopify-table.jpg",
+    toc: [
+      "Intro",
+      "Comparison Table",
+      "When Readdy Wins",
+      "When Shopify Wins",
+      "Real Use Case Scenarios",
+      "Pricing Breakdown",
+      "Final Verdict",
+      "FAQ",
+    ],
+  },
 ];
 
 export function getArticleContent(slug: string): React.ReactNode | null {
@@ -750,6 +769,8 @@ export function getArticleContent(slug: string): React.ReactNode | null {
       return <ArticleBuildDropshippingStoreWithAI />;
     case "best-ai-website-builders-for-ecommerce":
       return <ArticleBestAIWebsiteBuildersForEcommerce />;
+    case "readdy-vs-shopify":
+      return <ArticleReaddyVsShopify />;
     default:
       return null;
   }
