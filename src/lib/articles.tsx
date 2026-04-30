@@ -724,6 +724,8 @@ export function getArticleContent(slug: string): React.ReactNode | null {
       return <ArticleBestAIToolsForEcommerce />;
     case "server-side-tracking-guide":
       return <ArticleServerSideTrackingGuide />;
+    case "build-dropshipping-store-with-ai":
+      return <ArticleBuildDropshippingStoreWithAI />;
     default:
       return null;
   }
