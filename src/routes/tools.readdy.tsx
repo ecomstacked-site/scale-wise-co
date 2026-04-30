@@ -33,7 +33,7 @@ function ImageBlock({ src, alt, caption }: { src: string; alt: string; caption: 
   );
 }
 
-function SoftCTA({ label = "See how it works" }: { label?: string }) {
+function SoftCTA({ label = "Build your first page in minutes" }: { label?: string }) {
   return (
     <div className="my-6 flex justify-center">
       <a href={READDY_URL} target="_blank" rel="sponsored noopener noreferrer nofollow">
