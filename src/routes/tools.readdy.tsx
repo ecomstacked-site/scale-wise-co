@@ -348,18 +348,28 @@ export default function ReaddyAiReviewPage() {
             {/* 10. FINAL VERDICT */}
             <section className="rounded-xl border border-border bg-surface p-6">
               <h2 className="font-display text-xl font-bold text-foreground">Final Verdict</h2>
-              <p className="mt-3 text-sm leading-relaxed text-foreground">
-                Readdy AI isn't magic. It won't replace a designer or a real conversion strategist. What it does is collapse the time between "I have an idea" and "I have a live page" from days to under an hour.
+              <p className="mt-3 text-sm font-semibold leading-relaxed text-foreground">
+                This is not a full website builder — it's a speed tool for testing ideas.
               </p>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                If you're testing products, angles, or offers, that speed is the entire point. The cost of a paid plan is less than the cost of one wasted day.
+                Readdy AI isn't magic. It won't replace a designer, a real conversion strategist, or a full Shopify backend. What it does is collapse the time between "I have an idea" and "I have a live page" from days to under an hour — and in product testing, that gap is the whole game.
+              </p>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                If you're testing products, angles, or offers every week, the math is simple. One paid plan costs less than one wasted day of ad spend on a page that took too long to ship. Less friction, more tests, faster verdicts.
+              </p>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                Use it for what it's good at — fast, focused landing pages — and pair it with{" "}
+                <Link to="/blog/build-dropshipping-store-with-ai" className="text-brand underline-offset-2 hover:underline">
+                  a proper Shopify build
+                </Link>
+                {" "}once a test wins.
               </p>
             </section>
 
             <ImageBlock
               src="/images/sample-landing-page.jpg"
               alt="Sample ecommerce landing page created using Readdy AI"
-              caption="Landing page created using AI."
+              caption="Finished single-product landing page — built, edited, and pointed at a custom domain in one sitting."
             />
 
             {/* FAQ */}
@@ -387,14 +397,14 @@ export default function ReaddyAiReviewPage() {
 
             {/* FINAL CTA */}
             <section className="rounded-xl border border-brand/20 bg-brand/5 p-6 text-center">
-              <h3 className="font-display text-lg font-bold text-foreground">See if Readdy AI fits your workflow</h3>
+              <h3 className="font-display text-lg font-bold text-foreground">Stop losing test windows to slow page builds</h3>
               <p className="mt-2 text-sm text-muted-foreground">
-                Visit the official site to check current pricing and plans.
+                Describe your next product, get a live landing page, and start collecting data the same day.
               </p>
               <div className="mt-4 flex justify-center">
                 <a href={READDY_URL} target="_blank" rel="sponsored noopener noreferrer nofollow">
                   <Button variant="brand" className="gap-1.5">
-                    View pricing <ArrowUpRight className="h-4 w-4" />
+                    Launch a test page today <ArrowUpRight className="h-4 w-4" />
                   </Button>
                 </a>
               </div>
