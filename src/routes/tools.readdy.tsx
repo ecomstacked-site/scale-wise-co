@@ -33,7 +33,7 @@ function ImageBlock({ src, alt, caption }: { src: string; alt: string; caption: 
   );
 }
 
-function SoftCTA({ label = "See how it works" }: { label?: string }) {
+function SoftCTA({ label = "Build your first page in minutes" }: { label?: string }) {
   return (
     <div className="my-6 flex justify-center">
       <a href={READDY_URL} target="_blank" rel="sponsored noopener noreferrer nofollow">
@@ -87,7 +87,7 @@ export default function ReaddyAiReviewPage() {
           <div className="mt-6 flex flex-wrap items-center gap-3">
             <a href={READDY_URL} target="_blank" rel="sponsored noopener noreferrer nofollow">
               <Button variant="brand-outline" className="gap-1.5">
-                See how it works <ArrowUpRight className="h-4 w-4" />
+                Build your first page in minutes <ArrowUpRight className="h-4 w-4" />
               </Button>
             </a>
             <Link to="/best-ai-website-builders-for-ecommerce" className="text-xs text-muted-foreground underline-offset-2 hover:underline">
@@ -135,12 +135,31 @@ export default function ReaddyAiReviewPage() {
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
                 <strong className="text-foreground">Final output:</strong> a clean, mobile-friendly landing page with custom domain support and analytics built in. Not a Shopify replacement — but for testing a single product or angle, it's the fastest path I've used.
               </p>
+              <p className="mt-3 text-sm italic leading-relaxed text-foreground">
+                This alone saves hours compared to setting up a Shopify theme from scratch.
+              </p>
 
               <ImageBlock
                 src="/images/readdy-builder-interface.jpg"
                 alt="Readdy AI builder interface showing prompt-to-page generation"
-                caption="Builder interface in action."
+                caption="Real builder interface used to generate a live landing page in under 2 minutes."
               />
+
+              <div className="my-6 rounded-xl border border-brand/30 bg-brand/5 p-5 text-center">
+                <p className="text-sm font-semibold text-foreground">
+                  If speed is the bottleneck on your next product test, this is the shortcut.
+                </p>
+                <p className="mt-1 text-xs text-muted-foreground">
+                  Same workflow I used above — describe the page, ship it the same day.
+                </p>
+                <div className="mt-4 flex justify-center">
+                  <a href={READDY_URL} target="_blank" rel="sponsored noopener noreferrer nofollow">
+                    <Button variant="brand" className="gap-1.5">
+                      Launch a test page today <ArrowUpRight className="h-4 w-4" />
+                    </Button>
+                  </a>
+                </div>
+              </div>
             </section>
 
             {/* 3. VISUAL RESULT UPGRADE */}
@@ -156,10 +175,12 @@ export default function ReaddyAiReviewPage() {
               <ImageBlock
                 src="/images/before-after-comparison.jpg"
                 alt="Before and after: messy landing page versus structured Readdy AI page"
-                caption="From basic layout to a structured, conversion-ready page."
+                caption="Same product, two starting points — generic template on the left, Readdy-generated structure on the right."
               />
 
-              <SoftCTA label="See a live example" />
+              <p className="mt-3 text-sm italic leading-relaxed text-foreground">
+                You still need to tweak the copy — but the structure is already done for you.
+              </p>
             </section>
 
             {/* 4. KEY FEATURES */}
@@ -191,7 +212,7 @@ export default function ReaddyAiReviewPage() {
               <ImageBlock
                 src="/images/ai-builder-workflow.jpg"
                 alt="Readdy AI workflow: idea, generate, customize, publish"
-                caption="Simple workflow from idea to live page."
+                caption="Four-step workflow I followed: prompt → generated layout → inline edits → publish to a custom domain."
               />
             </section>
 
@@ -238,7 +259,38 @@ export default function ReaddyAiReviewPage() {
                 </Card>
               </div>
 
-              <SoftCTA label="View pricing" />
+              <SoftCTA label="Try it on your next product test" />
+            </section>
+
+            {/* NEW: WHEN IT MAKES YOU MONEY */}
+            <section>
+              <h2 className="font-display text-xl font-bold text-foreground">When Readdy AI Actually Makes You Money</h2>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                Speed isn't a vanity metric in ecommerce — it's the spread between a trend you catch and a trend you miss. Most tests fail not because the product is wrong, but because the page took three days to ship and the ad angle went stale. Readdy compresses that loop.
+              </p>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                <strong className="text-foreground">Product testing.</strong> Spin up a dedicated landing page per angle — pain-led, benefit-led, demo-led — and send paid traffic to each. You get clean data on what actually converts before you commit to a Shopify build.
+              </p>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                <strong className="text-foreground">Validation before Shopify.</strong> Most founders waste a week building a full store for a product that never sells. Use Readdy to validate first. If the page converts, then build the store. If it doesn't, you're out one afternoon — not one week.
+              </p>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                <strong className="text-foreground">Same-day launch on trends.</strong> When something pops on TikTok at 9am, you can have a live page by lunch. That window is where the margins are. This is exactly what I'd use for testing a new product.
+              </p>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                <strong className="text-foreground">Why speed = profit.</strong> Every extra day a test takes is ad spend you can't allocate, data you don't have, and a competitor catching up. Readdy doesn't print money — it shortens the loop between idea and verdict, and that's where the real edge lives.
+              </p>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                For the full validation flow, see our guide to{" "}
+                <Link to="/blog/how-to-find-winning-products-for-dropshipping" className="text-brand underline-offset-2 hover:underline">
+                  finding winning products for dropshipping
+                </Link>
+                {" "}and{" "}
+                <Link to="/blog/build-dropshipping-store-with-ai" className="text-brand underline-offset-2 hover:underline">
+                  building a dropshipping store with AI
+                </Link>
+                .
+              </p>
             </section>
 
             {/* 6. PRICING */}
@@ -296,18 +348,28 @@ export default function ReaddyAiReviewPage() {
             {/* 10. FINAL VERDICT */}
             <section className="rounded-xl border border-border bg-surface p-6">
               <h2 className="font-display text-xl font-bold text-foreground">Final Verdict</h2>
-              <p className="mt-3 text-sm leading-relaxed text-foreground">
-                Readdy AI isn't magic. It won't replace a designer or a real conversion strategist. What it does is collapse the time between "I have an idea" and "I have a live page" from days to under an hour.
+              <p className="mt-3 text-sm font-semibold leading-relaxed text-foreground">
+                This is not a full website builder — it's a speed tool for testing ideas.
               </p>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                If you're testing products, angles, or offers, that speed is the entire point. The cost of a paid plan is less than the cost of one wasted day.
+                Readdy AI isn't magic. It won't replace a designer, a real conversion strategist, or a full Shopify backend. What it does is collapse the time between "I have an idea" and "I have a live page" from days to under an hour — and in product testing, that gap is the whole game.
+              </p>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                If you're testing products, angles, or offers every week, the math is simple. One paid plan costs less than one wasted day of ad spend on a page that took too long to ship. Less friction, more tests, faster verdicts.
+              </p>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                Use it for what it's good at — fast, focused landing pages — and pair it with{" "}
+                <Link to="/blog/build-dropshipping-store-with-ai" className="text-brand underline-offset-2 hover:underline">
+                  a proper Shopify build
+                </Link>
+                {" "}once a test wins.
               </p>
             </section>
 
             <ImageBlock
               src="/images/sample-landing-page.jpg"
               alt="Sample ecommerce landing page created using Readdy AI"
-              caption="Landing page created using AI."
+              caption="Finished single-product landing page — built, edited, and pointed at a custom domain in one sitting."
             />
 
             {/* FAQ */}
@@ -335,14 +397,14 @@ export default function ReaddyAiReviewPage() {
 
             {/* FINAL CTA */}
             <section className="rounded-xl border border-brand/20 bg-brand/5 p-6 text-center">
-              <h3 className="font-display text-lg font-bold text-foreground">See if Readdy AI fits your workflow</h3>
+              <h3 className="font-display text-lg font-bold text-foreground">Stop losing test windows to slow page builds</h3>
               <p className="mt-2 text-sm text-muted-foreground">
-                Visit the official site to check current pricing and plans.
+                Describe your next product, get a live landing page, and start collecting data the same day.
               </p>
               <div className="mt-4 flex justify-center">
                 <a href={READDY_URL} target="_blank" rel="sponsored noopener noreferrer nofollow">
                   <Button variant="brand" className="gap-1.5">
-                    View pricing <ArrowUpRight className="h-4 w-4" />
+                    Launch a test page today <ArrowUpRight className="h-4 w-4" />
                   </Button>
                 </a>
               </div>
