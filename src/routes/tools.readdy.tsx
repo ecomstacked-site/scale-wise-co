@@ -175,10 +175,12 @@ export default function ReaddyAiReviewPage() {
               <ImageBlock
                 src="/images/before-after-comparison.jpg"
                 alt="Before and after: messy landing page versus structured Readdy AI page"
-                caption="From basic layout to a structured, conversion-ready page."
+                caption="Same product, two starting points — generic template on the left, Readdy-generated structure on the right."
               />
 
-              <SoftCTA label="See a live example" />
+              <p className="mt-3 text-sm italic leading-relaxed text-foreground">
+                You still need to tweak the copy — but the structure is already done for you.
+              </p>
             </section>
 
             {/* 4. KEY FEATURES */}
