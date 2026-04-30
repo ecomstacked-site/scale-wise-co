@@ -135,12 +135,31 @@ export default function ReaddyAiReviewPage() {
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
                 <strong className="text-foreground">Final output:</strong> a clean, mobile-friendly landing page with custom domain support and analytics built in. Not a Shopify replacement — but for testing a single product or angle, it's the fastest path I've used.
               </p>
+              <p className="mt-3 text-sm italic leading-relaxed text-foreground">
+                This alone saves hours compared to setting up a Shopify theme from scratch.
+              </p>
 
               <ImageBlock
                 src="/images/readdy-builder-interface.jpg"
                 alt="Readdy AI builder interface showing prompt-to-page generation"
-                caption="Builder interface in action."
+                caption="Real builder interface used to generate a live landing page in under 2 minutes."
               />
+
+              <div className="my-6 rounded-xl border border-brand/30 bg-brand/5 p-5 text-center">
+                <p className="text-sm font-semibold text-foreground">
+                  If speed is the bottleneck on your next product test, this is the shortcut.
+                </p>
+                <p className="mt-1 text-xs text-muted-foreground">
+                  Same workflow I used above — describe the page, ship it the same day.
+                </p>
+                <div className="mt-4 flex justify-center">
+                  <a href={READDY_URL} target="_blank" rel="sponsored noopener noreferrer nofollow">
+                    <Button variant="brand" className="gap-1.5">
+                      Launch a test page today <ArrowUpRight className="h-4 w-4" />
+                    </Button>
+                  </a>
+                </div>
+              </div>
             </section>
 
             {/* 3. VISUAL RESULT UPGRADE */}
