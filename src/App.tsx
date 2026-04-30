@@ -21,6 +21,7 @@ import BestAIVideoToolsRoute from "./routes/best-ai-video-tools";
 import BestAIWebsiteBuildersForEcommerceRoute from "./routes/best-ai-website-builders-for-ecommerce";
 import HoloAiReviewRoute from "./routes/holo-ai-review";
 import HoloAiVsPictoryRoute from "./routes/holo-ai-vs-pictory";
+import ReaddyAiReviewPage from "./routes/tools.readdy";
 
 function NotFound() {
   return (
@@ -59,6 +60,9 @@ export default function App() {
       <Route path="/tools/winninghunter" element={<WinningHunterPage />} />
       <Route path="/tools/winninghunter-review" element={<WinningHunterReviewPage />} />
       <Route path="/tools/holo-ai" element={<HoloAiPage />} />
+      <Route path="/tools/readdy" element={<ReaddyAiReviewPage />} />
+      <Route path="/readdy-ai-review" element={<ReaddyAiReviewPage />} />
+      <Route path="/blog/readdy-ai-review" element={<ReaddyAiReviewPage />} />
       {/* Removed monetization for these tools — redirect old URLs to the directory */}
       <Route path="/tools/trendtrack-review" element={<Navigate to="/tools" replace />} />
       <Route path="/tools/manychat" element={<Navigate to="/tools" replace />} />
