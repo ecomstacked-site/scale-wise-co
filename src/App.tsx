@@ -18,6 +18,7 @@ import BestProductResearchToolsPage from "./routes/best-product-research-tools";
 import BestProductResearchToolsForShopifyPage from "./routes/best-product-research-tools-for-shopify";
 import BestTikTokAdSpyToolsPage from "./routes/best-tiktok-ad-spy-tools";
 import BestAIVideoToolsRoute from "./routes/best-ai-video-tools";
+import BestAIWebsiteBuildersForEcommerceRoute from "./routes/best-ai-website-builders-for-ecommerce";
 import HoloAiReviewRoute from "./routes/holo-ai-review";
 import HoloAiVsPictoryRoute from "./routes/holo-ai-vs-pictory";
 
@@ -70,6 +71,7 @@ export default function App() {
       <Route path="/best-product-research-tools-for-shopify" element={<BestProductResearchToolsForShopifyPage />} />
       <Route path="/best-tiktok-ad-spy-tools" element={<BestTikTokAdSpyToolsPage />} />
       <Route path="/best-ai-video-tools" element={<BestAIVideoToolsRoute />} />
+      <Route path="/best-ai-website-builders-for-ecommerce" element={<BestAIWebsiteBuildersForEcommerceRoute />} />
       <Route path="/holo-ai-review" element={<HoloAiReviewRoute />} />
       <Route path="/holo-ai-vs-pictory" element={<HoloAiVsPictoryRoute />} />
       <Route path="/wetracked-vs-triple-whale" element={<WeTrackedVsTripleWhale />} />
