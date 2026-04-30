@@ -259,7 +259,38 @@ export default function ReaddyAiReviewPage() {
                 </Card>
               </div>
 
-              <SoftCTA label="View pricing" />
+              <SoftCTA label="Try it on your next product test" />
+            </section>
+
+            {/* NEW: WHEN IT MAKES YOU MONEY */}
+            <section>
+              <h2 className="font-display text-xl font-bold text-foreground">When Readdy AI Actually Makes You Money</h2>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                Speed isn't a vanity metric in ecommerce — it's the spread between a trend you catch and a trend you miss. Most tests fail not because the product is wrong, but because the page took three days to ship and the ad angle went stale. Readdy compresses that loop.
+              </p>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                <strong className="text-foreground">Product testing.</strong> Spin up a dedicated landing page per angle — pain-led, benefit-led, demo-led — and send paid traffic to each. You get clean data on what actually converts before you commit to a Shopify build.
+              </p>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                <strong className="text-foreground">Validation before Shopify.</strong> Most founders waste a week building a full store for a product that never sells. Use Readdy to validate first. If the page converts, then build the store. If it doesn't, you're out one afternoon — not one week.
+              </p>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                <strong className="text-foreground">Same-day launch on trends.</strong> When something pops on TikTok at 9am, you can have a live page by lunch. That window is where the margins are. This is exactly what I'd use for testing a new product.
+              </p>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                <strong className="text-foreground">Why speed = profit.</strong> Every extra day a test takes is ad spend you can't allocate, data you don't have, and a competitor catching up. Readdy doesn't print money — it shortens the loop between idea and verdict, and that's where the real edge lives.
+              </p>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                For the full validation flow, see our guide to{" "}
+                <Link to="/blog/how-to-find-winning-products-for-dropshipping" className="text-brand underline-offset-2 hover:underline">
+                  finding winning products for dropshipping
+                </Link>
+                {" "}and{" "}
+                <Link to="/blog/build-dropshipping-store-with-ai" className="text-brand underline-offset-2 hover:underline">
+                  building a dropshipping store with AI
+                </Link>
+                .
+              </p>
             </section>
 
             {/* 6. PRICING */}
