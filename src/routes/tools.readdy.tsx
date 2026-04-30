@@ -87,7 +87,7 @@ export default function ReaddyAiReviewPage() {
           <div className="mt-6 flex flex-wrap items-center gap-3">
             <a href={READDY_URL} target="_blank" rel="sponsored noopener noreferrer nofollow">
               <Button variant="brand-outline" className="gap-1.5">
-                See how it works <ArrowUpRight className="h-4 w-4" />
+                Build your first page in minutes <ArrowUpRight className="h-4 w-4" />
               </Button>
             </a>
             <Link to="/best-ai-website-builders-for-ecommerce" className="text-xs text-muted-foreground underline-offset-2 hover:underline">
