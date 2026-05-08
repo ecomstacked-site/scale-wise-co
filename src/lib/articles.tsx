@@ -790,6 +790,8 @@ export function getArticleContent(slug: string): React.ReactNode | null {
       return <ArticleBestAIWebsiteBuildersForEcommerce />;
     case "readdy-vs-shopify":
       return <ArticleReaddyVsShopify />;
+    case "how-to-spy-on-shopify-stores":
+      return <ArticleHowToSpyOnShopifyStores />;
     default:
       return null;
   }
