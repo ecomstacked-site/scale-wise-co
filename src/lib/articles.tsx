@@ -39,6 +39,23 @@ function ProTip({ children }: { children: React.ReactNode }) {
   );
 }
 
+function ImagePlaceholder({ note, caption }: { note: string; caption?: string }) {
+  return (
+    <figure className="my-8 overflow-hidden rounded-2xl border border-dashed border-border bg-surface">
+      <div className="flex aspect-[16/9] w-full items-center justify-center px-6 text-center">
+        <p className="text-xs uppercase tracking-wide text-muted-foreground">
+          [Image placeholder — {note}]
+        </p>
+      </div>
+      {caption && (
+        <figcaption className="border-t border-border bg-card px-4 py-3 text-center text-xs italic leading-relaxed text-muted-foreground">
+          {caption}
+        </figcaption>
+      )}
+    </figure>
+  );
+}
+
 function ArticleImage({ src, alt, priority = false, caption }: { src: string; alt: string; priority?: boolean; caption?: string }) {
   return (
     <figure className="my-8 overflow-hidden rounded-2xl border border-border bg-card shadow-lg shadow-brand/5">
@@ -726,7 +743,7 @@ export const articlesMeta: ArticleMeta[] = [
     date: "May 8, 2026",
     readTime: "16 min read",
     slug: "how-to-analyze-tiktok-ads",
-    image: "/images/tiktok-ad-analysis-dashboard.jpg",
+    image: "/images/tiktok-ad-spy-hero.png",
     toc: [
       "Why TikTok Ad Analysis Matters for Ecommerce",
       "What Makes a TikTok Ad Convert",
@@ -9083,9 +9100,8 @@ function ArticleHowToAnalyzeTikTokAds() {
           <li><strong className="text-foreground">Trend discovery:</strong> early-stage scaling ads often signal trends 30–60 days before they hit broader feeds.</li>
           <li><strong className="text-foreground">Offer positioning:</strong> bundles, free shipping thresholds, and discount mechanics show you what the market actually responds to.</li>
         </ul>
-        <ArticleImage
-          src="/images/tiktok-ad-analysis-dashboard.jpg"
-          alt="TikTok ad analysis dashboard showing CTR, ROAS, retention curves and top-performing ecommerce ads"
+        <ImagePlaceholder
+          note="Real TikTok ad analytics dashboard screenshot needed (CTR, ROAS, retention curves)"
           caption="A serious analysis dashboard pairs ad creatives with retention curves, engagement, and unit-level performance — not just view counts."
         />
       </section>
@@ -9106,9 +9122,8 @@ function ArticleHowToAnalyzeTikTokAds() {
           <li><strong className="text-foreground">Retention patterns:</strong> if a creative has a stable retention curve past the 50% mark, it's almost always profitable at scale.</li>
         </ul>
 
-        <ArticleImage
-          src="/images/tiktok-ad-hook-breakdown.jpg"
-          alt="TikTok ad breakdown interface showing video timeline, hook annotations, retention curve and CTA positioning analysis"
+        <ImagePlaceholder
+          note="Annotated TikTok ad breakdown screenshot needed (hook, pacing, demo, CTA blocks)"
           caption="Breaking an ad into hook, pacing, demo, social proof, and CTA blocks turns intuition into a repeatable framework."
         />
 
@@ -9130,9 +9145,8 @@ function ArticleHowToAnalyzeTikTokAds() {
           <li><strong className="text-foreground">Landing page alignment:</strong> the strongest funnels keep the same hook from ad → landing page hero → first product section.</li>
           <li><strong className="text-foreground">Creative iteration patterns:</strong> if a brand has 8 variations of one hook live, that hook is the winner. Skip the variations and study the base concept.</li>
         </ul>
-        <ArticleImage
-          src="/images/competitor-ad-research-workflow.jpg"
-          alt="Competitor ad research dashboard with ad spend estimates, longevity timeline, comment quality and saturation heatmap"
+        <ImagePlaceholder
+          note="Real competitor ad research dashboard screenshot needed (longevity, comments, saturation)"
           caption="Triangulating ad longevity, comment quality, and saturation gives you a far cleaner read than view count alone."
         />
         <p className="mt-4 text-base leading-relaxed text-muted-foreground">
@@ -9185,9 +9199,8 @@ function ArticleHowToAnalyzeTikTokAds() {
           </table>
         </div>
 
-        <ArticleImage
-          src="/images/tiktok-ad-spy-tools-comparison.jpg"
-          alt="Side-by-side comparison of TikTok ad spy tools including WinningHunter, Minea, PiPiADS and AdSpy"
+        <ImagePlaceholder
+          note="Real side-by-side TikTok ad spy tool screenshots needed (WinningHunter, Minea, PPSpy, BrandSearch)"
           caption="A workflow-first comparison: pick the tool that fits your bottleneck, not the one with the longest feature list."
         />
 
@@ -9223,9 +9236,8 @@ function ArticleHowToAnalyzeTikTokAds() {
           <li><strong className="text-foreground">7. Define your own angle.</strong> If you can't articulate why a buyer would pick you over the existing winners, you're entering at the worst point of the curve.</li>
         </ol>
 
-        <ArticleImage
-          src="/images/tiktok-research-framework.jpg"
-          alt="Diagram of an ecommerce TikTok ad research and optimization workflow covering discovery, competitor analysis, validation, creative testing and scaling"
+        <ImagePlaceholder
+          note="Real workflow diagram screenshot needed (discovery → analysis → validation → testing → scaling)"
           caption="The loop: discovery → competitor analysis → validation → creative testing → scaling. Repeatable beats clever."
         />
 
