@@ -743,7 +743,7 @@ export const articlesMeta: ArticleMeta[] = [
     date: "May 8, 2026",
     readTime: "16 min read",
     slug: "how-to-analyze-tiktok-ads",
-    image: "/images/tiktok-ad-analysis-dashboard.jpg",
+    image: "/images/tiktok-ad-spy-hero.png",
     toc: [
       "Why TikTok Ad Analysis Matters for Ecommerce",
       "What Makes a TikTok Ad Convert",
