@@ -9199,9 +9199,8 @@ function ArticleHowToAnalyzeTikTokAds() {
           </table>
         </div>
 
-        <ArticleImage
-          src="/images/tiktok-ad-spy-tools-comparison.jpg"
-          alt="Side-by-side comparison of TikTok ad spy tools including WinningHunter, Minea, PiPiADS and AdSpy"
+        <ImagePlaceholder
+          note="Real side-by-side TikTok ad spy tool screenshots needed (WinningHunter, Minea, PPSpy, BrandSearch)"
           caption="A workflow-first comparison: pick the tool that fits your bottleneck, not the one with the longest feature list."
         />
 
