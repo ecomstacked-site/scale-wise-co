@@ -62,6 +62,7 @@ export function Footer() {
             <h4 className="font-display text-sm font-semibold text-foreground">Legal</h4>
             <ul className="mt-4 space-y-2.5">
               {[
+              { to: "/editorial-policy" as const, label: "Editorial Policy" },
                 { to: "/privacy-policy" as const, label: "Privacy Policy" },
                 { to: "/terms-of-service" as const, label: "Terms of Service" },
                 { to: "/disclaimer" as const, label: "Disclaimer" },
