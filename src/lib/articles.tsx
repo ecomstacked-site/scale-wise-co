@@ -9145,9 +9145,8 @@ function ArticleHowToAnalyzeTikTokAds() {
           <li><strong className="text-foreground">Landing page alignment:</strong> the strongest funnels keep the same hook from ad → landing page hero → first product section.</li>
           <li><strong className="text-foreground">Creative iteration patterns:</strong> if a brand has 8 variations of one hook live, that hook is the winner. Skip the variations and study the base concept.</li>
         </ul>
-        <ArticleImage
-          src="/images/competitor-ad-research-workflow.jpg"
-          alt="Competitor ad research dashboard with ad spend estimates, longevity timeline, comment quality and saturation heatmap"
+        <ImagePlaceholder
+          note="Real competitor ad research dashboard screenshot needed (longevity, comments, saturation)"
           caption="Triangulating ad longevity, comment quality, and saturation gives you a far cleaner read than view count alone."
         />
         <p className="mt-4 text-base leading-relaxed text-muted-foreground">
