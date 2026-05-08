@@ -9100,9 +9100,8 @@ function ArticleHowToAnalyzeTikTokAds() {
           <li><strong className="text-foreground">Trend discovery:</strong> early-stage scaling ads often signal trends 30–60 days before they hit broader feeds.</li>
           <li><strong className="text-foreground">Offer positioning:</strong> bundles, free shipping thresholds, and discount mechanics show you what the market actually responds to.</li>
         </ul>
-        <ArticleImage
-          src="/images/tiktok-ad-analysis-dashboard.jpg"
-          alt="TikTok ad analysis dashboard showing CTR, ROAS, retention curves and top-performing ecommerce ads"
+        <ImagePlaceholder
+          note="Real TikTok ad analytics dashboard screenshot needed (CTR, ROAS, retention curves)"
           caption="A serious analysis dashboard pairs ad creatives with retention curves, engagement, and unit-level performance — not just view counts."
         />
       </section>
