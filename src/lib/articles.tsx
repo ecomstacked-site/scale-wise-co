@@ -9058,3 +9058,217 @@ function ArticleHowToSpyOnShopifyStores() {
     </div>
   );
 }
+
+function ArticleHowToAnalyzeTikTokAds() {
+  return (
+    <div className="space-y-10">
+      <section>
+        <p className="text-base leading-relaxed text-muted-foreground">
+          TikTok has become the single highest-signal ad platform in ecommerce. Hooks, pacing, comments, and creative iteration speed all leak useful information — if you know what to look at. The problem is most operators confuse <em>copying</em> ads with <em>analyzing</em> them. Copying gets you a saturated angle a month late. Analyzing gets you patterns you can apply to your own product.
+        </p>
+        <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+          This guide covers how serious ecommerce operators break down TikTok ads in 2026 — the metrics that matter, the structural patterns behind converting creatives, and the research workflow that turns ad scrolling into actual product validation.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-2xl font-extrabold text-foreground">Why TikTok Ad Analysis Matters for Ecommerce</h2>
+        <p className="mt-3 text-base leading-relaxed text-muted-foreground">
+          TikTok ads compress months of market research into a feed. Every running ad is a live experiment by someone spending real money — which makes it the cheapest market intelligence in ecommerce.
+        </p>
+        <ul className="mt-4 space-y-2 text-base leading-relaxed text-muted-foreground">
+          <li><strong className="text-foreground">Product validation:</strong> ads that have run for weeks indicate a profitable unit economics, not just a viral fluke.</li>
+          <li><strong className="text-foreground">Market demand:</strong> ad volume in a category is a real-time demand signal you won't find in keyword tools.</li>
+          <li><strong className="text-foreground">Creative testing:</strong> studying iteration cycles shows you which hooks and angles competitors doubled down on.</li>
+          <li><strong className="text-foreground">Trend discovery:</strong> early-stage scaling ads often signal trends 30–60 days before they hit broader feeds.</li>
+          <li><strong className="text-foreground">Offer positioning:</strong> bundles, free shipping thresholds, and discount mechanics show you what the market actually responds to.</li>
+        </ul>
+        <ArticleImage
+          src="/images/tiktok-ad-analysis-dashboard.jpg"
+          alt="TikTok ad analysis dashboard showing CTR, ROAS, retention curves and top-performing ecommerce ads"
+          caption="A serious analysis dashboard pairs ad creatives with retention curves, engagement, and unit-level performance — not just view counts."
+        />
+      </section>
+
+      <section>
+        <h2 className="font-display text-2xl font-extrabold text-foreground">What Makes a TikTok Ad Convert</h2>
+        <p className="mt-3 text-base leading-relaxed text-muted-foreground">
+          Most converting TikTok ads share a similar skeleton, even across very different products. Once you start spotting the structure, you stop reacting to surface-level "vibes" and start reading ads like an operator.
+        </p>
+
+        <h3 className="mt-6 font-display text-lg font-bold text-foreground">The structural elements</h3>
+        <ul className="mt-3 space-y-2 text-base leading-relaxed text-muted-foreground">
+          <li><strong className="text-foreground">Hook (0–3s):</strong> a visual or verbal pattern interrupt — a problem moment, a surprising result, or a contrarian statement. If the first second is generic, the ad is dead.</li>
+          <li><strong className="text-foreground">Pacing:</strong> 1–2 second cut rhythm in the first 10 seconds keeps retention high. Watch for cuts on motion, not in still frames.</li>
+          <li><strong className="text-foreground">Storytelling:</strong> setup → conflict → resolution, even in 20 seconds. The product is the resolution, not the subject.</li>
+          <li><strong className="text-foreground">Problem-solution structure:</strong> the strongest ads name a specific friction the buyer already feels, then show the product removing it.</li>
+          <li><strong className="text-foreground">CTA positioning:</strong> a soft CTA at 60–70% of the runtime usually outperforms an aggressive end-card. Comments &gt; captions &gt; on-screen text for soft CTAs.</li>
+          <li><strong className="text-foreground">Retention patterns:</strong> if a creative has a stable retention curve past the 50% mark, it's almost always profitable at scale.</li>
+        </ul>
+
+        <ArticleImage
+          src="/images/tiktok-ad-hook-breakdown.jpg"
+          alt="TikTok ad breakdown interface showing video timeline, hook annotations, retention curve and CTA positioning analysis"
+          caption="Breaking an ad into hook, pacing, demo, social proof, and CTA blocks turns intuition into a repeatable framework."
+        />
+
+        <ProTip>
+          When you analyze a competitor ad, write down the hook in plain text. If you can't summarize it in one sentence, it's probably not the reason the ad is working.
+        </ProTip>
+      </section>
+
+      <section>
+        <h2 className="font-display text-2xl font-extrabold text-foreground">How Ecommerce Operators Analyze Competitor Ads</h2>
+        <p className="mt-3 text-base leading-relaxed text-muted-foreground">
+          Competitor ad analysis is more than scrolling an ad library. It's pattern recognition across signals — and the order you check them matters.
+        </p>
+        <ul className="mt-4 space-y-2 text-base leading-relaxed text-muted-foreground">
+          <li><strong className="text-foreground">Engagement analysis:</strong> like-to-view ratio, save rate, and share rate are far better signals than raw views. A 3M-view ad with 50 comments is usually a paid push, not organic resonance.</li>
+          <li><strong className="text-foreground">Comment quality:</strong> buyer-intent language ("where did you get this", "link?", "does it work for X?") is the strongest validation signal you can read for free.</li>
+          <li><strong className="text-foreground">Ad longevity:</strong> ads still running after 21+ days are nearly always profitable. Losers get killed within a week.</li>
+          <li><strong className="text-foreground">Saturation checks:</strong> count how many distinct stores are running similar creatives. High saturation = late entry, expensive CPMs, lower margins.</li>
+          <li><strong className="text-foreground">Landing page alignment:</strong> the strongest funnels keep the same hook from ad → landing page hero → first product section.</li>
+          <li><strong className="text-foreground">Creative iteration patterns:</strong> if a brand has 8 variations of one hook live, that hook is the winner. Skip the variations and study the base concept.</li>
+        </ul>
+        <ArticleImage
+          src="/images/competitor-ad-research-workflow.jpg"
+          alt="Competitor ad research dashboard with ad spend estimates, longevity timeline, comment quality and saturation heatmap"
+          caption="Triangulating ad longevity, comment quality, and saturation gives you a far cleaner read than view count alone."
+        />
+        <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+          For a deeper look at the store-level side of this work, see our guide on <Link to="/blog/how-to-spy-on-shopify-stores" className="text-brand underline-offset-4 hover:underline">how to spy on Shopify stores</Link>. Pairing ad analysis with store research is what separates real operators from feed scrollers.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-2xl font-extrabold text-foreground">Best TikTok Ad Research Tools</h2>
+        <p className="mt-3 text-base leading-relaxed text-muted-foreground">
+          Tools don't make decisions for you — they speed up the parts of the workflow that are slow to do manually. Most operators use one or two, not all four. The right pick depends on whether your bottleneck is creative discovery, ad library coverage, or competitor-level intelligence.
+        </p>
+
+        <div className="mt-6 overflow-x-auto">
+          <table className="w-full border-collapse text-left text-sm">
+            <thead>
+              <tr className="border-b border-border bg-surface text-foreground">
+                <th className="px-3 py-2 font-semibold">Tool</th>
+                <th className="px-3 py-2 font-semibold">Best Use Case</th>
+                <th className="px-3 py-2 font-semibold">Strengths</th>
+                <th className="px-3 py-2 font-semibold">Limitations</th>
+              </tr>
+            </thead>
+            <tbody className="text-muted-foreground">
+              <tr className="border-b border-border">
+                <td className="px-3 py-2 font-medium text-foreground">WinningHunter</td>
+                <td className="px-3 py-2">Winning creative + product discovery</td>
+                <td className="px-3 py-2">Combines TikTok + Meta ad data with store-level signals.</td>
+                <td className="px-3 py-2">Less granular for non-DTC categories.</td>
+              </tr>
+              <tr className="border-b border-border">
+                <td className="px-3 py-2 font-medium text-foreground">Minea</td>
+                <td className="px-3 py-2">Multi-platform ad spy</td>
+                <td className="px-3 py-2">Strong filters across TikTok, Meta, and Pinterest libraries.</td>
+                <td className="px-3 py-2">Interface can feel dense for beginners.</td>
+              </tr>
+              <tr className="border-b border-border">
+                <td className="px-3 py-2 font-medium text-foreground">PPSpy</td>
+                <td className="px-3 py-2">Shopify-side context for TikTok ads</td>
+                <td className="px-3 py-2">Cross-references ads with store sales velocity.</td>
+                <td className="px-3 py-2">Less depth on raw creative analysis.</td>
+              </tr>
+              <tr>
+                <td className="px-3 py-2 font-medium text-foreground">BrandSearch</td>
+                <td className="px-3 py-2">DTC brand and tech-stack discovery</td>
+                <td className="px-3 py-2">Useful for benchmarking the brands behind winning ads.</td>
+                <td className="px-3 py-2">Not a dedicated ad library.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <ArticleImage
+          src="/images/tiktok-ad-spy-tools-comparison.jpg"
+          alt="Side-by-side comparison of TikTok ad spy tools including WinningHunter, Minea, PiPiADS and AdSpy"
+          caption="A workflow-first comparison: pick the tool that fits your bottleneck, not the one with the longest feature list."
+        />
+
+        <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+          For broader context, our roundups of <Link to="/blog/best-product-research-tools" className="text-brand underline-offset-4 hover:underline">best product research tools</Link> and <Link to="/blog/winning-hunter-alternatives" className="text-brand underline-offset-4 hover:underline">WinningHunter alternatives</Link> go deeper into pricing, coverage, and trade-offs.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-2xl font-extrabold text-foreground">Common Mistakes Beginners Make When Analyzing TikTok Ads</h2>
+        <ul className="mt-4 space-y-3 text-base leading-relaxed text-muted-foreground">
+          <li><strong className="text-foreground">Chasing fake virality.</strong> View count without engagement quality usually means a paid push or a one-off algorithmic spike, not a real winner.</li>
+          <li><strong className="text-foreground">Ignoring margins.</strong> A "viral" $19 product with $9 landed cost and $14 CPA is a great way to lose money at scale.</li>
+          <li><strong className="text-foreground">Copying creatives blindly.</strong> The hook that worked for someone else's brand voice will likely flop for yours. Take the structure, not the script.</li>
+          <li><strong className="text-foreground">Not validating demand.</strong> One ad in a category isn't a market. Look for at least three independent brands running similar offers profitably.</li>
+          <li><strong className="text-foreground">Overusing ad spy tools.</strong> Tools surface signal — they don't make decisions. Endless scrolling without a system is just procrastination with a subscription.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="font-display text-2xl font-extrabold text-foreground">A Practical TikTok Ad Research Workflow</h2>
+        <p className="mt-3 text-base leading-relaxed text-muted-foreground">
+          The goal isn't a magic ad — it's a repeatable system. This is the loop most experienced operators run, simplified into seven steps.
+        </p>
+
+        <ol className="mt-4 space-y-4 text-base leading-relaxed text-muted-foreground">
+          <li><strong className="text-foreground">1. Define scope.</strong> Pick a niche or buyer profile. "Ecommerce" isn't a scope; "kitchen tools for small apartments" is.</li>
+          <li><strong className="text-foreground">2. Discover candidates.</strong> Use TikTok search, the Creative Center, and one ad spy tool to build a shortlist of 15–25 ads in the niche.</li>
+          <li><strong className="text-foreground">3. Filter for longevity.</strong> Keep ads still running after 14+ days. Drop the rest unless they show extremely strong engagement quality.</li>
+          <li><strong className="text-foreground">4. Break down structure.</strong> For each ad, log: hook, problem framing, demo style, social proof, CTA placement.</li>
+          <li><strong className="text-foreground">5. Read the comments.</strong> Look for buyer-intent language and friction objections. Both are gold for landing page copy.</li>
+          <li><strong className="text-foreground">6. Validate demand and margin.</strong> Cross-check with Google Trends, review velocity on top stores, and a margin model with realistic CPA.</li>
+          <li><strong className="text-foreground">7. Define your own angle.</strong> If you can't articulate why a buyer would pick you over the existing winners, you're entering at the worst point of the curve.</li>
+        </ol>
+
+        <ArticleImage
+          src="/images/tiktok-research-framework.jpg"
+          alt="Diagram of an ecommerce TikTok ad research and optimization workflow covering discovery, competitor analysis, validation, creative testing and scaling"
+          caption="The loop: discovery → competitor analysis → validation → creative testing → scaling. Repeatable beats clever."
+        />
+
+        <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+          For the validation half of this loop, our guide on <Link to="/blog/how-to-find-winning-products-for-dropshipping" className="text-brand underline-offset-4 hover:underline">how to find winning products for dropshipping</Link> goes deeper into the criteria that separate real opportunities from noise.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-2xl font-extrabold text-foreground">FAQ</h2>
+        <div className="mt-4 space-y-5">
+          <div>
+            <h3 className="font-display text-base font-bold text-foreground">Is analyzing competitor TikTok ads legal?</h3>
+            <p className="mt-2 text-base leading-relaxed text-muted-foreground">Yes. Public ads, comments, and engagement metrics are fair game for research. Copying protected creative assets, brand IP, or trademarked content is not.</p>
+          </div>
+          <div>
+            <h3 className="font-display text-base font-bold text-foreground">Do I need a paid ad spy tool to start?</h3>
+            <p className="mt-2 text-base leading-relaxed text-muted-foreground">No. The TikTok Creative Center, native search, and the Meta Ad Library cover most early research. Paid tools mainly save time once you know what you're looking for.</p>
+          </div>
+          <div>
+            <h3 className="font-display text-base font-bold text-foreground">How many ads should I analyze per niche?</h3>
+            <p className="mt-2 text-base leading-relaxed text-muted-foreground">Twenty to thirty serious ads is usually enough to spot patterns. More than that and you're collecting data instead of acting on it.</p>
+          </div>
+          <div>
+            <h3 className="font-display text-base font-bold text-foreground">How can I tell if an ad is actually profitable?</h3>
+            <p className="mt-2 text-base leading-relaxed text-muted-foreground">There's no perfect signal, but ad longevity (still running after 3+ weeks), creative iteration depth, and high-quality buyer comments together are a strong proxy.</p>
+          </div>
+          <div>
+            <h3 className="font-display text-base font-bold text-foreground">How often should I refresh my ad research?</h3>
+            <p className="mt-2 text-base leading-relaxed text-muted-foreground">Light review weekly, deeper review monthly. TikTok creative cycles move fast — the patterns shift, but not so fast that daily checking adds value.</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="font-display text-2xl font-extrabold text-foreground">Final Thoughts</h2>
+        <p className="mt-3 text-base leading-relaxed text-muted-foreground">
+          TikTok ad analysis isn't about finding a single magic creative — it's a discipline. The operators who get the most out of it treat it as a recurring habit: a structured loop of discovery, breakdown, validation, and testing.
+        </p>
+        <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+          Use the framework, pick one tool that fits your bottleneck, and invest more time in <em>understanding</em> ads than collecting them. That's how research turns into a real ecommerce edge instead of another tab graveyard.
+        </p>
+      </section>
+    </div>
+  );
+}
