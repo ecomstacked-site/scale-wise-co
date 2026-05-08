@@ -9236,9 +9236,8 @@ function ArticleHowToAnalyzeTikTokAds() {
           <li><strong className="text-foreground">7. Define your own angle.</strong> If you can't articulate why a buyer would pick you over the existing winners, you're entering at the worst point of the curve.</li>
         </ol>
 
-        <ArticleImage
-          src="/images/tiktok-research-framework.jpg"
-          alt="Diagram of an ecommerce TikTok ad research and optimization workflow covering discovery, competitor analysis, validation, creative testing and scaling"
+        <ImagePlaceholder
+          note="Real workflow diagram screenshot needed (discovery → analysis → validation → testing → scaling)"
           caption="The loop: discovery → competitor analysis → validation → creative testing → scaling. Repeatable beats clever."
         />
 
