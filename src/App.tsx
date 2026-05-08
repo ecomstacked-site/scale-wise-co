@@ -22,6 +22,7 @@ import BestAIWebsiteBuildersForEcommerceRoute from "./routes/best-ai-website-bui
 import HoloAiReviewRoute from "./routes/holo-ai-review";
 import HoloAiVsPictoryRoute from "./routes/holo-ai-vs-pictory";
 import ReaddyAiReviewPage from "./routes/tools.readdy";
+import EditorialPolicyPage from "./routes/editorial-policy";
 
 function NotFound() {
   return (
@@ -54,6 +55,7 @@ export default function App() {
       <Route path="/privacy-policy" element={<PrivacyPage />} />
       <Route path="/terms" element={<TermsPage />} />
       <Route path="/terms-of-service" element={<TermsPage />} />
+      <Route path="/editorial-policy" element={<EditorialPolicyPage />} />
       <Route path="/tools" element={<ToolsPage />} />
       <Route path="/tools/product-research" element={<ProductResearchPage />} />
       <Route path="/tools/wetracked-review" element={<WeTrackedReview />} />
