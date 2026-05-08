@@ -9122,9 +9122,8 @@ function ArticleHowToAnalyzeTikTokAds() {
           <li><strong className="text-foreground">Retention patterns:</strong> if a creative has a stable retention curve past the 50% mark, it's almost always profitable at scale.</li>
         </ul>
 
-        <ArticleImage
-          src="/images/tiktok-ad-hook-breakdown.jpg"
-          alt="TikTok ad breakdown interface showing video timeline, hook annotations, retention curve and CTA positioning analysis"
+        <ImagePlaceholder
+          note="Annotated TikTok ad breakdown screenshot needed (hook, pacing, demo, CTA blocks)"
           caption="Breaking an ad into hook, pacing, demo, social proof, and CTA blocks turns intuition into a repeatable framework."
         />
 
