@@ -39,6 +39,23 @@ function ProTip({ children }: { children: React.ReactNode }) {
   );
 }
 
+function ImagePlaceholder({ note, caption }: { note: string; caption?: string }) {
+  return (
+    <figure className="my-8 overflow-hidden rounded-2xl border border-dashed border-border bg-surface">
+      <div className="flex aspect-[16/9] w-full items-center justify-center px-6 text-center">
+        <p className="text-xs uppercase tracking-wide text-muted-foreground">
+          [Image placeholder — {note}]
+        </p>
+      </div>
+      {caption && (
+        <figcaption className="border-t border-border bg-card px-4 py-3 text-center text-xs italic leading-relaxed text-muted-foreground">
+          {caption}
+        </figcaption>
+      )}
+    </figure>
+  );
+}
+
 function ArticleImage({ src, alt, priority = false, caption }: { src: string; alt: string; priority?: boolean; caption?: string }) {
   return (
     <figure className="my-8 overflow-hidden rounded-2xl border border-border bg-card shadow-lg shadow-brand/5">
