@@ -88,6 +88,27 @@ export interface ArticleMeta {
 
 export const articlesMeta: ArticleMeta[] = [
   {
+    title: "Minea vs WinningHunter (2026 Comparison)",
+    excerpt: "An operator-focused comparison of Minea and WinningHunter — product discovery, creative research, Shopify store analysis, pricing, and which tool fits which ecommerce workflow.",
+    category: "Comparisons",
+    date: "May 9, 2026",
+    readTime: "16 min read",
+    slug: "minea-vs-winninghunter",
+    image: "/images/minea-vs-winninghunter-hero.png",
+    toc: [
+      "Why Operators Compare Research Tools",
+      "What Minea and WinningHunter Are Designed For",
+      "Product Discovery Comparison",
+      "Creative Research & Ad Analysis",
+      "Shopify Store Analysis & Competitor Research",
+      "UI, Workflow, and Ease of Use",
+      "Pricing & Overall Value",
+      "Which Tool Fits Different Ecommerce Workflows",
+      "FAQ",
+      "Final Verdict",
+    ],
+  },
+  {
     title: "AI Video Ads for Ecommerce: The 2026 Playbook for Founders & Media Buyers",
     excerpt: "How AI video ads are reshaping ecommerce paid acquisition — what they are, why they work, the workflow to create them, and the mistakes to avoid.",
     category: "AI Tools",
@@ -896,6 +917,8 @@ export function getArticleContent(slug: string): React.ReactNode | null {
       return <ArticleEcommerceAdCreativeFramework />;
     case "how-to-build-product-research-workflow":
       return <ArticleHowToBuildProductResearchWorkflow />;
+    case "minea-vs-winninghunter":
+      return <ArticleMineaVsWinningHunter />;
     default:
       return null;
   }
@@ -10206,6 +10229,273 @@ function ArticleHowToBuildProductResearchWorkflow() {
         </p>
         <p className="mt-4">
           A workflow won't make ecommerce easy. It just makes it survivable long enough to find the products that actually scale.
+        </p>
+      </section>
+    </div>
+  );
+}
+
+function ArticleMineaVsWinningHunter() {
+  return (
+    <div className="space-y-10">
+      <section>
+        <p className="text-sm leading-relaxed text-muted-foreground">
+          Most ecommerce operators don't compare research tools because they're shopping for software. They compare them because their current workflow is leaking time. They're sourcing products too slowly, missing creative angles, or losing track of what competitors actually launched last week. Minea and WinningHunter both promise to fix this — but they solve the problem from very different angles.
+        </p>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          This comparison is written for operators, not affiliates. The goal isn't to crown a winner. It's to help you understand where each tool genuinely shines, where each one falls short, and which workflow each is realistically built for. The "best tool" for your store depends on what stage you're in, what platform you advertise on, and how you actually run research week to week.
+        </p>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          If you haven't built a structured research process yet, you'll get more leverage from a clear workflow than from any tool subscription. Start with our guide on{" "}
+          <Link to="/blog/how-to-build-product-research-workflow" className="text-brand underline">how to build a product research workflow</Link>, then come back to this comparison to choose the tool that fits inside that system.
+        </p>
+        <ArticleImage
+          src="/images/minea-vs-winninghunter-hero.png"
+          alt="Side-by-side dashboards of Minea and WinningHunter showing product sourcing, ad analytics, and competitor research panels"
+          caption="Minea and WinningHunter take different routes to the same outcome: faster, more confident product and creative decisions."
+          priority
+        />
+        <p className="text-xs italic text-muted-foreground">
+          Based on real testing workflows used by ecommerce operators. Not influenced by sponsors. Always verify pricing and feature availability on each tool's official site before subscribing.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">What Minea and WinningHunter Are Designed For</h2>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          Minea was built as a multi-platform ad intelligence library. Its center of gravity is the ad library — Facebook, TikTok, Pinterest, and influencer placements aggregated into a searchable database. Operators who lean on Minea typically use it as a creative reference layer: they want to see what's running, who's running it, and what hooks are repeating across the market.
+        </p>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          WinningHunter is positioned more as a TikTok-first product and ad discovery suite. The product narrative leans toward "find what's winning right now, and act on it." Its workflows emphasize trending products, ad performance signals, store tracking, and quick creative inspection — packaged for operators running TikTok and Meta dropshipping or DTC plays.
+        </p>
+        <ul className="mt-4 list-disc space-y-2 pl-6 text-sm text-muted-foreground">
+          <li><strong className="text-foreground">Minea's core users:</strong> media buyers and brand operators who need a deep, multi-platform creative library and treat ad research as ongoing market intelligence.</li>
+          <li><strong className="text-foreground">WinningHunter's core users:</strong> TikTok-heavy operators, dropshippers, and growth teams who want a single dashboard combining trending products, ad spy, and store tracking.</li>
+        </ul>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          Neither positioning makes one tool "better." They reflect different beliefs about how research should be done. If your bottleneck is creative inspiration across platforms, Minea's depth matters. If your bottleneck is finding the next product to test on TikTok this week, WinningHunter's surface area is more useful.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Product Discovery Comparison</h2>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          Product discovery is where most operators expect a research tool to earn its subscription. Both tools surface trending products, but the path is different.
+        </p>
+        <ArticleImage
+          src="/images/mvw-tiktok-product-discovery.png"
+          alt="TikTok product discovery dashboard with viral product analytics, trend tracking, and ad engagement metrics"
+          caption="Product discovery dashboards combine viral signals, engagement metrics, and trend curves so operators can triangulate demand."
+        />
+        <h3 className="mt-6 font-display text-base font-bold text-foreground">Trending product discovery</h3>
+        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+          WinningHunter's trending product feed is one of its strongest surfaces. It blends TikTok virality signals with ad activity, so you're not just seeing "popular videos" — you're seeing products that are actively being advertised and gaining traction. Minea has a winning products section as well, but it's more closely tied to its ad library: products surface because their ads are performing, not necessarily because TikTok organic is exploding around them.
+        </p>
+        <h3 className="mt-6 font-display text-base font-bold text-foreground">TikTok product research</h3>
+        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+          For pure TikTok product research, WinningHunter generally feels closer to a native workflow. Filters for engagement rate, video age, creator count, and growth percentage map well to how operators actually evaluate a TikTok product opportunity. Minea covers TikTok ads, but operators using it for TikTok product hunting often pair it with other tools because the discovery angle is broader, not TikTok-first.
+        </p>
+        <h3 className="mt-6 font-display text-base font-bold text-foreground">Facebook and Meta ad analysis</h3>
+        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+          Minea has historically been stronger on Meta. The Facebook ad library, ad longevity tracking, and advertiser-level views are where Minea's depth shows. WinningHunter has Meta coverage too, but operators who run a lot of Facebook spend usually find Minea's Meta-side filtering more granular.
+        </p>
+        <h3 className="mt-6 font-display text-base font-bold text-foreground">Filtering and trend tracking</h3>
+        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+          Both tools support filtering by niche, country, ad format, and date range. WinningHunter leans into "growth percentage" and trend velocity as primary signals. Minea leans into ad performance proxies — likes, comments, shares, ad runtime — to infer winners. Neither approach is wrong; they just reward different research instincts.
+        </p>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          For a deeper look at how to evaluate the signals each tool surfaces, see our{" "}
+          <Link to="/blog/product-validation-framework" className="text-brand underline">product validation framework</Link>{" "}— it covers how to separate real demand from noisy virality.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Creative Research & Ad Analysis</h2>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          For creative research, the question isn't "which tool has more ads." It's which tool helps you understand <em>why</em> an ad is working — hook, structure, retention, and positioning.
+        </p>
+        <ArticleImage
+          src="/images/mvw-creative-ad-analysis.png"
+          alt="Creative comparison dashboard with hook analysis, retention curves, CTA timing, and ROAS for two TikTok ads"
+          caption="Modern creative research workflows compare hook rate, retention drop-offs, and CTA timing across multiple variants."
+        />
+        <h3 className="mt-6 font-display text-base font-bold text-foreground">Ad creative discovery</h3>
+        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+          Minea's ad library is the bigger creative reference set, especially across platforms. If you want to study how a specific advertiser evolved their creative over six months, Minea's longevity and history views make that easier. WinningHunter's library is well-curated for current winners, which is more useful when you want fast inspiration than archival study.
+        </p>
+        <h3 className="mt-6 font-display text-base font-bold text-foreground">Hook analysis and engagement signals</h3>
+        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+          Neither tool replaces watching ads with intent. What both do well is surface engagement proxies — likes, comments, runtime, ad spend estimates — that hint at performance. WinningHunter tends to highlight engagement and ad spend more prominently inside the discovery flow. Minea exposes similar data but as part of the deeper ad detail view.
+        </p>
+        <h3 className="mt-6 font-display text-base font-bold text-foreground">Creative workflow support</h3>
+        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+          For operators building a swipe file and feeding creatives into a structured testing process, both tools support saving ads and organizing references. The decisive factor is usually whether your team's testing workflow is TikTok-led (WinningHunter) or multi-platform (Minea). For a structured way to think about creative testing on top of either tool, see our{" "}
+          <Link to="/blog/ecommerce-ad-creative-framework" className="text-brand underline">ecommerce ad creative framework</Link>.
+        </p>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          If you specifically want to go deeper into TikTok ad analysis as a discipline — beyond either tool — our guide on{" "}
+          <Link to="/blog/how-to-analyze-tiktok-ads" className="text-brand underline">how to analyze TikTok ads</Link> walks through hook breakdowns, retention curves, and structural patterns.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Shopify Store Analysis & Competitor Research</h2>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          Where these two tools start to diverge most clearly is competitor and store-level intelligence.
+        </p>
+        <ArticleImage
+          src="/images/mvw-shopify-store-analysis.png"
+          alt="Shopify competitor tracking dashboard with pricing benchmarks, saturation curves, and offer positioning matrix"
+          caption="Store-level dashboards turn competitor pricing, SKU changes, and saturation trends into a repeatable monitoring layer."
+        />
+        <h3 className="mt-6 font-display text-base font-bold text-foreground">Store research and competitor monitoring</h3>
+        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+          WinningHunter has invested heavily in store tracking. Operators can monitor specific Shopify stores, see SKU changes, watch product launches, and observe store-level activity over time. This is genuinely useful when you're tracking a handful of competitors you respect. Minea's store-level features exist, but the tool's center of gravity remains the ad library, not store intelligence.
+        </p>
+        <h3 className="mt-6 font-display text-base font-bold text-foreground">Saturation and offer analysis</h3>
+        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+          Saturation analysis matters because a product that looks "winning" in a discovery feed may already have a dozen competitors running similar creatives. WinningHunter's combined view — ad activity plus store activity plus trending products — makes saturation easier to read at a glance. With Minea, you typically need to cross-reference the ad library against external store research to reach the same conclusion.
+        </p>
+        <h3 className="mt-6 font-display text-base font-bold text-foreground">Ecommerce intelligence workflows</h3>
+        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+          If competitor monitoring is a recurring weekly task — checking what new SKUs went live, which offers got refreshed, which stores accelerated ad spend — WinningHunter's workflows are built for that cadence. If you'd rather pair a focused ad-library tool with a dedicated Shopify spy stack, Minea fits more naturally as part of a stack. Our guide on{" "}
+          <Link to="/blog/how-to-spy-on-shopify-stores" className="text-brand underline">how to spy on Shopify stores</Link>{" "}covers how operators usually structure that monitoring layer.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">UI, Workflow, and Ease of Use</h2>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          Both tools have modernized their interfaces significantly over the past two years. The differences now are less about polish and more about how each one routes you through research.
+        </p>
+        <ul className="mt-4 list-disc space-y-2 pl-6 text-sm text-muted-foreground">
+          <li><strong className="text-foreground">WinningHunter</strong> reads like a launchpad. The dashboard pushes trending products, top creatives, and store activity at you on entry. New operators get to "something interesting" in a few clicks.</li>
+          <li><strong className="text-foreground">Minea</strong> reads like a research database. You typically arrive with a hypothesis — a niche, an advertiser, a creative angle — and use filters to dig in. It rewards operators who already know what they're looking for.</li>
+          <li><strong className="text-foreground">Learning curve:</strong> WinningHunter is more forgiving for beginners. Minea takes longer to internalize but scales well as your research questions get more specific.</li>
+          <li><strong className="text-foreground">Workflow speed:</strong> For "what should I test this week?" WinningHunter is faster. For "show me every angle this brand has tested across Meta and TikTok over six months," Minea is faster.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Pricing & Overall Value</h2>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          Both tools offer tiered subscriptions, and both have shifted pricing more than once over the past year. We won't quote specific monthly numbers here because they change — always check the official pricing pages of <a href="https://minea.com" rel="noopener noreferrer nofollow" target="_blank" className="text-brand underline">Minea</a> and <a href={LINKS.winninghunter} rel="sponsored noopener noreferrer nofollow" target="_blank" className="text-brand underline">WinningHunter</a> before deciding.
+        </p>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          What matters more than the sticker price is value relative to your workflow:
+        </p>
+        <ul className="mt-3 list-disc space-y-2 pl-6 text-sm text-muted-foreground">
+          <li><strong className="text-foreground">For beginners:</strong> The cheaper plan that gets you doing real research weekly is the better deal. Both tools have entry tiers that are reasonable for solo operators.</li>
+          <li><strong className="text-foreground">For scaling brands:</strong> Higher tiers unlock more granular filters, deeper history, and team features. Value here is measured in research hours saved per week, not dollars.</li>
+          <li><strong className="text-foreground">Workflow ROI:</strong> A tool only pays for itself if it shortens the path from "no idea" to "tested product" or "no creative" to "shipped ad." Audit your last month of research before paying for a higher tier.</li>
+        </ul>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          Both tools typically offer trials or limited free views. Use them to run an actual research week, not a feature tour.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Which Tool Fits Different Ecommerce Workflows</h2>
+        <ArticleImage
+          src="/images/mvw-operator-workflow.png"
+          alt="Ecommerce operator workflow framework showing product discovery, TikTok ad research, creative analysis, competitor tracking, and scaling"
+          caption="A research tool only matters as part of a workflow — discovery, creative analysis, competitor tracking, and scaling all need a clear seat."
+        />
+        <div className="mt-6 overflow-x-auto">
+          <table className="w-full border-collapse text-sm">
+            <thead>
+              <tr className="border-b border-border bg-surface">
+                <th className="p-3 text-left font-semibold text-foreground">Operator profile</th>
+                <th className="p-3 text-left font-semibold text-foreground">Better fit</th>
+                <th className="p-3 text-left font-semibold text-foreground">Why</th>
+              </tr>
+            </thead>
+            <tbody className="text-muted-foreground">
+              <tr className="border-b border-border">
+                <td className="p-3 align-top">Beginner dropshipper</td>
+                <td className="p-3 align-top">WinningHunter</td>
+                <td className="p-3 align-top">Faster onboarding, trending products and ads surfaced upfront, less analysis paralysis.</td>
+              </tr>
+              <tr className="border-b border-border">
+                <td className="p-3 align-top">TikTok-first store</td>
+                <td className="p-3 align-top">WinningHunter</td>
+                <td className="p-3 align-top">TikTok signals are first-class — viral score, growth %, creator count, store tracking.</td>
+              </tr>
+              <tr className="border-b border-border">
+                <td className="p-3 align-top">Meta-heavy DTC brand</td>
+                <td className="p-3 align-top">Minea</td>
+                <td className="p-3 align-top">Deeper Facebook ad library, longevity tracking, advertiser-level history.</td>
+              </tr>
+              <tr className="border-b border-border">
+                <td className="p-3 align-top">Creative-heavy team</td>
+                <td className="p-3 align-top">Minea</td>
+                <td className="p-3 align-top">Larger multi-platform creative library; better for studying angles over time.</td>
+              </tr>
+              <tr className="border-b border-border">
+                <td className="p-3 align-top">Scaling operator tracking competitors weekly</td>
+                <td className="p-3 align-top">WinningHunter</td>
+                <td className="p-3 align-top">Store tracking, SKU monitoring, and ad activity in one cadence.</td>
+              </tr>
+              <tr>
+                <td className="p-3 align-top">Agency or media buyer with multiple clients</td>
+                <td className="p-3 align-top">Often both</td>
+                <td className="p-3 align-top">Minea for cross-platform research depth, WinningHunter for fast trend reads per client.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          For a broader view of where each tool fits relative to the rest of the market, our{" "}
+          <Link to="/blog/best-tiktok-ad-spy-tools" className="text-brand underline">best TikTok ad spy tools</Link> guide reviews the wider category.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">FAQ</h2>
+        <div className="mt-4 space-y-5">
+          <div>
+            <h3 className="font-display text-sm font-bold text-foreground">Is WinningHunter better than Minea for TikTok dropshipping?</h3>
+            <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+              For TikTok-first dropshipping, most operators find WinningHunter's workflows closer to how they actually source and validate products. Minea still works, but it's not as TikTok-native.
+            </p>
+          </div>
+          <div>
+            <h3 className="font-display text-sm font-bold text-foreground">Is Minea still relevant if I run mostly TikTok ads?</h3>
+            <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+              Yes — particularly for studying how proven brands evolved their creative across Meta and TikTok. It's less useful as a pure trending-product feed for TikTok.
+            </p>
+          </div>
+          <div>
+            <h3 className="font-display text-sm font-bold text-foreground">Can one tool fully replace the other?</h3>
+            <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+              For most operators, yes — pick the one that matches your dominant workflow. Operators who run multi-platform at scale sometimes use both, but it's rarely necessary early on.</p>
+          </div>
+          <div>
+            <h3 className="font-display text-sm font-bold text-foreground">Do these tools guarantee winning products?</h3>
+            <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+              No. They surface signals. Whether a product wins depends on margin, offer, creative, and execution. A tool only compresses research time — it doesn't replace judgment.
+            </p>
+          </div>
+          <div>
+            <h3 className="font-display text-sm font-bold text-foreground">What's a realistic Minea alternative if pricing is a concern?</h3>
+            <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+              Operators commonly evaluate WinningHunter, PiPiADS, and AdSpy as alternatives depending on the platform focus. The right substitute depends on whether your gap is TikTok depth, Meta depth, or store tracking.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Final Verdict</h2>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          Minea and WinningHunter are both legitimate research tools used by serious ecommerce operators. They're not interchangeable, and pretending one is universally "better" would be misleading. The honest framing is: <strong className="text-foreground">Minea is the deeper multi-platform ad-library tool; WinningHunter is the faster TikTok-first product and store discovery suite.</strong>
+        </p>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          If your week is spent finding the next TikTok product to test and tracking what competitors quietly launched, WinningHunter will likely save you more hours. If your week is spent studying creative across Meta and TikTok and building a long-term swipe file, Minea will likely earn its seat.
+        </p>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          Either way, the bigger lever is your workflow. A tool only compounds when it sits inside a repeatable system — discovery, validation, creative planning, and scaling. If you haven't formalized that yet, start with our{" "}
+          <Link to="/blog/how-to-build-product-research-workflow" className="text-brand underline">product research workflow guide</Link>{" "}and let the workflow tell you which tool you actually need.
         </p>
       </section>
     </div>
