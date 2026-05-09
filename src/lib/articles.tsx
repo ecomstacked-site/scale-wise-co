@@ -871,6 +871,8 @@ export function getArticleContent(slug: string): React.ReactNode | null {
       return <ArticleHowToAnalyzeTikTokAds />;
     case "product-validation-framework":
       return <ArticleProductValidationFramework />;
+    case "ecommerce-ad-creative-framework":
+      return <ArticleEcommerceAdCreativeFramework />;
     default:
       return null;
   }
