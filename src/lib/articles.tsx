@@ -776,6 +776,27 @@ export const articlesMeta: ArticleMeta[] = [
     ],
   },
   {
+    title: "How to Build a Product Research Workflow for Ecommerce (2026)",
+    excerpt: "A complete operator framework for building a repeatable ecommerce product research workflow in 2026 — discovery, TikTok signals, competitor analysis, validation, creative evaluation and a scalable research system used by real ecommerce operators.",
+    category: "Guides",
+    date: "May 9, 2026",
+    readTime: "18 min read",
+    slug: "how-to-build-product-research-workflow",
+    image: "/images/master-product-research-workflow-map.png",
+    toc: [
+      "Why Most Ecommerce Product Research Fails",
+      "What Real Ecommerce Operators Look For",
+      "A Practical Product Discovery Workflow",
+      "How to Analyze Competitors Correctly",
+      "How to Validate Products Before Testing Ads",
+      "How Operators Evaluate Ad Creatives",
+      "A Real Ecommerce Product Research Workflow",
+      "Common Product Research Mistakes Beginners Make",
+      "FAQ",
+      "Final Thoughts",
+    ],
+  },
+  {
     title: "Ecommerce Ad Creative Framework (2026)",
     excerpt: "A complete operator framework for building, testing, and scaling ecommerce ad creatives in 2026 — hooks, pacing, structure, retention, testing systems, and the creative workflow used by real ecommerce operators.",
     category: "Guides",
@@ -873,6 +894,8 @@ export function getArticleContent(slug: string): React.ReactNode | null {
       return <ArticleProductValidationFramework />;
     case "ecommerce-ad-creative-framework":
       return <ArticleEcommerceAdCreativeFramework />;
+    case "how-to-build-product-research-workflow":
+      return <ArticleHowToBuildProductResearchWorkflow />;
     default:
       return null;
   }
