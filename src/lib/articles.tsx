@@ -917,6 +917,8 @@ export function getArticleContent(slug: string): React.ReactNode | null {
       return <ArticleEcommerceAdCreativeFramework />;
     case "how-to-build-product-research-workflow":
       return <ArticleHowToBuildProductResearchWorkflow />;
+    case "minea-vs-winninghunter":
+      return <ArticleMineaVsWinningHunter />;
     default:
       return null;
   }
