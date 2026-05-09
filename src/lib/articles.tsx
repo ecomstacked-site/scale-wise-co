@@ -88,6 +88,27 @@ export interface ArticleMeta {
 
 export const articlesMeta: ArticleMeta[] = [
   {
+    title: "Minea vs WinningHunter (2026 Comparison)",
+    excerpt: "An operator-focused comparison of Minea and WinningHunter — product discovery, creative research, Shopify store analysis, pricing, and which tool fits which ecommerce workflow.",
+    category: "Comparisons",
+    date: "May 9, 2026",
+    readTime: "16 min read",
+    slug: "minea-vs-winninghunter",
+    image: "/images/minea-vs-winninghunter-hero.png",
+    toc: [
+      "Why Operators Compare Research Tools",
+      "What Minea and WinningHunter Are Designed For",
+      "Product Discovery Comparison",
+      "Creative Research & Ad Analysis",
+      "Shopify Store Analysis & Competitor Research",
+      "UI, Workflow, and Ease of Use",
+      "Pricing & Overall Value",
+      "Which Tool Fits Different Ecommerce Workflows",
+      "FAQ",
+      "Final Verdict",
+    ],
+  },
+  {
     title: "AI Video Ads for Ecommerce: The 2026 Playbook for Founders & Media Buyers",
     excerpt: "How AI video ads are reshaping ecommerce paid acquisition — what they are, why they work, the workflow to create them, and the mistakes to avoid.",
     category: "AI Tools",
