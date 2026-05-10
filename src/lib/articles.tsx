@@ -940,6 +940,8 @@ export function getArticleContent(slug: string): React.ReactNode | null {
       return <ArticleHowToBuildProductResearchWorkflow />;
     case "minea-vs-winninghunter":
       return <ArticleMineaVsWinningHunter />;
+    case "brandsearch-vs-winninghunter":
+      return <ArticleBrandSearchVsWinningHunter />;
     default:
       return null;
   }
