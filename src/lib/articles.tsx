@@ -9129,7 +9129,9 @@ function ArticleHowToSpyOnShopifyStores() {
         <p className="mt-4 text-base leading-relaxed text-muted-foreground">
           Competitor analysis is one input. Pair it with our <Link to="/blog/how-to-build-product-research-workflow" className="text-brand underline-offset-4 hover:underline">broader product research workflow</Link>, the <Link to="/blog/best-tools-for-shopify-store-analysis" className="text-brand underline-offset-4 hover:underline">store analysis workflow</Link>, and the <Link to="/blog/best-shopify-spy-tools" className="text-brand underline-offset-4 hover:underline">Shopify spy tools roundup</Link> — and run findings through the <Link to="/blog/product-validation-framework" className="text-brand underline-offset-4 hover:underline">validation framework</Link> before committing budget.
         </p>
-      </section>
+        <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+          When you're ready to choose between specific platforms, our <Link to="/blog/brandsearch-vs-winninghunter" className="text-brand underline-offset-4 hover:underline">BrandSearch vs WinningHunter breakdown</Link>, <Link to="/blog/ppspy-vs-minea" className="text-brand underline-offset-4 hover:underline">PPSpy vs Minea comparison</Link>, and <Link to="/blog/minea-vs-winninghunter" className="text-brand underline-offset-4 hover:underline">Minea vs WinningHunter</Link> map how each fits a real Shopify research stack.
+        </p>
 
       <section>
         <h2 className="font-display text-2xl font-extrabold text-foreground">Why Ecommerce Operators Analyze Competitor Stores</h2>
