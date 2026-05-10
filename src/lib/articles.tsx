@@ -3423,6 +3423,9 @@ function ArticleHowToFindWinning() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           The good news: finding a real winner is a repeatable process — not luck. Here's the exact step-by-step method used by 7-figure operators in 2026.
         </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          If you want the system this slots into, see our <Link to="/blog/how-to-build-product-research-workflow" className="text-brand underline-offset-4 hover:underline">end-to-end product research workflow</Link>. Use it alongside the <Link to="/blog/product-validation-framework" className="text-brand underline-offset-4 hover:underline">validation framework</Link>, layer in <Link to="/blog/how-to-spy-on-shopify-stores" className="text-brand underline-offset-4 hover:underline">Shopify competitor research</Link>, and pick the right <Link to="/blog/best-product-research-tools" className="text-brand underline-offset-4 hover:underline">best research tools for 2026</Link> to power the workflow.
+        </p>
       </section>
 
       <section>
@@ -3883,6 +3886,9 @@ function ArticleWinningProductsDropshipping() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           This guide walks through the exact workflow used by experienced dropshippers in 2026 to find products with real demand, real margin, and real scaling potential — without burning $5K to learn the lesson.
         </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          This guide is the dropshipping-specific cut of our <Link to="/blog/how-to-build-product-research-workflow" className="text-brand underline-offset-4 hover:underline">full product research workflow</Link>. For the validation layer, use the <Link to="/blog/product-validation-framework" className="text-brand underline-offset-4 hover:underline">validation framework</Link>, and for sourcing signal use the <Link to="/blog/best-tiktok-ad-spy-tools" className="text-brand underline-offset-4 hover:underline">TikTok ad spy tools</Link> together with a solid <Link to="/blog/best-shopify-spy-tools" className="text-brand underline-offset-4 hover:underline">Shopify spy stack</Link>.
+        </p>
       </section>
 
       {/* Workflow overview image */}
@@ -4254,6 +4260,9 @@ function ArticleBestProductResearchTools() {
         </p>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           👉 If you want to see what's actually working right now, start with the tool we use daily — <Link to="/tools/winninghunter" className="text-brand font-semibold underline-offset-2 hover:underline">see how WinningHunter works</Link>.
+        </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          These tools matter most when they slot into a system. See our <Link to="/blog/how-to-build-product-research-workflow" className="text-brand underline-offset-4 hover:underline">operator product research workflow</Link>, run candidates through the <Link to="/blog/product-validation-framework" className="text-brand underline-offset-4 hover:underline">validation framework</Link>, and combine with the <Link to="/blog/best-tiktok-ad-spy-tools" className="text-brand underline-offset-4 hover:underline">TikTok ad spy stack</Link> or <Link to="/blog/best-tools-for-shopify-store-analysis" className="text-brand underline-offset-4 hover:underline">Shopify store analysis tools</Link> depending on your traffic mix.
         </p>
       </section>
 
@@ -5377,6 +5386,9 @@ function ArticlePPSpyVsMinea() {
         />
         <p className="text-xs italic text-muted-foreground">
           Based on real testing workflows used by ecommerce operators. Not influenced by sponsors. Always verify pricing and feature availability on each tool's official site before subscribing.
+        </p>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          For wider context, see our <Link to="/blog/how-to-spy-on-shopify-stores" className="text-brand underline-offset-4 hover:underline">Shopify competitor research</Link>, the <Link to="/blog/best-tools-for-shopify-store-analysis" className="text-brand underline-offset-4 hover:underline">store analysis workflow</Link>, and the <Link to="/blog/how-to-find-winning-products-for-dropshipping" className="text-brand underline-offset-4 hover:underline">dropshipping discovery process</Link> — each frames how a tool like PPSpy or Minea actually gets used week to week.
         </p>
       </section>
 
@@ -7087,6 +7099,9 @@ function ArticleBestProductResearchToolsForShopify() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           If you are guessing products, you are already late. This guide breaks down the best product research tools for Shopify in 2026, with WinningHunter ranked #1 because it connects TikTok ad spying, product discovery, and validation speed into one decision-making workflow.
         </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          Tool choice is downstream of process. Anchor decisions in our <Link to="/blog/how-to-build-product-research-workflow" className="text-brand underline-offset-4 hover:underline">full product research workflow</Link>, sharpen them with the <Link to="/blog/best-tools-for-shopify-store-analysis" className="text-brand underline-offset-4 hover:underline">Shopify store analysis tools</Link> and the <Link to="/blog/how-to-spy-on-shopify-stores" className="text-brand underline-offset-4 hover:underline">competitor research workflow</Link>, and use the <Link to="/blog/brandsearch-vs-winninghunter" className="text-brand underline-offset-4 hover:underline">BrandSearch vs WinningHunter comparison</Link> when picking between platforms.
+        </p>
       </section>
 
       <section>
@@ -7466,6 +7481,9 @@ function ArticleBestTikTokAdSpyTools() {
         <div className="mt-5">
           <ToolCta label="Start Finding Winning Products" />
         </div>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          Tool choice should follow workflow. See our <Link to="/blog/how-to-build-product-research-workflow" className="text-brand underline-offset-4 hover:underline">operator product research workflow</Link> for the system, our <Link to="/blog/how-to-analyze-tiktok-ads" className="text-brand underline-offset-4 hover:underline">TikTok ad analysis process</Link> for what to look at, the <Link to="/blog/minea-vs-winninghunter" className="text-brand underline-offset-4 hover:underline">Minea vs WinningHunter comparison</Link> for picking between platforms, and the <Link to="/blog/ecommerce-ad-creative-framework" className="text-brand underline-offset-4 hover:underline">ad creative framework</Link> for turning findings into creative.
+        </p>
       </section>
 
       <CtaBlock label="Start Finding Winning TikTok Ads Today" />
@@ -9048,6 +9066,9 @@ function ArticleHowToSpyOnShopifyStores() {
         <p className="mt-4 text-base leading-relaxed text-muted-foreground">
           Done well, this is just modern market research. Done poorly, it turns into copy-paste stores chasing dead trends. This guide walks through how serious operators do it in 2026 — the workflows, the tools, and the mistakes to avoid.
         </p>
+        <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+          Competitor analysis is one input. Pair it with our <Link to="/blog/how-to-build-product-research-workflow" className="text-brand underline-offset-4 hover:underline">broader product research workflow</Link>, the <Link to="/blog/best-tools-for-shopify-store-analysis" className="text-brand underline-offset-4 hover:underline">store analysis workflow</Link>, and the <Link to="/blog/best-shopify-spy-tools" className="text-brand underline-offset-4 hover:underline">Shopify spy tools roundup</Link> — and run findings through the <Link to="/blog/product-validation-framework" className="text-brand underline-offset-4 hover:underline">validation framework</Link> before committing budget.
+        </p>
       </section>
 
       <section>
@@ -9266,6 +9287,9 @@ function ArticleHowToAnalyzeTikTokAds() {
         <p className="mt-4 text-base leading-relaxed text-muted-foreground">
           This guide covers how serious ecommerce operators break down TikTok ads in 2026 — the metrics that matter, the structural patterns behind converting creatives, and the research workflow that turns ad scrolling into actual product validation.
         </p>
+        <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+          Ad analysis is a layer in a bigger system. See our <Link to="/blog/how-to-build-product-research-workflow" className="text-brand underline-offset-4 hover:underline">operator product research workflow</Link> for context, the <Link to="/blog/best-tiktok-ad-spy-tools" className="text-brand underline-offset-4 hover:underline">TikTok ad spy tools</Link> for the platforms that surface examples, the <Link to="/blog/ecommerce-ad-creative-framework" className="text-brand underline-offset-4 hover:underline">ad creative framework</Link> for turning patterns into your own creative, and the <Link to="/blog/minea-vs-winninghunter" className="text-brand underline-offset-4 hover:underline">Minea vs WinningHunter breakdown</Link> when you're picking a spy stack.
+        </p>
       </section>
 
       <section>
@@ -9482,6 +9506,9 @@ function ArticleProductValidationFramework() {
         </p>
         <p className="mt-4 text-base leading-relaxed text-muted-foreground">
           The goal isn't to find the "perfect" product. It's to build a process that filters out the obvious losers, surfaces realistic candidates, and protects your ad budget from products that were always going to fail.
+        </p>
+        <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+          Validation sits inside a larger system. For the full picture, pair this framework with our <Link to="/blog/how-to-build-product-research-workflow" className="text-brand underline-offset-4 hover:underline">broader product research workflow</Link>, the <Link to="/blog/how-to-find-winning-products-for-dropshipping" className="text-brand underline-offset-4 hover:underline">dropshipping discovery process</Link>, and the <Link to="/blog/how-to-spy-on-shopify-stores" className="text-brand underline-offset-4 hover:underline">Shopify competitor research</Link>. The <Link to="/blog/best-product-research-tools" className="text-brand underline-offset-4 hover:underline">operator-ranked research tools</Link> round it out with the software side.
         </p>
       </section>
 
@@ -9785,6 +9812,9 @@ function ArticleEcommerceAdCreativeFramework() {
         </p>
         <p className="mt-4">
           If you're earlier in the funnel and still validating products before producing creative, start with our <Link to="/blog/product-validation-framework" className="text-brand underline-offset-4 hover:underline">product validation framework</Link>. Creative can't fix a product that shouldn't be tested in the first place.
+        </p>
+        <p className="mt-4">
+          Creative work compounds when it lives inside a research system. See our <Link to="/blog/how-to-build-product-research-workflow" className="text-brand underline-offset-4 hover:underline">operator product research workflow</Link> for the upstream process, the <Link to="/blog/how-to-analyze-tiktok-ads" className="text-brand underline-offset-4 hover:underline">TikTok ad analysis process</Link> for decoding what already converts, and the <Link to="/blog/best-tiktok-ad-spy-tools" className="text-brand underline-offset-4 hover:underline">TikTok ad spy stack</Link> for the tools that surface those examples.
         </p>
       </section>
 
@@ -10349,6 +10379,9 @@ function ArticleMineaVsWinningHunter() {
         <p className="text-xs italic text-muted-foreground">
           Based on real testing workflows used by ecommerce operators. Not influenced by sponsors. Always verify pricing and feature availability on each tool's official site before subscribing.
         </p>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          If you want context beyond this matchup, use our <Link to="/blog/how-to-analyze-tiktok-ads" className="text-brand underline-offset-4 hover:underline">TikTok ad analysis process</Link> to interpret what each tool surfaces, the <Link to="/blog/best-tiktok-ad-spy-tools" className="text-brand underline-offset-4 hover:underline">broader TikTok ad spy stack</Link> for alternatives, and the <Link to="/blog/brandsearch-vs-winninghunter" className="text-brand underline-offset-4 hover:underline">BrandSearch vs WinningHunter breakdown</Link> for an adjacent comparison.
+        </p>
       </section>
 
       <section>
@@ -10617,6 +10650,9 @@ function ArticleBrandSearchVsWinningHunter() {
         />
         <p className="text-xs italic text-muted-foreground">
           Based on real testing workflows used by ecommerce operators. Not influenced by sponsors. Always verify pricing and feature availability on each tool's official site before subscribing.
+        </p>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          For broader context, pair this with our <Link to="/blog/how-to-spy-on-shopify-stores" className="text-brand underline-offset-4 hover:underline">Shopify competitor research</Link>, the <Link to="/blog/best-tools-for-shopify-store-analysis" className="text-brand underline-offset-4 hover:underline">store analysis workflow</Link>, and the <Link to="/blog/minea-vs-winninghunter" className="text-brand underline-offset-4 hover:underline">Minea vs WinningHunter comparison</Link> when weighing platforms.
         </p>
       </section>
 
@@ -10896,6 +10932,9 @@ function ArticleBestToolsForShopifyStoreAnalysis() {
         />
         <p className="text-xs italic text-muted-foreground">
           Based on real research workflows used by ecommerce operators. Not influenced by sponsors. Always verify pricing and feature availability on each tool's official site before subscribing.
+        </p>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          Once you've mapped your stack, layer it into our <Link to="/blog/how-to-spy-on-shopify-stores" className="text-brand underline-offset-4 hover:underline">competitor research workflow</Link>. The <Link to="/blog/brandsearch-vs-winninghunter" className="text-brand underline-offset-4 hover:underline">BrandSearch vs WinningHunter breakdown</Link> and <Link to="/blog/ppspy-vs-minea" className="text-brand underline-offset-4 hover:underline">PPSpy vs Minea comparison</Link> dig into specific tool tradeoffs, while the <Link to="/blog/best-product-research-tools" className="text-brand underline-offset-4 hover:underline">broader research tool roundup</Link> zooms back out to the full research category.
         </p>
       </section>
 
