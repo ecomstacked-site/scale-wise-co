@@ -873,7 +873,77 @@ export const articlesMeta: ArticleMeta[] = [
   },
 ];
 
+const PRODUCT_RESEARCH_CLUSTER: { slug: string; title: string; desc: string; group: string }[] = [
+  { slug: "how-to-build-product-research-workflow", title: "How to Build a Product Research Workflow", desc: "The pillar guide tying every framework below into one operator system.", group: "Frameworks" },
+  { slug: "product-validation-framework", title: "The Ecommerce Product Validation Framework", desc: "Validate demand, margin, and creative angle before you spend on tests.", group: "Frameworks" },
+  { slug: "ecommerce-ad-creative-framework", title: "The Ecommerce Ad Creative Framework", desc: "How to evaluate hooks, formats, and angles competitors are running.", group: "Frameworks" },
+  { slug: "how-to-find-winning-products", title: "How to Find Winning Products", desc: "Discovery sources, signals, and filters that surface real winners.", group: "Discovery" },
+  { slug: "how-to-find-winning-products-for-dropshipping", title: "Finding Winning Products for Dropshipping", desc: "A 5-step research workflow tuned to dropshipping economics.", group: "Discovery" },
+  { slug: "how-to-spy-on-shopify-stores", title: "How to Spy on Shopify Stores", desc: "Read competitor stacks, offers, and product velocity like an analyst.", group: "Discovery" },
+  { slug: "how-to-analyze-tiktok-ads", title: "How to Analyze TikTok Ads", desc: "Decode hooks, retention, and creative patterns behind viral ads.", group: "Discovery" },
+  { slug: "best-product-research-tools", title: "Best Product Research Tools (2026)", desc: "The full operator-ranked roundup of research platforms for 2026.", group: "Tools" },
+  { slug: "best-product-research-tools-for-shopify", title: "Best Product Research Tools for Shopify", desc: "Tool stack tuned to Shopify operators and DTC brands.", group: "Tools" },
+  { slug: "best-tools-for-shopify-store-analysis", title: "Best Tools for Shopify Store Analysis", desc: "Compare PPSpy, Koala Inspector, BrandSearch, Minea, WinningHunter.", group: "Tools" },
+  { slug: "best-tiktok-ad-spy-tools", title: "Best TikTok Ad Spy Tools (2026)", desc: "The TikTok-specific research tools serious operators rely on.", group: "Tools" },
+  { slug: "minea-vs-winninghunter", title: "Minea vs WinningHunter", desc: "Cross-platform ad library vs all-in-one operator workflow.", group: "Comparisons" },
+  { slug: "brandsearch-vs-winninghunter", title: "BrandSearch vs WinningHunter", desc: "Brand intelligence vs winning-product detection — which fits you.", group: "Comparisons" },
+  { slug: "ppspy-vs-minea", title: "PPSpy vs Minea", desc: "Shopify-first store intelligence vs ad-library-first discovery.", group: "Comparisons" },
+];
+
+function ProductResearchClusterNav({ currentSlug }: { currentSlug: string }) {
+  const items = PRODUCT_RESEARCH_CLUSTER.filter((i) => i.slug !== currentSlug);
+  const groups = ["Frameworks", "Discovery", "Tools", "Comparisons"] as const;
+  return (
+    <section className="mt-16 border-t border-border pt-10">
+      <p className="text-xs font-semibold uppercase tracking-wider text-brand">Product Research Cluster</p>
+      <h2 className="mt-2 font-display text-xl font-bold text-foreground sm:text-2xl">Continue building your research system</h2>
+      <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+        These guides form EcomStacked&apos;s Product Research authority cluster. Read them in any order — every piece reinforces the same operator workflow.
+      </p>
+      <div className="mt-8 space-y-8">
+        {groups.map((g) => {
+          const list = items.filter((i) => i.group === g);
+          if (list.length === 0) return null;
+          return (
+            <div key={g}>
+              <h3 className="font-display text-sm font-bold uppercase tracking-wide text-foreground">{g}</h3>
+              <ul className="mt-3 grid gap-3 sm:grid-cols-2">
+                {list.map((i) => (
+                  <li key={i.slug} className="rounded-lg border border-border bg-card p-4 transition-colors hover:border-brand/40">
+                    <Link to={`/blog/${i.slug}`} className="block">
+                      <span className="block font-display text-sm font-bold text-foreground">{i.title}</span>
+                      <span className="mt-1 block text-xs leading-relaxed text-muted-foreground">{i.desc}</span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          );
+        })}
+      </div>
+    </section>
+  );
+}
+
+const PRODUCT_RESEARCH_SLUGS = new Set(PRODUCT_RESEARCH_CLUSTER.map((i) => i.slug));
+
+function withClusterNav(slug: string, node: React.ReactNode): React.ReactNode {
+  if (!PRODUCT_RESEARCH_SLUGS.has(slug)) return node;
+  return (
+    <>
+      {node}
+      <ProductResearchClusterNav currentSlug={slug} />
+    </>
+  );
+}
+
 export function getArticleContent(slug: string): React.ReactNode | null {
+  const node = renderArticle(slug);
+  if (!node) return null;
+  return withClusterNav(slug, node);
+}
+
+function renderArticle(slug: string): React.ReactNode | null {
   switch (slug) {
     case "ai-video-ads-for-ecommerce":
       return <ArticleAIVideoAdsForEcommerce />;
