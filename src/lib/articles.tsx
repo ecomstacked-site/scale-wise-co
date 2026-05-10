@@ -2991,6 +2991,9 @@ function ArticleBestAIVideoTools() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           AI video tools fix that. They collapse the time between idea and testable creative from days into minutes. If you're running ads, tools like <Link to="/tools/holo-ai" className="text-brand hover:underline">Holo AI</Link> are worth looking at.
         </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          Production speed only compounds when it's pointed at proven angles. Use the <Link to="/blog/how-to-analyze-tiktok-ads" className="text-brand underline-offset-4 hover:underline">TikTok ad analysis</Link> process and our <Link to="/blog/best-tiktok-ad-spy-tools" className="text-brand underline-offset-4 hover:underline">ecommerce ad spy tools</Link> to source references, the <Link to="/blog/ecommerce-ad-creative-framework" className="text-brand underline-offset-4 hover:underline">ad creative framework</Link> to structure tests, and our <Link to="/blog/ai-video-ads-for-ecommerce" className="text-brand underline-offset-4 hover:underline">AI video ads playbook</Link> for the operator workflow behind the tools.
+        </p>
         <ArticleImage
           src="/images/hero-holo-ai-dashboard.webp"
           alt="AI video tool dashboard for ecommerce ad creative testing"
