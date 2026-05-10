@@ -1232,6 +1232,9 @@ function ArticleWeTrackedReview() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           Written for operators who want to understand what the tool actually does — before deciding whether it fits their stack.
         </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          Tracking is one layer of a healthy operator stack. For the broader context, see our <Link to="/blog/how-to-build-product-research-workflow" className="text-brand underline-offset-4 hover:underline">operator research workflow</Link>, the <Link to="/blog/product-validation-framework" className="text-brand underline-offset-4 hover:underline">product validation workflow</Link>, and our <Link to="/blog/ecommerce-ad-creative-framework" className="text-brand underline-offset-4 hover:underline">ad creative framework</Link> — accurate tracking only pays off when the products and creatives behind it are sound.
+        </p>
 
         <WTFigure
           src="/images/wetracked-dashboard-overview.png"
