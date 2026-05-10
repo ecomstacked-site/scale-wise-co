@@ -7,276 +7,250 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Newsletter } from "@/components/Newsletter";
 import { ArticleCard } from "@/components/ArticleCard";
-import wetrackedImg from "@/assets/wetracked-preview.png";
-import holoAiImg from "@/assets/holo-ai-preview.png";
-import winningHunterImg from "@/assets/winninghunter-preview.png";
 import {
   BarChart3, Bot, Eye, Search, Shield, Target,
   ArrowRight, CheckCircle2, TrendingUp,
-  BookOpen, FileSearch, Layers
+  BookOpen, FileSearch, Layers, Sparkles, Video
 } from "lucide-react";
 
-const featuredTools = [
+// ---------- Featured Guides (educational hubs) ----------
+const featuredGuides = [
   {
-    name: "WeTracked",
-    image: wetrackedImg,
-    tag: "Tracking",
-    description: "Server-side tracking for Facebook, Google, TikTok ads.",
-    bullets: ["Accurate attribution tracking", "Recover lost conversions"],
-    caption: "WeTracked dashboard showing server-side conversion recovery in real ad campaigns.",
-    href: "/tools/wetracked-review",
-  },
-  {
-    name: "Holo AI",
-    image: holoAiImg,
-    tag: "AI Content",
-    description: "AI ad creative platform for ecommerce.",
-    bullets: ["Generate ads, images, videos", "Create more content faster"],
-    caption: "Holo AI workspace where ad creatives are generated from a single product URL.",
-    href: "/tools/holo-ai",
-  },
-  {
-    name: "WinningHunter",
-    image: winningHunterImg,
+    title: "How to Build a Product Research Workflow",
+    excerpt: "A repeatable system for finding, validating, and prioritising products — the way operators actually do it.",
+    href: "/blog/how-to-build-product-research-workflow",
     tag: "Product Research",
-    description: "Product and ad research tool for ecommerce.",
-    bullets: ["Discover winning products", "Analyze ad performance"],
-    caption: "WinningHunter research interface used to spy on top-performing Facebook & TikTok ads.",
-    href: "/tools/winninghunter",
+  },
+  {
+    title: "The Ecommerce Product Validation Framework",
+    excerpt: "Move beyond gut feeling. A structured framework for validating demand, margins, and creative angles before you spend.",
+    href: "/blog/product-validation-framework",
+    tag: "Validation",
+  },
+  {
+    title: "How to Analyze TikTok Ads",
+    excerpt: "What to look at in a competitor's TikTok ads — hooks, pacing, retention signals, and creative angles.",
+    href: "/blog/how-to-analyze-tiktok-ads",
+    tag: "TikTok Research",
+  },
+  {
+    title: "The Ecommerce Ad Creative Framework",
+    excerpt: "How modern brands structure creative testing across hooks, formats, and angles — without burning budget.",
+    href: "/blog/ecommerce-ad-creative-framework",
+    tag: "Creative Strategy",
   },
 ];
 
-const categories = [
-  { icon: Target, label: "Tracking & Attribution", desc: "Server-side tracking, pixel management, and ROAS optimization" },
-  { icon: Bot, label: "AI Content & Ad Creation", desc: "Tools for creatives, copy, and content generation" },
-  { icon: Search, label: "Product Research", desc: "Find winning products and optimize your store" },
-  { icon: BarChart3, label: "Analytics & Reporting", desc: "Data dashboards, cohort analysis, and performance metrics" },
+// ---------- Store & Competitor Research ----------
+const storeResearch = [
+  {
+    title: "How to Spy on Shopify Stores",
+    excerpt: "The practical workflow for analysing competitor Shopify stores — themes, apps, pricing, offers, and conversion flow.",
+    href: "/blog/how-to-spy-on-shopify-stores",
+  },
+  {
+    title: "Best Shopify Spy Tools",
+    excerpt: "An operator-focused breakdown of the tools used to track Shopify competitors in 2026.",
+    href: "/blog/best-shopify-spy-tools",
+  },
+  {
+    title: "Best Tools for Shopify Store Analysis",
+    excerpt: "From tech stacks to conversion mapping — the tools we use to understand how a store actually works.",
+    href: "/blog/best-tools-for-shopify-store-analysis",
+  },
 ];
 
-const articles = [
-  { title: "Best AI Video Tools for 2026 (Tested for Ecommerce & Ads)", excerpt: "How we tested the top AI video tools for ecommerce ad workflows in 2026.", category: "AI Tools", date: "April 10, 2026", readTime: "8 min read", slug: "best-ai-video-tools", image: "/assets/blog/ai-tools-dropshipping.jpg" },
-  { title: "How to Improve Ecommerce Tracking Accuracy", excerpt: "Server-side tracking, CAPI setup, and first-party data strategies to recover lost conversions.", category: "Tracking", date: "April 8, 2026", readTime: "6 min read", slug: "improve-ecommerce-tracking", image: "/assets/blog/tracking-accuracy.jpg" },
-  { title: "Holo AI Review: Real Workflow Test", excerpt: "An honest review of Holo AI based on real ad creative testing workflows.", category: "Reviews", date: "April 5, 2026", readTime: "7 min read", slug: "holo-ai-review", image: "/assets/blog/chat-automation.jpg" },
+// ---------- Comparisons ----------
+const comparisons = [
+  {
+    tag: "Product Research",
+    title: "Minea vs WinningHunter",
+    excerpt: "Two ad-research platforms with very different workflows. How to choose based on how you actually research products.",
+    href: "/blog/minea-vs-winninghunter",
+  },
+  {
+    tag: "Store Analysis",
+    title: "BrandSearch vs WinningHunter",
+    excerpt: "Multichannel store intelligence vs TikTok-first ad discovery — which fits which type of operator.",
+    href: "/blog/brandsearch-vs-winninghunter",
+  },
+  {
+    tag: "Tracking",
+    title: "WeTracked vs Triple Whale",
+    excerpt: "Server-side tracking and attribution compared on cost, accuracy, setup time, and what each is built for.",
+    href: "/blog/wetracked-vs-triple-whale",
+  },
+];
+
+// ---------- Topical clusters ----------
+const clusters = [
+  { icon: Search, label: "Product Research", desc: "Workflows, frameworks, and tools for finding products that actually work.", href: "/blog/how-to-build-product-research-workflow" },
+  { icon: Layers, label: "Shopify Store Analysis", desc: "Competitor research, store intelligence, and conversion teardowns.", href: "/blog/how-to-spy-on-shopify-stores" },
+  { icon: Eye, label: "TikTok Ad Research", desc: "How to analyse TikTok ads and read creative performance signals.", href: "/blog/how-to-analyze-tiktok-ads" },
+  { icon: Sparkles, label: "Creative Strategy", desc: "Frameworks for structuring ad creative testing at scale.", href: "/blog/ecommerce-ad-creative-framework" },
+  { icon: Target, label: "Ad Tracking", desc: "Server-side tracking, attribution, and recovering lost conversions.", href: "/tools/wetracked-review" },
+  { icon: Bot, label: "AI Ecommerce Tools", desc: "AI tools for ad creative, video, and ecommerce content production.", href: "/blog/best-ai-video-tools" },
+];
+
+// ---------- Latest articles ----------
+const latestArticles = [
+  { title: "Best Tools for Shopify Store Analysis (2026)", excerpt: "How operators actually research competitor Shopify stores — and the tools that make it faster.", category: "Guides", date: "April 28, 2026", readTime: "18 min read", slug: "best-tools-for-shopify-store-analysis", image: "/images/shopify-store-analysis-hero.png" },
+  { title: "BrandSearch vs WinningHunter (2026)", excerpt: "An operator-focused comparison of two store-intelligence platforms — and how to choose based on workflow fit.", category: "Comparisons", date: "April 22, 2026", readTime: "16 min read", slug: "brandsearch-vs-winninghunter", image: "/images/brandsearch-vs-winninghunter-hero.png" },
+  { title: "The Ecommerce Ad Creative Framework", excerpt: "How modern brands structure ad creative testing without burning through budget.", category: "Creative Strategy", date: "April 15, 2026", readTime: "15 min read", slug: "ecommerce-ad-creative-framework", image: "/images/winning-creative-framework-dashboard.png" },
 ];
 
 export default function HomePage() {
   return (
     <div className="min-h-screen">
       <SEO
-        title="EcomStacked — Discover the Best AI & Growth Tools for Ecommerce"
-        description="We research, test, and organize tools that help dropshippers and ecommerce brands improve tracking, automate workflows, create better ads, and scale profitably."
-        ogTitle="EcomStacked — Best AI & Growth Tools for Ecommerce"
-        ogDescription="Discover curated tools for tracking, automation, AI ads, and ecommerce growth."
+        title="EcomStacked — Ecommerce Research, Workflows & Tool Reviews"
+        description="An independent ecommerce publication. Product research workflows, Shopify competitor analysis, TikTok ad research, creative frameworks, and operator-focused tool reviews."
+        ogTitle="EcomStacked — Ecommerce Research, Workflows & Tool Reviews"
+        ogDescription="Independent guides and tool reviews for ecommerce operators — product research, store analysis, TikTok ad research, and creative strategy."
       />
       <Header />
 
-      {/* Hero */}
-      <section className="relative overflow-hidden bg-card py-24 sm:py-32">
+      {/* Hero — editorial publication tone */}
+      <section className="relative overflow-hidden bg-card py-20 sm:py-28">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,var(--color-surface)_0%,transparent_70%)]" />
         <div className="relative mx-auto max-w-4xl px-4 text-center sm:px-6">
           <Badge variant="secondary" className="mb-6 px-4 py-1.5 text-xs font-medium tracking-wide">
-            Independent Ecommerce Software Reviews
+            Independent Ecommerce Publication
           </Badge>
           <h1 className="font-display text-4xl font-extrabold leading-[1.1] tracking-tight text-foreground sm:text-5xl lg:text-6xl">
-            Honest Reviews of Ecommerce &amp; AI Tools
+            Ecommerce tools, research workflows, and growth systems for modern operators.
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg sm:leading-relaxed">
-            We research and review the software ecommerce operators use every day — tracking, AI ad creation, automation, product research, and fulfillment. Read our guides to make informed decisions for your store.
+            EcomStacked is an editorial resource for Shopify store owners, DTC brands, and dropshippers — focused on product research, competitor intelligence, TikTok ad analysis, creative strategy, and the tools operators actually use day to day.
           </p>
           <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <Link to="/tools">
+            <Link to="/blog">
               <Button variant="brand" size="lg" className="gap-2 px-6">
-                Browse Tool Reviews <ArrowRight className="h-4 w-4" />
+                Read the Guides <ArrowRight className="h-4 w-4" />
               </Button>
             </Link>
-            <Link to="/blog">
-              <Button variant="outline" size="lg" className="px-6">Read Our Guides</Button>
+            <Link to="/tools">
+              <Button variant="outline" size="lg" className="px-6">Browse Tool Reviews</Button>
             </Link>
           </div>
           <p className="mt-6 text-xs text-muted-foreground">
-            Read by 2,000+ ecommerce founders &amp; operators
+            Independent research · No paid placements · Updated regularly
           </p>
         </div>
       </section>
 
-      {/* Make Money Stack */}
-      <section className="border-b border-border bg-surface py-16 sm:py-20">
-        <div className="mx-auto max-w-5xl px-4 sm:px-6">
-          <div className="text-center">
-            <p className="text-xs font-semibold uppercase tracking-widest text-brand">The Workflow</p>
-            <h2 className="mt-2 font-display text-2xl font-bold text-foreground sm:text-3xl">A Practical Ecommerce Stack</h2>
-            <p className="mx-auto mt-3 max-w-xl text-sm leading-relaxed text-muted-foreground">
-              Three categories that cover the core operational needs of most ecommerce brands: research, creative, and tracking.
-            </p>
-          </div>
-          <div className="mt-10 grid gap-4 sm:grid-cols-3">
-            {[
-              { step: "01", title: "Research products", tool: "WinningHunter", desc: "Spy on Shopify ads and validate products with real marketplace data.", href: "/tools/winninghunter", cta: "Read review" },
-              { step: "02", title: "Produce creatives", tool: "Holo AI", desc: "Generate UGC-style video and image ads from a product URL in minutes.", href: "/tools/holo-ai", cta: "Read review" },
-              { step: "03", title: "Track performance", tool: "WeTracked", desc: "Server-side tracking that captures conversions the browser pixel misses.", href: "/tools/wetracked-review", cta: "Read review" },
-            ].map((s) => (
-              <Card key={s.step} className="flex flex-col">
-                <CardContent className="flex flex-1 flex-col p-5">
-                  <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-brand/10 font-display text-xs font-bold text-brand">{s.step}</div>
-                  <p className="mt-3 text-xs font-semibold uppercase tracking-wider text-muted-foreground">{s.title}</p>
-                  <h3 className="mt-1 font-display text-lg font-bold text-foreground">{s.tool}</h3>
-                  <p className="mt-2 flex-1 text-xs leading-relaxed text-muted-foreground">{s.desc}</p>
-                  <Link to={s.href} className="mt-4">
-                    <Button variant="brand-outline" size="sm" className="w-full gap-1 text-xs">
-                      {s.cta} <ArrowRight className="h-3 w-3" />
-                    </Button>
-                  </Link>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-          <p className="mx-auto mt-6 max-w-xl text-center text-xs italic text-muted-foreground">
-            We test these tools in real ecommerce and paid traffic workflows. Recommendations are based on performance, not sponsorship.
-          </p>
-        </div>
-      </section>
-
-      {/* Editorial Bar */}
-      <section className="border-b border-border bg-card py-5">
+      {/* Editorial bar */}
+      <section className="border-y border-border bg-card py-5">
         <div className="mx-auto flex max-w-5xl flex-wrap items-center justify-center gap-x-8 gap-y-3 px-4 text-xs font-medium text-muted-foreground sm:px-6">
-          <span className="flex items-center gap-1.5"><FileSearch className="h-3.5 w-3.5 text-brand" /> 50+ Tools Reviewed</span>
-          <span className="flex items-center gap-1.5"><BookOpen className="h-3.5 w-3.5 text-brand" /> Weekly Editorial Content</span>
-          <span className="flex items-center gap-1.5"><Layers className="h-3.5 w-3.5 text-brand" /> 6 Coverage Categories</span>
-          <span className="flex items-center gap-1.5"><Shield className="h-3.5 w-3.5 text-brand" /> Independent &amp; Transparent</span>
+          <span className="flex items-center gap-1.5"><BookOpen className="h-3.5 w-3.5 text-brand" /> Long-form research guides</span>
+          <span className="flex items-center gap-1.5"><FileSearch className="h-3.5 w-3.5 text-brand" /> Operator-tested workflows</span>
+          <span className="flex items-center gap-1.5"><Shield className="h-3.5 w-3.5 text-brand" /> Editorial independence</span>
+          <span className="flex items-center gap-1.5"><Layers className="h-3.5 w-3.5 text-brand" /> Six topical clusters</span>
         </div>
       </section>
 
-      {/* Featured Tools */}
+      {/* Featured Guides — the authority hub pages */}
       <section className="py-20 sm:py-24">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
-          <div className="flex items-end justify-between">
+          <div className="flex items-end justify-between gap-6">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-widest text-brand">Curated Software</p>
-              <h2 className="mt-2 font-display text-2xl font-bold text-foreground sm:text-3xl">Featured Tools</h2>
-              <p className="mt-2 max-w-lg text-sm leading-relaxed text-muted-foreground">Hand-picked software for ecommerce growth, evaluated for real-world performance.</p>
+              <p className="text-xs font-semibold uppercase tracking-widest text-brand">Featured Guides</p>
+              <h2 className="mt-2 font-display text-2xl font-bold text-foreground sm:text-3xl">Where to start</h2>
+              <p className="mt-2 max-w-xl text-sm leading-relaxed text-muted-foreground">
+                Long-form guides that anchor each of our research clusters — built to be referenced, not skimmed.
+              </p>
             </div>
-            <Link to="/tools" className="hidden text-sm font-medium text-brand hover:underline sm:block">
-              View all tools →
+            <Link to="/blog" className="hidden text-sm font-medium text-brand hover:underline sm:block">
+              All guides →
             </Link>
           </div>
-          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {featuredTools.map((tool) => (
-              <Card
-                key={tool.name}
-                className="group flex flex-col overflow-hidden border-border/70 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-xl"
-              >
-                {/* Real product screenshot — branding intact */}
-                <div className="relative aspect-[4/3] w-full overflow-hidden rounded-t-xl border-b border-border bg-white">
-                  <img
-                    src={tool.image}
-                    alt={`${tool.name} dashboard preview — original product interface`}
-                    className="h-full w-full object-cover object-top"
-                    loading="lazy"
-                  />
-                </div>
-                <p className="border-b border-border bg-surface px-4 py-2 text-[11px] italic leading-snug text-muted-foreground">
-                  {tool.caption}
-                </p>
-
-                <CardContent className="flex flex-1 flex-col p-6">
-                  <div className="flex items-center justify-between gap-2">
-                    <h3 className="font-display text-lg font-bold text-foreground">{tool.name}</h3>
-                    <Badge variant="secondary" className="shrink-0 text-[10px] uppercase tracking-wide">
-                      Editor's Pick
-                    </Badge>
-                  </div>
-                  <p className="mt-1 text-[11px] font-medium uppercase tracking-wider text-brand">{tool.tag}</p>
-                  <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{tool.description}</p>
-
-                  <ul className="mt-4 space-y-2">
-                    {tool.bullets.map((b) => (
-                      <li key={b} className="flex items-start gap-2 text-xs text-foreground">
-                        <CheckCircle2 className="mt-0.5 h-3.5 w-3.5 shrink-0 text-brand" />
-                        <span>{b}</span>
-                      </li>
-                    ))}
-                  </ul>
-
-                  <Link to={tool.href} className="mt-6 block">
-                    <Button variant="brand" size="default" className="w-full gap-2 rounded-lg">
-                      Learn More <ArrowRight className="h-4 w-4" />
-                    </Button>
-                  </Link>
-                </CardContent>
-              </Card>
+          <div className="mt-10 grid gap-5 sm:grid-cols-2">
+            {featuredGuides.map((g) => (
+              <Link to={g.href} key={g.href} className="group">
+                <Card className="h-full transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md">
+                  <CardContent className="flex h-full flex-col p-6">
+                    <Badge variant="secondary" className="self-start text-[10px] uppercase tracking-wider">{g.tag}</Badge>
+                    <h3 className="mt-3 font-display text-lg font-bold text-foreground group-hover:text-brand">{g.title}</h3>
+                    <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">{g.excerpt}</p>
+                    <span className="mt-4 inline-flex items-center gap-1 text-xs font-medium text-brand">
+                      Read the guide <ArrowRight className="h-3.5 w-3.5" />
+                    </span>
+                  </CardContent>
+                </Card>
+              </Link>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Latest Ecommerce Tool Comparisons */}
-      <section className="border-y border-border bg-surface py-16 sm:py-20">
+      {/* Store & Competitor Research */}
+      <section className="border-y border-border bg-surface py-20 sm:py-24">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+          <div className="text-center">
+            <p className="text-xs font-semibold uppercase tracking-widest text-brand">Store &amp; Competitor Research</p>
+            <h2 className="mt-2 font-display text-2xl font-bold text-foreground sm:text-3xl">Understand how competing stores actually work</h2>
+            <p className="mx-auto mt-3 max-w-xl text-sm leading-relaxed text-muted-foreground">
+              How to research competitor Shopify stores — apps, themes, offers, and the tools that make the workflow repeatable.
+            </p>
+          </div>
+          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {storeResearch.map((p) => (
+              <Link to={p.href} key={p.href} className="group">
+                <Card className="h-full transition-all hover:border-brand/30 hover:shadow-sm">
+                  <CardContent className="flex h-full flex-col p-6">
+                    <h3 className="font-display text-base font-bold text-foreground group-hover:text-brand">{p.title}</h3>
+                    <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">{p.excerpt}</p>
+                    <span className="mt-4 inline-flex items-center gap-1 text-xs font-medium text-brand">
+                      Read more <ArrowRight className="h-3.5 w-3.5" />
+                    </span>
+                  </CardContent>
+                </Card>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Comparisons */}
+      <section className="py-20 sm:py-24">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <div className="text-center">
             <p className="text-xs font-semibold uppercase tracking-widest text-brand">Editorial Comparisons</p>
-            <h2 className="mt-2 font-display text-2xl font-bold text-foreground sm:text-3xl">Latest Ecommerce Tool Comparisons</h2>
-            <p className="mx-auto mt-3 max-w-lg text-sm leading-relaxed text-muted-foreground">
-              Side-by-side breakdowns of the tools real operators are deciding between in 2026.
+            <h2 className="mt-2 font-display text-2xl font-bold text-foreground sm:text-3xl">Tool comparisons, written for operators</h2>
+            <p className="mx-auto mt-3 max-w-xl text-sm leading-relaxed text-muted-foreground">
+              Side-by-side breakdowns based on workflow fit — not feature checklists.
             </p>
           </div>
           <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            <Card className="flex flex-col">
-              <CardContent className="flex flex-1 flex-col p-6">
-                <Badge variant="secondary" className="self-start text-xs">Tracking</Badge>
-                <h3 className="mt-3 font-display text-lg font-bold text-foreground">WeTracked vs Triple Whale</h3>
-                <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">
-                  Compare pricing, tracking accuracy, setup time, and which tool is better for Shopify brands in 2026.
-                </p>
-                <Link to="/blog/wetracked-vs-triple-whale" className="mt-5 block">
-                  <Button variant="brand" size="default" className="w-full gap-2 rounded-lg">
-                    Read the comparison <ArrowRight className="h-4 w-4" />
-                  </Button>
-                </Link>
-              </CardContent>
-            </Card>
-            <Card className="flex flex-col">
-              <CardContent className="flex flex-1 flex-col p-6">
-                <Badge variant="secondary" className="self-start text-xs">AI Tools</Badge>
-                <h3 className="mt-3 font-display text-lg font-bold text-foreground">Holo AI vs Pictory</h3>
-                <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">
-                  Two AI video tools, two very different workflows. See which one fits ecommerce ad testing in 2026.
-                </p>
-                <Link to="/blog/holo-ai-vs-pictory" className="mt-5 block">
-                  <Button variant="brand" size="default" className="w-full gap-2 rounded-lg">
-                    Read the comparison <ArrowRight className="h-4 w-4" />
-                  </Button>
-                </Link>
-              </CardContent>
-            </Card>
-            <Card className="flex flex-col">
-              <CardContent className="flex flex-1 flex-col p-6">
-                <Badge variant="secondary" className="self-start text-xs">Product Research</Badge>
-                <h3 className="mt-3 font-display text-lg font-bold text-foreground">Trendtrack vs Minea</h3>
-                <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">
-                  How the two best-known product research tools differ on data, ad spy coverage, and pricing.
-                </p>
-                <Link to="/blog/trendtrack-vs-minea" className="mt-5 block">
-                  <Button variant="brand" size="default" className="w-full gap-2 rounded-lg">
-                    Read the comparison <ArrowRight className="h-4 w-4" />
-                  </Button>
-                </Link>
-              </CardContent>
-            </Card>
+            {comparisons.map((c) => (
+              <Card key={c.href} className="flex flex-col">
+                <CardContent className="flex flex-1 flex-col p-6">
+                  <Badge variant="secondary" className="self-start text-xs">{c.tag}</Badge>
+                  <h3 className="mt-3 font-display text-lg font-bold text-foreground">{c.title}</h3>
+                  <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">{c.excerpt}</p>
+                  <Link to={c.href} className="mt-5 text-sm font-medium text-brand hover:underline">
+                    Read the comparison →
+                  </Link>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Categories */}
+      {/* Topical clusters */}
       <section className="bg-surface py-20 sm:py-24">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <div className="text-center">
             <p className="text-xs font-semibold uppercase tracking-widest text-brand">What We Cover</p>
-            <h2 className="mt-2 font-display text-2xl font-bold text-foreground sm:text-3xl">Browse by Category</h2>
-            <p className="mx-auto mt-3 max-w-lg text-sm leading-relaxed text-muted-foreground">Find the right tools for every part of your ecommerce stack</p>
+            <h2 className="mt-2 font-display text-2xl font-bold text-foreground sm:text-3xl">Browse by topic</h2>
+            <p className="mx-auto mt-3 max-w-lg text-sm leading-relaxed text-muted-foreground">
+              Each cluster is anchored by a long-form hub guide and supported by deeper articles, frameworks, and tool reviews.
+            </p>
           </div>
           <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {categories.map((cat) => (
-              <Link to="/tools" key={cat.label}>
+            {clusters.map((cat) => (
+              <Link to={cat.href} key={cat.label}>
                 <Card className="group h-full transition-all duration-200 hover:shadow-md hover:border-brand/20">
                   <CardContent className="flex items-start gap-4 p-6">
                     <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-brand/10">
@@ -294,22 +268,22 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* How We Research Tools */}
+      {/* How We Research */}
       <section className="py-20 sm:py-24">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <div className="grid items-start gap-12 lg:grid-cols-2">
             <div>
               <p className="text-xs font-semibold uppercase tracking-widest text-brand">Our Process</p>
-              <h2 className="mt-2 font-display text-2xl font-bold text-foreground sm:text-3xl">How We Research Tools</h2>
+              <h2 className="mt-2 font-display text-2xl font-bold text-foreground sm:text-3xl">How we research and write</h2>
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-                Every tool on EcomStacked goes through a structured editorial process. We don't accept paid placements or rank tools based on commission rates.
+                Every guide and review on EcomStacked goes through a structured editorial process. We don't accept paid placements and we don't rank tools based on commission rates.
               </p>
               <div className="mt-8 space-y-5">
                 {[
-                  { step: "01", title: "Identify Real Needs", desc: "We start with the problems ecommerce operators actually face — not vendor pitches." },
-                  { step: "02", title: "Hands-On Evaluation", desc: "We test each tool in real ecommerce workflows, evaluating setup, usability, and results." },
-                  { step: "03", title: "Compare Alternatives", desc: "We look at the competitive landscape to understand where each tool fits." },
-                  { step: "04", title: "Publish Honest Assessments", desc: "We write recommendations with clear strengths, limitations, and use cases." },
+                  { step: "01", title: "Identify real operator problems", desc: "We start with workflows and decisions ecommerce operators actually face — not vendor pitches." },
+                  { step: "02", title: "Hands-on evaluation", desc: "We test tools and frameworks in real research, creative, and tracking workflows." },
+                  { step: "03", title: "Compare alternatives honestly", desc: "We map the competitive landscape so readers can see where each tool fits — and where it doesn't." },
+                  { step: "04", title: "Publish, then update", desc: "Software changes constantly. We revisit guides and reviews as workflows evolve." },
                 ].map((item) => (
                   <div key={item.step} className="flex gap-4">
                     <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-surface font-display text-xs font-bold text-brand">
@@ -322,13 +296,18 @@ export default function HomePage() {
                   </div>
                 ))}
               </div>
+              <div className="mt-8">
+                <Link to="/editorial-policy" className="inline-flex items-center gap-1 text-sm font-medium text-brand hover:underline">
+                  Read our editorial policy <ArrowRight className="h-3.5 w-3.5" />
+                </Link>
+              </div>
             </div>
             <div className="space-y-4">
               {[
-                { icon: Shield, title: "Editorial Independence", desc: "Our recommendations are based on research and testing — not advertising spend. We clearly disclose affiliate relationships." },
-                { icon: Eye, title: "Transparency First", desc: "We explain our methodology, show our evaluation criteria, and always note when a link is an affiliate partnership." },
-                { icon: TrendingUp, title: "Operator-Focused", desc: "We evaluate tools from the perspective of someone running a store. Practical value is what matters." },
-                { icon: CheckCircle2, title: "Continuous Updates", desc: "Tools change, pricing shifts, and new alternatives emerge. We revisit and update our recommendations regularly." },
+                { icon: Shield, title: "Editorial Independence", desc: "Our recommendations are based on research and testing — not advertising spend. Affiliate relationships are clearly disclosed." },
+                { icon: Eye, title: "Transparency First", desc: "We explain our methodology, show our evaluation criteria, and label every affiliate link." },
+                { icon: TrendingUp, title: "Operator-Focused", desc: "We evaluate tools and workflows from the perspective of someone running a store. Practical value is what matters." },
+                { icon: CheckCircle2, title: "Continuous Updates", desc: "Tools change, pricing shifts, and new alternatives emerge. We revisit and update our content regularly." },
               ].map((item) => (
                 <div key={item.title} className="rounded-xl border border-border bg-card p-5">
                   <div className="flex items-center gap-3">
@@ -345,22 +324,43 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Who This Site Helps */}
+      {/* Latest Articles */}
       <section className="bg-surface py-20 sm:py-24">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+          <div className="flex items-end justify-between">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-widest text-brand">From the Blog</p>
+              <h2 className="mt-2 font-display text-2xl font-bold text-foreground sm:text-3xl">Latest articles</h2>
+              <p className="mt-2 max-w-lg text-sm leading-relaxed text-muted-foreground">Recently published research, frameworks, and tool breakdowns.</p>
+            </div>
+            <Link to="/blog" className="hidden text-sm font-medium text-brand hover:underline sm:block">
+              View all articles →
+            </Link>
+          </div>
+          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {latestArticles.map((article) => (
+              <ArticleCard key={article.slug} {...article} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Who this site helps */}
+      <section className="py-20 sm:py-24">
         <div className="mx-auto max-w-4xl px-4 text-center sm:px-6">
           <p className="text-xs font-semibold uppercase tracking-widest text-brand">Our Audience</p>
-          <h2 className="mt-2 font-display text-2xl font-bold text-foreground sm:text-3xl">Who This Site Helps</h2>
+          <h2 className="mt-2 font-display text-2xl font-bold text-foreground sm:text-3xl">Who EcomStacked is for</h2>
           <p className="mx-auto mt-3 max-w-xl text-sm leading-relaxed text-muted-foreground">
-            EcomStacked is built for people who run online businesses and want practical, trustworthy guidance on what software to use.
+            We write for people who run online businesses and want practical, trustworthy guidance on the workflows and software that actually move the needle.
           </p>
           <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {[
-              { title: "Dropshippers", desc: "Building and scaling stores with the right systems" },
-              { title: "Shopify Store Owners", desc: "Optimizing operations, tracking, and performance" },
-              { title: "Ecommerce Founders", desc: "Looking for better tools and automation stacks" },
-              { title: "Media Buyers", desc: "Improving ad tracking, attribution, and ROAS" },
-              { title: "Performance Marketers", desc: "Testing new tools for content, creative, and analytics" },
-              { title: "Small Business Owners", desc: "Automating workflows and growing with fewer resources" },
+              { title: "Shopify store owners", desc: "Operators optimising tracking, research, and conversion." },
+              { title: "DTC brand teams", desc: "Looking for sharper research and creative workflows." },
+              { title: "Dropshipping operators", desc: "Building systems for product testing at scale." },
+              { title: "Media buyers", desc: "Improving ad tracking, attribution, and creative testing." },
+              { title: "Performance marketers", desc: "Evaluating tools for content, creative, and analytics." },
+              { title: "Founders & solo operators", desc: "Building lean stacks without bloating the workflow." },
             ].map((item) => (
               <div key={item.title} className="rounded-xl border border-border bg-card p-5 text-left">
                 <h3 className="font-display text-sm font-bold text-foreground">{item.title}</h3>
@@ -368,92 +368,6 @@ export default function HomePage() {
               </div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Why Readers Trust Us */}
-      <section className="py-20 sm:py-24">
-        <div className="mx-auto max-w-4xl px-4 text-center sm:px-6">
-          <p className="text-xs font-semibold uppercase tracking-widest text-brand">Trust &amp; Credibility</p>
-          <h2 className="mt-2 font-display text-2xl font-bold text-foreground sm:text-3xl">Why Readers Trust EcomStacked</h2>
-          <p className="mx-auto mt-3 max-w-xl text-sm leading-relaxed text-muted-foreground">
-            We're an independent resource focused on helping ecommerce operators make better tool decisions — not a sales funnel disguised as content.
-          </p>
-          <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-            {[
-              { icon: Shield, title: "No Pay-to-Play", desc: "We never rank tools based on commission rates or vendor payments." },
-              { icon: Eye, title: "Full Disclosure", desc: "Affiliate links are always labeled. Our process is open and transparent." },
-              { icon: BookOpen, title: "Editorial Standards", desc: "Every recommendation follows a structured research and evaluation process." },
-              { icon: CheckCircle2, title: "Reader-First", desc: "We prioritize what's useful for our readers over what's profitable for us." },
-            ].map((item) => (
-              <div key={item.title} className="text-center">
-                <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-2xl bg-surface">
-                  <item.icon className="h-5 w-5 text-brand" />
-                </div>
-                <h3 className="mt-4 font-display text-sm font-bold text-foreground">{item.title}</h3>
-                <p className="mt-2 text-xs leading-relaxed text-muted-foreground">{item.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Latest Articles */}
-      <section className="bg-surface py-20 sm:py-24">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6">
-          <div className="flex items-end justify-between">
-            <div>
-              <p className="text-xs font-semibold uppercase tracking-widest text-brand">From the Blog</p>
-              <h2 className="mt-2 font-display text-2xl font-bold text-foreground sm:text-3xl">Latest Articles</h2>
-              <p className="mt-2 max-w-lg text-sm leading-relaxed text-muted-foreground">Guides, strategies, and tool breakdowns for ecommerce growth</p>
-            </div>
-            <Link to="/blog" className="hidden text-sm font-medium text-brand hover:underline sm:block">
-              View all articles →
-            </Link>
-          </div>
-          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {articles.map((article) => (
-              <ArticleCard key={article.slug} {...article} />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Recommended Stack */}
-      <section className="py-20 sm:py-24">
-        <div className="mx-auto max-w-4xl px-4 text-center sm:px-6">
-          <p className="text-xs font-semibold uppercase tracking-widest text-brand">Starter Stack</p>
-          <h2 className="mt-2 font-display text-2xl font-bold text-foreground sm:text-3xl">The Recommended Ecommerce Stack</h2>
-          <p className="mx-auto mt-3 max-w-xl text-sm leading-relaxed text-muted-foreground">A focused set of tools we've tested in real ecommerce and paid traffic workflows.</p>
-          <div className="mt-10 grid gap-4 sm:grid-cols-3">
-            {[
-              { category: "Tracking", tool: "WeTracked", reason: "Server-side ad tracking", href: "/tools/wetracked-review" },
-              { category: "AI Ads", tool: "Holo AI", reason: "Ad creatives at scale", href: "/tools/holo-ai" },
-              { category: "Research", tool: "WinningHunter", reason: "Product & ad research", href: "/tools/winninghunter" },
-            ].map((item) => (
-              <Link to={item.href} key={item.tool}>
-                <Card className="text-left transition-all hover:border-brand/30 hover:shadow-sm">
-                  <CardContent className="flex items-center gap-4 p-5">
-                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-surface">
-                      <span className="font-display text-sm font-bold text-surface-foreground">{item.tool.charAt(0)}</span>
-                    </div>
-                    <div>
-                      <div className="flex items-center gap-2">
-                        <h3 className="font-display text-sm font-bold text-card-foreground">{item.tool}</h3>
-                        <Badge variant="secondary" className="text-xs">{item.category}</Badge>
-                      </div>
-                      <p className="mt-0.5 text-xs text-muted-foreground">{item.reason}</p>
-                    </div>
-                  </CardContent>
-                </Card>
-              </Link>
-            ))}
-          </div>
-          <Link to="/tools" className="mt-8 inline-block">
-            <Button variant="outline" className="gap-2">
-              See all reviews <ArrowRight className="h-4 w-4" />
-            </Button>
-          </Link>
         </div>
       </section>
 
