@@ -1232,6 +1232,9 @@ function ArticleWeTrackedReview() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           Written for operators who want to understand what the tool actually does — before deciding whether it fits their stack.
         </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          Tracking is one layer of a healthy operator stack. For the broader context, see our <Link to="/blog/how-to-build-product-research-workflow" className="text-brand underline-offset-4 hover:underline">operator research workflow</Link>, the <Link to="/blog/product-validation-framework" className="text-brand underline-offset-4 hover:underline">product validation workflow</Link>, and our <Link to="/blog/ecommerce-ad-creative-framework" className="text-brand underline-offset-4 hover:underline">ad creative framework</Link> — accurate tracking only pays off when the products and creatives behind it are sound.
+        </p>
 
         <WTFigure
           src="/images/wetracked-dashboard-overview.png"
@@ -2685,6 +2688,9 @@ function ArticleHoloReview() {
         </p>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           No fluff, no inflated claims — just what the tool does well, where it falls short, what it costs, and how it compares to the main alternatives in 2026.
+        </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          For the broader operator context behind this review, see our <Link to="/blog/ecommerce-ad-creative-framework" className="text-brand underline-offset-4 hover:underline">ad creative framework</Link>, the <Link to="/blog/ai-video-ads-for-ecommerce" className="text-brand underline-offset-4 hover:underline">AI video ads playbook</Link>, and the <Link to="/blog/how-to-analyze-tiktok-ads" className="text-brand underline-offset-4 hover:underline">TikTok creative testing</Link> process — Holo AI is most useful when it slots into a structured creative workflow, not as a standalone shortcut.
         </p>
         <p className="mt-4 rounded-md border-l-2 border-brand/40 bg-surface px-3 py-2 text-xs italic text-muted-foreground">
           This review is based on real usage scenarios, not promotional claims. Recommendations reflect performance, not sponsorship.
@@ -4954,6 +4960,9 @@ function ArticleWinningHunterAlternatives() {
         </p>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           Use this article as a decision shortcut. If you already know your lane (TikTok-only, store-spy-only, creative-only), one of the alternatives below probably wins. If you don't, the answer is almost always WinningHunter — and the rest of the page explains exactly why.
+        </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          For the workflow context behind this comparison, see our <Link to="/blog/how-to-build-product-research-workflow" className="text-brand underline-offset-4 hover:underline">operator research workflow</Link>, the <Link to="/blog/product-validation-framework" className="text-brand underline-offset-4 hover:underline">product validation workflow</Link>, and our breakdown of the <Link to="/blog/best-tiktok-ad-spy-tools" className="text-brand underline-offset-4 hover:underline">ecommerce ad spy tools</Link> that surface the products worth testing in the first place.
         </p>
         <AffiliateCTA label="Find winning products before wasting ad budget" />
 
