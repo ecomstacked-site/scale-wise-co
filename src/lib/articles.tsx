@@ -9132,6 +9132,7 @@ function ArticleHowToSpyOnShopifyStores() {
         <p className="mt-4 text-base leading-relaxed text-muted-foreground">
           When you're ready to choose between specific platforms, our <Link to="/blog/brandsearch-vs-winninghunter" className="text-brand underline-offset-4 hover:underline">BrandSearch vs WinningHunter breakdown</Link>, <Link to="/blog/ppspy-vs-minea" className="text-brand underline-offset-4 hover:underline">PPSpy vs Minea comparison</Link>, and <Link to="/blog/minea-vs-winninghunter" className="text-brand underline-offset-4 hover:underline">Minea vs WinningHunter</Link> map how each fits a real Shopify research stack.
         </p>
+      </section>
 
       <section>
         <h2 className="font-display text-2xl font-extrabold text-foreground">Why Ecommerce Operators Analyze Competitor Stores</h2>
