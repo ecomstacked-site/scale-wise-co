@@ -5262,287 +5262,269 @@ function ArticleWhatIsMinea() {
   );
 }
 
+const PPSPY_AFF = "https://www.ppspy.com/?ref=ECOMSTACKED";
+
 function ArticlePPSpyVsMinea() {
   return (
-    <div className="space-y-8">
+    <div className="space-y-10">
       <section>
         <p className="text-sm leading-relaxed text-muted-foreground">
-          Picking the wrong product research tool is one of the most expensive mistakes a dropshipper can make. Not because of the subscription cost — but because every weak product test that slips through your research filter burns <strong className="text-foreground">$50–$150 in ad spend</strong> before you have enough data to kill it. Test 5 weak products in a row and you've torched $500–$700 before earning a dollar.
+          Most ecommerce operators don't compare research tools because they're curious. They compare them because something inside the workflow is slow — sourcing is dragging, competitor moves are noticed too late, or creative research keeps surfacing the same recycled ideas. PPSpy and Minea both promise to fix that, but they take very different routes to get there.
         </p>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          PPSpy and Minea are two of the most-recommended product research tools on the market in 2026. They sound similar, but they solve very different problems. This guide breaks down which tool wins for your specific use case — and where both fall short compared to an all-in-one option.
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          This comparison is written for operators, not for affiliate scoreboards. The goal isn't to crown a winner — it's to map where each tool genuinely earns its seat in a research stack, and where it doesn't. The "best" tool depends on your stage, your platform mix, and how you actually run research week to week.
         </p>
-      </section>
-
-      <section className="rounded-xl border border-brand/20 bg-brand/5 p-5">
-        <h2 className="font-display text-lg font-bold text-foreground">Quick Answer (TL;DR)</h2>
-        <ul className="mt-3 space-y-2 text-sm leading-relaxed text-muted-foreground">
-          <li>• <strong className="text-foreground">If you want store-level data and Shopify spy</strong> → choose <strong className="text-foreground">PPSpy</strong>.</li>
-          <li>• <strong className="text-foreground">If you want deep ad library and creative inspiration</strong> → choose <strong className="text-foreground">Minea</strong>.</li>
-          <li>• <strong className="text-foreground">If you want ad spy + store tracking + sales data in one workflow</strong> → see our <Link to="/tools/winninghunter" className="text-brand underline-offset-2 hover:underline">WinningHunter review</Link> or browse the <Link to="/best-product-research-tools" className="text-brand underline-offset-2 hover:underline">best product research tools</Link> for 2026.</li>
-        </ul>
-      </section>
-
-      <section className="rounded-xl border-2 border-brand/30 bg-gradient-to-br from-brand/10 to-brand/5 p-5">
-        <div className="flex items-center gap-2">
-          <span className="inline-flex h-6 items-center rounded-full bg-brand/20 px-2.5 text-xs font-bold uppercase tracking-wide text-brand">30-Second Decision</span>
-        </div>
-        <h2 className="mt-3 font-display text-lg font-bold text-foreground">Don't have time to read 2,500 words? Here's the verdict.</h2>
-        <ul className="mt-3 space-y-2 text-sm leading-relaxed text-muted-foreground">
-          <li>🥉 <strong className="text-foreground">PPSpy</strong> — solid store spy, but blind on ad creative. You'll still need a second tool.</li>
-          <li>🥈 <strong className="text-foreground">Minea</strong> — strong ad library, but no store-level sales data. You'll still need a second tool.</li>
-          <li>🥇 <strong className="text-foreground">WinningHunter</strong> — ad spy + store tracking + sales validation in one dashboard. Replaces both. <Link to="/tools/winninghunter" className="text-brand font-semibold underline-offset-2 hover:underline">See the full review →</Link></li>
-        </ul>
-        <p className="mt-3 text-xs leading-relaxed text-muted-foreground">
-          <strong className="text-foreground">Why this matters:</strong> stacking PPSpy + Minea costs $80–$250/mo combined. WinningHunter starts around $49/mo and removes the blind spots between tools — the same blind spots that cause $500+ in wasted ad tests every month.
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          If you don't have a structured research process yet, the bigger leverage point is the workflow itself, not the software. Start with our{" "}
+          <Link to="/blog/how-to-build-product-research-workflow" className="text-brand underline">how to build a product research workflow</Link> guide, then come back here to choose the tool that fits inside that system.
+        </p>
+        <ArticleImage
+          src="/images/ppspy-vs-minea-hero.png"
+          alt="Side-by-side overview dashboards of PPSpy and Minea showing Shopify store tracking, product discovery, ad analytics, and ecommerce trend monitoring"
+          caption="PPSpy and Minea overlap on the surface but pull operators toward very different research habits."
+          priority
+        />
+        <p className="text-xs italic text-muted-foreground">
+          Based on real testing workflows used by ecommerce operators. Not influenced by sponsors. Always verify pricing and feature availability on each tool's official site before subscribing.
         </p>
       </section>
 
       <section>
-        <h2 className="font-display text-xl font-bold text-foreground">PPSpy vs Minea at a Glance</h2>
-        <div className="mt-4 overflow-x-auto rounded-lg border border-border">
-          <table className="w-full text-left text-sm">
-            <thead className="bg-surface text-xs uppercase text-muted-foreground">
-              <tr>
-                <th className="p-3 font-semibold">Tool</th>
-                <th className="p-3 font-semibold">Best For</th>
-                <th className="p-3 font-semibold">Pricing</th>
-                <th className="p-3 font-semibold">Ease of Use</th>
-                <th className="p-3 font-semibold">Key Strength</th>
-                <th className="p-3 font-semibold">Verdict</th>
+        <h2 className="font-display text-xl font-bold text-foreground">What PPSpy and Minea Are Designed For</h2>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          PPSpy is positioned as a Shopify-first competitor intelligence tool. The narrative is simple: monitor stores, track product launches, watch sales velocity, and react before competitors get too far ahead. Operators reach for PPSpy when their core question is "what are real Shopify brands selling, and how fast is it moving?" rather than "what's the latest viral TikTok hook?"
+        </p>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          Minea is positioned as a multi-platform ad spy and product discovery suite. Its center of gravity is the creative library — TikTok, Meta, Pinterest, and influencer placements — wrapped around a winning-products feed and lighter store tracking. Operators reach for Minea when the bottleneck is creative research, not store-level competitive intelligence.
+        </p>
+        <ul className="mt-4 list-disc space-y-2 pl-6 text-sm text-muted-foreground">
+          <li><strong className="text-foreground">PPSpy core users:</strong> Shopify-focused operators, dropshippers, and DTC brands who want store tracking, product launch alerts, and revenue/sales estimates as their primary research surface.</li>
+          <li><strong className="text-foreground">Minea core users:</strong> creative-led teams and TikTok/Meta operators who want a deep ad library, hook patterns, and a winning-product feed that pulls signals from multiple ad networks.</li>
+        </ul>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          Neither positioning makes one tool universally "better." They reflect different beliefs about where insight actually lives. PPSpy assumes the truth is in the store: what's listed, what's repriced, what's launching. Minea assumes the truth is in the ad: what hooks are running, what creators are pushing it, what creative angles are converting.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Shopify Store Research & Competitor Tracking</h2>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          For Shopify-first operators, this is where the comparison usually gets decided. Both tools touch store-level data, but the depth and intent are different.
+        </p>
+        <ArticleImage
+          src="/images/ppspy-shopify-store-analysis.png"
+          alt="PPSpy Shopify dashboard showing store overview, competitor monitoring, pricing analysis, store intelligence timeline, and saturation tracking"
+          caption="PPSpy's Shopify cockpit emphasizes store tracking, pricing moves, and saturation signals over creative research."
+        />
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          <a href={PPSPY_AFF} rel="sponsored noopener noreferrer" target="_blank" className="text-brand underline">PPSpy</a> is commonly used for Shopify competitor tracking and store discovery workflows. Operators set up watchlists of stores they care about, monitor product launches, watch top-selling products by velocity, and track price and discount changes over time. The dashboards lean toward "what changed in my competitive set this week" rather than "what's hot on TikTok."
+        </p>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          Minea also offers Shopify store tracking, but it's a complement to its ad-led research model rather than the centerpiece. You can drill into a store's product catalog and surface signals about active products, but the depth of pricing intelligence, saturation tracking, and historical store timelines is not the focus.
+        </p>
+        <h3 className="mt-6 font-display text-base font-bold text-foreground">Where each tool wins on store research</h3>
+        <ul className="mt-3 list-disc space-y-2 pl-6 text-sm text-muted-foreground">
+          <li><strong className="text-foreground">PPSpy:</strong> deeper Shopify-centric workflows — store tracking, top product feeds, pricing/discount monitoring, saturation signals, and "new product launched in tracked store" alerts.</li>
+          <li><strong className="text-foreground">Minea:</strong> store research as a secondary lens — useful for confirming that a product flagged from an ad is actually live and selling, but not the primary surface.</li>
+          <li><strong className="text-foreground">Operator pattern:</strong> teams that run a watchlist of 30–100 competitor stores typically lean toward PPSpy; teams that mostly look at stores after seeing an ad lean toward Minea.</li>
+        </ul>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          For a wider lens on this category, see our guide to the{" "}
+          <Link to="/blog/best-shopify-spy-tools" className="text-brand underline">best Shopify spy tools</Link>.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">TikTok & Facebook Ad Research Comparison</h2>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          Ad research is where Minea's positioning is strongest, and where PPSpy is intentionally lighter. Operators looking for deep creative intelligence usually treat this section as the deciding factor.
+        </p>
+        <ArticleImage
+          src="/images/ppspy-minea-ad-research.png"
+          alt="Side-by-side ad intelligence dashboards: PPSpy ecommerce ad intelligence with TikTok trend chart and ad hook analysis, and Minea product and ad discovery with creative analysis"
+          caption="Both tools surface ad signals, but Minea is built around the creative library while PPSpy treats ads as supporting context for store research."
+        />
+        <h3 className="mt-6 font-display text-base font-bold text-foreground">Ad library depth</h3>
+        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+          Minea's creative library spans TikTok, Meta, Pinterest, and influencer placements. The volume is the point: filter by network, niche, country, engagement, and ad age, then drill into specific hooks, creators, and product pages. For creative-led teams, that breadth is the main reason to subscribe.
+        </p>
+        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+          PPSpy includes ad signals — TikTok trend charts, hook patterns, and engagement context — but they're framed as supporting evidence for store-level research. You won't usually open PPSpy primarily to brainstorm hooks; you'll open it to validate that a tracked store's traffic source matches what the ads suggest.
+        </p>
+        <h3 className="mt-6 font-display text-base font-bold text-foreground">Creative tracking and hook patterns</h3>
+        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+          Minea exposes more granular creative tagging — before/after, problem-solution, demonstration, UGC, and so on. This is useful when your weekly research routine includes a "what hook patterns are repeating across winners?" review. PPSpy's creative breakdown is shallower and meant to give you a quick gut check rather than a creative-strategy worksheet.
+        </p>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          For an operator-level walkthrough of how to read ad signals beyond either tool, see our guide on{" "}
+          <Link to="/blog/how-to-analyze-tiktok-ads" className="text-brand underline">how to analyze TikTok ads</Link> and our roundup of the{" "}
+          <Link to="/blog/best-tiktok-ad-spy-tools" className="text-brand underline">best TikTok ad spy tools</Link>.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Product Discovery & Research Workflow</h2>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          Both tools surface "winning products," but the discovery flow is different — and that difference shapes how operators actually use them week to week.
+        </p>
+        <ArticleImage
+          src="/images/ppspy-product-research-workflow.png"
+          alt="Ecommerce product discovery and scaling workflow showing TikTok trend analysis, market gaps, product sourcing, Shopify research, competitor intelligence, and scaling systems"
+          caption="A realistic ecommerce product workflow: discovery, validation, competitor tracking, and scaling — research tools are inputs, not the system itself."
+        />
+        <h3 className="mt-6 font-display text-base font-bold text-foreground">Trend discovery</h3>
+        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+          Minea's trend discovery is ad-led: a product appears in the winning feed because something is running on TikTok or Meta with strong engagement. PPSpy's trend discovery is store-led: a product surfaces because tracked stores are pushing it, repricing it, or launching variants of it.
+        </p>
+        <h3 className="mt-6 font-display text-base font-bold text-foreground">Filtering and validation depth</h3>
+        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+          Minea exposes more filters around creative signals (network, ad age, hook type, engagement). PPSpy exposes more filters around store signals (revenue range, product count, theme, country, growth velocity). Neither filter set is "better" in isolation — they reward different research instincts.
+        </p>
+        <h3 className="mt-6 font-display text-base font-bold text-foreground">Scaling research</h3>
+        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+          Once you're past discovery and into scaling, PPSpy is more useful for tracking how competitors price, bundle, and expand catalogs over time. Minea is more useful for monitoring how creative angles evolve as a winning product matures. Many serious operators end up using both — one for the store layer, one for the ad layer.
+        </p>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          To turn discovery into a repeatable system, pair either tool with our{" "}
+          <Link to="/blog/product-validation-framework" className="text-brand underline">product validation framework</Link>.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">UI, Workflow, and Ease of Use</h2>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          UI quality matters more than most operators admit. A tool you avoid opening is a tool you don't actually use, regardless of feature depth.
+        </p>
+        <ul className="mt-4 list-disc space-y-2 pl-6 text-sm text-muted-foreground">
+          <li><strong className="text-foreground">PPSpy:</strong> dashboard-heavy, with overview screens that surface store tracking, product discovery, sales charts, and ad analytics in dense panels. Strong for operators who want a "research cockpit" feel and don't mind density.</li>
+          <li><strong className="text-foreground">Minea:</strong> ad-library-first navigation. The default mental model is "search ads, filter, save, study." Lighter on dashboards, heavier on browsing flows.</li>
+          <li><strong className="text-foreground">Learning curve:</strong> PPSpy takes longer to learn but rewards operators who set up structured watchlists. Minea is faster to start with — you can begin browsing ads on day one — but the depth comes from how disciplined your filtering and saving habits are.</li>
+          <li><strong className="text-foreground">Workflow speed:</strong> for "what changed in my tracked stores this week" PPSpy is faster. For "show me 20 fresh creative ideas in this niche" Minea is faster.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Pricing & Overall Workflow Value</h2>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          Both PPSpy and Minea use tiered subscriptions, with limits tied to tracked stores, ad library access, and feature depth. Pricing changes frequently and depends on plan, billing cycle, and current promotions, so the only reliable source is each tool's official pricing page.
+        </p>
+        <ul className="mt-4 list-disc space-y-2 pl-6 text-sm text-muted-foreground">
+          <li><strong className="text-foreground">Beginner value:</strong> for an operator just learning Shopify research, a single mid-tier plan from either tool is usually enough — the bigger lever is research discipline, not feature count.</li>
+          <li><strong className="text-foreground">Scaling value:</strong> teams running real ad spend often justify both — PPSpy for store-level intelligence, Minea for creative depth — because each saves hours per week in their own lane.</li>
+          <li><strong className="text-foreground">Workflow ROI:</strong> the right question isn't "which is cheaper" but "which one removes a bottleneck I'm hitting today?" If you can't answer that yet, your workflow probably needs structure first.</li>
+        </ul>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          Always verify current pricing, plan limits, and trial availability on each tool's official website before subscribing.
+        </p>
+        <div className="mt-6 rounded-lg border border-border bg-card p-5">
+          <p className="text-sm leading-relaxed text-foreground">
+            Curious how PPSpy organizes its Shopify-focused research workflows in practice?
+          </p>
+          <a
+            href={PPSPY_AFF}
+            rel="sponsored noopener noreferrer"
+            target="_blank"
+            className="mt-3 inline-flex items-center gap-2 rounded-md border border-border bg-background px-4 py-2 text-xs font-semibold text-foreground transition-colors hover:bg-muted"
+          >
+            Explore PPSpy
+          </a>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Which Tool Fits Different Ecommerce Strategies</h2>
+        <ArticleImage
+          src="/images/ppspy-minea-workflow-comparison.png"
+          alt="Side-by-side workflow comparison of PPSpy and Minea covering Shopify research, TikTok ad workflows, competitor intelligence, product validation, and scaling frameworks"
+          caption="Workflow fit, not feature counts, is what separates a useful research subscription from a wasted one."
+        />
+        <div className="mt-6 overflow-x-auto">
+          <table className="min-w-full border-collapse text-sm">
+            <thead>
+              <tr className="border-b border-border text-left text-xs uppercase tracking-wide text-muted-foreground">
+                <th className="py-2 pr-4">Operator profile</th>
+                <th className="py-2 pr-4">Better fit</th>
+                <th className="py-2">Why</th>
               </tr>
             </thead>
             <tbody className="text-muted-foreground">
-              <tr className="border-t border-border">
-                <td className="p-3 font-medium text-foreground">PPSpy</td>
-                <td className="p-3">Shopify store research</td>
-                <td className="p-3">~$24–$199/mo</td>
-                <td className="p-3">Easy</td>
-                <td className="p-3">Store sales estimates</td>
-                <td className="p-3">Store spy specialist</td>
+              <tr className="border-b border-border">
+                <td className="py-3 pr-4 font-semibold text-foreground">Beginner dropshipper</td>
+                <td className="py-3 pr-4">Either</td>
+                <td className="py-3">Pick the one that matches whether you're starting from store research or ad research. Don't subscribe to both early.</td>
               </tr>
-              <tr className="border-t border-border">
-                <td className="p-3 font-medium text-foreground">Minea</td>
-                <td className="p-3">Ad creative research</td>
-                <td className="p-3">~$0–$399/mo</td>
-                <td className="p-3">Medium</td>
-                <td className="p-3">Multi-platform ad library</td>
-                <td className="p-3">Ad spy specialist</td>
+              <tr className="border-b border-border">
+                <td className="py-3 pr-4 font-semibold text-foreground">Shopify-focused brand</td>
+                <td className="py-3 pr-4">PPSpy</td>
+                <td className="py-3">Store tracking, pricing intelligence, and saturation signals are PPSpy's core lane.</td>
               </tr>
-              <tr className="border-t border-border bg-brand/5">
-                <td className="p-3 font-medium text-foreground">WinningHunter</td>
-                <td className="p-3">All-in-one research</td>
-                <td className="p-3">From ~$49/mo</td>
-                <td className="p-3">Easy</td>
-                <td className="p-3">Ad + store + validation</td>
-                <td className="p-3">Best overall</td>
+              <tr className="border-b border-border">
+                <td className="py-3 pr-4 font-semibold text-foreground">TikTok-heavy operator</td>
+                <td className="py-3 pr-4">Minea</td>
+                <td className="py-3">Creative library breadth and hook patterns are where Minea earns its subscription.</td>
+              </tr>
+              <tr className="border-b border-border">
+                <td className="py-3 pr-4 font-semibold text-foreground">Creative-led team</td>
+                <td className="py-3 pr-4">Minea</td>
+                <td className="py-3">Cross-network ad research and creator placements support a creative-strategy workflow.</td>
+              </tr>
+              <tr className="border-b border-border">
+                <td className="py-3 pr-4 font-semibold text-foreground">Scaling DTC team</td>
+                <td className="py-3 pr-4">Both</td>
+                <td className="py-3">PPSpy for competitor and pricing layer, Minea for creative monitoring as winners mature.</td>
+              </tr>
+              <tr>
+                <td className="py-3 pr-4 font-semibold text-foreground">Product discovery system</td>
+                <td className="py-3 pr-4">Depends on inputs</td>
+                <td className="py-3">If your discovery starts from stores → PPSpy. If it starts from ads or creators → Minea.</td>
               </tr>
             </tbody>
           </table>
         </div>
-      </section>
-
-      <section>
-        <h2 className="font-display text-xl font-bold text-foreground">What Is PPSpy?</h2>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          PPSpy (sometimes branded as PP Ads Spy or PPSpy.com) is a Shopify-focused store research tool. Its core job is to surface what real Shopify stores are selling — best-selling products, daily sales estimates, traffic sources, and product launches — so you can reverse-engineer what's actually working in the market right now.
-        </p>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          Where most "product research" tools show you ads and ask you to guess if they're profitable, PPSpy works backwards: it watches stores, tracks SKU-level sales movements, and tells you which products are gaining traction inside real businesses. That's a fundamentally different signal than ad engagement.
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          For related comparisons in the same category, see{" "}
+          <Link to="/blog/minea-vs-winninghunter" className="text-brand underline">Minea vs WinningHunter</Link> and{" "}
+          <Link to="/blog/brandsearch-vs-winninghunter" className="text-brand underline">BrandSearch vs WinningHunter</Link>.
         </p>
       </section>
 
       <section>
-        <h2 className="font-display text-xl font-bold text-foreground">What Is Minea?</h2>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          Minea is a multi-platform ad spy tool. It crawls public ads on Facebook, Instagram, TikTok, and Pinterest, indexes the creative, and lets you filter by country, language, ad format, run-time, and engagement. The underlying assumption: ads that have been live for 30+ days with strong engagement are almost certainly profitable, because no advertiser keeps a losing ad running.
-        </p>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          For a deeper breakdown of how the platform works under the hood, see our full guide on <Link to="/blog/what-is-minea-and-how-does-it-work" className="text-brand underline-offset-2 hover:underline">what Minea is and how it works</Link>.
-        </p>
-      </section>
-
-      <section>
-        <h2 className="font-display text-xl font-bold text-foreground">Key Differences</h2>
-        <ul className="mt-3 space-y-2 text-sm leading-relaxed text-muted-foreground">
-          <li>• <strong className="text-foreground">PPSpy = store-first.</strong> You start from a store and work down to its products.</li>
-          <li>• <strong className="text-foreground">Minea = ad-first.</strong> You start from an ad and work back to a product/store.</li>
-          <li>• <strong className="text-foreground">PPSpy answers</strong> "what is this store selling and how much?"</li>
-          <li>• <strong className="text-foreground">Minea answers</strong> "what creative is winning right now and where?"</li>
-          <li>• <strong className="text-foreground">PPSpy</strong> is mostly Shopify ecosystem-focused.</li>
-          <li>• <strong className="text-foreground">Minea</strong> is platform-agnostic on the ad side (Meta + TikTok + Pinterest + influencer).</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2 className="font-display text-xl font-bold text-foreground">Data Source Differences</h2>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          PPSpy pulls from public Shopify endpoints, traffic estimators, and product page signals. The data is store-level: which SKUs are restocked, which collections are pushed, which products show signs of order velocity.
-        </p>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          Minea pulls from public ad libraries (Meta Ad Library, TikTok Creative Center, Pinterest, plus its own crawlers). The data is ad-level: which creatives are running, how long, in which countries, with what engagement.
-        </p>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          Neither one gives you the full picture by itself. A product can be running winning ads but not converting on its store, and a store can be selling a lot without running flashy ads (organic, email, retention). That's why operators who scale usually end up with both signals — or with an all-in-one tool.
-        </p>
-      </section>
-
-      <section>
-        <h2 className="font-display text-xl font-bold text-foreground">Accuracy Differences</h2>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          PPSpy's sales estimates are exactly that — <em>estimates</em>. They're directionally useful for spotting trend momentum, but you should never treat them as exact revenue numbers. Use them to compare products against each other, not as ground truth.
-        </p>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          Minea's accuracy depends on the platform. Meta data is the most reliable because of the public Ad Library. TikTok data is solid but slightly delayed. Influencer data quality varies by region. Engagement signals are real but can be inflated by paid pushes in the first week — which is why ad age matters so much.
-        </p>
-      </section>
-
-      <section>
-        <h2 className="font-display text-xl font-bold text-foreground">Ease of Use</h2>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          PPSpy has a flatter learning curve — type a store URL, get the data. Most operators are productive within 15 minutes.
-        </p>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          Minea has more depth, which means more filters and more decisions. Expect a real first week of learning to set up saved searches, calibrate filters by niche, and build a workflow that surfaces relevant ads instead of overwhelming you.
-        </p>
-      </section>
-
-      <section>
-        <h2 className="font-display text-xl font-bold text-foreground">Pricing Comparison</h2>
-        <ul className="mt-3 space-y-2 text-sm leading-relaxed text-muted-foreground">
-          <li>• <strong className="text-foreground">PPSpy:</strong> entry tier around $24/mo, scaling up to ~$199/mo for higher store-tracking limits and team features.</li>
-          <li>• <strong className="text-foreground">Minea:</strong> free starter plan, paid plans usually starting around $49/mo and scaling to ~$399/mo for the full multi-platform access and unlimited filters.</li>
-          <li>• <strong className="text-foreground">WinningHunter:</strong> from ~$49/mo for the all-in-one stack (ad spy + store tracking + validation), which usually replaces 2–3 separate subscriptions.</li>
-        </ul>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          The honest math: if you end up running PPSpy + Minea side by side (which most operators do), you're looking at $80–$250/mo combined just for research. That's the hidden cost the comparison shoppers miss.
-        </p>
-      </section>
-
-      <section>
-        <h2 className="font-display text-xl font-bold text-foreground">Use-Case Comparison</h2>
-        <div className="mt-4 overflow-x-auto rounded-lg border border-border">
-          <table className="w-full text-left text-sm">
-            <thead className="bg-surface text-xs uppercase text-muted-foreground">
-              <tr>
-                <th className="p-3 font-semibold">Use Case</th>
-                <th className="p-3 font-semibold">Winner</th>
-                <th className="p-3 font-semibold">Why</th>
-              </tr>
-            </thead>
-            <tbody className="text-muted-foreground">
-              <tr className="border-t border-border">
-                <td className="p-3 font-medium text-foreground">Beginner picking first product</td>
-                <td className="p-3">PPSpy</td>
-                <td className="p-3">Easier learning curve, clear sales signals</td>
-              </tr>
-              <tr className="border-t border-border">
-                <td className="p-3 font-medium text-foreground">TikTok ad research</td>
-                <td className="p-3">Minea</td>
-                <td className="p-3">Stronger TikTok ad library coverage</td>
-              </tr>
-              <tr className="border-t border-border">
-                <td className="p-3 font-medium text-foreground">Facebook / Meta ad research</td>
-                <td className="p-3">Minea</td>
-                <td className="p-3">Deeper Meta filters and influencer data</td>
-              </tr>
-              <tr className="border-t border-border">
-                <td className="p-3 font-medium text-foreground">Product validation</td>
-                <td className="p-3">PPSpy</td>
-                <td className="p-3">Sales estimates beat ad engagement signals</td>
-              </tr>
-              <tr className="border-t border-border">
-                <td className="p-3 font-medium text-foreground">Scaling store / 7-figure operator</td>
-                <td className="p-3">Both (or all-in-one)</td>
-                <td className="p-3">You need ad + store + validation in one flow</td>
-              </tr>
-            </tbody>
-          </table>
+        <h2 className="font-display text-xl font-bold text-foreground">FAQ</h2>
+        <div className="mt-4 space-y-5 text-sm text-muted-foreground">
+          <div>
+            <p className="font-semibold text-foreground">Is PPSpy better than Minea?</p>
+            <p className="mt-1 leading-relaxed">Neither is universally better. PPSpy is stronger for Shopify store-level research, pricing intelligence, and competitor monitoring. Minea is stronger for cross-network ad research, creative analysis, and TikTok/Meta hook discovery.</p>
+          </div>
+          <div>
+            <p className="font-semibold text-foreground">Can I use both PPSpy and Minea together?</p>
+            <p className="mt-1 leading-relaxed">Yes, and many scaling operators do. They cover different layers — store-level vs. ad-level — so the overlap is small. The decision is usually about budget and how mature your workflow is.</p>
+          </div>
+          <div>
+            <p className="font-semibold text-foreground">Which tool is better for beginners?</p>
+            <p className="mt-1 leading-relaxed">Beginners are usually better served by whichever tool matches their starting habit. If you naturally browse Shopify stores when looking for ideas, start with PPSpy. If you naturally scroll TikTok and Meta ads, start with Minea.</p>
+          </div>
+          <div>
+            <p className="font-semibold text-foreground">Are these tools enough on their own to find winning products?</p>
+            <p className="mt-1 leading-relaxed">No tool replaces a structured workflow. They surface signals; the operator decides which signals matter and validates demand, margins, and logistics. Start with our{" "}
+              <Link to="/blog/product-validation-framework" className="text-brand underline">product validation framework</Link>.
+            </p>
+          </div>
+          <div>
+            <p className="font-semibold text-foreground">How accurate are sales and revenue estimates?</p>
+            <p className="mt-1 leading-relaxed">Both tools' revenue and sales numbers are estimates inferred from public signals. Treat them as directional, not exact — useful for ranking and trend detection, not for projecting your own business.</p>
+          </div>
         </div>
-      </section>
-
-      <section>
-        <h2 className="font-display text-xl font-bold text-foreground">PPSpy: Pros & Cons</h2>
-        <ul className="mt-3 space-y-2 text-sm leading-relaxed text-muted-foreground">
-          <li>✅ Strong Shopify-specific data (sales velocity, restocks, product launches)</li>
-          <li>✅ Easy onboarding, clean dashboard</li>
-          <li>✅ Affordable entry tier</li>
-          <li>❌ Limited ad spy capability — almost none on TikTok</li>
-          <li>❌ Sales estimates are directional, not exact</li>
-          <li>❌ Mostly useful for Shopify ecosystem, weaker outside</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2 className="font-display text-xl font-bold text-foreground">Minea: Pros & Cons</h2>
-        <ul className="mt-3 space-y-2 text-sm leading-relaxed text-muted-foreground">
-          <li>✅ Deep multi-platform ad library (Meta, TikTok, Pinterest, influencer)</li>
-          <li>✅ Powerful filters for ad age, country, engagement</li>
-          <li>✅ Free starter tier to test the platform</li>
-          <li>❌ No native sales estimates or store-level tracking</li>
-          <li>❌ Real learning curve in the first week</li>
-          <li>❌ Higher tiers get expensive quickly</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2 className="font-display text-xl font-bold text-foreground">Real-World Operator Insights</h2>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          In practice, most serious operators don't pick "PPSpy or Minea" — they end up using <strong className="text-foreground">both</strong> in a clunky workflow: spot an ad on Minea, then jump to PPSpy to check if the store actually sells volume, then jump to a third tool for supplier validation. That tab-switching costs hours per week and creates blind spots when one tool's data lags the other.
-        </p>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          The most common failure mode: a creative looks great on Minea, but PPSpy data isn't checked, so the operator scales an ad for a store that's actually flatlining. Or PPSpy shows a winning store, but the ads aren't studied, so the creative angle gets copied wrong. Either way, the gap between tools is where ad budget bleeds out.
-        </p>
-      </section>
-
-      <section>
-        <h2 className="font-display text-xl font-bold text-foreground">Which Tool Should You Choose?</h2>
-        <ul className="mt-3 space-y-2 text-sm leading-relaxed text-muted-foreground">
-          <li>• <strong className="text-foreground">If you're a beginner</strong> picking your first product → start with <strong className="text-foreground">PPSpy</strong>. Sales signals are easier to read than ad engagement.</li>
-          <li>• <strong className="text-foreground">If your focus is ad creative</strong> (TikTok or Meta) → <strong className="text-foreground">Minea</strong> wins on coverage and filters.</li>
-          <li>• <strong className="text-foreground">If you need store-level validation</strong> → <strong className="text-foreground">PPSpy</strong>.</li>
-          <li>• <strong className="text-foreground">If you're a serious operator</strong> running daily tests → don't pick one. Pick an all-in-one stack so ad data and store data live in the same workflow. See our <Link to="/tools/winninghunter" className="text-brand underline-offset-2 hover:underline">full WinningHunter review</Link>.</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2 className="font-display text-xl font-bold text-foreground">The All-in-One Alternative</h2>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          Both PPSpy and Minea are good at what they do — but each only solves half the research equation. Operators who scale fastest stop juggling tools and consolidate. An all-in-one platform like WinningHunter combines the ad spy depth Minea gives you with the store-level tracking PPSpy gives you, plus sales validation, in one workflow. That means fewer tabs, fewer blind spots, and fewer bad tests slipping through.
-        </p>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          The point isn't that PPSpy or Minea are bad — it's that switching between tools costs you time and money. Every gap between two tools is a place where a weak product can sneak into your test queue and burn $100 in ad spend you didn't need to spend. Compare the full landscape in our <Link to="/best-product-research-tools" className="text-brand underline-offset-2 hover:underline">best product research tools</Link> guide before locking in a stack.
-        </p>
       </section>
 
       <section>
         <h2 className="font-display text-xl font-bold text-foreground">Final Verdict</h2>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          PPSpy wins for store research and Shopify-specific data. Minea wins for ad creative and multi-platform ad library depth. Neither one is a complete research stack on its own — and stacking them together costs $80–$250/mo in subscriptions plus hours of tab-switching per week.
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          PPSpy and Minea both belong in the conversation, but they're not interchangeable. PPSpy is the better fit when your research starts in the Shopify ecosystem — tracked stores, pricing moves, product launches, and saturation signals. Minea is the better fit when your research starts in the ad library — TikTok and Meta creatives, hook patterns, and creator placements.
         </p>
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          For most operators serious about scaling in 2026, the better question isn't "PPSpy or Minea?" — it's "should I keep stacking single-purpose tools, or move to one workflow?" Read the <Link to="/tools/winninghunter" className="text-brand underline-offset-2 hover:underline">WinningHunter review</Link> or compare the full lineup in the <Link to="/best-product-research-tools" className="text-brand underline-offset-2 hover:underline">best product research tools</Link> guide before you decide.
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          The bigger lever, regardless of which tool you choose, is the workflow you build around it. A research tool only compounds when it sits inside a repeatable system: discovery, validation, creative planning, testing, and scaling. If that system doesn't exist yet, start with our{" "}
+          <Link to="/blog/how-to-build-product-research-workflow" className="text-brand underline">product research workflow guide</Link> and let the workflow tell you which tool you actually need.
         </p>
-        <div className="mt-6 rounded-xl border-2 border-brand/30 bg-gradient-to-br from-brand/10 to-brand/5 p-6">
-          <p className="text-base font-bold text-foreground">⚡ Stop burning ad budget on guesswork.</p>
-          <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-            Every week you delay picking the right research tool, you're either testing weak products (losing $100+ per test) or paying for two overlapping subscriptions you don't need. The operators winning in 2026 are the ones who consolidated months ago.
-          </p>
-          <div className="mt-4 space-y-2">
-            <p className="text-sm leading-relaxed text-foreground">
-              👉 <Link to="/tools/winninghunter" className="text-brand font-bold underline-offset-2 hover:underline">Read the full WinningHunter review</Link> — see why it's our #1 pick for 2026.
-            </p>
-            <p className="text-sm leading-relaxed text-foreground">
-              👉 <Link to="/best-product-research-tools" className="text-brand font-bold underline-offset-2 hover:underline">Compare the best product research tools</Link> side by side before you commit.
-            </p>
-            <p className="text-sm leading-relaxed text-foreground">
-              👉 <Link to="/blog/what-is-minea-and-how-does-it-work" className="text-brand font-semibold underline-offset-2 hover:underline">Still curious about Minea?</Link> Read our deep-dive first.
-            </p>
-          </div>
-          <p className="mt-4 text-xs italic text-muted-foreground">
-            One smart tool decision today = thousands saved in failed ad tests this quarter.
-          </p>
-        </div>
       </section>
     </div>
   );
