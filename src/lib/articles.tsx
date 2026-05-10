@@ -88,6 +88,27 @@ export interface ArticleMeta {
 
 export const articlesMeta: ArticleMeta[] = [
   {
+    title: "BrandSearch vs WinningHunter (2026 Comparison)",
+    excerpt: "An operator-focused comparison of BrandSearch and WinningHunter — product discovery, creative research, Shopify store analysis, pricing, and which workflow each tool actually fits.",
+    category: "Comparisons",
+    date: "May 10, 2026",
+    readTime: "16 min read",
+    slug: "brandsearch-vs-winninghunter",
+    image: "/images/brandsearch-vs-winninghunter-hero.png",
+    toc: [
+      "Why Operators Compare Research Tools",
+      "What BrandSearch and WinningHunter Are Designed For",
+      "Product Discovery & Trend Research",
+      "Creative Research & Ad Analysis",
+      "Competitor Research & Shopify Analysis",
+      "UI, Workflow, and Ease of Use",
+      "Pricing & Overall Value",
+      "Which Tool Fits Different Ecommerce Workflows",
+      "FAQ",
+      "Final Verdict",
+    ],
+  },
+  {
     title: "Minea vs WinningHunter (2026 Comparison)",
     excerpt: "An operator-focused comparison of Minea and WinningHunter — product discovery, creative research, Shopify store analysis, pricing, and which tool fits which ecommerce workflow.",
     category: "Comparisons",
