@@ -927,12 +927,72 @@ function ProductResearchClusterNav({ currentSlug }: { currentSlug: string }) {
 
 const PRODUCT_RESEARCH_SLUGS = new Set(PRODUCT_RESEARCH_CLUSTER.map((i) => i.slug));
 
+const SHOPIFY_ANALYSIS_CLUSTER: { slug: string; title: string; desc: string; group: string }[] = [
+  { slug: "how-to-spy-on-shopify-stores", title: "How to Spy on Shopify Stores", desc: "The pillar guide to structured Shopify competitor research.", group: "Foundations" },
+  { slug: "best-tools-for-shopify-store-analysis", title: "Best Tools for Shopify Store Analysis", desc: "Operator-tested stack for studying themes, apps, and offers.", group: "Foundations" },
+  { slug: "best-shopify-spy-tools", title: "Best Shopify Spy Tools (2026)", desc: "Tools that surface revenue signals, product velocity, and store intel.", group: "Tools" },
+  { slug: "brandsearch-vs-winninghunter", title: "BrandSearch vs WinningHunter", desc: "Brand intelligence vs winning-product detection.", group: "Comparisons" },
+  { slug: "ppspy-vs-minea", title: "PPSpy vs Minea", desc: "Shopify-first store intelligence vs ad-library-first discovery.", group: "Comparisons" },
+  { slug: "minea-vs-winninghunter", title: "Minea vs WinningHunter", desc: "Cross-platform ad library vs all-in-one operator workflow.", group: "Comparisons" },
+  { slug: "how-to-build-product-research-workflow", title: "Product Research Workflow", desc: "How store analysis fits inside a complete operator workflow.", group: "Context" },
+  { slug: "product-validation-framework", title: "Product Validation Framework", desc: "Run store-level findings through a real validation process.", group: "Context" },
+];
+
+function ShopifyAnalysisClusterNav({ currentSlug }: { currentSlug: string }) {
+  const items = SHOPIFY_ANALYSIS_CLUSTER.filter((i) => i.slug !== currentSlug);
+  const groups = ["Foundations", "Tools", "Comparisons", "Context"] as const;
+  return (
+    <section className="mt-16 border-t border-border pt-10">
+      <p className="text-xs font-semibold uppercase tracking-wider text-brand">Shopify Store Analysis Cluster</p>
+      <h2 className="mt-2 font-display text-xl font-bold text-foreground sm:text-2xl">Go deeper on Shopify competitor intelligence</h2>
+      <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+        These guides form EcomStacked&apos;s Shopify Store Analysis cluster — the workflows, tools, and comparisons operators use to read competitor stores like an analyst.
+      </p>
+      <div className="mt-8 space-y-8">
+        {groups.map((g) => {
+          const list = items.filter((i) => i.group === g);
+          if (list.length === 0) return null;
+          return (
+            <div key={g}>
+              <h3 className="font-display text-sm font-bold uppercase tracking-wide text-foreground">{g}</h3>
+              <ul className="mt-3 grid gap-3 sm:grid-cols-2">
+                {list.map((i) => (
+                  <li key={i.slug} className="rounded-lg border border-border bg-card p-4 transition-colors hover:border-brand/40">
+                    <Link to={`/blog/${i.slug}`} className="block">
+                      <span className="block font-display text-sm font-bold text-foreground">{i.title}</span>
+                      <span className="mt-1 block text-xs leading-relaxed text-muted-foreground">{i.desc}</span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          );
+        })}
+      </div>
+    </section>
+  );
+}
+
+// Slugs that should render the Shopify cluster nav. Limited to articles
+// where Shopify store analysis is the primary topic, to avoid stacking
+// two cluster navs on every shared article.
+const SHOPIFY_ANALYSIS_PRIMARY_SLUGS = new Set([
+  "how-to-spy-on-shopify-stores",
+  "best-shopify-spy-tools",
+  "best-tools-for-shopify-store-analysis",
+  "brandsearch-vs-winninghunter",
+  "ppspy-vs-minea",
+]);
+
 function withClusterNav(slug: string, node: React.ReactNode): React.ReactNode {
-  if (!PRODUCT_RESEARCH_SLUGS.has(slug)) return node;
+  const inProductResearch = PRODUCT_RESEARCH_SLUGS.has(slug);
+  const inShopifyAnalysis = SHOPIFY_ANALYSIS_PRIMARY_SLUGS.has(slug);
+  if (!inProductResearch && !inShopifyAnalysis) return node;
   return (
     <>
       {node}
-      <ProductResearchClusterNav currentSlug={slug} />
+      {inShopifyAnalysis && <ShopifyAnalysisClusterNav currentSlug={slug} />}
+      {inProductResearch && <ProductResearchClusterNav currentSlug={slug} />}
     </>
   );
 }
@@ -6213,6 +6273,9 @@ function ArticleBestShopifySpyTools() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           For a broader look at the full ecosystem, see our master guide to the <Link to="/best-product-research-tools" className="text-brand underline">best product research tools</Link>.
         </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          Spy tools are most useful inside a process. Anchor them in our <Link to="/blog/how-to-spy-on-shopify-stores" className="text-brand underline-offset-4 hover:underline">Shopify competitor research</Link> guide, layer in the <Link to="/blog/best-tools-for-shopify-store-analysis" className="text-brand underline-offset-4 hover:underline">store analysis workflow</Link>, and run findings through the <Link to="/blog/product-validation-framework" className="text-brand underline-offset-4 hover:underline">product validation process</Link>. For platform tradeoffs, the <Link to="/blog/ppspy-vs-minea" className="text-brand underline-offset-4 hover:underline">PPSpy vs Minea comparison</Link> and <Link to="/blog/brandsearch-vs-winninghunter" className="text-brand underline-offset-4 hover:underline">BrandSearch vs WinningHunter breakdown</Link> go deeper than a spec sheet.
+        </p>
       </section>
 
       <section>
@@ -9069,6 +9132,9 @@ function ArticleHowToSpyOnShopifyStores() {
         <p className="mt-4 text-base leading-relaxed text-muted-foreground">
           Competitor analysis is one input. Pair it with our <Link to="/blog/how-to-build-product-research-workflow" className="text-brand underline-offset-4 hover:underline">broader product research workflow</Link>, the <Link to="/blog/best-tools-for-shopify-store-analysis" className="text-brand underline-offset-4 hover:underline">store analysis workflow</Link>, and the <Link to="/blog/best-shopify-spy-tools" className="text-brand underline-offset-4 hover:underline">Shopify spy tools roundup</Link> — and run findings through the <Link to="/blog/product-validation-framework" className="text-brand underline-offset-4 hover:underline">validation framework</Link> before committing budget.
         </p>
+        <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+          When you're ready to choose between specific platforms, our <Link to="/blog/brandsearch-vs-winninghunter" className="text-brand underline-offset-4 hover:underline">BrandSearch vs WinningHunter breakdown</Link>, <Link to="/blog/ppspy-vs-minea" className="text-brand underline-offset-4 hover:underline">PPSpy vs Minea comparison</Link>, and <Link to="/blog/minea-vs-winninghunter" className="text-brand underline-offset-4 hover:underline">Minea vs WinningHunter</Link> map how each fits a real Shopify research stack.
+        </p>
       </section>
 
       <section>
@@ -10383,7 +10449,7 @@ function ArticleMineaVsWinningHunter() {
           Based on real testing workflows used by ecommerce operators. Not influenced by sponsors. Always verify pricing and feature availability on each tool's official site before subscribing.
         </p>
         <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-          If you want context beyond this matchup, use our <Link to="/blog/how-to-analyze-tiktok-ads" className="text-brand underline-offset-4 hover:underline">TikTok ad analysis process</Link> to interpret what each tool surfaces, the <Link to="/blog/best-tiktok-ad-spy-tools" className="text-brand underline-offset-4 hover:underline">broader TikTok ad spy stack</Link> for alternatives, and the <Link to="/blog/brandsearch-vs-winninghunter" className="text-brand underline-offset-4 hover:underline">BrandSearch vs WinningHunter breakdown</Link> for an adjacent comparison.
+          If you want context beyond this matchup, use our <Link to="/blog/how-to-analyze-tiktok-ads" className="text-brand underline-offset-4 hover:underline">TikTok ad analysis process</Link> to interpret what each tool surfaces, the <Link to="/blog/best-tiktok-ad-spy-tools" className="text-brand underline-offset-4 hover:underline">broader TikTok ad spy stack</Link> for alternatives, and the <Link to="/blog/brandsearch-vs-winninghunter" className="text-brand underline-offset-4 hover:underline">BrandSearch vs WinningHunter breakdown</Link> for an adjacent comparison. On the Shopify side, our <Link to="/blog/how-to-spy-on-shopify-stores" className="text-brand underline-offset-4 hover:underline">Shopify competitor research</Link> guide and <Link to="/blog/best-tools-for-shopify-store-analysis" className="text-brand underline-offset-4 hover:underline">store analysis workflow</Link> show where store-level intel complements ad-library research.
         </p>
       </section>
 
