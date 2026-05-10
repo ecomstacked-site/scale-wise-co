@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { SEO } from "@/lib/seo";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
@@ -72,10 +73,13 @@ export default function WeTrackedReview() {
           <p className="mt-3 text-base leading-relaxed text-muted-foreground">
             WeTracked fixes the leak with server-side tracking — so your ad platforms see what's actually converting and optimize accordingly.
           </p>
-          <CTA label="Fix your tracking before scaling →" />
+          <CTA label="See how WeTracked works" />
 
           <p className="rounded-md border-l-2 border-brand/40 bg-surface px-3 py-2 text-xs italic text-muted-foreground">
             Honest review based on real ecommerce testing workflows — not promotional claims, not influenced by sponsors.
+          </p>
+          <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+            For the workflow behind this tool, see our <Link to="/blog/how-to-build-product-research-workflow" className="text-brand underline-offset-4 hover:underline">operator research workflow</Link>, the <Link to="/blog/product-validation-framework" className="text-brand underline-offset-4 hover:underline">product validation workflow</Link>, our <Link to="/blog/ecommerce-ad-creative-framework" className="text-brand underline-offset-4 hover:underline">ad creative framework</Link>, and the <Link to="/blog/how-to-analyze-tiktok-ads" className="text-brand underline-offset-4 hover:underline">TikTok creative testing</Link> guide. Accurate tracking only pays off when the rest of the stack is sound.
           </p>
 
           {/* 2. WHY YOUR TRACKING IS BROKEN */}
@@ -100,7 +104,6 @@ export default function WeTrackedReview() {
               </Card>
             ))}
           </div>
-          <CTA label="See how WeTracked fixes this →" />
 
           {/* 3. WHAT HAPPENS IF YOU DON'T FIX IT */}
           <h2 className="mt-14 font-display text-2xl font-extrabold text-foreground sm:text-3xl">
@@ -118,7 +121,6 @@ export default function WeTrackedReview() {
           <p className="mt-4 text-base leading-relaxed text-muted-foreground">
             The bigger you scale, the more expensive the leak gets.
           </p>
-          <CTA label="Stop the leak →" />
 
           {/* 4. HOW WETRACKED FIXES THIS */}
           <h2 className="mt-14 font-display text-2xl font-extrabold text-foreground sm:text-3xl">
@@ -133,7 +135,6 @@ export default function WeTrackedReview() {
             <li className="flex items-start gap-3"><CheckCircle2 className="mt-1 h-4 w-4 shrink-0 text-brand" /><span><strong className="text-foreground">Google Enhanced Conversions</strong> — clean signal back into Google Ads.</span></li>
             <li className="flex items-start gap-3"><CheckCircle2 className="mt-1 h-4 w-4 shrink-0 text-brand" /><span>Deduplication so events aren't double-counted.</span></li>
           </ul>
-          <CTA label="See the setup →" />
 
           {/* 5. HOW IT WORKS */}
           <h2 className="mt-14 font-display text-2xl font-extrabold text-foreground sm:text-3xl">
@@ -147,7 +148,6 @@ export default function WeTrackedReview() {
           <p className="text-base leading-relaxed text-muted-foreground">
             Customer hits your store. WeTracked records the event server-side. Then it forwards a clean, deduplicated signal to Meta, TikTok, and Google. Your ad platforms finally see the full picture — and start optimizing toward real buyers.
           </p>
-          <CTA label="See how WeTracked works →" />
 
           {/* 6. REAL EXAMPLE */}
           <h2 className="mt-14 font-display text-2xl font-extrabold text-foreground sm:text-3xl">
@@ -167,7 +167,6 @@ export default function WeTrackedReview() {
           <p className="mt-3 text-base leading-relaxed text-muted-foreground">
             WeTracked doesn't invent revenue. It makes sure your existing revenue gets credited correctly.
           </p>
-          <CTA label="Get this clarity for your store →" />
 
           {/* 7. WHY CHOOSE WETRACKED */}
           <h2 className="mt-14 font-display text-2xl font-extrabold text-foreground sm:text-3xl">
@@ -188,7 +187,7 @@ export default function WeTrackedReview() {
               </Card>
             ))}
           </div>
-          <CTA label="Check pricing & setup →" />
+          <CTA label="Check pricing & setup" />
 
           {/* 8. FEATURES */}
           <h2 className="mt-14 font-display text-2xl font-extrabold text-foreground sm:text-3xl">
@@ -206,7 +205,6 @@ export default function WeTrackedReview() {
             <li className="flex items-start gap-3"><CheckCircle2 className="mt-1 h-4 w-4 shrink-0 text-brand" />Same-day Shopify setup for most stores</li>
             <li className="flex items-start gap-3"><CheckCircle2 className="mt-1 h-4 w-4 shrink-0 text-brand" />Flat, predictable pricing</li>
           </ul>
-          <CTA label="See it in action →" />
 
           {/* 9. PROS & CONS */}
           <h2 className="mt-14 font-display text-2xl font-extrabold text-foreground sm:text-3xl">
@@ -269,7 +267,6 @@ export default function WeTrackedReview() {
           <p className="mt-3 text-base leading-relaxed text-muted-foreground">
             Unlike percentage-of-revenue tools, the price doesn't punish you for scaling.
           </p>
-          <CTA label="Check current pricing →" />
 
           {/* 11. WHO SHOULD USE THIS */}
           <h2 className="mt-14 font-display text-2xl font-extrabold text-foreground sm:text-3xl">
@@ -284,7 +281,6 @@ export default function WeTrackedReview() {
           <p className="mt-4 text-base leading-relaxed text-muted-foreground">
             If you're under $500/month in ad spend or running lead-gen, the native pixel is fine for now.
           </p>
-          <CTA label="See if it fits your store →" />
 
           {/* 12. FINAL VERDICT */}
           <h2 className="mt-14 font-display text-2xl font-extrabold text-foreground sm:text-3xl">
