@@ -9416,7 +9416,9 @@ function ArticleHowToAnalyzeTikTokAds() {
         <p className="mt-4 text-base leading-relaxed text-muted-foreground">
           Ad analysis is a layer in a bigger system. See our <Link to="/blog/how-to-build-product-research-workflow" className="text-brand underline-offset-4 hover:underline">operator product research workflow</Link> for context, the <Link to="/blog/best-tiktok-ad-spy-tools" className="text-brand underline-offset-4 hover:underline">TikTok ad spy tools</Link> for the platforms that surface examples, the <Link to="/blog/ecommerce-ad-creative-framework" className="text-brand underline-offset-4 hover:underline">ad creative framework</Link> for turning patterns into your own creative, and the <Link to="/blog/minea-vs-winninghunter" className="text-brand underline-offset-4 hover:underline">Minea vs WinningHunter breakdown</Link> when you're picking a spy stack.
         </p>
-      </section>
+        <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+          On the production side, our guide to <Link to="/blog/ai-video-ads-for-ecommerce" className="text-brand underline-offset-4 hover:underline">AI video ads for ecommerce</Link> and the <Link to="/blog/best-ai-video-tools" className="text-brand underline-offset-4 hover:underline">best AI video tools</Link> show how to turn TikTok creative intel into a high-velocity testing pipeline. The <Link to="/blog/brandsearch-vs-winninghunter" className="text-brand underline-offset-4 hover:underline">BrandSearch vs WinningHunter comparison</Link> and <Link to="/blog/product-validation-framework" className="text-brand underline-offset-4 hover:underline">product validation workflow</Link> close the loop from ad signal to validated product.
+        </p>
 
       <section>
         <h2 className="font-display text-2xl font-extrabold text-foreground">Why TikTok Ad Analysis Matters for Ecommerce</h2>
