@@ -10801,3 +10801,320 @@ function ArticleBrandSearchVsWinningHunter() {
     </div>
   );
 }
+
+function ArticleBestToolsForShopifyStoreAnalysis() {
+  return (
+    <div className="space-y-10">
+      <section>
+        <p className="text-sm leading-relaxed text-muted-foreground">
+          Shopify store analysis is one of the most underrated skills in ecommerce. Operators who consistently launch winners aren't lucky — they study the market the way a financial analyst studies public filings. They know what theme a competitor uses, which apps power the upsell flow, which offers convert, and how a store's traffic mix has shifted over the last quarter. That visibility is what turns "I think this product might work" into a confident testing decision.
+        </p>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          This guide is written for ecommerce operators, not affiliates. The goal is to teach you how Shopify store analysis actually works in 2026 — what to look at, how to interpret the signals, and which tools fit which research workflow. The tools matter, but the workflow matters more. A clear process beats any subscription.
+        </p>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          If you're still building a structured research system, pair this article with our{" "}
+          <Link to="/blog/how-to-build-product-research-workflow" className="text-brand underline">product research workflow guide</Link>{" "}
+          and our{" "}
+          <Link to="/blog/product-validation-framework" className="text-brand underline">product validation framework</Link>. Store analysis is the layer that feeds both.
+        </p>
+        <ArticleImage
+          src="/images/shopify-store-analysis-hero.png"
+          alt="Shopify store analysis dashboard with revenue estimates, traffic sources, conversion rate, ad spend, and saturation by store"
+          caption="A modern store analysis dashboard combines revenue estimates, traffic mix, offer performance, and saturation into a single operator view."
+          priority
+        />
+        <p className="text-xs italic text-muted-foreground">
+          Based on real research workflows used by ecommerce operators. Not influenced by sponsors. Always verify pricing and feature availability on each tool's official site before subscribing.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Why Shopify Store Analysis Matters</h2>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          Most product launches fail before the first ad goes live — not because the product was wrong, but because the operator skipped the market context. Shopify store analysis closes that gap. By studying competitor stores systematically, you learn what kinds of offers your audience already responds to, what pricing the market has anchored on, what bundles convert, and where there's room for a differentiated angle.
+        </p>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          When done well, store analysis informs almost every layer of the business:
+        </p>
+        <ul className="mt-3 list-disc space-y-2 pl-6 text-sm text-muted-foreground">
+          <li><strong className="text-foreground">Competitor intelligence:</strong> Knowing who is in the market, what they sell, and how their store has evolved over time.</li>
+          <li><strong className="text-foreground">Pricing strategy:</strong> Anchoring price points based on what's actually transacting, not arbitrary margins.</li>
+          <li><strong className="text-foreground">Offer positioning:</strong> Studying free shipping thresholds, BOGO mechanics, and bundle structures that work in your niche.</li>
+          <li><strong className="text-foreground">Conversion flow analysis:</strong> Reading the path from product page to checkout and identifying friction points.</li>
+          <li><strong className="text-foreground">Upsells and bundles:</strong> Reverse-engineering AOV drivers from stores that monetize traffic well.</li>
+          <li><strong className="text-foreground">Trend discovery:</strong> Spotting which categories or angles are growing before they peak.</li>
+        </ul>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          Operators who treat store analysis as a recurring weekly task — not a one-time pre-launch exercise — accumulate compounding pattern recognition. That's the real moat.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">What Ecommerce Operators Actually Analyze</h2>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          Beginners look at design. Operators look at the system. When a serious ecommerce team analyzes a Shopify store, they're not admiring the homepage hero — they're decoding the operational stack behind it.
+        </p>
+        <ArticleImage
+          src="/images/shopify-conversion-analysis-dashboard.png"
+          alt="Shopify intelligence dashboard comparing conversion influence, theme apps, trust badges, and ad creative performance across competitor stores"
+          caption="Operators triangulate theme, apps, trust signals, and creative performance — not just visual design — when analyzing a Shopify store."
+        />
+        <h3 className="mt-6 font-display text-base font-bold text-foreground">The store analysis checklist</h3>
+        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+          A practical checklist most operators run on a competitor store:
+        </p>
+        <ul className="mt-3 list-disc space-y-2 pl-6 text-sm text-muted-foreground">
+          <li><strong className="text-foreground">Theme:</strong> Which Shopify theme is powering the store, and how heavily customized is it?</li>
+          <li><strong className="text-foreground">App stack:</strong> Which review apps, upsell apps, subscription apps, and bundle apps are installed?</li>
+          <li><strong className="text-foreground">Pricing structure:</strong> Base price, discounted price, anchor price, currency localization.</li>
+          <li><strong className="text-foreground">Landing pages:</strong> Are products sold through the standard PDP or through dedicated long-form landing pages?</li>
+          <li><strong className="text-foreground">Product pages:</strong> Hero structure, copy framework, image-to-copy ratio, video usage.</li>
+          <li><strong className="text-foreground">Bundles:</strong> Which combinations are pushed, at what discount, with what framing.</li>
+          <li><strong className="text-foreground">Reviews:</strong> Volume, review app used, distribution, photo/video usage.</li>
+          <li><strong className="text-foreground">Checkout flow:</strong> Number of steps, post-purchase upsells, payment methods offered.</li>
+          <li><strong className="text-foreground">Trust elements:</strong> Badges, guarantees, return policy clarity, social proof placement.</li>
+          <li><strong className="text-foreground">Ad and traffic mix:</strong> Where the traffic comes from, which platforms drive paid acquisition.</li>
+        </ul>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          A typical operator workflow runs this checklist on three to five competitor stores per niche, then compiles patterns into a brief. The brief — not the screenshots — is what informs decisions.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Best Shopify Store Analysis Tools</h2>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          No single tool covers every layer of store analysis. Most experienced operators run a small stack — typically a Shopify-specific spy tool plus an ad-library tool. The five tools below cover the realistic options for 2026.
+        </p>
+        <ArticleImage
+          src="/images/shopify-tool-comparison-dashboard.png"
+          alt="Comparison dashboard of PPSpy, Koala Inspector, BrandSearch, Minea, and WinningHunter showing pricing, features, and analytics surfaces"
+          caption="Five common Shopify store analysis tools — each leans into a different research workflow."
+        />
+
+        <h3 className="mt-6 font-display text-base font-bold text-foreground">1. PPSpy</h3>
+        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+          PPSpy is Shopify-native. It's built for operators who want to monitor specific stores — revenue estimates, top products, traffic sources, theme detection, and offer changes over time.
+        </p>
+        <ul className="mt-2 list-disc space-y-1 pl-6 text-sm text-muted-foreground">
+          <li><strong className="text-foreground">Strengths:</strong> Deep Shopify-store intelligence, store tracking, product-level revenue estimates.</li>
+          <li><strong className="text-foreground">Limitations:</strong> Lighter on ad-library research; estimates are directional, not exact.</li>
+          <li><strong className="text-foreground">Best fit:</strong> Operators who already know which competitors to watch and want a structured monitoring layer. See our{" "}
+            <Link to="/blog/ppspy-vs-minea" className="text-brand underline">PPSpy vs Minea comparison</Link> for a deeper look.
+          </li>
+        </ul>
+
+        <h3 className="mt-6 font-display text-base font-bold text-foreground">2. Koala Inspector</h3>
+        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+          Koala Inspector is a Chrome extension focused on theme and app detection. Open a competitor's store and instantly see the theme, installed apps, fonts, and structural elements.
+        </p>
+        <ul className="mt-2 list-disc space-y-1 pl-6 text-sm text-muted-foreground">
+          <li><strong className="text-foreground">Strengths:</strong> Fast, browser-based, surfaces the technical stack quickly.</li>
+          <li><strong className="text-foreground">Limitations:</strong> Doesn't track historical changes or revenue; per-page snapshot only.</li>
+          <li><strong className="text-foreground">Best fit:</strong> Auditing a store you're already on — pre-launch theme and app inspection.</li>
+        </ul>
+
+        <h3 className="mt-6 font-display text-base font-bold text-foreground">3. BrandSearch</h3>
+        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+          BrandSearch positions itself as a multichannel research platform — brand mentions, ad creatives, SEO signals, and store-level context combined into a single view.
+        </p>
+        <ul className="mt-2 list-disc space-y-1 pl-6 text-sm text-muted-foreground">
+          <li><strong className="text-foreground">Strengths:</strong> Brand-level monitoring, mention tracking, broader marketing context beyond Shopify.</li>
+          <li><strong className="text-foreground">Limitations:</strong> Less granular than dedicated Shopify spy tools for store-only analysis.</li>
+          <li><strong className="text-foreground">Best fit:</strong> Brand-led DTC operators tracking competitive positioning across multiple surfaces. See{" "}
+            <Link to="/blog/brandsearch-vs-winninghunter" className="text-brand underline">BrandSearch vs WinningHunter</Link>.
+          </li>
+        </ul>
+
+        <h3 className="mt-6 font-display text-base font-bold text-foreground">4. Minea</h3>
+        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+          Minea is an ad-library-first research tool with strong Meta and TikTok coverage. Store analysis is supported, but the center of gravity is creative and ad intelligence.
+        </p>
+        <ul className="mt-2 list-disc space-y-1 pl-6 text-sm text-muted-foreground">
+          <li><strong className="text-foreground">Strengths:</strong> Deep ad library, multi-platform creative research, advertiser history.</li>
+          <li><strong className="text-foreground">Limitations:</strong> Store-level intelligence is lighter than PPSpy; works best paired with a Shopify spy tool.</li>
+          <li><strong className="text-foreground">Best fit:</strong> Creative-heavy teams who want store context as a complement to ad research. See{" "}
+            <Link to="/blog/minea-vs-winninghunter" className="text-brand underline">Minea vs WinningHunter</Link>.
+          </li>
+        </ul>
+
+        <h3 className="mt-6 font-display text-base font-bold text-foreground">5. WinningHunter</h3>
+        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+          WinningHunter combines TikTok-first product discovery, ad spy, and store tracking into one dashboard. Its store tracking layer surfaces SKU launches, offer refreshes, and ad spend acceleration.
+        </p>
+        <ul className="mt-2 list-disc space-y-1 pl-6 text-sm text-muted-foreground">
+          <li><strong className="text-foreground">Strengths:</strong> Combined product, ad, and store view; strong TikTok signal coverage.</li>
+          <li><strong className="text-foreground">Limitations:</strong> Less depth on Meta-only research compared to Minea.</li>
+          <li><strong className="text-foreground">Best fit:</strong> TikTok-heavy operators who want product, ad, and store monitoring in one workspace.</li>
+        </ul>
+
+        <h3 className="mt-6 font-display text-base font-bold text-foreground">Comparison table</h3>
+        <div className="mt-4 overflow-x-auto">
+          <table className="w-full border-collapse text-sm">
+            <thead>
+              <tr className="border-b border-border bg-surface">
+                <th className="p-3 text-left font-semibold text-foreground">Tool</th>
+                <th className="p-3 text-left font-semibold text-foreground">Primary strength</th>
+                <th className="p-3 text-left font-semibold text-foreground">Best workflow fit</th>
+              </tr>
+            </thead>
+            <tbody className="text-muted-foreground">
+              <tr className="border-b border-border"><td className="p-3 align-top">PPSpy</td><td className="p-3 align-top">Shopify store tracking & revenue estimates</td><td className="p-3 align-top">Recurring competitor monitoring</td></tr>
+              <tr className="border-b border-border"><td className="p-3 align-top">Koala Inspector</td><td className="p-3 align-top">Theme & app stack detection</td><td className="p-3 align-top">On-the-fly store audits</td></tr>
+              <tr className="border-b border-border"><td className="p-3 align-top">BrandSearch</td><td className="p-3 align-top">Multichannel brand monitoring</td><td className="p-3 align-top">Brand-led DTC research</td></tr>
+              <tr className="border-b border-border"><td className="p-3 align-top">Minea</td><td className="p-3 align-top">Multi-platform ad library</td><td className="p-3 align-top">Creative-first research stacks</td></tr>
+              <tr className="border-b border-border"><td className="p-3 align-top">WinningHunter</td><td className="p-3 align-top">TikTok-first product, ad & store discovery</td><td className="p-3 align-top">TikTok-led operators</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          For a broader view of related tools, see our guides on the{" "}
+          <Link to="/blog/best-shopify-spy-tools" className="text-brand underline">best Shopify spy tools</Link>{" "}
+          and{" "}
+          <Link to="/blog/how-to-spy-on-shopify-stores" className="text-brand underline">how to spy on Shopify stores</Link>.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">How to Analyze Shopify Competitors Properly</h2>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          Tools surface data. Analysis turns it into decisions. The difference between an operator who learns from competitors and one who just collects screenshots is the structure of the analysis itself.
+        </p>
+        <ArticleImage
+          src="/images/shopify-store-competitor-breakdown.png"
+          alt="Shopify store comparison view with monthly revenue, traffic, conversion rate, product count, offers, and saturation status across multiple stores"
+          caption="A structured competitor breakdown — revenue, traffic, conversion, offers, and saturation status — keeps analysis comparable across stores."
+        />
+        <h3 className="mt-6 font-display text-base font-bold text-foreground">1. Identify genuinely winning stores</h3>
+        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+          A store that ranks high in spy-tool revenue estimates isn't automatically a winner. Cross-check ad activity, store age, product turnover, and traffic source diversification. A store with a single hero product, heavy paid traffic, and rapid SKU rotation is a different signal than a brand with steady organic growth.
+        </p>
+        <h3 className="mt-6 font-display text-base font-bold text-foreground">2. Analyze offers, not just products</h3>
+        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+          Look at the actual purchase decision: bundle composition, free shipping threshold, discount mechanics, urgency framing. Two stores selling the same product can have very different conversion rates because one has dialed in the offer.
+        </p>
+        <h3 className="mt-6 font-display text-base font-bold text-foreground">3. Study upsells and AOV drivers</h3>
+        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+          Add a low-cost item to the cart and walk through checkout on competitor stores. Note pre-purchase upsells, cart drawer recommendations, and post-purchase one-click offers. The AOV math is often where the unit economics actually work.
+        </p>
+        <h3 className="mt-6 font-display text-base font-bold text-foreground">4. Check store structure and merchandising</h3>
+        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+          Collection structure, product page architecture, navigation, and homepage hierarchy reveal how a store routes traffic. A store with strong category pages is usually optimizing for repeat traffic; a store with a single landing-page funnel is optimizing for cold paid traffic.
+        </p>
+        <h3 className="mt-6 font-display text-base font-bold text-foreground">5. Evaluate conversion strategy</h3>
+        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+          Review the trust stack: guarantees, badges, social proof placement, urgency cues, return policy clarity. None of these alone makes a store convert — but the combination tells you what conversion lever the operator is leaning on.
+        </p>
+        <h3 className="mt-6 font-display text-base font-bold text-foreground">6. Identify saturation</h3>
+        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+          A product is saturated when many stores run similar creatives, offers, and pricing. Saturation isn't always a "no" — it can confirm demand — but it does mean your edge has to come from a sharper angle, a tighter offer, or a more efficient acquisition channel. Pair this with our{" "}
+          <Link to="/blog/how-to-analyze-tiktok-ads" className="text-brand underline">guide on analyzing TikTok ads</Link>{" "}to read creative saturation patterns.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Common Shopify Store Analysis Mistakes</h2>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          Most analysis mistakes are pattern errors, not tooling problems. Avoid these:
+        </p>
+        <ul className="mt-3 list-disc space-y-2 pl-6 text-sm text-muted-foreground">
+          <li><strong className="text-foreground">Copying stores blindly:</strong> Replicating a competitor's funnel without understanding their traffic source, audience, or unit economics is a fast way to lose money.</li>
+          <li><strong className="text-foreground">Ignoring margins:</strong> A high-revenue store can still be unprofitable. Revenue estimates aren't profit signals.</li>
+          <li><strong className="text-foreground">Focusing only on design:</strong> Theme aesthetics rarely move conversion as much as offer structure and trust stack.</li>
+          <li><strong className="text-foreground">Misunderstanding trends:</strong> Treating a viral spike as durable demand instead of validating with multiple signals.</li>
+          <li><strong className="text-foreground">Relying only on spy tools:</strong> Spy tools surface data, not judgment. Always cross-reference with manual store walkthroughs and ad-library research.</li>
+          <li><strong className="text-foreground">Skipping the brief:</strong> Collecting screenshots without writing a one-page synthesis means none of the analysis turns into a decision.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">A Real Ecommerce Store Research Workflow</h2>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          Here's a practical, repeatable workflow operators use to turn store analysis into testable decisions. It's deliberately boring — that's the point.
+        </p>
+        <ArticleImage
+          src="/images/ecommerce-store-research-workflow-map.png"
+          alt="Ecommerce store research workflow map showing Shopify discovery, competitor analysis, ad creative analysis, product validation, scaling, and decision making"
+          caption="A repeatable store research workflow connects discovery, competitor analysis, validation, and scaling decisions into one operating loop."
+        />
+        <ol className="mt-6 list-decimal space-y-3 pl-6 text-sm text-muted-foreground">
+          <li>
+            <strong className="text-foreground">Shopify store discovery:</strong> Build a watchlist of 10–20 competitor stores in your niche using PPSpy, BrandSearch, or manual sourcing. Tag each by category and business model.
+          </li>
+          <li>
+            <strong className="text-foreground">Initial store audit:</strong> For each store on the watchlist, run the analysis checklist — theme, apps, pricing, bundles, trust elements, traffic mix. Record findings in a single spreadsheet or doc.
+          </li>
+          <li>
+            <strong className="text-foreground">Deep competitor analysis:</strong> Pick the top three to five stores and study them weekly. Track new SKUs, offer changes, and ad spend acceleration with WinningHunter or PPSpy.
+          </li>
+          <li>
+            <strong className="text-foreground">Ad creative analysis:</strong> Pull each competitor's recent ads from Minea or WinningHunter. Note hooks, formats, and angles that recur. This feeds your creative testing pipeline.
+          </li>
+          <li>
+            <strong className="text-foreground">Product validation:</strong> Run candidate products through the{" "}
+            <Link to="/blog/product-validation-framework" className="text-brand underline">product validation framework</Link>{" "}— demand signals, margin math, supplier sanity check, creative angle.
+          </li>
+          <li>
+            <strong className="text-foreground">Market gap identification:</strong> Compare what every competitor is doing the same way. Wherever they cluster, look for an under-served angle — a different audience, a sharper offer, a clearer positioning.
+          </li>
+          <li>
+            <strong className="text-foreground">Test and validate:</strong> Move validated products into a structured creative test using the{" "}
+            <Link to="/blog/ecommerce-ad-creative-framework" className="text-brand underline">ecommerce ad creative framework</Link>. Measure against pre-defined thresholds, not feelings.
+          </li>
+          <li>
+            <strong className="text-foreground">Decide and document:</strong> Kill, iterate, or scale. Write a one-paragraph postmortem either way. Over months, these notes become your most valuable proprietary asset.
+          </li>
+        </ol>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          The full workflow assumes a recurring weekly cadence — usually 60–90 minutes of structured store analysis. That investment compounds far faster than a single big research sprint.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">FAQ</h2>
+        <div className="mt-4 space-y-5">
+          <div>
+            <h3 className="font-display text-base font-bold text-foreground">What is the best Shopify store analysis tool?</h3>
+            <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+              There isn't one universal best. PPSpy is strong for Shopify-native store tracking, Koala Inspector for theme and app detection, BrandSearch for multichannel brand context, Minea for ad-library depth, and WinningHunter for combined product, ad, and store discovery. Most experienced operators use two — one Shopify-focused and one ad-focused.
+            </p>
+          </div>
+          <div>
+            <h3 className="font-display text-base font-bold text-foreground">Is store analysis the same as product research?</h3>
+            <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+              They overlap but aren't identical. Store analysis is about understanding markets, offers, and competitor systems. Product research is about identifying specific items worth testing. Store analysis often surfaces the products and angles that go into product research.
+            </p>
+          </div>
+          <div>
+            <h3 className="font-display text-base font-bold text-foreground">How accurate are Shopify revenue estimates from spy tools?</h3>
+            <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+              Treat them as directional, not exact. They're useful for ranking and comparison — separating a $5K/month store from a $500K/month store — but exact numbers are estimates derived from public signals. Use them to prioritize where to look closer.
+            </p>
+          </div>
+          <div>
+            <h3 className="font-display text-base font-bold text-foreground">Can I analyze Shopify stores without paid tools?</h3>
+            <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+              Yes. Manual walkthroughs, viewing source, checking <code>/products.json</code>, and using free Chrome extensions cover a lot of ground. Paid tools mostly save time and add monitoring at scale.
+            </p>
+          </div>
+          <div>
+            <h3 className="font-display text-base font-bold text-foreground">How often should I run store analysis?</h3>
+            <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+              A short weekly review of your top three to five competitors plus a deeper monthly sweep of your watchlist is a realistic cadence for most ecommerce operators.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Final Thoughts</h2>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          Shopify store analysis is a discipline, not a tool category. The operators who get the most out of it are the ones who build a recurring workflow, write briefs instead of collecting screenshots, and use tools as accelerants for decisions they already know how to make. PPSpy, Koala Inspector, BrandSearch, Minea, and WinningHunter all earn their place in real workflows — but only when they sit inside a clear process.
+          </p>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          Be realistic about what store analysis can and can't do. It will sharpen your judgment, surface offers and angles you wouldn't have invented alone, and shorten the path between a hypothesis and a tested product. It won't replace the work of building margins, creative, and customer experience. Use it as the research layer underneath your operations — and the rest of your stack gets meaningfully better.
+        </p>
+      </section>
+    </div>
+  );
+}
