@@ -992,8 +992,7 @@ function withClusterNav(slug: string, node: React.ReactNode): React.ReactNode {
     <>
       {node}
       {inShopifyAnalysis && <ShopifyAnalysisClusterNav currentSlug={slug} />}
-      {inProductResearch && !inShopifyAnalysis && <ProductResearchClusterNav currentSlug={slug} />}
-      {inProductResearch && inShopifyAnalysis && <ProductResearchClusterNav currentSlug={slug} />}
+      {inProductResearch && <ProductResearchClusterNav currentSlug={slug} />}
     </>
   );
 }
