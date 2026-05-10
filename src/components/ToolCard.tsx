@@ -23,15 +23,15 @@ export function ToolCard({ name, description, bestFor, benefit, category, featur
     <Card className={`group relative overflow-hidden transition-all duration-200 hover:shadow-md hover:border-brand/20 ${featured ? "border-brand/20" : ""}`}>
       <CardContent className="flex h-full flex-col p-0">
         {/* 1. Tool image */}
-        <div className="aspect-[16/10] overflow-hidden bg-surface">
+        <div className="aspect-[16/10] overflow-hidden border-b border-border bg-white">
           {image ? (
             <img
               src={image}
               alt={`${name} dashboard`}
               loading="lazy"
               width={800}
-              height={512}
-              className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+              height={500}
+              className="h-full w-full object-contain p-3"
             />
           ) : (
             <div className="flex h-full items-center justify-center">

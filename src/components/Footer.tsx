@@ -6,11 +6,13 @@ export function Footer() {
       <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div className="sm:col-span-2 lg:col-span-1">
-            <Link to="/" className="flex items-center gap-2">
-              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary">
-                <span className="font-display text-sm font-bold text-primary-foreground">E</span>
-              </div>
-              <span className="font-display text-lg font-bold text-foreground">EcomStacked</span>
+            <Link to="/" className="flex items-center" aria-label="EcomStacked home">
+              <img
+                src="/logo-full.png"
+                alt="EcomStacked"
+                className="h-8 w-auto"
+                decoding="async"
+              />
             </Link>
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
               An independent online publication researching and reviewing software for ecommerce founders, Shopify store owners, and DTC brands.

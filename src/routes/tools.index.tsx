@@ -54,7 +54,7 @@ const allTools = [
     extraBadge: "Best for Research",
     socialProof: "Used by dropshippers and product researchers",
     microHook: "Find products with data, not gut feel",
-    image: "/assets/tools/trendtrack.jpg",
+    image: "/assets/tools/winninghunter.jpg",
     href: "/tools/winninghunter",
   },
 ];
