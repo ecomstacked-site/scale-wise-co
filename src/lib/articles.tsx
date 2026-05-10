@@ -10524,3 +10524,282 @@ function ArticleMineaVsWinningHunter() {
     </div>
   );
 }
+
+const BS_AFF = "https://brandsearch.co/?ref=ecomstwacked";
+
+function ArticleBrandSearchVsWinningHunter() {
+  return (
+    <div className="space-y-10">
+      <section>
+        <p className="text-sm leading-relaxed text-muted-foreground">
+          Ecommerce operators rarely compare research tools out of curiosity. They compare them because something in the workflow is slow — sourcing is dragging, creative research is shallow, or competitor moves are getting noticed two weeks too late. BrandSearch and WinningHunter are both built to speed that work up, but they take different routes to get there.
+        </p>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          This comparison is written for operators, not affiliates. The point isn't to crown a winner. It's to map where each tool genuinely earns its seat, where it falls short, and which workflow it actually fits. The "best tool" depends on your stage, your platform mix, and how you run research week to week.
+        </p>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          If you don't yet have a structured research process, your bigger leverage point is the workflow itself, not the software. Start with our guide on{" "}
+          <Link to="/blog/how-to-build-product-research-workflow" className="text-brand underline">how to build a product research workflow</Link>, then come back here to choose the tool that fits inside that system.
+        </p>
+        <ArticleImage
+          src="/images/brandsearch-vs-winninghunter-hero.png"
+          alt="Side-by-side dashboards of BrandSearch and WinningHunter showing product discovery, TikTok ad insights, competitor tracking, and platform specs"
+          caption="BrandSearch and WinningHunter solve overlapping problems with different research philosophies."
+          priority
+        />
+        <p className="text-xs italic text-muted-foreground">
+          Based on real testing workflows used by ecommerce operators. Not influenced by sponsors. Always verify pricing and feature availability on each tool's official site before subscribing.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">What BrandSearch and WinningHunter Are Designed For</h2>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          BrandSearch positions itself as a multichannel ecommerce intelligence layer. Its narrative centers on trend discovery, creative analysis, and competitor monitoring assembled into a single research dashboard. The implicit user is an operator who wants one screen for product trends, ad performance signals, and store benchmarking — without bouncing between three or four tabs.
+        </p>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          WinningHunter is positioned as a TikTok-first product and ad discovery suite. The product story leans toward "find what's winning right now and act on it." The workflows emphasize trending products, ad performance, store tracking, and quick creative inspection — packaged for operators running TikTok and Meta dropshipping or DTC plays.
+        </p>
+        <ul className="mt-4 list-disc space-y-2 pl-6 text-sm text-muted-foreground">
+          <li><strong className="text-foreground">BrandSearch's core users:</strong> operators and small teams who want a unified research surface — TikTok product discovery, ad creative analysis, and Shopify competitor monitoring on one dashboard.</li>
+          <li><strong className="text-foreground">WinningHunter's core users:</strong> TikTok-heavy operators, dropshippers, and growth teams who want a fast launchpad combining trending products, ad spy, and store tracking.</li>
+        </ul>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          Neither positioning makes one tool universally "better." They reflect different beliefs about how research should be structured. If you want a consolidated research cockpit with creative and competitor intelligence side by side, BrandSearch's surface area is wider. If you want the fastest path to "what TikTok product should I test this week," WinningHunter's flow is more direct.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Product Discovery & Trend Research</h2>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          Product discovery is where most operators expect a research tool to earn its subscription. Both tools surface trending products, but they organize the discovery flow differently.
+        </p>
+        <ArticleImage
+          src="/images/brandsearch-product-discovery.png"
+          alt="BrandSearch TikTok product discovery dashboard with trending products list, viral potential score, ad creative analysis, and competitor monitor"
+          caption="A TikTok product discovery dashboard combining engagement, viral potential scoring, and competitor tracking in one view."
+        />
+        <h3 className="mt-6 font-display text-base font-bold text-foreground">Trending product feeds</h3>
+        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+          BrandSearch surfaces trending products through a blended model — engagement velocity, share of voice, and estimated revenue — so each product comes with context, not just a thumbnail. WinningHunter's trending feed leans on TikTok virality and active ad signals, which feels closer to a "what's hot right now" radar. Both are useful; they reward different research instincts.
+        </p>
+        <h3 className="mt-6 font-display text-base font-bold text-foreground">TikTok product research</h3>
+        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+          For pure TikTok-first product hunting, WinningHunter's flow is fast: filters for engagement rate, video age, creator count, and growth percentage map well to how operators actually evaluate a TikTok opportunity. BrandSearch covers the same ground but layers in viral potential scoring and competitor share-of-voice, which is helpful when you want to understand <em>why</em> a product is trending, not just that it is.
+        </p>
+        <h3 className="mt-6 font-display text-base font-bold text-foreground">Filtering systems and depth</h3>
+        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+          Both tools support filtering by niche, country, ad format, price band, and engagement thresholds. BrandSearch tends to expose more filter dimensions on the discovery screen — engagement threshold sliders, ad type buckets, date ranges — so research is more of a "narrow until you trust the list" workflow. WinningHunter favors fewer filters with stronger defaults, which gets beginners moving faster but gives advanced operators less control.
+        </p>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          For a deeper look at how to evaluate the signals each tool surfaces, see our{" "}
+          <Link to="/blog/product-validation-framework" className="text-brand underline">product validation framework</Link> — it covers how to separate real demand from noisy virality.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Creative Research & Ad Analysis</h2>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          For creative research, the question isn't "which tool has more ads." It's which tool helps you understand <em>why</em> an ad is working — hook, structure, retention, and positioning.
+        </p>
+        <ArticleImage
+          src="/images/brandsearch-creative-analysis.png"
+          alt="BrandSearch creative dashboard with retention metrics, ad creative tracking across TikTok Instagram and Facebook, hook discovery, and CTA analysis"
+          caption="Creative research dashboards compare retention curves, hook patterns, and CTA performance across multiple platforms."
+        />
+        <h3 className="mt-6 font-display text-base font-bold text-foreground">Ad creative tracking</h3>
+        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+          BrandSearch's creative view groups ads by campaign and platform — TikTok, Instagram, Facebook — and shows playtime, conversions, and spend signals next to each variant. That structure rewards operators who think in test sets, not isolated ads. WinningHunter's creative library is well-curated for current winners and easier to skim, which is more useful when you want fast inspiration than archival study.
+        </p>
+        <h3 className="mt-6 font-display text-base font-bold text-foreground">Hook analysis and engagement signals</h3>
+        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+          Neither tool replaces watching ads with intent. What they both do well is surface engagement proxies — likes, comments, runtime, ad spend estimates — that hint at performance. BrandSearch goes further with explicit hook discovery and CTA scoring panels, which can shortcut the "why is this working" question. WinningHunter exposes similar engagement data but as part of the discovery flow rather than a dedicated creative workspace.
+        </p>
+        <h3 className="mt-6 font-display text-base font-bold text-foreground">Creative workflow support</h3>
+        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+          For operators building a swipe file and feeding creatives into a structured testing process, both tools support saving ads and organizing references. BrandSearch's swipe file is folder-based and tagged by style (UGC, testimonial, product showcase), which scales as your library grows. For a structured way to think about creative testing on top of either tool, see our{" "}
+          <Link to="/blog/ecommerce-ad-creative-framework" className="text-brand underline">ecommerce ad creative framework</Link>.
+        </p>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          If you specifically want to go deeper into TikTok ad analysis as a discipline — beyond either tool — our guide on{" "}
+          <Link to="/blog/how-to-analyze-tiktok-ads" className="text-brand underline">how to analyze TikTok ads</Link> walks through hook breakdowns, retention curves, and structural patterns.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Competitor Research & Shopify Analysis</h2>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          Where these two tools diverge most clearly is competitor and store-level intelligence.
+        </p>
+        <ArticleImage
+          src="/images/brandsearch-shopify-analysis.png"
+          alt="BrandSearch competitive store monitor with Shopify store tracking, pricing analysis matrix, conversion benchmarking, and saturation heatmap"
+          caption="Store-level dashboards turn competitor pricing, conversion benchmarks, and saturation trends into a repeatable monitoring layer."
+        />
+        <h3 className="mt-6 font-display text-base font-bold text-foreground">Store tracking and competitor monitoring</h3>
+        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+          WinningHunter has invested heavily in store tracking. Operators can monitor specific Shopify stores, see SKU changes, watch product launches, and observe store activity over time. BrandSearch competes here with a competitive store monitor and pricing analysis matrix that places competitors on a discount-heavy vs premium-positioning grid — useful when you need to read positioning, not just activity.
+        </p>
+        <h3 className="mt-6 font-display text-base font-bold text-foreground">Offer and pricing analysis</h3>
+        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+          BrandSearch's pricing matrix and offer-frequency view help operators see which competitors are leaning on discounts vs holding premium pricing. WinningHunter shows pricing as part of store activity but doesn't frame it as a positioning chart. If your strategy hinges on offer differentiation — bundles, anchor pricing, premium positioning — BrandSearch's lens is more useful.
+        </p>
+        <h3 className="mt-6 font-display text-base font-bold text-foreground">Saturation analysis</h3>
+        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+          Saturation matters because a "winning" product in a discovery feed may already have a dozen competitors running similar creatives. BrandSearch exposes saturation as a heatmap across product categories, which gives a quick read on where the market is crowded. WinningHunter's combined view — ad activity plus store activity plus trending products — also makes saturation legible, just through a more activity-driven lens.
+        </p>
+        <h3 className="mt-6 font-display text-base font-bold text-foreground">Ecommerce intelligence workflows</h3>
+        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+          If competitor monitoring is a recurring weekly task — checking what new SKUs went live, which offers refreshed, which stores accelerated ad spend — both tools support that cadence. Our guide on{" "}
+          <Link to="/blog/how-to-spy-on-shopify-stores" className="text-brand underline">how to spy on Shopify stores</Link> covers how operators usually structure that monitoring layer regardless of tool.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">UI, Workflow, and Ease of Use</h2>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          Both tools have modernized their interfaces significantly. The differences now are less about polish and more about how each one routes you through research.
+        </p>
+        <ul className="mt-4 list-disc space-y-2 pl-6 text-sm text-muted-foreground">
+          <li><strong className="text-foreground">WinningHunter</strong> reads like a launchpad. The dashboard pushes trending products, top creatives, and store activity at you on entry. New operators get to "something interesting" in a few clicks.</li>
+          <li><strong className="text-foreground">BrandSearch</strong> reads like a research cockpit. You typically arrive with a hypothesis or a niche, then move across product discovery, creative analysis, and competitor monitoring as a connected workflow rather than separate tabs.</li>
+          <li><strong className="text-foreground">Learning curve:</strong> WinningHunter is more forgiving for beginners. BrandSearch takes a session or two to internalize but scales well as your research questions get more specific.</li>
+          <li><strong className="text-foreground">Workflow speed:</strong> For "what should I test this week?" WinningHunter is faster. For "show me how five competitors are positioned across price, creative, and store activity," BrandSearch is faster.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Pricing & Overall Value</h2>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          Both tools offer tiered subscriptions, and pricing changes regularly. We won't quote specific monthly numbers here because they shift — always check the official pricing pages of <a href={BS_AFF} rel="sponsored noopener noreferrer" target="_blank" className="text-brand underline">BrandSearch</a> and <a href={LINKS.winninghunter} rel="sponsored noopener noreferrer nofollow" target="_blank" className="text-brand underline">WinningHunter</a> before deciding.
+        </p>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          What matters more than the sticker price is value relative to your workflow:
+        </p>
+        <ul className="mt-3 list-disc space-y-2 pl-6 text-sm text-muted-foreground">
+          <li><strong className="text-foreground">For beginners:</strong> The cheaper plan that gets you doing real research weekly is the better deal. Both tools have entry tiers reasonable for solo operators.</li>
+          <li><strong className="text-foreground">For scaling brands:</strong> Higher tiers unlock more granular filters, deeper history, and team features. Value here is measured in research hours saved per week, not dollars.</li>
+          <li><strong className="text-foreground">Workflow ROI:</strong> A tool only pays for itself if it shortens the path from "no idea" to "tested product" or "no creative" to "shipped ad." Audit your last month of research before paying for a higher tier.</li>
+        </ul>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          Both tools typically offer trials or limited free views. Use them to run an actual research week, not a feature tour. Readers interested in lightweight trend discovery and a unified research dashboard can{" "}
+          <a href={BS_AFF} rel="sponsored noopener noreferrer" target="_blank" className="text-brand underline">explore BrandSearch directly</a> to see if the workflow matches their cadence.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Which Tool Fits Different Ecommerce Workflows</h2>
+        <ArticleImage
+          src="/images/brandsearch-workflow-framework.png"
+          alt="Operator scaling workflow framework with steps for product discovery, TikTok ad research, competitor analysis, creative validation, ecommerce scaling, and product validation"
+          caption="A research tool only matters as part of a workflow — discovery, creative analysis, competitor tracking, and scaling all need a clear seat."
+        />
+        <div className="mt-6 overflow-x-auto">
+          <table className="w-full border-collapse text-sm">
+            <thead>
+              <tr className="border-b border-border bg-surface">
+                <th className="p-3 text-left font-semibold text-foreground">Operator profile</th>
+                <th className="p-3 text-left font-semibold text-foreground">Better fit</th>
+                <th className="p-3 text-left font-semibold text-foreground">Why</th>
+              </tr>
+            </thead>
+            <tbody className="text-muted-foreground">
+              <tr className="border-b border-border">
+                <td className="p-3 align-top">Beginner dropshipper</td>
+                <td className="p-3 align-top">WinningHunter</td>
+                <td className="p-3 align-top">Faster onboarding; trending products and ads are surfaced upfront with less analysis paralysis.</td>
+              </tr>
+              <tr className="border-b border-border">
+                <td className="p-3 align-top">TikTok-first store</td>
+                <td className="p-3 align-top">WinningHunter</td>
+                <td className="p-3 align-top">TikTok signals are first-class — viral score, growth %, creator count, store tracking.</td>
+              </tr>
+              <tr className="border-b border-border">
+                <td className="p-3 align-top">Creative-heavy team</td>
+                <td className="p-3 align-top">BrandSearch</td>
+                <td className="p-3 align-top">Dedicated creative workspace with hook discovery, CTA scoring, and tagged swipe folders.</td>
+              </tr>
+              <tr className="border-b border-border">
+                <td className="p-3 align-top">Operator who values consolidated research</td>
+                <td className="p-3 align-top">BrandSearch</td>
+                <td className="p-3 align-top">Product discovery, creative analysis, and competitor monitoring share one dashboard.</td>
+              </tr>
+              <tr className="border-b border-border">
+                <td className="p-3 align-top">Scaling brand benchmarking competitors</td>
+                <td className="p-3 align-top">BrandSearch</td>
+                <td className="p-3 align-top">Pricing matrix, conversion benchmarking, and saturation heatmaps support positioning decisions.</td>
+              </tr>
+              <tr>
+                <td className="p-3 align-top">Agency or media buyer with multiple clients</td>
+                <td className="p-3 align-top">Often both</td>
+                <td className="p-3 align-top">WinningHunter for fast trend reads per client; BrandSearch for deeper competitor and creative analysis.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          For a broader view of where each tool fits relative to the rest of the market, our{" "}
+          <Link to="/blog/best-tiktok-ad-spy-tools" className="text-brand underline">best TikTok ad spy tools</Link> guide reviews the wider category, and our{" "}
+          <Link to="/blog/minea-vs-winninghunter" className="text-brand underline">Minea vs WinningHunter comparison</Link> covers an adjacent matchup worth reading if you're evaluating multiple tools.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">FAQ</h2>
+        <div className="mt-4 space-y-5">
+          <div>
+            <h3 className="font-display text-sm font-bold text-foreground">Is BrandSearch better than WinningHunter for TikTok product research?</h3>
+            <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+              For pure "what's trending right now on TikTok," WinningHunter usually feels faster. BrandSearch is stronger when you want trending products framed alongside competitor positioning and creative analysis on the same screen.
+            </p>
+          </div>
+          <div>
+            <h3 className="font-display text-sm font-bold text-foreground">Can BrandSearch replace a separate Shopify spy tool?</h3>
+            <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+              For most operators, yes — its competitive store monitor, pricing matrix, and saturation analysis cover the bulk of weekly competitor monitoring. Heavy users of dedicated Shopify spy tools may still want a specialist layer.
+            </p>
+          </div>
+          <div>
+            <h3 className="font-display text-sm font-bold text-foreground">Which tool is better for beginners?</h3>
+            <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+              WinningHunter's onboarding is more forgiving. BrandSearch is approachable but rewards operators who already have a research hypothesis when they log in.
+            </p>
+          </div>
+          <div>
+            <h3 className="font-display text-sm font-bold text-foreground">Do these tools guarantee winning products?</h3>
+            <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+              No. They surface signals. Whether a product wins depends on margin, offer, creative, and execution. A tool only compresses research time — it doesn't replace judgment.
+            </p>
+          </div>
+          <div>
+            <h3 className="font-display text-sm font-bold text-foreground">Should I use both tools?</h3>
+            <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+              Most solo operators don't need both. Pick the one that matches your dominant workflow. Agencies and multi-brand teams sometimes run both because the use cases barely overlap.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="font-display text-xl font-bold text-foreground">Final Verdict</h2>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          BrandSearch and WinningHunter are both legitimate research tools used by serious ecommerce operators. They're not interchangeable, and pretending one is universally "better" would be misleading. The honest framing is: <strong className="text-foreground">BrandSearch is the consolidated multichannel research cockpit; WinningHunter is the faster TikTok-first product and store discovery suite.</strong>
+        </p>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          If your week is spent finding the next TikTok product to test and tracking what competitors quietly launched, WinningHunter will likely save you more hours. If your week is spent reading competitor positioning, studying creative patterns, and building a long-term research library, BrandSearch will likely earn its seat.
+        </p>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+          Either way, the bigger lever is your workflow. A tool only compounds when it sits inside a repeatable system — discovery, validation, creative planning, and scaling. If you haven't formalized that yet, start with our{" "}
+          <Link to="/blog/how-to-build-product-research-workflow" className="text-brand underline">product research workflow guide</Link> and let the workflow tell you which tool you actually need.
+        </p>
+        <div className="mt-6">
+          <a href={BS_AFF} rel="sponsored noopener noreferrer" target="_blank">
+            <Button variant="outline" size="sm" className="gap-1.5">
+              Explore BrandSearch <ArrowUpRight className="h-3.5 w-3.5" />
+            </Button>
+          </a>
+        </div>
+      </section>
+    </div>
+  );
+}
