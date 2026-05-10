@@ -100,6 +100,7 @@ export default function ReaddyAiReviewPage() {
           </p>
           <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
             For the operator context behind this review, see our <Link to="/blog/how-to-build-product-research-workflow" className="text-brand underline-offset-4 hover:underline">operator research workflow</Link>, the <Link to="/blog/product-validation-framework" className="text-brand underline-offset-4 hover:underline">product validation workflow</Link>, and our <Link to="/blog/ecommerce-ad-creative-framework" className="text-brand underline-offset-4 hover:underline">ad creative framework</Link>. A landing page builder is one slice of a larger ecommerce stack.
+          </p>
 
           <div className="mt-8 space-y-10">
             {/* 1. HOOK */}
