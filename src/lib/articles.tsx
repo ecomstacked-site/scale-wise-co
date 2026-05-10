@@ -984,15 +984,75 @@ const SHOPIFY_ANALYSIS_PRIMARY_SLUGS = new Set([
   "ppspy-vs-minea",
 ]);
 
+
+const TIKTOK_RESEARCH_CLUSTER: { slug: string; title: string; desc: string; group: string }[] = [
+  { slug: "how-to-analyze-tiktok-ads", title: "How to Analyze TikTok Ads", desc: "The pillar guide to decoding hooks, retention, and creative patterns.", group: "Foundations" },
+  { slug: "best-tiktok-ad-spy-tools", title: "Best TikTok Ad Spy Tools (2026)", desc: "The ad-research stack operators rely on for TikTok intel.", group: "Tools" },
+  { slug: "ecommerce-ad-creative-framework", title: "Ecommerce Ad Creative Framework", desc: "Turn TikTok analysis into a repeatable creative testing system.", group: "Frameworks" },
+  { slug: "ai-video-ads-for-ecommerce", title: "AI Video Ads for Ecommerce", desc: "Scale TikTok-style creative output without scaling the production team.", group: "Production" },
+  { slug: "best-ai-video-tools", title: "Best AI Video Tools (2026)", desc: "The production stack behind high-velocity TikTok creative testing.", group: "Production" },
+  { slug: "minea-vs-winninghunter", title: "Minea vs WinningHunter", desc: "Cross-platform ad library vs all-in-one operator workflow.", group: "Comparisons" },
+  { slug: "brandsearch-vs-winninghunter", title: "BrandSearch vs WinningHunter", desc: "Brand intelligence vs winning-product detection.", group: "Comparisons" },
+  { slug: "how-to-build-product-research-workflow", title: "Product Research Workflow", desc: "How TikTok creative intel slots into the broader operator workflow.", group: "Context" },
+  { slug: "product-validation-framework", title: "Product Validation Framework", desc: "Validate the products behind the ads before scaling spend.", group: "Context" },
+];
+
+function TikTokResearchClusterNav({ currentSlug }: { currentSlug: string }) {
+  const items = TIKTOK_RESEARCH_CLUSTER.filter((i) => i.slug !== currentSlug);
+  const groups = ["Foundations", "Tools", "Frameworks", "Production", "Comparisons", "Context"] as const;
+  return (
+    <section className="mt-16 border-t border-border pt-10">
+      <p className="text-xs font-semibold uppercase tracking-wider text-brand">TikTok Ad Research Cluster</p>
+      <h2 className="mt-2 font-display text-xl font-bold text-foreground sm:text-2xl">Sharpen your TikTok creative intelligence</h2>
+      <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+        These guides form EcomStacked&apos;s TikTok Ad Research cluster — the analysis frameworks, spy tools, production stack, and comparisons operators use to read the platform like an analyst.
+      </p>
+      <div className="mt-8 space-y-8">
+        {groups.map((g) => {
+          const list = items.filter((i) => i.group === g);
+          if (list.length === 0) return null;
+          return (
+            <div key={g}>
+              <h3 className="font-display text-sm font-bold uppercase tracking-wide text-foreground">{g}</h3>
+              <ul className="mt-3 grid gap-3 sm:grid-cols-2">
+                {list.map((i) => (
+                  <li key={i.slug} className="rounded-lg border border-border bg-card p-4 transition-colors hover:border-brand/40">
+                    <Link to={`/blog/${i.slug}`} className="block">
+                      <span className="block font-display text-sm font-bold text-foreground">{i.title}</span>
+                      <span className="mt-1 block text-xs leading-relaxed text-muted-foreground">{i.desc}</span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          );
+        })}
+      </div>
+    </section>
+  );
+}
+
+// TikTok-primary slugs render the TikTok cluster nav. Limited to articles
+// where TikTok ad research is the primary topic, to avoid stacking navs.
+const TIKTOK_RESEARCH_PRIMARY_SLUGS = new Set([
+  "how-to-analyze-tiktok-ads",
+  "best-tiktok-ad-spy-tools",
+  "ecommerce-ad-creative-framework",
+  "ai-video-ads-for-ecommerce",
+  "best-ai-video-tools",
+]);
+
 function withClusterNav(slug: string, node: React.ReactNode): React.ReactNode {
   const inProductResearch = PRODUCT_RESEARCH_SLUGS.has(slug);
   const inShopifyAnalysis = SHOPIFY_ANALYSIS_PRIMARY_SLUGS.has(slug);
-  if (!inProductResearch && !inShopifyAnalysis) return node;
+  const inTikTokResearch = TIKTOK_RESEARCH_PRIMARY_SLUGS.has(slug);
+  if (!inProductResearch && !inShopifyAnalysis && !inTikTokResearch) return node;
   return (
     <>
       {node}
+      {inTikTokResearch && <TikTokResearchClusterNav currentSlug={slug} />}
       {inShopifyAnalysis && <ShopifyAnalysisClusterNav currentSlug={slug} />}
-      {inProductResearch && <ProductResearchClusterNav currentSlug={slug} />}
+      {inProductResearch && !inTikTokResearch && <ProductResearchClusterNav currentSlug={slug} />}
     </>
   );
 }
@@ -2930,6 +2990,9 @@ function ArticleBestAIVideoTools() {
         </p>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           AI video tools fix that. They collapse the time between idea and testable creative from days into minutes. If you're running ads, tools like <Link to="/tools/holo-ai" className="text-brand hover:underline">Holo AI</Link> are worth looking at.
+        </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          Production speed only compounds when it's pointed at proven angles. Use the <Link to="/blog/how-to-analyze-tiktok-ads" className="text-brand underline-offset-4 hover:underline">TikTok ad analysis</Link> process and our <Link to="/blog/best-tiktok-ad-spy-tools" className="text-brand underline-offset-4 hover:underline">ecommerce ad spy tools</Link> to source references, the <Link to="/blog/ecommerce-ad-creative-framework" className="text-brand underline-offset-4 hover:underline">ad creative framework</Link> to structure tests, and our <Link to="/blog/ai-video-ads-for-ecommerce" className="text-brand underline-offset-4 hover:underline">AI video ads playbook</Link> for the operator workflow behind the tools.
         </p>
         <ArticleImage
           src="/images/hero-holo-ai-dashboard.webp"
@@ -7966,6 +8029,9 @@ function ArticleAIVideoAdsForEcommerce() {
         <p className="mt-4 text-base leading-relaxed text-muted-foreground">
           This is exactly why tools like Holo AI are gaining traction with ecommerce operators. We covered the full breakdown in our <Link to="/blog/holo-ai-review" className="text-brand underline">Holo AI review</Link> — but first, let's break down the playbook.
         </p>
+        <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+          High-velocity creative only pays off when it's pointed at the right products and angles. Pair this guide with our <Link to="/blog/how-to-analyze-tiktok-ads" className="text-brand underline-offset-4 hover:underline">TikTok ad analysis</Link> process, the <Link to="/blog/ecommerce-ad-creative-framework" className="text-brand underline-offset-4 hover:underline">ad creative framework</Link>, and the <Link to="/blog/best-tiktok-ad-spy-tools" className="text-brand underline-offset-4 hover:underline">ecommerce ad spy tools</Link> that surface the references worth iterating on. The <Link to="/blog/best-ai-video-tools" className="text-brand underline-offset-4 hover:underline">best AI video tools</Link> roundup covers the production stack itself.
+        </p>
         <ArticleImage
           src="/images/01-hero-roas-drop.png"
           alt="Ecommerce ad performance dashboard showing ROAS decline"
@@ -9356,6 +9422,9 @@ function ArticleHowToAnalyzeTikTokAds() {
         <p className="mt-4 text-base leading-relaxed text-muted-foreground">
           Ad analysis is a layer in a bigger system. See our <Link to="/blog/how-to-build-product-research-workflow" className="text-brand underline-offset-4 hover:underline">operator product research workflow</Link> for context, the <Link to="/blog/best-tiktok-ad-spy-tools" className="text-brand underline-offset-4 hover:underline">TikTok ad spy tools</Link> for the platforms that surface examples, the <Link to="/blog/ecommerce-ad-creative-framework" className="text-brand underline-offset-4 hover:underline">ad creative framework</Link> for turning patterns into your own creative, and the <Link to="/blog/minea-vs-winninghunter" className="text-brand underline-offset-4 hover:underline">Minea vs WinningHunter breakdown</Link> when you're picking a spy stack.
         </p>
+        <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+          On the production side, our guide to <Link to="/blog/ai-video-ads-for-ecommerce" className="text-brand underline-offset-4 hover:underline">AI video ads for ecommerce</Link> and the <Link to="/blog/best-ai-video-tools" className="text-brand underline-offset-4 hover:underline">best AI video tools</Link> show how to turn TikTok creative intel into a high-velocity testing pipeline. The <Link to="/blog/brandsearch-vs-winninghunter" className="text-brand underline-offset-4 hover:underline">BrandSearch vs WinningHunter comparison</Link> and <Link to="/blog/product-validation-framework" className="text-brand underline-offset-4 hover:underline">product validation workflow</Link> close the loop from ad signal to validated product.
+        </p>
       </section>
 
       <section>
@@ -9881,6 +9950,9 @@ function ArticleEcommerceAdCreativeFramework() {
         </p>
         <p className="mt-4">
           Creative work compounds when it lives inside a research system. See our <Link to="/blog/how-to-build-product-research-workflow" className="text-brand underline-offset-4 hover:underline">operator product research workflow</Link> for the upstream process, the <Link to="/blog/how-to-analyze-tiktok-ads" className="text-brand underline-offset-4 hover:underline">TikTok ad analysis process</Link> for decoding what already converts, and the <Link to="/blog/best-tiktok-ad-spy-tools" className="text-brand underline-offset-4 hover:underline">TikTok ad spy stack</Link> for the tools that surface those examples.
+        </p>
+        <p className="mt-4">
+          On the production side, the <Link to="/blog/ai-video-ads-for-ecommerce" className="text-brand underline-offset-4 hover:underline">AI video ads playbook</Link> and our roundup of the <Link to="/blog/best-ai-video-tools" className="text-brand underline-offset-4 hover:underline">best AI video tools</Link> show how operators ship the volume this framework demands without scaling headcount.
         </p>
       </section>
 
