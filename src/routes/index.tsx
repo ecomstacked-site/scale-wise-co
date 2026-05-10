@@ -10,7 +10,7 @@ import { ArticleCard } from "@/components/ArticleCard";
 import {
   BarChart3, Bot, Eye, Search, Shield, Target,
   ArrowRight, CheckCircle2, TrendingUp,
-  BookOpen, FileSearch, Layers, Sparkles, Video
+  BookOpen, FileSearch, Layers, Sparkles
 } from "lucide-react";
 
 // ---------- Featured Guides (educational hubs) ----------
