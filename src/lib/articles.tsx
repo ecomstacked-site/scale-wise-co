@@ -2686,6 +2686,9 @@ function ArticleHoloReview() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           No fluff, no inflated claims — just what the tool does well, where it falls short, what it costs, and how it compares to the main alternatives in 2026.
         </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          For the broader operator context behind this review, see our <Link to="/blog/ecommerce-ad-creative-framework" className="text-brand underline-offset-4 hover:underline">ad creative framework</Link>, the <Link to="/blog/ai-video-ads-for-ecommerce" className="text-brand underline-offset-4 hover:underline">AI video ads playbook</Link>, and the <Link to="/blog/how-to-analyze-tiktok-ads" className="text-brand underline-offset-4 hover:underline">TikTok creative testing</Link> process — Holo AI is most useful when it slots into a structured creative workflow, not as a standalone shortcut.
+        </p>
         <p className="mt-4 rounded-md border-l-2 border-brand/40 bg-surface px-3 py-2 text-xs italic text-muted-foreground">
           This review is based on real usage scenarios, not promotional claims. Recommendations reflect performance, not sponsorship.
         </p>
