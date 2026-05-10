@@ -4961,6 +4961,9 @@ function ArticleWinningHunterAlternatives() {
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           Use this article as a decision shortcut. If you already know your lane (TikTok-only, store-spy-only, creative-only), one of the alternatives below probably wins. If you don't, the answer is almost always WinningHunter — and the rest of the page explains exactly why.
         </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          For the workflow context behind this comparison, see our <Link to="/blog/how-to-build-product-research-workflow" className="text-brand underline-offset-4 hover:underline">operator research workflow</Link>, the <Link to="/blog/product-validation-framework" className="text-brand underline-offset-4 hover:underline">product validation workflow</Link>, and our breakdown of the <Link to="/blog/best-tiktok-ad-spy-tools" className="text-brand underline-offset-4 hover:underline">ecommerce ad spy tools</Link> that surface the products worth testing in the first place.
+        </p>
         <AffiliateCTA label="Find winning products before wasting ad budget" />
 
         <WHAltFigure
