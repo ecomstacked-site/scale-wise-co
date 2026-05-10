@@ -8026,6 +8026,9 @@ function ArticleAIVideoAdsForEcommerce() {
         <p className="mt-4 text-base leading-relaxed text-muted-foreground">
           This is exactly why tools like Holo AI are gaining traction with ecommerce operators. We covered the full breakdown in our <Link to="/blog/holo-ai-review" className="text-brand underline">Holo AI review</Link> — but first, let's break down the playbook.
         </p>
+        <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+          High-velocity creative only pays off when it's pointed at the right products and angles. Pair this guide with our <Link to="/blog/how-to-analyze-tiktok-ads" className="text-brand underline-offset-4 hover:underline">TikTok ad analysis</Link> process, the <Link to="/blog/ecommerce-ad-creative-framework" className="text-brand underline-offset-4 hover:underline">ad creative framework</Link>, and the <Link to="/blog/best-tiktok-ad-spy-tools" className="text-brand underline-offset-4 hover:underline">ecommerce ad spy tools</Link> that surface the references worth iterating on. The <Link to="/blog/best-ai-video-tools" className="text-brand underline-offset-4 hover:underline">best AI video tools</Link> roundup covers the production stack itself.
+        </p>
         <ArticleImage
           src="/images/01-hero-roas-drop.png"
           alt="Ecommerce ad performance dashboard showing ROAS decline"
