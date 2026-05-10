@@ -956,6 +956,8 @@ export function getArticleContent(slug: string): React.ReactNode | null {
       return <ArticleMineaVsWinningHunter />;
     case "brandsearch-vs-winninghunter":
       return <ArticleBrandSearchVsWinningHunter />;
+    case "best-tools-for-shopify-store-analysis":
+      return <ArticleBestToolsForShopifyStoreAnalysis />;
     default:
       return null;
   }
