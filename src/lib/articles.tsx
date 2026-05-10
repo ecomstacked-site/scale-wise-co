@@ -88,6 +88,25 @@ export interface ArticleMeta {
 
 export const articlesMeta: ArticleMeta[] = [
   {
+    title: "Best Tools for Shopify Store Analysis (2026)",
+    excerpt: "An operator-focused guide to analyzing Shopify stores in 2026 — what to study, how to compare PPSpy, Koala Inspector, BrandSearch, Minea, and WinningHunter, and how to build a repeatable store research workflow.",
+    category: "Guides",
+    date: "May 10, 2026",
+    readTime: "18 min read",
+    slug: "best-tools-for-shopify-store-analysis",
+    image: "/images/shopify-store-analysis-hero.png",
+    toc: [
+      "Why Shopify Store Analysis Matters",
+      "What Ecommerce Operators Actually Analyze",
+      "Best Shopify Store Analysis Tools",
+      "How to Analyze Shopify Competitors Properly",
+      "Common Shopify Store Analysis Mistakes",
+      "A Real Ecommerce Store Research Workflow",
+      "FAQ",
+      "Final Thoughts",
+    ],
+  },
+  {
     title: "BrandSearch vs WinningHunter (2026 Comparison)",
     excerpt: "An operator-focused comparison of BrandSearch and WinningHunter — product discovery, creative research, Shopify store analysis, pricing, and which workflow each tool actually fits.",
     category: "Comparisons",
