@@ -10093,6 +10093,9 @@ function ArticleHowToBuildProductResearchWorkflow() {
         <p className="mt-4">
           This guide is the master playbook: how to structure a complete ecommerce product research workflow in 2026, from discovery through validation, competitor analysis, creative evaluation, and scaling. It pulls together the operator frameworks we cover in depth across the rest of the Product Research cluster — including <Link to="/blog/how-to-analyze-tiktok-ads" className="text-brand underline-offset-4 hover:underline">how to analyze TikTok ads</Link>, the <Link to="/blog/product-validation-framework" className="text-brand underline-offset-4 hover:underline">product validation framework</Link>, the <Link to="/blog/ecommerce-ad-creative-framework" className="text-brand underline-offset-4 hover:underline">ecommerce ad creative framework</Link>, and <Link to="/blog/how-to-spy-on-shopify-stores" className="text-brand underline-offset-4 hover:underline">how to spy on Shopify stores</Link>.
         </p>
+        <p className="mt-4">
+          On the tooling side, the workflow is supported by our <Link to="/blog/best-product-research-tools" className="text-brand underline-offset-4 hover:underline">operator-ranked research tools</Link>, the <Link to="/blog/best-tiktok-ad-spy-tools" className="text-brand underline-offset-4 hover:underline">TikTok ad spy stack</Link>, and the <Link to="/blog/best-tools-for-shopify-store-analysis" className="text-brand underline-offset-4 hover:underline">Shopify store analysis tools</Link> we rely on week to week.
+        </p>
       </section>
 
       <section>
