@@ -9951,7 +9951,9 @@ function ArticleEcommerceAdCreativeFramework() {
         <p className="mt-4">
           Creative work compounds when it lives inside a research system. See our <Link to="/blog/how-to-build-product-research-workflow" className="text-brand underline-offset-4 hover:underline">operator product research workflow</Link> for the upstream process, the <Link to="/blog/how-to-analyze-tiktok-ads" className="text-brand underline-offset-4 hover:underline">TikTok ad analysis process</Link> for decoding what already converts, and the <Link to="/blog/best-tiktok-ad-spy-tools" className="text-brand underline-offset-4 hover:underline">TikTok ad spy stack</Link> for the tools that surface those examples.
         </p>
-      </section>
+        <p className="mt-4">
+          On the production side, the <Link to="/blog/ai-video-ads-for-ecommerce" className="text-brand underline-offset-4 hover:underline">AI video ads playbook</Link> and our roundup of the <Link to="/blog/best-ai-video-tools" className="text-brand underline-offset-4 hover:underline">best AI video tools</Link> show how operators ship the volume this framework demands without scaling headcount.
+        </p>
 
       <section>
         <h2 className="font-display text-2xl font-extrabold text-foreground">Why Most Ecommerce Ad Creatives Fail</h2>
